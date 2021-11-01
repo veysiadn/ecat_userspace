@@ -1,0 +1,32 @@
+number_of_slaves : 4
+
+ethercat_slaves :
+    joint_left :
+        vendor_id: 0x0000009a
+        product_code: 0x00030924
+        alias : 0
+        position: 0
+        assign_activate: 0x300
+    joint_right :
+        vendor_id: 0x0000009a
+        product_code: 0x00030924
+        alias : 0
+        position: 1
+        assign_activate: 0x300
+    joint_back :
+        vendor_id: 0x0000009a
+        product_code: 0x00030924
+        alias : 0
+        position: 2
+        assign_activate: 0x300
+    easycat_slave :
+        vendor_id: 0x0000079a
+        product_code: 0xababa001
+        alias : 0
+        position: 3
+        assign_activate: 0x0006
+    period_ns: 1000000
+
+
+    run_time: 360000
+    sync0_shift: 50000

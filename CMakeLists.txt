@@ -30,7 +30,8 @@ add_executable(ecat_node src/main.cpp
                          src/ecat_node.cpp
                          src/ecat_slave.cpp
                          src/ecat_lifecycle.cpp
-                         src/timing.cpp)
+                         src/timing.cpp
+			 src/xboxController.cpp)
 
 ## Specifying include directories for ecat_node specifically by using definitions above.
 ## target include directories adds include directory for specific target executable.

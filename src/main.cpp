@@ -2,17 +2,19 @@
 #include "ecat_node.hpp"
 /****************************************************************************/
 #include "ecat_lifecycle.hpp"
+#include "xboxController.hpp"
 std::unique_ptr<EthercatLifeCycleNode::EthercatLifeCycle> ecat_lifecycle_node;
 
 void signalHandler(int /*signum*/)
 {
-    //sig = 0;
-    //usleep(1e3);
+    sig = 0;
+    nanosleep((const struct timespec[]){0,g_kNsPerSec},NULL);
     ecat_lifecycle_node->on_shutdown();
 }
 
 int main(int argc, char **argv)
 {
+    XboxController Controller;
     // CKim - Configure stdout sream buffer. _IONBF means no buffering. Each I/O operation is written as soon as possible. 
     setvbuf(stdout, NULL, _IONBF, BUFSIZ);
     
@@ -37,11 +39,32 @@ int main(int argc, char **argv)
     // CKim - Initialize and launch EthercatLifeCycleNode
     ecat_lifecycle_node = std::make_unique<EthercatLifeCycleNode::EthercatLifeCycle>();
 
-    ecat_lifecycle_node->on_configure();
-    ecat_lifecycle_node->on_activate();
-    ecat_lifecycle_node->on_cleanup();
-    ecat_lifecycle_node->on_shutdown();
+    if(ecat_lifecycle_node ->on_configure())
+    {
+        return -1;
+    }
+    if(ecat_lifecycle_node->on_activate())
+    {
+        return -1;
+    }
+     if (Controller.initXboxController(XBOX_DEVICE) >= 0) {
+		Controller.xbox = Controller.getXboxDataStruct();
+		Controller.readXboxControllerInformation(Controller.xbox);
 
+		printf("xbox controller detected\n\naxis:\t\t%d\nbuttons:\t%d\nidentifier:\t%s\n",
+				Controller.xbox ->numOfAxis, Controller.xbox ->numOfButtons, Controller.xbox->identifier);
+        while (sig) 
+        {
+            Controller.readXboxData(Controller.xbox );
+            ecat_lifecycle_node->controller_.left_x_axis_  = float(Controller.xbox->stk_LeftX / 32767.0);
+            ecat_lifecycle_node->controller_.left_y_axis_ = float(Controller.xbox->stk_LeftY / 32767.0);
+            ecat_lifecycle_node->controller_.left_rb_button_ = Controller.xbox->btn_leftTop;
+            ecat_lifecycle_node->controller_.right_rb_button_ = Controller.xbox->btn_rightTop;
+            //std::cout << ":LxAxis: "<<ecat_lifecycle_node->controller_.left_x_axis_ << ":LyAxis: " << ecat_lifecycle_node->controller_.left_y_axis_ << std::endl;
+            nanosleep((const struct timespec[]){0,PERIOD_NS},NULL);
+        }
+    }
+		Controller.deinitXboxController(Controller.xbox);
     
     return 0;
 }

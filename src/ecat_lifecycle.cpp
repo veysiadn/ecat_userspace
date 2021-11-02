@@ -29,7 +29,7 @@ uint8_t EthercatLifeCycle::on_configure()
     printf( "Configuring EtherCAT device...\n");
     if(InitEthercatCommunication())
     {
-        printf( "Configuration phase failed");
+        printf( "Configuration phase failed\n");
         return FAILURE;
     }else{
 
@@ -75,7 +75,7 @@ uint8_t EthercatLifeCycle::on_shutdown()
     printf( "On_Shutdown... Waiting for control thread.");
     sig = 0;
     usleep(1e3);
-    pthread_join(ethercat_thread_,NULL);
+    pthread_cancel(ethercat_thread_);
     printf( "Control thread terminated.");
     ecat_node_->ReleaseMaster();
     ecat_node_->ShutDownEthercatMaster();
@@ -108,11 +108,11 @@ int EthercatLifeCycle::SetComThreadPriorities()
     // for this feature to be active fist you have to modify GRUB_CMDLINE_LINUX_DEFAULT in /etc/default/grub 
     // add isolcpus=3 so after editing it will be ; GRUB_CMDLINE_LINUX_DEFAULT = "quiet splash isolcpus=3" 
     // save and exit, and type sudo update-grub and reboot.
-    //  cpu_set_t mask;
-    // CPU_ZERO(&mask);
-    // CPU_SET(3,&mask);
+     cpu_set_t mask;
+    CPU_ZERO(&mask);
+    CPU_SET(3,&mask);
 
-    // int result = sched_setaffinity(0,sizeof(mask),&mask);
+    int result = sched_setaffinity(0,sizeof(mask),&mask);
     /**********************************************************************************************/
     
     /* Set a specific stack size  */
@@ -261,7 +261,7 @@ int  EthercatLifeCycle::StartEthercatCommunication()
     err_= pthread_create(&ethercat_thread_,&ethercat_thread_attr_, &EthercatLifeCycle::PassCycylicExchange,this);
     if(err_)
     {
-        printf( "Error : Couldn't start communication thread.!");
+        printf( "Error : Couldn't start communication thread.!\n");
         return -1 ; 
     }
     printf( "Communication thread called.\n");
@@ -281,18 +281,6 @@ void EthercatLifeCycle::StartPdoExchange(void *instance)
     uint32_t print_val = 1e4;
     int error_check=0;
     struct timespec wake_up_time, time, publish_time_start={}, publish_time_end={};
-    #if MEASURE_TIMING
-        struct timespec start_time, end_time, last_start_time = {};
-        uint32_t period_ns = 0, exec_ns = 0, latency_ns = 0,
-        latency_min_ns = 0xffffffff, latency_max_ns = 0,
-        period_min_ns = 0xffffffff, period_max_ns = 0,
-        exec_min_ns = 0xffffffff, exec_max_ns = 0,
-        max_period=0, max_latency=0,exec_max=0,min_period = 0xffffffff,
-        exec_min = 0xffffffff , latency_min = 0xffffffff;
-        int32_t publishing_time_ns=1e4, publish_time_max=0, publish_time_min=0xfffffff;
-        int32_t jitter = 0 , jitter_min = 0xfffffff, jitter_max = 0, old_latency=0;
-
-    #endif
     // get current time
     clock_gettime(CLOCK_TO_USE, &wake_up_time);
     int begin=1e4;
@@ -301,7 +289,7 @@ void EthercatLifeCycle::StartPdoExchange(void *instance)
     // ------------------------------------------------------- //
     // CKim - Initialization loop before entring control loop. 
     // Switch On and Enable Driver
-    printf( "Enabling motors...");
+    printf( "Enabling motors...\n");
     while(sig)
     {
         // CKim - Sleep for 1 ms
@@ -326,7 +314,7 @@ void EthercatLifeCycle::StartPdoExchange(void *instance)
         if(EnableDrivers()==g_kNumberOfServoDrivers)
         
         {
-            printf( "All drives enabled");
+            printf( "All drives enabled\n");
             break;
         }
 
@@ -339,7 +327,7 @@ void EthercatLifeCycle::StartPdoExchange(void *instance)
             // Checking master/domain/slaves state every 1sec.
             if(ecat_node_->CheckMasterState() < 0 )
             {
-                printf( "Connection error, check your physical connection.");
+                printf( "Connection error, check your physical connection.\n");
                 al_state_ = g_master_state.al_states ; 
                 received_data_.emergency_switch_val=0;
                 emergency_status_=0;
@@ -359,7 +347,7 @@ void EthercatLifeCycle::StartPdoExchange(void *instance)
                 for(int i=0; i<g_kNumberOfServoDrivers; i++)
                 {
                     printf( "State of Drive %d : %d\n",i,motor_state_[i]);
-                    printf( "Trying to enable motors");
+                    printf( "Trying to enable motors\n");
                 } 
             }
         }
@@ -378,10 +366,23 @@ void EthercatLifeCycle::StartPdoExchange(void *instance)
         // CKim - Send process data
         ecrt_master_send(g_master);
     }// while(sig)
-    printf( "All motors enabled, entering control loop");
+    printf( "All motors enabled, entering control loop\n");
 
     // ------------------------------------------------------- //
     // CKim - All motors enabled. Start control loop
+        #if MEASURE_TIMING
+        struct timespec start_time, end_time, last_start_time = {};
+        uint32_t period_ns = 0, exec_ns = 0, latency_ns = 0,
+        latency_min_ns = 0xffffffff, latency_max_ns = 0,
+        period_min_ns = 0xffffffff, period_max_ns = 0,
+        exec_min_ns = 0xffffffff, exec_max_ns = 0,
+        max_period=0, max_latency=0,exec_max=0,min_period = 0xffffffff,
+        exec_min = 0xffffffff , latency_min = 0xffffffff;
+        int32_t publishing_time_ns=1e4, publish_time_max=0, publish_time_min=0xfffffff;
+        int32_t jitter = 0 , jitter_min = 0xfffffff, jitter_max = 0, old_latency=0;
+
+    #endif
+
     while(sig){
         wake_up_time = timespec_add(wake_up_time, g_cycle_time);
         clock_nanosleep(CLOCK_TO_USE, TIMER_ABSTIME, &wake_up_time, NULL);
@@ -436,23 +437,23 @@ void EthercatLifeCycle::StartPdoExchange(void *instance)
             status_check_counter--;
         }
         else { 
-            // Checking master/domain/slaves state every 1sec.
-               if(ecat_node_->CheckMasterState() < 0 ){
-                    printf( "Connection error, check your physical connection.");
+        // Checking master/domain/slaves state every 1sec.
+            if(ecat_node_->CheckMasterState() < 0 ){
+                printf( "Connection error, check your physical connection.\n");
+                al_state_ = g_master_state.al_states ; 
+                received_data_.emergency_switch_val=0;
+                emergency_status_=0;
+                //PublishAllData();
+                error_check++;                    
+                if(error_check==5)
+                    return;
+                }else{
+                    // ecat_node_->CheckMasterDomainState();
+                    // ecat_node_->CheckSlaveConfigurationState();
+                    error_check=0;
                     al_state_ = g_master_state.al_states ; 
-                    received_data_.emergency_switch_val=0;
-                    emergency_status_=0;
-                    PublishAllData();
-                    error_check++;                    
-                    if(error_check==5)
-                        return;
-                    }else{
-                        // ecat_node_->CheckMasterDomainState();
-                        // ecat_node_->CheckSlaveConfigurationState();
-                        error_check=0;
-                        al_state_ = g_master_state.al_states ; 
-                        status_check_counter = 1000;
-                    }
+                    status_check_counter = 1000;
+                }
             }
 
         #if MEASURE_TIMING
@@ -461,7 +462,7 @@ void EthercatLifeCycle::StartPdoExchange(void *instance)
         #endif
         
         // timer_info_.GetTime();
-        PublishAllData();
+        // PublishAllData();
         // timer_info_.MeasureTimeDifference();
         // if(timer_info_.counter_==NUMBER_OF_SAMPLES){
         //     timer_info_.OutInfoToFile();
@@ -478,25 +479,25 @@ void EthercatLifeCycle::StartPdoExchange(void *instance)
         #if MEASURE_TIMING
             // output timing stats
             if(!print_val){
-                    // printf("-----------------------------------------------\n\n");
-                    // printf("Tperiod   min   : %10u ns  | max : %10u ns\n",
-                    //         period_min_ns, period_max_ns);
-                    // printf("Texec     min   : %10u ns  | max : %10u ns\n",
-                    //         exec_min_ns, exec_max_ns);
-                    // printf("Tlatency  min   : %10u ns  | max : %10u ns\n",
-                    //         latency_min_ns, latency_max_ns);
-                    // printf("Tjitter max     : %10u ns  \n",
-                    //         latency_max_ns-latency_min_ns);
-                    // printf("-----------------------------------------------\n\n");       
-                    // printf("Tperiod min     : %10u ns  | max : %10u ns\n",
-                    //         min_period, max_period);
-                    // printf("Texec  min      : %10u ns  | max : %10u ns\n",
-                    //         exec_min, exec_max);
-                    // printf("Tjitter min     : %10u ns  | max : %10u ns\n",
-                    //         jitter_min, jitter_max);  
-                    // printf("Publish time min: %10d ns  | max : %10d ns\n",
-                    //       publish_time_min, publish_time_max);                             
-                    // printf("-----------------------------------------------\n\n");
+                    printf("-----------------------------------------------\n\n");
+                    printf("Tperiod   min   : %10u ns  | max : %10u ns\n",
+                            period_min_ns, period_max_ns);
+                    printf("Texec     min   : %10u ns  | max : %10u ns\n",
+                            exec_min_ns, exec_max_ns);
+                    printf("Tlatency  min   : %10u ns  | max : %10u ns\n",
+                            latency_min_ns, latency_max_ns);
+                    printf("Tjitter max     : %10u ns  \n",
+                            latency_max_ns-latency_min_ns);
+                    printf("-----------------------------------------------\n\n");       
+                    printf("Tperiod min     : %10u ns  | max : %10u ns\n",
+                            min_period, max_period);
+                    printf("Texec  min      : %10u ns  | max : %10u ns\n",
+                            exec_min, exec_max);
+                    printf("Tjitter min     : %10u ns  | max : %10u ns\n",
+                            jitter_min, jitter_max);  
+                    printf("Publish time min: %10d ns  | max : %10d ns\n",
+                          publish_time_min, publish_time_max);                             
+                    printf("-----------------------------------------------\n\n");
                     // std::cout << min_period << " " << max_period << " " << exec_min << " " << exec_max << " " << jitter_min << " " << jitter_max << std::endl;
                     /*  std::cout <<    "Left Switch   : " << unsigned(received_data_.left_limit_switch_val) << std::endl << 
                                         "Right Switch  : " << unsigned(received_data_.right_limit_switch_val) << std::endl;
@@ -505,7 +506,7 @@ void EthercatLifeCycle::StartPdoExchange(void *instance)
                         // std::cout << "Emergency button  : " << unsigned(gui_node_data_) << std::endl;
                     //std::cout << std::dec << publishing_time_ns << std::endl;
                     //std::cout << std::dec << time_span.count() << std::endl;
-                    print_val=10;
+                    print_val=1000;
 
                     //  std::cout << "Finished...." << std::endl;
                     //  break;
@@ -517,7 +518,7 @@ void EthercatLifeCycle::StartPdoExchange(void *instance)
             if(!print_max_min){
                 //printf("Publish time min: %10d ns  | max : %10d ns\n",
                 //publish_time_min, publish_time_max);
-                break;
+                
             }
                 print_max_min--;        
                 period_max_ns = 0;
@@ -585,8 +586,11 @@ void EthercatLifeCycle::StartPdoExchange(void *instance)
     usleep(10000);
     // ------------------------------------------------------- //
 
-    printf( "Leaving control thread.");
+    printf("Leaving control thread.\n");
     ecat_node_->DeactivateCommunication();
+    pthread_setcancelstate(PTHREAD_CANCEL_ENABLE,NULL);
+    pthread_cancel(ethercat_thread_);
+    pthread_exit(NULL);
     return;
 }// StartPdoExchange end
 
@@ -607,6 +611,8 @@ void EthercatLifeCycle::ReadFromSlaves()
 void EthercatLifeCycle::WriteToSlavesVelocityMode()
 {
   //  printf( "Writing to slaves....\n");
+    emergency_status_=1;
+    gui_node_data_=1;
   if(!emergency_status_ || !gui_node_data_){
     for(int i = 0 ; i < g_kNumberOfServoDrivers ; i++){
         EC_WRITE_U16(ecat_node_->slaves_[i].slave_pdo_domain_ + ecat_node_->slaves_[i].offset_.control_word,sent_data_.control_word[i]);
@@ -976,13 +982,12 @@ void EthercatLifeCycle::UpdateCyclicVelocityModeParameters()
     float maxSpeed = 250.0;    // rpm
     float val;
     // printf( "Updating control parameters....\n");
-
-    // Settings for motor 1;
+        // Settings for motor 1;
     if(motor_state_[0]==kOperationEnabled || motor_state_[0]==kSwitchedOn)
     {
         val = controller_.left_y_axis_;
         if((val > deadzone) || (val < -deadzone))       
-            {   sent_data_.target_vel[0] = -val*maxSpeed;    }
+            {   sent_data_.target_vel[0] = int32_t(-val*maxSpeed);  }
         else
             {   sent_data_.target_vel[0] = 0;               }
     }

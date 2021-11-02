@@ -221,7 +221,7 @@ class EthercatLifeCycle
          */
         int EnableDrivers();
 
-    private : 
+    public : 
         /// pthread create required parameters.
         pthread_t ethercat_thread_;
         struct sched_param ethercat_sched_param_ = {};

@@ -70,8 +70,9 @@
 
 /****************************************************************************/
                 // USER SHOULD DEFINE THIS AREAS //
-#define NUM_OF_SLAVES     2  // Total number of connected slave to the bus.
+#define NUM_OF_SLAVES     1  // Total number of connected slave to the bus.
 const uint32_t  g_kNumberOfServoDrivers = 1 ; // Number of connected servo drives.
+#define CUSTOM_SLAVE     0  
 #define FREQUENCY       1000  // Ethercat PDO exchange loop frequency in Hz
 #define MEASURE_TIMING         1    // If you want to measure timings leave it as one, otherwise make it 0.
 #define VELOCITY_MODE          0    // set this to 1 if you want to use it in velocity mode (and set position mode 0)
@@ -88,7 +89,9 @@ const uint32_t           g_kNsPerSec = 1000000000;     // Nanoseconds per second
 #define PERIOD_NS       (g_kNsPerSec/FREQUENCY)  // EtherCAT communication period in nanoseconds.
 #define PERIOD_US       (PERIOD_NS / 1000)
 #define PERIOD_MS       (PERIOD_US / 1000)
-#define FINAL_SLAVE     (NUM_OF_SLAVES-1)
+#if CUSTOM_SLAVE
+    #define FINAL_SLAVE     (NUM_OF_SLAVES-1)
+#endif
 /****************************************************************************/
 //// Global variable declarations, definitions are in @file ethercat_node.cpp
 static volatile sig_atomic_t sig = 1;

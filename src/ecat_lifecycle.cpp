@@ -110,7 +110,10 @@ int EthercatLifeCycle::SetComThreadPriorities()
     // save and exit, and type sudo update-grub and reboot.
      cpu_set_t mask;
     CPU_ZERO(&mask);
-    CPU_SET(3,&mask);
+    CPU_SET(8,&mask);
+    CPU_SET(9,&mask);
+	CPU_SET(10,&mask);
+	CPU_SET(11,&mask);
 
     int result = sched_setaffinity(0,sizeof(mask),&mask);
     /**********************************************************************************************/
@@ -602,10 +605,12 @@ void EthercatLifeCycle::ReadFromSlaves()
         received_data_.status_word[i] = EC_READ_U16(ecat_node_->slaves_[i].slave_pdo_domain_ +ecat_node_->slaves_[i].offset_.status_word);
     }
     received_data_.com_status = al_state_ ; 
-    received_data_.right_limit_switch_val = EC_READ_U8(ecat_node_->slaves_[FINAL_SLAVE].slave_pdo_domain_ +ecat_node_->slaves_[FINAL_SLAVE].offset_.r_limit_switch);
-    received_data_.left_limit_switch_val  = EC_READ_U8(ecat_node_->slaves_[FINAL_SLAVE].slave_pdo_domain_ +ecat_node_->slaves_[FINAL_SLAVE].offset_.l_limit_switch);
-    received_data_.emergency_switch_val = EC_READ_U8(ecat_node_->slaves_[FINAL_SLAVE].slave_pdo_domain_ +ecat_node_->slaves_[FINAL_SLAVE].offset_.emergency_switch);
-    emergency_status_  = received_data_.emergency_switch_val;
+    #if CUSTOM_SLAVE
+        received_data_.right_limit_switch_val = EC_READ_U8(ecat_node_->slaves_[FINAL_SLAVE].slave_pdo_domain_ +ecat_node_->slaves_[FINAL_SLAVE].offset_.r_limit_switch);
+        received_data_.left_limit_switch_val  = EC_READ_U8(ecat_node_->slaves_[FINAL_SLAVE].slave_pdo_domain_ +ecat_node_->slaves_[FINAL_SLAVE].offset_.l_limit_switch);
+        received_data_.emergency_switch_val = EC_READ_U8(ecat_node_->slaves_[FINAL_SLAVE].slave_pdo_domain_ +ecat_node_->slaves_[FINAL_SLAVE].offset_.emergency_switch);
+        emergency_status_  = received_data_.emergency_switch_val;
+    #endif
 }// ReadFromSlaves end
 
 void EthercatLifeCycle::WriteToSlavesVelocityMode()

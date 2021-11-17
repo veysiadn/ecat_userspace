@@ -168,12 +168,12 @@ int EthercatNode::MapDefaultPdos()
             return -1;
         }
     }
-    
-    if(ecrt_slave_config_pdos(slaves_[FINAL_SLAVE].slave_config_,EC_END,easycat_syncs)){
-        printf( "EasyCAT slave PDO configuration failed... ");
-        return -1;
-    }
-    
+    #if CUSTOM_SLAVE
+        if(ecrt_slave_config_pdos(slaves_[FINAL_SLAVE].slave_config_,EC_END,easycat_syncs)){
+            printf( "EasyCAT slave PDO configuration failed... ");
+            return -1;
+        }
+    #endif
     // CKim - Registers a PDO entry for process data exchange in a domain. Obtain offsets
     for(int i = 0; i < g_kNumberOfServoDrivers ; i++){
         this->slaves_[i].offset_.actual_pos        = ecrt_slave_config_reg_pdo_entry(this->slaves_[i].slave_config_,
@@ -197,25 +197,26 @@ int EthercatNode::MapDefaultPdos()
             return -1;
         }
     }
-
-    slaves_[FINAL_SLAVE].offset_.r_limit_switch = ecrt_slave_config_reg_pdo_entry(slaves_[FINAL_SLAVE].slave_config_,
-                                                                                  0x006,0x006,g_master_domain,NULL);
-    if (slaves_[FINAL_SLAVE].offset_.r_limit_switch < 0){
-        printf("EasyCAT right limit switch PDO configuration failed...\n");
-        return -1;
-    }
-    slaves_[FINAL_SLAVE].offset_.l_limit_switch = ecrt_slave_config_reg_pdo_entry(slaves_[FINAL_SLAVE].slave_config_,
-                                                                                  0x006, 0x07, g_master_domain, NULL);
-    if (slaves_[FINAL_SLAVE].offset_.l_limit_switch < 0){
-        printf("EasyCAT left limit switch PDO configuration failed...\n");
-        return -1;
-    }
-    slaves_[FINAL_SLAVE].offset_.emergency_switch = ecrt_slave_config_reg_pdo_entry(slaves_[FINAL_SLAVE].slave_config_,
-                                                                                  0x006, 0x05, g_master_domain, NULL);
-    if (slaves_[FINAL_SLAVE].offset_.emergency_switch < 0){
-        printf("EasyCAT left limit switch PDO configuration failed...\n");
-        return -1;
-    }
+    #if CUSTOM_SLAVE
+        slaves_[FINAL_SLAVE].offset_.r_limit_switch = ecrt_slave_config_reg_pdo_entry(slaves_[FINAL_SLAVE].slave_config_,
+                                                                                    0x006,0x006,g_master_domain,NULL);
+        if (slaves_[FINAL_SLAVE].offset_.r_limit_switch < 0){
+            printf("EasyCAT right limit switch PDO configuration failed...\n");
+            return -1;
+        }
+        slaves_[FINAL_SLAVE].offset_.l_limit_switch = ecrt_slave_config_reg_pdo_entry(slaves_[FINAL_SLAVE].slave_config_,
+                                                                                    0x006, 0x07, g_master_domain, NULL);
+        if (slaves_[FINAL_SLAVE].offset_.l_limit_switch < 0){
+            printf("EasyCAT left limit switch PDO configuration failed...\n");
+            return -1;
+        }
+        slaves_[FINAL_SLAVE].offset_.emergency_switch = ecrt_slave_config_reg_pdo_entry(slaves_[FINAL_SLAVE].slave_config_,
+                                                                                    0x006, 0x05, g_master_domain, NULL);
+        if (slaves_[FINAL_SLAVE].offset_.emergency_switch < 0){
+            printf("EasyCAT left limit switch PDO configuration failed...\n");
+            return -1;
+        }
+    #endif
     return 0;
 }
 
@@ -224,7 +225,9 @@ void EthercatNode::ConfigDcSyncDefault()
     for(int i=0; i < g_kNumberOfServoDrivers ; i++){
         ecrt_slave_config_dc(slaves_[i].slave_config_, 0X0300, PERIOD_NS, slaves_[i].kSync0_shift_, 0, 0);
     }
-    ecrt_slave_config_dc(slaves_[FINAL_SLAVE].slave_config_, 0X0300, PERIOD_NS, 2000200000, 0, 0);
+    #if CUSTOM_SLAVE
+        ecrt_slave_config_dc(slaves_[FINAL_SLAVE].slave_config_, 0X0300, PERIOD_NS, 2000200000, 0, 0);
+    #endif
 }
 
 int EthercatNode::ActivateMaster()

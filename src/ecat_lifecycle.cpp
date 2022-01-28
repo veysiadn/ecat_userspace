@@ -229,14 +229,48 @@ int EthercatLifeCycle::InitEthercatCommunication()
     ecat_node_->SetCyclicSyncVelocityModeParametersAll(P);
 #endif
 
+#if CYCLIC_TORQUE_MODE
+    printf("Setting drives to CST mode...\n");
+    CSTorqueModeParam P ;
+    P.profile_dec=3e4 ;
+    P.quick_stop_dec = 3e4 ;
+    ecat_node_->SetCyclicSyncTorqueModeParametersAll(P);
+#endif
+
     printf("Mapping default PDOs...\n");
     if(ecat_node_->MapDefaultPdos()){
         return  -1 ;
     }
+    // std::vector<SDO_data> pack(NUM_OF_SLAVES) ; 
+    // for(int i = 0 ; i < 3 ; i++){
+    //     for(int i=0 ; i < NUM_OF_SLAVES; i++){
+    //         pack[i].slave_position = i;
+    //         pack[i].index = OD_STATUS_WORD ; f
+    //         pack[i].sub_index = 0 ;
+    //         pack[i].data_sz = sizeof(uint16_t);
+    //         ecat_node_->SdoRead(pack[i]);
+    //         std::cout << "Data size of SDO Read : " << pack[i].data_sz << std::endl;
+    //         std::cout << "Status Word           : " << received_data_.status_word[i] << std::endl;
+
+    //         received_data_.status_word[i] = (uint16_t)(pack[i].data);
+    //         if(EnableDrivers()==g_kNumberOfServoDrivers){
+    //             std::cout << "All drives are enabled " << std::endl; 
+    //             usleep(5e6);
+    //             break;
+    //         };
+
+    //         pack[i].index = OD_CONTROL_WORD;
+    //         pack[i].data = uint32_t(sent_data_.control_word[i]);
+    //         ecat_node_->SdoWrite(pack[i]);
+
+    //         // std::cout << "Slave "<< i << "th status word : "<<  data << std::endl; 
+    //     }
+    // }
 
     printf("Configuring DC synchronization...\n");
-    ecat_node_->ConfigDcSyncDefault();
-
+    if(DISTRIBUTED_CLOCK){
+     ecat_node_->ConfigDcSyncDefault();
+    }
     printf("Activating master...\n");
     if(ecat_node_->ActivateMaster()){
         return  -1 ;
@@ -280,12 +314,12 @@ void EthercatLifeCycle::StartPdoExchange(void *instance)
 {
     printf( "Starting PDO exchange....\n");
     // Measurement time in minutes, e.g.
-    uint32_t print_max_min = measurement_time * 60000 ; 
+    // uint32_t print_max_min = measurement_time * 60000 ; 
+    uint32_t print_max_min = 15000 ; 
     uint32_t print_val = 1e4;
     int error_check=0;
+    uint8_t sync_ref_counter = 1;
     struct timespec wake_up_time, time, publish_time_start={}, publish_time_end={};
-    // get current time
-    clock_gettime(CLOCK_TO_USE, &wake_up_time);
     int begin=1e4;
     int status_check_counter = 1000;
     
@@ -293,6 +327,8 @@ void EthercatLifeCycle::StartPdoExchange(void *instance)
     // CKim - Initialization loop before entring control loop. 
     // Switch On and Enable Driver
     printf( "Enabling motors...\n");
+    // get current time
+    clock_gettime(CLOCK_TO_USE, &wake_up_time);
     while(sig)
     {
         // CKim - Sleep for 1 ms
@@ -334,7 +370,6 @@ void EthercatLifeCycle::StartPdoExchange(void *instance)
                 al_state_ = g_master_state.al_states ; 
                 received_data_.emergency_switch_val=0;
                 emergency_status_=0;
-                PublishAllData();
                 error_check++;                    
                 if(error_check==5)
                     return;
@@ -355,17 +390,21 @@ void EthercatLifeCycle::StartPdoExchange(void *instance)
             }
         }
 
-        // CKim - Queue data
-        PublishAllData();
-        
         //WriteToSlavesInPositionMode();
         WriteToSlavesVelocityMode();
-        ecrt_domain_queue(g_master_domain);
+
         // CKim - Sync Timer
-        clock_gettime(CLOCK_TO_USE, &time);
-        ecrt_master_sync_reference_clock_to(g_master, TIMESPEC2NS(time));
+        if (sync_ref_counter) {
+            sync_ref_counter--;
+        } else {
+            sync_ref_counter = 1; // sync every cycle
+
+            clock_gettime(CLOCK_TO_USE, &time);
+            ecrt_master_sync_reference_clock_to(g_master, TIMESPEC2NS(time));
+        }
         ecrt_master_sync_slave_clocks(g_master);
 
+        ecrt_domain_queue(g_master_domain);
         // CKim - Send process data
         ecrt_master_send(g_master);
     }// while(sig)
@@ -373,7 +412,7 @@ void EthercatLifeCycle::StartPdoExchange(void *instance)
 
     // ------------------------------------------------------- //
     // CKim - All motors enabled. Start control loop
-        #if MEASURE_TIMING
+    #if MEASURE_TIMING
         struct timespec start_time, end_time, last_start_time = {};
         uint32_t period_ns = 0, exec_ns = 0, latency_ns = 0,
         latency_min_ns = 0xffffffff, latency_max_ns = 0,
@@ -393,6 +432,8 @@ void EthercatLifeCycle::StartPdoExchange(void *instance)
         
         #if MEASURE_TIMING
             clock_gettime(CLOCK_TO_USE, &start_time);
+            timer_info_.GetTime();
+            timer_info_.MeasureTimeDifference();
             old_latency = latency_ns;
             latency_ns = DIFF_NS(wake_up_time, start_time);
             period_ns = DIFF_NS(last_start_time, start_time);
@@ -401,15 +442,15 @@ void EthercatLifeCycle::StartPdoExchange(void *instance)
             if(!begin)
             {
                 jitter = latency_ns - old_latency ;
-                if(jitter < 0 )                         jitter *=-1; 
-                if(jitter > jitter_max)             jitter_max  = jitter ; 
-                if(latency_ns > max_latency)        max_latency = latency_ns;
+                if(jitter < 0 )                     jitter *=-1; 
+                if(jitter > jitter_max)             jitter_max  = jitter ;
+                if(jitter < jitter_min)             jitter_min  = jitter;                 
                 if(period_ns > max_period)          max_period  = period_ns;
+                if(period_ns < min_period)          min_period  = period_ns;                
                 if(exec_ns > exec_max)              exec_max    = exec_ns;
-                if(period_ns < min_period)          min_period  = period_ns;
                 if(exec_ns < exec_min)              exec_min    = exec_ns;
+                if(latency_ns > max_latency)        max_latency = latency_ns;
                 if(latency_ns < latency_min)        latency_min = latency_ns;
-                if(jitter < jitter_min)             jitter_min  = jitter;
             }
 
             if (latency_ns > latency_max_ns)  {
@@ -459,10 +500,10 @@ void EthercatLifeCycle::StartPdoExchange(void *instance)
                 }
             }
 
-        #if MEASURE_TIMING
-        if(!begin)
-        clock_gettime(CLOCK_TO_USE, &publish_time_start);
-        #endif
+        // #if MEASURE_TIMING
+        // if(!begin)
+        // clock_gettime(CLOCK_TO_USE, &publish_time_start);
+        // #endif
         
         // timer_info_.GetTime();
         // PublishAllData();
@@ -471,13 +512,13 @@ void EthercatLifeCycle::StartPdoExchange(void *instance)
         //     timer_info_.OutInfoToFile();
         //     //break;
         // }
-        #if MEASURE_TIMING
-        if(!begin)
-        clock_gettime(CLOCK_TO_USE, &publish_time_end);
-        publishing_time_ns = DIFF_NS(publish_time_start,publish_time_end);
-        if(publishing_time_ns>publish_time_max) publish_time_max = publishing_time_ns;
-        if(publishing_time_ns<publish_time_min) publish_time_min = publishing_time_ns;
-        #endif
+        // #if MEASURE_TIMING
+        // if(!begin)
+        // clock_gettime(CLOCK_TO_USE, &publish_time_end);
+        // publishing_time_ns = DIFF_NS(publish_time_start,publish_time_end);
+        // if(publishing_time_ns>publish_time_max) publish_time_max = publishing_time_ns;
+        // if(publishing_time_ns<publish_time_min) publish_time_min = publishing_time_ns;
+        // #endif
 
         #if MEASURE_TIMING
             // output timing stats
@@ -498,19 +539,14 @@ void EthercatLifeCycle::StartPdoExchange(void *instance)
                             exec_min, exec_max);
                     printf("Tjitter min     : %10u ns  | max : %10u ns\n",
                             jitter_min, jitter_max);  
-                    printf("Publish time min: %10d ns  | max : %10d ns\n",
-                          publish_time_min, publish_time_max);                             
+                    printf("Timer info values: %10d us \n", timer_info_.time_span.count());                             
                     printf("-----------------------------------------------\n\n");
-                    // std::cout << min_period << " " << max_period << " " << exec_min << " " << exec_max << " " << jitter_min << " " << jitter_max << std::endl;
-                    /*  std::cout <<    "Left Switch   : " << unsigned(received_data_.left_limit_switch_val) << std::endl << 
-                                        "Right Switch  : " << unsigned(received_data_.right_limit_switch_val) << std::endl;
-                        std::cout << "Left X Axis    : " << controller_.left_x_axis_ << std::endl;
-                        std::cout << "Right X XAxis  : " << controller_.right_x_axis_ << std::endl;*/
-                        // std::cout << "Emergency button  : " << unsigned(gui_node_data_) << std::endl;
-                    //std::cout << std::dec << publishing_time_ns << std::endl;
-                    //std::cout << std::dec << time_span.count() << std::endl;
                     print_val=1000;
-
+                    std::cout << "Status word   : "<< received_data_.status_word[0] << std::endl;
+                    std::cout << "Control word  : "<< sent_data_.control_word[0] << std::endl;
+                    std::cout << "Actual Torque : "<< received_data_.actual_tor[0] << std::endl;
+                    std::cout << "Target Torque : "<< sent_data_.target_tor[0] << std::endl;
+                    std::cout << "Motor state   : "<< motor_state_[0] << std::endl; 
                     //  std::cout << "Finished...." << std::endl;
                     //  break;
             }else {
@@ -521,7 +557,9 @@ void EthercatLifeCycle::StartPdoExchange(void *instance)
             if(!print_max_min){
                 //printf("Publish time min: %10d ns  | max : %10d ns\n",
                 //publish_time_min, publish_time_max);
-                
+               // ecrt_master_deactivate(g_master);
+                //usleep(10e6);
+                //on_configure();
             }
                 print_max_min--;        
                 period_max_ns = 0;
@@ -554,6 +592,12 @@ void EthercatLifeCycle::StartPdoExchange(void *instance)
         UpdateMotorStateVelocityMode();
         UpdateCyclicVelocityModeParameters();
         WriteToSlavesVelocityMode();
+#endif
+
+#if CYCLIC_TORQUE_MODE
+        //UpdateMotorStateVelocityMode();
+        UpdateCyclicTorqueModeParameters();
+        WriteToSlavesInCyclicTorqueMode();
 #endif
         ecrt_domain_queue(g_master_domain);
         clock_gettime(CLOCK_TO_USE, &time);
@@ -603,6 +647,7 @@ void EthercatLifeCycle::ReadFromSlaves()
         received_data_.actual_pos[i]  = EC_READ_S32(ecat_node_->slaves_[i].slave_pdo_domain_ +ecat_node_->slaves_[i].offset_.actual_pos);
         received_data_.actual_vel[i]  = EC_READ_S32(ecat_node_->slaves_[i].slave_pdo_domain_ +ecat_node_->slaves_[i].offset_.actual_vel);
         received_data_.status_word[i] = EC_READ_U16(ecat_node_->slaves_[i].slave_pdo_domain_ +ecat_node_->slaves_[i].offset_.status_word);
+        received_data_.actual_tor[i]  = EC_READ_S16(ecat_node_->slaves_[i].slave_pdo_domain_ +ecat_node_->slaves_[i].offset_.actual_tor);
     }
     received_data_.com_status = al_state_ ; 
     #if CUSTOM_SLAVE
@@ -617,8 +662,7 @@ void EthercatLifeCycle::WriteToSlavesVelocityMode()
 {
   //  printf( "Writing to slaves....\n");
     emergency_status_=1;
-    gui_node_data_=1;
-  if(!emergency_status_ || !gui_node_data_){
+  if(!emergency_status_ ){
     for(int i = 0 ; i < g_kNumberOfServoDrivers ; i++){
         EC_WRITE_U16(ecat_node_->slaves_[i].slave_pdo_domain_ + ecat_node_->slaves_[i].offset_.control_word,sent_data_.control_word[i]);
         EC_WRITE_S32(ecat_node_->slaves_[i].slave_pdo_domain_ + ecat_node_->slaves_[i].offset_.target_vel,0);
@@ -631,10 +675,6 @@ void EthercatLifeCycle::WriteToSlavesVelocityMode()
   }
 }
 
-int EthercatLifeCycle::PublishAllData()
-{   
-   // printf( "Publishing all data....\n");
-}
 
 int EthercatLifeCycle::GetComState()
 {
@@ -843,7 +883,7 @@ void EthercatLifeCycle::WriteToSlavesInPositionMode()
             }
         }
     }else {
-        if(!emergency_status_ || !gui_node_data_){
+        if(!emergency_status_){
             for(int i = 0 ; i < g_kNumberOfServoDrivers ; i++){
                 EC_WRITE_U16(ecat_node_->slaves_[i].slave_pdo_domain_ + ecat_node_->slaves_[i].offset_.control_word,SM_QUICKSTOP);
         //      EC_WRITE_S32(ecat_node_->slaves_[i].slave_pdo_domain_ + ecat_node_->slaves_[i].offset_.target_pos,0);
@@ -855,6 +895,29 @@ void EthercatLifeCycle::WriteToSlavesInPositionMode()
             }
         }
     }
+}
+
+void EthercatLifeCycle::WriteToSlavesInCyclicTorqueMode()
+{
+  //  printf( "Writing to slaves....\n");
+    emergency_status_=1;
+  if(!emergency_status_)
+  {
+    for(int i = 0 ; i < g_kNumberOfServoDrivers ; i++){
+        EC_WRITE_U16(ecat_node_->slaves_[i].slave_pdo_domain_ + ecat_node_->slaves_[i].offset_.control_word,sent_data_.control_word[i]);
+        EC_WRITE_S16(ecat_node_->slaves_[i].slave_pdo_domain_ + ecat_node_->slaves_[i].offset_.target_tor,0);
+        EC_WRITE_S16(ecat_node_->slaves_[i].slave_pdo_domain_ + ecat_node_->slaves_[i].offset_.torque_offset,0);
+        
+    }
+  }
+  else
+  {
+    for(int i = 0 ; i < g_kNumberOfServoDrivers ; i++){
+        EC_WRITE_U16(ecat_node_->slaves_[i].slave_pdo_domain_ + ecat_node_->slaves_[i].offset_.control_word,sent_data_.control_word[i]);
+        EC_WRITE_S16(ecat_node_->slaves_[i].slave_pdo_domain_ + ecat_node_->slaves_[i].offset_.target_tor,sent_data_.target_tor[i]);
+        EC_WRITE_S16(ecat_node_->slaves_[i].slave_pdo_domain_ + ecat_node_->slaves_[i].offset_.torque_offset,0);
+    }
+  }
 }
 
 // void EthercatLifeCycle::UpdateCyclicPositionModeParameters()
@@ -1093,6 +1156,32 @@ void EthercatLifeCycle::UpdateVelocityModeParameters()
 
 }
 
+void EthercatLifeCycle::UpdateCyclicTorqueModeParameters()
+{
+    for(int i = 0 ; i < g_kNumberOfServoDrivers ; i++){
+        sent_data_.control_word[i] = SM_GO_ENABLE ; 
+        if(motor_state_[i]==kOperationEnabled || motor_state_[i]==kTargetReached || motor_state_[i]==kSwitchedOn){
+            if(controller_.right_x_axis_ > 5000 || controller_.right_x_axis_ < -5000 ){
+                sent_data_.target_tor[0] = controller_.left_x_axis_ * 200 ;
+            }else{
+                sent_data_.target_tor[0] = 0;
+            }
+            if(controller_.left_x_axis_ < -1000 || controller_.left_x_axis_ > 1000){
+                sent_data_.target_tor[1] = controller_.left_x_axis_ /300;
+            }else{
+                sent_data_.target_tor[1] = 0 ;
+            }
+            if(controller_.left_y_axis_ < -1000 || controller_.left_y_axis_ > 1000){
+                sent_data_.target_tor[2] = controller_.left_y_axis_ /300 ;
+            }else{
+                sent_data_.target_tor[2] = 0 ;
+            }
+        }else{
+            sent_data_.target_tor[i]=0;
+        }
+    }
+}
+
 void EthercatLifeCycle::UpdateMotorStateVelocityMode()
 {
     for(int i = 0 ; i < g_kNumberOfServoDrivers ; i++){
@@ -1110,18 +1199,21 @@ void EthercatLifeCycle::UpdateMotorStateVelocityMode()
                 sent_data_.control_word[i]  = SM_GO_READY_TO_SWITCH_ON;
                 command_ = 0x006f;
                 motor_state_[i] = kSwitchOnDisabled;
+                // std::cout << "Sending go reeady to switch on" << std::endl;
             } else if ( (received_data_.status_word[i] & command_) == 0x0021){
                     // If status is "Ready to switch on", \
                         change state to "Switched on"
                 sent_data_.control_word[i]  = SM_GO_SWITCH_ON;     
                 command_ = 0x006f;
                 motor_state_[i] = kReadyToSwitchOn;
-
+                // std::cout << "Sending go switch on" << std::endl;
+                
             } else if ( (received_data_.status_word[i] & command_) == 0x0023){         
                 // If status is "Switched on", change state to "Operation enabled"
                 sent_data_.control_word[i]  = SM_GO_ENABLE;
                 command_ = 0x006f;
                 motor_state_[i] = kSwitchedOn;
+                // std::cout << "Sending go enable" << std::endl;                
 
             }else if ((received_data_.status_word[i] & command_) == 0X08){             
                 //if status is fault, reset fault state.
@@ -1129,47 +1221,9 @@ void EthercatLifeCycle::UpdateMotorStateVelocityMode()
 
                 sent_data_.control_word[i]  = SM_FULL_RESET;
                 motor_state_[i] = kFault;
+                // std::cout << "Sending full reset" << std::endl;                
             }
         }
     }
     return ;
-}
-
-void EthercatLifeCycle::EnableMotors()
-{
-    //DS402 CANOpen over EtherCAT state machine
-    for(int i = 0 ; i < g_kNumberOfServoDrivers ; i++){
-        sent_data_.control_word[i] = SM_GO_READY_TO_SWITCH_ON;
-        if ( (received_data_.status_word[i] & command_) == 0x0040){  
-            // If status is "Switch on disabled", \
-            change state to "Ready to switch on"
-            sent_data_.control_word[i]  = SM_GO_READY_TO_SWITCH_ON;
-            command_ = 0x006f;
-            motor_state_[i] = kSwitchOnDisabled;
-           // printf("Transiting to -Ready to switch on state...- \n");
-
-        } else if ( (received_data_.status_word[i] & command_) == 0x0021){ // If status is "Ready to switch on", \
-                                                        change state to "Switched on"
-            sent_data_.control_word[i]  = SM_GO_SWITCH_ON;     
-            command_ = 0x006f;
-            motor_state_[i] = kReadyToSwitchOn;
-         //   printf("Transiting to -Switched on state...- \n");        
-
-        } else if ( (received_data_.status_word[i] & command_) == 0x0023){         
-            // If status is "Switched on", change state to "Operation enabled"
-
-            // printf("Operation enabled...\n");
-            sent_data_.control_word[i]  = SM_GO_ENABLE;
-            command_ = 0x006f;
-            motor_state_[i] = kSwitchedOn;
-
-        }else if ((received_data_.status_word[i] & command_) == 0X08){             
-            //if status is fault, reset fault state.
-            command_ = 0X04F;
-
-            sent_data_.control_word[i] = SM_FULL_RESET;
-            motor_state_[i] = kFault;
-
-        }
-    }
 }

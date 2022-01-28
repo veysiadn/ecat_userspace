@@ -9,7 +9,7 @@ void signalHandler(int /*signum*/)
 {
     sig = 0;
     nanosleep((const struct timespec[]){0,g_kNsPerSec},NULL);
-    ecat_lifecycle_node->on_shutdown();
+  //  ecat_lifecycle_node->on_shutdown();
 }
 
 int main(int argc, char **argv)
@@ -47,7 +47,7 @@ int main(int argc, char **argv)
     {
         return -1;
     }
-     if (Controller.initXboxController(XBOX_DEVICE) >= 0) {
+    if (Controller.initXboxController(XBOX_DEVICE) >= 0) {
 		Controller.xbox = Controller.getXboxDataStruct();
 		Controller.readXboxControllerInformation(Controller.xbox);
 
@@ -57,6 +57,7 @@ int main(int argc, char **argv)
         {
             Controller.readXboxData(Controller.xbox );
             ecat_lifecycle_node->controller_.left_x_axis_  = float(Controller.xbox->stk_LeftX / 32767.0);
+            ecat_lifecycle_node->controller_.right_x_axis_  = float(Controller.xbox->stk_RightX);
             ecat_lifecycle_node->controller_.left_y_axis_ = float(Controller.xbox->stk_LeftY / 32767.0);
             ecat_lifecycle_node->controller_.left_rb_button_ = Controller.xbox->btn_leftTop;
             ecat_lifecycle_node->controller_.right_rb_button_ = Controller.xbox->btn_rightTop;

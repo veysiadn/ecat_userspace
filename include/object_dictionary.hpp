@@ -4,21 +4,23 @@
  *
  *  Copyright (C) 2021 Veysi ADIN, UST KIST
  *
- *  This file is part of the IgH EtherCAT master userspace program in the ROS2 environment.
+ *  This file is part of the Wrapped IgH EtherCAT master userspace program 
+ * for control applications.
  *
- *  The IgH EtherCAT master userspace program in the ROS2 environment is free software; you can
- *  redistribute it and/or modify it under the terms of the GNU General
- *  Public License as published by the Free Software Foundation; version 2
- *  of the License.
+ *  The Wrapped IgH EtherCAT master userspace program for control application
+ *  in userspace is free software; you canredistribute it and/or modify it 
+ * under the terms of the GNU General Public License as published by the 
+ * Free Software Foundation; version 2 of the License.
  *
- *  The IgH EtherCAT master userspace program in the ROS2 environment is distributed in the hope that
- *  it will be useful, but WITHOUT ANY WARRANTY; without even the implied
- *  warranty of MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
- *  GNU General Public License for more details.
+ *  The Wrapped IgH EtherCAT master userspace program for control application
+ *  is distributed in the hope that it will be useful, but WITHOUT ANY WARRANTY;
+ *  without even the implied warranty of MERCHANTABILITY or FITNESS FOR A PARTICULAR 
+ *  PURPOSE.  
+ *  See the  GNU General Public License for more details.
  *
  *  You should have received a copy of the GNU General Public License
- *  along with the IgH EtherCAT master userspace program in the ROS environment. If not, see
- *  <http://www.gnu.org/licenses/>.
+ *  along with the Wrapped IgH EtherCAT master userspace program for control application. 
+ * If not, see <http://www.gnu.org/licenses/>.
  *
  *  ---
  *
@@ -27,17 +29,16 @@
  *  industrial property and similar rights of Beckhoff Automation GmbH.
  *
  *  Contact information: veysi.adin@kist.re.kr
- *******************************************************************************/
+ *****************************************************************************/
 /*******************************************************************************
  * \file  object_dictionary.hpp
  * \brief Contains object dictionary and state machine definitions based on CIA402
- * 		  Some index and subindexes may be specific to Elmo Gold Solo Twitter.
+ * 		  Some index and subindexes may be specific to Maxon EPOS4.
  * 		  Check indexes if you're using different slave.
  *******************************************************************************/
 
 #pragma once
 
-// Object Dictionary of Elmo GOLD Solo Twitter Starts.
 #define OD_CONTROL_WORD            0x6040,0x00
 #define OD_STATUS_WORD             0x6041,0x00
 
@@ -115,7 +116,6 @@
 #define OD_QUICK_STOP_MODE           	0x605A,0x00
 #define OD_STOP_OPTION_CODE         	0x605D,0x00
 
-// Object Dictionary of Elmo GOLD Solo Twitter Ends.
 /*****************************************************************/
 // CIA 402 State machine definitions start. 
 

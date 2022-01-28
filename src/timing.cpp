@@ -6,8 +6,8 @@ void Timing::GetTime()
 }
 void Timing::MeasureTimeDifference()
 {
-    time_span = std::chrono::duration_cast<std::chrono::microseconds>(timer_start_ - last_start_time_);
-    timing_info_.insert(timing_info_.begin(), time_span.count());
+    time_span_ = std::chrono::duration_cast<std::chrono::microseconds>(timer_start_ - last_start_time_);
+    // timing_info_.insert(timing_info_.begin(), time_span.count());
     last_start_time_ = timer_start_;
     counter_++;
 }

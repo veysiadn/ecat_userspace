@@ -4,21 +4,23 @@
  *
  *  Copyright (C) 2021 Veysi ADIN, UST KIST
  *
- *  This file is part of the IgH EtherCAT master userspace program in the ROS2 environment.
+ *  This file is part of the Wrapped IgH EtherCAT master userspace program 
+ * for control applications.
  *
- *  The IgH EtherCAT master userspace program in the ROS2 environment is free software; you can
- *  redistribute it and/or modify it under the terms of the GNU General
- *  Public License as published by the Free Software Foundation; version 2
- *  of the License.
+ *  The Wrapped IgH EtherCAT master userspace program for control application
+ *  in userspace is free software; you canredistribute it and/or modify it 
+ * under the terms of the GNU General Public License as published by the 
+ * Free Software Foundation; version 2 of the License.
  *
- *  The IgH EtherCAT master userspace program in the ROS2 environment is distributed in the hope that
- *  it will be useful, but WITHOUT ANY WARRANTY; without even the implied
- *  warranty of MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
- *  GNU General Public License for more details.
+ *  The Wrapped IgH EtherCAT master userspace program for control application
+ *  is distributed in the hope that it will be useful, but WITHOUT ANY WARRANTY;
+ *  without even the implied warranty of MERCHANTABILITY or FITNESS FOR A PARTICULAR 
+ *  PURPOSE.  
+ *  See the  GNU General Public License for more details.
  *
  *  You should have received a copy of the GNU General Public License
- *  along with the IgH EtherCAT master userspace program in the ROS environment. If not, see
- *  <http://www.gnu.org/licenses/>.
+ *  along with the Wrapped IgH EtherCAT master userspace program for control application. 
+ * If not, see <http://www.gnu.org/licenses/>.
  *
  *  ---
  *
@@ -34,7 +36,6 @@
  * 
  *   This header file contains blueprint of EtherCAT slave's which will be 
  *   used to  communicate with EtherCAT master.
- *    @todo After implementation explain functionality of this class and methods.
  *******************************************************************************/
 #pragma once
 
@@ -92,7 +93,7 @@ class EthercatSlave
     /// Offset for PDO entries to assign pdo registers.
     OffsetPDO                 offset_ ;
     /// Received data from servo drivers.
-    ReceivedData              data_ ;
+    DataReceived              data_ ;
     /// Slave velocity parameters.
     ProfileVelocityParam    velocity_param_ ;
     /// Slave position parameters.

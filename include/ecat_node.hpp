@@ -4,21 +4,23 @@
  *
  *  Copyright (C) 2021 Veysi ADIN, UST KIST
  *
- *  This file is part of the IgH EtherCAT master userspace program in the ROS2 environment.
+ *  This file is part of the Wrapped IgH EtherCAT master userspace program 
+ * for control applications.
  *
- *  The IgH EtherCAT master userspace program in the ROS2 environment is free software; you can
- *  redistribute it and/or modify it under the terms of the GNU General
- *  Public License as published by the Free Software Foundation; version 2
- *  of the License.
+ *  The Wrapped IgH EtherCAT master userspace program for control application
+ *  in userspace is free software; you canredistribute it and/or modify it 
+ * under the terms of the GNU General Public License as published by the 
+ * Free Software Foundation; version 2 of the License.
  *
- *  The IgH EtherCAT master userspace program in the ROS2 environment is distributed in the hope that
- *  it will be useful, but WITHOUT ANY WARRANTY; without even the implied
- *  warranty of MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
- *  GNU General Public License for more details.
+ *  The Wrapped IgH EtherCAT master userspace program for control application
+ *  is distributed in the hope that it will be useful, but WITHOUT ANY WARRANTY;
+ *  without even the implied warranty of MERCHANTABILITY or FITNESS FOR A PARTICULAR 
+ *  PURPOSE.  
+ *  See the  GNU General Public License for more details.
  *
  *  You should have received a copy of the GNU General Public License
- *  along with the IgH EtherCAT master userspace program in the ROS environment. If not, see
- *  <http://www.gnu.org/licenses/>.
+ *  along with the Wrapped IgH EtherCAT master userspace program for control application. 
+ * If not, see <http://www.gnu.org/licenses/>.
  *
  *  ---
  *
@@ -51,6 +53,7 @@ class EthercatNode
     public:
         EthercatNode();
         ~EthercatNode();
+    /// Slave instances
     EthercatSlave slaves_[NUM_OF_SLAVES];
 /**
  * @brief Requests master instance and creates a domain for a master.
@@ -59,30 +62,23 @@ class EthercatNode
  */
     int  ConfigureMaster();
 /**
- * @brief Defines default connected slaves based on number of slaves.
- *        Specifies its position, vendor id , product code etc.
- *  Default connected slaves considered implementation specific. In our case it will be 3 motors and 
- *  one EasyCAT slave.
- */
-    void DefineDefaultSlaves();
-/**
  * @brief Passes your defined slave to EthercatNode class.
  * 
  * @param c_slave first create your own EthercatSlave instance and modify it then pass it to configuration.
- * @param position specify the physical connection position for your custom configured slave.
+ * @param position specify the physical connection position w.r.t to master for your custom configured slave.
  */
     void SetCustomSlave(EthercatSlave c_slave, int position);
 /**
  * @brief Obtains slave configuration for all slaves w.r.t master.
- * @return 0 if succesfull, otherwise -1. 
+ * @return 0 if successfull, otherwise -1. 
  */
     int  ConfigureSlaves();
 /**
- * @brief Set mode to ProfilePositionMode with specified parameters for servo drive on that position.
+ * @brief Set mode to ProfilePositionMode with specified parameters for drive in specified position.
  *       
  * @param P Profile position parameter structure specified by user.
  * @param position Slave position
- * @return 0 if succesfull, otherwise -1.
+ * @return 0 if successfull, otherwise -1.
  */
     int  SetProfilePositionParameters(ProfilePosParam& P , int position);
 /**
@@ -93,7 +89,7 @@ class EthercatNode
  */
     int SetProfilePositionParametersAll(ProfilePosParam& P);
 /**
- * @brief Set mode to ProfileVelocityMode with specified parameters for servo drive on that position.
+ * @brief Set mode to ProfileVelocityMode with specified parameters for servo drive in specified position.
  * 
  * @param P Profile velocity parameter structure specified by user.
  * @param position Slave position
@@ -104,7 +100,7 @@ class EthercatNode
  * @brief Set mode to ProfileVelocityMode with specified parameters for all servo drives on the bus
  * 
  * @param P Profile velocity parameter structure specified by user.
- * @return 0 if succesfull, -1 otherwise.
+ * @return 0 if successfull, -1 otherwise.
  * @todo Add error code to all functions.Instead of returning -1. 
  */
     int SetProfileVelocityParametersAll(ProfileVelocityParam& P);
@@ -139,11 +135,28 @@ class EthercatNode
     int SetCyclicSyncVelocityModeParametersAll(CSVelocityModeParam &P);
 
 /**
+ * @brief Set the Cyclic Sync Torque Mode Parameters for slave in specified physical position w.r.t. master.
+ * 
+ * @param P Cyclic Sync. Torque Mode Parameters.
+ * @param position Physical position of slave to be configured
+ * @return 0 if sucessfull, otherwise -1.
+ */
+    int SetCyclicSyncTorqueModeParameters(CSTorqueModeParam& P, int position);
+
+/**
+ * @brief Sets the Cyclic Synchronous Torque Mode Parameters for all connected motor driver slaves
+ * 
+ * @return 0 if sucessful, otherwise -1.
+ */
+    int SetCyclicSyncTorqueModeParametersAll(CSTorqueModeParam &P);
+
+
+/**
  * @brief Maps default PDOs for our spine surgery robot implementation.
  * @note This method is specific for our spinerobot implementation.
  * If you have different topology or different servo drives use 
  * \see MapCustomPdos() function of modify this function based on your needs.
- * @return 0 if succesfull, otherwise -1.
+ * @return 0 if successfull, otherwise -1.
  */
     int MapDefaultPdos();
 /**
@@ -151,7 +164,7 @@ class EthercatNode
  * @note  You have to specify slave syncs and slave pdo registers before using function
  * @param c_slave EthercatSlave instance
  * @param position Physical position of your slave w.r.t master
- * @return 0 if succesfull, -1 otherwise.
+ * @return 0 if successfull, -1 otherwise.
  */
     int MapCustomPdos(EthercatSlave c_slave, int position);
 /**
@@ -166,7 +179,7 @@ class EthercatNode
  * 0x300 for Elmo | and same for EasyCAT
  * @note Assign activate parameters specified in slaves ESI file 
  * 
- * @param position
+ * @param position Physical position w.r.t master. e.g 1,2,3...
  */
     void ConfigDcSync(uint16_t assign_activate, int position);
 /**
@@ -174,7 +187,8 @@ class EthercatNode
  */
     void CheckSlaveConfigurationState();
 /**
- * @brief This function will check master's state, in terms of number of responding slaves and their application layer states
+ * @brief This function will check master's state, in terms of number of 
+ * responding slaves and their application layer states
  * 
  * @return 0 if succesful, otherwise -1 
  * \see ec_master_state_t structure.
@@ -204,18 +218,18 @@ class EthercatNode
  *        Reason for this function is that, master and slave has to do several exchange before becoming operational.
  *        So this function does exchange between master and slaves for up to 10 sec, could finish earlier.
  *        If timeout occurs it will return -1.
- * @return 0 if succesfull, otherwise -1.
+ * @return 0 if successfull, otherwise -1.
  */
     int  WaitForOperationalMode();
 
 /**
  * @brief Opens EtherCAT master via command line tool if it's not already on.
  * 
- * @return 0 if succesfull, otherwise -1.
+ * @return 0 if successfull, otherwise -1.
  */ 
     int OpenEthercatMaster();
 /**
- * @brief Get the Number Of physically Connected Slaves to the bus.And checks if specified NUM_OF_SLAVES
+ * @brief Get the number Of physically connected slaves to the bus.And checks if specified NUM_OF_SLAVES
  *        is correct.
  * @return 0 if NUM_OF_SLAVES setting is correct, otherwise -1.
  */
@@ -237,9 +251,22 @@ class EthercatNode
 /**
  * @brief Shutdowns EtherCAT master via command line tool if it's not already off.
  * 
- * @return 0 if succesfull, otherwise -1.
+ * @return 0 if successfull, otherwise -1.
  */ 
     int ShutDownEthercatMaster();
+/**
+ * @brief Reads data from specified slave index and subindex via SDO. Writes data to pack.data
+ * 
+ * @return 0 if successfull, otherwise -1.
+ */
+    uint8_t SdoRead(SDO_data &pack);
+    /**
+     * @brief Writes data to specied slave's index and subindex via SDO.
+     * 
+     * @param pack SDO data structure, contains index,subindex,slave position etc.
+     * @return 0 if successfull, otherwise -1. 
+     */
+    uint8_t SdoWrite(SDO_data &pack);
     private:
     /// File descriptor to open and wake  master from CLI.
     int  fd;

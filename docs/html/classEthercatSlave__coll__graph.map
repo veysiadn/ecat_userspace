@@ -1,0 +1,8 @@
+<map id="EthercatSlave" name="EthercatSlave">
+<area shape="rect" id="node1" title=" " alt="" coords="319,95,431,121"/>
+<area shape="rect" id="node2" href="$structDataReceived.html" title="Structure for data to be received from slaves." alt="" coords="5,5,119,32"/>
+<area shape="rect" id="node3" href="$structProfilePosParam.html" title="Parameters that should be specified in position mode." alt="" coords="143,5,272,32"/>
+<area shape="rect" id="node4" href="$structProfileVelocityParam.html" title="Profile velocity mode configuration parameters." alt="" coords="296,5,455,32"/>
+<area shape="rect" id="node5" href="$structHomingParam.html" title="Homing mode configuration parameters." alt="" coords="479,5,594,32"/>
+<area shape="rect" id="node6" href="$structOffsetPDO.html" title="offset for PDO entries to register PDOs." alt="" coords="625,5,715,32"/>
+</map>

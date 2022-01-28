@@ -30,6 +30,6 @@ cmake .
 make
 sudo ./ecat_node
 ```
-#### Keep in mind that you can change and tinker with the softare, don't forget to make changes on Makefile for customization, additionally,you can check compile.txt file.
+#### Keep in mind that you can change and tinker with the program, don't forget to make changes on Makefile for customization, additionally, you can check "compile.txt" file.
 
 #### Good Luck ⚡

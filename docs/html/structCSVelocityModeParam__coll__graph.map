@@ -1,0 +1,4 @@
+<map id="CSVelocityModeParam" name="CSVelocityModeParam">
+<area shape="rect" id="node1" title="Struct contains configuration parameters for cyclic sync. velocity mode." alt="" coords="5,95,176,121"/>
+<area shape="rect" id="node2" href="$structVelControlParam.html" title="Struct containing &#39;velocity control parameter set&#39; 0x30A2 Has 4 sub index. Default values are from EP..." alt="" coords="25,5,157,32"/>
+</map>

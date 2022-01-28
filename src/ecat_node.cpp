@@ -103,19 +103,22 @@ int EthercatNode::MapDefaultPdos()
      * Revision number: 0x01600000
      */
 
-    ec_pdo_entry_info_t maxon_epos_pdo_entries[6] = {
+    ec_pdo_entry_info_t maxon_epos_pdo_entries[9] = {
         {OD_CONTROL_WORD, 16},      // CKim - First three entries will be read by slave (master sends command). RxPDO
         {OD_TARGET_VELOCITY,32},
         {OD_TARGET_POSITION, 32},
-        
+        {OD_TARGET_TORQUE,16},
+        {OD_TORQUE_OFFSET,16},
+
         {OD_STATUS_WORD, 16},       // CKim - Last three entries will be transmitted by slave (master receives the data). TxPDO
         {OD_POSITION_ACTUAL_VAL, 32},
-        {OD_VELOCITY_ACTUAL_VALUE,32}
+        {OD_VELOCITY_ACTUAL_VALUE,32},
+        {OD_TORQUE_ACTUAL_VALUE,16}
     };
 
     ec_pdo_info_t maxon_pdos[2] = {
-        {0x1600, 3, maxon_epos_pdo_entries + 0},    // CKim - RxPDO index of the EPOS4
-        {0x1a00, 3, maxon_epos_pdo_entries + 3}     // CKim - TxPDO index of the EPOS4
+        {0x1600, 5, maxon_epos_pdo_entries + 0},    // CKim - RxPDO index of the EPOS4
+        {0x1a00, 4, maxon_epos_pdo_entries + 5}     // CKim - TxPDO index of the EPOS4
     };
 
     // CKim - Sync manager configuration of the EPOS4. 0,1 is reserved for SDO communications
@@ -182,7 +185,8 @@ int EthercatNode::MapDefaultPdos()
                                                                                   OD_STATUS_WORD,g_master_domain,NULL);
         this->slaves_[i].offset_.actual_vel        = ecrt_slave_config_reg_pdo_entry(this->slaves_[i].slave_config_,
                                                                                   OD_VELOCITY_ACTUAL_VALUE,g_master_domain,NULL);
-
+        this->slaves_[i].offset_.actual_tor        = ecrt_slave_config_reg_pdo_entry(this->slaves_[i].slave_config_,
+                                                                                  OD_TORQUE_ACTUAL_VALUE,g_master_domain,NULL);
 
         this->slaves_[i].offset_.target_pos       = ecrt_slave_config_reg_pdo_entry(this->slaves_[i].slave_config_,
                                                                                   OD_TARGET_POSITION,g_master_domain,NULL);                                                                                                                                                                  
@@ -190,8 +194,13 @@ int EthercatNode::MapDefaultPdos()
                                                                                   OD_TARGET_VELOCITY,g_master_domain,NULL);
         this->slaves_[i].offset_.control_word     = ecrt_slave_config_reg_pdo_entry(this->slaves_[i].slave_config_,
                                                                                   OD_CONTROL_WORD,g_master_domain,NULL);
+        this->slaves_[i].offset_.target_tor       = ecrt_slave_config_reg_pdo_entry(this->slaves_[i].slave_config_,
+                                                                                   OD_TARGET_TORQUE,g_master_domain,NULL);
+        this->slaves_[i].offset_.torque_offset    = ecrt_slave_config_reg_pdo_entry(this->slaves_[i].slave_config_,
+                                                                                   OD_TORQUE_OFFSET,g_master_domain,NULL);                                                                                   
         if((slaves_[i].offset_.actual_pos < 0)  || (slaves_[i].offset_.status_word  < 0) || (slaves_[i].offset_.actual_vel < 0)
-        || (slaves_[i].offset_.target_vel < 0) ||(slaves_[i].offset_.target_pos < 0) || (slaves_[i].offset_.control_word < 0) )
+        || (slaves_[i].offset_.target_vel < 0) ||(slaves_[i].offset_.target_pos < 0) || (slaves_[i].offset_.control_word < 0) 
+        || (slaves_[i].offset_.target_tor < 0) || (slaves_[i].offset_.actual_tor < 0)  || (slaves_[i].offset_.torque_offset< 0) )
         {
             printf( "Failed to configure  PDOs for motors.!");
             return -1;
@@ -560,6 +569,47 @@ int EthercatNode::SetCyclicSyncVelocityModeParametersAll(CSVelocityModeParam &P)
     return 0; 
 }
 
+int EthercatNode::SetCyclicSyncTorqueModeParameters(CSTorqueModeParam &P, int position)
+{
+    // Set operation mode to Cyclic Synchronous Velocity mode for motor in specified physical position w.r.t master.
+    if( ecrt_slave_config_sdo8(slaves_[position].slave_config_,OD_OPERATION_MODE, kCSTorque) ){
+        printf( "Set operation mode config error ! ");
+        return  -1 ;
+    }
+    //profile deceleration
+    if(ecrt_slave_config_sdo32(slaves_[position].slave_config_,OD_PROFILE_DECELERATION,P.profile_dec) < 0) {
+        printf( "Set profile deceleration failed ! ");
+        return -1;
+    }
+    // quick stop deceleration 
+    if(ecrt_slave_config_sdo32(slaves_[position].slave_config_,OD_QUICK_STOP_DECELERATION,P.quick_stop_dec) < 0) {
+        printf( "Set quick stop deceleration failed !");
+        return -1;
+    }
+    return 0; 
+}
+
+int EthercatNode::SetCyclicSyncTorqueModeParametersAll(CSTorqueModeParam &P)
+{
+    for(int i = 0 ; i < g_kNumberOfServoDrivers ; i++){
+        // Set operation mode to Cyclic Synchronous Velocity mode for motor in specified physical position w.r.t master.
+        if( ecrt_slave_config_sdo8(slaves_[i].slave_config_,OD_OPERATION_MODE, kCSTorque) ){
+            printf( "Set operation mode config error ! ");
+            return  -1 ;
+        }
+        //profile deceleration
+        if(ecrt_slave_config_sdo32(slaves_[i].slave_config_,OD_PROFILE_DECELERATION,P.profile_dec) < 0) {
+            printf( "Set profile deceleration failed ! ");
+            return -1;
+        }
+        // quick stop deceleration 
+        if(ecrt_slave_config_sdo32(slaves_[i].slave_config_,OD_QUICK_STOP_DECELERATION,P.quick_stop_dec) < 0) {
+            printf( "Set quick stop deceleration failed !");
+            return -1;
+        }
+    }
+    return 0; 
+}
 
 int EthercatNode::WaitForOperationalMode()
 {
@@ -698,7 +748,6 @@ void EthercatNode::DeactivateCommunication()
 {
     //ecrt_master_deactivate_slaves(g_master);
     ecrt_master_deactivate(g_master);
-    ecrt_release_master(g_master);
 }
 
 void EthercatNode::ReleaseMaster()
@@ -745,3 +794,21 @@ int EthercatNode::ShutDownEthercatMaster()
 }
 
 
+uint8_t EthercatNode::SdoRead(SDO_data &pack)
+{
+    if (ecrt_master_sdo_upload(g_master, pack.slave_position,pack.index,pack.sub_index,
+                    (uint8_t*)(&pack.data), pack.data_sz,&pack.result_sz,&pack.err_code)){
+        printf("SDO read error, code: %d \n", &pack.err_code);
+        return -1;
+    }
+    return 0;
+}
+
+uint8_t EthercatNode::SdoWrite(SDO_data &pack)
+{
+    if (ecrt_master_sdo_download(g_master,pack.slave_position,pack.index,pack.sub_index,(uint8_t*)(&pack.data),pack.data_sz,&pack.err_code)){
+        printf("SDO write error, code : %d \n ", &pack.err_code);
+        return -1;
+    }
+    return 0;
+}

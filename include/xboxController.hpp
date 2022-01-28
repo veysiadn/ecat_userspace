@@ -1,3 +1,40 @@
+/******************************************************************************
+ *
+ *  $Id$
+ *
+ *  Copyright (C) 2021 Veysi ADIN, UST KIST
+ *
+ *  This file is part of the Wrapped IgH EtherCAT master userspace program 
+ * for control applications.
+ *
+ *  The Wrapped IgH EtherCAT master userspace program for control application
+ *  in userspace is free software; you canredistribute it and/or modify it 
+ * under the terms of the GNU General Public License as published by the 
+ * Free Software Foundation; version 2 of the License.
+ *
+ *  The Wrapped IgH EtherCAT master userspace program for control application
+ *  is distributed in the hope that it will be useful, but WITHOUT ANY WARRANTY;
+ *  without even the implied warranty of MERCHANTABILITY or FITNESS FOR A PARTICULAR 
+ *  PURPOSE.  
+ *  See the  GNU General Public License for more details.
+ *
+ *  You should have received a copy of the GNU General Public License
+ *  along with the Wrapped IgH EtherCAT master userspace program for control application. 
+ * If not, see <http://www.gnu.org/licenses/>.
+ *
+ *  ---
+ *
+ *  The license mentioned above concerns the source code only. Using the
+ *  EtherCAT technology and brand is only permitted in compliance with the
+ *  industrial property and similar rights of Beckhoff Automation GmbH.
+ *
+ *  Contact information: veysi.adin@kist.re.kr
+ *****************************************************************************/
+/*******************************************************************************
+ * \file  xboxController.hpp
+ * \brief Contains blueprint for reading values from XboxController
+ *******************************************************************************/
+
 /*
  *	Xbox Controller code has been downloaded from  ; 
  *	https://github.com/msch26/scholtyssek-blogspot/tree/master/xboxControllerClient/src
@@ -77,12 +114,49 @@ public:
 	char joysickIdentifier[IDENTIFIER_SIZE];
 	int fd = -1;
 	xboxCtrl* xbox = NULL;
+	/**
+	 * @brief Opens xbox controller via file descriptor.
+	 * 
+	 * @param dev name of the device to be open.
+	 * @return 0 if successfull, otherwise -1. 
+	 */
 	int initXboxController(char* dev);
+	/**
+	 * @brief Closes opened controller.
+	 * 
+	 * @param xbox controller to be closed.
+	 */
 	void deinitXboxController(xboxCtrl* xbox);
+	/**
+	 * @brief Allocate mememory for XboxDataStruct
+	 * 
+	 * @return xboxCtrl* 
+	 */
 	xboxCtrl* getXboxDataStruct(void);
+	/**
+	 * @brief Reads xbox controller information, e.g number of axis and buttons.
+	 * 
+	 * @param xbox xbox instance to read information from.
+	 */
 	void readXboxControllerInformation(xboxCtrl* xbox);
+	/**
+	 * @brief Reads actual values from xbox controller such as axis data and button data.
+	 * 
+	 * @param xbox xbox instance to read values from.
+	 */
 	void readXboxData(xboxCtrl* xbox);
+	/**
+	 * @brief Assing acquired values to controller struct.
+	 * 
+	 * @param xbox instance to write values acquired from xbox controller.
+	 * @param js button or axis event
+	 */
 	void setXboxCtrlValue(xboxCtrl* xbox, struct js_event* js);
+	/**
+	 * @brief Prints acquired values from xbox controller.
+	 * 
+	 * @param xbox instance.
+	 */
 	void printXboxCtrlValues(xboxCtrl* xbox);
 };
 #endif /* XBOXCONTROLLER_H_ */

@@ -1,0 +1,7 @@
+<map id="EthercatLifeCycleNode::EthercatLifeCycle" name="EthercatLifeCycleNode::EthercatLifeCycle">
+<area shape="rect" id="node1" title=" " alt="" coords="151,95,321,136"/>
+<area shape="rect" id="node2" href="$structDataSent.html" title="Structure for data to be sent to slaves." alt="" coords="5,5,88,32"/>
+<area shape="rect" id="node3" href="$structDataReceived.html" title="Structure for data to be received from slaves." alt="" coords="113,5,226,32"/>
+<area shape="rect" id="node4" href="$structController.html" title="Xbox Controller values." alt="" coords="261,5,347,32"/>
+<area shape="rect" id="node5" href="$classTiming.html" title=" " alt="" coords="375,5,441,32"/>
+</map>

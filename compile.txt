@@ -1,0 +1,27 @@
+----------------- Dynamic Linking -------------------------
+
+g++ main.cpp ecat_lifecycle.cpp ecat_node.cpp ecat_slave.cpp timing.cpp xboxController.cpp -o ecatnode \
+-I/opt/etherlab/include \
+-I../include/ \
+-L/opt/etherlab/lib -lethercat -lpthread -lrt \
+-Wl,--rpath -Wl,/opt/etherlab/lib
+
+-----------------------------------------------------------
+
+ ------------------Static Linking --------------------------
+
+g++ -static main.cpp ecat_lifecycle.cpp ecat_node.cpp ecat_slave.cpp timing.cpp xboxController.cpp -o ecstatic \
+-I/opt/etherlab/include  /opt/etherlab/lib/libethercat.a  -I../include/ \
+-lpthread -lrt  
+
+
+-------------------------------------------------------------
+
+
+Note : Static linking is the result of the linker copying all library routines used in the program into the executable image. 
+This may require more disk space and memory than dynamic linking, but is both faster and more portable, 
+since it does not require the presence of the library on the system where it is run.
+
+Dynamic Linker needs the required library to be on the storage of host computer.
+In computing, a dynamic linker is the part of an operating system that loads and links the shared libraries needed by an executable
+ when it is executed (at "run time"), by copying the content of libraries from persistent storage to RAM, filling jump tables and relocating pointers.

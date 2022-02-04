@@ -539,7 +539,7 @@ void EthercatLifeCycle::StartPdoExchange(void *instance)
                             exec_min, exec_max);
                     printf("Tjitter min     : %10u ns  | max : %10u ns\n",
                             jitter_min, jitter_max);  
-                    printf("Timer info values: %10d us \n", timer_info_.time_span.count());                             
+                    printf("Timer info values: %10d us \n", timer_info_.time_span_.count());                             
                     printf("-----------------------------------------------\n\n");
                     print_val=1000;
                     std::cout << "Status word   : "<< received_data_.status_word[0] << std::endl;

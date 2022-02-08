@@ -34,4 +34,4 @@ jobs:
           # Command arguments to be sent to Flawfinder
           arguments: ./ 
           # Output file name
-          output: / 
+          output: ./flawfinder_scan

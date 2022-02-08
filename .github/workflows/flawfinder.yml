@@ -32,6 +32,5 @@ jobs:
         uses: david-a-wheeler/flawfinder@2.0.19-alpha1
         with:
           # Command arguments to be sent to Flawfinder
-          arguments: ./ 
-          # Output file name
-          output: ./flawfinder_scan
+          arguments: '--sarif ./'
+          output: 'flawfinder_results.sarif'

@@ -1,0 +1,65 @@
+src/ecat_lifecycle.cpp:118:16: style: Variable 'result' is assigned a value that is never used. [unreadVariable]
+    int result = sched_setaffinity(0,sizeof(mask),&mask);
+               ^
+src/ecat_lifecycle.cpp:318:28: style: Variable 'print_max_min' is assigned a value that is never used. [unreadVariable]
+    uint32_t print_max_min = 15000 ;
+                           ^
+src/ecat_lifecycle.cpp:319:24: style: Variable 'print_val' is assigned a value that is never used. [unreadVariable]
+    uint32_t print_val = 1e4;
+                       ^
+src/ecat_lifecycle.cpp:322:59: style: Variable 'publish_time_start' is assigned a value that is never used. [unreadVariable]
+    struct timespec wake_up_time, time, publish_time_start={}, publish_time_end={};
+                                                          ^
+src/ecat_lifecycle.cpp:322:80: style: Variable 'publish_time_end' is assigned a value that is never used. [unreadVariable]
+    struct timespec wake_up_time, time, publish_time_start={}, publish_time_end={};
+                                                                               ^
+src/ecat_lifecycle.cpp:211:14: style: Unused variable: max_fol_err [unusedVariable]
+    uint32_t max_fol_err ;
+             ^
+src/ecat_lifecycle.cpp:540:21: warning: %u in format string (no. 1) requires 'unsigned int' but the argument type is 'signed int'. [invalidPrintfArgType_uint]
+                    printf("Tjitter min     : %10u ns  | max : %10u ns\n",
+                    ^
+src/ecat_lifecycle.cpp:540:21: warning: %u in format string (no. 2) requires 'unsigned int' but the argument type is 'signed int'. [invalidPrintfArgType_uint]
+                    printf("Tjitter min     : %10u ns  | max : %10u ns\n",
+                    ^
+src/ecat_lifecycle.cpp:417:28: style: Variable 'period_ns' is assigned a value that is never used. [unreadVariable]
+        uint32_t period_ns = 0, exec_ns = 0, latency_ns = 0,
+                           ^
+src/ecat_lifecycle.cpp:417:41: style: Variable 'exec_ns' is assigned a value that is never used. [unreadVariable]
+        uint32_t period_ns = 0, exec_ns = 0, latency_ns = 0,
+                                        ^
+src/ecat_lifecycle.cpp:423:35: style: Variable 'publishing_time_ns' is assigned a value that is never used. [unreadVariable]
+        int32_t publishing_time_ns=1e4, publish_time_max=0, publish_time_min=0xfffffff;
+                                  ^
+src/ecat_lifecycle.cpp:423:57: style: Variable 'publish_time_max' is assigned a value that is never used. [unreadVariable]
+        int32_t publishing_time_ns=1e4, publish_time_max=0, publish_time_min=0xfffffff;
+                                                        ^
+src/ecat_lifecycle.cpp:423:77: style: Variable 'publish_time_min' is assigned a value that is never used. [unreadVariable]
+        int32_t publishing_time_ns=1e4, publish_time_max=0, publish_time_min=0xfffffff;
+                                                                            ^
+src/ecat_lifecycle.cpp:424:24: style: Variable 'jitter' is assigned a value that is never used. [unreadVariable]
+        int32_t jitter = 0 , jitter_min = 0xfffffff, jitter_max = 0, old_latency=0;
+                       ^
+src/ecat_lifecycle.cpp:424:81: style: Variable 'old_latency' is assigned a value that is never used. [unreadVariable]
+        int32_t jitter = 0 , jitter_min = 0xfffffff, jitter_max = 0, old_latency=0;
+                                                                                ^
+src/ecat_lifecycle.cpp:199:14: style: Unused variable: max_fol_err [unusedVariable]
+    uint32_t max_fol_err ;
+             ^
+src/ecat_node.cpp:727:27: style: Variable 'g_master_domain_state' is reassigned a value before the old one has been used. [redundantAssignment]
+    g_master_domain_state = ds;
+                          ^
+src/ecat_node.cpp:725:31: note: g_master_domain_state is assigned
+        g_master_domain_state = ds;
+                              ^
+src/ecat_node.cpp:727:27: note: g_master_domain_state is overwritten
+    g_master_domain_state = ds;
+                          ^
+src/ecat_node.cpp:92:34: style: Variable 'elmo_syncs' is assigned a value that is never used. [unreadVariable]
+    ec_sync_info_t elmo_syncs[5] = {
+                                 ^
+src/ecat_node.cpp:160:37: style: Variable 'easycat_syncs' is assigned a value that is never used. [unreadVariable]
+    ec_sync_info_t easycat_syncs[3] = {
+                                    ^
+nofile:0:0: information: Cppcheck cannot find all the include files (use --check-config for details) [missingInclude]
+

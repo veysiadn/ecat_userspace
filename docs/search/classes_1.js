@@ -1,5 +1,5 @@
 var searchData=
 [
-  ['datareceived_463',['DataReceived',['../structDataReceived.html',1,'']]],
-  ['datasent_464',['DataSent',['../structDataSent.html',1,'']]]
+  ['datareceived_0',['DataReceived',['../structDataReceived.html',1,'']]],
+  ['datasent_1',['DataSent',['../structDataSent.html',1,'']]]
 ];

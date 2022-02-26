@@ -1,6 +1,6 @@
 ### Welcome to EtherCAT user space application by Veysi ADIN & Chunwoo Kim.
  
-  This repository contains EtherCAT based control software for using CoE and CiA402 standard to control motors and sensor information using EtherCAT protocol, by wrapping IgH    EtherCAT library functions. 
+  This repository contains EtherCAT based control software using CoE and CiA402 standard to control motors and receive sensor data, by wrapping IgH EtherCAT library functions. 
   This implementation can be used with any robotic system with small modifications.Contains EtherCAT real-time thread with priority of 98. And USB communication with 
   Xbox Controller.
   

@@ -1,5 +1,5 @@
 <?xml version='1.0' encoding='UTF-8' standalone='no'?>
-<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.17">
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.3" xml:lang="en-US">
   <compounddef id="classEthercatLifeCycleNode_1_1EthercatLifeCycle" kind="class" language="C++" prot="public">
     <compoundname>EthercatLifeCycleNode::EthercatLifeCycle</compoundname>
     <includes refid="ecat__lifecycle_8hpp" local="no">ecat_lifecycle.hpp</includes>
@@ -9,6 +9,7 @@
         <definition>DataReceived EthercatLifeCycleNode::EthercatLifeCycle::received_data_</definition>
         <argsstring></argsstring>
         <name>received_data_</name>
+        <qualifiedname>EthercatLifeCycleNode::EthercatLifeCycle::received_data_</qualifiedname>
         <briefdescription>
 <para>Structure to hold values received from connected slaves. <linebreak/>
  </para>
@@ -24,6 +25,7 @@
         <definition>DataSent EthercatLifeCycleNode::EthercatLifeCycle::sent_data_</definition>
         <argsstring></argsstring>
         <name>sent_data_</name>
+        <qualifiedname>EthercatLifeCycleNode::EthercatLifeCycle::sent_data_</qualifiedname>
         <briefdescription>
 <para>Structure to hold values that will be sent to the slaves. </para>
         </briefdescription>
@@ -38,6 +40,7 @@
         <definition>std::unique_ptr&lt;EthercatNode&gt; EthercatLifeCycleNode::EthercatLifeCycle::ecat_node_</definition>
         <argsstring></argsstring>
         <name>ecat_node_</name>
+        <qualifiedname>EthercatLifeCycleNode::EthercatLifeCycle::ecat_node_</qualifiedname>
         <briefdescription>
         </briefdescription>
         <detaileddescription>
@@ -51,6 +54,7 @@
         <definition>pthread_t EthercatLifeCycleNode::EthercatLifeCycle::ethercat_thread_</definition>
         <argsstring></argsstring>
         <name>ethercat_thread_</name>
+        <qualifiedname>EthercatLifeCycleNode::EthercatLifeCycle::ethercat_thread_</qualifiedname>
         <briefdescription>
 <para>pthread create required parameters. </para>
         </briefdescription>
@@ -65,6 +69,7 @@
         <definition>struct sched_param EthercatLifeCycleNode::EthercatLifeCycle::ethercat_sched_param_</definition>
         <argsstring></argsstring>
         <name>ethercat_sched_param_</name>
+        <qualifiedname>EthercatLifeCycleNode::EthercatLifeCycle::ethercat_sched_param_</qualifiedname>
         <initializer>= {}</initializer>
         <briefdescription>
 <para>Scheduler parameter. </para>
@@ -73,13 +78,14 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/ecat_lifecycle.hpp" line="230" column="19" bodyfile="include/ecat_lifecycle.hpp" bodystart="232" bodyend="-1"/>
+        <location file="include/ecat_lifecycle.hpp" line="232" column="26" bodyfile="include/ecat_lifecycle.hpp" bodystart="232" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="classEthercatLifeCycleNode_1_1EthercatLifeCycle_1a78acbaf6dc792b96f2df3fbef7395dfc" prot="public" static="no" mutable="no">
         <type>pthread_attr_t</type>
         <definition>pthread_attr_t EthercatLifeCycleNode::EthercatLifeCycle::ethercat_thread_attr_</definition>
         <argsstring></argsstring>
         <name>ethercat_thread_attr_</name>
+        <qualifiedname>EthercatLifeCycleNode::EthercatLifeCycle::ethercat_thread_attr_</qualifiedname>
         <briefdescription>
 <para>Thread attribute parameter. </para>
         </briefdescription>
@@ -94,6 +100,7 @@
         <definition>int32_t EthercatLifeCycleNode::EthercatLifeCycle::err_</definition>
         <argsstring></argsstring>
         <name>err_</name>
+        <qualifiedname>EthercatLifeCycleNode::EthercatLifeCycle::err_</qualifiedname>
         <briefdescription>
 <para>Error flag. </para>
         </briefdescription>
@@ -108,6 +115,7 @@
         <definition>uint8_t EthercatLifeCycleNode::EthercatLifeCycle::al_state_</definition>
         <argsstring></argsstring>
         <name>al_state_</name>
+        <qualifiedname>EthercatLifeCycleNode::EthercatLifeCycle::al_state_</qualifiedname>
         <initializer>= 0</initializer>
         <briefdescription>
 <para>Application layer of slaves seen by master.(INIT/PREOP/SAFEOP/OP) </para>
@@ -123,6 +131,7 @@
         <definition>uint32_t EthercatLifeCycleNode::EthercatLifeCycle::motor_state_[g_kNumberOfServoDrivers]</definition>
         <argsstring>[g_kNumberOfServoDrivers]</argsstring>
         <name>motor_state_</name>
+        <qualifiedname>EthercatLifeCycleNode::EthercatLifeCycle::motor_state_</qualifiedname>
         <briefdescription>
         </briefdescription>
         <detaileddescription>
@@ -136,6 +145,7 @@
         <definition>uint32_t EthercatLifeCycleNode::EthercatLifeCycle::command_</definition>
         <argsstring></argsstring>
         <name>command_</name>
+        <qualifiedname>EthercatLifeCycleNode::EthercatLifeCycle::command_</qualifiedname>
         <initializer>= 0x004F</initializer>
         <briefdescription>
         </briefdescription>
@@ -150,6 +160,7 @@
         <definition>Controller EthercatLifeCycleNode::EthercatLifeCycle::controller_</definition>
         <argsstring></argsstring>
         <name>controller_</name>
+        <qualifiedname>EthercatLifeCycleNode::EthercatLifeCycle::controller_</qualifiedname>
         <briefdescription>
 <para>Structure for Xbox <ref refid="structController" kindref="compound">Controller</ref> values. </para>
         </briefdescription>
@@ -164,6 +175,7 @@
         <definition>uint8_t EthercatLifeCycleNode::EthercatLifeCycle::emergency_status_</definition>
         <argsstring></argsstring>
         <name>emergency_status_</name>
+        <qualifiedname>EthercatLifeCycleNode::EthercatLifeCycle::emergency_status_</qualifiedname>
         <initializer>= 1</initializer>
         <briefdescription>
         </briefdescription>
@@ -178,6 +190,7 @@
         <definition>std::int32_t EthercatLifeCycleNode::EthercatLifeCycle::measurement_time</definition>
         <argsstring></argsstring>
         <name>measurement_time</name>
+        <qualifiedname>EthercatLifeCycleNode::EthercatLifeCycle::measurement_time</qualifiedname>
         <initializer>= 0</initializer>
         <briefdescription>
         </briefdescription>
@@ -192,6 +205,7 @@
         <definition>Timing EthercatLifeCycleNode::EthercatLifeCycle::timer_info_</definition>
         <argsstring></argsstring>
         <name>timer_info_</name>
+        <qualifiedname>EthercatLifeCycleNode::EthercatLifeCycle::timer_info_</qualifiedname>
         <briefdescription>
 <para><ref refid="classTiming" kindref="compound">Timing</ref> measurement information instance. </para>
         </briefdescription>
@@ -208,6 +222,7 @@
         <definition>EthercatLifeCycle::EthercatLifeCycle</definition>
         <argsstring>()</argsstring>
         <name>EthercatLifeCycle</name>
+        <qualifiedname>EthercatLifeCycleNode::EthercatLifeCycle::EthercatLifeCycle</qualifiedname>
         <briefdescription>
         </briefdescription>
         <detaileddescription>
@@ -221,6 +236,7 @@
         <definition>EthercatLifeCycle::~EthercatLifeCycle</definition>
         <argsstring>()</argsstring>
         <name>~EthercatLifeCycle</name>
+        <qualifiedname>EthercatLifeCycleNode::EthercatLifeCycle::~EthercatLifeCycle</qualifiedname>
         <briefdescription>
         </briefdescription>
         <detaileddescription>
@@ -234,6 +250,7 @@
         <definition>uint8_t EthercatLifeCycle::on_configure</definition>
         <argsstring>()</argsstring>
         <name>on_configure</name>
+        <qualifiedname>EthercatLifeCycleNode::EthercatLifeCycle::on_configure</qualifiedname>
         <briefdescription>
 <para>Initialization function.Class initialized in unconfigured state. This function has to called to do inital configuration which will open EtherCAT master from shell, check connected slave, assign initial configuration parameter based on selected operation mode, map pdos, activate master and set thread priorities. </para>
         </briefdescription>
@@ -254,6 +271,7 @@
         <definition>uint8_t EthercatLifeCycle::on_activate</definition>
         <argsstring>()</argsstring>
         <name>on_activate</name>
+        <qualifiedname>EthercatLifeCycleNode::EthercatLifeCycle::on_activate</qualifiedname>
         <briefdescription>
 <para>Starts real-time Ethercat communication. </para>
         </briefdescription>
@@ -271,6 +289,7 @@
         <definition>uint8_t EthercatLifeCycle::on_deactivate</definition>
         <argsstring>()</argsstring>
         <name>on_deactivate</name>
+        <qualifiedname>EthercatLifeCycleNode::EthercatLifeCycle::on_deactivate</qualifiedname>
         <briefdescription>
 <para>Stops real-time communication. </para>
         </briefdescription>
@@ -288,6 +307,7 @@
         <definition>uint8_t EthercatLifeCycle::on_cleanup</definition>
         <argsstring>()</argsstring>
         <name>on_cleanup</name>
+        <qualifiedname>EthercatLifeCycleNode::EthercatLifeCycle::on_cleanup</qualifiedname>
         <briefdescription>
 <para>Cleans up all variables and datas assigned by Ethercat class. </para>
         </briefdescription>
@@ -305,6 +325,7 @@
         <definition>uint8_t EthercatLifeCycle::on_shutdown</definition>
         <argsstring>()</argsstring>
         <name>on_shutdown</name>
+        <qualifiedname>EthercatLifeCycleNode::EthercatLifeCycle::on_shutdown</qualifiedname>
         <briefdescription>
 <para>Shuts down EtherCAT lifecycle instance, releases Ethercat master. </para>
         </briefdescription>
@@ -322,6 +343,7 @@
         <definition>uint8_t EthercatLifeCycle::on_error</definition>
         <argsstring>()</argsstring>
         <name>on_error</name>
+        <qualifiedname>EthercatLifeCycleNode::EthercatLifeCycle::on_error</qualifiedname>
         <briefdescription>
 <para>There isn&apos;t any error recovery functionality for now, just resets nodes. Reconfiguration is needed for restarting communication. </para>
         </briefdescription>
@@ -339,6 +361,7 @@
         <definition>int EthercatLifeCycle::SetComThreadPriorities</definition>
         <argsstring>()</argsstring>
         <name>SetComThreadPriorities</name>
+        <qualifiedname>EthercatLifeCycleNode::EthercatLifeCycle::SetComThreadPriorities</qualifiedname>
         <briefdescription>
 <para>Sets Ethercat communication thread&apos;s properties After this function called user must call <ref refid="classEthercatLifeCycleNode_1_1EthercatLifeCycle_1a2c5796d0f5f88a228c4b064d81a6b2f7" kindref="member">StartEthercatCommunication()</ref> function]. </para>
         </briefdescription>
@@ -356,6 +379,7 @@
         <definition>int EthercatLifeCycle::InitEthercatCommunication</definition>
         <argsstring>()</argsstring>
         <name>InitEthercatCommunication</name>
+        <qualifiedname>EthercatLifeCycleNode::EthercatLifeCycle::InitEthercatCommunication</qualifiedname>
         <briefdescription>
 <para>Encapsulates all configuration steps for the EtherCAT communication with default slaves. And waits for connected slaves to become operational. </para>
         </briefdescription>
@@ -373,6 +397,7 @@
         <definition>int EthercatLifeCycle::StartEthercatCommunication</definition>
         <argsstring>()</argsstring>
         <name>StartEthercatCommunication</name>
+        <qualifiedname>EthercatLifeCycleNode::EthercatLifeCycle::StartEthercatCommunication</qualifiedname>
         <briefdescription>
 <para>Starts EtherCAT communcation. </para>
         </briefdescription>
@@ -390,6 +415,7 @@
         <definition>void EthercatLifeCycle::StartPdoExchange</definition>
         <argsstring>(void *instance)</argsstring>
         <name>StartPdoExchange</name>
+        <qualifiedname>EthercatLifeCycleNode::EthercatLifeCycle::StartPdoExchange</qualifiedname>
         <param>
           <type>void *</type>
           <declname>instance</declname>
@@ -420,6 +446,7 @@
         <definition>int EthercatLifeCycle::GetComState</definition>
         <argsstring>()</argsstring>
         <name>GetComState</name>
+        <qualifiedname>EthercatLifeCycleNode::EthercatLifeCycle::GetComState</qualifiedname>
         <briefdescription>
 <para>Gets master&apos;s communication state. </para>
         </briefdescription>
@@ -439,6 +466,7 @@
         <definition>void EthercatLifeCycle::ReadFromSlaves</definition>
         <argsstring>()</argsstring>
         <name>ReadFromSlaves</name>
+        <qualifiedname>EthercatLifeCycleNode::EthercatLifeCycle::ReadFromSlaves</qualifiedname>
         <briefdescription>
 <para>Reads data from slaves and updates received data structure. </para>
         </briefdescription>
@@ -453,6 +481,7 @@
         <definition>void EthercatLifeCycle::WriteToSlavesVelocityMode</definition>
         <argsstring>()</argsstring>
         <name>WriteToSlavesVelocityMode</name>
+        <qualifiedname>EthercatLifeCycleNode::EthercatLifeCycle::WriteToSlavesVelocityMode</qualifiedname>
         <briefdescription>
 <para>Updates data that will be sent to slaves in velocity mode. </para>
         </briefdescription>
@@ -467,6 +496,7 @@
         <definition>void EthercatLifeCycle::WriteToSlavesInPositionMode</definition>
         <argsstring>()</argsstring>
         <name>WriteToSlavesInPositionMode</name>
+        <qualifiedname>EthercatLifeCycleNode::EthercatLifeCycle::WriteToSlavesInPositionMode</qualifiedname>
         <briefdescription>
 <para>Writes target position and control word to motor in profile position mode. </para>
         </briefdescription>
@@ -481,6 +511,7 @@
         <definition>void EthercatLifeCycle::UpdateVelocityModeParameters</definition>
         <argsstring>()</argsstring>
         <name>UpdateVelocityModeParameters</name>
+        <qualifiedname>EthercatLifeCycleNode::EthercatLifeCycle::UpdateVelocityModeParameters</qualifiedname>
         <briefdescription>
 <para>Acquired data from xbox controller will be assigned as motor speed parameter. </para>
         </briefdescription>
@@ -495,6 +526,7 @@
         <definition>void EthercatLifeCycle::UpdateCyclicVelocityModeParameters</definition>
         <argsstring>()</argsstring>
         <name>UpdateCyclicVelocityModeParameters</name>
+        <qualifiedname>EthercatLifeCycleNode::EthercatLifeCycle::UpdateCyclicVelocityModeParameters</qualifiedname>
         <briefdescription>
 <para>Acquired data from xbox controller will be assigned as motor speed parameter. </para>
         </briefdescription>
@@ -509,6 +541,7 @@
         <definition>void EthercatLifeCycle::UpdatePositionModeParameters</definition>
         <argsstring>()</argsstring>
         <name>UpdatePositionModeParameters</name>
+        <qualifiedname>EthercatLifeCycleNode::EthercatLifeCycle::UpdatePositionModeParameters</qualifiedname>
         <briefdescription>
 <para>Acquired data from xbox controller will be assigned as motor target position parameter. </para>
         </briefdescription>
@@ -523,6 +556,7 @@
         <definition>void EthercatLifeCycle::UpdateCyclicPositionModeParameters</definition>
         <argsstring>()</argsstring>
         <name>UpdateCyclicPositionModeParameters</name>
+        <qualifiedname>EthercatLifeCycleNode::EthercatLifeCycle::UpdateCyclicPositionModeParameters</qualifiedname>
         <briefdescription>
 <para>Acquired data from xbox controller will be assigned as motor cyclic target position parameter in configured interpolation time. </para>
         </briefdescription>
@@ -537,6 +571,7 @@
         <definition>void EthercatLifeCycle::UpdateMotorStateVelocityMode</definition>
         <argsstring>()</argsstring>
         <name>UpdateMotorStateVelocityMode</name>
+        <qualifiedname>EthercatLifeCycleNode::EthercatLifeCycle::UpdateMotorStateVelocityMode</qualifiedname>
         <briefdescription>
 <para>Updates motor control word and motor state in velocity mode based on CIA402. </para>
         </briefdescription>
@@ -551,6 +586,7 @@
         <definition>void EthercatLifeCycle::UpdateMotorStatePositionMode</definition>
         <argsstring>()</argsstring>
         <name>UpdateMotorStatePositionMode</name>
+        <qualifiedname>EthercatLifeCycleNode::EthercatLifeCycle::UpdateMotorStatePositionMode</qualifiedname>
         <briefdescription>
 <para>Updates motor control word and motor state in position mode based on CIA402 state machine,. </para>
         </briefdescription>
@@ -565,6 +601,7 @@
         <definition>void EthercatLifeCycle::UpdateCyclicTorqueModeParameters</definition>
         <argsstring>()</argsstring>
         <name>UpdateCyclicTorqueModeParameters</name>
+        <qualifiedname>EthercatLifeCycleNode::EthercatLifeCycle::UpdateCyclicTorqueModeParameters</qualifiedname>
         <briefdescription>
 <para>Updates cylic torque mode parameters based on controller inputs. </para>
         </briefdescription>
@@ -579,6 +616,7 @@
         <definition>void EthercatLifeCycle::WriteToSlavesInCyclicTorqueMode</definition>
         <argsstring>()</argsstring>
         <name>WriteToSlavesInCyclicTorqueMode</name>
+        <qualifiedname>EthercatLifeCycleNode::EthercatLifeCycle::WriteToSlavesInCyclicTorqueMode</qualifiedname>
         <briefdescription>
 <para>Writes target torque and control word in cyclic sync. torque mode. </para>
         </briefdescription>
@@ -593,6 +631,7 @@
         <definition>int EthercatLifeCycle::GetDriveState</definition>
         <argsstring>(const int &amp;statusWord)</argsstring>
         <name>GetDriveState</name>
+        <qualifiedname>EthercatLifeCycleNode::EthercatLifeCycle::GetDriveState</qualifiedname>
         <param>
           <type>const int &amp;</type>
           <declname>statusWord</declname>
@@ -611,6 +650,7 @@
         <definition>int EthercatLifeCycle::EnableDrivers</definition>
         <argsstring>()</argsstring>
         <name>EnableDrivers</name>
+        <qualifiedname>EthercatLifeCycleNode::EthercatLifeCycle::EnableDrivers</qualifiedname>
         <briefdescription>
 <para>CKim - This function checks status word, clears any faults and enables torque of the motor driver. </para>
         </briefdescription>
@@ -627,6 +667,7 @@
         <definition>void * EthercatLifeCycle::PassCycylicExchange</definition>
         <argsstring>(void *arg)</argsstring>
         <name>PassCycylicExchange</name>
+        <qualifiedname>EthercatLifeCycleNode::EthercatLifeCycle::PassCycylicExchange</qualifiedname>
         <param>
           <type>void *</type>
           <declname>arg</declname>
@@ -658,11 +699,15 @@
     <detaileddescription>
     </detaileddescription>
     <collaborationgraph>
-      <node id="3">
+      <node id="4">
+        <label>Controller</label>
+        <link refid="structController"/>
+      </node>
+      <node id="2">
         <label>DataReceived</label>
         <link refid="structDataReceived"/>
       </node>
-      <node id="2">
+      <node id="3">
         <label>DataSent</label>
         <link refid="structDataSent"/>
       </node>
@@ -670,10 +715,10 @@
         <label>EthercatLifeCycleNode::EthercatLifeCycle</label>
         <link refid="classEthercatLifeCycleNode_1_1EthercatLifeCycle"/>
         <childnode refid="2" relation="usage">
-          <edgelabel>sent_data_</edgelabel>
+          <edgelabel>received_data_</edgelabel>
         </childnode>
         <childnode refid="3" relation="usage">
-          <edgelabel>received_data_</edgelabel>
+          <edgelabel>sent_data_</edgelabel>
         </childnode>
         <childnode refid="4" relation="usage">
           <edgelabel>controller_</edgelabel>
@@ -686,12 +731,8 @@
         <label>Timing</label>
         <link refid="classTiming"/>
       </node>
-      <node id="4">
-        <label>Controller</label>
-        <link refid="structController"/>
-      </node>
     </collaborationgraph>
-    <location file="include/ecat_lifecycle.hpp" line="46" column="1" bodyfile="include/ecat_lifecycle.hpp" bodystart="45" bodyend="248"/>
+    <location file="include/ecat_lifecycle.hpp" line="45" column="1" bodyfile="include/ecat_lifecycle.hpp" bodystart="46" bodyend="248"/>
     <listofallmembers>
       <member refid="classEthercatLifeCycleNode_1_1EthercatLifeCycle_1a799a0bdf01f5a0da57c29900f3d8180d" prot="public" virt="non-virtual"><scope>EthercatLifeCycleNode::EthercatLifeCycle</scope><name>al_state_</name></member>
       <member refid="classEthercatLifeCycleNode_1_1EthercatLifeCycle_1a8852f433f1e6d0927892fab6f88e01d1" prot="public" virt="non-virtual"><scope>EthercatLifeCycleNode::EthercatLifeCycle</scope><name>command_</name></member>

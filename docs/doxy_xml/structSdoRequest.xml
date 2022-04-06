@@ -1,5 +1,5 @@
 <?xml version='1.0' encoding='UTF-8' standalone='no'?>
-<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.17">
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.3" xml:lang="en-US">
   <compounddef id="structSdoRequest" kind="struct" language="C++" prot="public">
     <compoundname>SdoRequest</compoundname>
     <includes refid="ecat__globals_8hpp" local="no">ecat_globals.hpp</includes>
@@ -9,6 +9,7 @@
         <definition>ec_sdo_request* SdoRequest::profile_acc</definition>
         <argsstring></argsstring>
         <name>profile_acc</name>
+        <qualifiedname>SdoRequest::profile_acc</qualifiedname>
         <briefdescription>
         </briefdescription>
         <detaileddescription>
@@ -22,6 +23,7 @@
         <definition>ec_sdo_request* SdoRequest::profile_dec</definition>
         <argsstring></argsstring>
         <name>profile_dec</name>
+        <qualifiedname>SdoRequest::profile_dec</qualifiedname>
         <briefdescription>
         </briefdescription>
         <detaileddescription>
@@ -35,6 +37,7 @@
         <definition>ec_sdo_request* SdoRequest::profile_vel</definition>
         <argsstring></argsstring>
         <name>profile_vel</name>
+        <qualifiedname>SdoRequest::profile_vel</qualifiedname>
         <briefdescription>
         </briefdescription>
         <detaileddescription>
@@ -48,6 +51,7 @@
         <definition>ec_sdo_request* SdoRequest::quick_stop_dec</definition>
         <argsstring></argsstring>
         <name>quick_stop_dec</name>
+        <qualifiedname>SdoRequest::quick_stop_dec</qualifiedname>
         <briefdescription>
         </briefdescription>
         <detaileddescription>
@@ -61,6 +65,7 @@
         <definition>ec_sdo_request* SdoRequest::motion_profile_type</definition>
         <argsstring></argsstring>
         <name>motion_profile_type</name>
+        <qualifiedname>SdoRequest::motion_profile_type</qualifiedname>
         <briefdescription>
         </briefdescription>
         <detaileddescription>
@@ -74,6 +79,7 @@
         <definition>ec_sdo_request* SdoRequest::max_profile_vel</definition>
         <argsstring></argsstring>
         <name>max_profile_vel</name>
+        <qualifiedname>SdoRequest::max_profile_vel</qualifiedname>
         <briefdescription>
         </briefdescription>
         <detaileddescription>
@@ -87,6 +93,7 @@
         <definition>ec_sdo_request* SdoRequest::max_fol_err</definition>
         <argsstring></argsstring>
         <name>max_fol_err</name>
+        <qualifiedname>SdoRequest::max_fol_err</qualifiedname>
         <briefdescription>
         </briefdescription>
         <detaileddescription>
@@ -100,6 +107,7 @@
         <definition>ec_sdo_request* SdoRequest::speed_for_switch_search</definition>
         <argsstring></argsstring>
         <name>speed_for_switch_search</name>
+        <qualifiedname>SdoRequest::speed_for_switch_search</qualifiedname>
         <briefdescription>
         </briefdescription>
         <detaileddescription>
@@ -113,6 +121,7 @@
         <definition>ec_sdo_request* SdoRequest::speed_for_zero_search</definition>
         <argsstring></argsstring>
         <name>speed_for_zero_search</name>
+        <qualifiedname>SdoRequest::speed_for_zero_search</qualifiedname>
         <briefdescription>
         </briefdescription>
         <detaileddescription>
@@ -126,6 +135,7 @@
         <definition>ec_sdo_request* SdoRequest::homing_acc</definition>
         <argsstring></argsstring>
         <name>homing_acc</name>
+        <qualifiedname>SdoRequest::homing_acc</qualifiedname>
         <briefdescription>
         </briefdescription>
         <detaileddescription>
@@ -139,6 +149,7 @@
         <definition>ec_sdo_request* SdoRequest::curr_threshold_homing</definition>
         <argsstring></argsstring>
         <name>curr_threshold_homing</name>
+        <qualifiedname>SdoRequest::curr_threshold_homing</qualifiedname>
         <briefdescription>
         </briefdescription>
         <detaileddescription>
@@ -152,6 +163,7 @@
         <definition>ec_sdo_request* SdoRequest::home_offset</definition>
         <argsstring></argsstring>
         <name>home_offset</name>
+        <qualifiedname>SdoRequest::home_offset</qualifiedname>
         <briefdescription>
         </briefdescription>
         <detaileddescription>
@@ -165,6 +177,7 @@
         <definition>ec_sdo_request* SdoRequest::homing_method</definition>
         <argsstring></argsstring>
         <name>homing_method</name>
+        <qualifiedname>SdoRequest::homing_method</qualifiedname>
         <briefdescription>
         </briefdescription>
         <detaileddescription>
@@ -179,7 +192,7 @@
     </briefdescription>
     <detaileddescription>
     </detaileddescription>
-    <location file="include/ecat_globals.hpp" line="336" column="1" bodyfile="include/ecat_globals.hpp" bodystart="335" bodyend="350"/>
+    <location file="include/ecat_globals.hpp" line="335" column="1" bodyfile="include/ecat_globals.hpp" bodystart="336" bodyend="350"/>
     <listofallmembers>
       <member refid="structSdoRequest_1a9c631348524dda71b2857443f3cf430d" prot="public" virt="non-virtual"><scope>SdoRequest</scope><name>curr_threshold_homing</name></member>
       <member refid="structSdoRequest_1a45225f7345374baae15a3472d04e12b2" prot="public" virt="non-virtual"><scope>SdoRequest</scope><name>home_offset</name></member>

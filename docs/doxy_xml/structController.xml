@@ -1,5 +1,5 @@
 <?xml version='1.0' encoding='UTF-8' standalone='no'?>
-<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.17">
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.3" xml:lang="en-US">
   <compounddef id="structController" kind="struct" language="C++" prot="public">
     <compoundname>Controller</compoundname>
     <includes refid="ecat__globals_8hpp" local="no">ecat_globals.hpp</includes>
@@ -9,6 +9,7 @@
         <definition>float Controller::left_x_axis_</definition>
         <argsstring></argsstring>
         <name>left_x_axis_</name>
+        <qualifiedname>Controller::left_x_axis_</qualifiedname>
         <briefdescription>
         </briefdescription>
         <detaileddescription>
@@ -22,6 +23,7 @@
         <definition>float Controller::left_y_axis_</definition>
         <argsstring></argsstring>
         <name>left_y_axis_</name>
+        <qualifiedname>Controller::left_y_axis_</qualifiedname>
         <briefdescription>
         </briefdescription>
         <detaileddescription>
@@ -35,6 +37,7 @@
         <definition>float Controller::right_x_axis_</definition>
         <argsstring></argsstring>
         <name>right_x_axis_</name>
+        <qualifiedname>Controller::right_x_axis_</qualifiedname>
         <briefdescription>
         </briefdescription>
         <detaileddescription>
@@ -48,6 +51,7 @@
         <definition>float Controller::right_y_axis_</definition>
         <argsstring></argsstring>
         <name>right_y_axis_</name>
+        <qualifiedname>Controller::right_y_axis_</qualifiedname>
         <briefdescription>
         </briefdescription>
         <detaileddescription>
@@ -61,6 +65,7 @@
         <definition>uint8_t Controller::blue_button_</definition>
         <argsstring></argsstring>
         <name>blue_button_</name>
+        <qualifiedname>Controller::blue_button_</qualifiedname>
         <briefdescription>
         </briefdescription>
         <detaileddescription>
@@ -74,6 +79,7 @@
         <definition>uint8_t Controller::green_button_</definition>
         <argsstring></argsstring>
         <name>green_button_</name>
+        <qualifiedname>Controller::green_button_</qualifiedname>
         <briefdescription>
         </briefdescription>
         <detaileddescription>
@@ -87,6 +93,7 @@
         <definition>uint8_t Controller::red_button_</definition>
         <argsstring></argsstring>
         <name>red_button_</name>
+        <qualifiedname>Controller::red_button_</qualifiedname>
         <briefdescription>
         </briefdescription>
         <detaileddescription>
@@ -100,6 +107,7 @@
         <definition>uint8_t Controller::yellow_button_</definition>
         <argsstring></argsstring>
         <name>yellow_button_</name>
+        <qualifiedname>Controller::yellow_button_</qualifiedname>
         <briefdescription>
         </briefdescription>
         <detaileddescription>
@@ -113,6 +121,7 @@
         <definition>uint8_t Controller::left_r_button_</definition>
         <argsstring></argsstring>
         <name>left_r_button_</name>
+        <qualifiedname>Controller::left_r_button_</qualifiedname>
         <briefdescription>
         </briefdescription>
         <detaileddescription>
@@ -126,6 +135,7 @@
         <definition>uint8_t Controller::left_l_button_</definition>
         <argsstring></argsstring>
         <name>left_l_button_</name>
+        <qualifiedname>Controller::left_l_button_</qualifiedname>
         <briefdescription>
         </briefdescription>
         <detaileddescription>
@@ -139,6 +149,7 @@
         <definition>uint8_t Controller::left_u_button_</definition>
         <argsstring></argsstring>
         <name>left_u_button_</name>
+        <qualifiedname>Controller::left_u_button_</qualifiedname>
         <briefdescription>
         </briefdescription>
         <detaileddescription>
@@ -152,6 +163,7 @@
         <definition>uint8_t Controller::left_d_button_</definition>
         <argsstring></argsstring>
         <name>left_d_button_</name>
+        <qualifiedname>Controller::left_d_button_</qualifiedname>
         <briefdescription>
         </briefdescription>
         <detaileddescription>
@@ -165,6 +177,7 @@
         <definition>uint8_t Controller::left_rb_button_</definition>
         <argsstring></argsstring>
         <name>left_rb_button_</name>
+        <qualifiedname>Controller::left_rb_button_</qualifiedname>
         <briefdescription>
         </briefdescription>
         <detaileddescription>
@@ -178,6 +191,7 @@
         <definition>uint8_t Controller::right_rb_button_</definition>
         <argsstring></argsstring>
         <name>right_rb_button_</name>
+        <qualifiedname>Controller::right_rb_button_</qualifiedname>
         <briefdescription>
         </briefdescription>
         <detaileddescription>
@@ -191,6 +205,7 @@
         <definition>uint8_t Controller::left_start_button_</definition>
         <argsstring></argsstring>
         <name>left_start_button_</name>
+        <qualifiedname>Controller::left_start_button_</qualifiedname>
         <briefdescription>
         </briefdescription>
         <detaileddescription>
@@ -204,6 +219,7 @@
         <definition>uint8_t Controller::right_start_button_</definition>
         <argsstring></argsstring>
         <name>right_start_button_</name>
+        <qualifiedname>Controller::right_start_button_</qualifiedname>
         <briefdescription>
         </briefdescription>
         <detaileddescription>
@@ -217,6 +233,7 @@
         <definition>uint8_t Controller::xbox_button_</definition>
         <argsstring></argsstring>
         <name>xbox_button_</name>
+        <qualifiedname>Controller::xbox_button_</qualifiedname>
         <briefdescription>
         </briefdescription>
         <detaileddescription>
@@ -231,7 +248,7 @@
     </briefdescription>
     <detaileddescription>
     </detaileddescription>
-    <location file="include/ecat_globals.hpp" line="157" column="1" bodyfile="include/ecat_globals.hpp" bodystart="156" bodyend="175"/>
+    <location file="include/ecat_globals.hpp" line="156" column="1" bodyfile="include/ecat_globals.hpp" bodystart="157" bodyend="175"/>
     <listofallmembers>
       <member refid="structController_1a21b2cc61fc8759e3612edf6cb7659844" prot="public" virt="non-virtual"><scope>Controller</scope><name>blue_button_</name></member>
       <member refid="structController_1af4090cca658badffa788cc347c0d8976" prot="public" virt="non-virtual"><scope>Controller</scope><name>green_button_</name></member>

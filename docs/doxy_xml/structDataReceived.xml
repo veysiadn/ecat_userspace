@@ -1,5 +1,5 @@
 <?xml version='1.0' encoding='UTF-8' standalone='no'?>
-<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.17">
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.3" xml:lang="en-US">
   <compounddef id="structDataReceived" kind="struct" language="C++" prot="public">
     <compoundname>DataReceived</compoundname>
     <includes refid="ecat__globals_8hpp" local="no">ecat_globals.hpp</includes>
@@ -9,6 +9,7 @@
         <definition>uint16_t DataReceived::com_status</definition>
         <argsstring></argsstring>
         <name>com_status</name>
+        <qualifiedname>DataReceived::com_status</qualifiedname>
         <briefdescription>
         </briefdescription>
         <detaileddescription>
@@ -22,6 +23,7 @@
         <definition>std::vector&lt;int32_t&gt; DataReceived::target_pos</definition>
         <argsstring></argsstring>
         <name>target_pos</name>
+        <qualifiedname>DataReceived::target_pos</qualifiedname>
         <briefdescription>
         </briefdescription>
         <detaileddescription>
@@ -35,6 +37,7 @@
         <definition>std::vector&lt;int32_t&gt; DataReceived::target_vel</definition>
         <argsstring></argsstring>
         <name>target_vel</name>
+        <qualifiedname>DataReceived::target_vel</qualifiedname>
         <briefdescription>
         </briefdescription>
         <detaileddescription>
@@ -48,6 +51,7 @@
         <definition>std::vector&lt;int16_t&gt; DataReceived::target_tor</definition>
         <argsstring></argsstring>
         <name>target_tor</name>
+        <qualifiedname>DataReceived::target_tor</qualifiedname>
         <briefdescription>
         </briefdescription>
         <detaileddescription>
@@ -61,6 +65,7 @@
         <definition>std::vector&lt;int16_t&gt; DataReceived::max_tor</definition>
         <argsstring></argsstring>
         <name>max_tor</name>
+        <qualifiedname>DataReceived::max_tor</qualifiedname>
         <briefdescription>
         </briefdescription>
         <detaileddescription>
@@ -74,6 +79,7 @@
         <definition>std::vector&lt;uint16_t&gt; DataReceived::control_word</definition>
         <argsstring></argsstring>
         <name>control_word</name>
+        <qualifiedname>DataReceived::control_word</qualifiedname>
         <briefdescription>
         </briefdescription>
         <detaileddescription>
@@ -87,6 +93,7 @@
         <definition>std::vector&lt;OpMode&gt; DataReceived::op_mode</definition>
         <argsstring></argsstring>
         <name>op_mode</name>
+        <qualifiedname>DataReceived::op_mode</qualifiedname>
         <briefdescription>
         </briefdescription>
         <detaileddescription>
@@ -100,6 +107,7 @@
         <definition>std::vector&lt;int32_t&gt; DataReceived::vel_offset</definition>
         <argsstring></argsstring>
         <name>vel_offset</name>
+        <qualifiedname>DataReceived::vel_offset</qualifiedname>
         <briefdescription>
         </briefdescription>
         <detaileddescription>
@@ -113,6 +121,7 @@
         <definition>std::vector&lt;int16_t&gt; DataReceived::tor_offset</definition>
         <argsstring></argsstring>
         <name>tor_offset</name>
+        <qualifiedname>DataReceived::tor_offset</qualifiedname>
         <briefdescription>
         </briefdescription>
         <detaileddescription>
@@ -126,6 +135,7 @@
         <definition>std::vector&lt;int32_t&gt; DataReceived::actual_pos</definition>
         <argsstring></argsstring>
         <name>actual_pos</name>
+        <qualifiedname>DataReceived::actual_pos</qualifiedname>
         <briefdescription>
         </briefdescription>
         <detaileddescription>
@@ -139,6 +149,7 @@
         <definition>std::vector&lt;int32_t&gt; DataReceived::actual_vel</definition>
         <argsstring></argsstring>
         <name>actual_vel</name>
+        <qualifiedname>DataReceived::actual_vel</qualifiedname>
         <briefdescription>
         </briefdescription>
         <detaileddescription>
@@ -152,6 +163,7 @@
         <definition>std::vector&lt;int16_t&gt; DataReceived::actual_cur</definition>
         <argsstring></argsstring>
         <name>actual_cur</name>
+        <qualifiedname>DataReceived::actual_cur</qualifiedname>
         <briefdescription>
         </briefdescription>
         <detaileddescription>
@@ -165,6 +177,7 @@
         <definition>std::vector&lt;int16_t&gt; DataReceived::actual_tor</definition>
         <argsstring></argsstring>
         <name>actual_tor</name>
+        <qualifiedname>DataReceived::actual_tor</qualifiedname>
         <briefdescription>
         </briefdescription>
         <detaileddescription>
@@ -178,6 +191,7 @@
         <definition>std::vector&lt;uint16_t&gt; DataReceived::status_word</definition>
         <argsstring></argsstring>
         <name>status_word</name>
+        <qualifiedname>DataReceived::status_word</qualifiedname>
         <briefdescription>
         </briefdescription>
         <detaileddescription>
@@ -191,6 +205,7 @@
         <definition>std::vector&lt;int8_t&gt; DataReceived::op_mode_display</definition>
         <argsstring></argsstring>
         <name>op_mode_display</name>
+        <qualifiedname>DataReceived::op_mode_display</qualifiedname>
         <briefdescription>
         </briefdescription>
         <detaileddescription>
@@ -204,6 +219,7 @@
         <definition>uint8_t DataReceived::left_limit_switch_val</definition>
         <argsstring></argsstring>
         <name>left_limit_switch_val</name>
+        <qualifiedname>DataReceived::left_limit_switch_val</qualifiedname>
         <briefdescription>
         </briefdescription>
         <detaileddescription>
@@ -217,6 +233,7 @@
         <definition>uint8_t DataReceived::right_limit_switch_val</definition>
         <argsstring></argsstring>
         <name>right_limit_switch_val</name>
+        <qualifiedname>DataReceived::right_limit_switch_val</qualifiedname>
         <briefdescription>
         </briefdescription>
         <detaileddescription>
@@ -230,6 +247,7 @@
         <definition>uint8_t DataReceived::emergency_switch_val</definition>
         <argsstring></argsstring>
         <name>emergency_switch_val</name>
+        <qualifiedname>DataReceived::emergency_switch_val</qualifiedname>
         <briefdescription>
         </briefdescription>
         <detaileddescription>
@@ -245,6 +263,7 @@
         <definition>DataReceived::DataReceived</definition>
         <argsstring>()</argsstring>
         <name>DataReceived</name>
+        <qualifiedname>DataReceived::DataReceived</qualifiedname>
         <briefdescription>
         </briefdescription>
         <detaileddescription>
@@ -259,7 +278,7 @@
     </briefdescription>
     <detaileddescription>
     </detaileddescription>
-    <location file="include/ecat_globals.hpp" line="209" column="1" bodyfile="include/ecat_globals.hpp" bodystart="208" bodyend="230"/>
+    <location file="include/ecat_globals.hpp" line="208" column="1" bodyfile="include/ecat_globals.hpp" bodystart="209" bodyend="230"/>
     <listofallmembers>
       <member refid="structDataReceived_1a46d51838bdc21e9309cc23f20e221d80" prot="public" virt="non-virtual"><scope>DataReceived</scope><name>actual_cur</name></member>
       <member refid="structDataReceived_1a617a630ef15cca8f0d174281c69854c6" prot="public" virt="non-virtual"><scope>DataReceived</scope><name>actual_pos</name></member>

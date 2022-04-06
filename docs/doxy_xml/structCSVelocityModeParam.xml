@@ -1,5 +1,5 @@
 <?xml version='1.0' encoding='UTF-8' standalone='no'?>
-<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.17">
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.3" xml:lang="en-US">
   <compounddef id="structCSVelocityModeParam" kind="struct" language="C++" prot="public">
     <compoundname>CSVelocityModeParam</compoundname>
     <includes refid="ecat__globals_8hpp" local="no">ecat_globals.hpp</includes>
@@ -9,6 +9,7 @@
         <definition>VelControlParam CSVelocityModeParam::velocity_controller_gain</definition>
         <argsstring></argsstring>
         <name>velocity_controller_gain</name>
+        <qualifiedname>CSVelocityModeParam::velocity_controller_gain</qualifiedname>
         <briefdescription>
         </briefdescription>
         <detaileddescription>
@@ -22,6 +23,7 @@
         <definition>uint32_t CSVelocityModeParam::quick_stop_dec</definition>
         <argsstring></argsstring>
         <name>quick_stop_dec</name>
+        <qualifiedname>CSVelocityModeParam::quick_stop_dec</qualifiedname>
         <briefdescription>
         </briefdescription>
         <detaileddescription>
@@ -35,6 +37,7 @@
         <definition>uint32_t CSVelocityModeParam::profile_dec</definition>
         <argsstring></argsstring>
         <name>profile_dec</name>
+        <qualifiedname>CSVelocityModeParam::profile_dec</qualifiedname>
         <briefdescription>
         </briefdescription>
         <detaileddescription>
@@ -48,6 +51,7 @@
         <definition>uint32_t CSVelocityModeParam::software_position_limit</definition>
         <argsstring></argsstring>
         <name>software_position_limit</name>
+        <qualifiedname>CSVelocityModeParam::software_position_limit</qualifiedname>
         <briefdescription>
         </briefdescription>
         <detaileddescription>
@@ -61,6 +65,7 @@
         <definition>uint32_t CSVelocityModeParam::interpolation_time_period</definition>
         <argsstring></argsstring>
         <name>interpolation_time_period</name>
+        <qualifiedname>CSVelocityModeParam::interpolation_time_period</qualifiedname>
         <briefdescription>
         </briefdescription>
         <detaileddescription>
@@ -76,10 +81,6 @@
     <detaileddescription>
     </detaileddescription>
     <collaborationgraph>
-      <node id="2">
-        <label>VelControlParam</label>
-        <link refid="structVelControlParam"/>
-      </node>
       <node id="1">
         <label>CSVelocityModeParam</label>
         <link refid="structCSVelocityModeParam"/>
@@ -87,8 +88,12 @@
           <edgelabel>velocity_controller_gain</edgelabel>
         </childnode>
       </node>
+      <node id="2">
+        <label>VelControlParam</label>
+        <link refid="structVelControlParam"/>
+      </node>
     </collaborationgraph>
-    <location file="include/ecat_globals.hpp" line="406" column="1" bodyfile="include/ecat_globals.hpp" bodystart="405" bodyend="412"/>
+    <location file="include/ecat_globals.hpp" line="405" column="1" bodyfile="include/ecat_globals.hpp" bodystart="406" bodyend="412"/>
     <listofallmembers>
       <member refid="structCSVelocityModeParam_1a6bcc685fb6d06ae1c972fa5c255770b5" prot="public" virt="non-virtual"><scope>CSVelocityModeParam</scope><name>interpolation_time_period</name></member>
       <member refid="structCSVelocityModeParam_1aeaccf4ae308c275cdf7d4165f8d9a8d2" prot="public" virt="non-virtual"><scope>CSVelocityModeParam</scope><name>profile_dec</name></member>

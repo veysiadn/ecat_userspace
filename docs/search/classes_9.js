@@ -1,5 +1,5 @@
 var searchData=
 [
-  ['xboxcontroller_475',['XboxController',['../classXboxController.html',1,'']]],
-  ['xboxctrl_476',['xboxCtrl',['../structxboxCtrl.html',1,'']]]
+  ['xboxcontroller_0',['XboxController',['../classXboxController.html',1,'']]],
+  ['xboxctrl_1',['xboxCtrl',['../structxboxCtrl.html',1,'']]]
 ];

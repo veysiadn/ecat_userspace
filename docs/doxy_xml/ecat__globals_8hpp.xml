@@ -1,5 +1,5 @@
 <?xml version='1.0' encoding='UTF-8' standalone='no'?>
-<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.17">
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.3" xml:lang="en-US">
   <compounddef id="ecat__globals_8hpp" kind="file" language="C++">
     <compoundname>ecat_globals.hpp</compoundname>
     <includes local="no">iostream</includes>
@@ -27,49 +27,6 @@
     <includedby refid="ecat__node_8hpp" local="yes">include/ecat_node.hpp</includedby>
     <includedby refid="ecat__slave_8hpp" local="yes">include/ecat_slave.hpp</includedby>
     <incdepgraph>
-      <node id="16">
-        <label>sys/mman.h</label>
-      </node>
-      <node id="5">
-        <label>stdlib.h</label>
-      </node>
-      <node id="7">
-        <label>errno.h</label>
-      </node>
-      <node id="17">
-        <label>malloc.h</label>
-      </node>
-      <node id="4">
-        <label>limits.h</label>
-      </node>
-      <node id="11">
-        <label>sys/resource.h</label>
-      </node>
-      <node id="23">
-        <label>object_dictionary.hpp</label>
-        <link refid="object__dictionary_8hpp"/>
-      </node>
-      <node id="6">
-        <label>pthread.h</label>
-      </node>
-      <node id="13">
-        <label>sys/types.h</label>
-      </node>
-      <node id="10">
-        <label>string.h</label>
-      </node>
-      <node id="14">
-        <label>unistd.h</label>
-      </node>
-      <node id="21">
-        <label>vector</label>
-      </node>
-      <node id="8">
-        <label>signal.h</label>
-      </node>
-      <node id="15">
-        <label>time.h</label>
-      </node>
       <node id="1">
         <label>include/ecat_globals.hpp</label>
         <link refid="ecat__globals_8hpp"/>
@@ -118,66 +75,75 @@
         <childnode refid="23" relation="include">
         </childnode>
       </node>
-      <node id="12">
-        <label>sys/time.h</label>
-      </node>
-      <node id="2">
-        <label>iostream</label>
-      </node>
-      <node id="22">
-        <label>ecrt.h</label>
+      <node id="23">
+        <label>object_dictionary.hpp</label>
+        <link refid="object__dictionary_8hpp"/>
       </node>
       <node id="19">
         <label>chrono</label>
       </node>
-      <node id="18">
-        <label>sched.h</label>
-      </node>
-      <node id="9">
-        <label>stdio.h</label>
-      </node>
       <node id="3">
         <label>cstring</label>
+      </node>
+      <node id="22">
+        <label>ecrt.h</label>
+      </node>
+      <node id="7">
+        <label>errno.h</label>
+      </node>
+      <node id="2">
+        <label>iostream</label>
+      </node>
+      <node id="4">
+        <label>limits.h</label>
+      </node>
+      <node id="17">
+        <label>malloc.h</label>
       </node>
       <node id="20">
         <label>memory</label>
       </node>
-    </incdepgraph>
-    <invincdepgraph>
       <node id="6">
-        <label>src/ecat_lifecycle.cpp</label>
-        <link refid="ecat__lifecycle_8cpp"/>
+        <label>pthread.h</label>
       </node>
-      <node id="4">
-        <label>src/main.cpp</label>
-        <link refid="main_8cpp"/>
+      <node id="18">
+        <label>sched.h</label>
       </node>
       <node id="8">
-        <label>src/ecat_slave.cpp</label>
-        <link refid="ecat__slave_8cpp"/>
+        <label>signal.h</label>
       </node>
-      <node id="7">
-        <label>include/ecat_slave.hpp</label>
-        <link refid="ecat__slave_8hpp"/>
-        <childnode refid="8" relation="include">
-        </childnode>
-        <childnode refid="2" relation="include">
-        </childnode>
+      <node id="9">
+        <label>stdio.h</label>
       </node>
-      <node id="2">
-        <label>include/ecat_node.hpp</label>
-        <link refid="ecat__node_8hpp"/>
-        <childnode refid="3" relation="include">
-        </childnode>
-        <childnode refid="4" relation="include">
-        </childnode>
-        <childnode refid="5" relation="include">
-        </childnode>
+      <node id="5">
+        <label>stdlib.h</label>
       </node>
-      <node id="3">
-        <label>src/ecat_node.cpp</label>
-        <link refid="ecat__node_8cpp"/>
+      <node id="10">
+        <label>string.h</label>
       </node>
+      <node id="16">
+        <label>sys/mman.h</label>
+      </node>
+      <node id="11">
+        <label>sys/resource.h</label>
+      </node>
+      <node id="12">
+        <label>sys/time.h</label>
+      </node>
+      <node id="13">
+        <label>sys/types.h</label>
+      </node>
+      <node id="15">
+        <label>time.h</label>
+      </node>
+      <node id="14">
+        <label>unistd.h</label>
+      </node>
+      <node id="21">
+        <label>vector</label>
+      </node>
+    </incdepgraph>
+    <invincdepgraph>
       <node id="1">
         <label>include/ecat_globals.hpp</label>
         <link refid="ecat__globals_8hpp"/>
@@ -186,13 +152,47 @@
         <childnode refid="7" relation="include">
         </childnode>
       </node>
-      <node id="5">
+      <node id="3">
         <label>include/ecat_lifecycle.hpp</label>
         <link refid="ecat__lifecycle_8hpp"/>
-        <childnode refid="6" relation="include">
-        </childnode>
         <childnode refid="4" relation="include">
         </childnode>
+        <childnode refid="5" relation="include">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>include/ecat_node.hpp</label>
+        <link refid="ecat__node_8hpp"/>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="6" relation="include">
+        </childnode>
+        <childnode refid="5" relation="include">
+        </childnode>
+      </node>
+      <node id="7">
+        <label>include/ecat_slave.hpp</label>
+        <link refid="ecat__slave_8hpp"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="8" relation="include">
+        </childnode>
+      </node>
+      <node id="4">
+        <label>src/ecat_lifecycle.cpp</label>
+        <link refid="ecat__lifecycle_8cpp"/>
+      </node>
+      <node id="6">
+        <label>src/ecat_node.cpp</label>
+        <link refid="ecat__node_8cpp"/>
+      </node>
+      <node id="8">
+        <label>src/ecat_slave.cpp</label>
+        <link refid="ecat__slave_8cpp"/>
+      </node>
+      <node id="5">
+        <label>src/main.cpp</label>
+        <link refid="main_8cpp"/>
       </node>
     </invincdepgraph>
     <innerclass refid="structController" prot="public">Controller</innerclass>
@@ -525,7 +525,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/ecat_globals.hpp" line="178" column="1" bodyfile="include/ecat_globals.hpp" bodystart="177" bodyend="182"/>
+        <location file="include/ecat_globals.hpp" line="177" column="1" bodyfile="include/ecat_globals.hpp" bodystart="178" bodyend="182"/>
       </memberdef>
       <memberdef kind="enum" id="ecat__globals_8hpp_1a56752d1aeb4bd4940e632396072d68af" prot="public" static="no" strong="no">
         <type></type>
@@ -601,7 +601,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/ecat_globals.hpp" line="196" column="1" bodyfile="include/ecat_globals.hpp" bodystart="195" bodyend="205"/>
+        <location file="include/ecat_globals.hpp" line="195" column="1" bodyfile="include/ecat_globals.hpp" bodystart="196" bodyend="205"/>
       </memberdef>
       <memberdef kind="enum" id="ecat__globals_8hpp_1a5d175b4708e9a88ebbc35372ca1818b7" prot="public" static="no" strong="no">
         <type></type>
@@ -691,7 +691,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/ecat_globals.hpp" line="248" column="17" bodyfile="include/ecat_globals.hpp" bodystart="248" bodyend="260"/>
+        <location file="include/ecat_globals.hpp" line="248" column="1" bodyfile="include/ecat_globals.hpp" bodystart="248" bodyend="260"/>
       </memberdef>
       <memberdef kind="enum" id="ecat__globals_8hpp_1aad8633114c3b7bfa7443f128aad93aa9" prot="public" static="no" strong="no">
         <type></type>
@@ -760,7 +760,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/ecat_globals.hpp" line="264" column="23" bodyfile="include/ecat_globals.hpp" bodystart="264" bodyend="273"/>
+        <location file="include/ecat_globals.hpp" line="264" column="1" bodyfile="include/ecat_globals.hpp" bodystart="264" bodyend="273"/>
       </memberdef>
       <memberdef kind="enum" id="ecat__globals_8hpp_1a4a8f52fe7f00c0838866e018dfd0fb2d" prot="public" static="no" strong="no">
         <type></type>
@@ -838,7 +838,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/ecat_globals.hpp" line="276" column="18" bodyfile="include/ecat_globals.hpp" bodystart="276" bodyend="286"/>
+        <location file="include/ecat_globals.hpp" line="276" column="1" bodyfile="include/ecat_globals.hpp" bodystart="276" bodyend="286"/>
       </memberdef>
       <memberdef kind="enum" id="ecat__globals_8hpp_1ae56d58acf7f23ca7ce23ed016a45dcae" prot="public" static="no" strong="no">
         <type></type>
@@ -937,7 +937,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/ecat_globals.hpp" line="289" column="26" bodyfile="include/ecat_globals.hpp" bodystart="289" bodyend="301"/>
+        <location file="include/ecat_globals.hpp" line="289" column="1" bodyfile="include/ecat_globals.hpp" bodystart="289" bodyend="301"/>
       </memberdef>
       </sectiondef>
       <sectiondef kind="var">
@@ -971,7 +971,7 @@
         <location file="include/ecat_globals.hpp" line="100" column="26" bodyfile="include/ecat_globals.hpp" bodystart="100" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="ecat__globals_8hpp_1a6a68d8a40c73f3377978388da56fa9ad" prot="public" static="yes" mutable="no">
-        <type>sig_atomic_t</type>
+        <type>volatile sig_atomic_t</type>
         <definition>volatile sig_atomic_t sig</definition>
         <argsstring></argsstring>
         <name>sig</name>
@@ -1052,7 +1052,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/ecat_globals.hpp" line="114" column="28" bodyfile="src/ecat_node.cpp" bodystart="11" bodyend="-1" declfile="include/ecat_globals.hpp" declline="114" declcolumn="28"/>
+        <location file="include/ecat_globals.hpp" line="116" column="22" bodyfile="src/ecat_node.cpp" bodystart="11" bodyend="-1" declfile="include/ecat_globals.hpp" declline="116" declcolumn="22"/>
       </memberdef>
       <memberdef kind="variable" id="ecat__globals_8hpp_1a0f34ecbeba93aefcdd077c6ce0758360" prot="public" static="no" mutable="no">
         <type>const struct timespec</type>
@@ -1067,7 +1067,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/ecat_globals.hpp" line="114" column="28" bodyfile="include/ecat_globals.hpp" bodystart="117" bodyend="-1"/>
+        <location file="include/ecat_globals.hpp" line="117" column="21" bodyfile="include/ecat_globals.hpp" bodystart="117" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="ecat__globals_8hpp_1a28bf20de2fed0ae3b068bd7f0c74119d" prot="public" static="no" mutable="no">
         <type>uint32_t</type>
@@ -1125,7 +1125,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/ecat_globals.hpp" line="118" column="29" bodyfile="include/ecat_globals.hpp" bodystart="137" bodyend="153"/>
+        <location file="include/ecat_globals.hpp" line="137" column="22" bodyfile="include/ecat_globals.hpp" bodystart="137" bodyend="153"/>
       </memberdef>
       </sectiondef>
     <briefdescription>
@@ -1206,29 +1206,29 @@
 <codeline lineno="74"><highlight class="preprocessor">#include<sp/>&quot;<ref refid="object__dictionary_8hpp" kindref="compound">object_dictionary.hpp</ref>&quot;</highlight><highlight class="normal"><sp/><sp/></highlight></codeline>
 <codeline lineno="75"><highlight class="normal"></highlight></codeline>
 <codeline lineno="76"><highlight class="normal"></highlight><highlight class="comment">/****************************************************************************/</highlight></codeline>
-<codeline lineno="78" refid="ecat__globals_8hpp_1a5d918ecbea3b854bbfe74765c9357be3" refkind="member"><highlight class="preprocessor">#define<sp/>NUM_OF_SLAVES<sp/><sp/><sp/><sp/><sp/>1<sp/><sp/></highlight></codeline>
-<codeline lineno="79" refid="ecat__globals_8hpp_1aacc3c7aef173b1cde9377fb7f05c924d" refkind="member"><highlight class="preprocessor">const<sp/>uint32_t<sp/><sp/>g_kNumberOfServoDrivers<sp/>=<sp/>1<sp/>;<sp/><sp/><sp/></highlight></codeline>
-<codeline lineno="80"><highlight class="preprocessor">#define<sp/>CUSTOM_SLAVE<sp/><sp/><sp/><sp/><sp/>0<sp/><sp/><sp/><sp/></highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="83" refid="ecat__globals_8hpp_1a84142cd3e3bf14c4ecd4b6707a808c39" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>FREQUENCY<sp/><sp/><sp/><sp/><sp/><sp/><sp/>1000<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
-<codeline lineno="84" refid="ecat__globals_8hpp_1a68f5d933f0593175f4bd579e353d8f54" refkind="member"><highlight class="preprocessor">#define<sp/>MEASURE_TIMING<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>1<sp/><sp/><sp/><sp/></highlight></codeline>
-<codeline lineno="85" refid="ecat__globals_8hpp_1abc038b9c4db3369a55eec862a3fac0d3" refkind="member"><highlight class="preprocessor">#define<sp/>VELOCITY_MODE<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>0<sp/><sp/><sp/><sp/></highlight></codeline>
-<codeline lineno="86" refid="ecat__globals_8hpp_1a41325cb83383d2eb13badf1c991b76b6" refkind="member"><highlight class="preprocessor">#define<sp/>POSITION_MODE<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>0<sp/><sp/><sp/><sp/></highlight></codeline>
-<codeline lineno="87" refid="ecat__globals_8hpp_1a43e6b3b5ae4e9a94c798ed011e44c876" refkind="member"><highlight class="preprocessor">#define<sp/>CYCLIC_POSITION_MODE<sp/><sp/><sp/>0<sp/><sp/><sp/><sp/></highlight></codeline>
-<codeline lineno="88" refid="ecat__globals_8hpp_1aabaec371cf83290667d5f5686f3cdb05" refkind="member"><highlight class="preprocessor">#define<sp/>CYCLIC_VELOCITY_MODE<sp/><sp/><sp/>0<sp/><sp/><sp/><sp/></highlight></codeline>
-<codeline lineno="89" refid="ecat__globals_8hpp_1a91d01279ad427a31705ffa6c88ecfd70" refkind="member"><highlight class="preprocessor">#define<sp/>CYCLIC_TORQUE_MODE<sp/><sp/><sp/><sp/><sp/>1<sp/><sp/><sp/><sp/></highlight></codeline>
-<codeline lineno="90" refid="ecat__globals_8hpp_1a1d48656bc4df51f3d8b17da91494a981" refkind="member"><highlight class="preprocessor">#define<sp/>DISTRIBUTED_CLOCK<sp/><sp/><sp/><sp/><sp/><sp/>1<sp/><sp/><sp/><sp/></highlight></codeline>
-<codeline lineno="91"><highlight class="preprocessor"></highlight><highlight class="comment">/*****************************************************************************/</highlight><highlight class="preprocessor"></highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="92"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>GEAR_RATIO<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>103</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="78" refid="ecat__globals_8hpp_1a5d918ecbea3b854bbfe74765c9357be3" refkind="member"><highlight class="preprocessor">#define<sp/>NUM_OF_SLAVES<sp/><sp/><sp/><sp/><sp/>1<sp/><sp/></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="79" refid="ecat__globals_8hpp_1aacc3c7aef173b1cde9377fb7f05c924d" refkind="member"><highlight class="normal"></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>uint32_t<sp/><sp/><ref refid="ecat__globals_8hpp_1aacc3c7aef173b1cde9377fb7f05c924d" kindref="member">g_kNumberOfServoDrivers</ref><sp/>=<sp/>1<sp/>;<sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="82" refid="ecat__globals_8hpp_1a1ef60d5687ea9337b2e3e040be43db07" refkind="member"><highlight class="preprocessor">#define<sp/>CUSTOM_SLAVE<sp/><sp/><sp/><sp/><sp/>0<sp/><sp/><sp/><sp/></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="83" refid="ecat__globals_8hpp_1a84142cd3e3bf14c4ecd4b6707a808c39" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>FREQUENCY<sp/><sp/><sp/><sp/><sp/><sp/><sp/>1000<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="84" refid="ecat__globals_8hpp_1a68f5d933f0593175f4bd579e353d8f54" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>MEASURE_TIMING<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>1<sp/><sp/><sp/><sp/></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="85" refid="ecat__globals_8hpp_1abc038b9c4db3369a55eec862a3fac0d3" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>VELOCITY_MODE<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>0<sp/><sp/><sp/><sp/></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="86" refid="ecat__globals_8hpp_1a41325cb83383d2eb13badf1c991b76b6" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>POSITION_MODE<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>0<sp/><sp/><sp/><sp/></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="87" refid="ecat__globals_8hpp_1a43e6b3b5ae4e9a94c798ed011e44c876" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>CYCLIC_POSITION_MODE<sp/><sp/><sp/>0<sp/><sp/><sp/><sp/></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="88" refid="ecat__globals_8hpp_1aabaec371cf83290667d5f5686f3cdb05" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>CYCLIC_VELOCITY_MODE<sp/><sp/><sp/>0<sp/><sp/><sp/><sp/></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="89" refid="ecat__globals_8hpp_1a91d01279ad427a31705ffa6c88ecfd70" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>CYCLIC_TORQUE_MODE<sp/><sp/><sp/><sp/><sp/>1<sp/><sp/><sp/><sp/></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="90" refid="ecat__globals_8hpp_1a1d48656bc4df51f3d8b17da91494a981" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>DISTRIBUTED_CLOCK<sp/><sp/><sp/><sp/><sp/><sp/>1<sp/><sp/><sp/><sp/></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="91"><highlight class="normal"></highlight><highlight class="comment">/*****************************************************************************/</highlight></codeline>
+<codeline lineno="93" refid="ecat__globals_8hpp_1a1b5f0a2cda8866a2a87331026ac8bd9a" refkind="member"><highlight class="preprocessor">#define<sp/>GEAR_RATIO<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>103</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="94" refid="ecat__globals_8hpp_1a8cdc17f43c9f3850f60d04f98216fc13" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>ENCODER_RESOLUTION<sp/><sp/>1024</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="95" refid="ecat__globals_8hpp_1aae638294dae324558d32f20ad29cd501" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>INC_PER_ROTATION<sp/><sp/><sp/><sp/><sp/><sp/>GEAR_RATIO*ENCODER_RESOLUTION*4</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="96" refid="ecat__globals_8hpp_1a157cb770e20b46068ba85fdec0cfa4f1" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>FIVE_DEGREE_CCW<sp/><sp/><sp/><sp/><sp/><sp/>int(INC_PER_ROTATION/72)</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="97" refid="ecat__globals_8hpp_1a345f131f51c76cb464c7647eb1e25dd3" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>THIRTY_DEGREE_CCW<sp/><sp/><sp/><sp/>int(INC_PER_ROTATION/12)</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="98"><highlight class="normal"></highlight></codeline>
 <codeline lineno="100" refid="ecat__globals_8hpp_1aaf4966dff24b810040e9c7196d621401" refkind="member"><highlight class="keyword">const</highlight><highlight class="normal"><sp/>uint32_t<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="ecat__globals_8hpp_1aaf4966dff24b810040e9c7196d621401" kindref="member">g_kNsPerSec</ref><sp/>=<sp/>1000000000;<sp/><sp/><sp/><sp/><sp/></highlight></codeline>
-<codeline lineno="101" refid="ecat__globals_8hpp_1ab495f8313ac709722de636c17e8a7381" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>PERIOD_NS<sp/><sp/><sp/><sp/><sp/><sp/><sp/>(g_kNsPerSec/FREQUENCY)<sp/><sp/></highlight></codeline>
-<codeline lineno="102" refid="ecat__globals_8hpp_1aa840a0ac3b87cf7c89b265e1912cbb5b" refkind="member"><highlight class="preprocessor">#define<sp/>PERIOD_US<sp/><sp/><sp/><sp/><sp/><sp/><sp/>(PERIOD_NS<sp/>/<sp/>1000)<sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
-<codeline lineno="103" refid="ecat__globals_8hpp_1a5fcd914889df46acf623f7d9a81654d7" refkind="member"><highlight class="preprocessor">#define<sp/>PERIOD_MS<sp/><sp/><sp/><sp/><sp/><sp/><sp/>(PERIOD_US<sp/>/<sp/>1000)<sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
-<codeline lineno="104"><highlight class="preprocessor">#if<sp/>CUSTOM_SLAVE</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="101" refid="ecat__globals_8hpp_1ab495f8313ac709722de636c17e8a7381" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>PERIOD_NS<sp/><sp/><sp/><sp/><sp/><sp/><sp/>(g_kNsPerSec/FREQUENCY)<sp/><sp/></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="102" refid="ecat__globals_8hpp_1aa840a0ac3b87cf7c89b265e1912cbb5b" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>PERIOD_US<sp/><sp/><sp/><sp/><sp/><sp/><sp/>(PERIOD_NS<sp/>/<sp/>1000)<sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="103" refid="ecat__globals_8hpp_1a5fcd914889df46acf623f7d9a81654d7" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>PERIOD_MS<sp/><sp/><sp/><sp/><sp/><sp/><sp/>(PERIOD_US<sp/>/<sp/>1000)<sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="104"><highlight class="normal"></highlight><highlight class="preprocessor">#if<sp/>CUSTOM_SLAVE</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="105"><highlight class="normal"></highlight><highlight class="preprocessor"><sp/><sp/><sp/><sp/>#define<sp/>FINAL_SLAVE<sp/><sp/><sp/><sp/><sp/>(NUM_OF_SLAVES-1)</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="106"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="107"><highlight class="normal"></highlight><highlight class="comment">/****************************************************************************/</highlight></codeline>
@@ -1244,14 +1244,14 @@
 <codeline lineno="118"><highlight class="normal"></highlight><highlight class="keyword">extern</highlight><highlight class="normal"><sp/>uint32_t<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="ecat__globals_8hpp_1a28bf20de2fed0ae3b068bd7f0c74119d" kindref="member">g_sync_ref_counter</ref>;<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
 <codeline lineno="119"><highlight class="normal"></highlight></codeline>
 <codeline lineno="120"><highlight class="normal"></highlight><highlight class="comment">/****************************************************************************/</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="121" refid="ecat__globals_8hpp_1a3e343f521bdee99c94f22627c930d24d" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>TEST_BIT(NUM,N)<sp/><sp/><sp/><sp/>((NUM<sp/>&amp;<sp/><sp/>(1<sp/>&lt;&lt;<sp/>N))&gt;&gt;N)<sp/><sp/></highlight></codeline>
-<codeline lineno="122" refid="ecat__globals_8hpp_1a11c01176d68fc4cd05ed423d922eca26" refkind="member"><highlight class="preprocessor">#define<sp/>SET_BIT(NUM,N)<sp/><sp/><sp/><sp/><sp/><sp/>(NUM<sp/>|<sp/><sp/>(1<sp/>&lt;&lt;<sp/>N))<sp/><sp/></highlight></codeline>
-<codeline lineno="123" refid="ecat__globals_8hpp_1a4f447e47949e3f87b24ffd1039e07be1" refkind="member"><highlight class="preprocessor">#define<sp/>RESET_BIT(NUM,N)<sp/><sp/><sp/><sp/>(NUM<sp/>&amp;<sp/>~(1<sp/>&lt;&lt;<sp/>N))<sp/><sp/></highlight></codeline>
-<codeline lineno="124"><highlight class="preprocessor">#define<sp/>TIMESPEC2NS(T)<sp/><sp/><sp/><sp/><sp/><sp/>((uint64_t)<sp/>(T).tv_sec<sp/>*<sp/>g_kNsPerSec<sp/>+<sp/>(T).tv_nsec)<sp/></highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="126" refid="ecat__globals_8hpp_1aff98fed4398150e17dbcd151445065ee" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>DIFF_NS(A,<sp/>B)<sp/>(((B).tv_sec<sp/>-<sp/>(A).tv_sec)<sp/>*<sp/>g_kNsPerSec<sp/>+<sp/>(B).tv_nsec<sp/>-<sp/>(A).tv_nsec)</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="127"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>CLOCK_TO_USE<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>CLOCK_MONOTONIC<sp/><sp/></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="121" refid="ecat__globals_8hpp_1a3e343f521bdee99c94f22627c930d24d" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>TEST_BIT(NUM,N)<sp/><sp/><sp/><sp/>((NUM<sp/>&amp;<sp/><sp/>(1<sp/>&lt;&lt;<sp/>N))&gt;&gt;N)<sp/><sp/></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="122" refid="ecat__globals_8hpp_1a11c01176d68fc4cd05ed423d922eca26" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>SET_BIT(NUM,N)<sp/><sp/><sp/><sp/><sp/><sp/>(NUM<sp/>|<sp/><sp/>(1<sp/>&lt;&lt;<sp/>N))<sp/><sp/></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="123" refid="ecat__globals_8hpp_1a4f447e47949e3f87b24ffd1039e07be1" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>RESET_BIT(NUM,N)<sp/><sp/><sp/><sp/>(NUM<sp/>&amp;<sp/>~(1<sp/>&lt;&lt;<sp/>N))<sp/><sp/></highlight></codeline>
+<codeline lineno="125" refid="ecat__globals_8hpp_1a0ca04ace3fdf9024f99a7e1c50bea258" refkind="member"><highlight class="preprocessor">#define<sp/>TIMESPEC2NS(T)<sp/><sp/><sp/><sp/><sp/><sp/>((uint64_t)<sp/>(T).tv_sec<sp/>*<sp/>g_kNsPerSec<sp/>+<sp/>(T).tv_nsec)<sp/></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="126" refid="ecat__globals_8hpp_1aff98fed4398150e17dbcd151445065ee" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>DIFF_NS(A,<sp/>B)<sp/>(((B).tv_sec<sp/>-<sp/>(A).tv_sec)<sp/>*<sp/>g_kNsPerSec<sp/>+<sp/>(B).tv_nsec<sp/>-<sp/>(A).tv_nsec)</highlight></codeline>
+<codeline lineno="128" refid="ecat__globals_8hpp_1a5a01bd1cd59441f2db054ad38728de54" refkind="member"><highlight class="preprocessor">#define<sp/>CLOCK_TO_USE<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>CLOCK_MONOTONIC<sp/><sp/></highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="129"><highlight class="normal"></highlight></codeline>
-<codeline lineno="137" refid="ecat__globals_8hpp_1af38165367cb15a861318697b9cae5b53" refkind="member"><highlight class="keyword">inline</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal">timespec<sp/><ref refid="ecat__globals_8hpp_1af38165367cb15a861318697b9cae5b53" kindref="member">timespec_add</ref>(struct<sp/>timespec<sp/>time1,<sp/>struct<sp/>timespec<sp/>time2)</highlight></codeline>
+<codeline lineno="137" refid="ecat__globals_8hpp_1af38165367cb15a861318697b9cae5b53" refkind="member"><highlight class="normal"></highlight><highlight class="keyword">inline</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal">timespec<sp/><ref refid="ecat__globals_8hpp_1af38165367cb15a861318697b9cae5b53" kindref="member">timespec_add</ref>(struct<sp/>timespec<sp/>time1,<sp/>struct<sp/>timespec<sp/>time2)</highlight></codeline>
 <codeline lineno="138"><highlight class="normal">{</highlight></codeline>
 <codeline lineno="139"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal">timespec<sp/>result;</highlight></codeline>
 <codeline lineno="140"><highlight class="normal"></highlight></codeline>
@@ -1293,8 +1293,8 @@
 <codeline lineno="178"><highlight class="normal">{</highlight></codeline>
 <codeline lineno="179" refid="ecat__globals_8hpp_1a3c9f753e2c77ff1f3cd20820eb4bb4f1aa5571864412c8275a2e18a931fddcaa6" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="ecat__globals_8hpp_1a3c9f753e2c77ff1f3cd20820eb4bb4f1aa5571864412c8275a2e18a931fddcaa6" kindref="member">FAILURE</ref><sp/>=<sp/>-1,</highlight></codeline>
 <codeline lineno="180" refid="ecat__globals_8hpp_1a3c9f753e2c77ff1f3cd20820eb4bb4f1ac7f69f7c9e5aea9b8f54cf02870e2bf8" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="ecat__globals_8hpp_1a3c9f753e2c77ff1f3cd20820eb4bb4f1ac7f69f7c9e5aea9b8f54cf02870e2bf8" kindref="member">SUCCESS</ref>,</highlight></codeline>
-<codeline lineno="181" refid="ecat__globals_8hpp_1a3c9f753e2c77ff1f3cd20820eb4bb4f1a1496dab105bcfaaf0c3d2a69f649598b" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="ecat__globals_8hpp_1a3c9f753e2c77ff1f3cd20820eb4bb4f1a1496dab105bcfaaf0c3d2a69f649598b" kindref="member">TRANSITIONING</ref></highlight></codeline>
-<codeline lineno="182"><highlight class="normal">};</highlight></codeline>
+<codeline lineno="181"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="ecat__globals_8hpp_1a3c9f753e2c77ff1f3cd20820eb4bb4f1a1496dab105bcfaaf0c3d2a69f649598b" kindref="member">TRANSITIONING</ref></highlight></codeline>
+<codeline lineno="182" refid="ecat__globals_8hpp_1a3c9f753e2c77ff1f3cd20820eb4bb4f1a1496dab105bcfaaf0c3d2a69f649598b" refkind="member"><highlight class="normal">};</highlight></codeline>
 <codeline lineno="183"><highlight class="normal"></highlight></codeline>
 <codeline lineno="185" refid="structSDO__data" refkind="compound"><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal">{</highlight></codeline>
 <codeline lineno="186" refid="structSDO__data_1af2b04b3d1bb3b50b19514eaf97c331fb" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>uint16_t<sp/><ref refid="structSDO__data_1af2b04b3d1bb3b50b19514eaf97c331fb" kindref="member">slave_position</ref>;<sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>Position<sp/>based<sp/>addressing.</highlight><highlight class="normal"></highlight></codeline>
@@ -1366,8 +1366,8 @@
 <codeline lineno="256" refid="ecat__globals_8hpp_1a5d175b4708e9a88ebbc35372ca1818b7a017887ee6e6d711cdb453f275fd971dc" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="ecat__globals_8hpp_1a5d175b4708e9a88ebbc35372ca1818b7a017887ee6e6d711cdb453f275fd971dc" kindref="member">kWarning</ref>,</highlight></codeline>
 <codeline lineno="257" refid="ecat__globals_8hpp_1a5d175b4708e9a88ebbc35372ca1818b7af34e262497cefee9f006225d255f0b02" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="ecat__globals_8hpp_1a5d175b4708e9a88ebbc35372ca1818b7af34e262497cefee9f006225d255f0b02" kindref="member">kRemote</ref>,</highlight></codeline>
 <codeline lineno="258" refid="ecat__globals_8hpp_1a5d175b4708e9a88ebbc35372ca1818b7a2f6d5acfbeb8936f56c1a86dd1827dfb" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="ecat__globals_8hpp_1a5d175b4708e9a88ebbc35372ca1818b7a2f6d5acfbeb8936f56c1a86dd1827dfb" kindref="member">kTargetReached</ref>,</highlight></codeline>
-<codeline lineno="259" refid="ecat__globals_8hpp_1a5d175b4708e9a88ebbc35372ca1818b7af6a3169aef150c63a68dc2206278bb11" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="ecat__globals_8hpp_1a5d175b4708e9a88ebbc35372ca1818b7af6a3169aef150c63a68dc2206278bb11" kindref="member">kInternalLimitActivate</ref></highlight></codeline>
-<codeline lineno="260"><highlight class="normal">};</highlight></codeline>
+<codeline lineno="259"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="ecat__globals_8hpp_1a5d175b4708e9a88ebbc35372ca1818b7af6a3169aef150c63a68dc2206278bb11" kindref="member">kInternalLimitActivate</ref></highlight></codeline>
+<codeline lineno="260" refid="ecat__globals_8hpp_1a5d175b4708e9a88ebbc35372ca1818b7af6a3169aef150c63a68dc2206278bb11" refkind="member"><highlight class="normal">};</highlight></codeline>
 <codeline lineno="261"><highlight class="normal"></highlight></codeline>
 <codeline lineno="263"><highlight class="normal"></highlight></codeline>
 <codeline lineno="264" refid="ecat__globals_8hpp_1aad8633114c3b7bfa7443f128aad93aa9" refkind="member"><highlight class="normal"></highlight><highlight class="keyword">enum</highlight><highlight class="normal"><sp/><ref refid="ecat__globals_8hpp_1aad8633114c3b7bfa7443f128aad93aa9" kindref="member">ErrorRegisterBits</ref>{</highlight></codeline>
@@ -1378,8 +1378,8 @@
 <codeline lineno="269" refid="ecat__globals_8hpp_1aad8633114c3b7bfa7443f128aad93aa9af97f356c1721064526054b6f066b496f" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="ecat__globals_8hpp_1aad8633114c3b7bfa7443f128aad93aa9af97f356c1721064526054b6f066b496f" kindref="member">kCommunicationError</ref>,</highlight></codeline>
 <codeline lineno="270" refid="ecat__globals_8hpp_1aad8633114c3b7bfa7443f128aad93aa9a8af07a22c3ad75def4d66343ce660209" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="ecat__globals_8hpp_1aad8633114c3b7bfa7443f128aad93aa9a8af07a22c3ad75def4d66343ce660209" kindref="member">kDeviceProfileSpecificError</ref>,</highlight></codeline>
 <codeline lineno="271" refid="ecat__globals_8hpp_1aad8633114c3b7bfa7443f128aad93aa9aea8b005869aaf5c494db89c503b06800" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="ecat__globals_8hpp_1aad8633114c3b7bfa7443f128aad93aa9aea8b005869aaf5c494db89c503b06800" kindref="member">kReserved</ref>,</highlight></codeline>
-<codeline lineno="272" refid="ecat__globals_8hpp_1aad8633114c3b7bfa7443f128aad93aa9a5c26704f40c60ff29dba053bed06a202" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="ecat__globals_8hpp_1aad8633114c3b7bfa7443f128aad93aa9a5c26704f40c60ff29dba053bed06a202" kindref="member">kMotionError</ref></highlight></codeline>
-<codeline lineno="273"><highlight class="normal">};</highlight></codeline>
+<codeline lineno="272"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="ecat__globals_8hpp_1aad8633114c3b7bfa7443f128aad93aa9a5c26704f40c60ff29dba053bed06a202" kindref="member">kMotionError</ref></highlight></codeline>
+<codeline lineno="273" refid="ecat__globals_8hpp_1aad8633114c3b7bfa7443f128aad93aa9a5c26704f40c60ff29dba053bed06a202" refkind="member"><highlight class="normal">};</highlight></codeline>
 <codeline lineno="276" refid="ecat__globals_8hpp_1a4a8f52fe7f00c0838866e018dfd0fb2d" refkind="member"><highlight class="keyword">enum</highlight><highlight class="normal"><sp/><ref refid="ecat__globals_8hpp_1a4a8f52fe7f00c0838866e018dfd0fb2d" kindref="member">SensorConfig</ref>{</highlight></codeline>
 <codeline lineno="277" refid="ecat__globals_8hpp_1a4a8f52fe7f00c0838866e018dfd0fb2dab5f681ac79a8660aba4a9d7dc6eb31f2" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="ecat__globals_8hpp_1a4a8f52fe7f00c0838866e018dfd0fb2dab5f681ac79a8660aba4a9d7dc6eb31f2" kindref="member">kSensor1TypeNone</ref>=0,</highlight></codeline>
 <codeline lineno="278" refid="ecat__globals_8hpp_1a4a8f52fe7f00c0838866e018dfd0fb2daf61a7493356a7aece1a7375167832ed9" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="ecat__globals_8hpp_1a4a8f52fe7f00c0838866e018dfd0fb2daf61a7493356a7aece1a7375167832ed9" kindref="member">kSensor1TypeDigitalIncrementalEncoder1</ref>=1,</highlight></codeline>
@@ -1388,9 +1388,9 @@
 <codeline lineno="281" refid="ecat__globals_8hpp_1a4a8f52fe7f00c0838866e018dfd0fb2da67d7a228bc250e460d37d76a9c438f4e" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="ecat__globals_8hpp_1a4a8f52fe7f00c0838866e018dfd0fb2da67d7a228bc250e460d37d76a9c438f4e" kindref="member">kSensor2TypeAnalogIncrementalEncoderSinCos</ref>=512,</highlight></codeline>
 <codeline lineno="282" refid="ecat__globals_8hpp_1a4a8f52fe7f00c0838866e018dfd0fb2dacaa71830ad73062664079bb34fba171d" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="ecat__globals_8hpp_1a4a8f52fe7f00c0838866e018dfd0fb2dacaa71830ad73062664079bb34fba171d" kindref="member">kSensor2TypeSSIAbsoluteEncoder</ref>=768,</highlight></codeline>
 <codeline lineno="283" refid="ecat__globals_8hpp_1a4a8f52fe7f00c0838866e018dfd0fb2da33fa0423efc03ec99e691fec3382f55a" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="ecat__globals_8hpp_1a4a8f52fe7f00c0838866e018dfd0fb2da33fa0423efc03ec99e691fec3382f55a" kindref="member">kSensor3TypeNone</ref>=0,</highlight></codeline>
-<codeline lineno="284" refid="ecat__globals_8hpp_1a4a8f52fe7f00c0838866e018dfd0fb2da510ca492e95b28ddb224d91f2e748369" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="ecat__globals_8hpp_1a4a8f52fe7f00c0838866e018dfd0fb2da510ca492e95b28ddb224d91f2e748369" kindref="member">kSensor3TypeDigitalHallSensor</ref>=131072<sp/><sp/></highlight><highlight class="comment">//EC<sp/>motors<sp/>only<sp/></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="284"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="ecat__globals_8hpp_1a4a8f52fe7f00c0838866e018dfd0fb2da510ca492e95b28ddb224d91f2e748369" kindref="member">kSensor3TypeDigitalHallSensor</ref>=131072<sp/><sp/></highlight><highlight class="comment">//EC<sp/>motors<sp/>only<sp/></highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="285"><highlight class="normal"></highlight></codeline>
-<codeline lineno="286"><highlight class="normal">};</highlight></codeline>
+<codeline lineno="286" refid="ecat__globals_8hpp_1a4a8f52fe7f00c0838866e018dfd0fb2da510ca492e95b28ddb224d91f2e748369" refkind="member"><highlight class="normal">};</highlight></codeline>
 <codeline lineno="287"><highlight class="normal"></highlight></codeline>
 <codeline lineno="289" refid="ecat__globals_8hpp_1ae56d58acf7f23ca7ce23ed016a45dcae" refkind="member"><highlight class="keyword">enum</highlight><highlight class="normal"><sp/><ref refid="ecat__globals_8hpp_1ae56d58acf7f23ca7ce23ed016a45dcae" kindref="member">ControlStructureBits</ref>{</highlight></codeline>
 <codeline lineno="291" refid="ecat__globals_8hpp_1ae56d58acf7f23ca7ce23ed016a45dcaea1bc147fff50f73162083476ccf9259db" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="ecat__globals_8hpp_1ae56d58acf7f23ca7ce23ed016a45dcaea1bc147fff50f73162083476ccf9259db" kindref="member">kCurrentControlStructure</ref><sp/><sp/>=<sp/>0,<sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>0-3<sp/>,<sp/>4<sp/>bits.<sp/>Val<sp/>:<sp/>1<sp/>-<sp/>PI<sp/>current<sp/>controller</highlight><highlight class="normal"></highlight></codeline>
@@ -1465,7 +1465,7 @@
 <codeline lineno="363"><highlight class="normal"></highlight></codeline>
 <codeline lineno="364"><highlight class="normal">}<sp/><ref refid="structProfilePosParam" kindref="compound">ProfilePosParam</ref><sp/>;</highlight></codeline>
 <codeline lineno="365"><highlight class="normal"></highlight></codeline>
-<codeline lineno="370" refid="structCSPositionModeParam" refkind="compound"><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="370" refid="structCSPositionModeParam" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="371"><highlight class="normal">{</highlight></codeline>
 <codeline lineno="372" refid="structCSPositionModeParam_1a4cab3ece9f13d718af0e3861fcc0878e" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>uint32_t<sp/><ref refid="structCSPositionModeParam_1a4cab3ece9f13d718af0e3861fcc0878e" kindref="member">nominal_current</ref><sp/>;</highlight></codeline>
 <codeline lineno="373" refid="structCSPositionModeParam_1acc1611d030de3fb10c9e7fc10ff0427e" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>uint16_t<sp/><ref refid="structCSPositionModeParam_1acc1611d030de3fb10c9e7fc10ff0427e" kindref="member">torque_constant</ref><sp/>;</highlight></codeline>
@@ -1491,7 +1491,7 @@
 <codeline lineno="398" refid="structVelControlParam_1ad7848266bd2871549ea2a291d939c7ee" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>uint32_t<sp/>FFAccgain<sp/>=<sp/>0;</highlight></codeline>
 <codeline lineno="399"><highlight class="normal"><sp/>}<sp/><ref refid="structVelControlParam" kindref="compound">VelControlParam</ref>;</highlight></codeline>
 <codeline lineno="400"><highlight class="normal"></highlight></codeline>
-<codeline lineno="405" refid="structCSVelocityModeParam" refkind="compound"><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="405" refid="structCSVelocityModeParam" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="406"><highlight class="normal">{</highlight></codeline>
 <codeline lineno="407" refid="structCSVelocityModeParam_1ad0394a462256fede3e57111c4b1af73f" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="structVelControlParam" kindref="compound">VelControlParam</ref><sp/><ref refid="structCSVelocityModeParam_1ad0394a462256fede3e57111c4b1af73f" kindref="member">velocity_controller_gain</ref><sp/>;</highlight></codeline>
 <codeline lineno="408" refid="structCSVelocityModeParam_1a0439f6be9b0240a3841ff23ebf90e165" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>uint32_t<sp/><ref refid="structCSVelocityModeParam_1a0439f6be9b0240a3841ff23ebf90e165" kindref="member">quick_stop_dec</ref><sp/>;</highlight></codeline>
@@ -1500,7 +1500,7 @@
 <codeline lineno="411" refid="structCSVelocityModeParam_1a6bcc685fb6d06ae1c972fa5c255770b5" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>uint32_t<sp/><ref refid="structCSVelocityModeParam_1a6bcc685fb6d06ae1c972fa5c255770b5" kindref="member">interpolation_time_period</ref><sp/>;</highlight></codeline>
 <codeline lineno="412"><highlight class="normal">}<sp/><ref refid="structCSVelocityModeParam" kindref="compound">CSVelocityModeParam</ref><sp/>;</highlight></codeline>
 <codeline lineno="413"><highlight class="normal"><sp/></highlight></codeline>
-<codeline lineno="418" refid="structCSTorqueModeParam" refkind="compound"><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="418" refid="structCSTorqueModeParam" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="419"><highlight class="normal">{</highlight></codeline>
 <codeline lineno="420" refid="structCSTorqueModeParam_1a761a81f7e2d27a4cdab0ac823d494021" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>uint32_t<sp/><ref refid="structCSTorqueModeParam_1a761a81f7e2d27a4cdab0ac823d494021" kindref="member">nominal_current</ref><sp/>;</highlight></codeline>
 <codeline lineno="421" refid="structCSTorqueModeParam_1a700effe2fe0fa6b22a20a47fd2d544b5" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>uint16_t<sp/><ref refid="structCSTorqueModeParam_1a700effe2fe0fa6b22a20a47fd2d544b5" kindref="member">torque_constant</ref><sp/>;</highlight></codeline>

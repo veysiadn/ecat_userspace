@@ -1,5 +1,5 @@
 var namespaces_dup =
 [
-    [ "EthercatCommunication", "namespaceEthercatCommunication.html", null ],
-    [ "EthercatLifeCycleNode", "namespaceEthercatLifeCycleNode.html", null ]
+    [ "EthercatCommunication", "namespaceEthercatCommunication.html", "namespaceEthercatCommunication" ],
+    [ "EthercatLifeCycleNode", "namespaceEthercatLifeCycleNode.html", "namespaceEthercatLifeCycleNode" ]
 ];

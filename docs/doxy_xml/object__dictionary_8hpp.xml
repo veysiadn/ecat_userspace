@@ -1,49 +1,9 @@
 <?xml version='1.0' encoding='UTF-8' standalone='no'?>
-<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.17">
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.3" xml:lang="en-US">
   <compounddef id="object__dictionary_8hpp" kind="file" language="C++">
     <compoundname>object_dictionary.hpp</compoundname>
     <includedby refid="ecat__globals_8hpp" local="yes">include/ecat_globals.hpp</includedby>
     <invincdepgraph>
-      <node id="7">
-        <label>src/ecat_lifecycle.cpp</label>
-        <link refid="ecat__lifecycle_8cpp"/>
-      </node>
-      <node id="5">
-        <label>src/main.cpp</label>
-        <link refid="main_8cpp"/>
-      </node>
-      <node id="9">
-        <label>src/ecat_slave.cpp</label>
-        <link refid="ecat__slave_8cpp"/>
-      </node>
-      <node id="1">
-        <label>include/object_dictionary.hpp</label>
-        <link refid="object__dictionary_8hpp"/>
-        <childnode refid="2" relation="include">
-        </childnode>
-      </node>
-      <node id="8">
-        <label>include/ecat_slave.hpp</label>
-        <link refid="ecat__slave_8hpp"/>
-        <childnode refid="9" relation="include">
-        </childnode>
-        <childnode refid="3" relation="include">
-        </childnode>
-      </node>
-      <node id="3">
-        <label>include/ecat_node.hpp</label>
-        <link refid="ecat__node_8hpp"/>
-        <childnode refid="4" relation="include">
-        </childnode>
-        <childnode refid="5" relation="include">
-        </childnode>
-        <childnode refid="6" relation="include">
-        </childnode>
-      </node>
-      <node id="4">
-        <label>src/ecat_node.cpp</label>
-        <link refid="ecat__node_8cpp"/>
-      </node>
       <node id="2">
         <label>include/ecat_globals.hpp</label>
         <link refid="ecat__globals_8hpp"/>
@@ -52,13 +12,53 @@
         <childnode refid="8" relation="include">
         </childnode>
       </node>
-      <node id="6">
+      <node id="4">
         <label>include/ecat_lifecycle.hpp</label>
         <link refid="ecat__lifecycle_8hpp"/>
-        <childnode refid="7" relation="include">
-        </childnode>
         <childnode refid="5" relation="include">
         </childnode>
+        <childnode refid="6" relation="include">
+        </childnode>
+      </node>
+      <node id="3">
+        <label>include/ecat_node.hpp</label>
+        <link refid="ecat__node_8hpp"/>
+        <childnode refid="4" relation="include">
+        </childnode>
+        <childnode refid="7" relation="include">
+        </childnode>
+        <childnode refid="6" relation="include">
+        </childnode>
+      </node>
+      <node id="8">
+        <label>include/ecat_slave.hpp</label>
+        <link refid="ecat__slave_8hpp"/>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="9" relation="include">
+        </childnode>
+      </node>
+      <node id="1">
+        <label>include/object_dictionary.hpp</label>
+        <link refid="object__dictionary_8hpp"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+      </node>
+      <node id="5">
+        <label>src/ecat_lifecycle.cpp</label>
+        <link refid="ecat__lifecycle_8cpp"/>
+      </node>
+      <node id="7">
+        <label>src/ecat_node.cpp</label>
+        <link refid="ecat__node_8cpp"/>
+      </node>
+      <node id="9">
+        <label>src/ecat_slave.cpp</label>
+        <link refid="ecat__slave_8cpp"/>
+      </node>
+      <node id="6">
+        <label>src/main.cpp</label>
+        <link refid="main_8cpp"/>
       </node>
     </invincdepgraph>
       <sectiondef kind="define">
@@ -1251,29 +1251,29 @@
 <codeline lineno="57" refid="object__dictionary_8hpp_1a98739b299f10ee80827c4f6593530cf4" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>OD_TARGET_VELOCITY<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>0x60FF,0x00</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="58" refid="object__dictionary_8hpp_1a87c9c2a45069105d1519a749716f3e3c" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>OD_VELOCITY_OFFSET<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>0x60B1,0x00</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="59"><highlight class="normal"></highlight></codeline>
-<codeline lineno="60" refid="object__dictionary_8hpp_1ada535e4a23b7c95229eff27b95453ef0" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>OD_INTERPOLATION_TIME_PERIOD<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>0X60C2,0X01<sp/><sp/>//<sp/>RW:<sp/>uint8_t<sp/><sp/><sp/>check<sp/>EPOS4<sp/>Firmware<sp/>Specification<sp/>pg.<sp/>247</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="61" refid="object__dictionary_8hpp_1ac07ca7138b456c8183f71724a6e7d903" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>OD_INTERPOLATION_TIME_UNIT<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>0X60C2,0X02<sp/><sp/>//<sp/>RW:<sp/>uint8_t<sp/><sp/><sp/>set<sp/>this<sp/>to<sp/>-3(default)<sp/>for<sp/>ms<sp/>unit.</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="62" refid="object__dictionary_8hpp_1acb646ec5ed1e7c9f563c4d032c591ba6" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>OD_MOTOR_DATA_NOMINAL_CURRENT<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>0X3001,0X01<sp/><sp/>//<sp/>RW:<sp/>uint32_t<sp/><sp/>unit<sp/>is<sp/>mA</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="63" refid="object__dictionary_8hpp_1aa1358f276a4e056792354477a44e927a" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>OD_MOTOR_DATA_OUTPUT_CURRENT_LIMIT<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>0X3001,0X02<sp/><sp/>//<sp/>RW:<sp/>uint32_t</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="64" refid="object__dictionary_8hpp_1a1811ad893b3bd884827fd5c035bd2a15" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>OD_MOTOR_DATA_NUMBER_OF_POLE_PAIRS<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>0X3001,0X03<sp/><sp/>//<sp/>RW:<sp/>uint8_t</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="65" refid="object__dictionary_8hpp_1a758e4d4f1a13de343ec550620d6fb72a" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>OD_MOTOR_DATA_THERMAL_TIME_CONSTANT_WINDINGS<sp/><sp/><sp/><sp/>0X3001,0X04<sp/><sp/>//<sp/>RW:<sp/>uint16_t</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="66" refid="object__dictionary_8hpp_1a79f7a2b85efa4b9349ad4126e8a3cf3b" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>OD_MOTOR_DATA_TORQUE_CONSTANT<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>0X3001,0X05<sp/><sp/>//<sp/>RW:<sp/>uint32_t</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="67" refid="object__dictionary_8hpp_1a558b8fe6632d7657d3a05e45093470bd" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>OD_GEAR_REDUCTION_NUMERATOR<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>0X3003,0X01<sp/><sp/>//<sp/>RW:<sp/>uint32_t</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="68" refid="object__dictionary_8hpp_1ad7c4b997d8be89168a3dfa7f70248990" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>OD_GEAR_REDUCTION_DENOMINATOR<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>0X3003,0X02<sp/><sp/>//<sp/>RW:<sp/>uint32_t</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="69" refid="object__dictionary_8hpp_1a324bb914b4d5855ed0747e236c1a81ad" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>OD_GEAR_MAX_INPUT_SPEED<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>0X3003,0X03<sp/><sp/>//<sp/>RW:<sp/>uint32_t</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="70" refid="object__dictionary_8hpp_1ade55ac2e7f0b1a9cb47f717d69dcd3d6" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>OD_GEAR_MISC_CONFIGURATION<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>0X3003,0X04<sp/><sp/>//<sp/>RW:<sp/>uint32_t<sp/>//<sp/>Gear<sp/>direction<sp/>0<sp/>normal<sp/>1<sp/>inverted.</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="71" refid="object__dictionary_8hpp_1a2cb9f85dcea69796e330ab9a4dab71d8" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>OD_DIGITAL_INCREMENTAL_ENCODER_1_TYPE<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>0X3010,0X02<sp/><sp/>//<sp/>RW:<sp/>uint16_t<sp/>//<sp/>pg.<sp/>157<sp/>EPOS4-Firmware-Specifications</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="60" refid="object__dictionary_8hpp_1ada535e4a23b7c95229eff27b95453ef0" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>OD_INTERPOLATION_TIME_PERIOD<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>0X60C2,0X01<sp/><sp/></highlight><highlight class="comment">//<sp/>RW:<sp/>uint8_t<sp/><sp/><sp/>check<sp/>EPOS4<sp/>Firmware<sp/>Specification<sp/>pg.<sp/>247</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="61" refid="object__dictionary_8hpp_1ac07ca7138b456c8183f71724a6e7d903" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>OD_INTERPOLATION_TIME_UNIT<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>0X60C2,0X02<sp/><sp/></highlight><highlight class="comment">//<sp/>RW:<sp/>uint8_t<sp/><sp/><sp/>set<sp/>this<sp/>to<sp/>-3(default)<sp/>for<sp/>ms<sp/>unit.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="62" refid="object__dictionary_8hpp_1acb646ec5ed1e7c9f563c4d032c591ba6" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>OD_MOTOR_DATA_NOMINAL_CURRENT<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>0X3001,0X01<sp/><sp/></highlight><highlight class="comment">//<sp/>RW:<sp/>uint32_t<sp/><sp/>unit<sp/>is<sp/>mA</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="63" refid="object__dictionary_8hpp_1aa1358f276a4e056792354477a44e927a" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>OD_MOTOR_DATA_OUTPUT_CURRENT_LIMIT<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>0X3001,0X02<sp/><sp/></highlight><highlight class="comment">//<sp/>RW:<sp/>uint32_t</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="64" refid="object__dictionary_8hpp_1a1811ad893b3bd884827fd5c035bd2a15" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>OD_MOTOR_DATA_NUMBER_OF_POLE_PAIRS<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>0X3001,0X03<sp/><sp/></highlight><highlight class="comment">//<sp/>RW:<sp/>uint8_t</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="65" refid="object__dictionary_8hpp_1a758e4d4f1a13de343ec550620d6fb72a" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>OD_MOTOR_DATA_THERMAL_TIME_CONSTANT_WINDINGS<sp/><sp/><sp/><sp/>0X3001,0X04<sp/><sp/></highlight><highlight class="comment">//<sp/>RW:<sp/>uint16_t</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="66" refid="object__dictionary_8hpp_1a79f7a2b85efa4b9349ad4126e8a3cf3b" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>OD_MOTOR_DATA_TORQUE_CONSTANT<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>0X3001,0X05<sp/><sp/></highlight><highlight class="comment">//<sp/>RW:<sp/>uint32_t</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="67" refid="object__dictionary_8hpp_1a558b8fe6632d7657d3a05e45093470bd" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>OD_GEAR_REDUCTION_NUMERATOR<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>0X3003,0X01<sp/><sp/></highlight><highlight class="comment">//<sp/>RW:<sp/>uint32_t</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="68" refid="object__dictionary_8hpp_1ad7c4b997d8be89168a3dfa7f70248990" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>OD_GEAR_REDUCTION_DENOMINATOR<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>0X3003,0X02<sp/><sp/></highlight><highlight class="comment">//<sp/>RW:<sp/>uint32_t</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="69" refid="object__dictionary_8hpp_1a324bb914b4d5855ed0747e236c1a81ad" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>OD_GEAR_MAX_INPUT_SPEED<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>0X3003,0X03<sp/><sp/></highlight><highlight class="comment">//<sp/>RW:<sp/>uint32_t</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="70" refid="object__dictionary_8hpp_1ade55ac2e7f0b1a9cb47f717d69dcd3d6" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>OD_GEAR_MISC_CONFIGURATION<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>0X3003,0X04<sp/><sp/></highlight><highlight class="comment">//<sp/>RW:<sp/>uint32_t<sp/>//<sp/>Gear<sp/>direction<sp/>0<sp/>normal<sp/>1<sp/>inverted.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="71" refid="object__dictionary_8hpp_1a2cb9f85dcea69796e330ab9a4dab71d8" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>OD_DIGITAL_INCREMENTAL_ENCODER_1_TYPE<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>0X3010,0X02<sp/><sp/></highlight><highlight class="comment">//<sp/>RW:<sp/>uint16_t<sp/>//<sp/>pg.<sp/>157<sp/>EPOS4-Firmware-Specifications</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="72"><highlight class="normal"></highlight></codeline>
-<codeline lineno="73" refid="object__dictionary_8hpp_1ac1626f392daf85ef8f47a76f74cd7a02" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>OD_ERROR_REGISTER<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>0X1001,0X00<sp/><sp/>//<sp/>RO:<sp/>uint8_t<sp/>Maxon<sp/>EPOS4<sp/>Compact<sp/>50/5<sp/>\see<sp/>ErrorRegisterBits<sp/>struct<sp/></highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="74" refid="object__dictionary_8hpp_1a5193496a939bbe957ce85b8f8ac6b7a9" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>OD_ACTIVE_FIELDBUS<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>0X2010,0X00<sp/><sp/>//<sp/>R0:<sp/>uint8_t<sp/>-<sp/>0:<sp/>None<sp/>,<sp/>1<sp/>:<sp/>CANOpen<sp/>-<sp/><sp/>2:EtherCAT<sp/></highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="75" refid="object__dictionary_8hpp_1af231e3e496d8a0a3ea319f8b3584291b" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>OD_CUSTOM_PERSISTENT_MEMORY_1<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>0X210C,0X01<sp/><sp/>//<sp/>RW:<sp/>int32_t<sp/>to<sp/>store<sp/>configuration<sp/>values,<sp/>up<sp/>to<sp/>4<sp/>bytes.</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="76" refid="object__dictionary_8hpp_1a702bfe07d361b14ecc418352f84f159a" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>OD_CUSTOM_PERSISTENT_MEMORY_2<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>0X210C,0X02<sp/><sp/>//<sp/>RW:<sp/>int32_t<sp/>to<sp/>store<sp/>configuration<sp/>values,<sp/>up<sp/>to<sp/>4<sp/>bytes.</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="77" refid="object__dictionary_8hpp_1a7680008584661642b6c19e65abf96d75" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>OD_CUSTOM_PERSISTENT_MEMORY_3<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>0X210C,0X03<sp/><sp/>//<sp/>RW:<sp/>int32_t<sp/>to<sp/>store<sp/>configuration<sp/>values,<sp/>up<sp/>to<sp/>4<sp/>bytes.</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="78" refid="object__dictionary_8hpp_1a7432ee401034a1653b1c8355785b8dae" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>OD_CUSTOM_PERSISTENT_MEMORY_4<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>0X210C,0X04<sp/><sp/>//<sp/>RW:<sp/>int32_t<sp/>to<sp/>store<sp/>configuration<sp/>values,<sp/>up<sp/>to<sp/>4<sp/>bytes.</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="79" refid="object__dictionary_8hpp_1a6822df369ac50db39f927af6962454ce" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>OD_POWER_SUPPLY_VOLTAGE<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>0X2200,0X01<sp/><sp/>//<sp/>RO:<sp/>uint16_t<sp/></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="73" refid="object__dictionary_8hpp_1ac1626f392daf85ef8f47a76f74cd7a02" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>OD_ERROR_REGISTER<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>0X1001,0X00<sp/><sp/></highlight><highlight class="comment">//<sp/>RO:<sp/>uint8_t<sp/>Maxon<sp/>EPOS4<sp/>Compact<sp/>50/5<sp/>\see<sp/>ErrorRegisterBits<sp/>struct<sp/></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="74" refid="object__dictionary_8hpp_1a5193496a939bbe957ce85b8f8ac6b7a9" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>OD_ACTIVE_FIELDBUS<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>0X2010,0X00<sp/><sp/></highlight><highlight class="comment">//<sp/>R0:<sp/>uint8_t<sp/>-<sp/>0:<sp/>None<sp/>,<sp/>1<sp/>:<sp/>CANOpen<sp/>-<sp/><sp/>2:EtherCAT<sp/></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="75" refid="object__dictionary_8hpp_1af231e3e496d8a0a3ea319f8b3584291b" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>OD_CUSTOM_PERSISTENT_MEMORY_1<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>0X210C,0X01<sp/><sp/></highlight><highlight class="comment">//<sp/>RW:<sp/>int32_t<sp/>to<sp/>store<sp/>configuration<sp/>values,<sp/>up<sp/>to<sp/>4<sp/>bytes.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="76" refid="object__dictionary_8hpp_1a702bfe07d361b14ecc418352f84f159a" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>OD_CUSTOM_PERSISTENT_MEMORY_2<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>0X210C,0X02<sp/><sp/></highlight><highlight class="comment">//<sp/>RW:<sp/>int32_t<sp/>to<sp/>store<sp/>configuration<sp/>values,<sp/>up<sp/>to<sp/>4<sp/>bytes.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="77" refid="object__dictionary_8hpp_1a7680008584661642b6c19e65abf96d75" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>OD_CUSTOM_PERSISTENT_MEMORY_3<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>0X210C,0X03<sp/><sp/></highlight><highlight class="comment">//<sp/>RW:<sp/>int32_t<sp/>to<sp/>store<sp/>configuration<sp/>values,<sp/>up<sp/>to<sp/>4<sp/>bytes.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="78" refid="object__dictionary_8hpp_1a7432ee401034a1653b1c8355785b8dae" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>OD_CUSTOM_PERSISTENT_MEMORY_4<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>0X210C,0X04<sp/><sp/></highlight><highlight class="comment">//<sp/>RW:<sp/>int32_t<sp/>to<sp/>store<sp/>configuration<sp/>values,<sp/>up<sp/>to<sp/>4<sp/>bytes.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="79" refid="object__dictionary_8hpp_1a6822df369ac50db39f927af6962454ce" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>OD_POWER_SUPPLY_VOLTAGE<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>0X2200,0X01<sp/><sp/></highlight><highlight class="comment">//<sp/>RO:<sp/>uint16_t<sp/></highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="80"><highlight class="normal"></highlight></codeline>
-<codeline lineno="82" refid="object__dictionary_8hpp_1ae738527f4ae5acebf89cf9e1a3be8fc5" refkind="member"><highlight class="preprocessor">#define<sp/>OD_SENSOR_CONFIGURATION<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>0X3000,0X01<sp/><sp/>//<sp/>RW:<sp/>uint32_t<sp/>\see<sp/>SensorConfig<sp/>struct.</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="83" refid="object__dictionary_8hpp_1a785c550c3cf6d13e39964f2f9c69c54f" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>OD_CONTROL_STRUCTURE<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>0X3000,0X02<sp/><sp/>//<sp/>RW:<sp/>uint32_t<sp/>\see<sp/>IMPORTANT!<sp/>EPOS4-Firmware-Specification<sp/>pg.<sp/>139</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="82" refid="object__dictionary_8hpp_1ae738527f4ae5acebf89cf9e1a3be8fc5" refkind="member"><highlight class="preprocessor">#define<sp/>OD_SENSOR_CONFIGURATION<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>0X3000,0X01<sp/><sp/></highlight><highlight class="comment">//<sp/>RW:<sp/>uint32_t<sp/>\see<sp/>SensorConfig<sp/>struct.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="83" refid="object__dictionary_8hpp_1a785c550c3cf6d13e39964f2f9c69c54f" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>OD_CONTROL_STRUCTURE<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>0X3000,0X02<sp/><sp/></highlight><highlight class="comment">//<sp/>RW:<sp/>uint32_t<sp/>\see<sp/>IMPORTANT!<sp/>EPOS4-Firmware-Specification<sp/>pg.<sp/>139</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="84"><highlight class="normal"></highlight><highlight class="comment">//<sp/>EOF<sp/>OD_AXIS_CONFIURATIONS</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="85"><highlight class="normal"></highlight></codeline>
 <codeline lineno="86" refid="object__dictionary_8hpp_1a789d9eb960e2822cdc70e2ad36de37c0" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>OD_PROFILE_VELOCITY<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>0x6081,0x00</highlight><highlight class="normal"></highlight></codeline>
@@ -1287,8 +1287,8 @@
 <codeline lineno="94" refid="object__dictionary_8hpp_1a775fb9075f56ce8a3faaae04540d1b8e" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>OD_VELOCITY_ENCODER_RESOLUTION_NUM<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>0x6094,0x01</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="95" refid="object__dictionary_8hpp_1a451765e7b7bb33793459332ef0e479d0" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>OD_VELOCITY_ENCODER_RESOLUTION_DEN<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>0x6094,0x02</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="96"><highlight class="normal"></highlight></codeline>
-<codeline lineno="97" refid="object__dictionary_8hpp_1aae9fcb6536ff2db8d5833ce70ad38cd0" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>OD_VELOCITY_CONTROLLER_PGAIN<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>0x30A2,0x01<sp/><sp/><sp/>//<sp/>RW:<sp/>uint32_t<sp/><sp/>\see<sp/>EPOS4-Firmware-Specification<sp/>pg.<sp/>167</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="98" refid="object__dictionary_8hpp_1a7bf4dc497a552920ae489f2c4b0e2ff7" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>OD_VELOCITY_CONTROLLER_IGAIN<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>0x30A2,0x02<sp/><sp/><sp/>//<sp/>RW:<sp/>uint32_t<sp/><sp/>\see<sp/>EPOS4-Firmware-Specification<sp/>pg.<sp/>167</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="97" refid="object__dictionary_8hpp_1aae9fcb6536ff2db8d5833ce70ad38cd0" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>OD_VELOCITY_CONTROLLER_PGAIN<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>0x30A2,0x01<sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>RW:<sp/>uint32_t<sp/><sp/>\see<sp/>EPOS4-Firmware-Specification<sp/>pg.<sp/>167</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="98" refid="object__dictionary_8hpp_1a7bf4dc497a552920ae489f2c4b0e2ff7" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>OD_VELOCITY_CONTROLLER_IGAIN<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>0x30A2,0x02<sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>RW:<sp/>uint32_t<sp/><sp/>\see<sp/>EPOS4-Firmware-Specification<sp/>pg.<sp/>167</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="99"><highlight class="normal"></highlight></codeline>
 <codeline lineno="100"><highlight class="normal"></highlight></codeline>
 <codeline lineno="101" refid="object__dictionary_8hpp_1ac49dd1c9a2846f719b045666da756ba1" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>OD_DIGITAL_INPUTS<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>0x60FD,0x00</highlight><highlight class="normal"></highlight></codeline>
@@ -1302,7 +1302,7 @@
 <codeline lineno="109"><highlight class="normal"></highlight></codeline>
 <codeline lineno="110" refid="object__dictionary_8hpp_1ae2d8feada64ecb673834a289034c46b5" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>OD_MAX_CURRENT<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>0x6073,<sp/>0x00</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="111" refid="object__dictionary_8hpp_1ab34e0d024766e79aa09933d4a7a64c7c" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>OD_CURRENT_ACTUAL_VALUE<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>0x6078,<sp/>0x00</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="112" refid="object__dictionary_8hpp_1a50159f408bc2cb07622aa3d73dcffe3a" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>OD_ERROR_CODE<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>0x603F,<sp/>0x00<sp/><sp/><sp/>//<sp/>2<sp/>bit</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="112" refid="object__dictionary_8hpp_1a50159f408bc2cb07622aa3d73dcffe3a" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>OD_ERROR_CODE<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>0x603F,<sp/>0x00<sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>2<sp/>bit</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="113"><highlight class="normal"></highlight></codeline>
 <codeline lineno="114" refid="object__dictionary_8hpp_1a21377b52877be9b2eeb10b352fa4155f" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>OD_EXTRA_STATUS_REGISTER<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>0x2085,<sp/>0x00</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="115" refid="object__dictionary_8hpp_1acc5fb37692cf87fa320d2b94e14ae259" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>OD_CHECK_ERROR<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>0x1002,0x00</highlight><highlight class="normal"></highlight></codeline>
@@ -1320,7 +1320,7 @@
 <codeline lineno="127" refid="object__dictionary_8hpp_1a106be1a156a40681180306c587d2f6f2" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>SM_GO_ENABLE<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>0X0F</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="128" refid="object__dictionary_8hpp_1a67a844adb1df22f93037703a7aae4af6" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>SM_GO_SWITCH_ON_DISABLE<sp/><sp/><sp/><sp/><sp/>0x00</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="129" refid="object__dictionary_8hpp_1a9250a46e089de909358597e6075e4580" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>SM_RUN<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>0x1F</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="130" refid="object__dictionary_8hpp_1a789a1d3357f273990a249fcb757c41b0" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>SM_EXPEDITE<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>0x3F<sp/><sp/><sp/><sp/><sp/><sp/><sp/>//like<sp/>run,<sp/>but<sp/>dont<sp/>finish<sp/>actual<sp/>position<sp/>profile</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="130" refid="object__dictionary_8hpp_1a789a1d3357f273990a249fcb757c41b0" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>SM_EXPEDITE<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>0x3F<sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//like<sp/>run,<sp/>but<sp/>dont<sp/>finish<sp/>actual<sp/>position<sp/>profile</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="131" refid="object__dictionary_8hpp_1ab7adcfce5cab981c20d9074db1a40dfe" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>SM_QUICKSTOP<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>0x02<sp/></highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="132" refid="object__dictionary_8hpp_1a12d236e460d60b6365c691eb6dbe9183" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>SM_RELATIVE_POS<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>0X7F</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="133"><highlight class="normal"></highlight></codeline>

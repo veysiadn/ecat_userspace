@@ -1,5 +1,5 @@
 <?xml version='1.0' encoding='UTF-8' standalone='no'?>
-<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.17">
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.3" xml:lang="en-US">
   <compounddef id="xboxController_8hpp" kind="file" language="C++">
     <compoundname>xboxController.hpp</compoundname>
     <includes local="no">string</includes>
@@ -12,24 +12,6 @@
     <includedby refid="main_8cpp" local="yes">src/main.cpp</includedby>
     <includedby refid="xboxController_8cpp" local="yes">src/xboxController.cpp</includedby>
     <incdepgraph>
-      <node id="3">
-        <label>stdlib.h</label>
-      </node>
-      <node id="5">
-        <label>fcntl.h</label>
-      </node>
-      <node id="2">
-        <label>string</label>
-      </node>
-      <node id="6">
-        <label>unistd.h</label>
-      </node>
-      <node id="7">
-        <label>linux/joystick.h</label>
-      </node>
-      <node id="8">
-        <label>iostream</label>
-      </node>
       <node id="1">
         <label>include/xboxController.hpp</label>
         <link refid="xboxController_8hpp"/>
@@ -48,19 +30,29 @@
         <childnode refid="8" relation="include">
         </childnode>
       </node>
+      <node id="5">
+        <label>fcntl.h</label>
+      </node>
+      <node id="8">
+        <label>iostream</label>
+      </node>
+      <node id="7">
+        <label>linux/joystick.h</label>
+      </node>
       <node id="4">
         <label>stdio.h</label>
       </node>
+      <node id="3">
+        <label>stdlib.h</label>
+      </node>
+      <node id="2">
+        <label>string</label>
+      </node>
+      <node id="6">
+        <label>unistd.h</label>
+      </node>
     </incdepgraph>
     <invincdepgraph>
-      <node id="2">
-        <label>src/main.cpp</label>
-        <link refid="main_8cpp"/>
-      </node>
-      <node id="3">
-        <label>src/xboxController.cpp</label>
-        <link refid="xboxController_8cpp"/>
-      </node>
       <node id="1">
         <label>include/xboxController.hpp</label>
         <link refid="xboxController_8hpp"/>
@@ -68,6 +60,14 @@
         </childnode>
         <childnode refid="3" relation="include">
         </childnode>
+      </node>
+      <node id="2">
+        <label>src/main.cpp</label>
+        <link refid="main_8cpp"/>
+      </node>
+      <node id="3">
+        <label>src/xboxController.cpp</label>
+        <link refid="xboxController_8cpp"/>
       </node>
     </invincdepgraph>
     <innerclass refid="structxboxCtrl" prot="public">xboxCtrl</innerclass>

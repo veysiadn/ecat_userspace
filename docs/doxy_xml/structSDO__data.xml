@@ -1,5 +1,5 @@
 <?xml version='1.0' encoding='UTF-8' standalone='no'?>
-<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.17">
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.3" xml:lang="en-US">
   <compounddef id="structSDO__data" kind="struct" language="C++" prot="public">
     <compoundname>SDO_data</compoundname>
     <includes refid="ecat__globals_8hpp" local="no">ecat_globals.hpp</includes>
@@ -9,6 +9,7 @@
         <definition>uint16_t SDO_data::slave_position</definition>
         <argsstring></argsstring>
         <name>slave_position</name>
+        <qualifiedname>SDO_data::slave_position</qualifiedname>
         <briefdescription>
         </briefdescription>
         <detaileddescription>
@@ -22,6 +23,7 @@
         <definition>uint16_t SDO_data::index</definition>
         <argsstring></argsstring>
         <name>index</name>
+        <qualifiedname>SDO_data::index</qualifiedname>
         <briefdescription>
         </briefdescription>
         <detaileddescription>
@@ -35,6 +37,7 @@
         <definition>uint8_t SDO_data::sub_index</definition>
         <argsstring></argsstring>
         <name>sub_index</name>
+        <qualifiedname>SDO_data::sub_index</qualifiedname>
         <briefdescription>
         </briefdescription>
         <detaileddescription>
@@ -48,6 +51,7 @@
         <definition>uint32_t SDO_data::data</definition>
         <argsstring></argsstring>
         <name>data</name>
+        <qualifiedname>SDO_data::data</qualifiedname>
         <briefdescription>
         </briefdescription>
         <detaileddescription>
@@ -61,6 +65,7 @@
         <definition>size_t SDO_data::data_sz</definition>
         <argsstring></argsstring>
         <name>data_sz</name>
+        <qualifiedname>SDO_data::data_sz</qualifiedname>
         <briefdescription>
         </briefdescription>
         <detaileddescription>
@@ -74,6 +79,7 @@
         <definition>size_t SDO_data::result_sz</definition>
         <argsstring></argsstring>
         <name>result_sz</name>
+        <qualifiedname>SDO_data::result_sz</qualifiedname>
         <briefdescription>
         </briefdescription>
         <detaileddescription>
@@ -87,6 +93,7 @@
         <definition>uint32_t SDO_data::err_code</definition>
         <argsstring></argsstring>
         <name>err_code</name>
+        <qualifiedname>SDO_data::err_code</qualifiedname>
         <briefdescription>
         </briefdescription>
         <detaileddescription>
@@ -101,7 +108,7 @@
     </briefdescription>
     <detaileddescription>
     </detaileddescription>
-    <location file="include/ecat_globals.hpp" line="185" column="15" bodyfile="include/ecat_globals.hpp" bodystart="185" bodyend="193"/>
+    <location file="include/ecat_globals.hpp" line="185" column="1" bodyfile="include/ecat_globals.hpp" bodystart="185" bodyend="193"/>
     <listofallmembers>
       <member refid="structSDO__data_1a6fc03ed8f11205ea2afd8d330d29a252" prot="public" virt="non-virtual"><scope>SDO_data</scope><name>data</name></member>
       <member refid="structSDO__data_1a058f7de385e0be24e5ee12f55232dd33" prot="public" virt="non-virtual"><scope>SDO_data</scope><name>data_sz</name></member>

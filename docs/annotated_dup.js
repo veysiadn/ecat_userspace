@@ -1,7 +1,11 @@
 var annotated_dup =
 [
-    [ "EthercatCommunication", "namespaceEthercatCommunication.html", "namespaceEthercatCommunication" ],
-    [ "EthercatLifeCycleNode", "namespaceEthercatLifeCycleNode.html", "namespaceEthercatLifeCycleNode" ],
+    [ "EthercatCommunication", "namespaceEthercatCommunication.html", [
+      [ "EthercatNode", "classEthercatCommunication_1_1EthercatNode.html", "classEthercatCommunication_1_1EthercatNode" ]
+    ] ],
+    [ "EthercatLifeCycleNode", "namespaceEthercatLifeCycleNode.html", [
+      [ "EthercatLifeCycle", "classEthercatLifeCycleNode_1_1EthercatLifeCycle.html", "classEthercatLifeCycleNode_1_1EthercatLifeCycle" ]
+    ] ],
     [ "Controller", "structController.html", "structController" ],
     [ "CSPositionModeParam", "structCSPositionModeParam.html", "structCSPositionModeParam" ],
     [ "CSTorqueModeParam", "structCSTorqueModeParam.html", "structCSTorqueModeParam" ],

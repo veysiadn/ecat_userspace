@@ -1,5 +1,5 @@
 <?xml version='1.0' encoding='UTF-8' standalone='no'?>
-<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.17">
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.3" xml:lang="en-US">
   <compounddef id="ecat__lifecycle_8hpp" kind="file" language="C++">
     <compoundname>ecat_lifecycle.hpp</compoundname>
     <includes refid="ecat__node_8hpp" local="yes">ecat_node.hpp</includes>
@@ -7,81 +7,6 @@
     <includedby refid="ecat__lifecycle_8cpp" local="no">src/ecat_lifecycle.cpp</includedby>
     <includedby refid="main_8cpp" local="yes">src/main.cpp</includedby>
     <incdepgraph>
-      <node id="28">
-        <label>functional</label>
-      </node>
-      <node id="30">
-        <label>cstdint</label>
-      </node>
-      <node id="18">
-        <label>sys/mman.h</label>
-      </node>
-      <node id="7">
-        <label>stdlib.h</label>
-      </node>
-      <node id="9">
-        <label>errno.h</label>
-      </node>
-      <node id="19">
-        <label>malloc.h</label>
-      </node>
-      <node id="29">
-        <label>string</label>
-      </node>
-      <node id="33">
-        <label>fstream</label>
-      </node>
-      <node id="6">
-        <label>limits.h</label>
-      </node>
-      <node id="13">
-        <label>sys/resource.h</label>
-      </node>
-      <node id="32">
-        <label>ratio</label>
-      </node>
-      <node id="25">
-        <label>object_dictionary.hpp</label>
-        <link refid="object__dictionary_8hpp"/>
-      </node>
-      <node id="8">
-        <label>pthread.h</label>
-      </node>
-      <node id="15">
-        <label>sys/types.h</label>
-      </node>
-      <node id="26">
-        <label>ecat_slave.hpp</label>
-        <link refid="ecat__slave_8hpp"/>
-        <childnode refid="3" relation="include">
-        </childnode>
-      </node>
-      <node id="12">
-        <label>string.h</label>
-      </node>
-      <node id="31">
-        <label>ctime</label>
-      </node>
-      <node id="16">
-        <label>unistd.h</label>
-      </node>
-      <node id="23">
-        <label>vector</label>
-      </node>
-      <node id="10">
-        <label>signal.h</label>
-      </node>
-      <node id="2">
-        <label>ecat_node.hpp</label>
-        <link refid="ecat__node_8hpp"/>
-        <childnode refid="3" relation="include">
-        </childnode>
-        <childnode refid="26" relation="include">
-        </childnode>
-      </node>
-      <node id="17">
-        <label>time.h</label>
-      </node>
       <node id="3">
         <label>ecat_globals.hpp</label>
         <link refid="ecat__globals_8hpp"/>
@@ -130,15 +55,6 @@
         <childnode refid="25" relation="include">
         </childnode>
       </node>
-      <node id="14">
-        <label>sys/time.h</label>
-      </node>
-      <node id="4">
-        <label>iostream</label>
-      </node>
-      <node id="24">
-        <label>ecrt.h</label>
-      </node>
       <node id="1">
         <label>include/ecat_lifecycle.hpp</label>
         <link refid="ecat__lifecycle_8hpp"/>
@@ -147,8 +63,23 @@
         <childnode refid="27" relation="include">
         </childnode>
       </node>
-      <node id="21">
-        <label>chrono</label>
+      <node id="2">
+        <label>ecat_node.hpp</label>
+        <link refid="ecat__node_8hpp"/>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="26" relation="include">
+        </childnode>
+      </node>
+      <node id="26">
+        <label>ecat_slave.hpp</label>
+        <link refid="ecat__slave_8hpp"/>
+        <childnode refid="3" relation="include">
+        </childnode>
+      </node>
+      <node id="25">
+        <label>object_dictionary.hpp</label>
+        <link refid="object__dictionary_8hpp"/>
       </node>
       <node id="27">
         <label>timing.hpp</label>
@@ -174,28 +105,89 @@
         <childnode refid="4" relation="include">
         </childnode>
       </node>
-      <node id="20">
-        <label>sched.h</label>
+      <node id="21">
+        <label>chrono</label>
       </node>
-      <node id="11">
-        <label>stdio.h</label>
+      <node id="30">
+        <label>cstdint</label>
       </node>
       <node id="5">
         <label>cstring</label>
       </node>
+      <node id="31">
+        <label>ctime</label>
+      </node>
+      <node id="24">
+        <label>ecrt.h</label>
+      </node>
+      <node id="9">
+        <label>errno.h</label>
+      </node>
+      <node id="33">
+        <label>fstream</label>
+      </node>
+      <node id="28">
+        <label>functional</label>
+      </node>
+      <node id="4">
+        <label>iostream</label>
+      </node>
+      <node id="6">
+        <label>limits.h</label>
+      </node>
+      <node id="19">
+        <label>malloc.h</label>
+      </node>
       <node id="22">
         <label>memory</label>
       </node>
+      <node id="8">
+        <label>pthread.h</label>
+      </node>
+      <node id="32">
+        <label>ratio</label>
+      </node>
+      <node id="20">
+        <label>sched.h</label>
+      </node>
+      <node id="10">
+        <label>signal.h</label>
+      </node>
+      <node id="11">
+        <label>stdio.h</label>
+      </node>
+      <node id="7">
+        <label>stdlib.h</label>
+      </node>
+      <node id="29">
+        <label>string</label>
+      </node>
+      <node id="12">
+        <label>string.h</label>
+      </node>
+      <node id="18">
+        <label>sys/mman.h</label>
+      </node>
+      <node id="13">
+        <label>sys/resource.h</label>
+      </node>
+      <node id="14">
+        <label>sys/time.h</label>
+      </node>
+      <node id="15">
+        <label>sys/types.h</label>
+      </node>
+      <node id="17">
+        <label>time.h</label>
+      </node>
+      <node id="16">
+        <label>unistd.h</label>
+      </node>
+      <node id="23">
+        <label>vector</label>
+      </node>
     </incdepgraph>
     <invincdepgraph>
-      <node id="2">
-        <label>src/ecat_lifecycle.cpp</label>
-        <link refid="ecat__lifecycle_8cpp"/>
-      </node>
-      <node id="3">
-        <label>src/main.cpp</label>
-        <link refid="main_8cpp"/>
-      </node>
       <node id="1">
         <label>include/ecat_lifecycle.hpp</label>
         <link refid="ecat__lifecycle_8hpp"/>
@@ -203,6 +195,14 @@
         </childnode>
         <childnode refid="3" relation="include">
         </childnode>
+      </node>
+      <node id="2">
+        <label>src/ecat_lifecycle.cpp</label>
+        <link refid="ecat__lifecycle_8cpp"/>
+      </node>
+      <node id="3">
+        <label>src/main.cpp</label>
+        <link refid="main_8cpp"/>
       </node>
     </invincdepgraph>
     <innerclass refid="classEthercatLifeCycleNode_1_1EthercatLifeCycle" prot="public">EthercatLifeCycleNode::EthercatLifeCycle</innerclass>
@@ -259,72 +259,72 @@
 <codeline lineno="45" refid="classEthercatLifeCycleNode_1_1EthercatLifeCycle" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal"><ref refid="classEthercatLifeCycleNode_1_1EthercatLifeCycle" kindref="compound">EthercatLifeCycle</ref></highlight></codeline>
 <codeline lineno="46"><highlight class="normal">{</highlight></codeline>
 <codeline lineno="47"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal">:</highlight></codeline>
-<codeline lineno="48"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classEthercatLifeCycleNode_1_1EthercatLifeCycle" kindref="compound">EthercatLifeCycle</ref>();</highlight></codeline>
-<codeline lineno="49"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>~<ref refid="classEthercatLifeCycleNode_1_1EthercatLifeCycle" kindref="compound">EthercatLifeCycle</ref>();</highlight></codeline>
-<codeline lineno="62"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>uint8_t<sp/>on_configure();</highlight></codeline>
+<codeline lineno="48"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classEthercatLifeCycleNode_1_1EthercatLifeCycle_1ab88fd9de520c44c80c64440443d25ff7" kindref="member">EthercatLifeCycle</ref>();</highlight></codeline>
+<codeline lineno="49"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classEthercatLifeCycleNode_1_1EthercatLifeCycle_1a9c591445a71b8a9d9e1913e183f9c8f3" kindref="member">~EthercatLifeCycle</ref>();</highlight></codeline>
+<codeline lineno="62"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>uint8_t<sp/><ref refid="classEthercatLifeCycleNode_1_1EthercatLifeCycle_1aec0cf559153eedb336a297bf02b6a311" kindref="member">on_configure</ref>();</highlight></codeline>
 <codeline lineno="63"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight></codeline>
-<codeline lineno="69"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/>uint8_t<sp/>on_activate();</highlight></codeline>
+<codeline lineno="69"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/>uint8_t<sp/><ref refid="classEthercatLifeCycleNode_1_1EthercatLifeCycle_1a12f7cf631b5ce066ae8064003e1aead5" kindref="member">on_activate</ref>();</highlight></codeline>
 <codeline lineno="70"><highlight class="normal"><sp/><sp/><sp/></highlight></codeline>
-<codeline lineno="76"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/>uint8_t<sp/>on_deactivate();</highlight></codeline>
+<codeline lineno="76"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/>uint8_t<sp/><ref refid="classEthercatLifeCycleNode_1_1EthercatLifeCycle_1aa179a06f98348140931243afac81613e" kindref="member">on_deactivate</ref>();</highlight></codeline>
 <codeline lineno="77"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight></codeline>
-<codeline lineno="83"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/>uint8_t<sp/>on_cleanup();</highlight></codeline>
+<codeline lineno="83"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/>uint8_t<sp/><ref refid="classEthercatLifeCycleNode_1_1EthercatLifeCycle_1ad5c67d7fec0cc29de12e47e5b7ac34c7" kindref="member">on_cleanup</ref>();</highlight></codeline>
 <codeline lineno="84"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight></codeline>
-<codeline lineno="90"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/>uint8_t<sp/>on_shutdown();</highlight></codeline>
+<codeline lineno="90"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/>uint8_t<sp/><ref refid="classEthercatLifeCycleNode_1_1EthercatLifeCycle_1abe43d53f46141c8f243da4857c25e21a" kindref="member">on_shutdown</ref>();</highlight></codeline>
 <codeline lineno="91"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight></codeline>
-<codeline lineno="98"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/>uint8_t<sp/>on_error();</highlight></codeline>
+<codeline lineno="98"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/>uint8_t<sp/><ref refid="classEthercatLifeCycleNode_1_1EthercatLifeCycle_1a1e643a442bf34563d25b1ddbc76e6be4" kindref="member">on_error</ref>();</highlight></codeline>
 <codeline lineno="99"><highlight class="normal"></highlight></codeline>
 <codeline lineno="101" refid="classEthercatLifeCycleNode_1_1EthercatLifeCycle_1ac97795ae224c1630619ab622bc56c633" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="structDataReceived" kindref="compound">DataReceived</ref><sp/><sp/><sp/><sp/><sp/><ref refid="classEthercatLifeCycleNode_1_1EthercatLifeCycle_1ac97795ae224c1630619ab622bc56c633" kindref="member">received_data_</ref>;</highlight></codeline>
 <codeline lineno="103" refid="classEthercatLifeCycleNode_1_1EthercatLifeCycle_1aa3e778a600d45cae79c01cb9c3e9adad" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="structDataSent" kindref="compound">DataSent</ref><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classEthercatLifeCycleNode_1_1EthercatLifeCycle_1aa3e778a600d45cae79c01cb9c3e9adad" kindref="member">sent_data_</ref>;</highlight></codeline>
 <codeline lineno="104" refid="classEthercatLifeCycleNode_1_1EthercatLifeCycle_1adecbe58e78eb53eaf1a526b5b83712c6" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>std::unique_ptr&lt;EthercatNode&gt;<sp/><sp/><sp/><sp/><ref refid="classEthercatLifeCycleNode_1_1EthercatLifeCycle_1adecbe58e78eb53eaf1a526b5b83712c6" kindref="member">ecat_node_</ref>;</highlight></codeline>
 <codeline lineno="105"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
-<codeline lineno="111"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>SetComThreadPriorities();</highlight></codeline>
+<codeline lineno="111"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="classEthercatLifeCycleNode_1_1EthercatLifeCycle_1aadb5d2d00179549ea65186fd0ad12aae" kindref="member">SetComThreadPriorities</ref>();</highlight></codeline>
 <codeline lineno="112"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
-<codeline lineno="118"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>InitEthercatCommunication()<sp/>;</highlight></codeline>
+<codeline lineno="118"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="classEthercatLifeCycleNode_1_1EthercatLifeCycle_1ad059e2876da36b4549279643b380a480" kindref="member">InitEthercatCommunication</ref>()<sp/>;</highlight></codeline>
 <codeline lineno="119"><highlight class="normal"></highlight></codeline>
-<codeline lineno="128"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>*PassCycylicExchange(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>*arg);</highlight></codeline>
+<codeline lineno="128"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>*<ref refid="classEthercatLifeCycleNode_1_1EthercatLifeCycle_1a3f14c000af09d7d9480d700266da624f" kindref="member">PassCycylicExchange</ref>(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>*arg);</highlight></codeline>
 <codeline lineno="129"><highlight class="normal"></highlight></codeline>
-<codeline lineno="135"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><sp/>StartEthercatCommunication();<sp/></highlight></codeline>
+<codeline lineno="135"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><sp/><ref refid="classEthercatLifeCycleNode_1_1EthercatLifeCycle_1a2c5796d0f5f88a228c4b064d81a6b2f7" kindref="member">StartEthercatCommunication</ref>();<sp/></highlight></codeline>
 <codeline lineno="136"><highlight class="normal"></highlight></codeline>
-<codeline lineno="143"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>StartPdoExchange(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>*instance);<sp/></highlight></codeline>
+<codeline lineno="143"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classEthercatLifeCycleNode_1_1EthercatLifeCycle_1a52a7c57222fb8c896986fafc470d3bc3" kindref="member">StartPdoExchange</ref>(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>*instance);<sp/></highlight></codeline>
 <codeline lineno="144"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
-<codeline lineno="151"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>GetComState();</highlight></codeline>
+<codeline lineno="151"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="classEthercatLifeCycleNode_1_1EthercatLifeCycle_1a901c06f35510c5be5c40c4f934b5974b" kindref="member">GetComState</ref>();</highlight></codeline>
 <codeline lineno="152"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
-<codeline lineno="156"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>ReadFromSlaves();</highlight></codeline>
+<codeline lineno="156"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classEthercatLifeCycleNode_1_1EthercatLifeCycle_1acde7634de380e1bc00e138aa9d3f90f0" kindref="member">ReadFromSlaves</ref>();</highlight></codeline>
 <codeline lineno="157"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
-<codeline lineno="161"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>WriteToSlavesVelocityMode();</highlight></codeline>
+<codeline lineno="161"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classEthercatLifeCycleNode_1_1EthercatLifeCycle_1a9d4c4f4d59fb5831e85c17b55bc23cbf" kindref="member">WriteToSlavesVelocityMode</ref>();</highlight></codeline>
 <codeline lineno="162"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
-<codeline lineno="167"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>WriteToSlavesInPositionMode();</highlight></codeline>
+<codeline lineno="167"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classEthercatLifeCycleNode_1_1EthercatLifeCycle_1a5bf86789850a0b8e21ef44f50aefa497" kindref="member">WriteToSlavesInPositionMode</ref>();</highlight></codeline>
 <codeline lineno="168"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
-<codeline lineno="173"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>UpdateVelocityModeParameters();</highlight></codeline>
+<codeline lineno="173"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classEthercatLifeCycleNode_1_1EthercatLifeCycle_1a1940951e1d285e7ce193d7444474dca7" kindref="member">UpdateVelocityModeParameters</ref>();</highlight></codeline>
 <codeline lineno="174"><highlight class="normal"></highlight></codeline>
-<codeline lineno="179"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>UpdateCyclicVelocityModeParameters();<sp/></highlight></codeline>
+<codeline lineno="179"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classEthercatLifeCycleNode_1_1EthercatLifeCycle_1aa8678dbf6a5a60844c614553aaa6d484" kindref="member">UpdateCyclicVelocityModeParameters</ref>();<sp/></highlight></codeline>
 <codeline lineno="180"><highlight class="normal"></highlight></codeline>
-<codeline lineno="185"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>UpdatePositionModeParameters();</highlight></codeline>
+<codeline lineno="185"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classEthercatLifeCycleNode_1_1EthercatLifeCycle_1a8d762bf02972f1f318148175d5641317" kindref="member">UpdatePositionModeParameters</ref>();</highlight></codeline>
 <codeline lineno="186"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
-<codeline lineno="191"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>UpdateCyclicPositionModeParameters();</highlight></codeline>
+<codeline lineno="191"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classEthercatLifeCycleNode_1_1EthercatLifeCycle_1a434a3dc8581b010974d60b24e4ab7df2" kindref="member">UpdateCyclicPositionModeParameters</ref>();</highlight></codeline>
 <codeline lineno="192"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
-<codeline lineno="197"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>UpdateMotorStateVelocityMode();</highlight></codeline>
-<codeline lineno="201"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>UpdateMotorStatePositionMode();</highlight></codeline>
+<codeline lineno="197"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classEthercatLifeCycleNode_1_1EthercatLifeCycle_1ac81a74790509a9912c14982e9fa58d66" kindref="member">UpdateMotorStateVelocityMode</ref>();</highlight></codeline>
+<codeline lineno="201"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classEthercatLifeCycleNode_1_1EthercatLifeCycle_1a1be54ebbef9bf865be39dd5b16b4e17f" kindref="member">UpdateMotorStatePositionMode</ref>();</highlight></codeline>
 <codeline lineno="202"><highlight class="normal"></highlight></codeline>
-<codeline lineno="207"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>UpdateCyclicTorqueModeParameters();</highlight></codeline>
+<codeline lineno="207"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classEthercatLifeCycleNode_1_1EthercatLifeCycle_1a6bdee6a9dc5d22b58429a9ee507c9fe2" kindref="member">UpdateCyclicTorqueModeParameters</ref>();</highlight></codeline>
 <codeline lineno="208"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
-<codeline lineno="213"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>WriteToSlavesInCyclicTorqueMode();</highlight></codeline>
-<codeline lineno="219"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>GetDriveState(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal">&amp;<sp/>statusWord);</highlight></codeline>
+<codeline lineno="213"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classEthercatLifeCycleNode_1_1EthercatLifeCycle_1a50318001792b039b8cf179e4d38108ec" kindref="member">WriteToSlavesInCyclicTorqueMode</ref>();</highlight></codeline>
+<codeline lineno="219"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="classEthercatLifeCycleNode_1_1EthercatLifeCycle_1a6187ef3af76844b80e7a3ae399fa8460" kindref="member">GetDriveState</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal">&amp;<sp/>statusWord);</highlight></codeline>
 <codeline lineno="220"><highlight class="normal"></highlight></codeline>
-<codeline lineno="226"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>EnableDrivers();</highlight></codeline>
+<codeline lineno="226"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="classEthercatLifeCycleNode_1_1EthercatLifeCycle_1a1367595ced86d25b6299ce281f1e1607" kindref="member">EnableDrivers</ref>();</highlight></codeline>
 <codeline lineno="227"><highlight class="normal"></highlight></codeline>
 <codeline lineno="228"><highlight class="normal"><sp/><sp/><sp/><sp/>public<sp/>:<sp/></highlight></codeline>
 <codeline lineno="230" refid="classEthercatLifeCycleNode_1_1EthercatLifeCycle_1ac443f07a1f4e7252788ca000ea70458f" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>pthread_t<sp/><ref refid="classEthercatLifeCycleNode_1_1EthercatLifeCycle_1ac443f07a1f4e7252788ca000ea70458f" kindref="member">ethercat_thread_</ref>;</highlight></codeline>
-<codeline lineno="232" refid="classEthercatLifeCycleNode_1_1EthercatLifeCycle_1a80c1aefb15a64041bd5f59e47b3ac29e" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal">sched_param<sp/>ethercat_sched_param_<sp/>=<sp/>{};</highlight></codeline>
+<codeline lineno="232" refid="classEthercatLifeCycleNode_1_1EthercatLifeCycle_1a80c1aefb15a64041bd5f59e47b3ac29e" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal">sched_param<sp/><ref refid="classEthercatLifeCycleNode_1_1EthercatLifeCycle_1a80c1aefb15a64041bd5f59e47b3ac29e" kindref="member">ethercat_sched_param_</ref><sp/>=<sp/>{};</highlight></codeline>
 <codeline lineno="234" refid="classEthercatLifeCycleNode_1_1EthercatLifeCycle_1a78acbaf6dc792b96f2df3fbef7395dfc" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>pthread_attr_t<sp/><ref refid="classEthercatLifeCycleNode_1_1EthercatLifeCycle_1a78acbaf6dc792b96f2df3fbef7395dfc" kindref="member">ethercat_thread_attr_</ref>;</highlight></codeline>
 <codeline lineno="236" refid="classEthercatLifeCycleNode_1_1EthercatLifeCycle_1a38d0a2c725202ef0fd67beff679ab9b1" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>int32_t<sp/><ref refid="classEthercatLifeCycleNode_1_1EthercatLifeCycle_1a38d0a2c725202ef0fd67beff679ab9b1" kindref="member">err_</ref>;</highlight></codeline>
-<codeline lineno="238" refid="classEthercatLifeCycleNode_1_1EthercatLifeCycle_1a799a0bdf01f5a0da57c29900f3d8180d" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>uint8_t<sp/>al_state_<sp/>=<sp/>0;<sp/></highlight></codeline>
-<codeline lineno="239" refid="classEthercatLifeCycleNode_1_1EthercatLifeCycle_1a7380630e7299c28135f8eb0134729b26" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>uint32_t<sp/>motor_state_[<ref refid="ecat__globals_8hpp_1aacc3c7aef173b1cde9377fb7f05c924d" kindref="member">g_kNumberOfServoDrivers</ref>];</highlight></codeline>
-<codeline lineno="240" refid="classEthercatLifeCycleNode_1_1EthercatLifeCycle_1a8852f433f1e6d0927892fab6f88e01d1" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>uint32_t<sp/>command_<sp/>=<sp/>0x004F;</highlight></codeline>
+<codeline lineno="238" refid="classEthercatLifeCycleNode_1_1EthercatLifeCycle_1a799a0bdf01f5a0da57c29900f3d8180d" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>uint8_t<sp/><ref refid="classEthercatLifeCycleNode_1_1EthercatLifeCycle_1a799a0bdf01f5a0da57c29900f3d8180d" kindref="member">al_state_</ref><sp/>=<sp/>0;<sp/></highlight></codeline>
+<codeline lineno="239" refid="classEthercatLifeCycleNode_1_1EthercatLifeCycle_1a7380630e7299c28135f8eb0134729b26" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>uint32_t<sp/><ref refid="classEthercatLifeCycleNode_1_1EthercatLifeCycle_1a7380630e7299c28135f8eb0134729b26" kindref="member">motor_state_</ref>[<ref refid="ecat__globals_8hpp_1aacc3c7aef173b1cde9377fb7f05c924d" kindref="member">g_kNumberOfServoDrivers</ref>];</highlight></codeline>
+<codeline lineno="240" refid="classEthercatLifeCycleNode_1_1EthercatLifeCycle_1a8852f433f1e6d0927892fab6f88e01d1" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>uint32_t<sp/><ref refid="classEthercatLifeCycleNode_1_1EthercatLifeCycle_1a8852f433f1e6d0927892fab6f88e01d1" kindref="member">command_</ref><sp/>=<sp/>0x004F;</highlight></codeline>
 <codeline lineno="242" refid="classEthercatLifeCycleNode_1_1EthercatLifeCycle_1a2b55e301403a0e5eaf17f2ee898d0f6e" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="structController" kindref="compound">Controller</ref><sp/><ref refid="classEthercatLifeCycleNode_1_1EthercatLifeCycle_1a2b55e301403a0e5eaf17f2ee898d0f6e" kindref="member">controller_</ref><sp/>;<sp/></highlight></codeline>
-<codeline lineno="243" refid="classEthercatLifeCycleNode_1_1EthercatLifeCycle_1ab273dc79ac03b8bee9fcbf4bff21da61" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>uint8_t<sp/>emergency_status_<sp/>=<sp/>1<sp/>;</highlight></codeline>
+<codeline lineno="243" refid="classEthercatLifeCycleNode_1_1EthercatLifeCycle_1ab273dc79ac03b8bee9fcbf4bff21da61" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>uint8_t<sp/><ref refid="classEthercatLifeCycleNode_1_1EthercatLifeCycle_1ab273dc79ac03b8bee9fcbf4bff21da61" kindref="member">emergency_status_</ref><sp/>=<sp/>1<sp/>;</highlight></codeline>
 <codeline lineno="244"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>Will<sp/>be<sp/>used<sp/>as<sp/>a<sp/>parameter<sp/>for<sp/>taking<sp/>timing<sp/>measurements.</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="245" refid="classEthercatLifeCycleNode_1_1EthercatLifeCycle_1ac3ddb4ba9d791e8186237a6da3da6a20" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>std::int32_t<sp/>measurement_time<sp/>=<sp/>0<sp/>;<sp/></highlight></codeline>
+<codeline lineno="245" refid="classEthercatLifeCycleNode_1_1EthercatLifeCycle_1ac3ddb4ba9d791e8186237a6da3da6a20" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>std::int32_t<sp/><ref refid="classEthercatLifeCycleNode_1_1EthercatLifeCycle_1ac3ddb4ba9d791e8186237a6da3da6a20" kindref="member">measurement_time</ref><sp/>=<sp/>0<sp/>;<sp/></highlight></codeline>
 <codeline lineno="247" refid="classEthercatLifeCycleNode_1_1EthercatLifeCycle_1a40a619f28629b0a03ff7b980e608b299" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classTiming" kindref="compound">Timing</ref><sp/><ref refid="classEthercatLifeCycleNode_1_1EthercatLifeCycle_1a40a619f28629b0a03ff7b980e608b299" kindref="member">timer_info_</ref><sp/>;<sp/></highlight></codeline>
 <codeline lineno="248"><highlight class="normal">};</highlight></codeline>
 <codeline lineno="249"><highlight class="normal">}</highlight></codeline>

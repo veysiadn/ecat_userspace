@@ -1,5 +1,5 @@
 <?xml version='1.0' encoding='UTF-8' standalone='no'?>
-<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.17">
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.3" xml:lang="en-US">
   <compounddef id="classEthercatCommunication_1_1EthercatNode" kind="class" language="C++" prot="public">
     <compoundname>EthercatCommunication::EthercatNode</compoundname>
     <includes refid="ecat__node_8hpp" local="no">ecat_node.hpp</includes>
@@ -9,6 +9,7 @@
         <definition>EthercatSlave EthercatCommunication::EthercatNode::slaves_[NUM_OF_SLAVES]</definition>
         <argsstring>[NUM_OF_SLAVES]</argsstring>
         <name>slaves_</name>
+        <qualifiedname>EthercatCommunication::EthercatNode::slaves_</qualifiedname>
         <briefdescription>
 <para>Slave instances. </para>
         </briefdescription>
@@ -25,6 +26,7 @@
         <definition>int EthercatCommunication::EthercatNode::fd</definition>
         <argsstring></argsstring>
         <name>fd</name>
+        <qualifiedname>EthercatCommunication::EthercatNode::fd</qualifiedname>
         <briefdescription>
 <para>File descriptor to open and wake master from CLI. </para>
         </briefdescription>
@@ -41,6 +43,7 @@
         <definition>EthercatNode::EthercatNode</definition>
         <argsstring>()</argsstring>
         <name>EthercatNode</name>
+        <qualifiedname>EthercatCommunication::EthercatNode::EthercatNode</qualifiedname>
         <briefdescription>
         </briefdescription>
         <detaileddescription>
@@ -54,6 +57,7 @@
         <definition>EthercatNode::~EthercatNode</definition>
         <argsstring>()</argsstring>
         <name>~EthercatNode</name>
+        <qualifiedname>EthercatCommunication::EthercatNode::~EthercatNode</qualifiedname>
         <briefdescription>
         </briefdescription>
         <detaileddescription>
@@ -67,6 +71,7 @@
         <definition>int EthercatNode::ConfigureMaster</definition>
         <argsstring>()</argsstring>
         <name>ConfigureMaster</name>
+        <qualifiedname>EthercatCommunication::EthercatNode::ConfigureMaster</qualifiedname>
         <briefdescription>
 <para>Requests master instance and creates a domain for a master. </para>
         </briefdescription>
@@ -86,6 +91,7 @@
         <definition>void EthercatNode::SetCustomSlave</definition>
         <argsstring>(EthercatSlave c_slave, int position)</argsstring>
         <name>SetCustomSlave</name>
+        <qualifiedname>EthercatCommunication::EthercatNode::SetCustomSlave</qualifiedname>
         <param>
           <type><ref refid="classEthercatSlave" kindref="compound">EthercatSlave</ref></type>
           <declname>c_slave</declname>
@@ -126,6 +132,7 @@
         <definition>int EthercatNode::ConfigureSlaves</definition>
         <argsstring>()</argsstring>
         <name>ConfigureSlaves</name>
+        <qualifiedname>EthercatCommunication::EthercatNode::ConfigureSlaves</qualifiedname>
         <briefdescription>
 <para>Obtains slave configuration for all slaves w.r.t master. </para>
         </briefdescription>
@@ -143,6 +150,7 @@
         <definition>int EthercatNode::SetProfilePositionParameters</definition>
         <argsstring>(ProfilePosParam &amp;P, int position)</argsstring>
         <name>SetProfilePositionParameters</name>
+        <qualifiedname>EthercatCommunication::EthercatNode::SetProfilePositionParameters</qualifiedname>
         <param>
           <type><ref refid="structProfilePosParam" kindref="compound">ProfilePosParam</ref> &amp;</type>
           <declname>P</declname>
@@ -185,6 +193,7 @@
         <definition>int EthercatNode::SetProfilePositionParametersAll</definition>
         <argsstring>(ProfilePosParam &amp;P)</argsstring>
         <name>SetProfilePositionParametersAll</name>
+        <qualifiedname>EthercatCommunication::EthercatNode::SetProfilePositionParametersAll</qualifiedname>
         <param>
           <type><ref refid="structProfilePosParam" kindref="compound">ProfilePosParam</ref> &amp;</type>
           <declname>P</declname>
@@ -215,6 +224,7 @@
         <definition>int EthercatNode::SetProfileVelocityParameters</definition>
         <argsstring>(ProfileVelocityParam &amp;P, int position)</argsstring>
         <name>SetProfileVelocityParameters</name>
+        <qualifiedname>EthercatCommunication::EthercatNode::SetProfileVelocityParameters</qualifiedname>
         <param>
           <type><ref refid="structProfileVelocityParam" kindref="compound">ProfileVelocityParam</ref> &amp;</type>
           <declname>P</declname>
@@ -257,6 +267,7 @@
         <definition>int EthercatNode::SetProfileVelocityParametersAll</definition>
         <argsstring>(ProfileVelocityParam &amp;P)</argsstring>
         <name>SetProfileVelocityParametersAll</name>
+        <qualifiedname>EthercatCommunication::EthercatNode::SetProfileVelocityParametersAll</qualifiedname>
         <param>
           <type><ref refid="structProfileVelocityParam" kindref="compound">ProfileVelocityParam</ref> &amp;</type>
           <declname>P</declname>
@@ -287,6 +298,7 @@
         <definition>int EthercatNode::SetCyclicSyncPositionModeParameters</definition>
         <argsstring>(CSPositionModeParam &amp;P, int position)</argsstring>
         <name>SetCyclicSyncPositionModeParameters</name>
+        <qualifiedname>EthercatCommunication::EthercatNode::SetCyclicSyncPositionModeParameters</qualifiedname>
         <param>
           <type><ref refid="structCSPositionModeParam" kindref="compound">CSPositionModeParam</ref> &amp;</type>
           <declname>P</declname>
@@ -329,6 +341,7 @@
         <definition>int EthercatNode::SetCyclicSyncPositionModeParametersAll</definition>
         <argsstring>(CSPositionModeParam &amp;P)</argsstring>
         <name>SetCyclicSyncPositionModeParametersAll</name>
+        <qualifiedname>EthercatCommunication::EthercatNode::SetCyclicSyncPositionModeParametersAll</qualifiedname>
         <param>
           <type><ref refid="structCSPositionModeParam" kindref="compound">CSPositionModeParam</ref> &amp;</type>
           <declname>P</declname>
@@ -350,6 +363,7 @@
         <definition>int EthercatNode::SetCyclicSyncVelocityModeParameters</definition>
         <argsstring>(CSVelocityModeParam &amp;P, int position)</argsstring>
         <name>SetCyclicSyncVelocityModeParameters</name>
+        <qualifiedname>EthercatCommunication::EthercatNode::SetCyclicSyncVelocityModeParameters</qualifiedname>
         <param>
           <type><ref refid="structCSVelocityModeParam" kindref="compound">CSVelocityModeParam</ref> &amp;</type>
           <declname>P</declname>
@@ -392,6 +406,7 @@
         <definition>int EthercatNode::SetCyclicSyncVelocityModeParametersAll</definition>
         <argsstring>(CSVelocityModeParam &amp;P)</argsstring>
         <name>SetCyclicSyncVelocityModeParametersAll</name>
+        <qualifiedname>EthercatCommunication::EthercatNode::SetCyclicSyncVelocityModeParametersAll</qualifiedname>
         <param>
           <type><ref refid="structCSVelocityModeParam" kindref="compound">CSVelocityModeParam</ref> &amp;</type>
           <declname>P</declname>
@@ -413,6 +428,7 @@
         <definition>int EthercatNode::SetCyclicSyncTorqueModeParameters</definition>
         <argsstring>(CSTorqueModeParam &amp;P, int position)</argsstring>
         <name>SetCyclicSyncTorqueModeParameters</name>
+        <qualifiedname>EthercatCommunication::EthercatNode::SetCyclicSyncTorqueModeParameters</qualifiedname>
         <param>
           <type><ref refid="structCSTorqueModeParam" kindref="compound">CSTorqueModeParam</ref> &amp;</type>
           <declname>P</declname>
@@ -455,6 +471,7 @@
         <definition>int EthercatNode::SetCyclicSyncTorqueModeParametersAll</definition>
         <argsstring>(CSTorqueModeParam &amp;P)</argsstring>
         <name>SetCyclicSyncTorqueModeParametersAll</name>
+        <qualifiedname>EthercatCommunication::EthercatNode::SetCyclicSyncTorqueModeParametersAll</qualifiedname>
         <param>
           <type><ref refid="structCSTorqueModeParam" kindref="compound">CSTorqueModeParam</ref> &amp;</type>
           <declname>P</declname>
@@ -476,6 +493,7 @@
         <definition>int EthercatNode::MapDefaultPdos</definition>
         <argsstring>()</argsstring>
         <name>MapDefaultPdos</name>
+        <qualifiedname>EthercatCommunication::EthercatNode::MapDefaultPdos</qualifiedname>
         <briefdescription>
 <para>Maps default PDOs for our spine surgery robot implementation. </para>
         </briefdescription>
@@ -500,6 +518,7 @@
         <definition>int EthercatNode::MapCustomPdos</definition>
         <argsstring>(EthercatSlave c_slave, int position)</argsstring>
         <name>MapCustomPdos</name>
+        <qualifiedname>EthercatCommunication::EthercatNode::MapCustomPdos</qualifiedname>
         <param>
           <type><ref refid="classEthercatSlave" kindref="compound">EthercatSlave</ref></type>
           <declname>c_slave</declname>
@@ -544,6 +563,7 @@
         <definition>void EthercatNode::ConfigDcSyncDefault</definition>
         <argsstring>()</argsstring>
         <name>ConfigDcSyncDefault</name>
+        <qualifiedname>EthercatCommunication::EthercatNode::ConfigDcSyncDefault</qualifiedname>
         <briefdescription>
 <para>Configures DC sync for our default configuration. </para>
         </briefdescription>
@@ -558,6 +578,7 @@
         <definition>void EthercatNode::ConfigDcSync</definition>
         <argsstring>(uint16_t assign_activate, int position)</argsstring>
         <name>ConfigDcSync</name>
+        <qualifiedname>EthercatCommunication::EthercatNode::ConfigDcSync</qualifiedname>
         <param>
           <type>uint16_t</type>
           <declname>assign_activate</declname>
@@ -601,6 +622,7 @@
         <definition>void EthercatNode::CheckSlaveConfigurationState</definition>
         <argsstring>()</argsstring>
         <name>CheckSlaveConfigurationState</name>
+        <qualifiedname>EthercatCommunication::EthercatNode::CheckSlaveConfigurationState</qualifiedname>
         <briefdescription>
 <para>This function will check slave&apos;s application layer states. (INIT/PREOP/SAFEOP/OP) </para>
         </briefdescription>
@@ -615,6 +637,7 @@
         <definition>int EthercatNode::CheckMasterState</definition>
         <argsstring>()</argsstring>
         <name>CheckMasterState</name>
+        <qualifiedname>EthercatCommunication::EthercatNode::CheckMasterState</qualifiedname>
         <briefdescription>
 <para>This function will check master&apos;s state, in terms of number of responding slaves and their application layer states. </para>
         </briefdescription>
@@ -634,6 +657,7 @@
         <definition>void EthercatNode::CheckMasterDomainState</definition>
         <argsstring>()</argsstring>
         <name>CheckMasterDomainState</name>
+        <qualifiedname>EthercatCommunication::EthercatNode::CheckMasterDomainState</qualifiedname>
         <briefdescription>
 <para>Reads the state of a domain. Stores the domain state in the given state structure. Using this method, the process data exchange can be monitored in realtime. </para>
         </briefdescription>
@@ -648,6 +672,7 @@
         <definition>int EthercatNode::ActivateMaster</definition>
         <argsstring>()</argsstring>
         <name>ActivateMaster</name>
+        <qualifiedname>EthercatCommunication::EthercatNode::ActivateMaster</qualifiedname>
         <briefdescription>
 <para>Activates master, after this function call realtime operation can start. </para>
         </briefdescription>
@@ -669,6 +694,7 @@
         <definition>int EthercatNode::RegisterDomain</definition>
         <argsstring>()</argsstring>
         <name>RegisterDomain</name>
+        <qualifiedname>EthercatCommunication::EthercatNode::RegisterDomain</qualifiedname>
         <briefdescription>
 <para>Registers domain for each slave. This method has to be called after ecrt_master_activate() to get the mapped domain process data memory. </para>
         </briefdescription>
@@ -686,6 +712,7 @@
         <definition>int EthercatNode::WaitForOperationalMode</definition>
         <argsstring>()</argsstring>
         <name>WaitForOperationalMode</name>
+        <qualifiedname>EthercatCommunication::EthercatNode::WaitForOperationalMode</qualifiedname>
         <briefdescription>
 <para>Puts all slave to operational mode. User must call this before entering real-time operation. Reason for this function is that, master and slave has to do several exchange before becoming operational. So this function does exchange between master and slaves for up to 10 sec, could finish earlier. If timeout occurs it will return -1. </para>
         </briefdescription>
@@ -703,6 +730,7 @@
         <definition>int EthercatNode::OpenEthercatMaster</definition>
         <argsstring>()</argsstring>
         <name>OpenEthercatMaster</name>
+        <qualifiedname>EthercatCommunication::EthercatNode::OpenEthercatMaster</qualifiedname>
         <briefdescription>
 <para>Opens EtherCAT master via command line tool if it&apos;s not already on. </para>
         </briefdescription>
@@ -720,6 +748,7 @@
         <definition>int EthercatNode::GetNumberOfConnectedSlaves</definition>
         <argsstring>()</argsstring>
         <name>GetNumberOfConnectedSlaves</name>
+        <qualifiedname>EthercatCommunication::EthercatNode::GetNumberOfConnectedSlaves</qualifiedname>
         <briefdescription>
 <para>Get the number Of physically connected slaves to the bus.And checks if specified NUM_OF_SLAVES is correct. </para>
         </briefdescription>
@@ -737,6 +766,7 @@
         <definition>void EthercatNode::GetAllSlaveInformation</definition>
         <argsstring>()</argsstring>
         <name>GetAllSlaveInformation</name>
+        <qualifiedname>EthercatCommunication::EthercatNode::GetAllSlaveInformation</qualifiedname>
         <briefdescription>
 <para>Get the information of physically connected slaves to the master. This function will return connected slave&apos;s vendor id, product code. </para>
         </briefdescription>
@@ -751,6 +781,7 @@
         <definition>void EthercatNode::DeactivateCommunication</definition>
         <argsstring>()</argsstring>
         <name>DeactivateCommunication</name>
+        <qualifiedname>EthercatCommunication::EthercatNode::DeactivateCommunication</qualifiedname>
         <briefdescription>
 <para>Deactivates slaves and can be called in real-time. </para>
         </briefdescription>
@@ -765,6 +796,7 @@
         <definition>void EthercatNode::ReleaseMaster</definition>
         <argsstring>()</argsstring>
         <name>ReleaseMaster</name>
+        <qualifiedname>EthercatCommunication::EthercatNode::ReleaseMaster</qualifiedname>
         <briefdescription>
 <para>Deactivates and releases master shouldn&apos;t be called in real-time. </para>
         </briefdescription>
@@ -779,6 +811,7 @@
         <definition>int EthercatNode::ShutDownEthercatMaster</definition>
         <argsstring>()</argsstring>
         <name>ShutDownEthercatMaster</name>
+        <qualifiedname>EthercatCommunication::EthercatNode::ShutDownEthercatMaster</qualifiedname>
         <briefdescription>
 <para>Shutdowns EtherCAT master via command line tool if it&apos;s not already off. </para>
         </briefdescription>
@@ -796,6 +829,7 @@
         <definition>uint8_t EthercatNode::SdoRead</definition>
         <argsstring>(SDO_data &amp;pack)</argsstring>
         <name>SdoRead</name>
+        <qualifiedname>EthercatCommunication::EthercatNode::SdoRead</qualifiedname>
         <param>
           <type><ref refid="structSDO__data" kindref="compound">SDO_data</ref> &amp;</type>
           <declname>pack</declname>
@@ -817,6 +851,7 @@
         <definition>uint8_t EthercatNode::SdoWrite</definition>
         <argsstring>(SDO_data &amp;pack)</argsstring>
         <name>SdoWrite</name>
+        <qualifiedname>EthercatCommunication::EthercatNode::SdoWrite</qualifiedname>
         <param>
           <type><ref refid="structSDO__data" kindref="compound">SDO_data</ref> &amp;</type>
           <declname>pack</declname>
@@ -849,31 +884,8 @@
     </detaileddescription>
     <collaborationgraph>
       <node id="4">
-        <label>ProfilePosParam</label>
-        <link refid="structProfilePosParam"/>
-      </node>
-      <node id="3">
         <label>DataReceived</label>
         <link refid="structDataReceived"/>
-      </node>
-      <node id="2">
-        <label>EthercatSlave</label>
-        <link refid="classEthercatSlave"/>
-        <childnode refid="3" relation="usage">
-          <edgelabel>data_</edgelabel>
-        </childnode>
-        <childnode refid="4" relation="usage">
-          <edgelabel>position_param_</edgelabel>
-        </childnode>
-        <childnode refid="5" relation="usage">
-          <edgelabel>velocity_param_</edgelabel>
-        </childnode>
-        <childnode refid="6" relation="usage">
-          <edgelabel>homing_param_</edgelabel>
-        </childnode>
-        <childnode refid="7" relation="usage">
-          <edgelabel>offset_</edgelabel>
-        </childnode>
       </node>
       <node id="1">
         <label>EthercatCommunication::EthercatNode</label>
@@ -882,20 +894,43 @@
           <edgelabel>slaves_</edgelabel>
         </childnode>
       </node>
-      <node id="6">
+      <node id="2">
+        <label>EthercatSlave</label>
+        <link refid="classEthercatSlave"/>
+        <childnode refid="3" relation="usage">
+          <edgelabel>offset_</edgelabel>
+        </childnode>
+        <childnode refid="4" relation="usage">
+          <edgelabel>data_</edgelabel>
+        </childnode>
+        <childnode refid="5" relation="usage">
+          <edgelabel>velocity_param_</edgelabel>
+        </childnode>
+        <childnode refid="6" relation="usage">
+          <edgelabel>position_param_</edgelabel>
+        </childnode>
+        <childnode refid="7" relation="usage">
+          <edgelabel>homing_param_</edgelabel>
+        </childnode>
+      </node>
+      <node id="7">
         <label>HomingParam</label>
         <link refid="structHomingParam"/>
       </node>
-      <node id="7">
+      <node id="3">
         <label>OffsetPDO</label>
         <link refid="structOffsetPDO"/>
+      </node>
+      <node id="6">
+        <label>ProfilePosParam</label>
+        <link refid="structProfilePosParam"/>
       </node>
       <node id="5">
         <label>ProfileVelocityParam</label>
         <link refid="structProfileVelocityParam"/>
       </node>
     </collaborationgraph>
-    <location file="include/ecat_node.hpp" line="52" column="1" bodyfile="include/ecat_node.hpp" bodystart="51" bodyend="274"/>
+    <location file="include/ecat_node.hpp" line="51" column="1" bodyfile="include/ecat_node.hpp" bodystart="52" bodyend="274"/>
     <listofallmembers>
       <member refid="classEthercatCommunication_1_1EthercatNode_1aa0d2eae2b57c39c827a882699c705325" prot="public" virt="non-virtual"><scope>EthercatCommunication::EthercatNode</scope><name>ActivateMaster</name></member>
       <member refid="classEthercatCommunication_1_1EthercatNode_1af76be6b843886442b2d4d7b94be9374f" prot="public" virt="non-virtual"><scope>EthercatCommunication::EthercatNode</scope><name>CheckMasterDomainState</name></member>

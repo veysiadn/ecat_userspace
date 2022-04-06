@@ -1,5 +1,5 @@
 <?xml version='1.0' encoding='UTF-8' standalone='no'?>
-<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.17">
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.3" xml:lang="en-US">
   <compounddef id="structOffsetPDO" kind="struct" language="C++" prot="public">
     <compoundname>OffsetPDO</compoundname>
     <includes refid="ecat__globals_8hpp" local="no">ecat_globals.hpp</includes>
@@ -9,6 +9,7 @@
         <definition>uint32_t OffsetPDO::target_pos</definition>
         <argsstring></argsstring>
         <name>target_pos</name>
+        <qualifiedname>OffsetPDO::target_pos</qualifiedname>
         <briefdescription>
         </briefdescription>
         <detaileddescription>
@@ -22,6 +23,7 @@
         <definition>uint32_t OffsetPDO::target_vel</definition>
         <argsstring></argsstring>
         <name>target_vel</name>
+        <qualifiedname>OffsetPDO::target_vel</qualifiedname>
         <briefdescription>
         </briefdescription>
         <detaileddescription>
@@ -35,6 +37,7 @@
         <definition>uint32_t OffsetPDO::target_tor</definition>
         <argsstring></argsstring>
         <name>target_tor</name>
+        <qualifiedname>OffsetPDO::target_tor</qualifiedname>
         <briefdescription>
         </briefdescription>
         <detaileddescription>
@@ -48,6 +51,7 @@
         <definition>uint32_t OffsetPDO::torque_offset</definition>
         <argsstring></argsstring>
         <name>torque_offset</name>
+        <qualifiedname>OffsetPDO::torque_offset</qualifiedname>
         <briefdescription>
         </briefdescription>
         <detaileddescription>
@@ -61,6 +65,7 @@
         <definition>uint32_t OffsetPDO::max_tor</definition>
         <argsstring></argsstring>
         <name>max_tor</name>
+        <qualifiedname>OffsetPDO::max_tor</qualifiedname>
         <briefdescription>
         </briefdescription>
         <detaileddescription>
@@ -74,6 +79,7 @@
         <definition>uint32_t OffsetPDO::control_word</definition>
         <argsstring></argsstring>
         <name>control_word</name>
+        <qualifiedname>OffsetPDO::control_word</qualifiedname>
         <briefdescription>
         </briefdescription>
         <detaileddescription>
@@ -87,6 +93,7 @@
         <definition>uint32_t OffsetPDO::op_mode</definition>
         <argsstring></argsstring>
         <name>op_mode</name>
+        <qualifiedname>OffsetPDO::op_mode</qualifiedname>
         <briefdescription>
         </briefdescription>
         <detaileddescription>
@@ -100,6 +107,7 @@
         <definition>uint32_t OffsetPDO::profile_acc</definition>
         <argsstring></argsstring>
         <name>profile_acc</name>
+        <qualifiedname>OffsetPDO::profile_acc</qualifiedname>
         <briefdescription>
         </briefdescription>
         <detaileddescription>
@@ -113,6 +121,7 @@
         <definition>uint32_t OffsetPDO::profile_dec</definition>
         <argsstring></argsstring>
         <name>profile_dec</name>
+        <qualifiedname>OffsetPDO::profile_dec</qualifiedname>
         <briefdescription>
         </briefdescription>
         <detaileddescription>
@@ -126,6 +135,7 @@
         <definition>uint32_t OffsetPDO::quick_stop_dec</definition>
         <argsstring></argsstring>
         <name>quick_stop_dec</name>
+        <qualifiedname>OffsetPDO::quick_stop_dec</qualifiedname>
         <briefdescription>
         </briefdescription>
         <detaileddescription>
@@ -139,6 +149,7 @@
         <definition>uint32_t OffsetPDO::profile_vel</definition>
         <argsstring></argsstring>
         <name>profile_vel</name>
+        <qualifiedname>OffsetPDO::profile_vel</qualifiedname>
         <briefdescription>
         </briefdescription>
         <detaileddescription>
@@ -152,6 +163,7 @@
         <definition>uint32_t OffsetPDO::actual_pos</definition>
         <argsstring></argsstring>
         <name>actual_pos</name>
+        <qualifiedname>OffsetPDO::actual_pos</qualifiedname>
         <briefdescription>
         </briefdescription>
         <detaileddescription>
@@ -165,6 +177,7 @@
         <definition>uint32_t OffsetPDO::pos_fol_err</definition>
         <argsstring></argsstring>
         <name>pos_fol_err</name>
+        <qualifiedname>OffsetPDO::pos_fol_err</qualifiedname>
         <briefdescription>
         </briefdescription>
         <detaileddescription>
@@ -178,6 +191,7 @@
         <definition>uint32_t OffsetPDO::actual_vel</definition>
         <argsstring></argsstring>
         <name>actual_vel</name>
+        <qualifiedname>OffsetPDO::actual_vel</qualifiedname>
         <briefdescription>
         </briefdescription>
         <detaileddescription>
@@ -191,6 +205,7 @@
         <definition>uint32_t OffsetPDO::actual_cur</definition>
         <argsstring></argsstring>
         <name>actual_cur</name>
+        <qualifiedname>OffsetPDO::actual_cur</qualifiedname>
         <briefdescription>
         </briefdescription>
         <detaileddescription>
@@ -204,6 +219,7 @@
         <definition>uint32_t OffsetPDO::actual_tor</definition>
         <argsstring></argsstring>
         <name>actual_tor</name>
+        <qualifiedname>OffsetPDO::actual_tor</qualifiedname>
         <briefdescription>
         </briefdescription>
         <detaileddescription>
@@ -217,6 +233,7 @@
         <definition>uint32_t OffsetPDO::status_word</definition>
         <argsstring></argsstring>
         <name>status_word</name>
+        <qualifiedname>OffsetPDO::status_word</qualifiedname>
         <briefdescription>
         </briefdescription>
         <detaileddescription>
@@ -230,6 +247,7 @@
         <definition>uint32_t OffsetPDO::op_mode_display</definition>
         <argsstring></argsstring>
         <name>op_mode_display</name>
+        <qualifiedname>OffsetPDO::op_mode_display</qualifiedname>
         <briefdescription>
         </briefdescription>
         <detaileddescription>
@@ -243,6 +261,7 @@
         <definition>uint32_t OffsetPDO::error_code</definition>
         <argsstring></argsstring>
         <name>error_code</name>
+        <qualifiedname>OffsetPDO::error_code</qualifiedname>
         <briefdescription>
         </briefdescription>
         <detaileddescription>
@@ -256,6 +275,7 @@
         <definition>uint32_t OffsetPDO::extra_status_reg</definition>
         <argsstring></argsstring>
         <name>extra_status_reg</name>
+        <qualifiedname>OffsetPDO::extra_status_reg</qualifiedname>
         <briefdescription>
         </briefdescription>
         <detaileddescription>
@@ -269,6 +289,7 @@
         <definition>uint32_t OffsetPDO::r_limit_switch</definition>
         <argsstring></argsstring>
         <name>r_limit_switch</name>
+        <qualifiedname>OffsetPDO::r_limit_switch</qualifiedname>
         <briefdescription>
         </briefdescription>
         <detaileddescription>
@@ -282,6 +303,7 @@
         <definition>uint32_t OffsetPDO::l_limit_switch</definition>
         <argsstring></argsstring>
         <name>l_limit_switch</name>
+        <qualifiedname>OffsetPDO::l_limit_switch</qualifiedname>
         <briefdescription>
         </briefdescription>
         <detaileddescription>
@@ -295,6 +317,7 @@
         <definition>uint32_t OffsetPDO::emergency_switch</definition>
         <argsstring></argsstring>
         <name>emergency_switch</name>
+        <qualifiedname>OffsetPDO::emergency_switch</qualifiedname>
         <briefdescription>
         </briefdescription>
         <detaileddescription>
@@ -309,7 +332,7 @@
     </briefdescription>
     <detaileddescription>
     </detaileddescription>
-    <location file="include/ecat_globals.hpp" line="305" column="1" bodyfile="include/ecat_globals.hpp" bodystart="304" bodyend="331"/>
+    <location file="include/ecat_globals.hpp" line="304" column="1" bodyfile="include/ecat_globals.hpp" bodystart="305" bodyend="331"/>
     <listofallmembers>
       <member refid="structOffsetPDO_1a9497d0c8b4cc1de3dd0e435b4f071a92" prot="public" virt="non-virtual"><scope>OffsetPDO</scope><name>actual_cur</name></member>
       <member refid="structOffsetPDO_1aa660132e2053405390ec7c21feab28a6" prot="public" virt="non-virtual"><scope>OffsetPDO</scope><name>actual_pos</name></member>

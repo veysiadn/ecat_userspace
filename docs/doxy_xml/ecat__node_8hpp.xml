@@ -1,70 +1,13 @@
 <?xml version='1.0' encoding='UTF-8' standalone='no'?>
-<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.17">
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.3" xml:lang="en-US">
   <compounddef id="ecat__node_8hpp" kind="file" language="C++">
     <compoundname>ecat_node.hpp</compoundname>
     <includes refid="ecat__globals_8hpp" local="yes">ecat_globals.hpp</includes>
     <includes refid="ecat__slave_8hpp" local="yes">ecat_slave.hpp</includes>
+    <includedby refid="ecat__lifecycle_8hpp" local="yes">include/ecat_lifecycle.hpp</includedby>
     <includedby refid="ecat__node_8cpp" local="yes">src/ecat_node.cpp</includedby>
     <includedby refid="main_8cpp" local="yes">src/main.cpp</includedby>
-    <includedby refid="ecat__lifecycle_8hpp" local="yes">include/ecat_lifecycle.hpp</includedby>
     <incdepgraph>
-      <node id="17">
-        <label>sys/mman.h</label>
-      </node>
-      <node id="6">
-        <label>stdlib.h</label>
-      </node>
-      <node id="8">
-        <label>errno.h</label>
-      </node>
-      <node id="18">
-        <label>malloc.h</label>
-      </node>
-      <node id="5">
-        <label>limits.h</label>
-      </node>
-      <node id="12">
-        <label>sys/resource.h</label>
-      </node>
-      <node id="24">
-        <label>object_dictionary.hpp</label>
-        <link refid="object__dictionary_8hpp"/>
-      </node>
-      <node id="7">
-        <label>pthread.h</label>
-      </node>
-      <node id="14">
-        <label>sys/types.h</label>
-      </node>
-      <node id="25">
-        <label>ecat_slave.hpp</label>
-        <link refid="ecat__slave_8hpp"/>
-        <childnode refid="2" relation="include">
-        </childnode>
-      </node>
-      <node id="11">
-        <label>string.h</label>
-      </node>
-      <node id="15">
-        <label>unistd.h</label>
-      </node>
-      <node id="22">
-        <label>vector</label>
-      </node>
-      <node id="9">
-        <label>signal.h</label>
-      </node>
-      <node id="1">
-        <label>include/ecat_node.hpp</label>
-        <link refid="ecat__node_8hpp"/>
-        <childnode refid="2" relation="include">
-        </childnode>
-        <childnode refid="25" relation="include">
-        </childnode>
-      </node>
-      <node id="16">
-        <label>time.h</label>
-      </node>
       <node id="2">
         <label>ecat_globals.hpp</label>
         <link refid="ecat__globals_8hpp"/>
@@ -113,61 +56,118 @@
         <childnode refid="24" relation="include">
         </childnode>
       </node>
-      <node id="13">
-        <label>sys/time.h</label>
+      <node id="1">
+        <label>include/ecat_node.hpp</label>
+        <link refid="ecat__node_8hpp"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="25" relation="include">
+        </childnode>
       </node>
-      <node id="3">
-        <label>iostream</label>
+      <node id="25">
+        <label>ecat_slave.hpp</label>
+        <link refid="ecat__slave_8hpp"/>
+        <childnode refid="2" relation="include">
+        </childnode>
       </node>
-      <node id="23">
-        <label>ecrt.h</label>
+      <node id="24">
+        <label>object_dictionary.hpp</label>
+        <link refid="object__dictionary_8hpp"/>
       </node>
       <node id="20">
         <label>chrono</label>
       </node>
-      <node id="19">
-        <label>sched.h</label>
-      </node>
-      <node id="10">
-        <label>stdio.h</label>
-      </node>
       <node id="4">
         <label>cstring</label>
+      </node>
+      <node id="23">
+        <label>ecrt.h</label>
+      </node>
+      <node id="8">
+        <label>errno.h</label>
+      </node>
+      <node id="3">
+        <label>iostream</label>
+      </node>
+      <node id="5">
+        <label>limits.h</label>
+      </node>
+      <node id="18">
+        <label>malloc.h</label>
       </node>
       <node id="21">
         <label>memory</label>
       </node>
+      <node id="7">
+        <label>pthread.h</label>
+      </node>
+      <node id="19">
+        <label>sched.h</label>
+      </node>
+      <node id="9">
+        <label>signal.h</label>
+      </node>
+      <node id="10">
+        <label>stdio.h</label>
+      </node>
+      <node id="6">
+        <label>stdlib.h</label>
+      </node>
+      <node id="11">
+        <label>string.h</label>
+      </node>
+      <node id="17">
+        <label>sys/mman.h</label>
+      </node>
+      <node id="12">
+        <label>sys/resource.h</label>
+      </node>
+      <node id="13">
+        <label>sys/time.h</label>
+      </node>
+      <node id="14">
+        <label>sys/types.h</label>
+      </node>
+      <node id="16">
+        <label>time.h</label>
+      </node>
+      <node id="15">
+        <label>unistd.h</label>
+      </node>
+      <node id="22">
+        <label>vector</label>
+      </node>
     </incdepgraph>
     <invincdepgraph>
-      <node id="5">
-        <label>src/ecat_lifecycle.cpp</label>
-        <link refid="ecat__lifecycle_8cpp"/>
-      </node>
-      <node id="3">
-        <label>src/main.cpp</label>
-        <link refid="main_8cpp"/>
+      <node id="2">
+        <label>include/ecat_lifecycle.hpp</label>
+        <link refid="ecat__lifecycle_8hpp"/>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="4" relation="include">
+        </childnode>
       </node>
       <node id="1">
         <label>include/ecat_node.hpp</label>
         <link refid="ecat__node_8hpp"/>
         <childnode refid="2" relation="include">
         </childnode>
-        <childnode refid="3" relation="include">
+        <childnode refid="5" relation="include">
         </childnode>
         <childnode refid="4" relation="include">
         </childnode>
       </node>
-      <node id="2">
+      <node id="3">
+        <label>src/ecat_lifecycle.cpp</label>
+        <link refid="ecat__lifecycle_8cpp"/>
+      </node>
+      <node id="5">
         <label>src/ecat_node.cpp</label>
         <link refid="ecat__node_8cpp"/>
       </node>
       <node id="4">
-        <label>include/ecat_lifecycle.hpp</label>
-        <link refid="ecat__lifecycle_8hpp"/>
-        <childnode refid="5" relation="include">
-        </childnode>
-        <childnode refid="3" relation="include">
-        </childnode>
+        <label>src/main.cpp</label>
+        <link refid="main_8cpp"/>
       </node>
     </invincdepgraph>
     <innerclass refid="classEthercatCommunication_1_1EthercatNode" prot="public">EthercatCommunication::EthercatNode</innerclass>

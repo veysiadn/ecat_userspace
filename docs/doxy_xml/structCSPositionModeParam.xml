@@ -1,5 +1,5 @@
 <?xml version='1.0' encoding='UTF-8' standalone='no'?>
-<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.17">
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.3" xml:lang="en-US">
   <compounddef id="structCSPositionModeParam" kind="struct" language="C++" prot="public">
     <compoundname>CSPositionModeParam</compoundname>
     <includes refid="ecat__globals_8hpp" local="no">ecat_globals.hpp</includes>
@@ -9,6 +9,7 @@
         <definition>uint32_t CSPositionModeParam::nominal_current</definition>
         <argsstring></argsstring>
         <name>nominal_current</name>
+        <qualifiedname>CSPositionModeParam::nominal_current</qualifiedname>
         <briefdescription>
         </briefdescription>
         <detaileddescription>
@@ -22,6 +23,7 @@
         <definition>uint16_t CSPositionModeParam::torque_constant</definition>
         <argsstring></argsstring>
         <name>torque_constant</name>
+        <qualifiedname>CSPositionModeParam::torque_constant</qualifiedname>
         <briefdescription>
         </briefdescription>
         <detaileddescription>
@@ -35,6 +37,7 @@
         <definition>uint32_t CSPositionModeParam::current_controller_gain</definition>
         <argsstring></argsstring>
         <name>current_controller_gain</name>
+        <qualifiedname>CSPositionModeParam::current_controller_gain</qualifiedname>
         <briefdescription>
         </briefdescription>
         <detaileddescription>
@@ -48,6 +51,7 @@
         <definition>uint32_t CSPositionModeParam::position_control_parameter_set</definition>
         <argsstring></argsstring>
         <name>position_control_parameter_set</name>
+        <qualifiedname>CSPositionModeParam::position_control_parameter_set</qualifiedname>
         <briefdescription>
         </briefdescription>
         <detaileddescription>
@@ -61,6 +65,7 @@
         <definition>uint32_t CSPositionModeParam::software_position_limit</definition>
         <argsstring></argsstring>
         <name>software_position_limit</name>
+        <qualifiedname>CSPositionModeParam::software_position_limit</qualifiedname>
         <briefdescription>
         </briefdescription>
         <detaileddescription>
@@ -74,6 +79,7 @@
         <definition>uint16_t CSPositionModeParam::motor_rated_torque</definition>
         <argsstring></argsstring>
         <name>motor_rated_torque</name>
+        <qualifiedname>CSPositionModeParam::motor_rated_torque</qualifiedname>
         <briefdescription>
         </briefdescription>
         <detaileddescription>
@@ -87,6 +93,7 @@
         <definition>uint32_t CSPositionModeParam::max_gear_input_speed</definition>
         <argsstring></argsstring>
         <name>max_gear_input_speed</name>
+        <qualifiedname>CSPositionModeParam::max_gear_input_speed</qualifiedname>
         <briefdescription>
         </briefdescription>
         <detaileddescription>
@@ -100,6 +107,7 @@
         <definition>uint32_t CSPositionModeParam::profile_vel</definition>
         <argsstring></argsstring>
         <name>profile_vel</name>
+        <qualifiedname>CSPositionModeParam::profile_vel</qualifiedname>
         <briefdescription>
         </briefdescription>
         <detaileddescription>
@@ -113,6 +121,7 @@
         <definition>uint32_t CSPositionModeParam::profile_acc</definition>
         <argsstring></argsstring>
         <name>profile_acc</name>
+        <qualifiedname>CSPositionModeParam::profile_acc</qualifiedname>
         <briefdescription>
         </briefdescription>
         <detaileddescription>
@@ -126,6 +135,7 @@
         <definition>uint32_t CSPositionModeParam::profile_dec</definition>
         <argsstring></argsstring>
         <name>profile_dec</name>
+        <qualifiedname>CSPositionModeParam::profile_dec</qualifiedname>
         <briefdescription>
         </briefdescription>
         <detaileddescription>
@@ -139,6 +149,7 @@
         <definition>uint32_t CSPositionModeParam::max_fol_err</definition>
         <argsstring></argsstring>
         <name>max_fol_err</name>
+        <qualifiedname>CSPositionModeParam::max_fol_err</qualifiedname>
         <briefdescription>
         </briefdescription>
         <detaileddescription>
@@ -152,6 +163,7 @@
         <definition>uint32_t CSPositionModeParam::max_profile_vel</definition>
         <argsstring></argsstring>
         <name>max_profile_vel</name>
+        <qualifiedname>CSPositionModeParam::max_profile_vel</qualifiedname>
         <briefdescription>
         </briefdescription>
         <detaileddescription>
@@ -165,6 +177,7 @@
         <definition>uint32_t CSPositionModeParam::quick_stop_dec</definition>
         <argsstring></argsstring>
         <name>quick_stop_dec</name>
+        <qualifiedname>CSPositionModeParam::quick_stop_dec</qualifiedname>
         <briefdescription>
         </briefdescription>
         <detaileddescription>
@@ -178,6 +191,7 @@
         <definition>uint32_t CSPositionModeParam::interpolation_time_period</definition>
         <argsstring></argsstring>
         <name>interpolation_time_period</name>
+        <qualifiedname>CSPositionModeParam::interpolation_time_period</qualifiedname>
         <briefdescription>
         </briefdescription>
         <detaileddescription>
@@ -192,7 +206,7 @@
     </briefdescription>
     <detaileddescription>
     </detaileddescription>
-    <location file="include/ecat_globals.hpp" line="371" column="1" bodyfile="include/ecat_globals.hpp" bodystart="370" bodyend="386"/>
+    <location file="include/ecat_globals.hpp" line="370" column="1" bodyfile="include/ecat_globals.hpp" bodystart="371" bodyend="386"/>
     <listofallmembers>
       <member refid="structCSPositionModeParam_1a7ce4438d79c906eff81308e7d6a54e82" prot="public" virt="non-virtual"><scope>CSPositionModeParam</scope><name>current_controller_gain</name></member>
       <member refid="structCSPositionModeParam_1a7fa1d18cfe7454f638d90f98df14c857" prot="public" virt="non-virtual"><scope>CSPositionModeParam</scope><name>interpolation_time_period</name></member>

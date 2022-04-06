@@ -1,64 +1,9 @@
 <?xml version='1.0' encoding='UTF-8' standalone='no'?>
-<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.17">
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.3" xml:lang="en-US">
   <compounddef id="ecat__slave_8cpp" kind="file" language="C++">
     <compoundname>ecat_slave.cpp</compoundname>
     <includes refid="ecat__slave_8hpp" local="yes">ecat_slave.hpp</includes>
     <incdepgraph>
-      <node id="18">
-        <label>sys/mman.h</label>
-      </node>
-      <node id="7">
-        <label>stdlib.h</label>
-      </node>
-      <node id="9">
-        <label>errno.h</label>
-      </node>
-      <node id="19">
-        <label>malloc.h</label>
-      </node>
-      <node id="1">
-        <label>src/ecat_slave.cpp</label>
-        <link refid="ecat__slave_8cpp"/>
-        <childnode refid="2" relation="include">
-        </childnode>
-      </node>
-      <node id="6">
-        <label>limits.h</label>
-      </node>
-      <node id="13">
-        <label>sys/resource.h</label>
-      </node>
-      <node id="25">
-        <label>object_dictionary.hpp</label>
-        <link refid="object__dictionary_8hpp"/>
-      </node>
-      <node id="8">
-        <label>pthread.h</label>
-      </node>
-      <node id="15">
-        <label>sys/types.h</label>
-      </node>
-      <node id="2">
-        <label>ecat_slave.hpp</label>
-        <link refid="ecat__slave_8hpp"/>
-        <childnode refid="3" relation="include">
-        </childnode>
-      </node>
-      <node id="12">
-        <label>string.h</label>
-      </node>
-      <node id="16">
-        <label>unistd.h</label>
-      </node>
-      <node id="23">
-        <label>vector</label>
-      </node>
-      <node id="10">
-        <label>signal.h</label>
-      </node>
-      <node id="17">
-        <label>time.h</label>
-      </node>
       <node id="3">
         <label>ecat_globals.hpp</label>
         <link refid="ecat__globals_8hpp"/>
@@ -107,29 +52,84 @@
         <childnode refid="25" relation="include">
         </childnode>
       </node>
-      <node id="14">
-        <label>sys/time.h</label>
+      <node id="2">
+        <label>ecat_slave.hpp</label>
+        <link refid="ecat__slave_8hpp"/>
+        <childnode refid="3" relation="include">
+        </childnode>
       </node>
-      <node id="4">
-        <label>iostream</label>
+      <node id="25">
+        <label>object_dictionary.hpp</label>
+        <link refid="object__dictionary_8hpp"/>
       </node>
-      <node id="24">
-        <label>ecrt.h</label>
+      <node id="1">
+        <label>src/ecat_slave.cpp</label>
+        <link refid="ecat__slave_8cpp"/>
+        <childnode refid="2" relation="include">
+        </childnode>
       </node>
       <node id="21">
         <label>chrono</label>
       </node>
+      <node id="5">
+        <label>cstring</label>
+      </node>
+      <node id="24">
+        <label>ecrt.h</label>
+      </node>
+      <node id="9">
+        <label>errno.h</label>
+      </node>
+      <node id="4">
+        <label>iostream</label>
+      </node>
+      <node id="6">
+        <label>limits.h</label>
+      </node>
+      <node id="19">
+        <label>malloc.h</label>
+      </node>
+      <node id="22">
+        <label>memory</label>
+      </node>
+      <node id="8">
+        <label>pthread.h</label>
+      </node>
       <node id="20">
         <label>sched.h</label>
+      </node>
+      <node id="10">
+        <label>signal.h</label>
       </node>
       <node id="11">
         <label>stdio.h</label>
       </node>
-      <node id="5">
-        <label>cstring</label>
+      <node id="7">
+        <label>stdlib.h</label>
       </node>
-      <node id="22">
-        <label>memory</label>
+      <node id="12">
+        <label>string.h</label>
+      </node>
+      <node id="18">
+        <label>sys/mman.h</label>
+      </node>
+      <node id="13">
+        <label>sys/resource.h</label>
+      </node>
+      <node id="14">
+        <label>sys/time.h</label>
+      </node>
+      <node id="15">
+        <label>sys/types.h</label>
+      </node>
+      <node id="17">
+        <label>time.h</label>
+      </node>
+      <node id="16">
+        <label>unistd.h</label>
+      </node>
+      <node id="23">
+        <label>vector</label>
       </node>
     </incdepgraph>
     <briefdescription>

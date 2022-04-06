@@ -1,0 +1,324 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.17">
+  <compounddef id="structxboxCtrl" kind="struct" language="C++" prot="public">
+    <compoundname>xboxCtrl</compoundname>
+    <includes refid="xboxController_8hpp" local="no">xboxController.hpp</includes>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="structxboxCtrl_1a89fa5e2125e445375603c11004b9e96c" prot="public" static="no" mutable="no">
+        <type>int</type>
+        <definition>int xboxCtrl::numOfAxis</definition>
+        <argsstring></argsstring>
+        <name>numOfAxis</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/xboxController.hpp" line="87" column="5" bodyfile="include/xboxController.hpp" bodystart="87" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structxboxCtrl_1a3044026ef4f653ff33f959bedf89b2df" prot="public" static="no" mutable="no">
+        <type>int</type>
+        <definition>int xboxCtrl::numOfButtons</definition>
+        <argsstring></argsstring>
+        <name>numOfButtons</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/xboxController.hpp" line="88" column="5" bodyfile="include/xboxController.hpp" bodystart="88" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structxboxCtrl_1a689aad94845ca6e21cf3f8125aba92a8" prot="public" static="no" mutable="no">
+        <type>char</type>
+        <definition>char xboxCtrl::identifier[IDENTIFIER_SIZE]</definition>
+        <argsstring>[IDENTIFIER_SIZE]</argsstring>
+        <name>identifier</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/xboxController.hpp" line="89" column="6" bodyfile="include/xboxController.hpp" bodystart="89" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structxboxCtrl_1aedecffc95a5400682276999e096e55c8" prot="public" static="no" mutable="no">
+        <type>int</type>
+        <definition>int xboxCtrl::stk_LeftX</definition>
+        <argsstring></argsstring>
+        <name>stk_LeftX</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/xboxController.hpp" line="90" column="5" bodyfile="include/xboxController.hpp" bodystart="90" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structxboxCtrl_1af607c83225096023a2e3aff842ab9e55" prot="public" static="no" mutable="no">
+        <type>int</type>
+        <definition>int xboxCtrl::stk_LeftY</definition>
+        <argsstring></argsstring>
+        <name>stk_LeftY</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/xboxController.hpp" line="91" column="5" bodyfile="include/xboxController.hpp" bodystart="91" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structxboxCtrl_1a18bdb39f2259fa0ef88fbfbca76d3fac" prot="public" static="no" mutable="no">
+        <type>int</type>
+        <definition>int xboxCtrl::stk_RightX</definition>
+        <argsstring></argsstring>
+        <name>stk_RightX</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/xboxController.hpp" line="92" column="5" bodyfile="include/xboxController.hpp" bodystart="92" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structxboxCtrl_1a36cb4447f1fd55e226999033094f966e" prot="public" static="no" mutable="no">
+        <type>int</type>
+        <definition>int xboxCtrl::stk_RightY</definition>
+        <argsstring></argsstring>
+        <name>stk_RightY</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/xboxController.hpp" line="93" column="5" bodyfile="include/xboxController.hpp" bodystart="93" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structxboxCtrl_1a88a8763619e54bae301e93f31b237069" prot="public" static="no" mutable="no">
+        <type>int</type>
+        <definition>int xboxCtrl::stk_crossFB</definition>
+        <argsstring></argsstring>
+        <name>stk_crossFB</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/xboxController.hpp" line="94" column="5" bodyfile="include/xboxController.hpp" bodystart="94" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structxboxCtrl_1ad1ad250a747a116f988ba4e639379cf5" prot="public" static="no" mutable="no">
+        <type>int</type>
+        <definition>int xboxCtrl::stk_crossLR</definition>
+        <argsstring></argsstring>
+        <name>stk_crossLR</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/xboxController.hpp" line="95" column="5" bodyfile="include/xboxController.hpp" bodystart="95" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structxboxCtrl_1ae75e51c1faa979cb71c951e716e578cb" prot="public" static="no" mutable="no">
+        <type>int</type>
+        <definition>int xboxCtrl::stk_LeftTop</definition>
+        <argsstring></argsstring>
+        <name>stk_LeftTop</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/xboxController.hpp" line="96" column="5" bodyfile="include/xboxController.hpp" bodystart="96" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structxboxCtrl_1af1b1fd5192f55977f05dfa8b572137db" prot="public" static="no" mutable="no">
+        <type>int</type>
+        <definition>int xboxCtrl::stk_RightTop</definition>
+        <argsstring></argsstring>
+        <name>stk_RightTop</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/xboxController.hpp" line="97" column="5" bodyfile="include/xboxController.hpp" bodystart="97" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structxboxCtrl_1ad69506bbef82c1b6efe53a94268496d3" prot="public" static="no" mutable="no">
+        <type>int</type>
+        <definition>int xboxCtrl::btn_back</definition>
+        <argsstring></argsstring>
+        <name>btn_back</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/xboxController.hpp" line="98" column="5" bodyfile="include/xboxController.hpp" bodystart="98" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structxboxCtrl_1a0b4e88bf932ac4cd8d9d457b252b40e4" prot="public" static="no" mutable="no">
+        <type>int</type>
+        <definition>int xboxCtrl::btn_start</definition>
+        <argsstring></argsstring>
+        <name>btn_start</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/xboxController.hpp" line="99" column="5" bodyfile="include/xboxController.hpp" bodystart="99" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structxboxCtrl_1aaaa521b0f019987fbbb299d28666eeb6" prot="public" static="no" mutable="no">
+        <type>int</type>
+        <definition>int xboxCtrl::btn_leftStk</definition>
+        <argsstring></argsstring>
+        <name>btn_leftStk</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/xboxController.hpp" line="100" column="5" bodyfile="include/xboxController.hpp" bodystart="100" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structxboxCtrl_1a305e6041e353e55b86c77639ffd58766" prot="public" static="no" mutable="no">
+        <type>int</type>
+        <definition>int xboxCtrl::btn_rightStk</definition>
+        <argsstring></argsstring>
+        <name>btn_rightStk</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/xboxController.hpp" line="101" column="5" bodyfile="include/xboxController.hpp" bodystart="101" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structxboxCtrl_1a52832e3acd3c3e0c86f219fbabba8f44" prot="public" static="no" mutable="no">
+        <type>int</type>
+        <definition>int xboxCtrl::btn_A</definition>
+        <argsstring></argsstring>
+        <name>btn_A</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/xboxController.hpp" line="102" column="5" bodyfile="include/xboxController.hpp" bodystart="102" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structxboxCtrl_1aa522c3ed133f1458d171e2fd3a5ac811" prot="public" static="no" mutable="no">
+        <type>int</type>
+        <definition>int xboxCtrl::btn_B</definition>
+        <argsstring></argsstring>
+        <name>btn_B</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/xboxController.hpp" line="103" column="5" bodyfile="include/xboxController.hpp" bodystart="103" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structxboxCtrl_1a801c608e9af386aab4774fc1995a3e4b" prot="public" static="no" mutable="no">
+        <type>int</type>
+        <definition>int xboxCtrl::btn_X</definition>
+        <argsstring></argsstring>
+        <name>btn_X</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/xboxController.hpp" line="104" column="5" bodyfile="include/xboxController.hpp" bodystart="104" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structxboxCtrl_1ab3d039d264268ab3ef83a7c3e1b94c6d" prot="public" static="no" mutable="no">
+        <type>int</type>
+        <definition>int xboxCtrl::btn_Y</definition>
+        <argsstring></argsstring>
+        <name>btn_Y</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/xboxController.hpp" line="105" column="5" bodyfile="include/xboxController.hpp" bodystart="105" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structxboxCtrl_1a4223b29aff0c4cbdfa00b198bd47b805" prot="public" static="no" mutable="no">
+        <type>int</type>
+        <definition>int xboxCtrl::btn_xbox</definition>
+        <argsstring></argsstring>
+        <name>btn_xbox</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/xboxController.hpp" line="106" column="5" bodyfile="include/xboxController.hpp" bodystart="106" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structxboxCtrl_1acbef85347d6686be2724487546879a14" prot="public" static="no" mutable="no">
+        <type>int</type>
+        <definition>int xboxCtrl::btn_leftTop</definition>
+        <argsstring></argsstring>
+        <name>btn_leftTop</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/xboxController.hpp" line="107" column="5" bodyfile="include/xboxController.hpp" bodystart="107" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structxboxCtrl_1aee777afe70a7c2ea34faf7705b2c3818" prot="public" static="no" mutable="no">
+        <type>int</type>
+        <definition>int xboxCtrl::btn_rightTop</definition>
+        <argsstring></argsstring>
+        <name>btn_rightTop</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/xboxController.hpp" line="108" column="5" bodyfile="include/xboxController.hpp" bodystart="108" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="include/xboxController.hpp" line="86" column="15" bodyfile="include/xboxController.hpp" bodystart="86" bodyend="109"/>
+    <listofallmembers>
+      <member refid="structxboxCtrl_1a52832e3acd3c3e0c86f219fbabba8f44" prot="public" virt="non-virtual"><scope>xboxCtrl</scope><name>btn_A</name></member>
+      <member refid="structxboxCtrl_1aa522c3ed133f1458d171e2fd3a5ac811" prot="public" virt="non-virtual"><scope>xboxCtrl</scope><name>btn_B</name></member>
+      <member refid="structxboxCtrl_1ad69506bbef82c1b6efe53a94268496d3" prot="public" virt="non-virtual"><scope>xboxCtrl</scope><name>btn_back</name></member>
+      <member refid="structxboxCtrl_1aaaa521b0f019987fbbb299d28666eeb6" prot="public" virt="non-virtual"><scope>xboxCtrl</scope><name>btn_leftStk</name></member>
+      <member refid="structxboxCtrl_1acbef85347d6686be2724487546879a14" prot="public" virt="non-virtual"><scope>xboxCtrl</scope><name>btn_leftTop</name></member>
+      <member refid="structxboxCtrl_1a305e6041e353e55b86c77639ffd58766" prot="public" virt="non-virtual"><scope>xboxCtrl</scope><name>btn_rightStk</name></member>
+      <member refid="structxboxCtrl_1aee777afe70a7c2ea34faf7705b2c3818" prot="public" virt="non-virtual"><scope>xboxCtrl</scope><name>btn_rightTop</name></member>
+      <member refid="structxboxCtrl_1a0b4e88bf932ac4cd8d9d457b252b40e4" prot="public" virt="non-virtual"><scope>xboxCtrl</scope><name>btn_start</name></member>
+      <member refid="structxboxCtrl_1a801c608e9af386aab4774fc1995a3e4b" prot="public" virt="non-virtual"><scope>xboxCtrl</scope><name>btn_X</name></member>
+      <member refid="structxboxCtrl_1a4223b29aff0c4cbdfa00b198bd47b805" prot="public" virt="non-virtual"><scope>xboxCtrl</scope><name>btn_xbox</name></member>
+      <member refid="structxboxCtrl_1ab3d039d264268ab3ef83a7c3e1b94c6d" prot="public" virt="non-virtual"><scope>xboxCtrl</scope><name>btn_Y</name></member>
+      <member refid="structxboxCtrl_1a689aad94845ca6e21cf3f8125aba92a8" prot="public" virt="non-virtual"><scope>xboxCtrl</scope><name>identifier</name></member>
+      <member refid="structxboxCtrl_1a89fa5e2125e445375603c11004b9e96c" prot="public" virt="non-virtual"><scope>xboxCtrl</scope><name>numOfAxis</name></member>
+      <member refid="structxboxCtrl_1a3044026ef4f653ff33f959bedf89b2df" prot="public" virt="non-virtual"><scope>xboxCtrl</scope><name>numOfButtons</name></member>
+      <member refid="structxboxCtrl_1a88a8763619e54bae301e93f31b237069" prot="public" virt="non-virtual"><scope>xboxCtrl</scope><name>stk_crossFB</name></member>
+      <member refid="structxboxCtrl_1ad1ad250a747a116f988ba4e639379cf5" prot="public" virt="non-virtual"><scope>xboxCtrl</scope><name>stk_crossLR</name></member>
+      <member refid="structxboxCtrl_1ae75e51c1faa979cb71c951e716e578cb" prot="public" virt="non-virtual"><scope>xboxCtrl</scope><name>stk_LeftTop</name></member>
+      <member refid="structxboxCtrl_1aedecffc95a5400682276999e096e55c8" prot="public" virt="non-virtual"><scope>xboxCtrl</scope><name>stk_LeftX</name></member>
+      <member refid="structxboxCtrl_1af607c83225096023a2e3aff842ab9e55" prot="public" virt="non-virtual"><scope>xboxCtrl</scope><name>stk_LeftY</name></member>
+      <member refid="structxboxCtrl_1af1b1fd5192f55977f05dfa8b572137db" prot="public" virt="non-virtual"><scope>xboxCtrl</scope><name>stk_RightTop</name></member>
+      <member refid="structxboxCtrl_1a18bdb39f2259fa0ef88fbfbca76d3fac" prot="public" virt="non-virtual"><scope>xboxCtrl</scope><name>stk_RightX</name></member>
+      <member refid="structxboxCtrl_1a36cb4447f1fd55e226999033094f966e" prot="public" virt="non-virtual"><scope>xboxCtrl</scope><name>stk_RightY</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

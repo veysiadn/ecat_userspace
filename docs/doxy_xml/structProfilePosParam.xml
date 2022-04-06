@@ -1,0 +1,115 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.17">
+  <compounddef id="structProfilePosParam" kind="struct" language="C++" prot="public">
+    <compoundname>ProfilePosParam</compoundname>
+    <includes refid="ecat__globals_8hpp" local="no">ecat_globals.hpp</includes>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="structProfilePosParam_1aeda779c60c429db32325ac466533b498" prot="public" static="no" mutable="no">
+        <type>uint32_t</type>
+        <definition>uint32_t ProfilePosParam::profile_vel</definition>
+        <argsstring></argsstring>
+        <name>profile_vel</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/ecat_globals.hpp" line="356" column="14" bodyfile="include/ecat_globals.hpp" bodystart="356" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structProfilePosParam_1a8588f65715da0e04b65f7a87e04b5aea" prot="public" static="no" mutable="no">
+        <type>uint32_t</type>
+        <definition>uint32_t ProfilePosParam::profile_acc</definition>
+        <argsstring></argsstring>
+        <name>profile_acc</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/ecat_globals.hpp" line="357" column="14" bodyfile="include/ecat_globals.hpp" bodystart="357" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structProfilePosParam_1a28531945d194b6184acfc58252021495" prot="public" static="no" mutable="no">
+        <type>uint32_t</type>
+        <definition>uint32_t ProfilePosParam::profile_dec</definition>
+        <argsstring></argsstring>
+        <name>profile_dec</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/ecat_globals.hpp" line="358" column="14" bodyfile="include/ecat_globals.hpp" bodystart="358" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structProfilePosParam_1a4fad96fd7804b2f24051095657d42472" prot="public" static="no" mutable="no">
+        <type>uint32_t</type>
+        <definition>uint32_t ProfilePosParam::max_fol_err</definition>
+        <argsstring></argsstring>
+        <name>max_fol_err</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/ecat_globals.hpp" line="359" column="14" bodyfile="include/ecat_globals.hpp" bodystart="359" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structProfilePosParam_1a5cda9a4f392b059c1829825d3537f872" prot="public" static="no" mutable="no">
+        <type>uint32_t</type>
+        <definition>uint32_t ProfilePosParam::max_profile_vel</definition>
+        <argsstring></argsstring>
+        <name>max_profile_vel</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/ecat_globals.hpp" line="360" column="14" bodyfile="include/ecat_globals.hpp" bodystart="360" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structProfilePosParam_1a7ef62445ceaee72a6789b585797d039b" prot="public" static="no" mutable="no">
+        <type>uint32_t</type>
+        <definition>uint32_t ProfilePosParam::quick_stop_dec</definition>
+        <argsstring></argsstring>
+        <name>quick_stop_dec</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/ecat_globals.hpp" line="361" column="14" bodyfile="include/ecat_globals.hpp" bodystart="361" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structProfilePosParam_1a821b805b7ef6f4e8c5fbc842d7987db6" prot="public" static="no" mutable="no">
+        <type>uint16_t</type>
+        <definition>uint16_t ProfilePosParam::motion_profile_type</definition>
+        <argsstring></argsstring>
+        <name>motion_profile_type</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/ecat_globals.hpp" line="362" column="14" bodyfile="include/ecat_globals.hpp" bodystart="362" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>Parameters that should be specified in position mode. </para>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="include/ecat_globals.hpp" line="355" column="1" bodyfile="include/ecat_globals.hpp" bodystart="354" bodyend="364"/>
+    <listofallmembers>
+      <member refid="structProfilePosParam_1a4fad96fd7804b2f24051095657d42472" prot="public" virt="non-virtual"><scope>ProfilePosParam</scope><name>max_fol_err</name></member>
+      <member refid="structProfilePosParam_1a5cda9a4f392b059c1829825d3537f872" prot="public" virt="non-virtual"><scope>ProfilePosParam</scope><name>max_profile_vel</name></member>
+      <member refid="structProfilePosParam_1a821b805b7ef6f4e8c5fbc842d7987db6" prot="public" virt="non-virtual"><scope>ProfilePosParam</scope><name>motion_profile_type</name></member>
+      <member refid="structProfilePosParam_1a8588f65715da0e04b65f7a87e04b5aea" prot="public" virt="non-virtual"><scope>ProfilePosParam</scope><name>profile_acc</name></member>
+      <member refid="structProfilePosParam_1a28531945d194b6184acfc58252021495" prot="public" virt="non-virtual"><scope>ProfilePosParam</scope><name>profile_dec</name></member>
+      <member refid="structProfilePosParam_1aeda779c60c429db32325ac466533b498" prot="public" virt="non-virtual"><scope>ProfilePosParam</scope><name>profile_vel</name></member>
+      <member refid="structProfilePosParam_1a7ef62445ceaee72a6789b585797d039b" prot="public" virt="non-virtual"><scope>ProfilePosParam</scope><name>quick_stop_dec</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

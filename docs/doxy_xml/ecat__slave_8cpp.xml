@@ -1,0 +1,164 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.17">
+  <compounddef id="ecat__slave_8cpp" kind="file" language="C++">
+    <compoundname>ecat_slave.cpp</compoundname>
+    <includes refid="ecat__slave_8hpp" local="yes">ecat_slave.hpp</includes>
+    <incdepgraph>
+      <node id="18">
+        <label>sys/mman.h</label>
+      </node>
+      <node id="7">
+        <label>stdlib.h</label>
+      </node>
+      <node id="9">
+        <label>errno.h</label>
+      </node>
+      <node id="19">
+        <label>malloc.h</label>
+      </node>
+      <node id="1">
+        <label>src/ecat_slave.cpp</label>
+        <link refid="ecat__slave_8cpp"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+      </node>
+      <node id="6">
+        <label>limits.h</label>
+      </node>
+      <node id="13">
+        <label>sys/resource.h</label>
+      </node>
+      <node id="25">
+        <label>object_dictionary.hpp</label>
+        <link refid="object__dictionary_8hpp"/>
+      </node>
+      <node id="8">
+        <label>pthread.h</label>
+      </node>
+      <node id="15">
+        <label>sys/types.h</label>
+      </node>
+      <node id="2">
+        <label>ecat_slave.hpp</label>
+        <link refid="ecat__slave_8hpp"/>
+        <childnode refid="3" relation="include">
+        </childnode>
+      </node>
+      <node id="12">
+        <label>string.h</label>
+      </node>
+      <node id="16">
+        <label>unistd.h</label>
+      </node>
+      <node id="23">
+        <label>vector</label>
+      </node>
+      <node id="10">
+        <label>signal.h</label>
+      </node>
+      <node id="17">
+        <label>time.h</label>
+      </node>
+      <node id="3">
+        <label>ecat_globals.hpp</label>
+        <link refid="ecat__globals_8hpp"/>
+        <childnode refid="4" relation="include">
+        </childnode>
+        <childnode refid="5" relation="include">
+        </childnode>
+        <childnode refid="6" relation="include">
+        </childnode>
+        <childnode refid="7" relation="include">
+        </childnode>
+        <childnode refid="8" relation="include">
+        </childnode>
+        <childnode refid="9" relation="include">
+        </childnode>
+        <childnode refid="10" relation="include">
+        </childnode>
+        <childnode refid="11" relation="include">
+        </childnode>
+        <childnode refid="12" relation="include">
+        </childnode>
+        <childnode refid="13" relation="include">
+        </childnode>
+        <childnode refid="14" relation="include">
+        </childnode>
+        <childnode refid="15" relation="include">
+        </childnode>
+        <childnode refid="16" relation="include">
+        </childnode>
+        <childnode refid="17" relation="include">
+        </childnode>
+        <childnode refid="18" relation="include">
+        </childnode>
+        <childnode refid="19" relation="include">
+        </childnode>
+        <childnode refid="20" relation="include">
+        </childnode>
+        <childnode refid="21" relation="include">
+        </childnode>
+        <childnode refid="22" relation="include">
+        </childnode>
+        <childnode refid="23" relation="include">
+        </childnode>
+        <childnode refid="24" relation="include">
+        </childnode>
+        <childnode refid="25" relation="include">
+        </childnode>
+      </node>
+      <node id="14">
+        <label>sys/time.h</label>
+      </node>
+      <node id="4">
+        <label>iostream</label>
+      </node>
+      <node id="24">
+        <label>ecrt.h</label>
+      </node>
+      <node id="21">
+        <label>chrono</label>
+      </node>
+      <node id="20">
+        <label>sched.h</label>
+      </node>
+      <node id="11">
+        <label>stdio.h</label>
+      </node>
+      <node id="5">
+        <label>cstring</label>
+      </node>
+      <node id="22">
+        <label>memory</label>
+      </node>
+    </incdepgraph>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="preprocessor">#include<sp/>&quot;<ref refid="ecat__slave_8hpp" kindref="compound">ecat_slave.hpp</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="2"><highlight class="normal"></highlight></codeline>
+<codeline lineno="3"><highlight class="normal"><ref refid="classEthercatSlave_1af6372d6701c86e6d9c3e5c0c2bd3b350" kindref="member">EthercatSlave::EthercatSlave</ref>()<sp/></highlight><highlight class="comment">//<sp/>:<sp/>variable<sp/>{assigned<sp/>value}<sp/>for<sp/>initialization.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="4"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="5"><highlight class="normal"></highlight></codeline>
+<codeline lineno="6"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="7"><highlight class="normal"></highlight></codeline>
+<codeline lineno="8"><highlight class="normal"><ref refid="classEthercatSlave_1a9c43c36743f85bcd76d7ea512cc8ef82" kindref="member">EthercatSlave::~EthercatSlave</ref>()</highlight></codeline>
+<codeline lineno="9"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="10"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="11"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="12"><highlight class="normal"></highlight></codeline>
+<codeline lineno="13"><highlight class="normal"></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="classEthercatSlave_1a2a0e089503f81440185e983401d1bbba" kindref="member">EthercatSlave::CheckSlaveConfigState</ref>()</highlight></codeline>
+<codeline lineno="14"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="15"><highlight class="normal"><sp/><sp/><sp/><sp/>ecrt_slave_config_state(<ref refid="classEthercatSlave_1aa2480c6d91ce19bf6c5a58b3207fa498" kindref="member">slave_config_</ref>,<sp/>&amp;<ref refid="classEthercatSlave_1aca431a49f052ab63631b6936e53f0457" kindref="member">slave_config_state_</ref>);</highlight></codeline>
+<codeline lineno="16"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(<ref refid="classEthercatSlave_1aca431a49f052ab63631b6936e53f0457" kindref="member">slave_config_state_</ref>.al_state<sp/>!=<sp/>0x08)<sp/>{</highlight></codeline>
+<codeline lineno="17"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>std::cout<sp/>&lt;&lt;<sp/></highlight><highlight class="stringliteral">&quot;<sp/>Slave<sp/>is<sp/>not<sp/>operational<sp/>AL<sp/>state<sp/>is<sp/>:&quot;</highlight><highlight class="normal"><sp/>&lt;&lt;<sp/></highlight></codeline>
+<codeline lineno="18"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>std::hex<sp/>&lt;&lt;<sp/><ref refid="classEthercatSlave_1aca431a49f052ab63631b6936e53f0457" kindref="member">slave_config_state_</ref>.al_state<sp/>&lt;&lt;<sp/>std::endl;</highlight></codeline>
+<codeline lineno="19"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="20"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>0;</highlight></codeline>
+<codeline lineno="21"><highlight class="normal">}</highlight></codeline>
+    </programlisting>
+    <location file="src/ecat_slave.cpp"/>
+  </compounddef>
+</doxygen>

@@ -1,0 +1,94 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.17">
+  <compounddef id="timing_8cpp" kind="file" language="C++">
+    <compoundname>timing.cpp</compoundname>
+    <includes refid="timing_8hpp" local="yes">timing.hpp</includes>
+    <incdepgraph>
+      <node id="6">
+        <label>functional</label>
+      </node>
+      <node id="8">
+        <label>cstdint</label>
+      </node>
+      <node id="7">
+        <label>string</label>
+      </node>
+      <node id="11">
+        <label>fstream</label>
+      </node>
+      <node id="10">
+        <label>ratio</label>
+      </node>
+      <node id="9">
+        <label>ctime</label>
+      </node>
+      <node id="1">
+        <label>src/timing.cpp</label>
+        <link refid="timing_8cpp"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+      </node>
+      <node id="3">
+        <label>vector</label>
+      </node>
+      <node id="12">
+        <label>iostream</label>
+      </node>
+      <node id="4">
+        <label>chrono</label>
+      </node>
+      <node id="2">
+        <label>timing.hpp</label>
+        <link refid="timing_8hpp"/>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="4" relation="include">
+        </childnode>
+        <childnode refid="5" relation="include">
+        </childnode>
+        <childnode refid="6" relation="include">
+        </childnode>
+        <childnode refid="7" relation="include">
+        </childnode>
+        <childnode refid="8" relation="include">
+        </childnode>
+        <childnode refid="9" relation="include">
+        </childnode>
+        <childnode refid="10" relation="include">
+        </childnode>
+        <childnode refid="11" relation="include">
+        </childnode>
+        <childnode refid="12" relation="include">
+        </childnode>
+      </node>
+      <node id="5">
+        <label>memory</label>
+      </node>
+    </incdepgraph>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="preprocessor">#include<sp/>&quot;<ref refid="timing_8hpp" kindref="compound">timing.hpp</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="2"><highlight class="normal"></highlight></codeline>
+<codeline lineno="3"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classTiming_1a5877895aa80d11fc63230de0c5eeb5da" kindref="member">Timing::GetTime</ref>()</highlight></codeline>
+<codeline lineno="4"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="5"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classTiming_1a30f27ff190a0d252979d908c3a7bab74" kindref="member">timer_start_</ref><sp/>=<sp/>std::chrono::high_resolution_clock::now();</highlight></codeline>
+<codeline lineno="6"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="7"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classTiming_1a0e717201b291932881ce40f46f1157ec" kindref="member">Timing::MeasureTimeDifference</ref>()</highlight></codeline>
+<codeline lineno="8"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="9"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classTiming_1a1048f7adf0ab7088eb06a05e0c6c534b" kindref="member">time_span_</ref><sp/>=<sp/>std::chrono::duration_cast&lt;std::chrono::microseconds&gt;(<ref refid="classTiming_1a30f27ff190a0d252979d908c3a7bab74" kindref="member">timer_start_</ref><sp/>-<sp/><ref refid="classTiming_1aad16cc4aa56eb8531f1c62742ef638f3" kindref="member">last_start_time_</ref>);</highlight></codeline>
+<codeline lineno="10"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>timing_info_.insert(timing_info_.begin(),<sp/>time_span.count());</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="11"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classTiming_1aad16cc4aa56eb8531f1c62742ef638f3" kindref="member">last_start_time_</ref><sp/>=<sp/><ref refid="classTiming_1a30f27ff190a0d252979d908c3a7bab74" kindref="member">timer_start_</ref>;</highlight></codeline>
+<codeline lineno="12"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classTiming_1a5eb0575d415b5646a81c802b87fe67c6" kindref="member">counter_</ref>++;</highlight></codeline>
+<codeline lineno="13"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="14"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classTiming_1abca929bf96a9035cdae89d6ac1c18509" kindref="member">Timing::OutInfoToFile</ref>()</highlight></codeline>
+<codeline lineno="15"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="16"><highlight class="normal"><sp/><sp/><sp/><sp/>std::ofstream<sp/>outFile(</highlight><highlight class="stringliteral">&quot;loop_timing_info.txt&quot;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="17"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">for</highlight><highlight class="normal"><sp/>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">auto</highlight><highlight class="normal"><sp/>&amp;e<sp/>:<sp/><ref refid="classTiming_1a29eba9d2bbdfdedc46c4cff7a9a41741" kindref="member">timing_info_</ref>)<sp/>outFile<sp/>&lt;&lt;<sp/>e<sp/>&lt;&lt;<sp/></highlight><highlight class="stringliteral">&quot;\n&quot;</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="18"><highlight class="normal">}</highlight></codeline>
+    </programlisting>
+    <location file="src/timing.cpp"/>
+  </compounddef>
+</doxygen>

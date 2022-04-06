@@ -1,0 +1,12 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.17">
+  <compounddef id="namespaceEthercatLifeCycleNode" kind="namespace" language="C++">
+    <compoundname>EthercatLifeCycleNode</compoundname>
+    <innerclass refid="classEthercatLifeCycleNode_1_1EthercatLifeCycle" prot="public">EthercatLifeCycleNode::EthercatLifeCycle</innerclass>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="include/ecat_lifecycle.hpp" line="44" column="1"/>
+  </compounddef>
+</doxygen>

@@ -1,0 +1,145 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.17">
+  <compounddef id="structDataSent" kind="struct" language="C++" prot="public">
+    <compoundname>DataSent</compoundname>
+    <includes refid="ecat__globals_8hpp" local="no">ecat_globals.hpp</includes>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="structDataSent_1ab64e7a30d862b85836de9f0c2bbe53a7" prot="public" static="no" mutable="no">
+        <type>std::vector&lt; int32_t &gt;</type>
+        <definition>std::vector&lt;int32_t&gt; DataSent::target_pos</definition>
+        <argsstring></argsstring>
+        <name>target_pos</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/ecat_globals.hpp" line="235" column="19" bodyfile="include/ecat_globals.hpp" bodystart="235" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structDataSent_1ae12b147e00af3fd6f65a44b2788c3a51" prot="public" static="no" mutable="no">
+        <type>std::vector&lt; int32_t &gt;</type>
+        <definition>std::vector&lt;int32_t&gt; DataSent::target_vel</definition>
+        <argsstring></argsstring>
+        <name>target_vel</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/ecat_globals.hpp" line="236" column="19" bodyfile="include/ecat_globals.hpp" bodystart="236" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structDataSent_1aa5dabf1eba703f19b7dd61beef07ba14" prot="public" static="no" mutable="no">
+        <type>std::vector&lt; int16_t &gt;</type>
+        <definition>std::vector&lt;int16_t&gt; DataSent::target_tor</definition>
+        <argsstring></argsstring>
+        <name>target_tor</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/ecat_globals.hpp" line="237" column="19" bodyfile="include/ecat_globals.hpp" bodystart="237" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structDataSent_1a39d77aff9fe22d6a88cf7e3bce81db52" prot="public" static="no" mutable="no">
+        <type>std::vector&lt; int16_t &gt;</type>
+        <definition>std::vector&lt;int16_t&gt; DataSent::max_tor</definition>
+        <argsstring></argsstring>
+        <name>max_tor</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/ecat_globals.hpp" line="238" column="19" bodyfile="include/ecat_globals.hpp" bodystart="238" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structDataSent_1a250f4034a2b752ab15053407eadfd4d9" prot="public" static="no" mutable="no">
+        <type>std::vector&lt; uint16_t &gt;</type>
+        <definition>std::vector&lt;uint16_t&gt; DataSent::control_word</definition>
+        <argsstring></argsstring>
+        <name>control_word</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/ecat_globals.hpp" line="239" column="18" bodyfile="include/ecat_globals.hpp" bodystart="239" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structDataSent_1a25c2af9fc8c03562ba5cc104180a04e9" prot="public" static="no" mutable="no">
+        <type><ref refid="ecat__globals_8hpp_1a56752d1aeb4bd4940e632396072d68af" kindref="member">OpMode</ref></type>
+        <definition>OpMode DataSent::op_mode</definition>
+        <argsstring></argsstring>
+        <name>op_mode</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/ecat_globals.hpp" line="240" column="15" bodyfile="include/ecat_globals.hpp" bodystart="240" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structDataSent_1a5418773bce78cbac487c372888432098" prot="public" static="no" mutable="no">
+        <type>std::vector&lt; int32_t &gt;</type>
+        <definition>std::vector&lt;int32_t&gt; DataSent::vel_offset</definition>
+        <argsstring></argsstring>
+        <name>vel_offset</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/ecat_globals.hpp" line="241" column="19" bodyfile="include/ecat_globals.hpp" bodystart="241" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structDataSent_1a016260e63216f58b3e4270c2e79fd84f" prot="public" static="no" mutable="no">
+        <type>std::vector&lt; int16_t &gt;</type>
+        <definition>std::vector&lt;int16_t&gt; DataSent::tor_offset</definition>
+        <argsstring></argsstring>
+        <name>tor_offset</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/ecat_globals.hpp" line="242" column="19" bodyfile="include/ecat_globals.hpp" bodystart="242" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="structDataSent_1ae8914156241aeb6cdb6d59c4d3aac824" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>DataSent::DataSent</definition>
+        <argsstring>()</argsstring>
+        <name>DataSent</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/ecat_globals.hpp" line="243" column="5" bodyfile="include/ecat_globals.hpp" bodystart="243" bodyend="243"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>Structure for data to be sent to slaves. </para>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="include/ecat_globals.hpp" line="234" column="1" bodyfile="include/ecat_globals.hpp" bodystart="233" bodyend="244"/>
+    <listofallmembers>
+      <member refid="structDataSent_1a250f4034a2b752ab15053407eadfd4d9" prot="public" virt="non-virtual"><scope>DataSent</scope><name>control_word</name></member>
+      <member refid="structDataSent_1ae8914156241aeb6cdb6d59c4d3aac824" prot="public" virt="non-virtual"><scope>DataSent</scope><name>DataSent</name></member>
+      <member refid="structDataSent_1a39d77aff9fe22d6a88cf7e3bce81db52" prot="public" virt="non-virtual"><scope>DataSent</scope><name>max_tor</name></member>
+      <member refid="structDataSent_1a25c2af9fc8c03562ba5cc104180a04e9" prot="public" virt="non-virtual"><scope>DataSent</scope><name>op_mode</name></member>
+      <member refid="structDataSent_1ab64e7a30d862b85836de9f0c2bbe53a7" prot="public" virt="non-virtual"><scope>DataSent</scope><name>target_pos</name></member>
+      <member refid="structDataSent_1aa5dabf1eba703f19b7dd61beef07ba14" prot="public" virt="non-virtual"><scope>DataSent</scope><name>target_tor</name></member>
+      <member refid="structDataSent_1ae12b147e00af3fd6f65a44b2788c3a51" prot="public" virt="non-virtual"><scope>DataSent</scope><name>target_vel</name></member>
+      <member refid="structDataSent_1a016260e63216f58b3e4270c2e79fd84f" prot="public" virt="non-virtual"><scope>DataSent</scope><name>tor_offset</name></member>
+      <member refid="structDataSent_1a5418773bce78cbac487c372888432098" prot="public" virt="non-virtual"><scope>DataSent</scope><name>vel_offset</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

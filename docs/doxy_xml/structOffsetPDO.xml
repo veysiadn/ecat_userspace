@@ -1,0 +1,339 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.17">
+  <compounddef id="structOffsetPDO" kind="struct" language="C++" prot="public">
+    <compoundname>OffsetPDO</compoundname>
+    <includes refid="ecat__globals_8hpp" local="no">ecat_globals.hpp</includes>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="structOffsetPDO_1a0f056deef6e6d5e9009313a0510e87ec" prot="public" static="no" mutable="no">
+        <type>uint32_t</type>
+        <definition>uint32_t OffsetPDO::target_pos</definition>
+        <argsstring></argsstring>
+        <name>target_pos</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/ecat_globals.hpp" line="306" column="14" bodyfile="include/ecat_globals.hpp" bodystart="306" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structOffsetPDO_1a251ee93cafcd89a8f52c83e31a6dded9" prot="public" static="no" mutable="no">
+        <type>uint32_t</type>
+        <definition>uint32_t OffsetPDO::target_vel</definition>
+        <argsstring></argsstring>
+        <name>target_vel</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/ecat_globals.hpp" line="307" column="14" bodyfile="include/ecat_globals.hpp" bodystart="307" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structOffsetPDO_1af334e3b60bd6b6d8fddabd6559b89e69" prot="public" static="no" mutable="no">
+        <type>uint32_t</type>
+        <definition>uint32_t OffsetPDO::target_tor</definition>
+        <argsstring></argsstring>
+        <name>target_tor</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/ecat_globals.hpp" line="308" column="14" bodyfile="include/ecat_globals.hpp" bodystart="308" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structOffsetPDO_1af6588deb13afeac98d363737664f7796" prot="public" static="no" mutable="no">
+        <type>uint32_t</type>
+        <definition>uint32_t OffsetPDO::torque_offset</definition>
+        <argsstring></argsstring>
+        <name>torque_offset</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/ecat_globals.hpp" line="309" column="14" bodyfile="include/ecat_globals.hpp" bodystart="309" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structOffsetPDO_1af37d71dd68836a0862e3c58752f32de0" prot="public" static="no" mutable="no">
+        <type>uint32_t</type>
+        <definition>uint32_t OffsetPDO::max_tor</definition>
+        <argsstring></argsstring>
+        <name>max_tor</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/ecat_globals.hpp" line="310" column="14" bodyfile="include/ecat_globals.hpp" bodystart="310" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structOffsetPDO_1a8c4f5d0811f5157ddd5b2aad718ca216" prot="public" static="no" mutable="no">
+        <type>uint32_t</type>
+        <definition>uint32_t OffsetPDO::control_word</definition>
+        <argsstring></argsstring>
+        <name>control_word</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/ecat_globals.hpp" line="311" column="14" bodyfile="include/ecat_globals.hpp" bodystart="311" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structOffsetPDO_1a5a5931c0e00ddf408a6e1dd1b6389af9" prot="public" static="no" mutable="no">
+        <type>uint32_t</type>
+        <definition>uint32_t OffsetPDO::op_mode</definition>
+        <argsstring></argsstring>
+        <name>op_mode</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/ecat_globals.hpp" line="312" column="14" bodyfile="include/ecat_globals.hpp" bodystart="312" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structOffsetPDO_1a40d8cf803dc45383d24fcfbb49d176e4" prot="public" static="no" mutable="no">
+        <type>uint32_t</type>
+        <definition>uint32_t OffsetPDO::profile_acc</definition>
+        <argsstring></argsstring>
+        <name>profile_acc</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/ecat_globals.hpp" line="313" column="14" bodyfile="include/ecat_globals.hpp" bodystart="313" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structOffsetPDO_1a194b2ec45403a2b5b49d1e08e2480f38" prot="public" static="no" mutable="no">
+        <type>uint32_t</type>
+        <definition>uint32_t OffsetPDO::profile_dec</definition>
+        <argsstring></argsstring>
+        <name>profile_dec</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/ecat_globals.hpp" line="314" column="14" bodyfile="include/ecat_globals.hpp" bodystart="314" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structOffsetPDO_1a8c08a2a6e477cbfd2754796e9d69308c" prot="public" static="no" mutable="no">
+        <type>uint32_t</type>
+        <definition>uint32_t OffsetPDO::quick_stop_dec</definition>
+        <argsstring></argsstring>
+        <name>quick_stop_dec</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/ecat_globals.hpp" line="315" column="14" bodyfile="include/ecat_globals.hpp" bodystart="315" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structOffsetPDO_1a0df71a81151a20863587d9b51ca7422a" prot="public" static="no" mutable="no">
+        <type>uint32_t</type>
+        <definition>uint32_t OffsetPDO::profile_vel</definition>
+        <argsstring></argsstring>
+        <name>profile_vel</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/ecat_globals.hpp" line="316" column="14" bodyfile="include/ecat_globals.hpp" bodystart="316" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structOffsetPDO_1aa660132e2053405390ec7c21feab28a6" prot="public" static="no" mutable="no">
+        <type>uint32_t</type>
+        <definition>uint32_t OffsetPDO::actual_pos</definition>
+        <argsstring></argsstring>
+        <name>actual_pos</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/ecat_globals.hpp" line="318" column="14" bodyfile="include/ecat_globals.hpp" bodystart="318" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structOffsetPDO_1a96dc5a40722273bac237b58db26a8087" prot="public" static="no" mutable="no">
+        <type>uint32_t</type>
+        <definition>uint32_t OffsetPDO::pos_fol_err</definition>
+        <argsstring></argsstring>
+        <name>pos_fol_err</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/ecat_globals.hpp" line="319" column="14" bodyfile="include/ecat_globals.hpp" bodystart="319" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structOffsetPDO_1ae1bef0cbff32c077395e59137c8c802d" prot="public" static="no" mutable="no">
+        <type>uint32_t</type>
+        <definition>uint32_t OffsetPDO::actual_vel</definition>
+        <argsstring></argsstring>
+        <name>actual_vel</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/ecat_globals.hpp" line="320" column="14" bodyfile="include/ecat_globals.hpp" bodystart="320" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structOffsetPDO_1a9497d0c8b4cc1de3dd0e435b4f071a92" prot="public" static="no" mutable="no">
+        <type>uint32_t</type>
+        <definition>uint32_t OffsetPDO::actual_cur</definition>
+        <argsstring></argsstring>
+        <name>actual_cur</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/ecat_globals.hpp" line="321" column="14" bodyfile="include/ecat_globals.hpp" bodystart="321" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structOffsetPDO_1a16476df210bc19f871c89c0c7fd0d0c8" prot="public" static="no" mutable="no">
+        <type>uint32_t</type>
+        <definition>uint32_t OffsetPDO::actual_tor</definition>
+        <argsstring></argsstring>
+        <name>actual_tor</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/ecat_globals.hpp" line="322" column="14" bodyfile="include/ecat_globals.hpp" bodystart="322" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structOffsetPDO_1ad170d2294efd553e8f5e690c394c96ab" prot="public" static="no" mutable="no">
+        <type>uint32_t</type>
+        <definition>uint32_t OffsetPDO::status_word</definition>
+        <argsstring></argsstring>
+        <name>status_word</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/ecat_globals.hpp" line="323" column="14" bodyfile="include/ecat_globals.hpp" bodystart="323" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structOffsetPDO_1a4ce519ced990d7ff2168b54822afc769" prot="public" static="no" mutable="no">
+        <type>uint32_t</type>
+        <definition>uint32_t OffsetPDO::op_mode_display</definition>
+        <argsstring></argsstring>
+        <name>op_mode_display</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/ecat_globals.hpp" line="324" column="14" bodyfile="include/ecat_globals.hpp" bodystart="324" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structOffsetPDO_1a5389244040597e64914e8650abd81996" prot="public" static="no" mutable="no">
+        <type>uint32_t</type>
+        <definition>uint32_t OffsetPDO::error_code</definition>
+        <argsstring></argsstring>
+        <name>error_code</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/ecat_globals.hpp" line="325" column="14" bodyfile="include/ecat_globals.hpp" bodystart="325" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structOffsetPDO_1adee3c83f3857725dac30b685d1b90af2" prot="public" static="no" mutable="no">
+        <type>uint32_t</type>
+        <definition>uint32_t OffsetPDO::extra_status_reg</definition>
+        <argsstring></argsstring>
+        <name>extra_status_reg</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/ecat_globals.hpp" line="326" column="14" bodyfile="include/ecat_globals.hpp" bodystart="326" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structOffsetPDO_1a73449e20df59e1077d18532bbd0e87fd" prot="public" static="no" mutable="no">
+        <type>uint32_t</type>
+        <definition>uint32_t OffsetPDO::r_limit_switch</definition>
+        <argsstring></argsstring>
+        <name>r_limit_switch</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/ecat_globals.hpp" line="328" column="14" bodyfile="include/ecat_globals.hpp" bodystart="328" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structOffsetPDO_1ab40d8928b356198511f325f6b1067e32" prot="public" static="no" mutable="no">
+        <type>uint32_t</type>
+        <definition>uint32_t OffsetPDO::l_limit_switch</definition>
+        <argsstring></argsstring>
+        <name>l_limit_switch</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/ecat_globals.hpp" line="329" column="14" bodyfile="include/ecat_globals.hpp" bodystart="329" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structOffsetPDO_1a45d9cdcfef09d6089056db171755d262" prot="public" static="no" mutable="no">
+        <type>uint32_t</type>
+        <definition>uint32_t OffsetPDO::emergency_switch</definition>
+        <argsstring></argsstring>
+        <name>emergency_switch</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/ecat_globals.hpp" line="330" column="14" bodyfile="include/ecat_globals.hpp" bodystart="330" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>offset for PDO entries to register PDOs. </para>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="include/ecat_globals.hpp" line="305" column="1" bodyfile="include/ecat_globals.hpp" bodystart="304" bodyend="331"/>
+    <listofallmembers>
+      <member refid="structOffsetPDO_1a9497d0c8b4cc1de3dd0e435b4f071a92" prot="public" virt="non-virtual"><scope>OffsetPDO</scope><name>actual_cur</name></member>
+      <member refid="structOffsetPDO_1aa660132e2053405390ec7c21feab28a6" prot="public" virt="non-virtual"><scope>OffsetPDO</scope><name>actual_pos</name></member>
+      <member refid="structOffsetPDO_1a16476df210bc19f871c89c0c7fd0d0c8" prot="public" virt="non-virtual"><scope>OffsetPDO</scope><name>actual_tor</name></member>
+      <member refid="structOffsetPDO_1ae1bef0cbff32c077395e59137c8c802d" prot="public" virt="non-virtual"><scope>OffsetPDO</scope><name>actual_vel</name></member>
+      <member refid="structOffsetPDO_1a8c4f5d0811f5157ddd5b2aad718ca216" prot="public" virt="non-virtual"><scope>OffsetPDO</scope><name>control_word</name></member>
+      <member refid="structOffsetPDO_1a45d9cdcfef09d6089056db171755d262" prot="public" virt="non-virtual"><scope>OffsetPDO</scope><name>emergency_switch</name></member>
+      <member refid="structOffsetPDO_1a5389244040597e64914e8650abd81996" prot="public" virt="non-virtual"><scope>OffsetPDO</scope><name>error_code</name></member>
+      <member refid="structOffsetPDO_1adee3c83f3857725dac30b685d1b90af2" prot="public" virt="non-virtual"><scope>OffsetPDO</scope><name>extra_status_reg</name></member>
+      <member refid="structOffsetPDO_1ab40d8928b356198511f325f6b1067e32" prot="public" virt="non-virtual"><scope>OffsetPDO</scope><name>l_limit_switch</name></member>
+      <member refid="structOffsetPDO_1af37d71dd68836a0862e3c58752f32de0" prot="public" virt="non-virtual"><scope>OffsetPDO</scope><name>max_tor</name></member>
+      <member refid="structOffsetPDO_1a5a5931c0e00ddf408a6e1dd1b6389af9" prot="public" virt="non-virtual"><scope>OffsetPDO</scope><name>op_mode</name></member>
+      <member refid="structOffsetPDO_1a4ce519ced990d7ff2168b54822afc769" prot="public" virt="non-virtual"><scope>OffsetPDO</scope><name>op_mode_display</name></member>
+      <member refid="structOffsetPDO_1a96dc5a40722273bac237b58db26a8087" prot="public" virt="non-virtual"><scope>OffsetPDO</scope><name>pos_fol_err</name></member>
+      <member refid="structOffsetPDO_1a40d8cf803dc45383d24fcfbb49d176e4" prot="public" virt="non-virtual"><scope>OffsetPDO</scope><name>profile_acc</name></member>
+      <member refid="structOffsetPDO_1a194b2ec45403a2b5b49d1e08e2480f38" prot="public" virt="non-virtual"><scope>OffsetPDO</scope><name>profile_dec</name></member>
+      <member refid="structOffsetPDO_1a0df71a81151a20863587d9b51ca7422a" prot="public" virt="non-virtual"><scope>OffsetPDO</scope><name>profile_vel</name></member>
+      <member refid="structOffsetPDO_1a8c08a2a6e477cbfd2754796e9d69308c" prot="public" virt="non-virtual"><scope>OffsetPDO</scope><name>quick_stop_dec</name></member>
+      <member refid="structOffsetPDO_1a73449e20df59e1077d18532bbd0e87fd" prot="public" virt="non-virtual"><scope>OffsetPDO</scope><name>r_limit_switch</name></member>
+      <member refid="structOffsetPDO_1ad170d2294efd553e8f5e690c394c96ab" prot="public" virt="non-virtual"><scope>OffsetPDO</scope><name>status_word</name></member>
+      <member refid="structOffsetPDO_1a0f056deef6e6d5e9009313a0510e87ec" prot="public" virt="non-virtual"><scope>OffsetPDO</scope><name>target_pos</name></member>
+      <member refid="structOffsetPDO_1af334e3b60bd6b6d8fddabd6559b89e69" prot="public" virt="non-virtual"><scope>OffsetPDO</scope><name>target_tor</name></member>
+      <member refid="structOffsetPDO_1a251ee93cafcd89a8f52c83e31a6dded9" prot="public" virt="non-virtual"><scope>OffsetPDO</scope><name>target_vel</name></member>
+      <member refid="structOffsetPDO_1af6588deb13afeac98d363737664f7796" prot="public" virt="non-virtual"><scope>OffsetPDO</scope><name>torque_offset</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

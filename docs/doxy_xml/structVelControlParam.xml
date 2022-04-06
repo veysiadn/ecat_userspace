@@ -1,0 +1,77 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.17">
+  <compounddef id="structVelControlParam" kind="struct" language="C++" prot="public">
+    <compoundname>VelControlParam</compoundname>
+    <includes refid="ecat__globals_8hpp" local="no">ecat_globals.hpp</includes>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="structVelControlParam_1ae6465f71e5ef9372eafc37db7898d71c" prot="public" static="no" mutable="no">
+        <type>uint32_t</type>
+        <definition>uint32_t VelControlParam::Pgain</definition>
+        <argsstring></argsstring>
+        <name>Pgain</name>
+        <initializer>= 20000</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/ecat_globals.hpp" line="395" column="14" bodyfile="include/ecat_globals.hpp" bodystart="395" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structVelControlParam_1aa7b75a6e39085e186393c83855655c12" prot="public" static="no" mutable="no">
+        <type>uint32_t</type>
+        <definition>uint32_t VelControlParam::Igain</definition>
+        <argsstring></argsstring>
+        <name>Igain</name>
+        <initializer>= 500000</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/ecat_globals.hpp" line="396" column="14" bodyfile="include/ecat_globals.hpp" bodystart="396" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structVelControlParam_1ac63cf67ec8e498f1b7c2e73ef2b629a5" prot="public" static="no" mutable="no">
+        <type>uint32_t</type>
+        <definition>uint32_t VelControlParam::FFVelgain</definition>
+        <argsstring></argsstring>
+        <name>FFVelgain</name>
+        <initializer>= 0</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/ecat_globals.hpp" line="397" column="14" bodyfile="include/ecat_globals.hpp" bodystart="397" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structVelControlParam_1ad7848266bd2871549ea2a291d939c7ee" prot="public" static="no" mutable="no">
+        <type>uint32_t</type>
+        <definition>uint32_t VelControlParam::FFAccgain</definition>
+        <argsstring></argsstring>
+        <name>FFAccgain</name>
+        <initializer>= 0</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/ecat_globals.hpp" line="398" column="14" bodyfile="include/ecat_globals.hpp" bodystart="398" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>Struct containing &apos;velocity control parameter set&apos; 0x30A2 Has 4 sub index. Default values are from EPOS4 firmware manual. </para>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="include/ecat_globals.hpp" line="394" column="1" bodyfile="include/ecat_globals.hpp" bodystart="393" bodyend="399"/>
+    <listofallmembers>
+      <member refid="structVelControlParam_1ad7848266bd2871549ea2a291d939c7ee" prot="public" virt="non-virtual"><scope>VelControlParam</scope><name>FFAccgain</name></member>
+      <member refid="structVelControlParam_1ac63cf67ec8e498f1b7c2e73ef2b629a5" prot="public" virt="non-virtual"><scope>VelControlParam</scope><name>FFVelgain</name></member>
+      <member refid="structVelControlParam_1aa7b75a6e39085e186393c83855655c12" prot="public" virt="non-virtual"><scope>VelControlParam</scope><name>Igain</name></member>
+      <member refid="structVelControlParam_1ae6465f71e5ef9372eafc37db7898d71c" prot="public" virt="non-virtual"><scope>VelControlParam</scope><name>Pgain</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

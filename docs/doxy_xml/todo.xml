@@ -1,0 +1,17 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.17">
+  <compounddef id="todo" kind="page">
+    <compoundname>todo</compoundname>
+    <title>Todo List</title>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+<para><variablelist>
+<varlistentry><term>Member <ref refid="classEthercatCommunication_1_1EthercatNode_1ac0f1d24eb783d34c604f7a91ff5ba45c" kindref="member">EthercatCommunication::EthercatNode::SetProfileVelocityParametersAll</ref>  (<ref refid="structProfileVelocityParam" kindref="compound">ProfileVelocityParam</ref> &amp;P)</term></varlistentry>
+<listitem><para><anchor id="todo_1_todo000001"/>Add error code to all functions.Instead of returning -1. </para>
+</listitem>
+</variablelist>
+</para>
+    </detaileddescription>
+  </compounddef>
+</doxygen>

@@ -1,0 +1,48 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.17">
+  <compounddef id="README_8md" kind="file" language="Markdown">
+    <compoundname>README.md</compoundname>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline><highlight class="normal">###<sp/>Welcome<sp/>to<sp/>EtherCAT<sp/>user<sp/>space<sp/>application<sp/>by<sp/>Veysi<sp/>ADIN<sp/>&amp;<sp/>Chunwoo<sp/>Kim.</highlight></codeline>
+<codeline><highlight class="normal"><sp/></highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/>This<sp/>repository<sp/>contains<sp/>EtherCAT<sp/>based<sp/>control<sp/>software<sp/>using<sp/>CoE<sp/>and<sp/>CiA402<sp/>standard<sp/>to<sp/>control<sp/>motors<sp/>and<sp/>receive<sp/>sensor<sp/>data,<sp/>by<sp/>wrapping<sp/>IgH<sp/>EtherCAT<sp/>library<sp/>functions.<sp/></highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/>This<sp/>implementation<sp/>can<sp/>be<sp/>used<sp/>with<sp/>any<sp/>robotic<sp/>system<sp/>with<sp/>small<sp/>modifications.Contains<sp/>EtherCAT<sp/>real-time<sp/>thread<sp/>with<sp/>priority<sp/>of<sp/>98.<sp/>And<sp/>USB<sp/>communication<sp/>with<sp/></highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/>Xbox<sp/>Controller.</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/></highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/>Please<sp/>check<sp/>guides,<sp/>links<sp/>and<sp/>documentations<sp/>before<sp/>installation,<sp/>or<sp/>using<sp/>this<sp/>control<sp/>software.</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">##<sp/>Guides</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">-<sp/>[EtherCAT](https://www.ethercat.org/en/technology.html)</highlight></codeline>
+<codeline><highlight class="normal">-<sp/>[Etherlab<sp/>Webpage](https://www.etherlab.org/en/ethercat/index.php)</highlight></codeline>
+<codeline><highlight class="normal">-<sp/>[IgH<sp/>EtherCAT<sp/>Library<sp/>Documentation](https://www.etherlab.org/download/ethercat/ethercat-1.5.2.pdf)</highlight></codeline>
+<codeline><highlight class="normal">-<sp/>[Real-time<sp/>Linux](https://wiki.linuxfoundation.org/realtime/documentation/technical_basics/start)</highlight></codeline>
+<codeline><highlight class="normal">-<sp/>[Real-time<sp/>Background](https://design.ros2.org/articles/realtime_background.html)</highlight></codeline>
+<codeline><highlight class="normal">-<sp/>[Article<sp/>on<sp/>EtherCAT-RT<sp/>PREEMPT-<sp/>Xenomai](https://www.ripublication.com/ijaer17/ijaerv12n21_94.pdf)</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">##<sp/>Prerequisites</highlight></codeline>
+<codeline><highlight class="normal">-<sp/>[RT_Preempt<sp/>Linux<sp/>and<sp/>IgH<sp/>EtherCAT<sp/>Implementation](https://github.com/veysiadn/IgHEtherCATImplementation)</highlight></codeline>
+<codeline><highlight class="normal">-<sp/>If<sp/>you<sp/>want<sp/>to<sp/>use<sp/>[Xenomai-Installation](https://github.com/veysiadn/xenomai-install)</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">##<sp/>Implementation</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/></highlight></codeline>
+<codeline><highlight class="normal">```sh</highlight></codeline>
+<codeline><highlight class="normal">mkdir<sp/>project-ws<sp/></highlight></codeline>
+<codeline><highlight class="normal">cd<sp/>project-ws</highlight></codeline>
+<codeline><highlight class="normal">git<sp/>clone<sp/>https://github.com/veysiadn/ecat_userspace<sp/>ethercat-control</highlight></codeline>
+<codeline><highlight class="normal">cd<sp/>ethercat-control</highlight></codeline>
+<codeline><highlight class="normal">cmake<sp/>.</highlight></codeline>
+<codeline><highlight class="normal">make</highlight></codeline>
+<codeline><highlight class="normal">sudo<sp/>./ecat_node</highlight></codeline>
+<codeline><highlight class="normal">```</highlight></codeline>
+<codeline><highlight class="normal">####<sp/>Keep<sp/>in<sp/>mind<sp/>that<sp/>you<sp/>can<sp/>change<sp/>and<sp/>tinker<sp/>with<sp/>the<sp/>program,<sp/>don&apos;t<sp/>forget<sp/>to<sp/>make<sp/>changes<sp/>on<sp/>Makefile<sp/>for<sp/>customization,<sp/>additionally,<sp/>you<sp/>can<sp/>check<sp/>&quot;compile.txt&quot;<sp/>file.</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">####<sp/>Good<sp/>Luck<sp/>⚡</highlight></codeline>
+    </programlisting>
+    <location file="README.md"/>
+  </compounddef>
+</doxygen>

@@ -1,0 +1,135 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.17">
+  <compounddef id="classTiming" kind="class" language="C++" prot="public">
+    <compoundname>Timing</compoundname>
+    <includes refid="timing_8hpp" local="no">timing.hpp</includes>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="classTiming_1a30f27ff190a0d252979d908c3a7bab74" prot="public" static="no" mutable="no">
+        <type>std::chrono::high_resolution_clock::time_point</type>
+        <definition>std::chrono::high_resolution_clock::time_point Timing::timer_start_</definition>
+        <argsstring></argsstring>
+        <name>timer_start_</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/timing.hpp" line="54" column="54" bodyfile="include/timing.hpp" bodystart="54" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classTiming_1aad16cc4aa56eb8531f1c62742ef638f3" prot="public" static="no" mutable="no">
+        <type>std::chrono::high_resolution_clock::time_point</type>
+        <definition>std::chrono::high_resolution_clock::time_point Timing::last_start_time_</definition>
+        <argsstring></argsstring>
+        <name>last_start_time_</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/timing.hpp" line="55" column="54" bodyfile="include/timing.hpp" bodystart="55" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classTiming_1a1048f7adf0ab7088eb06a05e0c6c534b" prot="public" static="no" mutable="no">
+        <type>std::chrono::duration&lt; long, std::micro &gt;</type>
+        <definition>std::chrono::duration&lt;long,std::micro&gt; Timing::time_span_</definition>
+        <argsstring></argsstring>
+        <name>time_span_</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/timing.hpp" line="56" column="29" bodyfile="include/timing.hpp" bodystart="56" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classTiming_1a29eba9d2bbdfdedc46c4cff7a9a41741" prot="public" static="no" mutable="no">
+        <type>std::vector&lt; long &gt;</type>
+        <definition>std::vector&lt;long&gt; Timing::timing_info_</definition>
+        <argsstring></argsstring>
+        <name>timing_info_</name>
+        <initializer>= std::vector&lt;long&gt;(<ref refid="timing_8hpp_1a3992a43fac1d452edf605ff497a25030" kindref="member">NUMBER_OF_SAMPLES</ref>)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/timing.hpp" line="57" column="19" bodyfile="include/timing.hpp" bodystart="57" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classTiming_1a5eb0575d415b5646a81c802b87fe67c6" prot="public" static="no" mutable="no">
+        <type>uint32_t</type>
+        <definition>uint32_t Timing::counter_</definition>
+        <argsstring></argsstring>
+        <name>counter_</name>
+        <initializer>= 0</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/timing.hpp" line="58" column="16" bodyfile="include/timing.hpp" bodystart="58" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classTiming_1a5877895aa80d11fc63230de0c5eeb5da" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Timing::GetTime</definition>
+        <argsstring>()</argsstring>
+        <name>GetTime</name>
+        <briefdescription>
+<para>Gets the current time and assings to timer_start_ member. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/timing.hpp" line="62" column="8" bodyfile="src/timing.cpp" bodystart="3" bodyend="6"/>
+      </memberdef>
+      <memberdef kind="function" id="classTiming_1a0e717201b291932881ce40f46f1157ec" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Timing::MeasureTimeDifference</definition>
+        <argsstring>()</argsstring>
+        <name>MeasureTimeDifference</name>
+        <briefdescription>
+<para>Measures time difference from last call to function <ref refid="classTiming_1a5877895aa80d11fc63230de0c5eeb5da" kindref="member">GetTime()</ref> and writes is to time_span member. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/timing.hpp" line="68" column="8" bodyfile="src/timing.cpp" bodystart="7" bodyend="13"/>
+      </memberdef>
+      <memberdef kind="function" id="classTiming_1abca929bf96a9035cdae89d6ac1c18509" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Timing::OutInfoToFile</definition>
+        <argsstring>()</argsstring>
+        <name>OutInfoToFile</name>
+        <briefdescription>
+<para>Outputs timing information to loop_timing_info.txt file. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/timing.hpp" line="73" column="8" bodyfile="src/timing.cpp" bodystart="14" bodyend="18"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="include/timing.hpp" line="52" column="13" bodyfile="include/timing.hpp" bodystart="52" bodyend="74"/>
+    <listofallmembers>
+      <member refid="classTiming_1a5eb0575d415b5646a81c802b87fe67c6" prot="public" virt="non-virtual"><scope>Timing</scope><name>counter_</name></member>
+      <member refid="classTiming_1a5877895aa80d11fc63230de0c5eeb5da" prot="public" virt="non-virtual"><scope>Timing</scope><name>GetTime</name></member>
+      <member refid="classTiming_1aad16cc4aa56eb8531f1c62742ef638f3" prot="public" virt="non-virtual"><scope>Timing</scope><name>last_start_time_</name></member>
+      <member refid="classTiming_1a0e717201b291932881ce40f46f1157ec" prot="public" virt="non-virtual"><scope>Timing</scope><name>MeasureTimeDifference</name></member>
+      <member refid="classTiming_1abca929bf96a9035cdae89d6ac1c18509" prot="public" virt="non-virtual"><scope>Timing</scope><name>OutInfoToFile</name></member>
+      <member refid="classTiming_1a1048f7adf0ab7088eb06a05e0c6c534b" prot="public" virt="non-virtual"><scope>Timing</scope><name>time_span_</name></member>
+      <member refid="classTiming_1a30f27ff190a0d252979d908c3a7bab74" prot="public" virt="non-virtual"><scope>Timing</scope><name>timer_start_</name></member>
+      <member refid="classTiming_1a29eba9d2bbdfdedc46c4cff7a9a41741" prot="public" virt="non-virtual"><scope>Timing</scope><name>timing_info_</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

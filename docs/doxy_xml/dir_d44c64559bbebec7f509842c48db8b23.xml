@@ -1,0 +1,18 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.17">
+  <compounddef id="dir_d44c64559bbebec7f509842c48db8b23" kind="dir">
+    <compoundname>include</compoundname>
+    <innerfile refid="ecat__globals_8hpp">ecat_globals.hpp</innerfile>
+    <innerfile refid="ecat__lifecycle_8hpp">ecat_lifecycle.hpp</innerfile>
+    <innerfile refid="ecat__node_8hpp">ecat_node.hpp</innerfile>
+    <innerfile refid="ecat__slave_8hpp">ecat_slave.hpp</innerfile>
+    <innerfile refid="object__dictionary_8hpp">object_dictionary.hpp</innerfile>
+    <innerfile refid="timing_8hpp">timing.hpp</innerfile>
+    <innerfile refid="xboxController_8hpp">xboxController.hpp</innerfile>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="include/"/>
+  </compounddef>
+</doxygen>

@@ -1,0 +1,187 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.17">
+  <compounddef id="timing_8hpp" kind="file" language="C++">
+    <compoundname>timing.hpp</compoundname>
+    <includes local="no">vector</includes>
+    <includes local="no">chrono</includes>
+    <includes local="no">memory</includes>
+    <includes local="no">functional</includes>
+    <includes local="no">string</includes>
+    <includes local="no">cstdint</includes>
+    <includes local="no">ctime</includes>
+    <includes local="no">ratio</includes>
+    <includes local="no">fstream</includes>
+    <includes local="no">iostream</includes>
+    <includedby refid="timing_8cpp" local="yes">src/timing.cpp</includedby>
+    <includedby refid="ecat__lifecycle_8hpp" local="yes">include/ecat_lifecycle.hpp</includedby>
+    <incdepgraph>
+      <node id="5">
+        <label>functional</label>
+      </node>
+      <node id="7">
+        <label>cstdint</label>
+      </node>
+      <node id="6">
+        <label>string</label>
+      </node>
+      <node id="10">
+        <label>fstream</label>
+      </node>
+      <node id="9">
+        <label>ratio</label>
+      </node>
+      <node id="8">
+        <label>ctime</label>
+      </node>
+      <node id="2">
+        <label>vector</label>
+      </node>
+      <node id="11">
+        <label>iostream</label>
+      </node>
+      <node id="3">
+        <label>chrono</label>
+      </node>
+      <node id="1">
+        <label>include/timing.hpp</label>
+        <link refid="timing_8hpp"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="4" relation="include">
+        </childnode>
+        <childnode refid="5" relation="include">
+        </childnode>
+        <childnode refid="6" relation="include">
+        </childnode>
+        <childnode refid="7" relation="include">
+        </childnode>
+        <childnode refid="8" relation="include">
+        </childnode>
+        <childnode refid="9" relation="include">
+        </childnode>
+        <childnode refid="10" relation="include">
+        </childnode>
+        <childnode refid="11" relation="include">
+        </childnode>
+      </node>
+      <node id="4">
+        <label>memory</label>
+      </node>
+    </incdepgraph>
+    <invincdepgraph>
+      <node id="4">
+        <label>src/ecat_lifecycle.cpp</label>
+        <link refid="ecat__lifecycle_8cpp"/>
+      </node>
+      <node id="5">
+        <label>src/main.cpp</label>
+        <link refid="main_8cpp"/>
+      </node>
+      <node id="2">
+        <label>src/timing.cpp</label>
+        <link refid="timing_8cpp"/>
+      </node>
+      <node id="3">
+        <label>include/ecat_lifecycle.hpp</label>
+        <link refid="ecat__lifecycle_8hpp"/>
+        <childnode refid="4" relation="include">
+        </childnode>
+        <childnode refid="5" relation="include">
+        </childnode>
+      </node>
+      <node id="1">
+        <label>include/timing.hpp</label>
+        <link refid="timing_8hpp"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="3" relation="include">
+        </childnode>
+      </node>
+    </invincdepgraph>
+    <innerclass refid="classTiming" prot="public">Timing</innerclass>
+      <sectiondef kind="define">
+      <memberdef kind="define" id="timing_8hpp_1a3992a43fac1d452edf605ff497a25030" prot="public" static="no">
+        <name>NUMBER_OF_SAMPLES</name>
+        <initializer>1E6</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/timing.hpp" line="50" column="9" bodyfile="include/timing.hpp" bodystart="50" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="comment">/******************************************************************************</highlight></codeline>
+<codeline lineno="2"><highlight class="comment"><sp/>*</highlight></codeline>
+<codeline lineno="3"><highlight class="comment"><sp/>*<sp/><sp/>$Id$</highlight></codeline>
+<codeline lineno="4"><highlight class="comment"><sp/>*</highlight></codeline>
+<codeline lineno="5"><highlight class="comment"><sp/>*<sp/><sp/>Copyright<sp/>(C)<sp/>2021<sp/>Veysi<sp/>ADIN,<sp/>UST<sp/>KIST</highlight></codeline>
+<codeline lineno="6"><highlight class="comment"><sp/>*</highlight></codeline>
+<codeline lineno="7"><highlight class="comment"><sp/>*<sp/><sp/>This<sp/>file<sp/>is<sp/>part<sp/>of<sp/>the<sp/>Wrapped<sp/>IgH<sp/>EtherCAT<sp/>master<sp/>userspace<sp/>program<sp/></highlight></codeline>
+<codeline lineno="8"><highlight class="comment"><sp/>*<sp/>for<sp/>control<sp/>applications.</highlight></codeline>
+<codeline lineno="9"><highlight class="comment"><sp/>*</highlight></codeline>
+<codeline lineno="10"><highlight class="comment"><sp/>*<sp/><sp/>The<sp/>Wrapped<sp/>IgH<sp/>EtherCAT<sp/>master<sp/>userspace<sp/>program<sp/>for<sp/>control<sp/>application</highlight></codeline>
+<codeline lineno="11"><highlight class="comment"><sp/>*<sp/><sp/>in<sp/>userspace<sp/>is<sp/>free<sp/>software;<sp/>you<sp/>canredistribute<sp/>it<sp/>and/or<sp/>modify<sp/>it<sp/></highlight></codeline>
+<codeline lineno="12"><highlight class="comment"><sp/>*<sp/>under<sp/>the<sp/>terms<sp/>of<sp/>the<sp/>GNU<sp/>General<sp/>Public<sp/>License<sp/>as<sp/>published<sp/>by<sp/>the<sp/></highlight></codeline>
+<codeline lineno="13"><highlight class="comment"><sp/>*<sp/>Free<sp/>Software<sp/>Foundation;<sp/>version<sp/>2<sp/>of<sp/>the<sp/>License.</highlight></codeline>
+<codeline lineno="14"><highlight class="comment"><sp/>*</highlight></codeline>
+<codeline lineno="15"><highlight class="comment"><sp/>*<sp/><sp/>The<sp/>Wrapped<sp/>IgH<sp/>EtherCAT<sp/>master<sp/>userspace<sp/>program<sp/>for<sp/>control<sp/>application</highlight></codeline>
+<codeline lineno="16"><highlight class="comment"><sp/>*<sp/><sp/>is<sp/>distributed<sp/>in<sp/>the<sp/>hope<sp/>that<sp/>it<sp/>will<sp/>be<sp/>useful,<sp/>but<sp/>WITHOUT<sp/>ANY<sp/>WARRANTY;</highlight></codeline>
+<codeline lineno="17"><highlight class="comment"><sp/>*<sp/><sp/>without<sp/>even<sp/>the<sp/>implied<sp/>warranty<sp/>of<sp/>MERCHANTABILITY<sp/>or<sp/>FITNESS<sp/>FOR<sp/>A<sp/>PARTICULAR<sp/></highlight></codeline>
+<codeline lineno="18"><highlight class="comment"><sp/>*<sp/><sp/>PURPOSE.<sp/><sp/></highlight></codeline>
+<codeline lineno="19"><highlight class="comment"><sp/>*<sp/><sp/>See<sp/>the<sp/><sp/>GNU<sp/>General<sp/>Public<sp/>License<sp/>for<sp/>more<sp/>details.</highlight></codeline>
+<codeline lineno="20"><highlight class="comment"><sp/>*</highlight></codeline>
+<codeline lineno="21"><highlight class="comment"><sp/>*<sp/><sp/>You<sp/>should<sp/>have<sp/>received<sp/>a<sp/>copy<sp/>of<sp/>the<sp/>GNU<sp/>General<sp/>Public<sp/>License</highlight></codeline>
+<codeline lineno="22"><highlight class="comment"><sp/>*<sp/><sp/>along<sp/>with<sp/>the<sp/>Wrapped<sp/>IgH<sp/>EtherCAT<sp/>master<sp/>userspace<sp/>program<sp/>for<sp/>control<sp/>application.<sp/></highlight></codeline>
+<codeline lineno="23"><highlight class="comment"><sp/>*<sp/>If<sp/>not,<sp/>see<sp/>&lt;http://www.gnu.org/licenses/&gt;.</highlight></codeline>
+<codeline lineno="24"><highlight class="comment"><sp/>*</highlight></codeline>
+<codeline lineno="25"><highlight class="comment"><sp/>*<sp/><sp/>---</highlight></codeline>
+<codeline lineno="26"><highlight class="comment"><sp/>*</highlight></codeline>
+<codeline lineno="27"><highlight class="comment"><sp/>*<sp/><sp/>The<sp/>license<sp/>mentioned<sp/>above<sp/>concerns<sp/>the<sp/>source<sp/>code<sp/>only.<sp/>Using<sp/>the</highlight></codeline>
+<codeline lineno="28"><highlight class="comment"><sp/>*<sp/><sp/>EtherCAT<sp/>technology<sp/>and<sp/>brand<sp/>is<sp/>only<sp/>permitted<sp/>in<sp/>compliance<sp/>with<sp/>the</highlight></codeline>
+<codeline lineno="29"><highlight class="comment"><sp/>*<sp/><sp/>industrial<sp/>property<sp/>and<sp/>similar<sp/>rights<sp/>of<sp/>Beckhoff<sp/>Automation<sp/>GmbH.</highlight></codeline>
+<codeline lineno="30"><highlight class="comment"><sp/>*</highlight></codeline>
+<codeline lineno="31"><highlight class="comment"><sp/>*<sp/><sp/>Contact<sp/>information:<sp/>veysi.adin@kist.re.kr</highlight></codeline>
+<codeline lineno="32"><highlight class="comment"><sp/>*****************************************************************************/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="33"><highlight class="normal"></highlight><highlight class="comment">/*******************************************************************************</highlight></codeline>
+<codeline lineno="34"><highlight class="comment"><sp/>*<sp/>\file<sp/><sp/>timing.hpp</highlight></codeline>
+<codeline lineno="35"><highlight class="comment"><sp/>*<sp/>\brief<sp/>Contains<sp/>timing<sp/>measurement<sp/>functions<sp/>for<sp/>convenience</highlight></codeline>
+<codeline lineno="36"><highlight class="comment"><sp/>*******************************************************************************/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="37"><highlight class="normal"></highlight><highlight class="preprocessor">#pragma<sp/>once</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="38"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;vector&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="39"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;chrono&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="40"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;memory&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="41"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;functional&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="42"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;string&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="43"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;cstdint&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="44"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;ctime&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="45"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;ratio&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="46"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;fstream&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="47"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;string&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="48"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;iostream&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="49"><highlight class="normal"></highlight></codeline>
+<codeline lineno="50" refid="timing_8hpp_1a3992a43fac1d452edf605ff497a25030" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>NUMBER_OF_SAMPLES<sp/>1E6</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="51"><highlight class="normal"></highlight></codeline>
+<codeline lineno="52" refid="classTiming" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal"><ref refid="classTiming" kindref="compound">Timing</ref>{</highlight></codeline>
+<codeline lineno="53"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="54" refid="classTiming_1a30f27ff190a0d252979d908c3a7bab74" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>std::chrono::high_resolution_clock::time_point<sp/><ref refid="classTiming_1a30f27ff190a0d252979d908c3a7bab74" kindref="member">timer_start_</ref>;</highlight></codeline>
+<codeline lineno="55" refid="classTiming_1aad16cc4aa56eb8531f1c62742ef638f3" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>std::chrono::high_resolution_clock::time_point<sp/><ref refid="classTiming_1aad16cc4aa56eb8531f1c62742ef638f3" kindref="member">last_start_time_</ref>;</highlight></codeline>
+<codeline lineno="56" refid="classTiming_1a1048f7adf0ab7088eb06a05e0c6c534b" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>std::chrono::duration&lt;long,std::micro&gt;<sp/><ref refid="classTiming_1a1048f7adf0ab7088eb06a05e0c6c534b" kindref="member">time_span_</ref>;</highlight></codeline>
+<codeline lineno="57" refid="classTiming_1a29eba9d2bbdfdedc46c4cff7a9a41741" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>std::vector&lt;long&gt;<sp/><ref refid="classTiming_1a29eba9d2bbdfdedc46c4cff7a9a41741" kindref="member">timing_info_</ref><sp/>=<sp/>std::vector&lt;long&gt;(<ref refid="timing_8hpp_1a3992a43fac1d452edf605ff497a25030" kindref="member">NUMBER_OF_SAMPLES</ref>);</highlight></codeline>
+<codeline lineno="58" refid="classTiming_1a5eb0575d415b5646a81c802b87fe67c6" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>uint32_t<sp/><ref refid="classTiming_1a5eb0575d415b5646a81c802b87fe67c6" kindref="member">counter_</ref><sp/>=<sp/>0;</highlight></codeline>
+<codeline lineno="62"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classTiming_1a5877895aa80d11fc63230de0c5eeb5da" kindref="member">GetTime</ref>();</highlight></codeline>
+<codeline lineno="68"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classTiming_1a0e717201b291932881ce40f46f1157ec" kindref="member">MeasureTimeDifference</ref>();</highlight></codeline>
+<codeline lineno="73"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classTiming_1abca929bf96a9035cdae89d6ac1c18509" kindref="member">OutInfoToFile</ref>();</highlight></codeline>
+<codeline lineno="74"><highlight class="normal">};</highlight></codeline>
+    </programlisting>
+    <location file="include/timing.hpp"/>
+  </compounddef>
+</doxygen>

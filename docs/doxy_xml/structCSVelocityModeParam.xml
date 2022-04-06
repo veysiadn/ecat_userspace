@@ -1,0 +1,100 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.17">
+  <compounddef id="structCSVelocityModeParam" kind="struct" language="C++" prot="public">
+    <compoundname>CSVelocityModeParam</compoundname>
+    <includes refid="ecat__globals_8hpp" local="no">ecat_globals.hpp</includes>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="structCSVelocityModeParam_1ad0394a462256fede3e57111c4b1af73f" prot="public" static="no" mutable="no">
+        <type><ref refid="structVelControlParam" kindref="compound">VelControlParam</ref></type>
+        <definition>VelControlParam CSVelocityModeParam::velocity_controller_gain</definition>
+        <argsstring></argsstring>
+        <name>velocity_controller_gain</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/ecat_globals.hpp" line="407" column="21" bodyfile="include/ecat_globals.hpp" bodystart="407" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structCSVelocityModeParam_1a0439f6be9b0240a3841ff23ebf90e165" prot="public" static="no" mutable="no">
+        <type>uint32_t</type>
+        <definition>uint32_t CSVelocityModeParam::quick_stop_dec</definition>
+        <argsstring></argsstring>
+        <name>quick_stop_dec</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/ecat_globals.hpp" line="408" column="14" bodyfile="include/ecat_globals.hpp" bodystart="408" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structCSVelocityModeParam_1aeaccf4ae308c275cdf7d4165f8d9a8d2" prot="public" static="no" mutable="no">
+        <type>uint32_t</type>
+        <definition>uint32_t CSVelocityModeParam::profile_dec</definition>
+        <argsstring></argsstring>
+        <name>profile_dec</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/ecat_globals.hpp" line="409" column="14" bodyfile="include/ecat_globals.hpp" bodystart="409" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structCSVelocityModeParam_1a1924ebf9d9fa3a78df637fa45e585c14" prot="public" static="no" mutable="no">
+        <type>uint32_t</type>
+        <definition>uint32_t CSVelocityModeParam::software_position_limit</definition>
+        <argsstring></argsstring>
+        <name>software_position_limit</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/ecat_globals.hpp" line="410" column="14" bodyfile="include/ecat_globals.hpp" bodystart="410" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structCSVelocityModeParam_1a6bcc685fb6d06ae1c972fa5c255770b5" prot="public" static="no" mutable="no">
+        <type>uint32_t</type>
+        <definition>uint32_t CSVelocityModeParam::interpolation_time_period</definition>
+        <argsstring></argsstring>
+        <name>interpolation_time_period</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/ecat_globals.hpp" line="411" column="14" bodyfile="include/ecat_globals.hpp" bodystart="411" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>Struct contains configuration parameters for cyclic sync. velocity mode. </para>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <collaborationgraph>
+      <node id="2">
+        <label>VelControlParam</label>
+        <link refid="structVelControlParam"/>
+      </node>
+      <node id="1">
+        <label>CSVelocityModeParam</label>
+        <link refid="structCSVelocityModeParam"/>
+        <childnode refid="2" relation="usage">
+          <edgelabel>velocity_controller_gain</edgelabel>
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="include/ecat_globals.hpp" line="406" column="1" bodyfile="include/ecat_globals.hpp" bodystart="405" bodyend="412"/>
+    <listofallmembers>
+      <member refid="structCSVelocityModeParam_1a6bcc685fb6d06ae1c972fa5c255770b5" prot="public" virt="non-virtual"><scope>CSVelocityModeParam</scope><name>interpolation_time_period</name></member>
+      <member refid="structCSVelocityModeParam_1aeaccf4ae308c275cdf7d4165f8d9a8d2" prot="public" virt="non-virtual"><scope>CSVelocityModeParam</scope><name>profile_dec</name></member>
+      <member refid="structCSVelocityModeParam_1a0439f6be9b0240a3841ff23ebf90e165" prot="public" virt="non-virtual"><scope>CSVelocityModeParam</scope><name>quick_stop_dec</name></member>
+      <member refid="structCSVelocityModeParam_1a1924ebf9d9fa3a78df637fa45e585c14" prot="public" virt="non-virtual"><scope>CSVelocityModeParam</scope><name>software_position_limit</name></member>
+      <member refid="structCSVelocityModeParam_1ad0394a462256fede3e57111c4b1af73f" prot="public" virt="non-virtual"><scope>CSVelocityModeParam</scope><name>velocity_controller_gain</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

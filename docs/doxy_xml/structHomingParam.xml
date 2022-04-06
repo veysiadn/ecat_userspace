@@ -1,0 +1,146 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.17">
+  <compounddef id="structHomingParam" kind="struct" language="C++" prot="public">
+    <compoundname>HomingParam</compoundname>
+    <includes refid="ecat__globals_8hpp" local="no">ecat_globals.hpp</includes>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="structHomingParam_1abc0feea7ba94caf1db6e10ec06d79f2b" prot="public" static="no" mutable="no">
+        <type>uint32_t</type>
+        <definition>uint32_t HomingParam::max_fol_err</definition>
+        <argsstring></argsstring>
+        <name>max_fol_err</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/ecat_globals.hpp" line="436" column="9" bodyfile="include/ecat_globals.hpp" bodystart="436" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structHomingParam_1a48616625df71fd01cd4be2139b938e79" prot="public" static="no" mutable="no">
+        <type>uint32_t</type>
+        <definition>uint32_t HomingParam::max_profile_vel</definition>
+        <argsstring></argsstring>
+        <name>max_profile_vel</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/ecat_globals.hpp" line="437" column="9" bodyfile="include/ecat_globals.hpp" bodystart="437" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structHomingParam_1a887e63ebd531ebced48fb2f74326c726" prot="public" static="no" mutable="no">
+        <type>uint32_t</type>
+        <definition>uint32_t HomingParam::quick_stop_dec</definition>
+        <argsstring></argsstring>
+        <name>quick_stop_dec</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/ecat_globals.hpp" line="438" column="9" bodyfile="include/ecat_globals.hpp" bodystart="438" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structHomingParam_1a2057d1f3d1840af2fe39e25345d0da72" prot="public" static="no" mutable="no">
+        <type>uint32_t</type>
+        <definition>uint32_t HomingParam::speed_for_switch_search</definition>
+        <argsstring></argsstring>
+        <name>speed_for_switch_search</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/ecat_globals.hpp" line="439" column="9" bodyfile="include/ecat_globals.hpp" bodystart="439" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structHomingParam_1ad31cac6c7692107df40469f3ae2b7370" prot="public" static="no" mutable="no">
+        <type>uint32_t</type>
+        <definition>uint32_t HomingParam::speed_for_zero_search</definition>
+        <argsstring></argsstring>
+        <name>speed_for_zero_search</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/ecat_globals.hpp" line="440" column="9" bodyfile="include/ecat_globals.hpp" bodystart="440" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structHomingParam_1a9e971cf8fbc36593528189c664a0f0eb" prot="public" static="no" mutable="no">
+        <type>uint32_t</type>
+        <definition>uint32_t HomingParam::homing_acc</definition>
+        <argsstring></argsstring>
+        <name>homing_acc</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/ecat_globals.hpp" line="441" column="9" bodyfile="include/ecat_globals.hpp" bodystart="441" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structHomingParam_1aa882eb093eb65f7d30976fbb1c761dc2" prot="public" static="no" mutable="no">
+        <type>uint16_t</type>
+        <definition>uint16_t HomingParam::curr_threshold_homing</definition>
+        <argsstring></argsstring>
+        <name>curr_threshold_homing</name>
+        <briefdescription>
+<para>Used when homing by touching mechanical limit and sensing current. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/ecat_globals.hpp" line="443" column="9" bodyfile="include/ecat_globals.hpp" bodystart="443" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structHomingParam_1a4b529e1ff01a93d2e64dda04908aa449" prot="public" static="no" mutable="no">
+        <type>int32_t</type>
+        <definition>int32_t HomingParam::home_offset</definition>
+        <argsstring></argsstring>
+        <name>home_offset</name>
+        <briefdescription>
+<para>Amount to move away from the sensed limit <linebreak/>
+ </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/ecat_globals.hpp" line="445" column="8" bodyfile="include/ecat_globals.hpp" bodystart="445" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structHomingParam_1a78a0209212385df219c3e14c8ced924b" prot="public" static="no" mutable="no">
+        <type>int8_t</type>
+        <definition>int8_t HomingParam::homing_method</definition>
+        <argsstring></argsstring>
+        <name>homing_method</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/ecat_globals.hpp" line="446" column="7" bodyfile="include/ecat_globals.hpp" bodystart="446" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>Homing mode configuration parameters. </para>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="include/ecat_globals.hpp" line="435" column="1" bodyfile="include/ecat_globals.hpp" bodystart="434" bodyend="447"/>
+    <listofallmembers>
+      <member refid="structHomingParam_1aa882eb093eb65f7d30976fbb1c761dc2" prot="public" virt="non-virtual"><scope>HomingParam</scope><name>curr_threshold_homing</name></member>
+      <member refid="structHomingParam_1a4b529e1ff01a93d2e64dda04908aa449" prot="public" virt="non-virtual"><scope>HomingParam</scope><name>home_offset</name></member>
+      <member refid="structHomingParam_1a9e971cf8fbc36593528189c664a0f0eb" prot="public" virt="non-virtual"><scope>HomingParam</scope><name>homing_acc</name></member>
+      <member refid="structHomingParam_1a78a0209212385df219c3e14c8ced924b" prot="public" virt="non-virtual"><scope>HomingParam</scope><name>homing_method</name></member>
+      <member refid="structHomingParam_1abc0feea7ba94caf1db6e10ec06d79f2b" prot="public" virt="non-virtual"><scope>HomingParam</scope><name>max_fol_err</name></member>
+      <member refid="structHomingParam_1a48616625df71fd01cd4be2139b938e79" prot="public" virt="non-virtual"><scope>HomingParam</scope><name>max_profile_vel</name></member>
+      <member refid="structHomingParam_1a887e63ebd531ebced48fb2f74326c726" prot="public" virt="non-virtual"><scope>HomingParam</scope><name>quick_stop_dec</name></member>
+      <member refid="structHomingParam_1a2057d1f3d1840af2fe39e25345d0da72" prot="public" virt="non-virtual"><scope>HomingParam</scope><name>speed_for_switch_search</name></member>
+      <member refid="structHomingParam_1ad31cac6c7692107df40469f3ae2b7370" prot="public" virt="non-virtual"><scope>HomingParam</scope><name>speed_for_zero_search</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

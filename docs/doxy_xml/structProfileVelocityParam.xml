@@ -1,0 +1,87 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.17">
+  <compounddef id="structProfileVelocityParam" kind="struct" language="C++" prot="public">
+    <compoundname>ProfileVelocityParam</compoundname>
+    <includes refid="ecat__globals_8hpp" local="no">ecat_globals.hpp</includes>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="structProfileVelocityParam_1a8bf3ab4ee7ccdb626a1ceff8b0ce7fba" prot="public" static="no" mutable="no">
+        <type>uint32_t</type>
+        <definition>uint32_t ProfileVelocityParam::max_profile_vel</definition>
+        <argsstring></argsstring>
+        <name>max_profile_vel</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/ecat_globals.hpp" line="452" column="13" bodyfile="include/ecat_globals.hpp" bodystart="452" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structProfileVelocityParam_1aed394e31a80560c0530c57a3bf8bf967" prot="public" static="no" mutable="no">
+        <type>uint32_t</type>
+        <definition>uint32_t ProfileVelocityParam::quick_stop_dec</definition>
+        <argsstring></argsstring>
+        <name>quick_stop_dec</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/ecat_globals.hpp" line="453" column="13" bodyfile="include/ecat_globals.hpp" bodystart="453" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structProfileVelocityParam_1aeb9688ff83981562095d445d6dd2e437" prot="public" static="no" mutable="no">
+        <type>uint32_t</type>
+        <definition>uint32_t ProfileVelocityParam::profile_acc</definition>
+        <argsstring></argsstring>
+        <name>profile_acc</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/ecat_globals.hpp" line="454" column="13" bodyfile="include/ecat_globals.hpp" bodystart="454" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structProfileVelocityParam_1a0afdd1d807f97d6d8137519cbbffc4e2" prot="public" static="no" mutable="no">
+        <type>uint32_t</type>
+        <definition>uint32_t ProfileVelocityParam::profile_dec</definition>
+        <argsstring></argsstring>
+        <name>profile_dec</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/ecat_globals.hpp" line="455" column="13" bodyfile="include/ecat_globals.hpp" bodystart="455" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structProfileVelocityParam_1a2a981f1b49bd7c3dbaa080d857897947" prot="public" static="no" mutable="no">
+        <type>uint16_t</type>
+        <definition>uint16_t ProfileVelocityParam::motion_profile_type</definition>
+        <argsstring></argsstring>
+        <name>motion_profile_type</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/ecat_globals.hpp" line="456" column="17" bodyfile="include/ecat_globals.hpp" bodystart="456" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>Profile velocity mode configuration parameters. </para>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="include/ecat_globals.hpp" line="451" column="1" bodyfile="include/ecat_globals.hpp" bodystart="450" bodyend="457"/>
+    <listofallmembers>
+      <member refid="structProfileVelocityParam_1a8bf3ab4ee7ccdb626a1ceff8b0ce7fba" prot="public" virt="non-virtual"><scope>ProfileVelocityParam</scope><name>max_profile_vel</name></member>
+      <member refid="structProfileVelocityParam_1a2a981f1b49bd7c3dbaa080d857897947" prot="public" virt="non-virtual"><scope>ProfileVelocityParam</scope><name>motion_profile_type</name></member>
+      <member refid="structProfileVelocityParam_1aeb9688ff83981562095d445d6dd2e437" prot="public" virt="non-virtual"><scope>ProfileVelocityParam</scope><name>profile_acc</name></member>
+      <member refid="structProfileVelocityParam_1a0afdd1d807f97d6d8137519cbbffc4e2" prot="public" virt="non-virtual"><scope>ProfileVelocityParam</scope><name>profile_dec</name></member>
+      <member refid="structProfileVelocityParam_1aed394e31a80560c0530c57a3bf8bf967" prot="public" virt="non-virtual"><scope>ProfileVelocityParam</scope><name>quick_stop_dec</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

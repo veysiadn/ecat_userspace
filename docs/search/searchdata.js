@@ -9,7 +9,7 @@ var indexSectionsWithContent =
   6: "celmos",
   7: "fkst",
   8: "bcdefgimnoprstv",
-  9: "tw"
+  9: "w"
 };
 
 var indexSectionNames =

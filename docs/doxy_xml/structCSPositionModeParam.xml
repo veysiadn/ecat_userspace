@@ -1,0 +1,213 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.17">
+  <compounddef id="structCSPositionModeParam" kind="struct" language="C++" prot="public">
+    <compoundname>CSPositionModeParam</compoundname>
+    <includes refid="ecat__globals_8hpp" local="no">ecat_globals.hpp</includes>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="structCSPositionModeParam_1a4cab3ece9f13d718af0e3861fcc0878e" prot="public" static="no" mutable="no">
+        <type>uint32_t</type>
+        <definition>uint32_t CSPositionModeParam::nominal_current</definition>
+        <argsstring></argsstring>
+        <name>nominal_current</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/ecat_globals.hpp" line="372" column="14" bodyfile="include/ecat_globals.hpp" bodystart="372" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structCSPositionModeParam_1acc1611d030de3fb10c9e7fc10ff0427e" prot="public" static="no" mutable="no">
+        <type>uint16_t</type>
+        <definition>uint16_t CSPositionModeParam::torque_constant</definition>
+        <argsstring></argsstring>
+        <name>torque_constant</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/ecat_globals.hpp" line="373" column="14" bodyfile="include/ecat_globals.hpp" bodystart="373" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structCSPositionModeParam_1a7ce4438d79c906eff81308e7d6a54e82" prot="public" static="no" mutable="no">
+        <type>uint32_t</type>
+        <definition>uint32_t CSPositionModeParam::current_controller_gain</definition>
+        <argsstring></argsstring>
+        <name>current_controller_gain</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/ecat_globals.hpp" line="374" column="14" bodyfile="include/ecat_globals.hpp" bodystart="374" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structCSPositionModeParam_1a6684713794fac0a3e72c4483914df264" prot="public" static="no" mutable="no">
+        <type>uint32_t</type>
+        <definition>uint32_t CSPositionModeParam::position_control_parameter_set</definition>
+        <argsstring></argsstring>
+        <name>position_control_parameter_set</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/ecat_globals.hpp" line="375" column="14" bodyfile="include/ecat_globals.hpp" bodystart="375" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structCSPositionModeParam_1ac971e0c8d41d927855decd204399a5c5" prot="public" static="no" mutable="no">
+        <type>uint32_t</type>
+        <definition>uint32_t CSPositionModeParam::software_position_limit</definition>
+        <argsstring></argsstring>
+        <name>software_position_limit</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/ecat_globals.hpp" line="376" column="14" bodyfile="include/ecat_globals.hpp" bodystart="376" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structCSPositionModeParam_1ad7db2fa628b594bb742a189d47a09568" prot="public" static="no" mutable="no">
+        <type>uint16_t</type>
+        <definition>uint16_t CSPositionModeParam::motor_rated_torque</definition>
+        <argsstring></argsstring>
+        <name>motor_rated_torque</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/ecat_globals.hpp" line="377" column="14" bodyfile="include/ecat_globals.hpp" bodystart="377" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structCSPositionModeParam_1a481933edb8103e9d0d2c27eda10f72c3" prot="public" static="no" mutable="no">
+        <type>uint32_t</type>
+        <definition>uint32_t CSPositionModeParam::max_gear_input_speed</definition>
+        <argsstring></argsstring>
+        <name>max_gear_input_speed</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/ecat_globals.hpp" line="378" column="14" bodyfile="include/ecat_globals.hpp" bodystart="378" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structCSPositionModeParam_1a90400c6f6416fd21c5c3f1a32ab0317d" prot="public" static="no" mutable="no">
+        <type>uint32_t</type>
+        <definition>uint32_t CSPositionModeParam::profile_vel</definition>
+        <argsstring></argsstring>
+        <name>profile_vel</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/ecat_globals.hpp" line="379" column="14" bodyfile="include/ecat_globals.hpp" bodystart="379" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structCSPositionModeParam_1a174d65383bd3d6255e88e89d9e921dbd" prot="public" static="no" mutable="no">
+        <type>uint32_t</type>
+        <definition>uint32_t CSPositionModeParam::profile_acc</definition>
+        <argsstring></argsstring>
+        <name>profile_acc</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/ecat_globals.hpp" line="380" column="14" bodyfile="include/ecat_globals.hpp" bodystart="380" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structCSPositionModeParam_1a6a32c3784218f7dbc8b5cfbc40d35102" prot="public" static="no" mutable="no">
+        <type>uint32_t</type>
+        <definition>uint32_t CSPositionModeParam::profile_dec</definition>
+        <argsstring></argsstring>
+        <name>profile_dec</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/ecat_globals.hpp" line="381" column="14" bodyfile="include/ecat_globals.hpp" bodystart="381" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structCSPositionModeParam_1ab06ecacb46d10ae9eddd1db4c1a44ccf" prot="public" static="no" mutable="no">
+        <type>uint32_t</type>
+        <definition>uint32_t CSPositionModeParam::max_fol_err</definition>
+        <argsstring></argsstring>
+        <name>max_fol_err</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/ecat_globals.hpp" line="382" column="14" bodyfile="include/ecat_globals.hpp" bodystart="382" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structCSPositionModeParam_1abdc88bd545f17425a1b35af8ff86a80e" prot="public" static="no" mutable="no">
+        <type>uint32_t</type>
+        <definition>uint32_t CSPositionModeParam::max_profile_vel</definition>
+        <argsstring></argsstring>
+        <name>max_profile_vel</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/ecat_globals.hpp" line="383" column="14" bodyfile="include/ecat_globals.hpp" bodystart="383" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structCSPositionModeParam_1a1f8700628509d4f620265db41a4d1412" prot="public" static="no" mutable="no">
+        <type>uint32_t</type>
+        <definition>uint32_t CSPositionModeParam::quick_stop_dec</definition>
+        <argsstring></argsstring>
+        <name>quick_stop_dec</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/ecat_globals.hpp" line="384" column="14" bodyfile="include/ecat_globals.hpp" bodystart="384" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structCSPositionModeParam_1a7fa1d18cfe7454f638d90f98df14c857" prot="public" static="no" mutable="no">
+        <type>uint32_t</type>
+        <definition>uint32_t CSPositionModeParam::interpolation_time_period</definition>
+        <argsstring></argsstring>
+        <name>interpolation_time_period</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/ecat_globals.hpp" line="385" column="14" bodyfile="include/ecat_globals.hpp" bodystart="385" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>Struct contains configuration parameters for cyclic sync. position mode. </para>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="include/ecat_globals.hpp" line="371" column="1" bodyfile="include/ecat_globals.hpp" bodystart="370" bodyend="386"/>
+    <listofallmembers>
+      <member refid="structCSPositionModeParam_1a7ce4438d79c906eff81308e7d6a54e82" prot="public" virt="non-virtual"><scope>CSPositionModeParam</scope><name>current_controller_gain</name></member>
+      <member refid="structCSPositionModeParam_1a7fa1d18cfe7454f638d90f98df14c857" prot="public" virt="non-virtual"><scope>CSPositionModeParam</scope><name>interpolation_time_period</name></member>
+      <member refid="structCSPositionModeParam_1ab06ecacb46d10ae9eddd1db4c1a44ccf" prot="public" virt="non-virtual"><scope>CSPositionModeParam</scope><name>max_fol_err</name></member>
+      <member refid="structCSPositionModeParam_1a481933edb8103e9d0d2c27eda10f72c3" prot="public" virt="non-virtual"><scope>CSPositionModeParam</scope><name>max_gear_input_speed</name></member>
+      <member refid="structCSPositionModeParam_1abdc88bd545f17425a1b35af8ff86a80e" prot="public" virt="non-virtual"><scope>CSPositionModeParam</scope><name>max_profile_vel</name></member>
+      <member refid="structCSPositionModeParam_1ad7db2fa628b594bb742a189d47a09568" prot="public" virt="non-virtual"><scope>CSPositionModeParam</scope><name>motor_rated_torque</name></member>
+      <member refid="structCSPositionModeParam_1a4cab3ece9f13d718af0e3861fcc0878e" prot="public" virt="non-virtual"><scope>CSPositionModeParam</scope><name>nominal_current</name></member>
+      <member refid="structCSPositionModeParam_1a6684713794fac0a3e72c4483914df264" prot="public" virt="non-virtual"><scope>CSPositionModeParam</scope><name>position_control_parameter_set</name></member>
+      <member refid="structCSPositionModeParam_1a174d65383bd3d6255e88e89d9e921dbd" prot="public" virt="non-virtual"><scope>CSPositionModeParam</scope><name>profile_acc</name></member>
+      <member refid="structCSPositionModeParam_1a6a32c3784218f7dbc8b5cfbc40d35102" prot="public" virt="non-virtual"><scope>CSPositionModeParam</scope><name>profile_dec</name></member>
+      <member refid="structCSPositionModeParam_1a90400c6f6416fd21c5c3f1a32ab0317d" prot="public" virt="non-virtual"><scope>CSPositionModeParam</scope><name>profile_vel</name></member>
+      <member refid="structCSPositionModeParam_1a1f8700628509d4f620265db41a4d1412" prot="public" virt="non-virtual"><scope>CSPositionModeParam</scope><name>quick_stop_dec</name></member>
+      <member refid="structCSPositionModeParam_1ac971e0c8d41d927855decd204399a5c5" prot="public" virt="non-virtual"><scope>CSPositionModeParam</scope><name>software_position_limit</name></member>
+      <member refid="structCSPositionModeParam_1acc1611d030de3fb10c9e7fc10ff0427e" prot="public" virt="non-virtual"><scope>CSPositionModeParam</scope><name>torque_constant</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

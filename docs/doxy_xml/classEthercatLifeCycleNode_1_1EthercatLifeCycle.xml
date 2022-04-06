@@ -1,0 +1,739 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.17">
+  <compounddef id="classEthercatLifeCycleNode_1_1EthercatLifeCycle" kind="class" language="C++" prot="public">
+    <compoundname>EthercatLifeCycleNode::EthercatLifeCycle</compoundname>
+    <includes refid="ecat__lifecycle_8hpp" local="no">ecat_lifecycle.hpp</includes>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="classEthercatLifeCycleNode_1_1EthercatLifeCycle_1ac97795ae224c1630619ab622bc56c633" prot="public" static="no" mutable="no">
+        <type><ref refid="structDataReceived" kindref="compound">DataReceived</ref></type>
+        <definition>DataReceived EthercatLifeCycleNode::EthercatLifeCycle::received_data_</definition>
+        <argsstring></argsstring>
+        <name>received_data_</name>
+        <briefdescription>
+<para>Structure to hold values received from connected slaves. <linebreak/>
+ </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/ecat_lifecycle.hpp" line="101" column="26" bodyfile="include/ecat_lifecycle.hpp" bodystart="101" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classEthercatLifeCycleNode_1_1EthercatLifeCycle_1aa3e778a600d45cae79c01cb9c3e9adad" prot="public" static="no" mutable="no">
+        <type><ref refid="structDataSent" kindref="compound">DataSent</ref></type>
+        <definition>DataSent EthercatLifeCycleNode::EthercatLifeCycle::sent_data_</definition>
+        <argsstring></argsstring>
+        <name>sent_data_</name>
+        <briefdescription>
+<para>Structure to hold values that will be sent to the slaves. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/ecat_lifecycle.hpp" line="103" column="26" bodyfile="include/ecat_lifecycle.hpp" bodystart="103" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classEthercatLifeCycleNode_1_1EthercatLifeCycle_1adecbe58e78eb53eaf1a526b5b83712c6" prot="public" static="no" mutable="no">
+        <type>std::unique_ptr&lt; <ref refid="classEthercatCommunication_1_1EthercatNode" kindref="compound">EthercatNode</ref> &gt;</type>
+        <definition>std::unique_ptr&lt;EthercatNode&gt; EthercatLifeCycleNode::EthercatLifeCycle::ecat_node_</definition>
+        <argsstring></argsstring>
+        <name>ecat_node_</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/ecat_lifecycle.hpp" line="104" column="28" bodyfile="include/ecat_lifecycle.hpp" bodystart="104" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classEthercatLifeCycleNode_1_1EthercatLifeCycle_1ac443f07a1f4e7252788ca000ea70458f" prot="public" static="no" mutable="no">
+        <type>pthread_t</type>
+        <definition>pthread_t EthercatLifeCycleNode::EthercatLifeCycle::ethercat_thread_</definition>
+        <argsstring></argsstring>
+        <name>ethercat_thread_</name>
+        <briefdescription>
+<para>pthread create required parameters. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/ecat_lifecycle.hpp" line="230" column="19" bodyfile="include/ecat_lifecycle.hpp" bodystart="230" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classEthercatLifeCycleNode_1_1EthercatLifeCycle_1a80c1aefb15a64041bd5f59e47b3ac29e" prot="public" static="no" mutable="no">
+        <type>struct sched_param</type>
+        <definition>struct sched_param EthercatLifeCycleNode::EthercatLifeCycle::ethercat_sched_param_</definition>
+        <argsstring></argsstring>
+        <name>ethercat_sched_param_</name>
+        <initializer>= {}</initializer>
+        <briefdescription>
+<para>Scheduler parameter. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/ecat_lifecycle.hpp" line="230" column="19" bodyfile="include/ecat_lifecycle.hpp" bodystart="232" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classEthercatLifeCycleNode_1_1EthercatLifeCycle_1a78acbaf6dc792b96f2df3fbef7395dfc" prot="public" static="no" mutable="no">
+        <type>pthread_attr_t</type>
+        <definition>pthread_attr_t EthercatLifeCycleNode::EthercatLifeCycle::ethercat_thread_attr_</definition>
+        <argsstring></argsstring>
+        <name>ethercat_thread_attr_</name>
+        <briefdescription>
+<para>Thread attribute parameter. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/ecat_lifecycle.hpp" line="234" column="24" bodyfile="include/ecat_lifecycle.hpp" bodystart="234" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classEthercatLifeCycleNode_1_1EthercatLifeCycle_1a38d0a2c725202ef0fd67beff679ab9b1" prot="public" static="no" mutable="no">
+        <type>int32_t</type>
+        <definition>int32_t EthercatLifeCycleNode::EthercatLifeCycle::err_</definition>
+        <argsstring></argsstring>
+        <name>err_</name>
+        <briefdescription>
+<para>Error flag. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/ecat_lifecycle.hpp" line="236" column="17" bodyfile="include/ecat_lifecycle.hpp" bodystart="236" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classEthercatLifeCycleNode_1_1EthercatLifeCycle_1a799a0bdf01f5a0da57c29900f3d8180d" prot="public" static="no" mutable="no">
+        <type>uint8_t</type>
+        <definition>uint8_t EthercatLifeCycleNode::EthercatLifeCycle::al_state_</definition>
+        <argsstring></argsstring>
+        <name>al_state_</name>
+        <initializer>= 0</initializer>
+        <briefdescription>
+<para>Application layer of slaves seen by master.(INIT/PREOP/SAFEOP/OP) </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/ecat_lifecycle.hpp" line="238" column="17" bodyfile="include/ecat_lifecycle.hpp" bodystart="238" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classEthercatLifeCycleNode_1_1EthercatLifeCycle_1a7380630e7299c28135f8eb0134729b26" prot="public" static="no" mutable="no">
+        <type>uint32_t</type>
+        <definition>uint32_t EthercatLifeCycleNode::EthercatLifeCycle::motor_state_[g_kNumberOfServoDrivers]</definition>
+        <argsstring>[g_kNumberOfServoDrivers]</argsstring>
+        <name>motor_state_</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/ecat_lifecycle.hpp" line="239" column="18" bodyfile="include/ecat_lifecycle.hpp" bodystart="239" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classEthercatLifeCycleNode_1_1EthercatLifeCycle_1a8852f433f1e6d0927892fab6f88e01d1" prot="public" static="no" mutable="no">
+        <type>uint32_t</type>
+        <definition>uint32_t EthercatLifeCycleNode::EthercatLifeCycle::command_</definition>
+        <argsstring></argsstring>
+        <name>command_</name>
+        <initializer>= 0x004F</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/ecat_lifecycle.hpp" line="240" column="18" bodyfile="include/ecat_lifecycle.hpp" bodystart="240" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classEthercatLifeCycleNode_1_1EthercatLifeCycle_1a2b55e301403a0e5eaf17f2ee898d0f6e" prot="public" static="no" mutable="no">
+        <type><ref refid="structController" kindref="compound">Controller</ref></type>
+        <definition>Controller EthercatLifeCycleNode::EthercatLifeCycle::controller_</definition>
+        <argsstring></argsstring>
+        <name>controller_</name>
+        <briefdescription>
+<para>Structure for Xbox <ref refid="structController" kindref="compound">Controller</ref> values. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/ecat_lifecycle.hpp" line="242" column="20" bodyfile="include/ecat_lifecycle.hpp" bodystart="242" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classEthercatLifeCycleNode_1_1EthercatLifeCycle_1ab273dc79ac03b8bee9fcbf4bff21da61" prot="public" static="no" mutable="no">
+        <type>uint8_t</type>
+        <definition>uint8_t EthercatLifeCycleNode::EthercatLifeCycle::emergency_status_</definition>
+        <argsstring></argsstring>
+        <name>emergency_status_</name>
+        <initializer>= 1</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/ecat_lifecycle.hpp" line="243" column="17" bodyfile="include/ecat_lifecycle.hpp" bodystart="243" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classEthercatLifeCycleNode_1_1EthercatLifeCycle_1ac3ddb4ba9d791e8186237a6da3da6a20" prot="public" static="no" mutable="no">
+        <type>std::int32_t</type>
+        <definition>std::int32_t EthercatLifeCycleNode::EthercatLifeCycle::measurement_time</definition>
+        <argsstring></argsstring>
+        <name>measurement_time</name>
+        <initializer>= 0</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/ecat_lifecycle.hpp" line="245" column="22" bodyfile="include/ecat_lifecycle.hpp" bodystart="245" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classEthercatLifeCycleNode_1_1EthercatLifeCycle_1a40a619f28629b0a03ff7b980e608b299" prot="public" static="no" mutable="no">
+        <type><ref refid="classTiming" kindref="compound">Timing</ref></type>
+        <definition>Timing EthercatLifeCycleNode::EthercatLifeCycle::timer_info_</definition>
+        <argsstring></argsstring>
+        <name>timer_info_</name>
+        <briefdescription>
+<para><ref refid="classTiming" kindref="compound">Timing</ref> measurement information instance. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/ecat_lifecycle.hpp" line="247" column="16" bodyfile="include/ecat_lifecycle.hpp" bodystart="247" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classEthercatLifeCycleNode_1_1EthercatLifeCycle_1ab88fd9de520c44c80c64440443d25ff7" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>EthercatLifeCycle::EthercatLifeCycle</definition>
+        <argsstring>()</argsstring>
+        <name>EthercatLifeCycle</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/ecat_lifecycle.hpp" line="48" column="9" bodyfile="src/ecat_lifecycle.cpp" bodystart="5" bodyend="20"/>
+      </memberdef>
+      <memberdef kind="function" id="classEthercatLifeCycleNode_1_1EthercatLifeCycle_1a9c591445a71b8a9d9e1913e183f9c8f3" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>EthercatLifeCycle::~EthercatLifeCycle</definition>
+        <argsstring>()</argsstring>
+        <name>~EthercatLifeCycle</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/ecat_lifecycle.hpp" line="49" column="9" bodyfile="src/ecat_lifecycle.cpp" bodystart="22" bodyend="25"/>
+      </memberdef>
+      <memberdef kind="function" id="classEthercatLifeCycleNode_1_1EthercatLifeCycle_1aec0cf559153eedb336a297bf02b6a311" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>uint8_t</type>
+        <definition>uint8_t EthercatLifeCycle::on_configure</definition>
+        <argsstring>()</argsstring>
+        <name>on_configure</name>
+        <briefdescription>
+<para>Initialization function.Class initialized in unconfigured state. This function has to called to do inital configuration which will open EtherCAT master from shell, check connected slave, assign initial configuration parameter based on selected operation mode, map pdos, activate master and set thread priorities. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="note"><para>This class implemented based on ROS2 lifecycle node state machine. For more information about Lifecycle node and it&apos;s interfaces check below link : <ulink url="https://design.ros2.org/articles/node_lifecycle.html">https://design.ros2.org/articles/node_lifecycle.html</ulink></para>
+</simplesect>
+<simplesect kind="return"><para>Success if configuration succesfull,otherwise FAILURE </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+<para>Add qt signal and sloth mechanism in here.</para>
+        </inbodydescription>
+        <location file="include/ecat_lifecycle.hpp" line="62" column="17" bodyfile="src/ecat_lifecycle.cpp" bodystart="27" bodyend="39"/>
+      </memberdef>
+      <memberdef kind="function" id="classEthercatLifeCycleNode_1_1EthercatLifeCycle_1a12f7cf631b5ce066ae8064003e1aead5" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>uint8_t</type>
+        <definition>uint8_t EthercatLifeCycle::on_activate</definition>
+        <argsstring>()</argsstring>
+        <name>on_activate</name>
+        <briefdescription>
+<para>Starts real-time Ethercat communication. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>Success if activation succesfull,otherwise FAILURE </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/ecat_lifecycle.hpp" line="69" column="16" bodyfile="src/ecat_lifecycle.cpp" bodystart="41" bodyend="53"/>
+      </memberdef>
+      <memberdef kind="function" id="classEthercatLifeCycleNode_1_1EthercatLifeCycle_1aa179a06f98348140931243afac81613e" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>uint8_t</type>
+        <definition>uint8_t EthercatLifeCycle::on_deactivate</definition>
+        <argsstring>()</argsstring>
+        <name>on_deactivate</name>
+        <briefdescription>
+<para>Stops real-time communication. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>Success if deactivation succesfull,otherwise FAILURE </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/ecat_lifecycle.hpp" line="76" column="16" bodyfile="src/ecat_lifecycle.cpp" bodystart="55" bodyend="62"/>
+      </memberdef>
+      <memberdef kind="function" id="classEthercatLifeCycleNode_1_1EthercatLifeCycle_1ad5c67d7fec0cc29de12e47e5b7ac34c7" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>uint8_t</type>
+        <definition>uint8_t EthercatLifeCycle::on_cleanup</definition>
+        <argsstring>()</argsstring>
+        <name>on_cleanup</name>
+        <briefdescription>
+<para>Cleans up all variables and datas assigned by Ethercat class. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>Success if cleanup succesfull,otherwise FAILURE </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/ecat_lifecycle.hpp" line="83" column="16" bodyfile="src/ecat_lifecycle.cpp" bodystart="64" bodyend="71"/>
+      </memberdef>
+      <memberdef kind="function" id="classEthercatLifeCycleNode_1_1EthercatLifeCycle_1abe43d53f46141c8f243da4857c25e21a" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>uint8_t</type>
+        <definition>uint8_t EthercatLifeCycle::on_shutdown</definition>
+        <argsstring>()</argsstring>
+        <name>on_shutdown</name>
+        <briefdescription>
+<para>Shuts down EtherCAT lifecycle instance, releases Ethercat master. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>Success if shut down succesfull,otherwise FAILURE </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/ecat_lifecycle.hpp" line="90" column="16" bodyfile="src/ecat_lifecycle.cpp" bodystart="73" bodyend="83"/>
+      </memberdef>
+      <memberdef kind="function" id="classEthercatLifeCycleNode_1_1EthercatLifeCycle_1a1e643a442bf34563d25b1ddbc76e6be4" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>uint8_t</type>
+        <definition>uint8_t EthercatLifeCycle::on_error</definition>
+        <argsstring>()</argsstring>
+        <name>on_error</name>
+        <briefdescription>
+<para>There isn&apos;t any error recovery functionality for now, just resets nodes. Reconfiguration is needed for restarting communication. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>Success </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/ecat_lifecycle.hpp" line="98" column="16" bodyfile="src/ecat_lifecycle.cpp" bodystart="85" bodyend="90"/>
+      </memberdef>
+      <memberdef kind="function" id="classEthercatLifeCycleNode_1_1EthercatLifeCycle_1aadb5d2d00179549ea65186fd0ad12aae" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int EthercatLifeCycle::SetComThreadPriorities</definition>
+        <argsstring>()</argsstring>
+        <name>SetComThreadPriorities</name>
+        <briefdescription>
+<para>Sets Ethercat communication thread&apos;s properties After this function called user must call <ref refid="classEthercatLifeCycleNode_1_1EthercatLifeCycle_1a2c5796d0f5f88a228c4b064d81a6b2f7" kindref="member">StartEthercatCommunication()</ref> function]. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>0 if succesfull, otherwise -1. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/ecat_lifecycle.hpp" line="111" column="13" bodyfile="src/ecat_lifecycle.cpp" bodystart="92" bodyend="145"/>
+      </memberdef>
+      <memberdef kind="function" id="classEthercatLifeCycleNode_1_1EthercatLifeCycle_1ad059e2876da36b4549279643b380a480" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int EthercatLifeCycle::InitEthercatCommunication</definition>
+        <argsstring>()</argsstring>
+        <name>InitEthercatCommunication</name>
+        <briefdescription>
+<para>Encapsulates all configuration steps for the EtherCAT communication with default slaves. And waits for connected slaves to become operational. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>0 if succesful otherwise -1. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/ecat_lifecycle.hpp" line="118" column="13" bodyfile="src/ecat_lifecycle.cpp" bodystart="147" bodyend="294"/>
+      </memberdef>
+      <memberdef kind="function" id="classEthercatLifeCycleNode_1_1EthercatLifeCycle_1a2c5796d0f5f88a228c4b064d81a6b2f7" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int EthercatLifeCycle::StartEthercatCommunication</definition>
+        <argsstring>()</argsstring>
+        <name>StartEthercatCommunication</name>
+        <briefdescription>
+<para>Starts EtherCAT communcation. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>0 if succesfull, otherwise -1. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/ecat_lifecycle.hpp" line="135" column="14" bodyfile="src/ecat_lifecycle.cpp" bodystart="296" bodyend="306"/>
+      </memberdef>
+      <memberdef kind="function" id="classEthercatLifeCycleNode_1_1EthercatLifeCycle_1a52a7c57222fb8c896986fafc470d3bc3" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void EthercatLifeCycle::StartPdoExchange</definition>
+        <argsstring>(void *instance)</argsstring>
+        <name>StartPdoExchange</name>
+        <param>
+          <type>void *</type>
+          <declname>instance</declname>
+        </param>
+        <briefdescription>
+<para>Realtime cyclic Pdo exchange function which will constantly read/write values from/to slaves. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>arg</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Used during pthread_create function to pass variables to realtime task. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>NULL </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/ecat_lifecycle.hpp" line="143" column="14" bodyfile="src/ecat_lifecycle.cpp" bodystart="313" bodyend="642"/>
+      </memberdef>
+      <memberdef kind="function" id="classEthercatLifeCycleNode_1_1EthercatLifeCycle_1a901c06f35510c5be5c40c4f934b5974b" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int EthercatLifeCycle::GetComState</definition>
+        <argsstring>()</argsstring>
+        <name>GetComState</name>
+        <briefdescription>
+<para>Gets master&apos;s communication state. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="see"><para>ec_al_state_t</para>
+</simplesect>
+<simplesect kind="return"><para>Application layer state for master. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/ecat_lifecycle.hpp" line="151" column="13" bodyfile="src/ecat_lifecycle.cpp" bodystart="679" bodyend="682"/>
+      </memberdef>
+      <memberdef kind="function" id="classEthercatLifeCycleNode_1_1EthercatLifeCycle_1acde7634de380e1bc00e138aa9d3f90f0" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void EthercatLifeCycle::ReadFromSlaves</definition>
+        <argsstring>()</argsstring>
+        <name>ReadFromSlaves</name>
+        <briefdescription>
+<para>Reads data from slaves and updates received data structure. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/ecat_lifecycle.hpp" line="156" column="14" bodyfile="src/ecat_lifecycle.cpp" bodystart="644" bodyend="659"/>
+      </memberdef>
+      <memberdef kind="function" id="classEthercatLifeCycleNode_1_1EthercatLifeCycle_1a9d4c4f4d59fb5831e85c17b55bc23cbf" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void EthercatLifeCycle::WriteToSlavesVelocityMode</definition>
+        <argsstring>()</argsstring>
+        <name>WriteToSlavesVelocityMode</name>
+        <briefdescription>
+<para>Updates data that will be sent to slaves in velocity mode. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/ecat_lifecycle.hpp" line="161" column="14" bodyfile="src/ecat_lifecycle.cpp" bodystart="661" bodyend="676"/>
+      </memberdef>
+      <memberdef kind="function" id="classEthercatLifeCycleNode_1_1EthercatLifeCycle_1a5bf86789850a0b8e21ef44f50aefa497" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void EthercatLifeCycle::WriteToSlavesInPositionMode</definition>
+        <argsstring>()</argsstring>
+        <name>WriteToSlavesInPositionMode</name>
+        <briefdescription>
+<para>Writes target position and control word to motor in profile position mode. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/ecat_lifecycle.hpp" line="167" column="14" bodyfile="src/ecat_lifecycle.cpp" bodystart="874" bodyend="898"/>
+      </memberdef>
+      <memberdef kind="function" id="classEthercatLifeCycleNode_1_1EthercatLifeCycle_1a1940951e1d285e7ce193d7444474dca7" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void EthercatLifeCycle::UpdateVelocityModeParameters</definition>
+        <argsstring>()</argsstring>
+        <name>UpdateVelocityModeParameters</name>
+        <briefdescription>
+<para>Acquired data from xbox controller will be assigned as motor speed parameter. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/ecat_lifecycle.hpp" line="173" column="14" bodyfile="src/ecat_lifecycle.cpp" bodystart="1132" bodyend="1157"/>
+      </memberdef>
+      <memberdef kind="function" id="classEthercatLifeCycleNode_1_1EthercatLifeCycle_1aa8678dbf6a5a60844c614553aaa6d484" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void EthercatLifeCycle::UpdateCyclicVelocityModeParameters</definition>
+        <argsstring>()</argsstring>
+        <name>UpdateCyclicVelocityModeParameters</name>
+        <briefdescription>
+<para>Acquired data from xbox controller will be assigned as motor speed parameter. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/ecat_lifecycle.hpp" line="179" column="14" bodyfile="src/ecat_lifecycle.cpp" bodystart="1047" bodyend="1130"/>
+      </memberdef>
+      <memberdef kind="function" id="classEthercatLifeCycleNode_1_1EthercatLifeCycle_1a8d762bf02972f1f318148175d5641317" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void EthercatLifeCycle::UpdatePositionModeParameters</definition>
+        <argsstring>()</argsstring>
+        <name>UpdatePositionModeParameters</name>
+        <briefdescription>
+<para>Acquired data from xbox controller will be assigned as motor target position parameter. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/ecat_lifecycle.hpp" line="185" column="14" bodyfile="src/ecat_lifecycle.cpp" bodystart="684" bodyend="749"/>
+      </memberdef>
+      <memberdef kind="function" id="classEthercatLifeCycleNode_1_1EthercatLifeCycle_1a434a3dc8581b010974d60b24e4ab7df2" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void EthercatLifeCycle::UpdateCyclicPositionModeParameters</definition>
+        <argsstring>()</argsstring>
+        <name>UpdateCyclicPositionModeParameters</name>
+        <briefdescription>
+<para>Acquired data from xbox controller will be assigned as motor cyclic target position parameter in configured interpolation time. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/ecat_lifecycle.hpp" line="191" column="14" bodyfile="src/ecat_lifecycle.cpp" bodystart="991" bodyend="1045"/>
+      </memberdef>
+      <memberdef kind="function" id="classEthercatLifeCycleNode_1_1EthercatLifeCycle_1ac81a74790509a9912c14982e9fa58d66" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void EthercatLifeCycle::UpdateMotorStateVelocityMode</definition>
+        <argsstring>()</argsstring>
+        <name>UpdateMotorStateVelocityMode</name>
+        <briefdescription>
+<para>Updates motor control word and motor state in velocity mode based on CIA402. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/ecat_lifecycle.hpp" line="197" column="14" bodyfile="src/ecat_lifecycle.cpp" bodystart="1185" bodyend="1229"/>
+      </memberdef>
+      <memberdef kind="function" id="classEthercatLifeCycleNode_1_1EthercatLifeCycle_1a1be54ebbef9bf865be39dd5b16b4e17f" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void EthercatLifeCycle::UpdateMotorStatePositionMode</definition>
+        <argsstring>()</argsstring>
+        <name>UpdateMotorStatePositionMode</name>
+        <briefdescription>
+<para>Updates motor control word and motor state in position mode based on CIA402 state machine,. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/ecat_lifecycle.hpp" line="201" column="14" bodyfile="src/ecat_lifecycle.cpp" bodystart="751" bodyend="798"/>
+      </memberdef>
+      <memberdef kind="function" id="classEthercatLifeCycleNode_1_1EthercatLifeCycle_1a6bdee6a9dc5d22b58429a9ee507c9fe2" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void EthercatLifeCycle::UpdateCyclicTorqueModeParameters</definition>
+        <argsstring>()</argsstring>
+        <name>UpdateCyclicTorqueModeParameters</name>
+        <briefdescription>
+<para>Updates cylic torque mode parameters based on controller inputs. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/ecat_lifecycle.hpp" line="207" column="14" bodyfile="src/ecat_lifecycle.cpp" bodystart="1159" bodyend="1183"/>
+      </memberdef>
+      <memberdef kind="function" id="classEthercatLifeCycleNode_1_1EthercatLifeCycle_1a50318001792b039b8cf179e4d38108ec" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void EthercatLifeCycle::WriteToSlavesInCyclicTorqueMode</definition>
+        <argsstring>()</argsstring>
+        <name>WriteToSlavesInCyclicTorqueMode</name>
+        <briefdescription>
+<para>Writes target torque and control word in cyclic sync. torque mode. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/ecat_lifecycle.hpp" line="213" column="14" bodyfile="src/ecat_lifecycle.cpp" bodystart="900" bodyend="921"/>
+      </memberdef>
+      <memberdef kind="function" id="classEthercatLifeCycleNode_1_1EthercatLifeCycle_1a6187ef3af76844b80e7a3ae399fa8460" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int EthercatLifeCycle::GetDriveState</definition>
+        <argsstring>(const int &amp;statusWord)</argsstring>
+        <name>GetDriveState</name>
+        <param>
+          <type>const int &amp;</type>
+          <declname>statusWord</declname>
+        </param>
+        <briefdescription>
+<para>CKim - This function checks status word and returns state of the motor driver. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/ecat_lifecycle.hpp" line="219" column="13" bodyfile="src/ecat_lifecycle.cpp" bodystart="800" bodyend="836"/>
+      </memberdef>
+      <memberdef kind="function" id="classEthercatLifeCycleNode_1_1EthercatLifeCycle_1a1367595ced86d25b6299ce281f1e1607" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int EthercatLifeCycle::EnableDrivers</definition>
+        <argsstring>()</argsstring>
+        <name>EnableDrivers</name>
+        <briefdescription>
+<para>CKim - This function checks status word, clears any faults and enables torque of the motor driver. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/ecat_lifecycle.hpp" line="226" column="13" bodyfile="src/ecat_lifecycle.cpp" bodystart="838" bodyend="872"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-static-func">
+      <memberdef kind="function" id="classEthercatLifeCycleNode_1_1EthercatLifeCycle_1a3f14c000af09d7d9480d700266da624f" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void *</type>
+        <definition>void * EthercatLifeCycle::PassCycylicExchange</definition>
+        <argsstring>(void *arg)</argsstring>
+        <name>PassCycylicExchange</name>
+        <param>
+          <type>void *</type>
+          <declname>arg</declname>
+        </param>
+        <briefdescription>
+<para>Helper function to enter pthread_create, since pthread&apos;s are C function it doesn&apos;t accept class member function, to pass class member function this helper function is created. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>arg</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Pointer to current class instance. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>void* </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/ecat_lifecycle.hpp" line="128" column="21" bodyfile="src/ecat_lifecycle.cpp" bodystart="308" bodyend="311"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <collaborationgraph>
+      <node id="3">
+        <label>DataReceived</label>
+        <link refid="structDataReceived"/>
+      </node>
+      <node id="2">
+        <label>DataSent</label>
+        <link refid="structDataSent"/>
+      </node>
+      <node id="1">
+        <label>EthercatLifeCycleNode::EthercatLifeCycle</label>
+        <link refid="classEthercatLifeCycleNode_1_1EthercatLifeCycle"/>
+        <childnode refid="2" relation="usage">
+          <edgelabel>sent_data_</edgelabel>
+        </childnode>
+        <childnode refid="3" relation="usage">
+          <edgelabel>received_data_</edgelabel>
+        </childnode>
+        <childnode refid="4" relation="usage">
+          <edgelabel>controller_</edgelabel>
+        </childnode>
+        <childnode refid="5" relation="usage">
+          <edgelabel>timer_info_</edgelabel>
+        </childnode>
+      </node>
+      <node id="5">
+        <label>Timing</label>
+        <link refid="classTiming"/>
+      </node>
+      <node id="4">
+        <label>Controller</label>
+        <link refid="structController"/>
+      </node>
+    </collaborationgraph>
+    <location file="include/ecat_lifecycle.hpp" line="46" column="1" bodyfile="include/ecat_lifecycle.hpp" bodystart="45" bodyend="248"/>
+    <listofallmembers>
+      <member refid="classEthercatLifeCycleNode_1_1EthercatLifeCycle_1a799a0bdf01f5a0da57c29900f3d8180d" prot="public" virt="non-virtual"><scope>EthercatLifeCycleNode::EthercatLifeCycle</scope><name>al_state_</name></member>
+      <member refid="classEthercatLifeCycleNode_1_1EthercatLifeCycle_1a8852f433f1e6d0927892fab6f88e01d1" prot="public" virt="non-virtual"><scope>EthercatLifeCycleNode::EthercatLifeCycle</scope><name>command_</name></member>
+      <member refid="classEthercatLifeCycleNode_1_1EthercatLifeCycle_1a2b55e301403a0e5eaf17f2ee898d0f6e" prot="public" virt="non-virtual"><scope>EthercatLifeCycleNode::EthercatLifeCycle</scope><name>controller_</name></member>
+      <member refid="classEthercatLifeCycleNode_1_1EthercatLifeCycle_1adecbe58e78eb53eaf1a526b5b83712c6" prot="public" virt="non-virtual"><scope>EthercatLifeCycleNode::EthercatLifeCycle</scope><name>ecat_node_</name></member>
+      <member refid="classEthercatLifeCycleNode_1_1EthercatLifeCycle_1ab273dc79ac03b8bee9fcbf4bff21da61" prot="public" virt="non-virtual"><scope>EthercatLifeCycleNode::EthercatLifeCycle</scope><name>emergency_status_</name></member>
+      <member refid="classEthercatLifeCycleNode_1_1EthercatLifeCycle_1a1367595ced86d25b6299ce281f1e1607" prot="public" virt="non-virtual"><scope>EthercatLifeCycleNode::EthercatLifeCycle</scope><name>EnableDrivers</name></member>
+      <member refid="classEthercatLifeCycleNode_1_1EthercatLifeCycle_1a38d0a2c725202ef0fd67beff679ab9b1" prot="public" virt="non-virtual"><scope>EthercatLifeCycleNode::EthercatLifeCycle</scope><name>err_</name></member>
+      <member refid="classEthercatLifeCycleNode_1_1EthercatLifeCycle_1a80c1aefb15a64041bd5f59e47b3ac29e" prot="public" virt="non-virtual"><scope>EthercatLifeCycleNode::EthercatLifeCycle</scope><name>ethercat_sched_param_</name></member>
+      <member refid="classEthercatLifeCycleNode_1_1EthercatLifeCycle_1ac443f07a1f4e7252788ca000ea70458f" prot="public" virt="non-virtual"><scope>EthercatLifeCycleNode::EthercatLifeCycle</scope><name>ethercat_thread_</name></member>
+      <member refid="classEthercatLifeCycleNode_1_1EthercatLifeCycle_1a78acbaf6dc792b96f2df3fbef7395dfc" prot="public" virt="non-virtual"><scope>EthercatLifeCycleNode::EthercatLifeCycle</scope><name>ethercat_thread_attr_</name></member>
+      <member refid="classEthercatLifeCycleNode_1_1EthercatLifeCycle_1ab88fd9de520c44c80c64440443d25ff7" prot="public" virt="non-virtual"><scope>EthercatLifeCycleNode::EthercatLifeCycle</scope><name>EthercatLifeCycle</name></member>
+      <member refid="classEthercatLifeCycleNode_1_1EthercatLifeCycle_1a901c06f35510c5be5c40c4f934b5974b" prot="public" virt="non-virtual"><scope>EthercatLifeCycleNode::EthercatLifeCycle</scope><name>GetComState</name></member>
+      <member refid="classEthercatLifeCycleNode_1_1EthercatLifeCycle_1a6187ef3af76844b80e7a3ae399fa8460" prot="public" virt="non-virtual"><scope>EthercatLifeCycleNode::EthercatLifeCycle</scope><name>GetDriveState</name></member>
+      <member refid="classEthercatLifeCycleNode_1_1EthercatLifeCycle_1ad059e2876da36b4549279643b380a480" prot="public" virt="non-virtual"><scope>EthercatLifeCycleNode::EthercatLifeCycle</scope><name>InitEthercatCommunication</name></member>
+      <member refid="classEthercatLifeCycleNode_1_1EthercatLifeCycle_1ac3ddb4ba9d791e8186237a6da3da6a20" prot="public" virt="non-virtual"><scope>EthercatLifeCycleNode::EthercatLifeCycle</scope><name>measurement_time</name></member>
+      <member refid="classEthercatLifeCycleNode_1_1EthercatLifeCycle_1a7380630e7299c28135f8eb0134729b26" prot="public" virt="non-virtual"><scope>EthercatLifeCycleNode::EthercatLifeCycle</scope><name>motor_state_</name></member>
+      <member refid="classEthercatLifeCycleNode_1_1EthercatLifeCycle_1a12f7cf631b5ce066ae8064003e1aead5" prot="public" virt="non-virtual"><scope>EthercatLifeCycleNode::EthercatLifeCycle</scope><name>on_activate</name></member>
+      <member refid="classEthercatLifeCycleNode_1_1EthercatLifeCycle_1ad5c67d7fec0cc29de12e47e5b7ac34c7" prot="public" virt="non-virtual"><scope>EthercatLifeCycleNode::EthercatLifeCycle</scope><name>on_cleanup</name></member>
+      <member refid="classEthercatLifeCycleNode_1_1EthercatLifeCycle_1aec0cf559153eedb336a297bf02b6a311" prot="public" virt="non-virtual"><scope>EthercatLifeCycleNode::EthercatLifeCycle</scope><name>on_configure</name></member>
+      <member refid="classEthercatLifeCycleNode_1_1EthercatLifeCycle_1aa179a06f98348140931243afac81613e" prot="public" virt="non-virtual"><scope>EthercatLifeCycleNode::EthercatLifeCycle</scope><name>on_deactivate</name></member>
+      <member refid="classEthercatLifeCycleNode_1_1EthercatLifeCycle_1a1e643a442bf34563d25b1ddbc76e6be4" prot="public" virt="non-virtual"><scope>EthercatLifeCycleNode::EthercatLifeCycle</scope><name>on_error</name></member>
+      <member refid="classEthercatLifeCycleNode_1_1EthercatLifeCycle_1abe43d53f46141c8f243da4857c25e21a" prot="public" virt="non-virtual"><scope>EthercatLifeCycleNode::EthercatLifeCycle</scope><name>on_shutdown</name></member>
+      <member refid="classEthercatLifeCycleNode_1_1EthercatLifeCycle_1a3f14c000af09d7d9480d700266da624f" prot="public" virt="non-virtual"><scope>EthercatLifeCycleNode::EthercatLifeCycle</scope><name>PassCycylicExchange</name></member>
+      <member refid="classEthercatLifeCycleNode_1_1EthercatLifeCycle_1acde7634de380e1bc00e138aa9d3f90f0" prot="public" virt="non-virtual"><scope>EthercatLifeCycleNode::EthercatLifeCycle</scope><name>ReadFromSlaves</name></member>
+      <member refid="classEthercatLifeCycleNode_1_1EthercatLifeCycle_1ac97795ae224c1630619ab622bc56c633" prot="public" virt="non-virtual"><scope>EthercatLifeCycleNode::EthercatLifeCycle</scope><name>received_data_</name></member>
+      <member refid="classEthercatLifeCycleNode_1_1EthercatLifeCycle_1aa3e778a600d45cae79c01cb9c3e9adad" prot="public" virt="non-virtual"><scope>EthercatLifeCycleNode::EthercatLifeCycle</scope><name>sent_data_</name></member>
+      <member refid="classEthercatLifeCycleNode_1_1EthercatLifeCycle_1aadb5d2d00179549ea65186fd0ad12aae" prot="public" virt="non-virtual"><scope>EthercatLifeCycleNode::EthercatLifeCycle</scope><name>SetComThreadPriorities</name></member>
+      <member refid="classEthercatLifeCycleNode_1_1EthercatLifeCycle_1a2c5796d0f5f88a228c4b064d81a6b2f7" prot="public" virt="non-virtual"><scope>EthercatLifeCycleNode::EthercatLifeCycle</scope><name>StartEthercatCommunication</name></member>
+      <member refid="classEthercatLifeCycleNode_1_1EthercatLifeCycle_1a52a7c57222fb8c896986fafc470d3bc3" prot="public" virt="non-virtual"><scope>EthercatLifeCycleNode::EthercatLifeCycle</scope><name>StartPdoExchange</name></member>
+      <member refid="classEthercatLifeCycleNode_1_1EthercatLifeCycle_1a40a619f28629b0a03ff7b980e608b299" prot="public" virt="non-virtual"><scope>EthercatLifeCycleNode::EthercatLifeCycle</scope><name>timer_info_</name></member>
+      <member refid="classEthercatLifeCycleNode_1_1EthercatLifeCycle_1a434a3dc8581b010974d60b24e4ab7df2" prot="public" virt="non-virtual"><scope>EthercatLifeCycleNode::EthercatLifeCycle</scope><name>UpdateCyclicPositionModeParameters</name></member>
+      <member refid="classEthercatLifeCycleNode_1_1EthercatLifeCycle_1a6bdee6a9dc5d22b58429a9ee507c9fe2" prot="public" virt="non-virtual"><scope>EthercatLifeCycleNode::EthercatLifeCycle</scope><name>UpdateCyclicTorqueModeParameters</name></member>
+      <member refid="classEthercatLifeCycleNode_1_1EthercatLifeCycle_1aa8678dbf6a5a60844c614553aaa6d484" prot="public" virt="non-virtual"><scope>EthercatLifeCycleNode::EthercatLifeCycle</scope><name>UpdateCyclicVelocityModeParameters</name></member>
+      <member refid="classEthercatLifeCycleNode_1_1EthercatLifeCycle_1a1be54ebbef9bf865be39dd5b16b4e17f" prot="public" virt="non-virtual"><scope>EthercatLifeCycleNode::EthercatLifeCycle</scope><name>UpdateMotorStatePositionMode</name></member>
+      <member refid="classEthercatLifeCycleNode_1_1EthercatLifeCycle_1ac81a74790509a9912c14982e9fa58d66" prot="public" virt="non-virtual"><scope>EthercatLifeCycleNode::EthercatLifeCycle</scope><name>UpdateMotorStateVelocityMode</name></member>
+      <member refid="classEthercatLifeCycleNode_1_1EthercatLifeCycle_1a8d762bf02972f1f318148175d5641317" prot="public" virt="non-virtual"><scope>EthercatLifeCycleNode::EthercatLifeCycle</scope><name>UpdatePositionModeParameters</name></member>
+      <member refid="classEthercatLifeCycleNode_1_1EthercatLifeCycle_1a1940951e1d285e7ce193d7444474dca7" prot="public" virt="non-virtual"><scope>EthercatLifeCycleNode::EthercatLifeCycle</scope><name>UpdateVelocityModeParameters</name></member>
+      <member refid="classEthercatLifeCycleNode_1_1EthercatLifeCycle_1a50318001792b039b8cf179e4d38108ec" prot="public" virt="non-virtual"><scope>EthercatLifeCycleNode::EthercatLifeCycle</scope><name>WriteToSlavesInCyclicTorqueMode</name></member>
+      <member refid="classEthercatLifeCycleNode_1_1EthercatLifeCycle_1a5bf86789850a0b8e21ef44f50aefa497" prot="public" virt="non-virtual"><scope>EthercatLifeCycleNode::EthercatLifeCycle</scope><name>WriteToSlavesInPositionMode</name></member>
+      <member refid="classEthercatLifeCycleNode_1_1EthercatLifeCycle_1a9d4c4f4d59fb5831e85c17b55bc23cbf" prot="public" virt="non-virtual"><scope>EthercatLifeCycleNode::EthercatLifeCycle</scope><name>WriteToSlavesVelocityMode</name></member>
+      <member refid="classEthercatLifeCycleNode_1_1EthercatLifeCycle_1a9c591445a71b8a9d9e1913e183f9c8f3" prot="public" virt="non-virtual"><scope>EthercatLifeCycleNode::EthercatLifeCycle</scope><name>~EthercatLifeCycle</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

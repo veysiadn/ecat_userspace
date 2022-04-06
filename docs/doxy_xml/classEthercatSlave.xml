@@ -1,0 +1,330 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.17">
+  <compounddef id="classEthercatSlave" kind="class" language="C++" prot="public">
+    <compoundname>EthercatSlave</compoundname>
+    <includes refid="ecat__slave_8hpp" local="no">ecat_slave.hpp</includes>
+      <sectiondef kind="public-static-attrib">
+      <memberdef kind="variable" id="classEthercatSlave_1a6f2a027b6738cc31de9613305f1b8532" prot="public" static="yes" mutable="no">
+        <type>const static uint32_t</type>
+        <definition>const static uint32_t EthercatSlave::kSync0_shift_</definition>
+        <argsstring></argsstring>
+        <name>kSync0_shift_</name>
+        <initializer>= 0</initializer>
+        <briefdescription>
+<para>DC sync shift setting, zero will give best synchronization. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/ecat_slave.hpp" line="107" column="29" bodyfile="include/ecat_slave.hpp" bodystart="107" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="classEthercatSlave_1aa2480c6d91ce19bf6c5a58b3207fa498" prot="public" static="no" mutable="no">
+        <type>ec_slave_config_t *</type>
+        <definition>ec_slave_config_t* EthercatSlave::slave_config_</definition>
+        <argsstring></argsstring>
+        <name>slave_config_</name>
+        <briefdescription>
+<para>Slave configuration parameters, assinged to each slave. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/ecat_slave.hpp" line="110" column="30" bodyfile="include/ecat_slave.hpp" bodystart="110" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classEthercatSlave_1aca431a49f052ab63631b6936e53f0457" prot="public" static="no" mutable="no">
+        <type>ec_slave_config_state_t</type>
+        <definition>ec_slave_config_state_t EthercatSlave::slave_config_state_</definition>
+        <argsstring></argsstring>
+        <name>slave_config_state_</name>
+        <briefdescription>
+<para>Slave state handle to check if slave is online and slaves state machine status(INIT/PREOP/SAFEOP/0P) </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/ecat_slave.hpp" line="113" column="30" bodyfile="include/ecat_slave.hpp" bodystart="113" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classEthercatSlave_1ac5c55d28338a4ec4d3d5d35917b20cdd" prot="public" static="no" mutable="no">
+        <type>ec_pdo_info_t *</type>
+        <definition>ec_pdo_info_t* EthercatSlave::slave_pdo_info_</definition>
+        <argsstring></argsstring>
+        <name>slave_pdo_info_</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/ecat_slave.hpp" line="116" column="29" bodyfile="include/ecat_slave.hpp" bodystart="116" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classEthercatSlave_1a58cf8fe477af002374286aacc2c1fba6" prot="public" static="no" mutable="no">
+        <type>ec_pdo_entry_info_t *</type>
+        <definition>ec_pdo_entry_info_t* EthercatSlave::slave_pdo_entry_info_</definition>
+        <argsstring></argsstring>
+        <name>slave_pdo_entry_info_</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/ecat_slave.hpp" line="118" column="29" bodyfile="include/ecat_slave.hpp" bodystart="118" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classEthercatSlave_1af1119fff25fd80bfa7faa44ffa8238df" prot="public" static="no" mutable="no">
+        <type>ec_sync_info_t *</type>
+        <definition>ec_sync_info_t* EthercatSlave::slave_sync_info_</definition>
+        <argsstring></argsstring>
+        <name>slave_sync_info_</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/ecat_slave.hpp" line="120" column="29" bodyfile="include/ecat_slave.hpp" bodystart="120" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classEthercatSlave_1ac3a8a75c23e09dd498d649568cff1563" prot="public" static="no" mutable="no">
+        <type>ec_pdo_entry_reg_t *</type>
+        <definition>ec_pdo_entry_reg_t* EthercatSlave::slave_pdo_entry_reg_</definition>
+        <argsstring></argsstring>
+        <name>slave_pdo_entry_reg_</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/ecat_slave.hpp" line="122" column="29" bodyfile="include/ecat_slave.hpp" bodystart="122" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classEthercatSlave_1aea2c7dcf075da6a02e90ca31e020f7b7" prot="public" static="no" mutable="no">
+        <type>uint8_t *</type>
+        <definition>uint8_t* EthercatSlave::slave_pdo_domain_</definition>
+        <argsstring></argsstring>
+        <name>slave_pdo_domain_</name>
+        <briefdescription>
+<para>PDO domain for data exchange. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/ecat_slave.hpp" line="124" column="29" bodyfile="include/ecat_slave.hpp" bodystart="124" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classEthercatSlave_1acc991db772f2c27736a75b78d2dee912" prot="public" static="no" mutable="no">
+        <type>int32_t</type>
+        <definition>int32_t EthercatSlave::motor_state_</definition>
+        <argsstring></argsstring>
+        <name>motor_state_</name>
+        <briefdescription>
+<para>Variable for checking motor state. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/ecat_slave.hpp" line="127" column="30" bodyfile="include/ecat_slave.hpp" bodystart="127" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classEthercatSlave_1a986287a9af930e49b4b3bf5e7227ac18" prot="public" static="no" mutable="no">
+        <type>ec_slave_info_t</type>
+        <definition>ec_slave_info_t EthercatSlave::slave_info_</definition>
+        <argsstring></argsstring>
+        <name>slave_info_</name>
+        <briefdescription>
+<para>Slave information data structure. This structure contains all information related to slave. It will be used to get slave&apos;s information from master. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/ecat_slave.hpp" line="133" column="29" bodyfile="include/ecat_slave.hpp" bodystart="133" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classEthercatSlave_1a0a5355318e90e91ac90668a250872f53" prot="public" static="no" mutable="no">
+        <type><ref refid="structOffsetPDO" kindref="compound">OffsetPDO</ref></type>
+        <definition>OffsetPDO EthercatSlave::offset_</definition>
+        <argsstring></argsstring>
+        <name>offset_</name>
+        <briefdescription>
+<para>Offset for PDO entries to assign pdo registers. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/ecat_slave.hpp" line="135" column="31" bodyfile="include/ecat_slave.hpp" bodystart="135" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classEthercatSlave_1a5e8268d183d282583f6194c1574c1e96" prot="public" static="no" mutable="no">
+        <type><ref refid="structDataReceived" kindref="compound">DataReceived</ref></type>
+        <definition>DataReceived EthercatSlave::data_</definition>
+        <argsstring></argsstring>
+        <name>data_</name>
+        <briefdescription>
+<para>Received data from servo drivers. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/ecat_slave.hpp" line="137" column="31" bodyfile="include/ecat_slave.hpp" bodystart="137" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classEthercatSlave_1a2a26b98ad5fa0a57da0920e0f508ed8b" prot="public" static="no" mutable="no">
+        <type><ref refid="structProfileVelocityParam" kindref="compound">ProfileVelocityParam</ref></type>
+        <definition>ProfileVelocityParam EthercatSlave::velocity_param_</definition>
+        <argsstring></argsstring>
+        <name>velocity_param_</name>
+        <briefdescription>
+<para>Slave velocity parameters. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/ecat_slave.hpp" line="139" column="29" bodyfile="include/ecat_slave.hpp" bodystart="139" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classEthercatSlave_1a903b2d0f527e0f649cc208db76190e5b" prot="public" static="no" mutable="no">
+        <type><ref refid="structProfilePosParam" kindref="compound">ProfilePosParam</ref></type>
+        <definition>ProfilePosParam EthercatSlave::position_param_</definition>
+        <argsstring></argsstring>
+        <name>position_param_</name>
+        <briefdescription>
+<para>Slave position parameters. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/ecat_slave.hpp" line="141" column="29" bodyfile="include/ecat_slave.hpp" bodystart="141" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classEthercatSlave_1a0339be5945bb3d1857a7ed083161ab89" prot="public" static="no" mutable="no">
+        <type><ref refid="structHomingParam" kindref="compound">HomingParam</ref></type>
+        <definition>HomingParam EthercatSlave::homing_param_</definition>
+        <argsstring></argsstring>
+        <name>homing_param_</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/ecat_slave.hpp" line="143" column="29" bodyfile="include/ecat_slave.hpp" bodystart="143" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classEthercatSlave_1af6372d6701c86e6d9c3e5c0c2bd3b350" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>EthercatSlave::EthercatSlave</definition>
+        <argsstring>()</argsstring>
+        <name>EthercatSlave</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/ecat_slave.hpp" line="94" column="9" bodyfile="src/ecat_slave.cpp" bodystart="3" bodyend="6"/>
+      </memberdef>
+      <memberdef kind="function" id="classEthercatSlave_1a9c43c36743f85bcd76d7ea512cc8ef82" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>EthercatSlave::~EthercatSlave</definition>
+        <argsstring>()</argsstring>
+        <name>~EthercatSlave</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/ecat_slave.hpp" line="95" column="9" bodyfile="src/ecat_slave.cpp" bodystart="8" bodyend="11"/>
+      </memberdef>
+      <memberdef kind="function" id="classEthercatSlave_1a2a0e089503f81440185e983401d1bbba" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int EthercatSlave::CheckSlaveConfigState</definition>
+        <argsstring>()</argsstring>
+        <name>CheckSlaveConfigState</name>
+        <briefdescription>
+<para>This function will check slave&apos;s application layer states. (INIT/PREOP/SAFEOP/OP) </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="note"><para>This function shouldn&apos;t be called in real time context.For diagnosis you can use CheckDomainState() encapsulation in ecat_node. </para>
+</simplesect>
+<simplesect kind="return"><para>0 if succesful. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/ecat_slave.hpp" line="103" column="9" bodyfile="src/ecat_slave.cpp" bodystart="13" bodyend="21"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <collaborationgraph>
+      <node id="3">
+        <label>ProfilePosParam</label>
+        <link refid="structProfilePosParam"/>
+      </node>
+      <node id="2">
+        <label>DataReceived</label>
+        <link refid="structDataReceived"/>
+      </node>
+      <node id="1">
+        <label>EthercatSlave</label>
+        <link refid="classEthercatSlave"/>
+        <childnode refid="2" relation="usage">
+          <edgelabel>data_</edgelabel>
+        </childnode>
+        <childnode refid="3" relation="usage">
+          <edgelabel>position_param_</edgelabel>
+        </childnode>
+        <childnode refid="4" relation="usage">
+          <edgelabel>velocity_param_</edgelabel>
+        </childnode>
+        <childnode refid="5" relation="usage">
+          <edgelabel>homing_param_</edgelabel>
+        </childnode>
+        <childnode refid="6" relation="usage">
+          <edgelabel>offset_</edgelabel>
+        </childnode>
+      </node>
+      <node id="5">
+        <label>HomingParam</label>
+        <link refid="structHomingParam"/>
+      </node>
+      <node id="6">
+        <label>OffsetPDO</label>
+        <link refid="structOffsetPDO"/>
+      </node>
+      <node id="4">
+        <label>ProfileVelocityParam</label>
+        <link refid="structProfileVelocityParam"/>
+      </node>
+    </collaborationgraph>
+    <location file="include/ecat_slave.hpp" line="51" column="1" bodyfile="include/ecat_slave.hpp" bodystart="50" bodyend="104"/>
+    <listofallmembers>
+      <member refid="classEthercatSlave_1a2a0e089503f81440185e983401d1bbba" prot="public" virt="non-virtual"><scope>EthercatSlave</scope><name>CheckSlaveConfigState</name></member>
+      <member refid="classEthercatSlave_1a5e8268d183d282583f6194c1574c1e96" prot="public" virt="non-virtual"><scope>EthercatSlave</scope><name>data_</name></member>
+      <member refid="classEthercatSlave_1af6372d6701c86e6d9c3e5c0c2bd3b350" prot="public" virt="non-virtual"><scope>EthercatSlave</scope><name>EthercatSlave</name></member>
+      <member refid="classEthercatSlave_1a0339be5945bb3d1857a7ed083161ab89" prot="public" virt="non-virtual"><scope>EthercatSlave</scope><name>homing_param_</name></member>
+      <member refid="classEthercatSlave_1a6f2a027b6738cc31de9613305f1b8532" prot="public" virt="non-virtual"><scope>EthercatSlave</scope><name>kSync0_shift_</name></member>
+      <member refid="classEthercatSlave_1acc991db772f2c27736a75b78d2dee912" prot="public" virt="non-virtual"><scope>EthercatSlave</scope><name>motor_state_</name></member>
+      <member refid="classEthercatSlave_1a0a5355318e90e91ac90668a250872f53" prot="public" virt="non-virtual"><scope>EthercatSlave</scope><name>offset_</name></member>
+      <member refid="classEthercatSlave_1a903b2d0f527e0f649cc208db76190e5b" prot="public" virt="non-virtual"><scope>EthercatSlave</scope><name>position_param_</name></member>
+      <member refid="classEthercatSlave_1aa2480c6d91ce19bf6c5a58b3207fa498" prot="public" virt="non-virtual"><scope>EthercatSlave</scope><name>slave_config_</name></member>
+      <member refid="classEthercatSlave_1aca431a49f052ab63631b6936e53f0457" prot="public" virt="non-virtual"><scope>EthercatSlave</scope><name>slave_config_state_</name></member>
+      <member refid="classEthercatSlave_1a986287a9af930e49b4b3bf5e7227ac18" prot="public" virt="non-virtual"><scope>EthercatSlave</scope><name>slave_info_</name></member>
+      <member refid="classEthercatSlave_1aea2c7dcf075da6a02e90ca31e020f7b7" prot="public" virt="non-virtual"><scope>EthercatSlave</scope><name>slave_pdo_domain_</name></member>
+      <member refid="classEthercatSlave_1a58cf8fe477af002374286aacc2c1fba6" prot="public" virt="non-virtual"><scope>EthercatSlave</scope><name>slave_pdo_entry_info_</name></member>
+      <member refid="classEthercatSlave_1ac3a8a75c23e09dd498d649568cff1563" prot="public" virt="non-virtual"><scope>EthercatSlave</scope><name>slave_pdo_entry_reg_</name></member>
+      <member refid="classEthercatSlave_1ac5c55d28338a4ec4d3d5d35917b20cdd" prot="public" virt="non-virtual"><scope>EthercatSlave</scope><name>slave_pdo_info_</name></member>
+      <member refid="classEthercatSlave_1af1119fff25fd80bfa7faa44ffa8238df" prot="public" virt="non-virtual"><scope>EthercatSlave</scope><name>slave_sync_info_</name></member>
+      <member refid="classEthercatSlave_1a2a26b98ad5fa0a57da0920e0f508ed8b" prot="public" virt="non-virtual"><scope>EthercatSlave</scope><name>velocity_param_</name></member>
+      <member refid="classEthercatSlave_1a9c43c36743f85bcd76d7ea512cc8ef82" prot="public" virt="non-virtual"><scope>EthercatSlave</scope><name>~EthercatSlave</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

@@ -1,0 +1,26 @@
+var structOffsetPDO =
+[
+    [ "actual_cur", "structOffsetPDO.html#a9497d0c8b4cc1de3dd0e435b4f071a92", null ],
+    [ "actual_pos", "structOffsetPDO.html#aa660132e2053405390ec7c21feab28a6", null ],
+    [ "actual_tor", "structOffsetPDO.html#a16476df210bc19f871c89c0c7fd0d0c8", null ],
+    [ "actual_vel", "structOffsetPDO.html#ae1bef0cbff32c077395e59137c8c802d", null ],
+    [ "control_word", "structOffsetPDO.html#a8c4f5d0811f5157ddd5b2aad718ca216", null ],
+    [ "emergency_switch", "structOffsetPDO.html#a45d9cdcfef09d6089056db171755d262", null ],
+    [ "error_code", "structOffsetPDO.html#a5389244040597e64914e8650abd81996", null ],
+    [ "extra_status_reg", "structOffsetPDO.html#adee3c83f3857725dac30b685d1b90af2", null ],
+    [ "l_limit_switch", "structOffsetPDO.html#ab40d8928b356198511f325f6b1067e32", null ],
+    [ "max_tor", "structOffsetPDO.html#af37d71dd68836a0862e3c58752f32de0", null ],
+    [ "op_mode", "structOffsetPDO.html#a5a5931c0e00ddf408a6e1dd1b6389af9", null ],
+    [ "op_mode_display", "structOffsetPDO.html#a4ce519ced990d7ff2168b54822afc769", null ],
+    [ "pos_fol_err", "structOffsetPDO.html#a96dc5a40722273bac237b58db26a8087", null ],
+    [ "profile_acc", "structOffsetPDO.html#a40d8cf803dc45383d24fcfbb49d176e4", null ],
+    [ "profile_dec", "structOffsetPDO.html#a194b2ec45403a2b5b49d1e08e2480f38", null ],
+    [ "profile_vel", "structOffsetPDO.html#a0df71a81151a20863587d9b51ca7422a", null ],
+    [ "quick_stop_dec", "structOffsetPDO.html#a8c08a2a6e477cbfd2754796e9d69308c", null ],
+    [ "r_limit_switch", "structOffsetPDO.html#a73449e20df59e1077d18532bbd0e87fd", null ],
+    [ "status_word", "structOffsetPDO.html#ad170d2294efd553e8f5e690c394c96ab", null ],
+    [ "target_pos", "structOffsetPDO.html#a0f056deef6e6d5e9009313a0510e87ec", null ],
+    [ "target_tor", "structOffsetPDO.html#af334e3b60bd6b6d8fddabd6559b89e69", null ],
+    [ "target_vel", "structOffsetPDO.html#a251ee93cafcd89a8f52c83e31a6dded9", null ],
+    [ "torque_offset", "structOffsetPDO.html#af6588deb13afeac98d363737664f7796", null ]
+];

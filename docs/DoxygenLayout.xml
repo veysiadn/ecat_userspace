@@ -3,7 +3,7 @@
   <!-- Navigation index tabs for HTML output -->
   <navindex>
     <tab type="mainpage" visible="yes" title="Homepage"/>
-    <tab type="user" visible="yes" title="Getting Started" intro=""/>
+    <tab type="user" visible="no" title="Getting Started" intro=""/>
     <!-- <tab type="user" url="http://www.google.com" title="Google"/> -->
     <!-- https://www.doxygen.nl/manual/customize.html -->
     <tab type="modules" visible="yes" title="Modules" intro=""/>

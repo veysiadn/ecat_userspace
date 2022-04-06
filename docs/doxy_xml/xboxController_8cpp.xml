@@ -1,33 +1,9 @@
 <?xml version='1.0' encoding='UTF-8' standalone='no'?>
-<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.17">
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.3" xml:lang="en-US">
   <compounddef id="xboxController_8cpp" kind="file" language="C++">
     <compoundname>xboxController.cpp</compoundname>
     <includes refid="xboxController_8hpp" local="yes">xboxController.hpp</includes>
     <incdepgraph>
-      <node id="4">
-        <label>stdlib.h</label>
-      </node>
-      <node id="6">
-        <label>fcntl.h</label>
-      </node>
-      <node id="3">
-        <label>string</label>
-      </node>
-      <node id="1">
-        <label>src/xboxController.cpp</label>
-        <link refid="xboxController_8cpp"/>
-        <childnode refid="2" relation="include">
-        </childnode>
-      </node>
-      <node id="7">
-        <label>unistd.h</label>
-      </node>
-      <node id="8">
-        <label>linux/joystick.h</label>
-      </node>
-      <node id="9">
-        <label>iostream</label>
-      </node>
       <node id="2">
         <label>xboxController.hpp</label>
         <link refid="xboxController_8hpp"/>
@@ -46,8 +22,32 @@
         <childnode refid="9" relation="include">
         </childnode>
       </node>
+      <node id="1">
+        <label>src/xboxController.cpp</label>
+        <link refid="xboxController_8cpp"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+      </node>
+      <node id="6">
+        <label>fcntl.h</label>
+      </node>
+      <node id="9">
+        <label>iostream</label>
+      </node>
+      <node id="8">
+        <label>linux/joystick.h</label>
+      </node>
       <node id="5">
         <label>stdio.h</label>
+      </node>
+      <node id="4">
+        <label>stdlib.h</label>
+      </node>
+      <node id="3">
+        <label>string</label>
+      </node>
+      <node id="7">
+        <label>unistd.h</label>
       </node>
     </incdepgraph>
     <briefdescription>

@@ -1,5 +1,5 @@
 <?xml version='1.0' encoding='UTF-8' standalone='no'?>
-<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.17">
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.3" xml:lang="en-US">
   <compounddef id="structCSTorqueModeParam" kind="struct" language="C++" prot="public">
     <compoundname>CSTorqueModeParam</compoundname>
     <includes refid="ecat__globals_8hpp" local="no">ecat_globals.hpp</includes>
@@ -9,6 +9,7 @@
         <definition>uint32_t CSTorqueModeParam::nominal_current</definition>
         <argsstring></argsstring>
         <name>nominal_current</name>
+        <qualifiedname>CSTorqueModeParam::nominal_current</qualifiedname>
         <briefdescription>
         </briefdescription>
         <detaileddescription>
@@ -22,6 +23,7 @@
         <definition>uint16_t CSTorqueModeParam::torque_constant</definition>
         <argsstring></argsstring>
         <name>torque_constant</name>
+        <qualifiedname>CSTorqueModeParam::torque_constant</qualifiedname>
         <briefdescription>
         </briefdescription>
         <detaileddescription>
@@ -35,6 +37,7 @@
         <definition>uint32_t CSTorqueModeParam::software_position_limit</definition>
         <argsstring></argsstring>
         <name>software_position_limit</name>
+        <qualifiedname>CSTorqueModeParam::software_position_limit</qualifiedname>
         <briefdescription>
         </briefdescription>
         <detaileddescription>
@@ -48,6 +51,7 @@
         <definition>uint16_t CSTorqueModeParam::motor_rated_torque</definition>
         <argsstring></argsstring>
         <name>motor_rated_torque</name>
+        <qualifiedname>CSTorqueModeParam::motor_rated_torque</qualifiedname>
         <briefdescription>
         </briefdescription>
         <detaileddescription>
@@ -61,6 +65,7 @@
         <definition>uint32_t CSTorqueModeParam::max_gear_input_speed</definition>
         <argsstring></argsstring>
         <name>max_gear_input_speed</name>
+        <qualifiedname>CSTorqueModeParam::max_gear_input_speed</qualifiedname>
         <briefdescription>
         </briefdescription>
         <detaileddescription>
@@ -74,6 +79,7 @@
         <definition>uint32_t CSTorqueModeParam::profile_vel</definition>
         <argsstring></argsstring>
         <name>profile_vel</name>
+        <qualifiedname>CSTorqueModeParam::profile_vel</qualifiedname>
         <briefdescription>
         </briefdescription>
         <detaileddescription>
@@ -87,6 +93,7 @@
         <definition>uint32_t CSTorqueModeParam::profile_acc</definition>
         <argsstring></argsstring>
         <name>profile_acc</name>
+        <qualifiedname>CSTorqueModeParam::profile_acc</qualifiedname>
         <briefdescription>
         </briefdescription>
         <detaileddescription>
@@ -100,6 +107,7 @@
         <definition>uint32_t CSTorqueModeParam::profile_dec</definition>
         <argsstring></argsstring>
         <name>profile_dec</name>
+        <qualifiedname>CSTorqueModeParam::profile_dec</qualifiedname>
         <briefdescription>
         </briefdescription>
         <detaileddescription>
@@ -113,6 +121,7 @@
         <definition>uint32_t CSTorqueModeParam::max_profile_vel</definition>
         <argsstring></argsstring>
         <name>max_profile_vel</name>
+        <qualifiedname>CSTorqueModeParam::max_profile_vel</qualifiedname>
         <briefdescription>
         </briefdescription>
         <detaileddescription>
@@ -126,6 +135,7 @@
         <definition>uint32_t CSTorqueModeParam::quick_stop_dec</definition>
         <argsstring></argsstring>
         <name>quick_stop_dec</name>
+        <qualifiedname>CSTorqueModeParam::quick_stop_dec</qualifiedname>
         <briefdescription>
         </briefdescription>
         <detaileddescription>
@@ -139,6 +149,7 @@
         <definition>uint32_t CSTorqueModeParam::interpolation_time_period</definition>
         <argsstring></argsstring>
         <name>interpolation_time_period</name>
+        <qualifiedname>CSTorqueModeParam::interpolation_time_period</qualifiedname>
         <briefdescription>
         </briefdescription>
         <detaileddescription>
@@ -153,7 +164,7 @@
     </briefdescription>
     <detaileddescription>
     </detaileddescription>
-    <location file="include/ecat_globals.hpp" line="419" column="1" bodyfile="include/ecat_globals.hpp" bodystart="418" bodyend="431"/>
+    <location file="include/ecat_globals.hpp" line="418" column="1" bodyfile="include/ecat_globals.hpp" bodystart="419" bodyend="431"/>
     <listofallmembers>
       <member refid="structCSTorqueModeParam_1a4e21916f0e661a3da21f00fa5f084a81" prot="public" virt="non-virtual"><scope>CSTorqueModeParam</scope><name>interpolation_time_period</name></member>
       <member refid="structCSTorqueModeParam_1af38648d320e4ff0f5971ad1d9de39455" prot="public" virt="non-virtual"><scope>CSTorqueModeParam</scope><name>max_gear_input_speed</name></member>

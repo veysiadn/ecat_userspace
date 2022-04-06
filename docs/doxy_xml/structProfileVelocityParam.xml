@@ -1,5 +1,5 @@
 <?xml version='1.0' encoding='UTF-8' standalone='no'?>
-<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.17">
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.3" xml:lang="en-US">
   <compounddef id="structProfileVelocityParam" kind="struct" language="C++" prot="public">
     <compoundname>ProfileVelocityParam</compoundname>
     <includes refid="ecat__globals_8hpp" local="no">ecat_globals.hpp</includes>
@@ -9,6 +9,7 @@
         <definition>uint32_t ProfileVelocityParam::max_profile_vel</definition>
         <argsstring></argsstring>
         <name>max_profile_vel</name>
+        <qualifiedname>ProfileVelocityParam::max_profile_vel</qualifiedname>
         <briefdescription>
         </briefdescription>
         <detaileddescription>
@@ -22,6 +23,7 @@
         <definition>uint32_t ProfileVelocityParam::quick_stop_dec</definition>
         <argsstring></argsstring>
         <name>quick_stop_dec</name>
+        <qualifiedname>ProfileVelocityParam::quick_stop_dec</qualifiedname>
         <briefdescription>
         </briefdescription>
         <detaileddescription>
@@ -35,6 +37,7 @@
         <definition>uint32_t ProfileVelocityParam::profile_acc</definition>
         <argsstring></argsstring>
         <name>profile_acc</name>
+        <qualifiedname>ProfileVelocityParam::profile_acc</qualifiedname>
         <briefdescription>
         </briefdescription>
         <detaileddescription>
@@ -48,6 +51,7 @@
         <definition>uint32_t ProfileVelocityParam::profile_dec</definition>
         <argsstring></argsstring>
         <name>profile_dec</name>
+        <qualifiedname>ProfileVelocityParam::profile_dec</qualifiedname>
         <briefdescription>
         </briefdescription>
         <detaileddescription>
@@ -61,6 +65,7 @@
         <definition>uint16_t ProfileVelocityParam::motion_profile_type</definition>
         <argsstring></argsstring>
         <name>motion_profile_type</name>
+        <qualifiedname>ProfileVelocityParam::motion_profile_type</qualifiedname>
         <briefdescription>
         </briefdescription>
         <detaileddescription>
@@ -75,7 +80,7 @@
     </briefdescription>
     <detaileddescription>
     </detaileddescription>
-    <location file="include/ecat_globals.hpp" line="451" column="1" bodyfile="include/ecat_globals.hpp" bodystart="450" bodyend="457"/>
+    <location file="include/ecat_globals.hpp" line="450" column="1" bodyfile="include/ecat_globals.hpp" bodystart="451" bodyend="457"/>
     <listofallmembers>
       <member refid="structProfileVelocityParam_1a8bf3ab4ee7ccdb626a1ceff8b0ce7fba" prot="public" virt="non-virtual"><scope>ProfileVelocityParam</scope><name>max_profile_vel</name></member>
       <member refid="structProfileVelocityParam_1a2a981f1b49bd7c3dbaa080d857897947" prot="public" virt="non-virtual"><scope>ProfileVelocityParam</scope><name>motion_profile_type</name></member>

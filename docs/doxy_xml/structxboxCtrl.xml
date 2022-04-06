@@ -1,5 +1,5 @@
 <?xml version='1.0' encoding='UTF-8' standalone='no'?>
-<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.17">
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.3" xml:lang="en-US">
   <compounddef id="structxboxCtrl" kind="struct" language="C++" prot="public">
     <compoundname>xboxCtrl</compoundname>
     <includes refid="xboxController_8hpp" local="no">xboxController.hpp</includes>
@@ -9,6 +9,7 @@
         <definition>int xboxCtrl::numOfAxis</definition>
         <argsstring></argsstring>
         <name>numOfAxis</name>
+        <qualifiedname>xboxCtrl::numOfAxis</qualifiedname>
         <briefdescription>
         </briefdescription>
         <detaileddescription>
@@ -22,6 +23,7 @@
         <definition>int xboxCtrl::numOfButtons</definition>
         <argsstring></argsstring>
         <name>numOfButtons</name>
+        <qualifiedname>xboxCtrl::numOfButtons</qualifiedname>
         <briefdescription>
         </briefdescription>
         <detaileddescription>
@@ -35,6 +37,7 @@
         <definition>char xboxCtrl::identifier[IDENTIFIER_SIZE]</definition>
         <argsstring>[IDENTIFIER_SIZE]</argsstring>
         <name>identifier</name>
+        <qualifiedname>xboxCtrl::identifier</qualifiedname>
         <briefdescription>
         </briefdescription>
         <detaileddescription>
@@ -48,6 +51,7 @@
         <definition>int xboxCtrl::stk_LeftX</definition>
         <argsstring></argsstring>
         <name>stk_LeftX</name>
+        <qualifiedname>xboxCtrl::stk_LeftX</qualifiedname>
         <briefdescription>
         </briefdescription>
         <detaileddescription>
@@ -61,6 +65,7 @@
         <definition>int xboxCtrl::stk_LeftY</definition>
         <argsstring></argsstring>
         <name>stk_LeftY</name>
+        <qualifiedname>xboxCtrl::stk_LeftY</qualifiedname>
         <briefdescription>
         </briefdescription>
         <detaileddescription>
@@ -74,6 +79,7 @@
         <definition>int xboxCtrl::stk_RightX</definition>
         <argsstring></argsstring>
         <name>stk_RightX</name>
+        <qualifiedname>xboxCtrl::stk_RightX</qualifiedname>
         <briefdescription>
         </briefdescription>
         <detaileddescription>
@@ -87,6 +93,7 @@
         <definition>int xboxCtrl::stk_RightY</definition>
         <argsstring></argsstring>
         <name>stk_RightY</name>
+        <qualifiedname>xboxCtrl::stk_RightY</qualifiedname>
         <briefdescription>
         </briefdescription>
         <detaileddescription>
@@ -100,6 +107,7 @@
         <definition>int xboxCtrl::stk_crossFB</definition>
         <argsstring></argsstring>
         <name>stk_crossFB</name>
+        <qualifiedname>xboxCtrl::stk_crossFB</qualifiedname>
         <briefdescription>
         </briefdescription>
         <detaileddescription>
@@ -113,6 +121,7 @@
         <definition>int xboxCtrl::stk_crossLR</definition>
         <argsstring></argsstring>
         <name>stk_crossLR</name>
+        <qualifiedname>xboxCtrl::stk_crossLR</qualifiedname>
         <briefdescription>
         </briefdescription>
         <detaileddescription>
@@ -126,6 +135,7 @@
         <definition>int xboxCtrl::stk_LeftTop</definition>
         <argsstring></argsstring>
         <name>stk_LeftTop</name>
+        <qualifiedname>xboxCtrl::stk_LeftTop</qualifiedname>
         <briefdescription>
         </briefdescription>
         <detaileddescription>
@@ -139,6 +149,7 @@
         <definition>int xboxCtrl::stk_RightTop</definition>
         <argsstring></argsstring>
         <name>stk_RightTop</name>
+        <qualifiedname>xboxCtrl::stk_RightTop</qualifiedname>
         <briefdescription>
         </briefdescription>
         <detaileddescription>
@@ -152,6 +163,7 @@
         <definition>int xboxCtrl::btn_back</definition>
         <argsstring></argsstring>
         <name>btn_back</name>
+        <qualifiedname>xboxCtrl::btn_back</qualifiedname>
         <briefdescription>
         </briefdescription>
         <detaileddescription>
@@ -165,6 +177,7 @@
         <definition>int xboxCtrl::btn_start</definition>
         <argsstring></argsstring>
         <name>btn_start</name>
+        <qualifiedname>xboxCtrl::btn_start</qualifiedname>
         <briefdescription>
         </briefdescription>
         <detaileddescription>
@@ -178,6 +191,7 @@
         <definition>int xboxCtrl::btn_leftStk</definition>
         <argsstring></argsstring>
         <name>btn_leftStk</name>
+        <qualifiedname>xboxCtrl::btn_leftStk</qualifiedname>
         <briefdescription>
         </briefdescription>
         <detaileddescription>
@@ -191,6 +205,7 @@
         <definition>int xboxCtrl::btn_rightStk</definition>
         <argsstring></argsstring>
         <name>btn_rightStk</name>
+        <qualifiedname>xboxCtrl::btn_rightStk</qualifiedname>
         <briefdescription>
         </briefdescription>
         <detaileddescription>
@@ -204,6 +219,7 @@
         <definition>int xboxCtrl::btn_A</definition>
         <argsstring></argsstring>
         <name>btn_A</name>
+        <qualifiedname>xboxCtrl::btn_A</qualifiedname>
         <briefdescription>
         </briefdescription>
         <detaileddescription>
@@ -217,6 +233,7 @@
         <definition>int xboxCtrl::btn_B</definition>
         <argsstring></argsstring>
         <name>btn_B</name>
+        <qualifiedname>xboxCtrl::btn_B</qualifiedname>
         <briefdescription>
         </briefdescription>
         <detaileddescription>
@@ -230,6 +247,7 @@
         <definition>int xboxCtrl::btn_X</definition>
         <argsstring></argsstring>
         <name>btn_X</name>
+        <qualifiedname>xboxCtrl::btn_X</qualifiedname>
         <briefdescription>
         </briefdescription>
         <detaileddescription>
@@ -243,6 +261,7 @@
         <definition>int xboxCtrl::btn_Y</definition>
         <argsstring></argsstring>
         <name>btn_Y</name>
+        <qualifiedname>xboxCtrl::btn_Y</qualifiedname>
         <briefdescription>
         </briefdescription>
         <detaileddescription>
@@ -256,6 +275,7 @@
         <definition>int xboxCtrl::btn_xbox</definition>
         <argsstring></argsstring>
         <name>btn_xbox</name>
+        <qualifiedname>xboxCtrl::btn_xbox</qualifiedname>
         <briefdescription>
         </briefdescription>
         <detaileddescription>
@@ -269,6 +289,7 @@
         <definition>int xboxCtrl::btn_leftTop</definition>
         <argsstring></argsstring>
         <name>btn_leftTop</name>
+        <qualifiedname>xboxCtrl::btn_leftTop</qualifiedname>
         <briefdescription>
         </briefdescription>
         <detaileddescription>
@@ -282,6 +303,7 @@
         <definition>int xboxCtrl::btn_rightTop</definition>
         <argsstring></argsstring>
         <name>btn_rightTop</name>
+        <qualifiedname>xboxCtrl::btn_rightTop</qualifiedname>
         <briefdescription>
         </briefdescription>
         <detaileddescription>
@@ -295,7 +317,7 @@
     </briefdescription>
     <detaileddescription>
     </detaileddescription>
-    <location file="include/xboxController.hpp" line="86" column="15" bodyfile="include/xboxController.hpp" bodystart="86" bodyend="109"/>
+    <location file="include/xboxController.hpp" line="86" column="1" bodyfile="include/xboxController.hpp" bodystart="86" bodyend="109"/>
     <listofallmembers>
       <member refid="structxboxCtrl_1a52832e3acd3c3e0c86f219fbabba8f44" prot="public" virt="non-virtual"><scope>xboxCtrl</scope><name>btn_A</name></member>
       <member refid="structxboxCtrl_1aa522c3ed133f1458d171e2fd3a5ac811" prot="public" virt="non-virtual"><scope>xboxCtrl</scope><name>btn_B</name></member>

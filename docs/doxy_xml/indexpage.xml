@@ -1,12 +1,12 @@
 <?xml version='1.0' encoding='UTF-8' standalone='no'?>
-<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.17">
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.3" xml:lang="en-US">
   <compounddef id="indexpage" kind="page">
     <compoundname>index</compoundname>
     <title>Welcome to EtherCAT user space application by Veysi ADIN &amp; Chunwoo Kim.</title>
     <briefdescription>
     </briefdescription>
     <detaileddescription>
-<para>This repository contains EtherCAT based control software using CoE and CiA402 standard to control motors and receive sensor data, by wrapping IgH EtherCAT library functions. This implementation can be used with any robotic system with small modifications.Contains EtherCAT real-time thread with priority of 98. And USB communication with Xbox <ref refid="structController" kindref="compound">Controller</ref>.</para>
+<para><anchor id="index_1md_README"/> This repository contains EtherCAT based control software using CoE and CiA402 standard to control motors and receive sensor data, by wrapping IgH EtherCAT library functions. This implementation can be used with any robotic system with small modifications.Contains EtherCAT real-time thread with priority of 98. And USB communication with Xbox <ref refid="structController" kindref="compound">Controller</ref>.</para>
 <para>Please check guides, links and documentations before installation, or using this control software.</para>
 <sect1 id="index_1autotoc_md1">
 <title>Guides</title>
@@ -37,7 +37,7 @@
 <codeline><highlight class="normal">cmake<sp/>.</highlight></codeline>
 <codeline><highlight class="normal">make</highlight></codeline>
 <codeline><highlight class="normal">sudo<sp/>./ecat_node</highlight></codeline>
-</programlisting></para>
+</programlisting> </para>
 <sect3 id="index_1autotoc_md4">
 <title>Keep in mind that you can change and tinker with the program, don&apos;t forget to make changes on Makefile for customization, additionally, you can check &quot;compile.txt&quot; file.</title>
 </sect3>
@@ -46,5 +46,6 @@
 </sect3>
 </sect1>
     </detaileddescription>
+    <location file="README.md"/>
   </compounddef>
 </doxygen>

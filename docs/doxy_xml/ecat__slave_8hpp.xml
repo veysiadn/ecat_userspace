@@ -1,60 +1,11 @@
 <?xml version='1.0' encoding='UTF-8' standalone='no'?>
-<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.17">
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.3" xml:lang="en-US">
   <compounddef id="ecat__slave_8hpp" kind="file" language="C++">
     <compoundname>ecat_slave.hpp</compoundname>
     <includes refid="ecat__globals_8hpp" local="yes">ecat_globals.hpp</includes>
-    <includedby refid="ecat__slave_8cpp" local="yes">src/ecat_slave.cpp</includedby>
     <includedby refid="ecat__node_8hpp" local="yes">include/ecat_node.hpp</includedby>
+    <includedby refid="ecat__slave_8cpp" local="yes">src/ecat_slave.cpp</includedby>
     <incdepgraph>
-      <node id="17">
-        <label>sys/mman.h</label>
-      </node>
-      <node id="6">
-        <label>stdlib.h</label>
-      </node>
-      <node id="8">
-        <label>errno.h</label>
-      </node>
-      <node id="18">
-        <label>malloc.h</label>
-      </node>
-      <node id="5">
-        <label>limits.h</label>
-      </node>
-      <node id="12">
-        <label>sys/resource.h</label>
-      </node>
-      <node id="24">
-        <label>object_dictionary.hpp</label>
-        <link refid="object__dictionary_8hpp"/>
-      </node>
-      <node id="7">
-        <label>pthread.h</label>
-      </node>
-      <node id="14">
-        <label>sys/types.h</label>
-      </node>
-      <node id="1">
-        <label>include/ecat_slave.hpp</label>
-        <link refid="ecat__slave_8hpp"/>
-        <childnode refid="2" relation="include">
-        </childnode>
-      </node>
-      <node id="11">
-        <label>string.h</label>
-      </node>
-      <node id="15">
-        <label>unistd.h</label>
-      </node>
-      <node id="22">
-        <label>vector</label>
-      </node>
-      <node id="9">
-        <label>signal.h</label>
-      </node>
-      <node id="16">
-        <label>time.h</label>
-      </node>
       <node id="2">
         <label>ecat_globals.hpp</label>
         <link refid="ecat__globals_8hpp"/>
@@ -103,73 +54,122 @@
         <childnode refid="24" relation="include">
         </childnode>
       </node>
-      <node id="13">
-        <label>sys/time.h</label>
+      <node id="1">
+        <label>include/ecat_slave.hpp</label>
+        <link refid="ecat__slave_8hpp"/>
+        <childnode refid="2" relation="include">
+        </childnode>
       </node>
-      <node id="3">
-        <label>iostream</label>
-      </node>
-      <node id="23">
-        <label>ecrt.h</label>
+      <node id="24">
+        <label>object_dictionary.hpp</label>
+        <link refid="object__dictionary_8hpp"/>
       </node>
       <node id="20">
         <label>chrono</label>
       </node>
-      <node id="19">
-        <label>sched.h</label>
-      </node>
-      <node id="10">
-        <label>stdio.h</label>
-      </node>
       <node id="4">
         <label>cstring</label>
+      </node>
+      <node id="23">
+        <label>ecrt.h</label>
+      </node>
+      <node id="8">
+        <label>errno.h</label>
+      </node>
+      <node id="3">
+        <label>iostream</label>
+      </node>
+      <node id="5">
+        <label>limits.h</label>
+      </node>
+      <node id="18">
+        <label>malloc.h</label>
       </node>
       <node id="21">
         <label>memory</label>
       </node>
+      <node id="7">
+        <label>pthread.h</label>
+      </node>
+      <node id="19">
+        <label>sched.h</label>
+      </node>
+      <node id="9">
+        <label>signal.h</label>
+      </node>
+      <node id="10">
+        <label>stdio.h</label>
+      </node>
+      <node id="6">
+        <label>stdlib.h</label>
+      </node>
+      <node id="11">
+        <label>string.h</label>
+      </node>
+      <node id="17">
+        <label>sys/mman.h</label>
+      </node>
+      <node id="12">
+        <label>sys/resource.h</label>
+      </node>
+      <node id="13">
+        <label>sys/time.h</label>
+      </node>
+      <node id="14">
+        <label>sys/types.h</label>
+      </node>
+      <node id="16">
+        <label>time.h</label>
+      </node>
+      <node id="15">
+        <label>unistd.h</label>
+      </node>
+      <node id="22">
+        <label>vector</label>
+      </node>
     </incdepgraph>
     <invincdepgraph>
-      <node id="7">
-        <label>src/ecat_lifecycle.cpp</label>
-        <link refid="ecat__lifecycle_8cpp"/>
-      </node>
-      <node id="5">
-        <label>src/main.cpp</label>
-        <link refid="main_8cpp"/>
+      <node id="3">
+        <label>include/ecat_lifecycle.hpp</label>
+        <link refid="ecat__lifecycle_8hpp"/>
+        <childnode refid="4" relation="include">
+        </childnode>
+        <childnode refid="5" relation="include">
+        </childnode>
       </node>
       <node id="2">
-        <label>src/ecat_slave.cpp</label>
-        <link refid="ecat__slave_8cpp"/>
+        <label>include/ecat_node.hpp</label>
+        <link refid="ecat__node_8hpp"/>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="6" relation="include">
+        </childnode>
+        <childnode refid="5" relation="include">
+        </childnode>
       </node>
       <node id="1">
         <label>include/ecat_slave.hpp</label>
         <link refid="ecat__slave_8hpp"/>
         <childnode refid="2" relation="include">
         </childnode>
-        <childnode refid="3" relation="include">
-        </childnode>
-      </node>
-      <node id="3">
-        <label>include/ecat_node.hpp</label>
-        <link refid="ecat__node_8hpp"/>
-        <childnode refid="4" relation="include">
-        </childnode>
-        <childnode refid="5" relation="include">
-        </childnode>
-        <childnode refid="6" relation="include">
+        <childnode refid="7" relation="include">
         </childnode>
       </node>
       <node id="4">
+        <label>src/ecat_lifecycle.cpp</label>
+        <link refid="ecat__lifecycle_8cpp"/>
+      </node>
+      <node id="6">
         <label>src/ecat_node.cpp</label>
         <link refid="ecat__node_8cpp"/>
       </node>
-      <node id="6">
-        <label>include/ecat_lifecycle.hpp</label>
-        <link refid="ecat__lifecycle_8hpp"/>
-        <childnode refid="7" relation="include">
-        </childnode>
-        <childnode refid="5" relation="include">
-        </childnode>
+      <node id="7">
+        <label>src/ecat_slave.cpp</label>
+        <link refid="ecat__slave_8cpp"/>
+      </node>
+      <node id="5">
+        <label>src/main.cpp</label>
+        <link refid="main_8cpp"/>
       </node>
     </invincdepgraph>
     <innerclass refid="classEthercatSlave" prot="public">EthercatSlave</innerclass>
@@ -235,26 +235,26 @@
 <codeline lineno="62"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="classEthercatSlave_1a2a0e089503f81440185e983401d1bbba" kindref="member">CheckSlaveConfigState</ref>();</highlight></codeline>
 <codeline lineno="63"><highlight class="normal"></highlight></codeline>
 <codeline lineno="64"><highlight class="normal"><sp/></highlight></codeline>
-<codeline lineno="66"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/>uint32_t<sp/><sp/><sp/><ref refid="classEthercatSlave_1a6f2a027b6738cc31de9613305f1b8532" kindref="member">kSync0_shift_</ref><sp/>=<sp/>0;</highlight></codeline>
+<codeline lineno="66" refid="classEthercatSlave_1aacda7e069d00c22feed8c929f78a1a6c" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/>uint32_t<sp/><sp/><sp/><ref refid="classEthercatSlave_1aacda7e069d00c22feed8c929f78a1a6c" kindref="member">kSync0_shift_</ref><sp/>=<sp/>0;</highlight></codeline>
 <codeline lineno="67"><highlight class="normal"></highlight></codeline>
-<codeline lineno="69"><highlight class="normal"><sp/><sp/><sp/><sp/>ec_slave_config_t<sp/><sp/><sp/><sp/><sp/><sp/><sp/>*<sp/><ref refid="classEthercatSlave_1aa2480c6d91ce19bf6c5a58b3207fa498" kindref="member">slave_config_</ref><sp/>;</highlight></codeline>
+<codeline lineno="69" refid="classEthercatSlave_1aa2480c6d91ce19bf6c5a58b3207fa498" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>ec_slave_config_t<sp/><sp/><sp/><sp/><sp/><sp/><sp/>*<sp/><ref refid="classEthercatSlave_1aa2480c6d91ce19bf6c5a58b3207fa498" kindref="member">slave_config_</ref><sp/>;</highlight></codeline>
 <codeline lineno="70"><highlight class="normal"></highlight></codeline>
-<codeline lineno="72"><highlight class="normal"><sp/><sp/><sp/><sp/>ec_slave_config_state_t<sp/><sp/><ref refid="classEthercatSlave_1aca431a49f052ab63631b6936e53f0457" kindref="member">slave_config_state_</ref><sp/>;</highlight></codeline>
+<codeline lineno="72" refid="classEthercatSlave_1aca431a49f052ab63631b6936e53f0457" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>ec_slave_config_state_t<sp/><sp/><ref refid="classEthercatSlave_1aca431a49f052ab63631b6936e53f0457" kindref="member">slave_config_state_</ref><sp/>;</highlight></codeline>
 <codeline lineno="73"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight></codeline>
-<codeline lineno="75"><highlight class="normal"><sp/><sp/><sp/><sp/>ec_pdo_info_t<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>*<sp/><ref refid="classEthercatSlave_1ac5c55d28338a4ec4d3d5d35917b20cdd" kindref="member">slave_pdo_info_</ref><sp/>;</highlight></codeline>
-<codeline lineno="77"><highlight class="normal"><sp/><sp/><sp/><sp/>ec_pdo_entry_info_t<sp/><sp/><sp/><sp/>*<sp/><ref refid="classEthercatSlave_1a58cf8fe477af002374286aacc2c1fba6" kindref="member">slave_pdo_entry_info_</ref>;</highlight></codeline>
-<codeline lineno="79"><highlight class="normal"><sp/><sp/><sp/><sp/>ec_sync_info_t<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>*<sp/><ref refid="classEthercatSlave_1af1119fff25fd80bfa7faa44ffa8238df" kindref="member">slave_sync_info_</ref>;</highlight></codeline>
-<codeline lineno="81"><highlight class="normal"><sp/><sp/><sp/><sp/>ec_pdo_entry_reg_t<sp/><sp/><sp/><sp/><sp/>*<sp/><ref refid="classEthercatSlave_1ac3a8a75c23e09dd498d649568cff1563" kindref="member">slave_pdo_entry_reg_</ref><sp/>;</highlight></codeline>
-<codeline lineno="83"><highlight class="normal"><sp/><sp/><sp/><sp/>uint8_t<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>*<sp/><ref refid="classEthercatSlave_1aea2c7dcf075da6a02e90ca31e020f7b7" kindref="member">slave_pdo_domain_</ref><sp/>;</highlight></codeline>
+<codeline lineno="75" refid="classEthercatSlave_1ac5c55d28338a4ec4d3d5d35917b20cdd" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>ec_pdo_info_t<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>*<sp/><ref refid="classEthercatSlave_1ac5c55d28338a4ec4d3d5d35917b20cdd" kindref="member">slave_pdo_info_</ref><sp/>;</highlight></codeline>
+<codeline lineno="77" refid="classEthercatSlave_1a58cf8fe477af002374286aacc2c1fba6" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>ec_pdo_entry_info_t<sp/><sp/><sp/><sp/>*<sp/><ref refid="classEthercatSlave_1a58cf8fe477af002374286aacc2c1fba6" kindref="member">slave_pdo_entry_info_</ref>;</highlight></codeline>
+<codeline lineno="79" refid="classEthercatSlave_1af1119fff25fd80bfa7faa44ffa8238df" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>ec_sync_info_t<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>*<sp/><ref refid="classEthercatSlave_1af1119fff25fd80bfa7faa44ffa8238df" kindref="member">slave_sync_info_</ref>;</highlight></codeline>
+<codeline lineno="81" refid="classEthercatSlave_1ac3a8a75c23e09dd498d649568cff1563" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>ec_pdo_entry_reg_t<sp/><sp/><sp/><sp/><sp/>*<sp/><ref refid="classEthercatSlave_1ac3a8a75c23e09dd498d649568cff1563" kindref="member">slave_pdo_entry_reg_</ref><sp/>;</highlight></codeline>
+<codeline lineno="83" refid="classEthercatSlave_1aea2c7dcf075da6a02e90ca31e020f7b7" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>uint8_t<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>*<sp/><ref refid="classEthercatSlave_1aea2c7dcf075da6a02e90ca31e020f7b7" kindref="member">slave_pdo_domain_</ref><sp/>;</highlight></codeline>
 <codeline lineno="84"><highlight class="normal"></highlight></codeline>
-<codeline lineno="86"><highlight class="normal"><sp/><sp/><sp/><sp/>int32_t<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classEthercatSlave_1acc991db772f2c27736a75b78d2dee912" kindref="member">motor_state_</ref><sp/>;</highlight></codeline>
-<codeline lineno="92"><highlight class="normal"><sp/><sp/><sp/><sp/>ec_slave_info_t<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classEthercatSlave_1a986287a9af930e49b4b3bf5e7227ac18" kindref="member">slave_info_</ref>;</highlight></codeline>
-<codeline lineno="94"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="structOffsetPDO" kindref="compound">OffsetPDO</ref><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classEthercatSlave_1a0a5355318e90e91ac90668a250872f53" kindref="member">offset_</ref><sp/>;</highlight></codeline>
-<codeline lineno="96"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="structDataReceived" kindref="compound">DataReceived</ref><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classEthercatSlave_1a5e8268d183d282583f6194c1574c1e96" kindref="member">data_</ref><sp/>;</highlight></codeline>
-<codeline lineno="98"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="structProfileVelocityParam" kindref="compound">ProfileVelocityParam</ref><sp/><sp/><sp/><sp/><ref refid="classEthercatSlave_1a2a26b98ad5fa0a57da0920e0f508ed8b" kindref="member">velocity_param_</ref><sp/>;</highlight></codeline>
-<codeline lineno="100"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="structProfilePosParam" kindref="compound">ProfilePosParam</ref><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classEthercatSlave_1a903b2d0f527e0f649cc208db76190e5b" kindref="member">position_param_</ref><sp/>;</highlight></codeline>
+<codeline lineno="86" refid="classEthercatSlave_1acc991db772f2c27736a75b78d2dee912" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>int32_t<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classEthercatSlave_1acc991db772f2c27736a75b78d2dee912" kindref="member">motor_state_</ref><sp/>;</highlight></codeline>
+<codeline lineno="92" refid="classEthercatSlave_1a986287a9af930e49b4b3bf5e7227ac18" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>ec_slave_info_t<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classEthercatSlave_1a986287a9af930e49b4b3bf5e7227ac18" kindref="member">slave_info_</ref>;</highlight></codeline>
+<codeline lineno="94" refid="classEthercatSlave_1a0a5355318e90e91ac90668a250872f53" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="structOffsetPDO" kindref="compound">OffsetPDO</ref><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classEthercatSlave_1a0a5355318e90e91ac90668a250872f53" kindref="member">offset_</ref><sp/>;</highlight></codeline>
+<codeline lineno="96" refid="classEthercatSlave_1a5e8268d183d282583f6194c1574c1e96" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="structDataReceived" kindref="compound">DataReceived</ref><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classEthercatSlave_1a5e8268d183d282583f6194c1574c1e96" kindref="member">data_</ref><sp/>;</highlight></codeline>
+<codeline lineno="98" refid="classEthercatSlave_1a2a26b98ad5fa0a57da0920e0f508ed8b" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="structProfileVelocityParam" kindref="compound">ProfileVelocityParam</ref><sp/><sp/><sp/><sp/><ref refid="classEthercatSlave_1a2a26b98ad5fa0a57da0920e0f508ed8b" kindref="member">velocity_param_</ref><sp/>;</highlight></codeline>
+<codeline lineno="100" refid="classEthercatSlave_1a903b2d0f527e0f649cc208db76190e5b" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="structProfilePosParam" kindref="compound">ProfilePosParam</ref><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classEthercatSlave_1a903b2d0f527e0f649cc208db76190e5b" kindref="member">position_param_</ref><sp/>;</highlight></codeline>
 <codeline lineno="101"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>Slave<sp/>homing<sp/>parameters.<sp/></highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="102"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="structHomingParam" kindref="compound">HomingParam</ref><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classEthercatSlave_1a0339be5945bb3d1857a7ed083161ab89" kindref="member">homing_param_</ref><sp/>;</highlight></codeline>
+<codeline lineno="102" refid="classEthercatSlave_1a0339be5945bb3d1857a7ed083161ab89" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="structHomingParam" kindref="compound">HomingParam</ref><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classEthercatSlave_1a0339be5945bb3d1857a7ed083161ab89" kindref="member">homing_param_</ref><sp/>;</highlight></codeline>
 <codeline lineno="103"><highlight class="normal"></highlight></codeline>
 <codeline lineno="104"><highlight class="normal">};</highlight><highlight class="comment">//<sp/>EthercatSlave<sp/>class</highlight></codeline>
     </programlisting>

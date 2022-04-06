@@ -2,10 +2,10 @@ var dir_d44c64559bbebec7f509842c48db8b23 =
 [
     [ "ecat_globals.hpp", "ecat__globals_8hpp.html", "ecat__globals_8hpp" ],
     [ "ecat_lifecycle.hpp", "ecat__lifecycle_8hpp.html", [
-      [ "EthercatLifeCycle", "classEthercatLifeCycleNode_1_1EthercatLifeCycle.html", "classEthercatLifeCycleNode_1_1EthercatLifeCycle" ]
+      [ "EthercatLifeCycleNode::EthercatLifeCycle", "classEthercatLifeCycleNode_1_1EthercatLifeCycle.html", "classEthercatLifeCycleNode_1_1EthercatLifeCycle" ]
     ] ],
     [ "ecat_node.hpp", "ecat__node_8hpp.html", [
-      [ "EthercatNode", "classEthercatCommunication_1_1EthercatNode.html", "classEthercatCommunication_1_1EthercatNode" ]
+      [ "EthercatCommunication::EthercatNode", "classEthercatCommunication_1_1EthercatNode.html", "classEthercatCommunication_1_1EthercatNode" ]
     ] ],
     [ "ecat_slave.hpp", "ecat__slave_8hpp.html", [
       [ "EthercatSlave", "classEthercatSlave.html", "classEthercatSlave" ]

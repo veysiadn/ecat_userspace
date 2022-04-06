@@ -1,5 +1,5 @@
 <?xml version='1.0' encoding='UTF-8' standalone='no'?>
-<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.17">
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.3" xml:lang="en-US">
   <compounddef id="classXboxController" kind="class" language="C++" prot="public">
     <compoundname>XboxController</compoundname>
     <includes refid="xboxController_8hpp" local="no">xboxController.hpp</includes>
@@ -9,19 +9,21 @@
         <definition>struct js_event XboxController::js</definition>
         <argsstring></argsstring>
         <name>js</name>
+        <qualifiedname>XboxController::js</qualifiedname>
         <briefdescription>
         </briefdescription>
         <detaileddescription>
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/xboxController.hpp" line="108" column="5" bodyfile="include/xboxController.hpp" bodystart="113" bodyend="-1"/>
+        <location file="include/xboxController.hpp" line="113" column="15" bodyfile="include/xboxController.hpp" bodystart="113" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="classXboxController_1a404707135fe8b57f47a69f50696745eb" prot="public" static="no" mutable="no">
         <type>char</type>
         <definition>char XboxController::joysickIdentifier[IDENTIFIER_SIZE]</definition>
         <argsstring>[IDENTIFIER_SIZE]</argsstring>
         <name>joysickIdentifier</name>
+        <qualifiedname>XboxController::joysickIdentifier</qualifiedname>
         <briefdescription>
         </briefdescription>
         <detaileddescription>
@@ -35,6 +37,7 @@
         <definition>int XboxController::fd</definition>
         <argsstring></argsstring>
         <name>fd</name>
+        <qualifiedname>XboxController::fd</qualifiedname>
         <initializer>= -1</initializer>
         <briefdescription>
         </briefdescription>
@@ -49,6 +52,7 @@
         <definition>xboxCtrl* XboxController::xbox</definition>
         <argsstring></argsstring>
         <name>xbox</name>
+        <qualifiedname>XboxController::xbox</qualifiedname>
         <initializer>= NULL</initializer>
         <briefdescription>
         </briefdescription>
@@ -65,6 +69,7 @@
         <definition>int XboxController::initXboxController</definition>
         <argsstring>(char *dev)</argsstring>
         <name>initXboxController</name>
+        <qualifiedname>XboxController::initXboxController</qualifiedname>
         <param>
           <type>char *</type>
           <declname>dev</declname>
@@ -95,6 +100,7 @@
         <definition>void XboxController::deinitXboxController</definition>
         <argsstring>(xboxCtrl *xbox)</argsstring>
         <name>deinitXboxController</name>
+        <qualifiedname>XboxController::deinitXboxController</qualifiedname>
         <param>
           <type><ref refid="structxboxCtrl" kindref="compound">xboxCtrl</ref> *</type>
           <declname>xbox</declname>
@@ -123,6 +129,7 @@
         <definition>xboxCtrl * XboxController::getXboxDataStruct</definition>
         <argsstring>(void)</argsstring>
         <name>getXboxDataStruct</name>
+        <qualifiedname>XboxController::getXboxDataStruct</qualifiedname>
         <param>
           <type>void</type>
         </param>
@@ -143,6 +150,7 @@
         <definition>void XboxController::readXboxControllerInformation</definition>
         <argsstring>(xboxCtrl *xbox)</argsstring>
         <name>readXboxControllerInformation</name>
+        <qualifiedname>XboxController::readXboxControllerInformation</qualifiedname>
         <param>
           <type><ref refid="structxboxCtrl" kindref="compound">xboxCtrl</ref> *</type>
           <declname>xbox</declname>
@@ -171,6 +179,7 @@
         <definition>void XboxController::readXboxData</definition>
         <argsstring>(xboxCtrl *xbox)</argsstring>
         <name>readXboxData</name>
+        <qualifiedname>XboxController::readXboxData</qualifiedname>
         <param>
           <type><ref refid="structxboxCtrl" kindref="compound">xboxCtrl</ref> *</type>
           <declname>xbox</declname>
@@ -199,6 +208,7 @@
         <definition>void XboxController::setXboxCtrlValue</definition>
         <argsstring>(xboxCtrl *xbox, struct js_event *js)</argsstring>
         <name>setXboxCtrlValue</name>
+        <qualifiedname>XboxController::setXboxCtrlValue</qualifiedname>
         <param>
           <type><ref refid="structxboxCtrl" kindref="compound">xboxCtrl</ref> *</type>
           <declname>xbox</declname>
@@ -239,6 +249,7 @@
         <definition>void XboxController::printXboxCtrlValues</definition>
         <argsstring>(xboxCtrl *xbox)</argsstring>
         <name>printXboxCtrlValues</name>
+        <qualifiedname>XboxController::printXboxCtrlValues</qualifiedname>
         <param>
           <type><ref refid="structxboxCtrl" kindref="compound">xboxCtrl</ref> *</type>
           <declname>xbox</declname>
@@ -280,7 +291,7 @@
         <link refid="structxboxCtrl"/>
       </node>
     </collaborationgraph>
-    <location file="include/xboxController.hpp" line="111" column="21" bodyfile="include/xboxController.hpp" bodystart="111" bodyend="161"/>
+    <location file="include/xboxController.hpp" line="111" column="1" bodyfile="include/xboxController.hpp" bodystart="111" bodyend="161"/>
     <listofallmembers>
       <member refid="classXboxController_1abee6e76f5be4fadf11d9baddb09e9742" prot="public" virt="non-virtual"><scope>XboxController</scope><name>deinitXboxController</name></member>
       <member refid="classXboxController_1a3c9b73bc3d34c01124d39f8106fb1797" prot="public" virt="non-virtual"><scope>XboxController</scope><name>fd</name></member>

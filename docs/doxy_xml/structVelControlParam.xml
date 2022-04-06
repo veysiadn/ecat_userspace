@@ -1,5 +1,5 @@
 <?xml version='1.0' encoding='UTF-8' standalone='no'?>
-<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.17">
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.3" xml:lang="en-US">
   <compounddef id="structVelControlParam" kind="struct" language="C++" prot="public">
     <compoundname>VelControlParam</compoundname>
     <includes refid="ecat__globals_8hpp" local="no">ecat_globals.hpp</includes>
@@ -9,6 +9,7 @@
         <definition>uint32_t VelControlParam::Pgain</definition>
         <argsstring></argsstring>
         <name>Pgain</name>
+        <qualifiedname>VelControlParam::Pgain</qualifiedname>
         <initializer>= 20000</initializer>
         <briefdescription>
         </briefdescription>
@@ -23,6 +24,7 @@
         <definition>uint32_t VelControlParam::Igain</definition>
         <argsstring></argsstring>
         <name>Igain</name>
+        <qualifiedname>VelControlParam::Igain</qualifiedname>
         <initializer>= 500000</initializer>
         <briefdescription>
         </briefdescription>
@@ -37,6 +39,7 @@
         <definition>uint32_t VelControlParam::FFVelgain</definition>
         <argsstring></argsstring>
         <name>FFVelgain</name>
+        <qualifiedname>VelControlParam::FFVelgain</qualifiedname>
         <initializer>= 0</initializer>
         <briefdescription>
         </briefdescription>
@@ -51,6 +54,7 @@
         <definition>uint32_t VelControlParam::FFAccgain</definition>
         <argsstring></argsstring>
         <name>FFAccgain</name>
+        <qualifiedname>VelControlParam::FFAccgain</qualifiedname>
         <initializer>= 0</initializer>
         <briefdescription>
         </briefdescription>
@@ -66,7 +70,7 @@
     </briefdescription>
     <detaileddescription>
     </detaileddescription>
-    <location file="include/ecat_globals.hpp" line="394" column="1" bodyfile="include/ecat_globals.hpp" bodystart="393" bodyend="399"/>
+    <location file="include/ecat_globals.hpp" line="393" column="2" bodyfile="include/ecat_globals.hpp" bodystart="394" bodyend="399"/>
     <listofallmembers>
       <member refid="structVelControlParam_1ad7848266bd2871549ea2a291d939c7ee" prot="public" virt="non-virtual"><scope>VelControlParam</scope><name>FFAccgain</name></member>
       <member refid="structVelControlParam_1ac63cf67ec8e498f1b7c2e73ef2b629a5" prot="public" virt="non-virtual"><scope>VelControlParam</scope><name>FFVelgain</name></member>

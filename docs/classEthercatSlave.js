@@ -5,7 +5,7 @@ var classEthercatSlave =
     [ "CheckSlaveConfigState", "classEthercatSlave.html#a2a0e089503f81440185e983401d1bbba", null ],
     [ "data_", "classEthercatSlave.html#a5e8268d183d282583f6194c1574c1e96", null ],
     [ "homing_param_", "classEthercatSlave.html#a0339be5945bb3d1857a7ed083161ab89", null ],
-    [ "kSync0_shift_", "classEthercatSlave.html#a6f2a027b6738cc31de9613305f1b8532", null ],
+    [ "kSync0_shift_", "classEthercatSlave.html#aacda7e069d00c22feed8c929f78a1a6c", null ],
     [ "motor_state_", "classEthercatSlave.html#acc991db772f2c27736a75b78d2dee912", null ],
     [ "offset_", "classEthercatSlave.html#a0a5355318e90e91ac90668a250872f53", null ],
     [ "position_param_", "classEthercatSlave.html#a903b2d0f527e0f649cc208db76190e5b", null ],

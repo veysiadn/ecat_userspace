@@ -26,7 +26,6 @@ var NAVTREE =
 [
   [ "EtherCAT Control Framework", "index.html", [
     [ "EtherCAT Control Software", "index.html", null ],
-    [ "Getting Started", "user", null ],
     [ "Namespaces", "namespaces.html", [
       [ "Namespace List", "namespaces.html", "namespaces_dup" ]
     ] ],

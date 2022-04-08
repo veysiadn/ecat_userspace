@@ -25,11 +25,7 @@
 var NAVTREE =
 [
   [ "EtherCAT Control Framework", "index.html", [
-    [ "Welcome to EtherCAT user space application by Veysi ADIN & Chunwoo Kim.", "index.html", [
-      [ "Guides", "index.html#autotoc_md1", null ],
-      [ "Prerequisites", "index.html#autotoc_md2", null ],
-      [ "Implementation", "index.html#autotoc_md3", null ]
-    ] ],
+    [ "EtherCAT Control Software", "index.html", null ],
     [ "Getting Started", "user", null ],
     [ "Namespaces", "namespaces.html", [
       [ "Namespace List", "namespaces.html", "namespaces_dup" ]
@@ -61,7 +57,7 @@ var NAVTREEINDEX =
 [
 "annotated.html",
 "ecat__globals_8hpp.html#a5d175b4708e9a88ebbc35372ca1818b7af34e262497cefee9f006225d255f0b02",
-"structCSPositionModeParam.html"
+"structCSPositionModeParam.html#a1f8700628509d4f620265db41a4d1412"
 ];
 
 var SYNCONMSG = 'click to disable panel synchronisation';

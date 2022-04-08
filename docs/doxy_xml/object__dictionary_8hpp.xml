@@ -1227,7 +1227,7 @@
 <codeline lineno="33"><highlight class="normal"></highlight><highlight class="comment">/*******************************************************************************</highlight></codeline>
 <codeline lineno="34"><highlight class="comment"><sp/>*<sp/>\file<sp/><sp/>object_dictionary.hpp</highlight></codeline>
 <codeline lineno="35"><highlight class="comment"><sp/>*<sp/>\brief<sp/>Contains<sp/>object<sp/>dictionary<sp/>and<sp/>state<sp/>machine<sp/>definitions<sp/>based<sp/>on<sp/>CIA402</highlight></codeline>
-<codeline lineno="36"><highlight class="comment"><sp/>*<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>Some<sp/>index<sp/>and<sp/>subindexes<sp/>may<sp/>be<sp/>specific<sp/>to<sp/>Maxon<sp/>EPOS4.</highlight></codeline>
+<codeline lineno="36"><highlight class="comment"><sp/>*<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>Some<sp/>index<sp/>and<sp/>subindexes<sp/>might<sp/>be<sp/>specific<sp/>to<sp/>Maxon<sp/>EPOS4.</highlight></codeline>
 <codeline lineno="37"><highlight class="comment"><sp/>*<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>Check<sp/>indexes<sp/>if<sp/>you&apos;re<sp/>using<sp/>different<sp/>slave.</highlight></codeline>
 <codeline lineno="38"><highlight class="comment"><sp/>*******************************************************************************/</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="39"><highlight class="normal"></highlight></codeline>

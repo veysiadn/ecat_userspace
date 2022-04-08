@@ -563,9 +563,10 @@
   <compound refid="ecat__slave_8cpp" kind="file"><name>ecat_slave.cpp</name>
   </compound>
   <compound refid="main_8cpp" kind="file"><name>main.cpp</name>
-    <member refid="main_8cpp_1a23878e83bdefb32fc2785c56265496de" kind="variable"><name>ecat_lifecycle_node</name></member>
-    <member refid="main_8cpp_1adfe90e1a94b18921c8a8ec76d94edbd4" kind="function"><name>signalHandler</name></member>
+    <member refid="main_8cpp_1ac46dc871d21886c3f0f9845ac514d389" kind="function"><name>signalHandler</name></member>
+    <member refid="main_8cpp_1a22aaa528e5044baf40590244eb94f2ce" kind="function"><name>SetRealTimeSettings</name></member>
     <member refid="main_8cpp_1a3c04138a5bfe5d72780bb7e82a18e627" kind="function"><name>main</name></member>
+    <member refid="main_8cpp_1adfe90e1a94b18921c8a8ec76d94edbd4" kind="function"><name>signalHandler</name></member>
   </compound>
   <compound refid="timing_8cpp" kind="file"><name>timing.cpp</name>
   </compound>

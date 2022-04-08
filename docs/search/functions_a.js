@@ -14,9 +14,10 @@ var searchData=
   ['setprofilepositionparametersall_11',['SetProfilePositionParametersAll',['../classEthercatCommunication_1_1EthercatNode.html#a67e154560b31cebc27431efc46d56b83',1,'EthercatCommunication::EthercatNode']]],
   ['setprofilevelocityparameters_12',['SetProfileVelocityParameters',['../classEthercatCommunication_1_1EthercatNode.html#a1ce7e6a7f9f707ff6d8feb8b79078219',1,'EthercatCommunication::EthercatNode']]],
   ['setprofilevelocityparametersall_13',['SetProfileVelocityParametersAll',['../classEthercatCommunication_1_1EthercatNode.html#ac0f1d24eb783d34c604f7a91ff5ba45c',1,'EthercatCommunication::EthercatNode']]],
-  ['setxboxctrlvalue_14',['setXboxCtrlValue',['../classXboxController.html#a3b29216bffbccaf0d945047487cf8bee',1,'XboxController']]],
-  ['shutdownethercatmaster_15',['ShutDownEthercatMaster',['../classEthercatCommunication_1_1EthercatNode.html#ace130837f0f23861d07f2d252960cac8',1,'EthercatCommunication::EthercatNode']]],
-  ['signalhandler_16',['signalHandler',['../main_8cpp.html#adfe90e1a94b18921c8a8ec76d94edbd4',1,'main.cpp']]],
-  ['startethercatcommunication_17',['StartEthercatCommunication',['../classEthercatLifeCycleNode_1_1EthercatLifeCycle.html#a2c5796d0f5f88a228c4b064d81a6b2f7',1,'EthercatLifeCycleNode::EthercatLifeCycle']]],
-  ['startpdoexchange_18',['StartPdoExchange',['../classEthercatLifeCycleNode_1_1EthercatLifeCycle.html#a52a7c57222fb8c896986fafc470d3bc3',1,'EthercatLifeCycleNode::EthercatLifeCycle']]]
+  ['setrealtimesettings_14',['SetRealTimeSettings',['../main_8cpp.html#a22aaa528e5044baf40590244eb94f2ce',1,'main.cpp']]],
+  ['setxboxctrlvalue_15',['setXboxCtrlValue',['../classXboxController.html#a3b29216bffbccaf0d945047487cf8bee',1,'XboxController']]],
+  ['shutdownethercatmaster_16',['ShutDownEthercatMaster',['../classEthercatCommunication_1_1EthercatNode.html#ace130837f0f23861d07f2d252960cac8',1,'EthercatCommunication::EthercatNode']]],
+  ['signalhandler_17',['signalHandler',['../main_8cpp.html#ac46dc871d21886c3f0f9845ac514d389',1,'signalHandler():&#160;main.cpp'],['../main_8cpp.html#adfe90e1a94b18921c8a8ec76d94edbd4',1,'signalHandler(int):&#160;main.cpp']]],
+  ['startethercatcommunication_18',['StartEthercatCommunication',['../classEthercatLifeCycleNode_1_1EthercatLifeCycle.html#a2c5796d0f5f88a228c4b064d81a6b2f7',1,'EthercatLifeCycleNode::EthercatLifeCycle']]],
+  ['startpdoexchange_19',['StartPdoExchange',['../classEthercatLifeCycleNode_1_1EthercatLifeCycle.html#a52a7c57222fb8c896986fafc470d3bc3',1,'EthercatLifeCycleNode::EthercatLifeCycle']]]
 ];

@@ -6,7 +6,7 @@
     <briefdescription>
     </briefdescription>
     <detaileddescription>
-<para><anchor id="index_1md_README"/> This repository contains EtherCAT based control software using CoE and CiA402 standard to control motors and receive sensor data, by wrapping IgH EtherCAT library functions. This implementation can be used with any robotic system with small modifications.Contains EtherCAT real-time thread with priority of 98. And USB communication with Xbox <ref refid="structController" kindref="compound">Controller</ref>.</para>
+<para><anchor id="index_1md_README"/> This repository contains EtherCAT based control software using CoE and CiA402 standard to control motors and receive sensor data, by wrapping IgH EtherCAT library functions. This implementation can be used with any robotic system with small modifications.Contains EtherCAT real-time thread with priority of 98. And USB communication with Xbox <ref refid="structController" kindref="compound">Controller</ref>. You can use different type of user input device as well with small modifications.</para>
 <para>Please check guides, links and documentations before installation, or using this control software.</para>
 <sect1 id="index_1autotoc_md1">
 <title>Guides</title>
@@ -39,7 +39,7 @@
 <codeline><highlight class="normal">sudo<sp/>./ecat_node</highlight></codeline>
 </programlisting> </para>
 <sect3 id="index_1autotoc_md4">
-<title>Keep in mind that you can change and tinker with the program, don&apos;t forget to make changes on Makefile for customization, additionally, you can check &quot;compile.txt&quot; file.</title>
+<title>Keep in mind that you can change and tinker with the program, don&apos;t forget to make changes on CMakefile for customization, additionally, you can check &quot;compile.txt&quot; file.</title>
 </sect3>
 <sect3 id="index_1autotoc_md5">
 <title>Good Luck ⚡</title>

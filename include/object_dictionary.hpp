@@ -33,7 +33,7 @@
 /*******************************************************************************
  * \file  object_dictionary.hpp
  * \brief Contains object dictionary and state machine definitions based on CIA402
- * 		  Some index and subindexes may be specific to Maxon EPOS4.
+ * 		  Some index and subindexes might be specific to Maxon EPOS4.
  * 		  Check indexes if you're using different slave.
  *******************************************************************************/
 

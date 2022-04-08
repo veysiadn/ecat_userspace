@@ -3,40 +3,16 @@
 /****************************************************************************/
 #include "ecat_lifecycle.hpp"
 #include "xboxController.hpp"
-std::unique_ptr<EthercatLifeCycleNode::EthercatLifeCycle> ecat_lifecycle_node;
 
-void signalHandler(int /*signum*/)
-{
-    sig = 0;
-    nanosleep((const struct timespec[]){0,g_kNsPerSec},NULL);
-  //  ecat_lifecycle_node->on_shutdown();
-}
+void signalHandler();
+void SetRealTimeSettings();
 
 int main(int argc, char **argv)
 {
     XboxController Controller;
-    // CKim - Configure stdout sream buffer. _IONBF means no buffering. Each I/O operation is written as soon as possible. 
-    setvbuf(stdout, NULL, _IONBF, BUFSIZ);
-    
-    // CKim - Associate 'signalHandler' function with interrupt signal (Ctrl+C key)
-    signal(SIGINT,signalHandler);
-
-    // CKim - Prepare memory for real time performance 
-    // https://design.ros2.org/articles/realtime_background.html
-    
-    // CKim - Lock this processe's memory. Necessary for real time performance....
-    if (mlockall(MCL_CURRENT | MCL_FUTURE) == -1) {
-        printf( "Mlockall failed, check if you have sudo authority.");
-        return -1;
-    }
-    /* Turn off malloc trimming.*/
-    mallopt(M_TRIM_THRESHOLD, -1);
-
-    /* Turn off mmap usage. */
-    mallopt(M_MMAP_MAX, 0);
-    // -----------------------------------------------------------------------------
-
+    SetRealTimeSettings();
     // CKim - Initialize and launch EthercatLifeCycleNode
+    std::unique_ptr<EthercatLifeCycleNode::EthercatLifeCycle> ecat_lifecycle_node;
     ecat_lifecycle_node = std::make_unique<EthercatLifeCycleNode::EthercatLifeCycle>();
 
     if(ecat_lifecycle_node ->on_configure())
@@ -47,6 +23,7 @@ int main(int argc, char **argv)
     {
         return -1;
     }
+    
     if (Controller.initXboxController(XBOX_DEVICE) >= 0) {
 		Controller.xbox = Controller.getXboxDataStruct();
 		Controller.readXboxControllerInformation(Controller.xbox);
@@ -70,3 +47,34 @@ int main(int argc, char **argv)
     return 0;
 }
 
+
+void signalHandler(int /*signum*/)
+{
+    sig = 0;
+    nanosleep((const struct timespec[]){0,g_kNsPerSec},NULL);
+  //  ecat_lifecycle_node->on_shutdown();
+}
+
+void SetRealTimeSettings()
+{
+      // CKim - Configure stdout sream buffer. _IONBF means no buffering. Each I/O operation is written as soon as possible. 
+    setvbuf(stdout, NULL, _IONBF, BUFSIZ);
+    
+    // CKim - Associate 'signalHandler' function with interrupt signal (Ctrl+C key)
+    signal(SIGINT,signalHandler);
+
+    // CKim - Prepare memory for real time performance 
+    // https://design.ros2.org/articles/realtime_background.html
+    
+    // CKim - Lock this processe's memory. Necessary for real time performance....
+    if (mlockall(MCL_CURRENT | MCL_FUTURE) == -1) {
+        printf( "Mlockall failed, check if you have sudo authority.");
+        return -1;
+    }
+    /* Turn off malloc trimming.*/
+    mallopt(M_TRIM_THRESHOLD, -1);
+
+    /* Turn off mmap usage. */
+    mallopt(M_MMAP_MAX, 0);
+    // -----------------------------------------------------------------------------
+}

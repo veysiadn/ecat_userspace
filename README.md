@@ -1,4 +1,4 @@
-### EtherCAT Control Software
+# EtherCAT Control Software
   Welcome to EtherCAT user space application by Veysi ADIN & Chunwoo Kim.This repository contains EtherCAT based control software using CoE and CiA402 standard to control motors and receive sensor data, by wrapping IgH EtherCAT library functions. 
   This implementation can be used with any robotic systems supporting EtherCAT protocol with small modifications. It contains EtherCAT real-time thread with priority of 98. And USB communication with Xbox Controller. You can use different type of user input device as well with small modifications.
   
@@ -26,8 +26,9 @@ sudo ./ecat_node
 ```
 If it is running your implementation is succesful, and now you are ready to customize the software based on your application.
 By default number of connected slaves are defined as one, therefore if you don't have any slave to connect to your Ethernet port software will raise an error about the situation, but don't worry you can customize the software based on your needs.
+
 ## Getting Started
-## STEP 1 : 
+### STEP 1 : 
   You should start your customization from ecat_globals.hpp file. In that file you can specify : 
   - Number of connected slaves and servo drives,
   - Control operation mode : Velocity Mode, Position Mode, Torque Mode, Cyclic Synchronous Velocity,Position and Torque modes are supported. 
@@ -38,17 +39,19 @@ By default number of connected slaves are defined as one, therefore if you don't
   - Custom Slave : If you have different slave than the CiA402 supported servo drive you will need to define custom slave and PDO mapping for that custom slave.
   - Keep in mind that this software addresses connected slaves based on physical position. For example the 0th slave will be the first slave that is connected to your Ethernet port. 
   - Custom slave must be in the end of slave chain.
-## STEP 2 : 
+  - 
+### STEP 2 : 
   Once you did your initial configuration in the ecat_globals.hpp file. You can modify user input method in main.cpp file.
   - Currently this software uses XboxController left and right axis to send control commands the connected motors, if you want to use different input you can remove Xbox related control parameters and add your own.
   - If you want to use Xbox Controller for testing keep in mind that each axis in controller generated data in the range of -32768 ~ 32768.
-## STEP 3 : 
+
+### STEP 3 : 
   - Change configuration parameters for your motor in ecat_node.cpp file based on your operation mode. For example if you want to use velocity mode you can change parameters in the SetProfileVelocityParametersAll(ProfileVelocityParam& P) function based on your needs.
   - Change control parameters based on your selected operation mode in ecat_lifecycle.cpp file in the Update functions. For example if you want to use velocity mode in your control loop, you can change function content of UpdateVelocityModeParameters();
 
 Once you did those changes you will need recompile the software using make and you can test the executable. 
 
-## NOTE 
+### NOTE 
   - This software heavily tested on Maxon EPOS drivers, therefore if you want to use different servo driver you will need to check PDO mapping of your slave, or you can do custom PDO mapping by using MapCustomPdo function defined in ecat_node.cpp file. 
 ## Guides
 
@@ -59,4 +62,4 @@ Once you did those changes you will need recompile the software using make and y
 - [Real-time Background](https://design.ros2.org/articles/realtime_background.html)
 - [Article on EtherCAT-RT PREEMPT- Xenomai](https://www.ripublication.com/ijaer17/ijaerv12n21_94.pdf)
 
-#### Good Luck ⚡
+## Good Luck ⚡

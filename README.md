@@ -46,7 +46,7 @@ By default number of connected slaves are defined as one, therefore if you don't
   - Change configuration parameters for your motor in ecat_node.cpp file based on your operation mode. For example if you want to use velocity mode you can change parameters in the SetProfileVelocityParametersAll(ProfileVelocityParam& P) function based on your needs.
   - Change control parameters based on your selected operation mode in ecat_lifecycle.cpp file in the Update functions. For example if you want to use velocity mode in your control loop, you can change function content of UpdateVelocityModeParameters();
 
-Once you did those changes you will need recompile the using make and you can test the executable. 
+Once you did those changes you will need recompile the software using make and you can test the executable. 
 
 ### NOTE 
   - This software heavily tested on Maxon EPOS drivers, therefore if you want to use different servo driver you will need to check PDO mapping of your slave, or you can do custom PDO mapping by using MapCustomPdo function defined in ecat_node.cpp file. 
@@ -58,8 +58,5 @@ Once you did those changes you will need recompile the using make and you can te
 - [Real-time Linux](https://wiki.linuxfoundation.org/realtime/documentation/technical_basics/start)
 - [Real-time Background](https://design.ros2.org/articles/realtime_background.html)
 - [Article on EtherCAT-RT PREEMPT- Xenomai](https://www.ripublication.com/ijaer17/ijaerv12n21_94.pdf)
-
-
-#### Keep in mind that you can change and tinker with the program, don't forget to make changes on CMakefile for customization, additionally, you can check "compile.txt" file.
 
 #### Good Luck ⚡

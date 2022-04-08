@@ -61,7 +61,7 @@
 </listitem><listitem><para>Change control parameters based on your selected operation mode in <ref refid="ecat__lifecycle_8cpp" kindref="compound">ecat_lifecycle.cpp</ref> file in the Update functions. For example if you want to use velocity mode in your control loop, you can change function content of UpdateVelocityModeParameters();</para>
 </listitem></itemizedlist>
 </para>
-<para>Once you did those changes you will need recompile the using make and you can test the executable.</para>
+<para>Once you did those changes you will need recompile the software using make and you can test the executable.</para>
 </sect2>
 <sect2 id="index_1autotoc_md7">
 <title>NOTE</title>
@@ -82,9 +82,6 @@
 </listitem></itemizedlist>
 </para>
 <sect3 id="index_1autotoc_md9">
-<title>Keep in mind that you can change and tinker with the program, don&apos;t forget to make changes on CMakefile for customization, additionally, you can check &quot;compile.txt&quot; file.</title>
-</sect3>
-<sect3 id="index_1autotoc_md10">
 <title>Good Luck ⚡</title>
 </sect3>
 </sect2>

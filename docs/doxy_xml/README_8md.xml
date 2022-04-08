@@ -55,7 +55,7 @@
 <codeline><highlight class="normal"><sp/><sp/>-<sp/>Change<sp/>configuration<sp/>parameters<sp/>for<sp/>your<sp/>motor<sp/>in<sp/>ecat_node.cpp<sp/>file<sp/>based<sp/>on<sp/>your<sp/>operation<sp/>mode.<sp/>For<sp/>example<sp/>if<sp/>you<sp/>want<sp/>to<sp/>use<sp/>velocity<sp/>mode<sp/>you<sp/>can<sp/>change<sp/>parameters<sp/>in<sp/>the<sp/>SetProfileVelocityParametersAll(ProfileVelocityParam&amp;<sp/>P)<sp/>function<sp/>based<sp/>on<sp/>your<sp/>needs.</highlight></codeline>
 <codeline><highlight class="normal"><sp/><sp/>-<sp/>Change<sp/>control<sp/>parameters<sp/>based<sp/>on<sp/>your<sp/>selected<sp/>operation<sp/>mode<sp/>in<sp/>ecat_lifecycle.cpp<sp/>file<sp/>in<sp/>the<sp/>Update<sp/>functions.<sp/>For<sp/>example<sp/>if<sp/>you<sp/>want<sp/>to<sp/>use<sp/>velocity<sp/>mode<sp/>in<sp/>your<sp/>control<sp/>loop,<sp/>you<sp/>can<sp/>change<sp/>function<sp/>content<sp/>of<sp/>UpdateVelocityModeParameters();</highlight></codeline>
 <codeline></codeline>
-<codeline><highlight class="normal">Once<sp/>you<sp/>did<sp/>those<sp/>changes<sp/>you<sp/>will<sp/>need<sp/>recompile<sp/>the<sp/>using<sp/>make<sp/>and<sp/>you<sp/>can<sp/>test<sp/>the<sp/>executable.<sp/></highlight></codeline>
+<codeline><highlight class="normal">Once<sp/>you<sp/>did<sp/>those<sp/>changes<sp/>you<sp/>will<sp/>need<sp/>recompile<sp/>the<sp/>software<sp/>using<sp/>make<sp/>and<sp/>you<sp/>can<sp/>test<sp/>the<sp/>executable.<sp/></highlight></codeline>
 <codeline></codeline>
 <codeline><highlight class="normal">###<sp/>NOTE<sp/></highlight></codeline>
 <codeline><highlight class="normal"><sp/><sp/>-<sp/>This<sp/>software<sp/>heavily<sp/>tested<sp/>on<sp/>Maxon<sp/>EPOS<sp/>drivers,<sp/>therefore<sp/>if<sp/>you<sp/>want<sp/>to<sp/>use<sp/>different<sp/>servo<sp/>driver<sp/>you<sp/>will<sp/>need<sp/>to<sp/>check<sp/>PDO<sp/>mapping<sp/>of<sp/>your<sp/>slave,<sp/>or<sp/>you<sp/>can<sp/>do<sp/>custom<sp/>PDO<sp/>mapping<sp/>by<sp/>using<sp/>MapCustomPdo<sp/>function<sp/>defined<sp/>in<sp/>ecat_node.cpp<sp/>file.<sp/></highlight></codeline>
@@ -67,9 +67,6 @@
 <codeline><highlight class="normal">-<sp/>[Real-time<sp/>Linux](https://wiki.linuxfoundation.org/realtime/documentation/technical_basics/start)</highlight></codeline>
 <codeline><highlight class="normal">-<sp/>[Real-time<sp/>Background](https://design.ros2.org/articles/realtime_background.html)</highlight></codeline>
 <codeline><highlight class="normal">-<sp/>[Article<sp/>on<sp/>EtherCAT-RT<sp/>PREEMPT-<sp/>Xenomai](https://www.ripublication.com/ijaer17/ijaerv12n21_94.pdf)</highlight></codeline>
-<codeline></codeline>
-<codeline></codeline>
-<codeline><highlight class="normal">####<sp/>Keep<sp/>in<sp/>mind<sp/>that<sp/>you<sp/>can<sp/>change<sp/>and<sp/>tinker<sp/>with<sp/>the<sp/>program,<sp/>don&apos;t<sp/>forget<sp/>to<sp/>make<sp/>changes<sp/>on<sp/>CMakefile<sp/>for<sp/>customization,<sp/>additionally,<sp/>you<sp/>can<sp/>check<sp/>&quot;compile.txt&quot;<sp/>file.</highlight></codeline>
 <codeline></codeline>
 <codeline><highlight class="normal">####<sp/>Good<sp/>Luck<sp/>⚡</highlight></codeline>
     </programlisting>

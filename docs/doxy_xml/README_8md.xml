@@ -7,19 +7,19 @@
     <detaileddescription>
     </detaileddescription>
     <programlisting>
-<codeline><highlight class="normal">###<sp/>EtherCAT<sp/>Control<sp/>Software</highlight></codeline>
+<codeline><highlight class="normal">#<sp/>EtherCAT<sp/>Control<sp/>Software</highlight></codeline>
 <codeline><highlight class="normal"><sp/><sp/>Welcome<sp/>to<sp/>EtherCAT<sp/>user<sp/>space<sp/>application<sp/>by<sp/>Veysi<sp/>ADIN<sp/>&amp;<sp/>Chunwoo<sp/>Kim.This<sp/>repository<sp/>contains<sp/>EtherCAT<sp/>based<sp/>control<sp/>software<sp/>using<sp/>CoE<sp/>and<sp/>CiA402<sp/>standard<sp/>to<sp/>control<sp/>motors<sp/>and<sp/>receive<sp/>sensor<sp/>data,<sp/>by<sp/>wrapping<sp/>IgH<sp/>EtherCAT<sp/>library<sp/>functions.<sp/></highlight></codeline>
 <codeline><highlight class="normal"><sp/><sp/>This<sp/>implementation<sp/>can<sp/>be<sp/>used<sp/>with<sp/>any<sp/>robotic<sp/>systems<sp/>supporting<sp/>EtherCAT<sp/>protocol<sp/>with<sp/>small<sp/>modifications.<sp/>It<sp/>contains<sp/>EtherCAT<sp/>real-time<sp/>thread<sp/>with<sp/>priority<sp/>of<sp/>98.<sp/>And<sp/>USB<sp/>communication<sp/>with<sp/>Xbox<sp/>Controller.<sp/>You<sp/>can<sp/>use<sp/>different<sp/>type<sp/>of<sp/>user<sp/>input<sp/>device<sp/>as<sp/>well<sp/>with<sp/>small<sp/>modifications.</highlight></codeline>
 <codeline><highlight class="normal"><sp/><sp/></highlight></codeline>
 <codeline><highlight class="normal"><sp/>Please<sp/>check<sp/>prerequisites,<sp/>guides,<sp/>links<sp/>and<sp/>documentations<sp/>before<sp/>installation,<sp/>or<sp/>using<sp/>this<sp/>control<sp/>software.<sp/>To<sp/>be<sp/>able<sp/>to<sp/>build<sp/>this<sp/>control<sp/>software<sp/>you<sp/>will<sp/>need<sp/>to<sp/>install<sp/>IgH<sp/>EtherCAT<sp/>library,<sp/>and<sp/>if<sp/>you<sp/>need<sp/>real-time<sp/>performance<sp/>you<sp/>will<sp/>need<sp/>to<sp/>install<sp/>RT_PREEMPTH<sp/>patch<sp/>or<sp/>Xenomai<sp/>kernel.<sp/>You<sp/>can<sp/>follow<sp/>links<sp/>below<sp/>for<sp/>the<sp/>installation<sp/>of<sp/>required<sp/>library<sp/>and<sp/>RT_PREEMPT<sp/>installation.</highlight></codeline>
 <codeline></codeline>
-<codeline><highlight class="normal">###<sp/>Prerequisites</highlight></codeline>
+<codeline><highlight class="normal">##<sp/>Prerequisites</highlight></codeline>
 <codeline><highlight class="normal">-<sp/>[RT_Preempt<sp/>Linux<sp/>and<sp/>IgH<sp/>EtherCAT<sp/>Implementation](https://github.com/veysiadn/IgHEtherCATImplementation)</highlight></codeline>
 <codeline><highlight class="normal">-<sp/>If<sp/>you<sp/>want<sp/>to<sp/>use<sp/>[Xenomai-Installation](https://github.com/veysiadn/xenomai-install)</highlight></codeline>
 <codeline></codeline>
 <codeline><highlight class="normal">Once<sp/>you<sp/>install<sp/>the<sp/>prerequisites<sp/>you&apos;re<sp/>ready<sp/>to<sp/>build<sp/>the<sp/>control<sp/>software.</highlight></codeline>
 <codeline></codeline>
-<codeline><highlight class="normal">###<sp/>Implementation</highlight></codeline>
+<codeline><highlight class="normal">##<sp/>Implementation</highlight></codeline>
 <codeline><highlight class="normal"><sp/><sp/></highlight></codeline>
 <codeline><highlight class="normal">```sh</highlight></codeline>
 <codeline><highlight class="normal">mkdir<sp/>project-ws<sp/></highlight></codeline>
@@ -35,8 +35,9 @@
 <codeline><highlight class="normal">```</highlight></codeline>
 <codeline><highlight class="normal">If<sp/>it<sp/>is<sp/>running<sp/>your<sp/>implementation<sp/>is<sp/>succesful,<sp/>and<sp/>now<sp/>you<sp/>are<sp/>ready<sp/>to<sp/>customize<sp/>the<sp/>software<sp/>based<sp/>on<sp/>your<sp/>application.</highlight></codeline>
 <codeline><highlight class="normal">By<sp/>default<sp/>number<sp/>of<sp/>connected<sp/>slaves<sp/>are<sp/>defined<sp/>as<sp/>one,<sp/>therefore<sp/>if<sp/>you<sp/>don&apos;t<sp/>have<sp/>any<sp/>slave<sp/>to<sp/>connect<sp/>to<sp/>your<sp/>Ethernet<sp/>port<sp/>software<sp/>will<sp/>raise<sp/>an<sp/>error<sp/>about<sp/>the<sp/>situation,<sp/>but<sp/>don&apos;t<sp/>worry<sp/>you<sp/>can<sp/>customize<sp/>the<sp/>software<sp/>based<sp/>on<sp/>your<sp/>needs.</highlight></codeline>
-<codeline><highlight class="normal">###<sp/>Getting<sp/>Started</highlight></codeline>
-<codeline><highlight class="normal">####<sp/>STEP<sp/>1<sp/>:<sp/></highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">##<sp/>Getting<sp/>Started</highlight></codeline>
+<codeline><highlight class="normal">###<sp/>STEP<sp/>1<sp/>:<sp/></highlight></codeline>
 <codeline><highlight class="normal"><sp/><sp/>You<sp/>should<sp/>start<sp/>your<sp/>customization<sp/>from<sp/>ecat_globals.hpp<sp/>file.<sp/>In<sp/>that<sp/>file<sp/>you<sp/>can<sp/>specify<sp/>:<sp/></highlight></codeline>
 <codeline><highlight class="normal"><sp/><sp/>-<sp/>Number<sp/>of<sp/>connected<sp/>slaves<sp/>and<sp/>servo<sp/>drives,</highlight></codeline>
 <codeline><highlight class="normal"><sp/><sp/>-<sp/>Control<sp/>operation<sp/>mode<sp/>:<sp/>Velocity<sp/>Mode,<sp/>Position<sp/>Mode,<sp/>Torque<sp/>Mode,<sp/>Cyclic<sp/>Synchronous<sp/>Velocity,Position<sp/>and<sp/>Torque<sp/>modes<sp/>are<sp/>supported.<sp/></highlight></codeline>
@@ -47,10 +48,12 @@
 <codeline><highlight class="normal"><sp/><sp/>-<sp/>Custom<sp/>Slave<sp/>:<sp/>If<sp/>you<sp/>have<sp/>different<sp/>slave<sp/>than<sp/>the<sp/>CiA402<sp/>supported<sp/>servo<sp/>drive<sp/>you<sp/>will<sp/>need<sp/>to<sp/>define<sp/>custom<sp/>slave<sp/>and<sp/>PDO<sp/>mapping<sp/>for<sp/>that<sp/>custom<sp/>slave.</highlight></codeline>
 <codeline><highlight class="normal"><sp/><sp/>-<sp/>Keep<sp/>in<sp/>mind<sp/>that<sp/>this<sp/>software<sp/>addresses<sp/>connected<sp/>slaves<sp/>based<sp/>on<sp/>physical<sp/>position.<sp/>For<sp/>example<sp/>the<sp/>0th<sp/>slave<sp/>will<sp/>be<sp/>the<sp/>first<sp/>slave<sp/>that<sp/>is<sp/>connected<sp/>to<sp/>your<sp/>Ethernet<sp/>port.<sp/></highlight></codeline>
 <codeline><highlight class="normal"><sp/><sp/>-<sp/>Custom<sp/>slave<sp/>must<sp/>be<sp/>in<sp/>the<sp/>end<sp/>of<sp/>slave<sp/>chain.</highlight></codeline>
-<codeline><highlight class="normal">####<sp/>STEP<sp/>2<sp/>:<sp/></highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/>-<sp/></highlight></codeline>
+<codeline><highlight class="normal">###<sp/>STEP<sp/>2<sp/>:<sp/></highlight></codeline>
 <codeline><highlight class="normal"><sp/><sp/>Once<sp/>you<sp/>did<sp/>your<sp/>initial<sp/>configuration<sp/>in<sp/>the<sp/>ecat_globals.hpp<sp/>file.<sp/>You<sp/>can<sp/>modify<sp/>user<sp/>input<sp/>method<sp/>in<sp/>main.cpp<sp/>file.</highlight></codeline>
 <codeline><highlight class="normal"><sp/><sp/>-<sp/>Currently<sp/>this<sp/>software<sp/>uses<sp/>XboxController<sp/>left<sp/>and<sp/>right<sp/>axis<sp/>to<sp/>send<sp/>control<sp/>commands<sp/>the<sp/>connected<sp/>motors,<sp/>if<sp/>you<sp/>want<sp/>to<sp/>use<sp/>different<sp/>input<sp/>you<sp/>can<sp/>remove<sp/>Xbox<sp/>related<sp/>control<sp/>parameters<sp/>and<sp/>add<sp/>your<sp/>own.</highlight></codeline>
 <codeline><highlight class="normal"><sp/><sp/>-<sp/>If<sp/>you<sp/>want<sp/>to<sp/>use<sp/>Xbox<sp/>Controller<sp/>for<sp/>testing<sp/>keep<sp/>in<sp/>mind<sp/>that<sp/>each<sp/>axis<sp/>in<sp/>controller<sp/>generated<sp/>data<sp/>in<sp/>the<sp/>range<sp/>of<sp/>-32768<sp/>~<sp/>32768.</highlight></codeline>
+<codeline></codeline>
 <codeline><highlight class="normal">###<sp/>STEP<sp/>3<sp/>:<sp/></highlight></codeline>
 <codeline><highlight class="normal"><sp/><sp/>-<sp/>Change<sp/>configuration<sp/>parameters<sp/>for<sp/>your<sp/>motor<sp/>in<sp/>ecat_node.cpp<sp/>file<sp/>based<sp/>on<sp/>your<sp/>operation<sp/>mode.<sp/>For<sp/>example<sp/>if<sp/>you<sp/>want<sp/>to<sp/>use<sp/>velocity<sp/>mode<sp/>you<sp/>can<sp/>change<sp/>parameters<sp/>in<sp/>the<sp/>SetProfileVelocityParametersAll(ProfileVelocityParam&amp;<sp/>P)<sp/>function<sp/>based<sp/>on<sp/>your<sp/>needs.</highlight></codeline>
 <codeline><highlight class="normal"><sp/><sp/>-<sp/>Change<sp/>control<sp/>parameters<sp/>based<sp/>on<sp/>your<sp/>selected<sp/>operation<sp/>mode<sp/>in<sp/>ecat_lifecycle.cpp<sp/>file<sp/>in<sp/>the<sp/>Update<sp/>functions.<sp/>For<sp/>example<sp/>if<sp/>you<sp/>want<sp/>to<sp/>use<sp/>velocity<sp/>mode<sp/>in<sp/>your<sp/>control<sp/>loop,<sp/>you<sp/>can<sp/>change<sp/>function<sp/>content<sp/>of<sp/>UpdateVelocityModeParameters();</highlight></codeline>
@@ -59,7 +62,7 @@
 <codeline></codeline>
 <codeline><highlight class="normal">###<sp/>NOTE<sp/></highlight></codeline>
 <codeline><highlight class="normal"><sp/><sp/>-<sp/>This<sp/>software<sp/>heavily<sp/>tested<sp/>on<sp/>Maxon<sp/>EPOS<sp/>drivers,<sp/>therefore<sp/>if<sp/>you<sp/>want<sp/>to<sp/>use<sp/>different<sp/>servo<sp/>driver<sp/>you<sp/>will<sp/>need<sp/>to<sp/>check<sp/>PDO<sp/>mapping<sp/>of<sp/>your<sp/>slave,<sp/>or<sp/>you<sp/>can<sp/>do<sp/>custom<sp/>PDO<sp/>mapping<sp/>by<sp/>using<sp/>MapCustomPdo<sp/>function<sp/>defined<sp/>in<sp/>ecat_node.cpp<sp/>file.<sp/></highlight></codeline>
-<codeline><highlight class="normal">###<sp/>Guides</highlight></codeline>
+<codeline><highlight class="normal">##<sp/>Guides</highlight></codeline>
 <codeline></codeline>
 <codeline><highlight class="normal">-<sp/>[EtherCAT](https://www.ethercat.org/en/technology.html)</highlight></codeline>
 <codeline><highlight class="normal">-<sp/>[Etherlab<sp/>Webpage](https://www.etherlab.org/en/ethercat/index.php)</highlight></codeline>
@@ -68,7 +71,7 @@
 <codeline><highlight class="normal">-<sp/>[Real-time<sp/>Background](https://design.ros2.org/articles/realtime_background.html)</highlight></codeline>
 <codeline><highlight class="normal">-<sp/>[Article<sp/>on<sp/>EtherCAT-RT<sp/>PREEMPT-<sp/>Xenomai](https://www.ripublication.com/ijaer17/ijaerv12n21_94.pdf)</highlight></codeline>
 <codeline></codeline>
-<codeline><highlight class="normal">####<sp/>Good<sp/>Luck<sp/>⚡</highlight></codeline>
+<codeline><highlight class="normal">##<sp/>Good<sp/>Luck<sp/>⚡</highlight></codeline>
     </programlisting>
     <location file="README.md"/>
   </compounddef>

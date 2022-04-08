@@ -25,7 +25,18 @@
 var NAVTREE =
 [
   [ "EtherCAT Control Framework", "index.html", [
-    [ "EtherCAT Control Software", "index.html", null ],
+    [ "EtherCAT Control Software", "index.html", [
+      [ "Prerequisites", "index.html#autotoc_md1", null ],
+      [ "Implementation", "index.html#autotoc_md2", null ],
+      [ "Getting Started", "index.html#autotoc_md3", [
+        [ "STEP 1 :", "index.html#autotoc_md4", null ],
+        [ "STEP 2 :", "index.html#autotoc_md5", null ],
+        [ "STEP 3 :", "index.html#autotoc_md6", null ],
+        [ "NOTE", "index.html#autotoc_md7", null ]
+      ] ],
+      [ "Guides", "index.html#autotoc_md8", null ],
+      [ "Good Luck ⚡", "index.html#autotoc_md9", null ]
+    ] ],
     [ "Namespaces", "namespaces.html", [
       [ "Namespace List", "namespaces.html", "namespaces_dup" ]
     ] ],
@@ -56,7 +67,7 @@ var NAVTREEINDEX =
 [
 "annotated.html",
 "ecat__globals_8hpp.html#a5d175b4708e9a88ebbc35372ca1818b7af34e262497cefee9f006225d255f0b02",
-"structCSPositionModeParam.html#a1f8700628509d4f620265db41a4d1412"
+"object__dictionary_8hpp.html#af231e3e496d8a0a3ea319f8b3584291b"
 ];
 
 var SYNCONMSG = 'click to disable panel synchronisation';

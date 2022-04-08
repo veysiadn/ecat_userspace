@@ -2,9 +2,9 @@
  
   This repository contains EtherCAT based control software using CoE and CiA402 standard to control motors and receive sensor data, by wrapping IgH EtherCAT library functions. 
   This implementation can be used with any robotic system with small modifications.Contains EtherCAT real-time thread with priority of 98. And USB communication with 
-  Xbox Controller.
+  Xbox Controller. You can use different type of user input device as well with small modifications.
   
-  Please check guides, links and documentations before installation, or using this control software.
+ Please check guides, links and documentations before installation, or using this control software.
 
 ## Guides
 
@@ -30,6 +30,6 @@ cmake .
 make
 sudo ./ecat_node
 ```
-#### Keep in mind that you can change and tinker with the program, don't forget to make changes on Makefile for customization, additionally, you can check "compile.txt" file.
+#### Keep in mind that you can change and tinker with the program, don't forget to make changes on CMakefile for customization, additionally, you can check "compile.txt" file.
 
 #### Good Luck ⚡

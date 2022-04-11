@@ -16,7 +16,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/ecat_globals.hpp" line="356" column="14" bodyfile="include/ecat_globals.hpp" bodystart="356" bodyend="-1"/>
+        <location file="include/ecat_globals.hpp" line="375" column="14" bodyfile="include/ecat_globals.hpp" bodystart="375" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="structProfilePosParam_1a8588f65715da0e04b65f7a87e04b5aea" prot="public" static="no" mutable="no">
         <type>uint32_t</type>
@@ -30,7 +30,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/ecat_globals.hpp" line="357" column="14" bodyfile="include/ecat_globals.hpp" bodystart="357" bodyend="-1"/>
+        <location file="include/ecat_globals.hpp" line="376" column="14" bodyfile="include/ecat_globals.hpp" bodystart="376" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="structProfilePosParam_1a28531945d194b6184acfc58252021495" prot="public" static="no" mutable="no">
         <type>uint32_t</type>
@@ -44,7 +44,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/ecat_globals.hpp" line="358" column="14" bodyfile="include/ecat_globals.hpp" bodystart="358" bodyend="-1"/>
+        <location file="include/ecat_globals.hpp" line="377" column="14" bodyfile="include/ecat_globals.hpp" bodystart="377" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="structProfilePosParam_1a4fad96fd7804b2f24051095657d42472" prot="public" static="no" mutable="no">
         <type>uint32_t</type>
@@ -58,7 +58,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/ecat_globals.hpp" line="359" column="14" bodyfile="include/ecat_globals.hpp" bodystart="359" bodyend="-1"/>
+        <location file="include/ecat_globals.hpp" line="378" column="14" bodyfile="include/ecat_globals.hpp" bodystart="378" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="structProfilePosParam_1a5cda9a4f392b059c1829825d3537f872" prot="public" static="no" mutable="no">
         <type>uint32_t</type>
@@ -72,7 +72,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/ecat_globals.hpp" line="360" column="14" bodyfile="include/ecat_globals.hpp" bodystart="360" bodyend="-1"/>
+        <location file="include/ecat_globals.hpp" line="379" column="14" bodyfile="include/ecat_globals.hpp" bodystart="379" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="structProfilePosParam_1a7ef62445ceaee72a6789b585797d039b" prot="public" static="no" mutable="no">
         <type>uint32_t</type>
@@ -86,7 +86,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/ecat_globals.hpp" line="361" column="14" bodyfile="include/ecat_globals.hpp" bodystart="361" bodyend="-1"/>
+        <location file="include/ecat_globals.hpp" line="380" column="14" bodyfile="include/ecat_globals.hpp" bodystart="380" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="structProfilePosParam_1a821b805b7ef6f4e8c5fbc842d7987db6" prot="public" static="no" mutable="no">
         <type>uint16_t</type>
@@ -100,7 +100,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/ecat_globals.hpp" line="362" column="14" bodyfile="include/ecat_globals.hpp" bodystart="362" bodyend="-1"/>
+        <location file="include/ecat_globals.hpp" line="381" column="14" bodyfile="include/ecat_globals.hpp" bodystart="381" bodyend="-1"/>
       </memberdef>
       </sectiondef>
     <briefdescription>
@@ -108,7 +108,7 @@
     </briefdescription>
     <detaileddescription>
     </detaileddescription>
-    <location file="include/ecat_globals.hpp" line="354" column="1" bodyfile="include/ecat_globals.hpp" bodystart="355" bodyend="364"/>
+    <location file="include/ecat_globals.hpp" line="373" column="1" bodyfile="include/ecat_globals.hpp" bodystart="374" bodyend="383"/>
     <listofallmembers>
       <member refid="structProfilePosParam_1a4fad96fd7804b2f24051095657d42472" prot="public" virt="non-virtual"><scope>ProfilePosParam</scope><name>max_fol_err</name></member>
       <member refid="structProfilePosParam_1a5cda9a4f392b059c1829825d3537f872" prot="public" virt="non-virtual"><scope>ProfilePosParam</scope><name>max_profile_vel</name></member>

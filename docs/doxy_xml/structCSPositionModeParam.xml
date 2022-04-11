@@ -16,7 +16,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/ecat_globals.hpp" line="372" column="14" bodyfile="include/ecat_globals.hpp" bodystart="372" bodyend="-1"/>
+        <location file="include/ecat_globals.hpp" line="391" column="14" bodyfile="include/ecat_globals.hpp" bodystart="391" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="structCSPositionModeParam_1acc1611d030de3fb10c9e7fc10ff0427e" prot="public" static="no" mutable="no">
         <type>uint16_t</type>
@@ -30,7 +30,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/ecat_globals.hpp" line="373" column="14" bodyfile="include/ecat_globals.hpp" bodystart="373" bodyend="-1"/>
+        <location file="include/ecat_globals.hpp" line="392" column="14" bodyfile="include/ecat_globals.hpp" bodystart="392" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="structCSPositionModeParam_1a7ce4438d79c906eff81308e7d6a54e82" prot="public" static="no" mutable="no">
         <type>uint32_t</type>
@@ -44,7 +44,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/ecat_globals.hpp" line="374" column="14" bodyfile="include/ecat_globals.hpp" bodystart="374" bodyend="-1"/>
+        <location file="include/ecat_globals.hpp" line="393" column="14" bodyfile="include/ecat_globals.hpp" bodystart="393" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="structCSPositionModeParam_1a6684713794fac0a3e72c4483914df264" prot="public" static="no" mutable="no">
         <type>uint32_t</type>
@@ -58,7 +58,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/ecat_globals.hpp" line="375" column="14" bodyfile="include/ecat_globals.hpp" bodystart="375" bodyend="-1"/>
+        <location file="include/ecat_globals.hpp" line="394" column="14" bodyfile="include/ecat_globals.hpp" bodystart="394" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="structCSPositionModeParam_1ac971e0c8d41d927855decd204399a5c5" prot="public" static="no" mutable="no">
         <type>uint32_t</type>
@@ -72,7 +72,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/ecat_globals.hpp" line="376" column="14" bodyfile="include/ecat_globals.hpp" bodystart="376" bodyend="-1"/>
+        <location file="include/ecat_globals.hpp" line="395" column="14" bodyfile="include/ecat_globals.hpp" bodystart="395" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="structCSPositionModeParam_1ad7db2fa628b594bb742a189d47a09568" prot="public" static="no" mutable="no">
         <type>uint16_t</type>
@@ -86,7 +86,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/ecat_globals.hpp" line="377" column="14" bodyfile="include/ecat_globals.hpp" bodystart="377" bodyend="-1"/>
+        <location file="include/ecat_globals.hpp" line="396" column="14" bodyfile="include/ecat_globals.hpp" bodystart="396" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="structCSPositionModeParam_1a481933edb8103e9d0d2c27eda10f72c3" prot="public" static="no" mutable="no">
         <type>uint32_t</type>
@@ -100,7 +100,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/ecat_globals.hpp" line="378" column="14" bodyfile="include/ecat_globals.hpp" bodystart="378" bodyend="-1"/>
+        <location file="include/ecat_globals.hpp" line="397" column="14" bodyfile="include/ecat_globals.hpp" bodystart="397" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="structCSPositionModeParam_1a90400c6f6416fd21c5c3f1a32ab0317d" prot="public" static="no" mutable="no">
         <type>uint32_t</type>
@@ -114,7 +114,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/ecat_globals.hpp" line="379" column="14" bodyfile="include/ecat_globals.hpp" bodystart="379" bodyend="-1"/>
+        <location file="include/ecat_globals.hpp" line="398" column="14" bodyfile="include/ecat_globals.hpp" bodystart="398" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="structCSPositionModeParam_1a174d65383bd3d6255e88e89d9e921dbd" prot="public" static="no" mutable="no">
         <type>uint32_t</type>
@@ -128,7 +128,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/ecat_globals.hpp" line="380" column="14" bodyfile="include/ecat_globals.hpp" bodystart="380" bodyend="-1"/>
+        <location file="include/ecat_globals.hpp" line="399" column="14" bodyfile="include/ecat_globals.hpp" bodystart="399" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="structCSPositionModeParam_1a6a32c3784218f7dbc8b5cfbc40d35102" prot="public" static="no" mutable="no">
         <type>uint32_t</type>
@@ -142,7 +142,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/ecat_globals.hpp" line="381" column="14" bodyfile="include/ecat_globals.hpp" bodystart="381" bodyend="-1"/>
+        <location file="include/ecat_globals.hpp" line="400" column="14" bodyfile="include/ecat_globals.hpp" bodystart="400" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="structCSPositionModeParam_1ab06ecacb46d10ae9eddd1db4c1a44ccf" prot="public" static="no" mutable="no">
         <type>uint32_t</type>
@@ -156,7 +156,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/ecat_globals.hpp" line="382" column="14" bodyfile="include/ecat_globals.hpp" bodystart="382" bodyend="-1"/>
+        <location file="include/ecat_globals.hpp" line="401" column="14" bodyfile="include/ecat_globals.hpp" bodystart="401" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="structCSPositionModeParam_1abdc88bd545f17425a1b35af8ff86a80e" prot="public" static="no" mutable="no">
         <type>uint32_t</type>
@@ -170,7 +170,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/ecat_globals.hpp" line="383" column="14" bodyfile="include/ecat_globals.hpp" bodystart="383" bodyend="-1"/>
+        <location file="include/ecat_globals.hpp" line="402" column="14" bodyfile="include/ecat_globals.hpp" bodystart="402" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="structCSPositionModeParam_1a1f8700628509d4f620265db41a4d1412" prot="public" static="no" mutable="no">
         <type>uint32_t</type>
@@ -184,7 +184,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/ecat_globals.hpp" line="384" column="14" bodyfile="include/ecat_globals.hpp" bodystart="384" bodyend="-1"/>
+        <location file="include/ecat_globals.hpp" line="403" column="14" bodyfile="include/ecat_globals.hpp" bodystart="403" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="structCSPositionModeParam_1a7fa1d18cfe7454f638d90f98df14c857" prot="public" static="no" mutable="no">
         <type>uint32_t</type>
@@ -198,7 +198,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/ecat_globals.hpp" line="385" column="14" bodyfile="include/ecat_globals.hpp" bodystart="385" bodyend="-1"/>
+        <location file="include/ecat_globals.hpp" line="404" column="14" bodyfile="include/ecat_globals.hpp" bodystart="404" bodyend="-1"/>
       </memberdef>
       </sectiondef>
     <briefdescription>
@@ -206,7 +206,7 @@
     </briefdescription>
     <detaileddescription>
     </detaileddescription>
-    <location file="include/ecat_globals.hpp" line="370" column="1" bodyfile="include/ecat_globals.hpp" bodystart="371" bodyend="386"/>
+    <location file="include/ecat_globals.hpp" line="389" column="1" bodyfile="include/ecat_globals.hpp" bodystart="390" bodyend="405"/>
     <listofallmembers>
       <member refid="structCSPositionModeParam_1a7ce4438d79c906eff81308e7d6a54e82" prot="public" virt="non-virtual"><scope>CSPositionModeParam</scope><name>current_controller_gain</name></member>
       <member refid="structCSPositionModeParam_1a7fa1d18cfe7454f638d90f98df14c857" prot="public" virt="non-virtual"><scope>CSPositionModeParam</scope><name>interpolation_time_period</name></member>

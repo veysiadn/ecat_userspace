@@ -16,7 +16,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/ecat_globals.hpp" line="420" column="14" bodyfile="include/ecat_globals.hpp" bodystart="420" bodyend="-1"/>
+        <location file="include/ecat_globals.hpp" line="439" column="14" bodyfile="include/ecat_globals.hpp" bodystart="439" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="structCSTorqueModeParam_1a700effe2fe0fa6b22a20a47fd2d544b5" prot="public" static="no" mutable="no">
         <type>uint16_t</type>
@@ -30,7 +30,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/ecat_globals.hpp" line="421" column="14" bodyfile="include/ecat_globals.hpp" bodystart="421" bodyend="-1"/>
+        <location file="include/ecat_globals.hpp" line="440" column="14" bodyfile="include/ecat_globals.hpp" bodystart="440" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="structCSTorqueModeParam_1aaedcfc6837a299deabc0e1a2531c80ff" prot="public" static="no" mutable="no">
         <type>uint32_t</type>
@@ -44,7 +44,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/ecat_globals.hpp" line="422" column="14" bodyfile="include/ecat_globals.hpp" bodystart="422" bodyend="-1"/>
+        <location file="include/ecat_globals.hpp" line="441" column="14" bodyfile="include/ecat_globals.hpp" bodystart="441" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="structCSTorqueModeParam_1ad6dfc9b4b185c50981ebe09d8aa6b961" prot="public" static="no" mutable="no">
         <type>uint16_t</type>
@@ -58,7 +58,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/ecat_globals.hpp" line="423" column="14" bodyfile="include/ecat_globals.hpp" bodystart="423" bodyend="-1"/>
+        <location file="include/ecat_globals.hpp" line="442" column="14" bodyfile="include/ecat_globals.hpp" bodystart="442" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="structCSTorqueModeParam_1af38648d320e4ff0f5971ad1d9de39455" prot="public" static="no" mutable="no">
         <type>uint32_t</type>
@@ -72,7 +72,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/ecat_globals.hpp" line="424" column="14" bodyfile="include/ecat_globals.hpp" bodystart="424" bodyend="-1"/>
+        <location file="include/ecat_globals.hpp" line="443" column="14" bodyfile="include/ecat_globals.hpp" bodystart="443" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="structCSTorqueModeParam_1a58cb92bb0dfa51260734377019d6fc61" prot="public" static="no" mutable="no">
         <type>uint32_t</type>
@@ -86,7 +86,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/ecat_globals.hpp" line="425" column="14" bodyfile="include/ecat_globals.hpp" bodystart="425" bodyend="-1"/>
+        <location file="include/ecat_globals.hpp" line="444" column="14" bodyfile="include/ecat_globals.hpp" bodystart="444" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="structCSTorqueModeParam_1a8ab0b48cb538416341ca316cf4a232fb" prot="public" static="no" mutable="no">
         <type>uint32_t</type>
@@ -100,7 +100,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/ecat_globals.hpp" line="426" column="14" bodyfile="include/ecat_globals.hpp" bodystart="426" bodyend="-1"/>
+        <location file="include/ecat_globals.hpp" line="445" column="14" bodyfile="include/ecat_globals.hpp" bodystart="445" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="structCSTorqueModeParam_1a5a0c0419cd75564291267852cd654bb4" prot="public" static="no" mutable="no">
         <type>uint32_t</type>
@@ -114,7 +114,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/ecat_globals.hpp" line="427" column="14" bodyfile="include/ecat_globals.hpp" bodystart="427" bodyend="-1"/>
+        <location file="include/ecat_globals.hpp" line="446" column="14" bodyfile="include/ecat_globals.hpp" bodystart="446" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="structCSTorqueModeParam_1a057d93a3586ab51bc03aa6230d615b2c" prot="public" static="no" mutable="no">
         <type>uint32_t</type>
@@ -128,7 +128,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/ecat_globals.hpp" line="428" column="14" bodyfile="include/ecat_globals.hpp" bodystart="428" bodyend="-1"/>
+        <location file="include/ecat_globals.hpp" line="447" column="14" bodyfile="include/ecat_globals.hpp" bodystart="447" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="structCSTorqueModeParam_1a7d68ad3880b4f4cbe058f08a359d6902" prot="public" static="no" mutable="no">
         <type>uint32_t</type>
@@ -142,7 +142,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/ecat_globals.hpp" line="429" column="14" bodyfile="include/ecat_globals.hpp" bodystart="429" bodyend="-1"/>
+        <location file="include/ecat_globals.hpp" line="448" column="14" bodyfile="include/ecat_globals.hpp" bodystart="448" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="structCSTorqueModeParam_1a4e21916f0e661a3da21f00fa5f084a81" prot="public" static="no" mutable="no">
         <type>uint32_t</type>
@@ -156,7 +156,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/ecat_globals.hpp" line="430" column="14" bodyfile="include/ecat_globals.hpp" bodystart="430" bodyend="-1"/>
+        <location file="include/ecat_globals.hpp" line="449" column="14" bodyfile="include/ecat_globals.hpp" bodystart="449" bodyend="-1"/>
       </memberdef>
       </sectiondef>
     <briefdescription>
@@ -164,7 +164,7 @@
     </briefdescription>
     <detaileddescription>
     </detaileddescription>
-    <location file="include/ecat_globals.hpp" line="418" column="1" bodyfile="include/ecat_globals.hpp" bodystart="419" bodyend="431"/>
+    <location file="include/ecat_globals.hpp" line="437" column="1" bodyfile="include/ecat_globals.hpp" bodystart="438" bodyend="450"/>
     <listofallmembers>
       <member refid="structCSTorqueModeParam_1a4e21916f0e661a3da21f00fa5f084a81" prot="public" virt="non-virtual"><scope>CSTorqueModeParam</scope><name>interpolation_time_period</name></member>
       <member refid="structCSTorqueModeParam_1af38648d320e4ff0f5971ad1d9de39455" prot="public" virt="non-virtual"><scope>CSTorqueModeParam</scope><name>max_gear_input_speed</name></member>

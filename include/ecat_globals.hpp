@@ -91,9 +91,9 @@ const uint32_t  g_kNumberOfServoDrivers = 1 ;
 /// If you want to measure timings leave it as one, otherwise make it 0.
 #define MEASURE_TIMING         0    
  /// set this to 1 if you want to use it in velocity mode (and set other modes 0)
-#define VELOCITY_MODE          0 
+#define VELOCITY_MODE          1 
 /// set this to 1 if you want to use it in position mode (and set other modes 0)  
-#define POSITION_MODE          1    
+#define POSITION_MODE          0    
 /// set this to 1 if you want to use it in cyclic synchronous position mode (and set other modes 0)
 #define CYCLIC_POSITION_MODE   0    
 /// set this to 1 if you want to use it in cyclic synchronous velocity mode (and set other modes 0)

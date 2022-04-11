@@ -184,7 +184,7 @@ int EthercatLifeCycle::InitEthercatCommunication()
     
     P.profile_acc=3e4 ;
     P.profile_dec=3e4 ;
-    P.max_profile_vel = 7000 ;
+    P.max_profile_vel = 1000 ;
     P.quick_stop_dec = 3e4 ;
     P.motion_profile_type = 0 ;
     ecat_node_->SetProfileVelocityParametersAll(P);

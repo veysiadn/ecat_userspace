@@ -5,7 +5,8 @@
  Please check prerequisites, guides, links and documentations before installation, or using this control software. To be able to build this control software you will need to install IgH EtherCAT library, and if you need real-time performance you will need to install RT_PREEMPTH patch or Xenomai kernel. You can follow links below for the installation of required library and RT_PREEMPT installation.
 
 ## Prerequisites
-- [RT_Preempt Linux and IgH EtherCAT Implementation](https://github.com/veysiadn/IgHEtherCATImplementation)
+- [IgH EtherCAT Implementation](https://github.com/veysiadn/IgHEtherCATImplementation)
+- [RT_PREEMPT Patched Linux](https://github.com/veysiadn/RT_PREEMPT_INSTALL)
 - If you want to use [Xenomai-Installation](https://github.com/veysiadn/xenomai-install)
 
 Once you install the prerequisites you're ready to build the control software.

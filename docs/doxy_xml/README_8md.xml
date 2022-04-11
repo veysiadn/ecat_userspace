@@ -14,7 +14,8 @@
 <codeline><highlight class="normal"><sp/>Please<sp/>check<sp/>prerequisites,<sp/>guides,<sp/>links<sp/>and<sp/>documentations<sp/>before<sp/>installation,<sp/>or<sp/>using<sp/>this<sp/>control<sp/>software.<sp/>To<sp/>be<sp/>able<sp/>to<sp/>build<sp/>this<sp/>control<sp/>software<sp/>you<sp/>will<sp/>need<sp/>to<sp/>install<sp/>IgH<sp/>EtherCAT<sp/>library,<sp/>and<sp/>if<sp/>you<sp/>need<sp/>real-time<sp/>performance<sp/>you<sp/>will<sp/>need<sp/>to<sp/>install<sp/>RT_PREEMPTH<sp/>patch<sp/>or<sp/>Xenomai<sp/>kernel.<sp/>You<sp/>can<sp/>follow<sp/>links<sp/>below<sp/>for<sp/>the<sp/>installation<sp/>of<sp/>required<sp/>library<sp/>and<sp/>RT_PREEMPT<sp/>installation.</highlight></codeline>
 <codeline></codeline>
 <codeline><highlight class="normal">##<sp/>Prerequisites</highlight></codeline>
-<codeline><highlight class="normal">-<sp/>[RT_Preempt<sp/>Linux<sp/>and<sp/>IgH<sp/>EtherCAT<sp/>Implementation](https://github.com/veysiadn/IgHEtherCATImplementation)</highlight></codeline>
+<codeline><highlight class="normal">-<sp/>[IgH<sp/>EtherCAT<sp/>Implementation](https://github.com/veysiadn/IgHEtherCATImplementation)</highlight></codeline>
+<codeline><highlight class="normal">-<sp/>[RT_PREEMPT<sp/>Patched<sp/>Linux](https://github.com/veysiadn/RT_PREEMPT_INSTALL)</highlight></codeline>
 <codeline><highlight class="normal">-<sp/>If<sp/>you<sp/>want<sp/>to<sp/>use<sp/>[Xenomai-Installation](https://github.com/veysiadn/xenomai-install)</highlight></codeline>
 <codeline></codeline>
 <codeline><highlight class="normal">Once<sp/>you<sp/>install<sp/>the<sp/>prerequisites<sp/>you&apos;re<sp/>ready<sp/>to<sp/>build<sp/>the<sp/>control<sp/>software.</highlight></codeline>

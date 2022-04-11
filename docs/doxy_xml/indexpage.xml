@@ -11,7 +11,8 @@
 <sect1 id="index_1autotoc_md1">
 <title>Prerequisites</title>
 <para><itemizedlist>
-<listitem><para><ulink url="https://github.com/veysiadn/IgHEtherCATImplementation">RT_Preempt Linux and IgH EtherCAT Implementation</ulink></para>
+<listitem><para><ulink url="https://github.com/veysiadn/IgHEtherCATImplementation">IgH EtherCAT Implementation</ulink></para>
+</listitem><listitem><para><ulink url="https://github.com/veysiadn/RT_PREEMPT_INSTALL">RT_PREEMPT Patched Linux</ulink></para>
 </listitem><listitem><para>If you want to use <ulink url="https://github.com/veysiadn/xenomai-install">Xenomai-Installation</ulink></para>
 </listitem></itemizedlist>
 </para>

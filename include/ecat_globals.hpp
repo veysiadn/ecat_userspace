@@ -74,24 +74,43 @@
 #include "object_dictionary.hpp"  
 
 /****************************************************************************/
-                /// USER SHOULD DEFINE THIS AREAS ///
-#define NUM_OF_SLAVES     1  /// Total number of connected slave to the bus.
-const uint32_t  g_kNumberOfServoDrivers = 1 ;   /// Number of connected servo drives.
+                /*** USER SHOULD DEFINE THIS AREAS ***/
+/// Total number of connected slave to the bus.
+#define NUM_OF_SLAVES     1 
+
+/// Number of connected servo drives.
+const uint32_t  g_kNumberOfServoDrivers = 1 ;   
+
 /// If you have EtherCAT slave different than CiA402 supported motor drive, set this macro to 1
 /// @note  That you'll have to manually specfy PDO mapping for your custom slave.
-#define CUSTOM_SLAVE     0    
-#define FREQUENCY       1000        /// Ethercat PDO exchange loop frequency in Hz
-#define MEASURE_TIMING         1    /// If you want to measure timings leave it as one, otherwise make it 0.
-#define VELOCITY_MODE          0    /// set this to 1 if you want to use it in velocity mode (and set other modes 0)
-#define POSITION_MODE          0    /// set this to 1 if you want to use it in position mode (and set other modes 0)
-#define CYCLIC_POSITION_MODE   0    /// set this to 1 if you want to use it in cyclic synchronous position mode (and set other modes 0)
-#define CYCLIC_VELOCITY_MODE   0    /// set this to 1 if you want to use it in cyclic synchronous velocity mode (and set other modes 0)
-#define CYCLIC_TORQUE_MODE     1    /// set this to 1 if you want to use it in cyclic synchronous torque mode (and set other modes 0)
-#define DISTRIBUTED_CLOCK      1    /// set this to 1 if you want to activate distributed clock, by default leave it 1.
+#define CUSTOM_SLAVE     0
+
+/// Ethercat PDO exchange loop frequency in Hz    
+#define FREQUENCY       1000        
+
+/// If you want to measure timings leave it as one, otherwise make it 0.
+#define MEASURE_TIMING         1    
+ /// set this to 1 if you want to use it in velocity mode (and set other modes 0)
+#define VELOCITY_MODE          0 
+/// set this to 1 if you want to use it in position mode (and set other modes 0)  
+#define POSITION_MODE          0    
+/// set this to 1 if you want to use it in cyclic synchronous position mode (and set other modes 0)
+#define CYCLIC_POSITION_MODE   0    
+/// set this to 1 if you want to use it in cyclic synchronous velocity mode (and set other modes 0)
+#define CYCLIC_VELOCITY_MODE   0    
+/// set this to 1 if you want to use it in cyclic synchronous torque mode (and set other modes 0)
+#define CYCLIC_TORQUE_MODE     1  
+/// set this to 1 if you want to activate distributed clock, by default leave it 1.  
+#define DISTRIBUTED_CLOCK      1    
 /*****************************************************************************/
-/// Define this part based on your motor specs
+/// If you are using geared motor define ratio
+/// @note If you have different types of motors in your system you may need to create different macros for them.
 #define GEAR_RATIO          103
+/// Motor encoder resolution
 #define ENCODER_RESOLUTION  1024
+
+
+
 #define INC_PER_ROTATION      GEAR_RATIO*ENCODER_RESOLUTION*4
 #define FIVE_DEGREE_CCW      int(INC_PER_ROTATION/72)
 #define THIRTY_DEGREE_CCW    int(INC_PER_ROTATION/12)

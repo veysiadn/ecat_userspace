@@ -42,11 +42,10 @@
 #include "ecat_globals.hpp"
 
 
-/******************************************************************************
+/**
  *  \class   EthercatSlave
  *  \brief   Contains EtherCAT slave parameters for configuration.
- * .
- *******************************************************************************/
+ */
 class EthercatSlave
 {
     public:

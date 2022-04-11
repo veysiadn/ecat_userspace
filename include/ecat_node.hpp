@@ -41,7 +41,7 @@
 /******************************************************************************/
 #include "ecat_globals.hpp"
 /******************************************************************************/
-/// Forward declaration of EthercatSlave class.
+// Forward declaration of EthercatSlave class.
 class EthercatSlave ;
 #include "ecat_slave.hpp"
 /******************************************************************************/

@@ -11,7 +11,6 @@ int main(int argc, char **argv)
 {
     XboxController Controller;
     SetRealTimeSettings();
-    // CKim - Initialize and launch EthercatLifeCycleNode
     std::unique_ptr<EthercatLifeCycleNode::EthercatLifeCycle> ecat_lifecycle_node;
     ecat_lifecycle_node = std::make_unique<EthercatLifeCycleNode::EthercatLifeCycle>();
 
@@ -34,8 +33,13 @@ int main(int argc, char **argv)
         {
             Controller.readXboxData(Controller.xbox );
             ecat_lifecycle_node->controller_.left_x_axis_  = float(Controller.xbox->stk_LeftX / 32767.0);
-            ecat_lifecycle_node->controller_.right_x_axis_  = float(Controller.xbox->stk_RightX);
+            ecat_lifecycle_node->controller_.right_x_axis_  = float(Controller.xbox->stk_RightX/32767.0);
             ecat_lifecycle_node->controller_.left_y_axis_ = float(Controller.xbox->stk_LeftY / 32767.0);
+            ecat_lifecycle_node->controller_.red_button_ = Controller.xbox->btn_B;
+            ecat_lifecycle_node->controller_.blue_button_ = Controller.xbox->btn_X;
+            ecat_lifecycle_node->controller_.green_button_ = Controller.xbox->btn_A;
+            ecat_lifecycle_node->controller_.yellow_button_ = Controller.xbox->btn_Y;
+            ecat_lifecycle_node->controller_.xbox_button_ = Controller.xbox->btn_xbox; 
             ecat_lifecycle_node->controller_.left_rb_button_ = Controller.xbox->btn_leftTop;
             ecat_lifecycle_node->controller_.right_rb_button_ = Controller.xbox->btn_rightTop;
             //std::cout << ":LxAxis: "<<ecat_lifecycle_node->controller_.left_x_axis_ << ":LyAxis: " << ecat_lifecycle_node->controller_.left_y_axis_ << std::endl;

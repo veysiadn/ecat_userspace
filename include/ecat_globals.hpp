@@ -89,17 +89,17 @@ const uint32_t  g_kNumberOfServoDrivers = 1 ;
 #define FREQUENCY       1000        
 
 /// If you want to measure timings leave it as one, otherwise make it 0.
-#define MEASURE_TIMING         1    
+#define MEASURE_TIMING         0    
  /// set this to 1 if you want to use it in velocity mode (and set other modes 0)
 #define VELOCITY_MODE          0 
 /// set this to 1 if you want to use it in position mode (and set other modes 0)  
-#define POSITION_MODE          0    
+#define POSITION_MODE          1    
 /// set this to 1 if you want to use it in cyclic synchronous position mode (and set other modes 0)
 #define CYCLIC_POSITION_MODE   0    
 /// set this to 1 if you want to use it in cyclic synchronous velocity mode (and set other modes 0)
 #define CYCLIC_VELOCITY_MODE   0    
 /// set this to 1 if you want to use it in cyclic synchronous torque mode (and set other modes 0)
-#define CYCLIC_TORQUE_MODE     1  
+#define CYCLIC_TORQUE_MODE     0  
 /// set this to 1 if you want to activate distributed clock, by default leave it 1.  
 #define DISTRIBUTED_CLOCK      1    
 /*****************************************************************************/
@@ -474,5 +474,3 @@ typedef struct
     uint32_t	profile_dec;
     uint16_t    motion_profile_type;
 } ProfileVelocityParam ;
-
-

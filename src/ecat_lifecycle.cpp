@@ -360,10 +360,21 @@ void EthercatLifeCycle::StartPdoExchange(void *instance)
                 } 
             }
         }
-
-        //WriteToSlavesInPositionMode();
+#if POSITION_MODE
+        WriteToSlavesInPositionMode();
+#endif 
+#if CYCLIC_POSITION_MODE
+        WriteToSlavesInPositionMode();
+#endif 
+#if VELOCITY_MODE       
         WriteToSlavesVelocityMode();
-
+#endif
+#if CYCLIC_VELOCITY_MODE       
+        WriteToSlavesVelocityMode();
+#endif
+#if CYCLIC_TORQUE_MODE
+        WriteToSlavesInCyclicTorqueMode();
+#endif
         // CKim - Sync Timer
         if (sync_ref_counter) {
             sync_ref_counter--;
@@ -525,22 +536,18 @@ void EthercatLifeCycle::StartPdoExchange(void *instance)
 
         ReadFromSlaves();
 #if POSITION_MODE
-        UpdateMotorStatePositionMode();
         UpdatePositionModeParameters();
         WriteToSlavesInPositionMode();
 #endif
 #if CYCLIC_POSITION_MODE
-    UpdateMotorStatePositionMode();
-    UpdateCyclicPositionModeParameters();
-    WriteToSlavesInPositionMode();
+        UpdateCyclicPositionModeParameters();
+        WriteToSlavesInPositionMode();
 #endif 
 #if VELOCITY_MODE
-        UpdateMotorStateVelocityMode();
         UpdateVelocityModeParameters();
         WriteToSlavesVelocityMode();
 #endif
 #if CYCLIC_VELOCITY_MODE
-        UpdateMotorStateVelocityMode();
         UpdateCyclicVelocityModeParameters();
         WriteToSlavesVelocityMode();
 #endif
@@ -633,13 +640,21 @@ int EthercatLifeCycle::GetComState()
 
 void EthercatLifeCycle::UpdatePositionModeParameters()
 {   
-       // printf( "Updating control parameters....\n");
+    static uint8_t operation_ready = 0 ;
     for(int i = 0 ; i < g_kNumberOfServoDrivers ; i++){
         if(motor_state_[i]==kOperationEnabled || motor_state_[i]==kTargetReached || motor_state_[i]==kSwitchedOn){
             if (controller_.xbox_button_){
                 for(int j = 0 ; j < g_kNumberOfServoDrivers ; j++){
                     sent_data_.target_pos[j] = 0 ; 
-                    sent_data_.control_word[j] = SM_GO_ENABLE ;
+                    if(!operation_ready){
+                         sent_data_.control_word[j] = SM_RUN ;
+                         if(TEST_BIT(received_data_.status_word[j],10)){
+                            operation_ready = 1; 
+                         }
+                    }else{
+                        sent_data_.control_word[0] = SM_GO_ENABLE;
+                        operation_ready = 0; 
+                    }
                 }
                 break;
             }
@@ -659,6 +674,15 @@ void EthercatLifeCycle::UpdatePositionModeParameters()
             
             if(controller_.red_button_ || controller_.blue_button_ || controller_.green_button_ || controller_.yellow_button_){
                 sent_data_.control_word[0] = SM_GO_ENABLE;
+                if(!operation_ready){
+                    sent_data_.control_word[0] = SM_RUN ;
+                    if(TEST_BIT(received_data_.status_word[0],10)){
+                    operation_ready = 1; 
+                    }
+                }else{
+                    sent_data_.control_word[0] = SM_GO_ENABLE;
+                    operation_ready = 0; 
+                }
             }
             // Settings for motor 2 
             if(controller_.left_r_button_ > 0 ){
@@ -823,26 +847,12 @@ int EthercatLifeCycle::EnableDrivers()
 
 void EthercatLifeCycle::WriteToSlavesInPositionMode()
 {
-    if(!received_data_.left_limit_switch_val || !received_data_.right_limit_switch_val){
-        for(int i = 0 ; i < g_kNumberOfServoDrivers; i++){
-            if(sent_data_.target_pos[i] > 0){
-                EC_WRITE_U16(ecat_node_->slaves_[i].slave_pdo_domain_ + ecat_node_->slaves_[i].offset_.control_word,sent_data_.control_word[i]);
-                EC_WRITE_S32(ecat_node_->slaves_[i].slave_pdo_domain_ + ecat_node_->slaves_[i].offset_.target_pos,sent_data_.target_pos[i]);
-            }else{
-                EC_WRITE_U16(ecat_node_->slaves_[i].slave_pdo_domain_ + ecat_node_->slaves_[i].offset_.control_word,SM_QUICKSTOP);
-            }
-        }
-    }else {
-        if(!emergency_status_){
-            for(int i = 0 ; i < g_kNumberOfServoDrivers ; i++){
-                EC_WRITE_U16(ecat_node_->slaves_[i].slave_pdo_domain_ + ecat_node_->slaves_[i].offset_.control_word,SM_QUICKSTOP);
-        //      EC_WRITE_S32(ecat_node_->slaves_[i].slave_pdo_domain_ + ecat_node_->slaves_[i].offset_.target_pos,0);
-            }
+    for(int i = 0 ; i < g_kNumberOfServoDrivers; i++){
+        if(sent_data_.target_pos[i] != 0){
+            EC_WRITE_U16(ecat_node_->slaves_[i].slave_pdo_domain_ + ecat_node_->slaves_[i].offset_.control_word,sent_data_.control_word[i]);
+            EC_WRITE_S32(ecat_node_->slaves_[i].slave_pdo_domain_ + ecat_node_->slaves_[i].offset_.target_pos,sent_data_.target_pos[i]);
         }else{
-            for(int i = 0 ; i < g_kNumberOfServoDrivers ; i++){
-                EC_WRITE_U16(ecat_node_->slaves_[i].slave_pdo_domain_ + ecat_node_->slaves_[i].offset_.control_word,sent_data_.control_word[i]);
-                EC_WRITE_S32(ecat_node_->slaves_[i].slave_pdo_domain_ + ecat_node_->slaves_[i].offset_.target_pos,sent_data_.target_pos[i]);
-            }
+            EC_WRITE_U16(ecat_node_->slaves_[i].slave_pdo_domain_ + ecat_node_->slaves_[i].offset_.control_word,SM_QUICKSTOP);
         }
     }
 }
@@ -870,79 +880,13 @@ void EthercatLifeCycle::WriteToSlavesInCyclicTorqueMode()
   }
 }
 
-// void EthercatLifeCycle::UpdateCyclicPositionModeParameters()
-// {
-//     // printf( "Updating control parameters....\n");
-//     for(int i = 0 ; i < g_kNumberOfServoDrivers ; i++){
-//         if(motor_state_[i]==kOperationEnabled || motor_state_[i]==kTargetReached || motor_state_[i]==kSwitchedOn){
-//             if (controller_.xbox_button_){
-//                 for(int j = 0 ; j < g_kNumberOfServoDrivers ; j++){
-//                     sent_data_.target_pos[j] = 0 ; 
-//                     sent_data_.control_word[j] = SM_GO_ENABLE ;
-//                 }
-//                 break;
-//             }
-//             // Settings for motor 1;
-//             if(controller_.red_button_ > 0 ){
-//                 sent_data_.target_pos[0] = received_data_.actual_pos[0] - FIVE_DEGREE_CCW/50 ;
-//             }
-//             if(controller_.blue_button_ > 0){
-//                 sent_data_.target_pos[0] = received_data_.actual_pos[0] + FIVE_DEGREE_CCW/50 ;
-//             }
-//             if(controller_.green_button_ > 0 ){
-//                 sent_data_.target_pos[0] = received_data_.actual_pos[0] + THIRTY_DEGREE_CCW/50 ;
-//             }
-//             if(controller_.yellow_button_ > 0){
-//                 sent_data_.target_pos[0] = received_data_.actual_pos[0] -THIRTY_DEGREE_CCW/50 ;
-//             }
-//            
-//             if(controller_.red_button_ || controller_.blue_button_ || controller_.green_button_ || controller_.yellow_button_){
-//                 sent_data_.control_word[0] = SM_GO_ENABLE;
-//             }
-//             // Settings for motor 2 
-//             if(controller_.left_r_button_ > 0 ){
-//                 sent_data_.target_pos[1] = received_data_.actual_pos[1] + FIVE_DEGREE_CCW/50 ;
-//             }
-//             if(controller_.left_l_button_ > 0){
-//                 sent_data_.target_pos[1] = received_data_.actual_pos[1] - FIVE_DEGREE_CCW/50 ;
-//             }
-//             if(controller_.left_u_button_ > 0 ){
-//                 sent_data_.target_pos[1] = received_data_.actual_pos[1] -THIRTY_DEGREE_CCW/50 ;
-//             }
-//             if(controller_.left_d_button_ > 0){
-//                 sent_data_.target_pos[1] = received_data_.actual_pos[1] + THIRTY_DEGREE_CCW/50 ;
-//             }
-//
-//             if((controller_.left_r_button_ || controller_.left_l_button_ || controller_.left_u_button_ || controller_.left_d_button_)){
-//                 sent_data_.control_word[1] = SM_GO_ENABLE;
-//             }
-//
-//             // Settings for motor 3 
-//             if(controller_.right_rb_button_ > 0 ){
-//                 sent_data_.target_pos[2] = received_data_.actual_pos[2] + FIVE_DEGREE_CCW/50 ;
-//             }
-//             if(controller_.left_rb_button_ > 0){
-//                 sent_data_.target_pos[2] = received_data_.actual_pos[2] - FIVE_DEGREE_CCW/50 ;
-//             }
-//             if(controller_.left_start_button_ > 0 ){
-//                 sent_data_.target_pos[2] = received_data_.actual_pos[2] + THIRTY_DEGREE_CCW/50 ;
-//             }
-//             if(controller_.right_start_button_ > 0){
-//                 sent_data_.target_pos[2] = received_data_.actual_pos[2] - THIRTY_DEGREE_CCW/50 ;
-//             }
-//             if((controller_.right_rb_button_ || controller_.left_rb_button_ || controller_.left_start_button_ || controller_.right_start_button_)){
-//                 sent_data_.control_word[2] = SM_GO_ENABLE;
-//             }
-//         }
-//     }
-// }
-
 // CKim - Modifications
 void EthercatLifeCycle::UpdateCyclicPositionModeParameters()
 {
     float deadzone = 0.05;
     float amp = 1.0 - deadzone;
     float val;
+    static uint8_t operation_ready = 0;
     // printf( "Updating control parameters....\n");
     for(int i = 0 ; i < g_kNumberOfServoDrivers ; i++){
         if(motor_state_[i]==kOperationEnabled || motor_state_[i]==kTargetReached || motor_state_[i]==kSwitchedOn)
@@ -950,16 +894,23 @@ void EthercatLifeCycle::UpdateCyclicPositionModeParameters()
             // Settings for motor 1;
             val = controller_.left_x_axis_;
             if(val > deadzone) {
-                sent_data_.target_pos[0] = received_data_.actual_pos[0] + (val-deadzone)/amp*THIRTY_DEGREE_CCW/50 ;
+                sent_data_.target_pos[0] = received_data_.actual_pos[0] + (val-deadzone)/amp*THIRTY_DEGREE_CCW/500 ;
             }
             else if(val < -deadzone) {
-                sent_data_.target_pos[0] = received_data_.actual_pos[0] + (val+deadzone)/amp*THIRTY_DEGREE_CCW/50 ;
+                sent_data_.target_pos[0] = received_data_.actual_pos[0] + (val+deadzone)/amp*THIRTY_DEGREE_CCW/500 ;
             }
             // else {
             //     sent_data_.target_pos[0] = received_data_.actual_pos[0];
             // }
             //if((val > deadzone) || (val < -deadzone)){
+            if (!operation_ready){
+                sent_data_.control_word[0] = SM_RUN;
+                if(TEST_BIT(received_data_.status_word[0],10))
+                    operation_ready = 1;
+            }else{
                 sent_data_.control_word[0] = SM_GO_ENABLE;
+                operation_ready = 0; 
+            }
             //}
 
             // Settings for motor 2 
@@ -1084,18 +1035,18 @@ void EthercatLifeCycle::UpdateVelocityModeParameters()
    // printf( "Updating control parameters....\n");
     for(int i = 0 ; i < g_kNumberOfServoDrivers ; i++){
         if(motor_state_[i]==kOperationEnabled || motor_state_[i]==kTargetReached || motor_state_[i]==kSwitchedOn){
-            if(controller_.right_x_axis_ > 1000 || controller_.right_x_axis_ < -1000 ){
-                sent_data_.target_vel[0] = controller_.right_x_axis_ /150 ;
+            if(controller_.right_x_axis_ > 0.1 || controller_.right_x_axis_ < -0.1 ){
+                sent_data_.target_vel[0] = controller_.right_x_axis_ *1000 ;
             }else{
                 sent_data_.target_vel[0] = 0;
             }
-            if(controller_.left_x_axis_ < -1000 || controller_.left_x_axis_ > 1000){
-                sent_data_.target_vel[1] = controller_.left_x_axis_ /150 ;
+            if(controller_.left_x_axis_ < -0.1 || controller_.left_x_axis_ > 0.1){
+                sent_data_.target_vel[1] = controller_.left_x_axis_ *1000 ;
             }else{
                 sent_data_.target_vel[1] = 0 ;
             }
-            if(controller_.left_y_axis_ < -1000 || controller_.left_y_axis_ > 1000){
-                sent_data_.target_vel[2] = controller_.left_y_axis_ /150 ;
+            if(controller_.left_y_axis_ < -0.1 || controller_.left_y_axis_ > 0.1){
+                sent_data_.target_vel[2] = controller_.left_y_axis_ *1000 ;
             }else{
                 sent_data_.target_vel[2] = 0 ;
             }

@@ -32,8 +32,6 @@ uint8_t EthercatLifeCycle::on_configure()
         printf( "Configuration phase failed\n");
         return FAILURE;
     }else{
-
-        /// Add qt signal and sloth mechanism in here.
         return SUCCESS;
     }
 }
@@ -45,8 +43,6 @@ uint8_t EthercatLifeCycle::on_activate()
         printf("Activation phase failed");
         return FAILURE;
     }else{
-        // received_data_publisher_->on_activate();
-        // sent_data_publisher_->on_activate();
         printf( "Activation complete, real-time communication started.");
         return SUCCESS;
     }
@@ -108,14 +104,14 @@ int EthercatLifeCycle::SetComThreadPriorities()
     // for this feature to be active fist you have to modify GRUB_CMDLINE_LINUX_DEFAULT in /etc/default/grub 
     // add isolcpus=3 so after editing it will be ; GRUB_CMDLINE_LINUX_DEFAULT = "quiet splash isolcpus=3" 
     // save and exit, and type sudo update-grub and reboot.
-     cpu_set_t mask;
-    CPU_ZERO(&mask);
-    CPU_SET(8,&mask);
-    CPU_SET(9,&mask);
-	CPU_SET(10,&mask);
-	CPU_SET(11,&mask);
+    //  cpu_set_t mask;
+    // CPU_ZERO(&mask);
+    // CPU_SET(8,&mask);
+    // CPU_SET(9,&mask);
+	// CPU_SET(10,&mask);
+	// CPU_SET(11,&mask);
 
-    int result = sched_setaffinity(0,sizeof(mask),&mask);
+    // int result = sched_setaffinity(0,sizeof(mask),&mask);
     /**********************************************************************************************/
     
     /* Set a specific stack size  */
@@ -241,31 +237,6 @@ int EthercatLifeCycle::InitEthercatCommunication()
     if(ecat_node_->MapDefaultPdos()){
         return  -1 ;
     }
-    // std::vector<SDO_data> pack(NUM_OF_SLAVES) ; 
-    // for(int i = 0 ; i < 3 ; i++){
-    //     for(int i=0 ; i < NUM_OF_SLAVES; i++){
-    //         pack[i].slave_position = i;
-    //         pack[i].index = OD_STATUS_WORD ; f
-    //         pack[i].sub_index = 0 ;
-    //         pack[i].data_sz = sizeof(uint16_t);
-    //         ecat_node_->SdoRead(pack[i]);
-    //         std::cout << "Data size of SDO Read : " << pack[i].data_sz << std::endl;
-    //         std::cout << "Status Word           : " << received_data_.status_word[i] << std::endl;
-
-    //         received_data_.status_word[i] = (uint16_t)(pack[i].data);
-    //         if(EnableDrivers()==g_kNumberOfServoDrivers){
-    //             std::cout << "All drives are enabled " << std::endl; 
-    //             usleep(5e6);
-    //             break;
-    //         };
-
-    //         pack[i].index = OD_CONTROL_WORD;
-    //         pack[i].data = uint32_t(sent_data_.control_word[i]);
-    //         ecat_node_->SdoWrite(pack[i]);
-
-    //         // std::cout << "Slave "<< i << "th status word : "<<  data << std::endl; 
-    //     }
-    // }
 
     printf("Configuring DC synchronization...\n");
     if(DISTRIBUTED_CLOCK){
@@ -500,26 +471,6 @@ void EthercatLifeCycle::StartPdoExchange(void *instance)
                 }
             }
 
-        // #if MEASURE_TIMING
-        // if(!begin)
-        // clock_gettime(CLOCK_TO_USE, &publish_time_start);
-        // #endif
-        
-        // timer_info_.GetTime();
-        // PublishAllData();
-        // timer_info_.MeasureTimeDifference();
-        // if(timer_info_.counter_==NUMBER_OF_SAMPLES){
-        //     timer_info_.OutInfoToFile();
-        //     //break;
-        // }
-        // #if MEASURE_TIMING
-        // if(!begin)
-        // clock_gettime(CLOCK_TO_USE, &publish_time_end);
-        // publishing_time_ns = DIFF_NS(publish_time_start,publish_time_end);
-        // if(publishing_time_ns>publish_time_max) publish_time_max = publishing_time_ns;
-        // if(publishing_time_ns<publish_time_min) publish_time_min = publishing_time_ns;
-        // #endif
-
         #if MEASURE_TIMING
             // output timing stats
             if(!print_val){
@@ -581,7 +532,7 @@ void EthercatLifeCycle::StartPdoExchange(void *instance)
 #if CYCLIC_POSITION_MODE
     UpdateMotorStatePositionMode();
     UpdateCyclicPositionModeParameters();
-    //WriteToSlavesInPositionMode();
+    WriteToSlavesInPositionMode();
 #endif 
 #if VELOCITY_MODE
         UpdateMotorStateVelocityMode();
@@ -595,7 +546,6 @@ void EthercatLifeCycle::StartPdoExchange(void *instance)
 #endif
 
 #if CYCLIC_TORQUE_MODE
-        //UpdateMotorStateVelocityMode();
         UpdateCyclicTorqueModeParameters();
         WriteToSlavesInCyclicTorqueMode();
 #endif

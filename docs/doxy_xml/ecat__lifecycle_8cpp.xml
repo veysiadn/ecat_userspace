@@ -381,7 +381,7 @@
 <codeline lineno="184"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight></codeline>
 <codeline lineno="185"><highlight class="normal"><sp/><sp/><sp/><sp/>P.<ref refid="structProfileVelocityParam_1aeb9688ff83981562095d445d6dd2e437" kindref="member">profile_acc</ref>=3e4<sp/>;</highlight></codeline>
 <codeline lineno="186"><highlight class="normal"><sp/><sp/><sp/><sp/>P.<ref refid="structProfileVelocityParam_1a0afdd1d807f97d6d8137519cbbffc4e2" kindref="member">profile_dec</ref>=3e4<sp/>;</highlight></codeline>
-<codeline lineno="187"><highlight class="normal"><sp/><sp/><sp/><sp/>P.<ref refid="structProfileVelocityParam_1a8bf3ab4ee7ccdb626a1ceff8b0ce7fba" kindref="member">max_profile_vel</ref><sp/>=<sp/>7000<sp/>;</highlight></codeline>
+<codeline lineno="187"><highlight class="normal"><sp/><sp/><sp/><sp/>P.<ref refid="structProfileVelocityParam_1a8bf3ab4ee7ccdb626a1ceff8b0ce7fba" kindref="member">max_profile_vel</ref><sp/>=<sp/>1000<sp/>;</highlight></codeline>
 <codeline lineno="188"><highlight class="normal"><sp/><sp/><sp/><sp/>P.<ref refid="structProfileVelocityParam_1aed394e31a80560c0530c57a3bf8bf967" kindref="member">quick_stop_dec</ref><sp/>=<sp/>3e4<sp/>;</highlight></codeline>
 <codeline lineno="189"><highlight class="normal"><sp/><sp/><sp/><sp/>P.<ref refid="structProfileVelocityParam_1a2a981f1b49bd7c3dbaa080d857897947" kindref="member">motion_profile_type</ref><sp/>=<sp/>0<sp/>;</highlight></codeline>
 <codeline lineno="190"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classEthercatLifeCycleNode_1_1EthercatLifeCycle_1adecbe58e78eb53eaf1a526b5b83712c6" kindref="member">ecat_node_</ref>-&gt;SetProfileVelocityParametersAll(P);</highlight></codeline>

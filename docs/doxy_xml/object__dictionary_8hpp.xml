@@ -459,8 +459,8 @@
         </inbodydescription>
         <location file="include/object_dictionary.hpp" line="86" column="9" bodyfile="include/object_dictionary.hpp" bodystart="86" bodyend="-1"/>
       </memberdef>
-      <memberdef kind="define" id="object__dictionary_8hpp_1af2b7b4442244b3519a9ea321964331b7" prot="public" static="no">
-        <name>OD_MAX_PROFILE_VELOCITY</name>
+      <memberdef kind="define" id="object__dictionary_8hpp_1a23a3e09f726041c85d1b65f78d21d1de" prot="public" static="no">
+        <name>OD_MAX_MOTOR_SPEED</name>
         <initializer>0x6080,0x00</initializer>
         <briefdescription>
         </briefdescription>
@@ -470,8 +470,8 @@
         </inbodydescription>
         <location file="include/object_dictionary.hpp" line="87" column="9" bodyfile="include/object_dictionary.hpp" bodystart="87" bodyend="-1"/>
       </memberdef>
-      <memberdef kind="define" id="object__dictionary_8hpp_1a23a3e09f726041c85d1b65f78d21d1de" prot="public" static="no">
-        <name>OD_MAX_MOTOR_SPEED</name>
+      <memberdef kind="define" id="object__dictionary_8hpp_1af2b7b4442244b3519a9ea321964331b7" prot="public" static="no">
+        <name>OD_MAX_PROFILE_VELOCITY</name>
         <initializer>0X607F,0X00</initializer>
         <briefdescription>
         </briefdescription>
@@ -1277,8 +1277,8 @@
 <codeline lineno="84"><highlight class="normal"></highlight><highlight class="comment">//<sp/>EOF<sp/>OD_AXIS_CONFIURATIONS</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="85"><highlight class="normal"></highlight></codeline>
 <codeline lineno="86" refid="object__dictionary_8hpp_1a789d9eb960e2822cdc70e2ad36de37c0" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>OD_PROFILE_VELOCITY<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>0x6081,0x00</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="87" refid="object__dictionary_8hpp_1af2b7b4442244b3519a9ea321964331b7" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>OD_MAX_PROFILE_VELOCITY<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>0x6080,0x00</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="88" refid="object__dictionary_8hpp_1a23a3e09f726041c85d1b65f78d21d1de" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>OD_MAX_MOTOR_SPEED<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>0X607F,0X00</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="87" refid="object__dictionary_8hpp_1a23a3e09f726041c85d1b65f78d21d1de" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>OD_MAX_MOTOR_SPEED<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>0x6080,0x00</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="88" refid="object__dictionary_8hpp_1af2b7b4442244b3519a9ea321964331b7" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>OD_MAX_PROFILE_VELOCITY<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>0X607F,0X00</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="89" refid="object__dictionary_8hpp_1a31f30b528a4f1d95960ffbaf5c9185c1" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>OD_PROFILE_ACCELERATION<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>0x6083,0x00</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="90" refid="object__dictionary_8hpp_1aab964e5f374751b796525fe7c6f855f0" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>OD_PROFILE_DECELERATION<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>0x6084,0x00</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="91" refid="object__dictionary_8hpp_1a8aa34dae3922e680fdbf5427dabb62c9" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>OD_QUICK_STOP_DECELERATION<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>0x6085,0x00</highlight><highlight class="normal"></highlight></codeline>

@@ -454,8 +454,8 @@
     <member refid="object__dictionary_8hpp_1ae738527f4ae5acebf89cf9e1a3be8fc5" kind="define"><name>OD_SENSOR_CONFIGURATION</name></member>
     <member refid="object__dictionary_8hpp_1a785c550c3cf6d13e39964f2f9c69c54f" kind="define"><name>OD_CONTROL_STRUCTURE</name></member>
     <member refid="object__dictionary_8hpp_1a789d9eb960e2822cdc70e2ad36de37c0" kind="define"><name>OD_PROFILE_VELOCITY</name></member>
-    <member refid="object__dictionary_8hpp_1af2b7b4442244b3519a9ea321964331b7" kind="define"><name>OD_MAX_PROFILE_VELOCITY</name></member>
     <member refid="object__dictionary_8hpp_1a23a3e09f726041c85d1b65f78d21d1de" kind="define"><name>OD_MAX_MOTOR_SPEED</name></member>
+    <member refid="object__dictionary_8hpp_1af2b7b4442244b3519a9ea321964331b7" kind="define"><name>OD_MAX_PROFILE_VELOCITY</name></member>
     <member refid="object__dictionary_8hpp_1a31f30b528a4f1d95960ffbaf5c9185c1" kind="define"><name>OD_PROFILE_ACCELERATION</name></member>
     <member refid="object__dictionary_8hpp_1aab964e5f374751b796525fe7c6f855f0" kind="define"><name>OD_PROFILE_DECELERATION</name></member>
     <member refid="object__dictionary_8hpp_1a8aa34dae3922e680fdbf5427dabb62c9" kind="define"><name>OD_QUICK_STOP_DECELERATION</name></member>

@@ -438,7 +438,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/ecat_lifecycle.hpp" line="143" column="14" bodyfile="src/ecat_lifecycle.cpp" bodystart="284" bodyend="592"/>
+        <location file="include/ecat_lifecycle.hpp" line="143" column="14" bodyfile="src/ecat_lifecycle.cpp" bodystart="284" bodyend="599"/>
       </memberdef>
       <memberdef kind="function" id="classEthercatLifeCycleNode_1_1EthercatLifeCycle_1a901c06f35510c5be5c40c4f934b5974b" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>int</type>
@@ -458,7 +458,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/ecat_lifecycle.hpp" line="151" column="13" bodyfile="src/ecat_lifecycle.cpp" bodystart="629" bodyend="632"/>
+        <location file="include/ecat_lifecycle.hpp" line="151" column="13" bodyfile="src/ecat_lifecycle.cpp" bodystart="636" bodyend="639"/>
       </memberdef>
       <memberdef kind="function" id="classEthercatLifeCycleNode_1_1EthercatLifeCycle_1acde7634de380e1bc00e138aa9d3f90f0" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>void</type>
@@ -473,7 +473,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/ecat_lifecycle.hpp" line="156" column="14" bodyfile="src/ecat_lifecycle.cpp" bodystart="594" bodyend="609"/>
+        <location file="include/ecat_lifecycle.hpp" line="156" column="14" bodyfile="src/ecat_lifecycle.cpp" bodystart="601" bodyend="616"/>
       </memberdef>
       <memberdef kind="function" id="classEthercatLifeCycleNode_1_1EthercatLifeCycle_1a9d4c4f4d59fb5831e85c17b55bc23cbf" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>void</type>
@@ -488,7 +488,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/ecat_lifecycle.hpp" line="161" column="14" bodyfile="src/ecat_lifecycle.cpp" bodystart="611" bodyend="626"/>
+        <location file="include/ecat_lifecycle.hpp" line="161" column="14" bodyfile="src/ecat_lifecycle.cpp" bodystart="618" bodyend="633"/>
       </memberdef>
       <memberdef kind="function" id="classEthercatLifeCycleNode_1_1EthercatLifeCycle_1a5bf86789850a0b8e21ef44f50aefa497" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>void</type>
@@ -503,7 +503,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/ecat_lifecycle.hpp" line="167" column="14" bodyfile="src/ecat_lifecycle.cpp" bodystart="824" bodyend="848"/>
+        <location file="include/ecat_lifecycle.hpp" line="167" column="14" bodyfile="src/ecat_lifecycle.cpp" bodystart="848" bodyend="858"/>
       </memberdef>
       <memberdef kind="function" id="classEthercatLifeCycleNode_1_1EthercatLifeCycle_1a1940951e1d285e7ce193d7444474dca7" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>void</type>
@@ -518,7 +518,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/ecat_lifecycle.hpp" line="173" column="14" bodyfile="src/ecat_lifecycle.cpp" bodystart="1082" bodyend="1107"/>
+        <location file="include/ecat_lifecycle.hpp" line="173" column="14" bodyfile="src/ecat_lifecycle.cpp" bodystart="1033" bodyend="1058"/>
       </memberdef>
       <memberdef kind="function" id="classEthercatLifeCycleNode_1_1EthercatLifeCycle_1aa8678dbf6a5a60844c614553aaa6d484" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>void</type>
@@ -533,7 +533,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/ecat_lifecycle.hpp" line="179" column="14" bodyfile="src/ecat_lifecycle.cpp" bodystart="997" bodyend="1080"/>
+        <location file="include/ecat_lifecycle.hpp" line="179" column="14" bodyfile="src/ecat_lifecycle.cpp" bodystart="948" bodyend="1031"/>
       </memberdef>
       <memberdef kind="function" id="classEthercatLifeCycleNode_1_1EthercatLifeCycle_1a8d762bf02972f1f318148175d5641317" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>void</type>
@@ -548,7 +548,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/ecat_lifecycle.hpp" line="185" column="14" bodyfile="src/ecat_lifecycle.cpp" bodystart="634" bodyend="699"/>
+        <location file="include/ecat_lifecycle.hpp" line="185" column="14" bodyfile="src/ecat_lifecycle.cpp" bodystart="641" bodyend="723"/>
       </memberdef>
       <memberdef kind="function" id="classEthercatLifeCycleNode_1_1EthercatLifeCycle_1a434a3dc8581b010974d60b24e4ab7df2" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>void</type>
@@ -563,7 +563,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/ecat_lifecycle.hpp" line="191" column="14" bodyfile="src/ecat_lifecycle.cpp" bodystart="941" bodyend="995"/>
+        <location file="include/ecat_lifecycle.hpp" line="191" column="14" bodyfile="src/ecat_lifecycle.cpp" bodystart="884" bodyend="946"/>
       </memberdef>
       <memberdef kind="function" id="classEthercatLifeCycleNode_1_1EthercatLifeCycle_1ac81a74790509a9912c14982e9fa58d66" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>void</type>
@@ -578,7 +578,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/ecat_lifecycle.hpp" line="197" column="14" bodyfile="src/ecat_lifecycle.cpp" bodystart="1135" bodyend="1179"/>
+        <location file="include/ecat_lifecycle.hpp" line="197" column="14" bodyfile="src/ecat_lifecycle.cpp" bodystart="1086" bodyend="1130"/>
       </memberdef>
       <memberdef kind="function" id="classEthercatLifeCycleNode_1_1EthercatLifeCycle_1a1be54ebbef9bf865be39dd5b16b4e17f" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>void</type>
@@ -593,7 +593,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/ecat_lifecycle.hpp" line="201" column="14" bodyfile="src/ecat_lifecycle.cpp" bodystart="701" bodyend="748"/>
+        <location file="include/ecat_lifecycle.hpp" line="201" column="14" bodyfile="src/ecat_lifecycle.cpp" bodystart="725" bodyend="772"/>
       </memberdef>
       <memberdef kind="function" id="classEthercatLifeCycleNode_1_1EthercatLifeCycle_1a6bdee6a9dc5d22b58429a9ee507c9fe2" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>void</type>
@@ -608,7 +608,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/ecat_lifecycle.hpp" line="207" column="14" bodyfile="src/ecat_lifecycle.cpp" bodystart="1109" bodyend="1133"/>
+        <location file="include/ecat_lifecycle.hpp" line="207" column="14" bodyfile="src/ecat_lifecycle.cpp" bodystart="1060" bodyend="1084"/>
       </memberdef>
       <memberdef kind="function" id="classEthercatLifeCycleNode_1_1EthercatLifeCycle_1a50318001792b039b8cf179e4d38108ec" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>void</type>
@@ -623,7 +623,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/ecat_lifecycle.hpp" line="213" column="14" bodyfile="src/ecat_lifecycle.cpp" bodystart="850" bodyend="871"/>
+        <location file="include/ecat_lifecycle.hpp" line="213" column="14" bodyfile="src/ecat_lifecycle.cpp" bodystart="860" bodyend="881"/>
       </memberdef>
       <memberdef kind="function" id="classEthercatLifeCycleNode_1_1EthercatLifeCycle_1a6187ef3af76844b80e7a3ae399fa8460" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>int</type>
@@ -642,7 +642,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/ecat_lifecycle.hpp" line="219" column="13" bodyfile="src/ecat_lifecycle.cpp" bodystart="750" bodyend="786"/>
+        <location file="include/ecat_lifecycle.hpp" line="219" column="13" bodyfile="src/ecat_lifecycle.cpp" bodystart="774" bodyend="810"/>
       </memberdef>
       <memberdef kind="function" id="classEthercatLifeCycleNode_1_1EthercatLifeCycle_1a1367595ced86d25b6299ce281f1e1607" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>int</type>
@@ -657,7 +657,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/ecat_lifecycle.hpp" line="226" column="13" bodyfile="src/ecat_lifecycle.cpp" bodystart="788" bodyend="822"/>
+        <location file="include/ecat_lifecycle.hpp" line="226" column="13" bodyfile="src/ecat_lifecycle.cpp" bodystart="812" bodyend="846"/>
       </memberdef>
       </sectiondef>
       <sectiondef kind="public-static-func">

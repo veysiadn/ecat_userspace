@@ -69,7 +69,7 @@ void SetRealTimeSettings()
     // CKim - Lock this processe's memory. Necessary for real time performance....
     if (mlockall(MCL_CURRENT | MCL_FUTURE) == -1) {
         printf( "Mlockall failed, check if you have sudo authority.");
-        return -1;
+        return ;
     }
     /* Turn off malloc trimming.*/
     mallopt(M_TRIM_THRESHOLD, -1);

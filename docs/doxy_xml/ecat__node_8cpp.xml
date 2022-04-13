@@ -978,7 +978,7 @@
 <codeline lineno="746"><highlight class="normal"></highlight></codeline>
 <codeline lineno="747"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classEthercatCommunication_1_1EthercatNode_1afa5b462e02be78bbf21e76732f1cc316" kindref="member">EthercatNode::DeactivateCommunication</ref>()</highlight></codeline>
 <codeline lineno="748"><highlight class="normal">{</highlight></codeline>
-<codeline lineno="749"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//ecrt_master_deactivate_slaves(g_master);</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="749"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>ecrt_master_deactivate_slaves(g_master);</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="750"><highlight class="normal"><sp/><sp/><sp/><sp/>ecrt_master_deactivate(<ref refid="ecat__node_8cpp_1a45e08eacd3bf384fc33a73106b94b592" kindref="member">g_master</ref>);</highlight></codeline>
 <codeline lineno="751"><highlight class="normal">}</highlight></codeline>
 <codeline lineno="752"><highlight class="normal"></highlight></codeline>

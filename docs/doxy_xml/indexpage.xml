@@ -41,16 +41,16 @@
 </listitem><listitem><para>Motors encoder resolution : note that if you are using different type of motors you might need to create different definitions for each motor.</para>
 </listitem><listitem><para>Motor Gear Ratio : note that if you are using different type of motors you might need to create different definitions for each motor.</para>
 </listitem><listitem><para>Custom Slave : If you have different slave than the CiA402 supported servo drive you will need to define custom slave and PDO mapping for that custom slave.</para>
-</listitem><listitem><para>Keep in mind that this software addresses connected slaves based on physical position. For example the 0th slave will be the first slave that is connected to your Ethernet port.</para>
-</listitem><listitem><para>Custom slave must be in the end of slave chain.</para>
+</listitem><listitem><para>Keep in mind that this software addresses connected slaves based on physical position with respect to the master. For example the 0th slave will be the first slave that is connected to your Ethernet port.</para>
+</listitem><listitem><para>If you have a custom slave, it must be in the end of slave chain.</para>
 </listitem><listitem></listitem></itemizedlist>
 </para>
 </sect2>
 <sect2 id="index_1autotoc_md5">
 <title>STEP 2 :</title>
 <para>Once you did your initial configuration in the <ref refid="ecat__globals_8hpp" kindref="compound">ecat_globals.hpp</ref> file. You can modify user input method in <ref refid="main_8cpp" kindref="compound">main.cpp</ref> file.<itemizedlist>
-<listitem><para>Currently this software uses <ref refid="classXboxController" kindref="compound">XboxController</ref> left and right axis to send control commands the connected motors, if you want to use different input you can remove Xbox related control parameters and add your own.</para>
-</listitem><listitem><para>If you want to use Xbox <ref refid="structController" kindref="compound">Controller</ref> for testing keep in mind that each axis in controller generated data in the range of -32768 ~ 32768.</para>
+<listitem><para>Currently this software uses <ref refid="classXboxController" kindref="compound">XboxController</ref> buttons and joystick data to send control commands to the connected motors, if you want to use different input you can remove Xbox related control parameters and add your own.</para>
+</listitem><listitem><para>If you want to use Xbox <ref refid="structController" kindref="compound">Controller</ref> for testing, keep in mind that each axis in the controller generates analog data in the range of -32768 ~ 32768.</para>
 </listitem></itemizedlist>
 </para>
 </sect2>

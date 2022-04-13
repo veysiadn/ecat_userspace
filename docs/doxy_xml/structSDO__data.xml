@@ -16,7 +16,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/ecat_globals.hpp" line="205" column="14" bodyfile="include/ecat_globals.hpp" bodystart="205" bodyend="-1"/>
+        <location file="include/ecat_globals.hpp" line="206" column="14" bodyfile="include/ecat_globals.hpp" bodystart="206" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="structSDO__data_1ab27216f8d966b4ccab79a9dd26f2af13" prot="public" static="no" mutable="no">
         <type>uint16_t</type>
@@ -30,7 +30,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/ecat_globals.hpp" line="206" column="14" bodyfile="include/ecat_globals.hpp" bodystart="206" bodyend="-1"/>
+        <location file="include/ecat_globals.hpp" line="207" column="14" bodyfile="include/ecat_globals.hpp" bodystart="207" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="structSDO__data_1a32ad9e80b6edf968610407b14be6fa3d" prot="public" static="no" mutable="no">
         <type>uint8_t</type>
@@ -44,7 +44,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/ecat_globals.hpp" line="207" column="14" bodyfile="include/ecat_globals.hpp" bodystart="207" bodyend="-1"/>
+        <location file="include/ecat_globals.hpp" line="208" column="14" bodyfile="include/ecat_globals.hpp" bodystart="208" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="structSDO__data_1a6fc03ed8f11205ea2afd8d330d29a252" prot="public" static="no" mutable="no">
         <type>uint32_t</type>
@@ -58,7 +58,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/ecat_globals.hpp" line="208" column="15" bodyfile="include/ecat_globals.hpp" bodystart="208" bodyend="-1"/>
+        <location file="include/ecat_globals.hpp" line="209" column="15" bodyfile="include/ecat_globals.hpp" bodystart="209" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="structSDO__data_1a058f7de385e0be24e5ee12f55232dd33" prot="public" static="no" mutable="no">
         <type>size_t</type>
@@ -72,7 +72,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/ecat_globals.hpp" line="209" column="14" bodyfile="include/ecat_globals.hpp" bodystart="209" bodyend="-1"/>
+        <location file="include/ecat_globals.hpp" line="210" column="14" bodyfile="include/ecat_globals.hpp" bodystart="210" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="structSDO__data_1af764158be41bfd4b1aca4b4f03606562" prot="public" static="no" mutable="no">
         <type>size_t</type>
@@ -86,7 +86,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/ecat_globals.hpp" line="210" column="14" bodyfile="include/ecat_globals.hpp" bodystart="210" bodyend="-1"/>
+        <location file="include/ecat_globals.hpp" line="211" column="14" bodyfile="include/ecat_globals.hpp" bodystart="211" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="structSDO__data_1a3f5e625868529a095438d7614dde0c79" prot="public" static="no" mutable="no">
         <type>uint32_t</type>
@@ -100,7 +100,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/ecat_globals.hpp" line="211" column="14" bodyfile="include/ecat_globals.hpp" bodystart="211" bodyend="-1"/>
+        <location file="include/ecat_globals.hpp" line="212" column="14" bodyfile="include/ecat_globals.hpp" bodystart="212" bodyend="-1"/>
       </memberdef>
       </sectiondef>
     <briefdescription>
@@ -108,7 +108,7 @@
     </briefdescription>
     <detaileddescription>
     </detaileddescription>
-    <location file="include/ecat_globals.hpp" line="204" column="1" bodyfile="include/ecat_globals.hpp" bodystart="204" bodyend="212"/>
+    <location file="include/ecat_globals.hpp" line="205" column="1" bodyfile="include/ecat_globals.hpp" bodystart="205" bodyend="213"/>
     <listofallmembers>
       <member refid="structSDO__data_1a6fc03ed8f11205ea2afd8d330d29a252" prot="public" virt="non-virtual"><scope>SDO_data</scope><name>data</name></member>
       <member refid="structSDO__data_1a058f7de385e0be24e5ee12f55232dd33" prot="public" virt="non-virtual"><scope>SDO_data</scope><name>data_sz</name></member>

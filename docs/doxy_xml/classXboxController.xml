@@ -16,7 +16,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/xboxController.hpp" line="113" column="15" bodyfile="include/xboxController.hpp" bodystart="113" bodyend="-1"/>
+        <location file="include/xboxController.hpp" line="116" column="15" bodyfile="include/xboxController.hpp" bodystart="116" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="classXboxController_1a404707135fe8b57f47a69f50696745eb" prot="public" static="no" mutable="no">
         <type>char</type>
@@ -30,7 +30,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/xboxController.hpp" line="114" column="6" bodyfile="include/xboxController.hpp" bodystart="114" bodyend="-1"/>
+        <location file="include/xboxController.hpp" line="117" column="6" bodyfile="include/xboxController.hpp" bodystart="117" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="classXboxController_1a3c9b73bc3d34c01124d39f8106fb1797" prot="public" static="no" mutable="no">
         <type>int</type>
@@ -45,7 +45,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/xboxController.hpp" line="115" column="5" bodyfile="include/xboxController.hpp" bodystart="115" bodyend="-1"/>
+        <location file="include/xboxController.hpp" line="118" column="5" bodyfile="include/xboxController.hpp" bodystart="118" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="classXboxController_1a671aeb822d6cea0fd9feee1f41a68ad9" prot="public" static="no" mutable="no">
         <type><ref refid="structxboxCtrl" kindref="compound">xboxCtrl</ref> *</type>
@@ -60,7 +60,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/xboxController.hpp" line="116" column="10" bodyfile="include/xboxController.hpp" bodystart="116" bodyend="-1"/>
+        <location file="include/xboxController.hpp" line="119" column="10" bodyfile="include/xboxController.hpp" bodystart="119" bodyend="-1"/>
       </memberdef>
       </sectiondef>
       <sectiondef kind="public-func">
@@ -93,7 +93,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/xboxController.hpp" line="123" column="5" bodyfile="src/xboxController.cpp" bodystart="14" bodyend="23"/>
+        <location file="include/xboxController.hpp" line="126" column="5" bodyfile="src/xboxController.cpp" bodystart="14" bodyend="23"/>
       </memberdef>
       <memberdef kind="function" id="classXboxController_1abee6e76f5be4fadf11d9baddb09e9742" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>void</type>
@@ -122,7 +122,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/xboxController.hpp" line="129" column="6" bodyfile="src/xboxController.cpp" bodystart="9" bodyend="12"/>
+        <location file="include/xboxController.hpp" line="132" column="6" bodyfile="src/xboxController.cpp" bodystart="9" bodyend="12"/>
       </memberdef>
       <memberdef kind="function" id="classXboxController_1aa68b77202c397ef9a2340102d0405e10" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type><ref refid="structxboxCtrl" kindref="compound">xboxCtrl</ref> *</type>
@@ -143,7 +143,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/xboxController.hpp" line="135" column="10" bodyfile="src/xboxController.cpp" bodystart="25" bodyend="31"/>
+        <location file="include/xboxController.hpp" line="138" column="10" bodyfile="src/xboxController.cpp" bodystart="25" bodyend="31"/>
       </memberdef>
       <memberdef kind="function" id="classXboxController_1a1120a39f40f3f6619b605cdfcb21dd8f" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>void</type>
@@ -172,7 +172,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/xboxController.hpp" line="141" column="6" bodyfile="src/xboxController.cpp" bodystart="33" bodyend="45"/>
+        <location file="include/xboxController.hpp" line="144" column="6" bodyfile="src/xboxController.cpp" bodystart="33" bodyend="45"/>
       </memberdef>
       <memberdef kind="function" id="classXboxController_1aa164973406a1b2762a6077e215241dd4" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>void</type>
@@ -201,7 +201,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/xboxController.hpp" line="147" column="6" bodyfile="src/xboxController.cpp" bodystart="47" bodyend="50"/>
+        <location file="include/xboxController.hpp" line="150" column="6" bodyfile="src/xboxController.cpp" bodystart="47" bodyend="50"/>
       </memberdef>
       <memberdef kind="function" id="classXboxController_1a3b29216bffbccaf0d945047487cf8bee" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>void</type>
@@ -242,7 +242,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/xboxController.hpp" line="154" column="6" bodyfile="src/xboxController.cpp" bodystart="51" bodyend="117"/>
+        <location file="include/xboxController.hpp" line="157" column="6" bodyfile="src/xboxController.cpp" bodystart="51" bodyend="117"/>
       </memberdef>
       <memberdef kind="function" id="classXboxController_1aba6ffb76d0e53b19d4ab5b390aa5cbca" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>void</type>
@@ -271,10 +271,11 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/xboxController.hpp" line="160" column="6" bodyfile="src/xboxController.cpp" bodystart="119" bodyend="142"/>
+        <location file="include/xboxController.hpp" line="163" column="6" bodyfile="src/xboxController.cpp" bodystart="119" bodyend="142"/>
       </memberdef>
       </sectiondef>
     <briefdescription>
+<para>Class for opening joystick and reading values from <ref refid="classXboxController" kindref="compound">XboxController</ref>. </para>
     </briefdescription>
     <detaileddescription>
     </detaileddescription>
@@ -291,7 +292,7 @@
         <link refid="structxboxCtrl"/>
       </node>
     </collaborationgraph>
-    <location file="include/xboxController.hpp" line="111" column="1" bodyfile="include/xboxController.hpp" bodystart="111" bodyend="161"/>
+    <location file="include/xboxController.hpp" line="114" column="1" bodyfile="include/xboxController.hpp" bodystart="114" bodyend="164"/>
     <listofallmembers>
       <member refid="classXboxController_1abee6e76f5be4fadf11d9baddb09e9742" prot="public" virt="non-virtual"><scope>XboxController</scope><name>deinitXboxController</name></member>
       <member refid="classXboxController_1a3c9b73bc3d34c01124d39f8106fb1797" prot="public" virt="non-virtual"><scope>XboxController</scope><name>fd</name></member>

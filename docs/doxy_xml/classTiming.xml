@@ -16,7 +16,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/timing.hpp" line="54" column="54" bodyfile="include/timing.hpp" bodystart="54" bodyend="-1"/>
+        <location file="include/timing.hpp" line="57" column="54" bodyfile="include/timing.hpp" bodystart="57" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="classTiming_1aad16cc4aa56eb8531f1c62742ef638f3" prot="public" static="no" mutable="no">
         <type>std::chrono::high_resolution_clock::time_point</type>
@@ -30,7 +30,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/timing.hpp" line="55" column="54" bodyfile="include/timing.hpp" bodystart="55" bodyend="-1"/>
+        <location file="include/timing.hpp" line="58" column="54" bodyfile="include/timing.hpp" bodystart="58" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="classTiming_1a1048f7adf0ab7088eb06a05e0c6c534b" prot="public" static="no" mutable="no">
         <type>std::chrono::duration&lt; long, std::micro &gt;</type>
@@ -44,7 +44,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/timing.hpp" line="56" column="29" bodyfile="include/timing.hpp" bodystart="56" bodyend="-1"/>
+        <location file="include/timing.hpp" line="59" column="29" bodyfile="include/timing.hpp" bodystart="59" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="classTiming_1a29eba9d2bbdfdedc46c4cff7a9a41741" prot="public" static="no" mutable="no">
         <type>std::vector&lt; long &gt;</type>
@@ -59,7 +59,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/timing.hpp" line="57" column="19" bodyfile="include/timing.hpp" bodystart="57" bodyend="-1"/>
+        <location file="include/timing.hpp" line="60" column="19" bodyfile="include/timing.hpp" bodystart="60" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="classTiming_1a5eb0575d415b5646a81c802b87fe67c6" prot="public" static="no" mutable="no">
         <type>uint32_t</type>
@@ -74,7 +74,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/timing.hpp" line="58" column="16" bodyfile="include/timing.hpp" bodystart="58" bodyend="-1"/>
+        <location file="include/timing.hpp" line="61" column="16" bodyfile="include/timing.hpp" bodystart="61" bodyend="-1"/>
       </memberdef>
       </sectiondef>
       <sectiondef kind="public-func">
@@ -91,7 +91,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/timing.hpp" line="62" column="8" bodyfile="src/timing.cpp" bodystart="3" bodyend="6"/>
+        <location file="include/timing.hpp" line="65" column="8" bodyfile="src/timing.cpp" bodystart="3" bodyend="6"/>
       </memberdef>
       <memberdef kind="function" id="classTiming_1a0e717201b291932881ce40f46f1157ec" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>void</type>
@@ -106,7 +106,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/timing.hpp" line="68" column="8" bodyfile="src/timing.cpp" bodystart="7" bodyend="13"/>
+        <location file="include/timing.hpp" line="71" column="8" bodyfile="src/timing.cpp" bodystart="7" bodyend="13"/>
       </memberdef>
       <memberdef kind="function" id="classTiming_1abca929bf96a9035cdae89d6ac1c18509" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>void</type>
@@ -121,14 +121,15 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/timing.hpp" line="73" column="8" bodyfile="src/timing.cpp" bodystart="14" bodyend="18"/>
+        <location file="include/timing.hpp" line="76" column="8" bodyfile="src/timing.cpp" bodystart="14" bodyend="18"/>
       </memberdef>
       </sectiondef>
     <briefdescription>
+<para>Contains <ref refid="classTiming" kindref="compound">Timing</ref> measurement related functions. </para>
     </briefdescription>
     <detaileddescription>
     </detaileddescription>
-    <location file="include/timing.hpp" line="52" column="1" bodyfile="include/timing.hpp" bodystart="52" bodyend="74"/>
+    <location file="include/timing.hpp" line="55" column="1" bodyfile="include/timing.hpp" bodystart="55" bodyend="77"/>
     <listofallmembers>
       <member refid="classTiming_1a5eb0575d415b5646a81c802b87fe67c6" prot="public" virt="non-virtual"><scope>Timing</scope><name>counter_</name></member>
       <member refid="classTiming_1a5877895aa80d11fc63230de0c5eeb5da" prot="public" virt="non-virtual"><scope>Timing</scope><name>GetTime</name></member>

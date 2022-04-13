@@ -16,7 +16,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/ecat_globals.hpp" line="177" column="11" bodyfile="include/ecat_globals.hpp" bodystart="177" bodyend="-1"/>
+        <location file="include/ecat_globals.hpp" line="178" column="11" bodyfile="include/ecat_globals.hpp" bodystart="178" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="structController_1a23d43716969133c3a84aefc223235bba" prot="public" static="no" mutable="no">
         <type>float</type>
@@ -30,7 +30,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/ecat_globals.hpp" line="178" column="11" bodyfile="include/ecat_globals.hpp" bodystart="178" bodyend="-1"/>
+        <location file="include/ecat_globals.hpp" line="179" column="11" bodyfile="include/ecat_globals.hpp" bodystart="179" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="structController_1a4491f31970440809252f792325f3332c" prot="public" static="no" mutable="no">
         <type>float</type>
@@ -44,7 +44,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/ecat_globals.hpp" line="179" column="11" bodyfile="include/ecat_globals.hpp" bodystart="179" bodyend="-1"/>
+        <location file="include/ecat_globals.hpp" line="180" column="11" bodyfile="include/ecat_globals.hpp" bodystart="180" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="structController_1a48605a75d1e18d653d428aa12f267cf7" prot="public" static="no" mutable="no">
         <type>float</type>
@@ -58,7 +58,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/ecat_globals.hpp" line="180" column="11" bodyfile="include/ecat_globals.hpp" bodystart="180" bodyend="-1"/>
+        <location file="include/ecat_globals.hpp" line="181" column="11" bodyfile="include/ecat_globals.hpp" bodystart="181" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="structController_1a21b2cc61fc8759e3612edf6cb7659844" prot="public" static="no" mutable="no">
         <type>uint8_t</type>
@@ -72,7 +72,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/ecat_globals.hpp" line="181" column="13" bodyfile="include/ecat_globals.hpp" bodystart="181" bodyend="-1"/>
+        <location file="include/ecat_globals.hpp" line="182" column="13" bodyfile="include/ecat_globals.hpp" bodystart="182" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="structController_1af4090cca658badffa788cc347c0d8976" prot="public" static="no" mutable="no">
         <type>uint8_t</type>
@@ -86,7 +86,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/ecat_globals.hpp" line="182" column="13" bodyfile="include/ecat_globals.hpp" bodystart="182" bodyend="-1"/>
+        <location file="include/ecat_globals.hpp" line="183" column="13" bodyfile="include/ecat_globals.hpp" bodystart="183" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="structController_1aedf7f3ad3fc4cf9587eb814939f2fe1e" prot="public" static="no" mutable="no">
         <type>uint8_t</type>
@@ -100,7 +100,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/ecat_globals.hpp" line="183" column="13" bodyfile="include/ecat_globals.hpp" bodystart="183" bodyend="-1"/>
+        <location file="include/ecat_globals.hpp" line="184" column="13" bodyfile="include/ecat_globals.hpp" bodystart="184" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="structController_1ae17bf9a44fae3b631880fb01f790dda8" prot="public" static="no" mutable="no">
         <type>uint8_t</type>
@@ -114,7 +114,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/ecat_globals.hpp" line="184" column="13" bodyfile="include/ecat_globals.hpp" bodystart="184" bodyend="-1"/>
+        <location file="include/ecat_globals.hpp" line="185" column="13" bodyfile="include/ecat_globals.hpp" bodystart="185" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="structController_1afc07641196aa5459f44ccc52e896df2e" prot="public" static="no" mutable="no">
         <type>uint8_t</type>
@@ -128,7 +128,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/ecat_globals.hpp" line="185" column="13" bodyfile="include/ecat_globals.hpp" bodystart="185" bodyend="-1"/>
+        <location file="include/ecat_globals.hpp" line="186" column="13" bodyfile="include/ecat_globals.hpp" bodystart="186" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="structController_1ab8b2eb8470d7ef53fa8d46876d229b8b" prot="public" static="no" mutable="no">
         <type>uint8_t</type>
@@ -142,7 +142,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/ecat_globals.hpp" line="186" column="13" bodyfile="include/ecat_globals.hpp" bodystart="186" bodyend="-1"/>
+        <location file="include/ecat_globals.hpp" line="187" column="13" bodyfile="include/ecat_globals.hpp" bodystart="187" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="structController_1a2ef1067504a96ac17b88fa903e60e27d" prot="public" static="no" mutable="no">
         <type>uint8_t</type>
@@ -156,7 +156,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/ecat_globals.hpp" line="187" column="13" bodyfile="include/ecat_globals.hpp" bodystart="187" bodyend="-1"/>
+        <location file="include/ecat_globals.hpp" line="188" column="13" bodyfile="include/ecat_globals.hpp" bodystart="188" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="structController_1a45cde5bec749e075351dcb620ee2508a" prot="public" static="no" mutable="no">
         <type>uint8_t</type>
@@ -170,7 +170,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/ecat_globals.hpp" line="188" column="13" bodyfile="include/ecat_globals.hpp" bodystart="188" bodyend="-1"/>
+        <location file="include/ecat_globals.hpp" line="189" column="13" bodyfile="include/ecat_globals.hpp" bodystart="189" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="structController_1a08305d57bdb81da6a151bef723ae8a3e" prot="public" static="no" mutable="no">
         <type>uint8_t</type>
@@ -184,7 +184,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/ecat_globals.hpp" line="189" column="13" bodyfile="include/ecat_globals.hpp" bodystart="189" bodyend="-1"/>
+        <location file="include/ecat_globals.hpp" line="190" column="13" bodyfile="include/ecat_globals.hpp" bodystart="190" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="structController_1a156db40170025123bf4a71c89e872dd0" prot="public" static="no" mutable="no">
         <type>uint8_t</type>
@@ -198,7 +198,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/ecat_globals.hpp" line="190" column="13" bodyfile="include/ecat_globals.hpp" bodystart="190" bodyend="-1"/>
+        <location file="include/ecat_globals.hpp" line="191" column="13" bodyfile="include/ecat_globals.hpp" bodystart="191" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="structController_1ac70c2cb907d0a24b1773269558d2cf5a" prot="public" static="no" mutable="no">
         <type>uint8_t</type>
@@ -212,7 +212,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/ecat_globals.hpp" line="191" column="13" bodyfile="include/ecat_globals.hpp" bodystart="191" bodyend="-1"/>
+        <location file="include/ecat_globals.hpp" line="192" column="13" bodyfile="include/ecat_globals.hpp" bodystart="192" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="structController_1a9695b16477597d0b1009839cb97856d7" prot="public" static="no" mutable="no">
         <type>uint8_t</type>
@@ -226,7 +226,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/ecat_globals.hpp" line="192" column="13" bodyfile="include/ecat_globals.hpp" bodystart="192" bodyend="-1"/>
+        <location file="include/ecat_globals.hpp" line="193" column="13" bodyfile="include/ecat_globals.hpp" bodystart="193" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="structController_1a2295a00cf96f532ab8d11777e12ad16c" prot="public" static="no" mutable="no">
         <type>uint8_t</type>
@@ -240,7 +240,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/ecat_globals.hpp" line="193" column="13" bodyfile="include/ecat_globals.hpp" bodystart="193" bodyend="-1"/>
+        <location file="include/ecat_globals.hpp" line="194" column="13" bodyfile="include/ecat_globals.hpp" bodystart="194" bodyend="-1"/>
       </memberdef>
       </sectiondef>
     <briefdescription>
@@ -248,7 +248,7 @@
     </briefdescription>
     <detaileddescription>
     </detaileddescription>
-    <location file="include/ecat_globals.hpp" line="175" column="1" bodyfile="include/ecat_globals.hpp" bodystart="176" bodyend="194"/>
+    <location file="include/ecat_globals.hpp" line="176" column="1" bodyfile="include/ecat_globals.hpp" bodystart="177" bodyend="195"/>
     <listofallmembers>
       <member refid="structController_1a21b2cc61fc8759e3612edf6cb7659844" prot="public" virt="non-virtual"><scope>Controller</scope><name>blue_button_</name></member>
       <member refid="structController_1af4090cca658badffa788cc347c0d8976" prot="public" virt="non-virtual"><scope>Controller</scope><name>green_button_</name></member>

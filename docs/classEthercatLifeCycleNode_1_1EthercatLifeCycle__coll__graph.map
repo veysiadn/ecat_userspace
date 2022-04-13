@@ -3,5 +3,5 @@
 <area shape="rect" id="node2" href="$structDataReceived.html" title="Structure for data to be received from slaves." alt="" coords="5,5,108,32"/>
 <area shape="rect" id="node3" href="$structDataSent.html" title="Structure for data to be sent to slaves." alt="" coords="140,5,216,32"/>
 <area shape="rect" id="node4" href="$structController.html" title="Xbox Controller values." alt="" coords="241,5,318,32"/>
-<area shape="rect" id="node5" href="$classTiming.html" title=" " alt="" coords="343,5,405,32"/>
+<area shape="rect" id="node5" href="$classTiming.html" title="Contains Timing measurement related functions." alt="" coords="343,5,405,32"/>
 </map>

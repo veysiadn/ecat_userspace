@@ -12,6 +12,7 @@ var annotated_dup =
     [ "CSVelocityModeParam", "structCSVelocityModeParam.html", "structCSVelocityModeParam" ],
     [ "DataReceived", "structDataReceived.html", "structDataReceived" ],
     [ "DataSent", "structDataSent.html", "structDataSent" ],
+    [ "EthercatNode", "classEthercatNode.html", null ],
     [ "EthercatSlave", "classEthercatSlave.html", "classEthercatSlave" ],
     [ "HomingParam", "structHomingParam.html", "structHomingParam" ],
     [ "OffsetPDO", "structOffsetPDO.html", "structOffsetPDO" ],

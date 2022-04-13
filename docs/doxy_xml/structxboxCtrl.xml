@@ -314,6 +314,7 @@
       </memberdef>
       </sectiondef>
     <briefdescription>
+<para>Structure for reading values from <ref refid="classXboxController" kindref="compound">XboxController</ref>. </para>
     </briefdescription>
     <detaileddescription>
     </detaileddescription>

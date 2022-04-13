@@ -120,15 +120,15 @@ STEP 1 :</h2>
 <li>Motors encoder resolution : note that if you are using different type of motors you might need to create different definitions for each motor.</li>
 <li>Motor Gear Ratio : note that if you are using different type of motors you might need to create different definitions for each motor.</li>
 <li>Custom Slave : If you have different slave than the CiA402 supported servo drive you will need to define custom slave and PDO mapping for that custom slave.</li>
-<li>Keep in mind that this software addresses connected slaves based on physical position. For example the 0th slave will be the first slave that is connected to your Ethernet port.</li>
-<li>Custom slave must be in the end of slave chain.</li>
+<li>Keep in mind that this software addresses connected slaves based on physical position with respect to the master. For example the 0th slave will be the first slave that is connected to your Ethernet port.</li>
+<li>If you have a custom slave, it must be in the end of slave chain.</li>
 <li></li>
 </ul>
 <h2><a class="anchor" id="autotoc_md5"></a>
 STEP 2 :</h2>
 <p >Once you did your initial configuration in the <a class="el" href="ecat__globals_8hpp.html">ecat_globals.hpp</a> file. You can modify user input method in <a class="el" href="main_8cpp.html">main.cpp</a> file.</p><ul>
-<li>Currently this software uses <a class="el" href="classXboxController.html">XboxController</a> left and right axis to send control commands the connected motors, if you want to use different input you can remove Xbox related control parameters and add your own.</li>
-<li>If you want to use Xbox <a class="el" href="structController.html" title="Xbox Controller values.">Controller</a> for testing keep in mind that each axis in controller generated data in the range of -32768 ~ 32768.</li>
+<li>Currently this software uses <a class="el" href="classXboxController.html" title="Class for opening joystick and reading values from XboxController.">XboxController</a> buttons and joystick data to send control commands to the connected motors, if you want to use different input you can remove Xbox related control parameters and add your own.</li>
+<li>If you want to use Xbox <a class="el" href="structController.html" title="Xbox Controller values.">Controller</a> for testing, keep in mind that each axis in the controller generates analog data in the range of -32768 ~ 32768.</li>
 </ul>
 <h2><a class="anchor" id="autotoc_md6"></a>
 STEP 3 :</h2>

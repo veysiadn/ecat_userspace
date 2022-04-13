@@ -48,6 +48,10 @@ class EthercatSlave ;
 
 namespace EthercatCommunication
 {
+/**
+ *  \class   EthercatNode
+ *  \brief   Class for encapsulating IgH EtherCAT library functionality.
+ */
 class EthercatNode
 {
     public:

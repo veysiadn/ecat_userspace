@@ -78,7 +78,8 @@
 /// Total number of connected slave to the bus.
 #define NUM_OF_SLAVES     1 
 
-/// Number of connected servo drives.
+/// Number of connected servo drives. 
+/// @note If you are using custom slaves (not servo drives) this value must be different than NUM_OF_SLAVES.
 const uint32_t  g_kNumberOfServoDrivers = 1 ;   
 
 /// If you have EtherCAT slave different than CiA402 supported motor drive, set this macro to 1

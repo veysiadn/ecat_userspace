@@ -48,7 +48,10 @@
 #include <iostream>
 
 #define NUMBER_OF_SAMPLES 1E6
-
+/**
+ *  \class   Timing
+ *  \brief   Contains Timing measurement related functions.
+ */
 class Timing{
     public:
       std::chrono::high_resolution_clock::time_point timer_start_;

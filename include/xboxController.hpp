@@ -82,7 +82,7 @@
 
 static std::string s = "/dev/input/js0";
 static char* XBOX_DEVICE = const_cast<char*>(s.c_str());
-
+/// Structure for reading values from XboxController
 typedef struct {
 	int numOfAxis;
 	int numOfButtons;
@@ -107,7 +107,10 @@ typedef struct {
 	int btn_leftTop;
 	int btn_rightTop;
 } xboxCtrl;
-
+/**
+ *  \class   XboxController
+ *  \brief   Class for opening joystick and reading values from XboxController
+ */
 class XboxController{
 public: 
 	struct js_event js;

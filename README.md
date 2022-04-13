@@ -38,13 +38,13 @@ By default number of connected slaves are defined as one, therefore if you don't
   - Motors encoder resolution : note that if you are using different type of motors you might need to create different definitions for each motor.
   - Motor Gear Ratio :  note that if you are using different type of motors you might need to create different definitions for each motor.
   - Custom Slave : If you have different slave than the CiA402 supported servo drive you will need to define custom slave and PDO mapping for that custom slave.
-  - Keep in mind that this software addresses connected slaves based on physical position. For example the 0th slave will be the first slave that is connected to your Ethernet port. 
-  - Custom slave must be in the end of slave chain.
+  - Keep in mind that this software addresses connected slaves based on physical position with respect to the master. For example the 0th slave will be the first slave that is connected to your Ethernet port. 
+  - If you have a custom slave, it must be in the end of slave chain.
   - 
 ### STEP 2 : 
   Once you did your initial configuration in the ecat_globals.hpp file. You can modify user input method in main.cpp file.
-  - Currently this software uses XboxController left and right axis to send control commands the connected motors, if you want to use different input you can remove Xbox related control parameters and add your own.
-  - If you want to use Xbox Controller for testing keep in mind that each axis in controller generated data in the range of -32768 ~ 32768.
+  - Currently this software uses XboxController buttons and joystick data to send control commands to the connected motors, if you want to use different input you can remove Xbox related control parameters and add your own.
+  - If you want to use Xbox Controller for testing, keep in mind that each axis in the controller generates analog data in the range of -32768 ~ 32768.
 
 ### STEP 3 : 
   - Change configuration parameters for your motor in ecat_node.cpp file based on your operation mode. For example if you want to use velocity mode you can change parameters in the SetProfileVelocityParametersAll(ProfileVelocityParam& P) function based on your needs.

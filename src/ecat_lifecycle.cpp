@@ -179,6 +179,7 @@ int EthercatLifeCycle::InitEthercatCommunication()
     if(ecat_node_->ConfigureSlaves()){
         return -1 ;
     }
+
 #if VELOCITY_MODE
     ProfileVelocityParam P ;
     
@@ -260,7 +261,6 @@ int EthercatLifeCycle::InitEthercatCommunication()
         return -1 ;
     }
     printf("Initialization succesfull...\n");
-    
     return 0 ; 
 }
 
@@ -284,9 +284,6 @@ void *EthercatLifeCycle::PassCycylicExchange(void *arg)
 void EthercatLifeCycle::StartPdoExchange(void *instance)
 {
     printf( "Starting PDO exchange....\n");
-    // Measurement time in minutes, e.g.
-    // uint32_t print_max_min = measurement_time * 60000 ; 
-    uint32_t print_max_min = 15000 ; 
     uint32_t print_val = 1e4;
     int error_check=0;
     uint8_t sync_ref_counter = 1;
@@ -504,26 +501,10 @@ void EthercatLifeCycle::StartPdoExchange(void *instance)
                     printf("Timer info values: %10d us \n", timer_info_.time_span_.count());                             
                     printf("-----------------------------------------------\n\n");
                     print_val=1000;
-                    std::cout << "Status word   : "<< received_data_.status_word[0] << std::endl;
-                    std::cout << "Control word  : "<< sent_data_.control_word[0] << std::endl;
-                    std::cout << "Actual Torque : "<< received_data_.actual_tor[0] << std::endl;
-                    std::cout << "Target Torque : "<< sent_data_.target_tor[0] << std::endl;
-                    std::cout << "Motor state   : "<< motor_state_[0] << std::endl; 
-                    //  std::cout << "Finished...." << std::endl;
-                    //  break;
+
             }else {
-                //std::cout << std::dec << period_min_ns  << " " << period_max_ns << " " << exec_min_ns << " " << exec_max_ns << " " << 
-               // latency_min_ns << " " <<  latency_max_ns << " " << latency_max_ns - latency_min_ns << std::endl;
                 print_val--;
-            }
-            if(!print_max_min){
-                //printf("Publish time min: %10d ns  | max : %10d ns\n",
-                //publish_time_min, publish_time_max);
-               // ecrt_master_deactivate(g_master);
-                //usleep(10e6);
-                //on_configure();
-            }
-                print_max_min--;        
+            }      
                 period_max_ns = 0;
                 period_min_ns = 0xffffffff;
 
@@ -533,7 +514,6 @@ void EthercatLifeCycle::StartPdoExchange(void *instance)
                 latency_max_ns = 0;
                 latency_min_ns = 0xffffffff;
         #endif
-
         ReadFromSlaves();
 #if POSITION_MODE
         UpdatePositionModeParameters();
@@ -640,6 +620,9 @@ int EthercatLifeCycle::GetComState()
 
 void EthercatLifeCycle::UpdatePositionModeParameters()
 {   
+    /// WRITE YOUR CUSTOM CONTROL ALGORITHM, VARIABLES DECLARATAION HERE, LIKE IN EXAMPLE BELOW.
+    /// KEEP IN MIND THAT YOU WILL HAVE TO WAIT FOR THE MOTION TO FINISH IN POSITION MODE, THEREFORE
+    /// YOU HAVE TO CHECK 10th BIT OF STATUS WORD TO CHECK WHETHER TARGET IS REACHED OR NOT.
     static uint8_t operation_ready = 0 ;
     for(int i = 0 ; i < g_kNumberOfServoDrivers ; i++){
         if(motor_state_[i]==kOperationEnabled || motor_state_[i]==kTargetReached || motor_state_[i]==kSwitchedOn){
@@ -883,11 +866,11 @@ void EthercatLifeCycle::WriteToSlavesInCyclicTorqueMode()
 // CKim - Modifications
 void EthercatLifeCycle::UpdateCyclicPositionModeParameters()
 {
+    /// WRITE YOUR CUSTOM CONTROL ALGORITHM, VARIABLES DECLARATAION HERE, LIKE IN EXAMPLE BELOW.
     float deadzone = 0.05;
     float amp = 1.0 - deadzone;
     float val;
     static uint8_t operation_ready = 0;
-    // printf( "Updating control parameters....\n");
     for(int i = 0 ; i < g_kNumberOfServoDrivers ; i++){
         if(motor_state_[i]==kOperationEnabled || motor_state_[i]==kTargetReached || motor_state_[i]==kSwitchedOn)
         {
@@ -947,11 +930,10 @@ void EthercatLifeCycle::UpdateCyclicPositionModeParameters()
 
 void EthercatLifeCycle::UpdateCyclicVelocityModeParameters() 
 {
+    /// WRITE YOUR CUSTOM CONTROL ALGORITHM, VARIABLES DECLARATAION HERE, LIKE IN EXAMPLE BELOW.
     float deadzone = 0.05;      
-    float maxSpeed = 250.0;    // rpm
+    float maxSpeed = 250.0;
     float val;
-    // printf( "Updating control parameters....\n");
-        // Settings for motor 1;
     if(motor_state_[0]==kOperationEnabled || motor_state_[0]==kSwitchedOn)
     {
         val = controller_.left_y_axis_;
@@ -1031,10 +1013,12 @@ void EthercatLifeCycle::UpdateCyclicVelocityModeParameters()
 }
 
 void EthercatLifeCycle::UpdateVelocityModeParameters() 
-{
-   // printf( "Updating control parameters....\n");
+{   
+    /// WRITE YOUR CUSTOM CONTROL ALGORITHM VARIABLES DECLARATAION HERE
     for(int i = 0 ; i < g_kNumberOfServoDrivers ; i++){
         if(motor_state_[i]==kOperationEnabled || motor_state_[i]==kTargetReached || motor_state_[i]==kSwitchedOn){
+               /// WRITE YOUR CUSTOM CONTROL ALGORITHM HERE IF YOU WANT TO USE VELOCITY MODE
+              /// YOU CAN CHECK  EXAMPLE CONTROL CODE BELOW.
             if(controller_.right_x_axis_ > 0.1 || controller_.right_x_axis_ < -0.1 ){
                 sent_data_.target_vel[0] = controller_.right_x_axis_ *1000 ;
             }else{
@@ -1059,21 +1043,24 @@ void EthercatLifeCycle::UpdateVelocityModeParameters()
 
 void EthercatLifeCycle::UpdateCyclicTorqueModeParameters()
 {
+    /// WRITE YOUR CUSTOM CONTROL ALGORITHM VARIABLES DECLARATAION HERE
     for(int i = 0 ; i < g_kNumberOfServoDrivers ; i++){
         sent_data_.control_word[i] = SM_GO_ENABLE ; 
         if(motor_state_[i]==kOperationEnabled || motor_state_[i]==kTargetReached || motor_state_[i]==kSwitchedOn){
-            if(controller_.right_x_axis_ > 5000 || controller_.right_x_axis_ < -5000 ){
-                sent_data_.target_tor[0] = controller_.left_x_axis_ * 200 ;
+              /// WRITE YOUR CUSTOM CONTROL ALGORITHM HERE IF YOU WANT TO USE CYCLIC TORQUE MODE
+              /// YOU CAN CHECK  EXAMPLE CONTROL CODE BELOW.
+            if(controller_.right_x_axis_ > 0.1 || controller_.right_x_axis_ < -5000 ){
+                sent_data_.target_tor[0] = controller_.left_x_axis_ * 500 ;
             }else{
                 sent_data_.target_tor[0] = 0;
             }
-            if(controller_.left_x_axis_ < -1000 || controller_.left_x_axis_ > 1000){
-                sent_data_.target_tor[1] = controller_.left_x_axis_ /300;
+            if(controller_.left_x_axis_ < -0.1 || controller_.left_x_axis_ > 0.1){
+                sent_data_.target_tor[1] = controller_.left_x_axis_ *500;
             }else{
                 sent_data_.target_tor[1] = 0 ;
             }
-            if(controller_.left_y_axis_ < -1000 || controller_.left_y_axis_ > 1000){
-                sent_data_.target_tor[2] = controller_.left_y_axis_ /300 ;
+            if(controller_.left_y_axis_ < -0.1 || controller_.left_y_axis_ > 0.1){
+                sent_data_.target_tor[2] = controller_.left_y_axis_ *500 ;
             }else{
                 sent_data_.target_tor[2] = 0 ;
             }

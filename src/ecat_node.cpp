@@ -746,7 +746,7 @@ int EthercatNode::GetNumberOfConnectedSlaves()
 
 void EthercatNode::DeactivateCommunication()
 {
-    //ecrt_master_deactivate_slaves(g_master);
+    // ecrt_master_deactivate_slaves(g_master);
     ecrt_master_deactivate(g_master);
 }
 

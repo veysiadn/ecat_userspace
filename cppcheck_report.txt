@@ -1,46 +1,43 @@
-src/ecat_lifecycle.cpp:289:28: style: Variable 'print_max_min' is assigned a value that is never used. [unreadVariable]
-    uint32_t print_max_min = 15000 ;
-                           ^
-src/ecat_lifecycle.cpp:290:24: style: Variable 'print_val' is assigned a value that is never used. [unreadVariable]
+src/ecat_lifecycle.cpp:287:24: style: Variable 'print_val' is assigned a value that is never used. [unreadVariable]
     uint32_t print_val = 1e4;
                        ^
-src/ecat_lifecycle.cpp:293:59: style: Variable 'publish_time_start' is assigned a value that is never used. [unreadVariable]
+src/ecat_lifecycle.cpp:290:59: style: Variable 'publish_time_start' is assigned a value that is never used. [unreadVariable]
     struct timespec wake_up_time, time, publish_time_start={}, publish_time_end={};
                                                           ^
-src/ecat_lifecycle.cpp:293:80: style: Variable 'publish_time_end' is assigned a value that is never used. [unreadVariable]
+src/ecat_lifecycle.cpp:290:80: style: Variable 'publish_time_end' is assigned a value that is never used. [unreadVariable]
     struct timespec wake_up_time, time, publish_time_start={}, publish_time_end={};
                                                                                ^
-src/ecat_lifecycle.cpp:207:14: style: Unused variable: max_fol_err [unusedVariable]
+src/ecat_lifecycle.cpp:208:14: style: Unused variable: max_fol_err [unusedVariable]
     uint32_t max_fol_err ;
              ^
-src/ecat_lifecycle.cpp:502:21: warning: %u in format string (no. 1) requires 'unsigned int' but the argument type is 'signed int'. [invalidPrintfArgType_uint]
+src/ecat_lifecycle.cpp:499:21: warning: %u in format string (no. 1) requires 'unsigned int' but the argument type is 'signed int'. [invalidPrintfArgType_uint]
                     printf("Tjitter min     : %10u ns  | max : %10u ns\n",
                     ^
-src/ecat_lifecycle.cpp:502:21: warning: %u in format string (no. 2) requires 'unsigned int' but the argument type is 'signed int'. [invalidPrintfArgType_uint]
+src/ecat_lifecycle.cpp:499:21: warning: %u in format string (no. 2) requires 'unsigned int' but the argument type is 'signed int'. [invalidPrintfArgType_uint]
                     printf("Tjitter min     : %10u ns  | max : %10u ns\n",
                     ^
-src/ecat_lifecycle.cpp:399:28: style: Variable 'period_ns' is assigned a value that is never used. [unreadVariable]
+src/ecat_lifecycle.cpp:396:28: style: Variable 'period_ns' is assigned a value that is never used. [unreadVariable]
         uint32_t period_ns = 0, exec_ns = 0, latency_ns = 0,
                            ^
-src/ecat_lifecycle.cpp:399:41: style: Variable 'exec_ns' is assigned a value that is never used. [unreadVariable]
+src/ecat_lifecycle.cpp:396:41: style: Variable 'exec_ns' is assigned a value that is never used. [unreadVariable]
         uint32_t period_ns = 0, exec_ns = 0, latency_ns = 0,
                                         ^
-src/ecat_lifecycle.cpp:405:35: style: Variable 'publishing_time_ns' is assigned a value that is never used. [unreadVariable]
+src/ecat_lifecycle.cpp:402:35: style: Variable 'publishing_time_ns' is assigned a value that is never used. [unreadVariable]
         int32_t publishing_time_ns=1e4, publish_time_max=0, publish_time_min=0xfffffff;
                                   ^
-src/ecat_lifecycle.cpp:405:57: style: Variable 'publish_time_max' is assigned a value that is never used. [unreadVariable]
+src/ecat_lifecycle.cpp:402:57: style: Variable 'publish_time_max' is assigned a value that is never used. [unreadVariable]
         int32_t publishing_time_ns=1e4, publish_time_max=0, publish_time_min=0xfffffff;
                                                         ^
-src/ecat_lifecycle.cpp:405:77: style: Variable 'publish_time_min' is assigned a value that is never used. [unreadVariable]
+src/ecat_lifecycle.cpp:402:77: style: Variable 'publish_time_min' is assigned a value that is never used. [unreadVariable]
         int32_t publishing_time_ns=1e4, publish_time_max=0, publish_time_min=0xfffffff;
                                                                             ^
-src/ecat_lifecycle.cpp:406:24: style: Variable 'jitter' is assigned a value that is never used. [unreadVariable]
+src/ecat_lifecycle.cpp:403:24: style: Variable 'jitter' is assigned a value that is never used. [unreadVariable]
         int32_t jitter = 0 , jitter_min = 0xfffffff, jitter_max = 0, old_latency=0;
                        ^
-src/ecat_lifecycle.cpp:406:81: style: Variable 'old_latency' is assigned a value that is never used. [unreadVariable]
+src/ecat_lifecycle.cpp:403:81: style: Variable 'old_latency' is assigned a value that is never used. [unreadVariable]
         int32_t jitter = 0 , jitter_min = 0xfffffff, jitter_max = 0, old_latency=0;
                                                                                 ^
-src/ecat_lifecycle.cpp:195:14: style: Unused variable: max_fol_err [unusedVariable]
+src/ecat_lifecycle.cpp:196:14: style: Unused variable: max_fol_err [unusedVariable]
     uint32_t max_fol_err ;
              ^
 src/ecat_node.cpp:727:27: style: Variable 'g_master_domain_state' is reassigned a value before the old one has been used. [redundantAssignment]

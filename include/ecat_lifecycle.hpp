@@ -35,6 +35,7 @@
  * \brief Ethercat life cycle class header file.This class contains declarations for, 
  * initializations of communication and real-time communication loop functions.
  *******************************************************************************/
+#pragma once
 #include "ecat_node.hpp"
 #include "timing.hpp"
 /******************************************************************************/

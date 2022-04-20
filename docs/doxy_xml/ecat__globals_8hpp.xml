@@ -213,10 +213,9 @@
         <name>NUM_OF_SLAVES</name>
         <initializer>1</initializer>
         <briefdescription>
-<para>Object dictionary paramaters PDO index and default values in here. </para>
+<para>Total number of connected slave to the bus. </para>
         </briefdescription>
         <detaileddescription>
-<para>IgH EtherCAT library header file the user-space real-time interface library. IgH, EtherCAT related functions and data types. Total number of connected slave to the bus. </para>
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
@@ -1813,10 +1812,13 @@
 <codeline lineno="65"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;chrono&gt;</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="66"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;memory&gt;</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="67"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;vector&gt;</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="68"><highlight class="normal"></highlight><highlight class="comment">/****************************************************************************/</highlight></codeline>
-<codeline lineno="71"><highlight class="preprocessor">#include<sp/>&quot;ecrt.h&quot;</highlight><highlight class="normal"><sp/><sp/></highlight></codeline>
+<codeline lineno="68"><highlight class="normal"></highlight><highlight class="comment">/****************************************************************************/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="69"><highlight class="normal"></highlight><highlight class="comment">//<sp/>IgH<sp/>EtherCAT<sp/>library<sp/>header<sp/>file<sp/>the<sp/>user-space<sp/>real-time<sp/>interface<sp/>library.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="70"><highlight class="normal"></highlight><highlight class="comment">//<sp/>IgH,<sp/>EtherCAT<sp/>related<sp/>functions<sp/>and<sp/>data<sp/>types.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="71"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;ecrt.h&quot;</highlight><highlight class="normal"><sp/><sp/></highlight></codeline>
 <codeline lineno="72"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
-<codeline lineno="74"><highlight class="preprocessor">#include<sp/>&quot;<ref refid="object__dictionary_8hpp" kindref="compound">object_dictionary.hpp</ref>&quot;</highlight><highlight class="normal"><sp/><sp/></highlight></codeline>
+<codeline lineno="73"><highlight class="normal"></highlight><highlight class="comment">//<sp/>Object<sp/>dictionary<sp/>paramaters<sp/>PDO<sp/>index<sp/>and<sp/>default<sp/>values<sp/>in<sp/>here.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="74"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="object__dictionary_8hpp" kindref="compound">object_dictionary.hpp</ref>&quot;</highlight><highlight class="normal"><sp/><sp/></highlight></codeline>
 <codeline lineno="75"><highlight class="normal"></highlight></codeline>
 <codeline lineno="76"><highlight class="normal"></highlight><highlight class="comment">/****************************************************************************/</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="77"><highlight class="normal"></highlight><highlight class="comment"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>/***<sp/>USER<sp/>SHOULD<sp/>DEFINE<sp/>THIS<sp/>AREAS<sp/>***/</highlight></codeline>

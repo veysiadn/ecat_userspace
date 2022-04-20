@@ -66,11 +66,11 @@
 #include <memory>
 #include <vector>
 /****************************************************************************/
-/// IgH EtherCAT library header file the user-space real-time interface library.
-/// IgH, EtherCAT related functions and data types.
+// IgH EtherCAT library header file the user-space real-time interface library.
+// IgH, EtherCAT related functions and data types.
 #include "ecrt.h"  
      
-/// Object dictionary paramaters PDO index and default values in here.
+// Object dictionary paramaters PDO index and default values in here.
 #include "object_dictionary.hpp"  
 
 /****************************************************************************/

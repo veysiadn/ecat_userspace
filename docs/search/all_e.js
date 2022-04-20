@@ -134,5 +134,7 @@ var searchData=
   ['op_5fmode_5fdisplay_131',['op_mode_display',['../structDataReceived.html#a17593653dc2a3085db5b312635872399',1,'DataReceived::op_mode_display()'],['../structOffsetPDO.html#a4ce519ced990d7ff2168b54822afc769',1,'OffsetPDO::op_mode_display()']]],
   ['openethercatmaster_132',['OpenEthercatMaster',['../classEthercatCommunication_1_1EthercatNode.html#a4455e0ba8abeedb96055615eb5a37f68',1,'EthercatCommunication::EthercatNode']]],
   ['opmode_133',['OpMode',['../ecat__globals_8hpp.html#a56752d1aeb4bd4940e632396072d68af',1,'ecat_globals.hpp']]],
-  ['outinfotofile_134',['OutInfoToFile',['../classTiming.html#abca929bf96a9035cdae89d6ac1c18509',1,'Timing']]]
+  ['outinfotofile_134',['OutInfoToFile',['../classTiming.html#abca929bf96a9035cdae89d6ac1c18509',1,'Timing']]],
+  ['over_5fcurrent_5ferror_135',['OVER_CURRENT_ERROR',['../ecat__globals_8hpp.html#ab0df38968e4f03a3f1f6d6df0f31f45aa920c7f729c170f66d23171faa6ab98a5',1,'ecat_globals.hpp']]],
+  ['over_5fvoltage_5ferror_136',['OVER_VOLTAGE_ERROR',['../ecat__globals_8hpp.html#ab0df38968e4f03a3f1f6d6df0f31f45aa638b59942aaf9bec4aaa9580c3edc8e8',1,'ecat_globals.hpp']]]
 ];

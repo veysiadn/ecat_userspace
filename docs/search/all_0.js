@@ -5,5 +5,18 @@ var searchData=
   ['actual_5fpos_2',['actual_pos',['../structDataReceived.html#a617a630ef15cca8f0d174281c69854c6',1,'DataReceived::actual_pos()'],['../structOffsetPDO.html#aa660132e2053405390ec7c21feab28a6',1,'OffsetPDO::actual_pos()']]],
   ['actual_5ftor_3',['actual_tor',['../structDataReceived.html#a5c23d4b51d50ed53b6c5314b4f251ec6',1,'DataReceived::actual_tor()'],['../structOffsetPDO.html#a16476df210bc19f871c89c0c7fd0d0c8',1,'OffsetPDO::actual_tor()']]],
   ['actual_5fvel_4',['actual_vel',['../structDataReceived.html#a9c396875f7f70a1c68a54d76af255b15',1,'DataReceived::actual_vel()'],['../structOffsetPDO.html#ae1bef0cbff32c077395e59137c8c802d',1,'OffsetPDO::actual_vel()']]],
-  ['al_5fstate_5f_5',['al_state_',['../classEthercatLifeCycleNode_1_1EthercatLifeCycle.html#a799a0bdf01f5a0da57c29900f3d8180d',1,'EthercatLifeCycleNode::EthercatLifeCycle']]]
+  ['al_5fstate_5f_5',['al_state_',['../classEthercatLifeCycleNode_1_1EthercatLifeCycle.html#a799a0bdf01f5a0da57c29900f3d8180d',1,'EthercatLifeCycleNode::EthercatLifeCycle']]],
+  ['auto_5ftuning_5famplitude_5fmismatch_5ferror_6',['AUTO_TUNING_AMPLITUDE_MISMATCH_ERROR',['../ecat__globals_8hpp.html#ab0df38968e4f03a3f1f6d6df0f31f45aafa51ee5b1a389f23127bb8216527f2a0',1,'ecat_globals.hpp']]],
+  ['auto_5ftuning_5fcurrent_5flimit_5ferror_7',['AUTO_TUNING_CURRENT_LIMIT_ERROR',['../ecat__globals_8hpp.html#ab0df38968e4f03a3f1f6d6df0f31f45aa38c17361cdf6da6e22bdabbe0d7f9c31',1,'ecat_globals.hpp']]],
+  ['auto_5ftuning_5fdata_5fsampling_5ferror_8',['AUTO_TUNING_DATA_SAMPLING_ERROR',['../ecat__globals_8hpp.html#ab0df38968e4f03a3f1f6d6df0f31f45aac98b43977b9987c6be2f4849fe8e31fd',1,'ecat_globals.hpp']]],
+  ['auto_5ftuning_5fidentification_5fcurrent_5ferror_9',['AUTO_TUNING_IDENTIFICATION_CURRENT_ERROR',['../ecat__globals_8hpp.html#ab0df38968e4f03a3f1f6d6df0f31f45aa9d81758f5580a0da99991e364cc97d9a',1,'ecat_globals.hpp']]],
+  ['auto_5ftuning_5findentification_5ferror_10',['AUTO_TUNING_INDENTIFICATION_ERROR',['../ecat__globals_8hpp.html#ab0df38968e4f03a3f1f6d6df0f31f45aa7bb37bac681759563109152b8476c455',1,'ecat_globals.hpp']]],
+  ['auto_5ftuning_5fmax_5fsystem_5fspeed_5ferror_11',['AUTO_TUNING_MAX_SYSTEM_SPEED_ERROR',['../ecat__globals_8hpp.html#ab0df38968e4f03a3f1f6d6df0f31f45aa9e6807a6a9f42998e9297651bd7b1b58',1,'ecat_globals.hpp']]],
+  ['auto_5ftuning_5fmotor_5fconnection_5ferror_12',['AUTO_TUNING_MOTOR_CONNECTION_ERROR',['../ecat__globals_8hpp.html#ab0df38968e4f03a3f1f6d6df0f31f45aad51a1fdf30d1d4585ac7aaeababe6cff',1,'ecat_globals.hpp']]],
+  ['auto_5ftuning_5fparameter_5ferror_13',['AUTO_TUNING_PARAMETER_ERROR',['../ecat__globals_8hpp.html#ab0df38968e4f03a3f1f6d6df0f31f45aadb7292fd052d572d1d6fe74c913f92cd',1,'ecat_globals.hpp']]],
+  ['auto_5ftuning_5fsample_5fmismatch_5ferror_14',['AUTO_TUNING_SAMPLE_MISMATCH_ERROR',['../ecat__globals_8hpp.html#ab0df38968e4f03a3f1f6d6df0f31f45aaae3beda3de633a31cacc16c59dfa28dd',1,'ecat_globals.hpp']]],
+  ['auto_5ftuning_5fsensor_5fsignal_5ferror_15',['AUTO_TUNING_SENSOR_SIGNAL_ERROR',['../ecat__globals_8hpp.html#ab0df38968e4f03a3f1f6d6df0f31f45aad23483ebf23a1a36fb77843475a6bcc7',1,'ecat_globals.hpp']]],
+  ['auto_5ftuning_5fstand_5fstill_5ferror_16',['AUTO_TUNING_STAND_STILL_ERROR',['../ecat__globals_8hpp.html#ab0df38968e4f03a3f1f6d6df0f31f45aa0dc973299e422964a7d28df45bcea368',1,'ecat_globals.hpp']]],
+  ['auto_5ftuning_5ftimeout_5ferror_17',['AUTO_TUNING_TIMEOUT_ERROR',['../ecat__globals_8hpp.html#ab0df38968e4f03a3f1f6d6df0f31f45aa900a5aea55f8709365aa34845ab7928f',1,'ecat_globals.hpp']]],
+  ['auto_5ftuning_5ftorque_5finvalid_5ferror_18',['AUTO_TUNING_TORQUE_INVALID_ERROR',['../ecat__globals_8hpp.html#ab0df38968e4f03a3f1f6d6df0f31f45aa2648c7eac32fc72400a8bc81aae25735',1,'ecat_globals.hpp']]]
 ];

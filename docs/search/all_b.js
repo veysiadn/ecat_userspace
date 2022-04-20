@@ -11,5 +11,6 @@ var searchData=
   ['left_5fu_5fbutton_5f_8',['left_u_button_',['../structController.html#a2ef1067504a96ac17b88fa903e60e27d',1,'Controller']]],
   ['left_5fx_5faxis_5f_9',['left_x_axis_',['../structController.html#af8e29e6b38ab7740566e703237c79654',1,'Controller']]],
   ['left_5fy_5faxis_5f_10',['left_y_axis_',['../structController.html#a23d43716969133c3a84aefc223235bba',1,'Controller']]],
-  ['lifecyclestate_11',['LifeCycleState',['../ecat__globals_8hpp.html#a3c9f753e2c77ff1f3cd20820eb4bb4f1',1,'ecat_globals.hpp']]]
+  ['lifecyclestate_11',['LifeCycleState',['../ecat__globals_8hpp.html#a3c9f753e2c77ff1f3cd20820eb4bb4f1',1,'ecat_globals.hpp']]],
+  ['logic_5fsupply_5ftoo_5flow_5ferror_12',['LOGIC_SUPPLY_TOO_LOW_ERROR',['../ecat__globals_8hpp.html#ab0df38968e4f03a3f1f6d6df0f31f45aaf222afd036ad548f510f85ecb6b115d1',1,'ecat_globals.hpp']]]
 ];

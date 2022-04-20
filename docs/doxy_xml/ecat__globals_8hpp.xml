@@ -953,6 +953,585 @@
         </inbodydescription>
         <location file="include/ecat_globals.hpp" line="309" column="1" bodyfile="include/ecat_globals.hpp" bodystart="309" bodyend="321"/>
       </memberdef>
+      <memberdef kind="enum" id="ecat__globals_8hpp_1ab0df38968e4f03a3f1f6d6df0f31f45a" prot="public" static="no" strong="no">
+        <type></type>
+        <name>ErrorType</name>
+        <enumvalue id="ecat__globals_8hpp_1ab0df38968e4f03a3f1f6d6df0f31f45aabf350750d0d4fabd8954c0f1e9bbae94" prot="public">
+          <name>NO_ERROR</name>
+          <initializer>= 0</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="ecat__globals_8hpp_1ab0df38968e4f03a3f1f6d6df0f31f45aa9bcb544a32281727d57f35dec7d49e78" prot="public">
+          <name>GENERIC_ERROR</name>
+          <initializer>= 0x1000</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="ecat__globals_8hpp_1ab0df38968e4f03a3f1f6d6df0f31f45aac2d2d74368bed88ae4617b7eeb9d18b5" prot="public">
+          <name>GENERIC_INIT_ERROR</name>
+          <initializer>= 0x1080</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="ecat__globals_8hpp_1ab0df38968e4f03a3f1f6d6df0f31f45aaa92cbf5cd466db7f5c41a5959f209ce6" prot="public">
+          <name>GENERIC_INIT_ERROR_1</name>
+          <initializer>= 0x1081</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="ecat__globals_8hpp_1ab0df38968e4f03a3f1f6d6df0f31f45aab4756b29189241c173fbf97c6bf0c2c9" prot="public">
+          <name>GENERIC_INIT_ERROR_2</name>
+          <initializer>= 0x1082</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="ecat__globals_8hpp_1ab0df38968e4f03a3f1f6d6df0f31f45aa993234cfb6c40315cba3ad917037f3bf" prot="public">
+          <name>GENERIC_INIT_ERROR_3</name>
+          <initializer>= 0x1083</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="ecat__globals_8hpp_1ab0df38968e4f03a3f1f6d6df0f31f45aa496d94c101319df710427ba3def5d85e" prot="public">
+          <name>GENERIC_INIT_ERROR_4</name>
+          <initializer>= 0x1084</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="ecat__globals_8hpp_1ab0df38968e4f03a3f1f6d6df0f31f45aa57f92d5c84f99221fbb39c867884defa" prot="public">
+          <name>GENERIC_INIT_ERROR_5</name>
+          <initializer>= 0x1085</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="ecat__globals_8hpp_1ab0df38968e4f03a3f1f6d6df0f31f45aa3670b91721ad58cef03b0351078a0272" prot="public">
+          <name>GENERIC_INIT_ERROR_6</name>
+          <initializer>= 0x1086</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="ecat__globals_8hpp_1ab0df38968e4f03a3f1f6d6df0f31f45aa09c0d7caa45fde43df2b2e9fcc0cb2e1" prot="public">
+          <name>GENERIC_INIT_ERROR_7</name>
+          <initializer>= 0x1087</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="ecat__globals_8hpp_1ab0df38968e4f03a3f1f6d6df0f31f45aa6ef33b130501be19c8c0b31d284be837" prot="public">
+          <name>GENERIC_INIT_ERROR_8</name>
+          <initializer>= 0x1088</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="ecat__globals_8hpp_1ab0df38968e4f03a3f1f6d6df0f31f45aa73b5d4b9fbb9db0fc597bccf1ed0f3eb" prot="public">
+          <name>FIRMWARE_INCOMPATIBLITY_ERROR</name>
+          <initializer>= 0x1090</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="ecat__globals_8hpp_1ab0df38968e4f03a3f1f6d6df0f31f45aa920c7f729c170f66d23171faa6ab98a5" prot="public">
+          <name>OVER_CURRENT_ERROR</name>
+          <initializer>= 0x2310</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="ecat__globals_8hpp_1ab0df38968e4f03a3f1f6d6df0f31f45aa6ae4a1e15b464e1d1470b3e866c150f6" prot="public">
+          <name>POWER_STAGE_PROTECTION_ERROR</name>
+          <initializer>= 0x2320</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="ecat__globals_8hpp_1ab0df38968e4f03a3f1f6d6df0f31f45aa638b59942aaf9bec4aaa9580c3edc8e8" prot="public">
+          <name>OVER_VOLTAGE_ERROR</name>
+          <initializer>= 0x3210</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="ecat__globals_8hpp_1ab0df38968e4f03a3f1f6d6df0f31f45aa4e80575925053a375109066c6c08b7b6" prot="public">
+          <name>UNDER_VOLTAGE_ERROR</name>
+          <initializer>= 0x3220</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="ecat__globals_8hpp_1ab0df38968e4f03a3f1f6d6df0f31f45aa241ff6419d9082a0b91205b30ad752ee" prot="public">
+          <name>THERMAL_OVERLOAD_ERROR</name>
+          <initializer>= 0x4210</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="ecat__globals_8hpp_1ab0df38968e4f03a3f1f6d6df0f31f45aa6093baf40fce18f3929c687dbb191a93" prot="public">
+          <name>THERMAL_MOTOR_OVERLOAD_ERRROR</name>
+          <initializer>= 0x4380</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="ecat__globals_8hpp_1ab0df38968e4f03a3f1f6d6df0f31f45aaf222afd036ad548f510f85ecb6b115d1" prot="public">
+          <name>LOGIC_SUPPLY_TOO_LOW_ERROR</name>
+          <initializer>= 0x5113</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="ecat__globals_8hpp_1ab0df38968e4f03a3f1f6d6df0f31f45aaab6c7d6ce3a56b8623715c466a8c6133" prot="public">
+          <name>HARDWARE_DEFECT_ERROR</name>
+          <initializer>= 0x5280</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="ecat__globals_8hpp_1ab0df38968e4f03a3f1f6d6df0f31f45aa6450e53101b312a440411ba9f80229a2" prot="public">
+          <name>HARDWARE_INCOMPATIBLITY_ERROR</name>
+          <initializer>= 0x5281</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="ecat__globals_8hpp_1ab0df38968e4f03a3f1f6d6df0f31f45aa28a3763240d6c1ba52bf1f13b8a348db" prot="public">
+          <name>HARDWARE_ERROR</name>
+          <initializer>= 0x5480</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="ecat__globals_8hpp_1ab0df38968e4f03a3f1f6d6df0f31f45aadf33309cdf451cccf4535535c90fd769" prot="public">
+          <name>HARDWARE_ERROR_1</name>
+          <initializer>= 0x5481</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="ecat__globals_8hpp_1ab0df38968e4f03a3f1f6d6df0f31f45aa3fc207987acf9602a03ab24467710051" prot="public">
+          <name>HARDWARE_ERROR_2</name>
+          <initializer>= 0x5482</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="ecat__globals_8hpp_1ab0df38968e4f03a3f1f6d6df0f31f45aa65dbd6ef294771dc8be5b538978d4857" prot="public">
+          <name>HARDWARE_ERROR_3</name>
+          <initializer>= 0x5483</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="ecat__globals_8hpp_1ab0df38968e4f03a3f1f6d6df0f31f45aa0d1a81acf0546a8fa99f6b465c38e654" prot="public">
+          <name>SIGN_OF_LIFE_ERROR</name>
+          <initializer>= 0x6080</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="ecat__globals_8hpp_1ab0df38968e4f03a3f1f6d6df0f31f45aa8e86f8369bb9e63c090b461af52826d9" prot="public">
+          <name>EXTENSION_1_WATCHDOG_ERROR</name>
+          <initializer>= 0x6081</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="ecat__globals_8hpp_1ab0df38968e4f03a3f1f6d6df0f31f45aa91584d1394caf9a72c6e096413ab1083" prot="public">
+          <name>INTERNAL_SOFTWARE_ERROR</name>
+          <initializer>= 0x6180</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="ecat__globals_8hpp_1ab0df38968e4f03a3f1f6d6df0f31f45aa6f23e564970c94f7878e05832d8b419f" prot="public">
+          <name>SOFTWARE_PARAMETER_ERROR</name>
+          <initializer>= 0x6320</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="ecat__globals_8hpp_1ab0df38968e4f03a3f1f6d6df0f31f45aa2df60635227442a284f44961609460a1" prot="public">
+          <name>PERSISTENT_PARAMETER_CORRUPT_ERROR</name>
+          <initializer>= 0x6380</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="ecat__globals_8hpp_1ab0df38968e4f03a3f1f6d6df0f31f45aa43e2b6703966bace1a00ae501793a40b" prot="public">
+          <name>POSITION_SENSOR_ERROR</name>
+          <initializer>= 0x7320</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="ecat__globals_8hpp_1ab0df38968e4f03a3f1f6d6df0f31f45aab728302f99ed7717ceaf3862eaf4acf5" prot="public">
+          <name>POSITION_SENSOR_BREACH_ERROR</name>
+          <initializer>= 0x7380</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="ecat__globals_8hpp_1ab0df38968e4f03a3f1f6d6df0f31f45aa03ab1c1e4f1e4e011a61c420ce516ced" prot="public">
+          <name>POSITION_SENSOR_RESOLUTION_ERROR</name>
+          <initializer>= 0x7381</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="ecat__globals_8hpp_1ab0df38968e4f03a3f1f6d6df0f31f45aa2b4da4bf429b5046c3aecd39fc5bb469" prot="public">
+          <name>POSITION_SENSOR_INDEX_ERROR</name>
+          <initializer>= 0x7382</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="ecat__globals_8hpp_1ab0df38968e4f03a3f1f6d6df0f31f45aaaec0121115a14ece6c9376a94f7a2776" prot="public">
+          <name>HALL_SENSOR_ERROR</name>
+          <initializer>= 0x7388</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="ecat__globals_8hpp_1ab0df38968e4f03a3f1f6d6df0f31f45aae3b86fae0e6c86123675f68d46e4fe31" prot="public">
+          <name>HALL_SENSOR_NOT_FOUND_ERROR</name>
+          <initializer>=  0x7389</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="ecat__globals_8hpp_1ab0df38968e4f03a3f1f6d6df0f31f45aa7160a0bb29391901b1d6bc79a52006e5" prot="public">
+          <name>HALL_ANGLE_DETECTION_ERROR</name>
+          <initializer>= 0x738A</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="ecat__globals_8hpp_1ab0df38968e4f03a3f1f6d6df0f31f45aac50afb20a243079863f374602f0790d0" prot="public">
+          <name>SSI_SENSOR_ERROR</name>
+          <initializer>= 0x738C</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="ecat__globals_8hpp_1ab0df38968e4f03a3f1f6d6df0f31f45aaba91bf7b588016cd7f8935c94520ef8c" prot="public">
+          <name>SSI_SENSOR_FRAME_ERROR</name>
+          <initializer>= 0x738D</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="ecat__globals_8hpp_1ab0df38968e4f03a3f1f6d6df0f31f45aab2f224364cbf9bf4c34de82b780e7124" prot="public">
+          <name>MISSING_MAIN_SENSOR_ERROR</name>
+          <initializer>= 0x7390</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="ecat__globals_8hpp_1ab0df38968e4f03a3f1f6d6df0f31f45aa68f2253adaba115be7510843916d5987" prot="public">
+          <name>MISSING_COMMUTATION_SENSOR_ERROR</name>
+          <initializer>= 0x7391</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="ecat__globals_8hpp_1ab0df38968e4f03a3f1f6d6df0f31f45aa8adcd6c7353d63ec4b4f5b02da1b78f6" prot="public">
+          <name>MAIN_SENSOR_DIRECTION_ERROR</name>
+          <initializer>= 0x7392</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="ecat__globals_8hpp_1ab0df38968e4f03a3f1f6d6df0f31f45aa3e646299177739be870587dd26fb4449" prot="public">
+          <name>ETHERCAT_COMMUNCATION_ERROR</name>
+          <initializer>= 0x8180</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="ecat__globals_8hpp_1ab0df38968e4f03a3f1f6d6df0f31f45aa0e1d401bb43ef2f3fb0537a3e92777b1" prot="public">
+          <name>ETHERCAT_INITIALIZATION_ERROR</name>
+          <initializer>= 0x8181</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="ecat__globals_8hpp_1ab0df38968e4f03a3f1f6d6df0f31f45aa5787a843f41d962dc7a1dd3e0e29b9b9" prot="public">
+          <name>ETHERCAT_RX_QUEUE_OVERFLOW_ERROR</name>
+          <initializer>= 0x8182</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="ecat__globals_8hpp_1ab0df38968e4f03a3f1f6d6df0f31f45aa62621707bb450d9ef1333b9d34f8e4d7" prot="public">
+          <name>ETHERCAT_COMMUNICATION_ERROR_INTERNAL</name>
+          <initializer>= 0x8183</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="ecat__globals_8hpp_1ab0df38968e4f03a3f1f6d6df0f31f45aab287f60a01e231a9835b65e36f19dc9a" prot="public">
+          <name>ETHERCAT_COMMUNICATION_CYCLE_TIME_ERROR</name>
+          <initializer>= 0x8184</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="ecat__globals_8hpp_1ab0df38968e4f03a3f1f6d6df0f31f45aa89496de2ff5668bba197b17d1265e68a" prot="public">
+          <name>ETHERCAT_PDO_COMMUNICATION_ERROR</name>
+          <initializer>= 0x8280</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="ecat__globals_8hpp_1ab0df38968e4f03a3f1f6d6df0f31f45aa3e33298d2f3f249892149b45a37fa21c" prot="public">
+          <name>ETHERCAT_SDO_COMMUNICATION_ERROR</name>
+          <initializer>= 0x8281</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="ecat__globals_8hpp_1ab0df38968e4f03a3f1f6d6df0f31f45aad853c51c0c284231f7a3b7640763f058" prot="public">
+          <name>FOLLOWING_ERROR</name>
+          <initializer>= 0x8611</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="ecat__globals_8hpp_1ab0df38968e4f03a3f1f6d6df0f31f45aa9eff61773ede66fc0bd352b5cb2232fd" prot="public">
+          <name>NEGATIVE_LIMIT_SWITCH_ERROR</name>
+          <initializer>= 0x8A80</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="ecat__globals_8hpp_1ab0df38968e4f03a3f1f6d6df0f31f45aaf73ea06674326cf4cf6f009b4433303f" prot="public">
+          <name>POSITIVE_LIMIT_SWITCH_ERROR</name>
+          <initializer>= 0x8A81</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="ecat__globals_8hpp_1ab0df38968e4f03a3f1f6d6df0f31f45aaf260c595c2467ea09bf41a056465ce92" prot="public">
+          <name>SOFTWARE_POSITION_LIMIT_ERROR</name>
+          <initializer>= 0x8A82</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="ecat__globals_8hpp_1ab0df38968e4f03a3f1f6d6df0f31f45aa2e7e1c2aa3c38ce104ed58305bc4709c" prot="public">
+          <name>STO_ERROR</name>
+          <initializer>= 0x8A88</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="ecat__globals_8hpp_1ab0df38968e4f03a3f1f6d6df0f31f45aa95c290dab1387a00b7709c90bf9d5211" prot="public">
+          <name>SYSTEM_OVERLOADED_ERROR</name>
+          <initializer>= 0xFF01</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="ecat__globals_8hpp_1ab0df38968e4f03a3f1f6d6df0f31f45aaa928f088a63439a983a24e6fc32abe11" prot="public">
+          <name>WATCHDOG_ERROR</name>
+          <initializer>= 0xFF02</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="ecat__globals_8hpp_1ab0df38968e4f03a3f1f6d6df0f31f45aad0c4bae294584ea1089132e6816985e9" prot="public">
+          <name>SYSTEM_PEAK_OVERLOADED_ERROR</name>
+          <initializer>= 0XFF0B</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="ecat__globals_8hpp_1ab0df38968e4f03a3f1f6d6df0f31f45aaa84bf76ec8d7e71c18ed9251715223c8" prot="public">
+          <name>CONTROLLER_GAIN_ERROR</name>
+          <initializer>= 0xFF10</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="ecat__globals_8hpp_1ab0df38968e4f03a3f1f6d6df0f31f45aa7bb37bac681759563109152b8476c455" prot="public">
+          <name>AUTO_TUNING_INDENTIFICATION_ERROR</name>
+          <initializer>= 0xFF11</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="ecat__globals_8hpp_1ab0df38968e4f03a3f1f6d6df0f31f45aa38c17361cdf6da6e22bdabbe0d7f9c31" prot="public">
+          <name>AUTO_TUNING_CURRENT_LIMIT_ERROR</name>
+          <initializer>= 0xFF12</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="ecat__globals_8hpp_1ab0df38968e4f03a3f1f6d6df0f31f45aa9d81758f5580a0da99991e364cc97d9a" prot="public">
+          <name>AUTO_TUNING_IDENTIFICATION_CURRENT_ERROR</name>
+          <initializer>= 0xFF13</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="ecat__globals_8hpp_1ab0df38968e4f03a3f1f6d6df0f31f45aac98b43977b9987c6be2f4849fe8e31fd" prot="public">
+          <name>AUTO_TUNING_DATA_SAMPLING_ERROR</name>
+          <initializer>= 0xFF14</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="ecat__globals_8hpp_1ab0df38968e4f03a3f1f6d6df0f31f45aaae3beda3de633a31cacc16c59dfa28dd" prot="public">
+          <name>AUTO_TUNING_SAMPLE_MISMATCH_ERROR</name>
+          <initializer>= 0xFF15</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="ecat__globals_8hpp_1ab0df38968e4f03a3f1f6d6df0f31f45aadb7292fd052d572d1d6fe74c913f92cd" prot="public">
+          <name>AUTO_TUNING_PARAMETER_ERROR</name>
+          <initializer>= 0xFF16</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="ecat__globals_8hpp_1ab0df38968e4f03a3f1f6d6df0f31f45aafa51ee5b1a389f23127bb8216527f2a0" prot="public">
+          <name>AUTO_TUNING_AMPLITUDE_MISMATCH_ERROR</name>
+          <initializer>= 0xFF17</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="ecat__globals_8hpp_1ab0df38968e4f03a3f1f6d6df0f31f45aa900a5aea55f8709365aa34845ab7928f" prot="public">
+          <name>AUTO_TUNING_TIMEOUT_ERROR</name>
+          <initializer>= 0xFF19</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="ecat__globals_8hpp_1ab0df38968e4f03a3f1f6d6df0f31f45aa0dc973299e422964a7d28df45bcea368" prot="public">
+          <name>AUTO_TUNING_STAND_STILL_ERROR</name>
+          <initializer>= 0xFF20</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="ecat__globals_8hpp_1ab0df38968e4f03a3f1f6d6df0f31f45aa2648c7eac32fc72400a8bc81aae25735" prot="public">
+          <name>AUTO_TUNING_TORQUE_INVALID_ERROR</name>
+          <initializer>= 0xFF21</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="ecat__globals_8hpp_1ab0df38968e4f03a3f1f6d6df0f31f45aa9e6807a6a9f42998e9297651bd7b1b58" prot="public">
+          <name>AUTO_TUNING_MAX_SYSTEM_SPEED_ERROR</name>
+          <initializer>= 0XFF22</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="ecat__globals_8hpp_1ab0df38968e4f03a3f1f6d6df0f31f45aad51a1fdf30d1d4585ac7aaeababe6cff" prot="public">
+          <name>AUTO_TUNING_MOTOR_CONNECTION_ERROR</name>
+          <initializer>= 0xFF23</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="ecat__globals_8hpp_1ab0df38968e4f03a3f1f6d6df0f31f45aad23483ebf23a1a36fb77843475a6bcc7" prot="public">
+          <name>AUTO_TUNING_SENSOR_SIGNAL_ERROR</name>
+          <initializer>= 0XFF24</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/ecat_globals.hpp" line="479" column="1" bodyfile="include/ecat_globals.hpp" bodystart="480" bodyend="552"/>
+      </memberdef>
       </sectiondef>
       <sectiondef kind="var">
       <memberdef kind="variable" id="ecat__globals_8hpp_1aacc3c7aef173b1cde9377fb7f05c924d" prot="public" static="no" mutable="no">
@@ -1143,6 +1722,23 @@
         <inbodydescription>
         </inbodydescription>
         <location file="include/ecat_globals.hpp" line="157" column="22" bodyfile="include/ecat_globals.hpp" bodystart="157" bodyend="173"/>
+      </memberdef>
+      <memberdef kind="function" id="ecat__globals_8hpp_1a90b8972e0ee7a6f0335ca06017554883" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>std::string</type>
+        <definition>static std::string GetErrorMessage</definition>
+        <argsstring>(const int &amp;err_code)</argsstring>
+        <name>GetErrorMessage</name>
+        <param>
+          <type>const int &amp;</type>
+          <declname>err_code</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/ecat_globals.hpp" line="554" column="20" bodyfile="include/ecat_globals.hpp" bodystart="554" bodyend="703"/>
       </memberdef>
       </sectiondef>
     <briefdescription>
@@ -1561,6 +2157,232 @@
 <codeline lineno="475" refid="structProfileVelocityParam_1a0afdd1d807f97d6d8137519cbbffc4e2" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>uint32_t<sp/><sp/><sp/><sp/><ref refid="structProfileVelocityParam_1a0afdd1d807f97d6d8137519cbbffc4e2" kindref="member">profile_dec</ref>;</highlight></codeline>
 <codeline lineno="476" refid="structProfileVelocityParam_1a2a981f1b49bd7c3dbaa080d857897947" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>uint16_t<sp/><sp/><sp/><sp/><ref refid="structProfileVelocityParam_1a2a981f1b49bd7c3dbaa080d857897947" kindref="member">motion_profile_type</ref>;</highlight></codeline>
 <codeline lineno="477"><highlight class="normal">}<sp/><ref refid="structProfileVelocityParam" kindref="compound">ProfileVelocityParam</ref><sp/>;</highlight></codeline>
+<codeline lineno="478"><highlight class="normal"></highlight></codeline>
+<codeline lineno="479" refid="ecat__globals_8hpp_1ab0df38968e4f03a3f1f6d6df0f31f45a" refkind="member"><highlight class="normal"></highlight><highlight class="keyword">enum</highlight><highlight class="normal"><sp/><ref refid="ecat__globals_8hpp_1ab0df38968e4f03a3f1f6d6df0f31f45a" kindref="member">ErrorType</ref></highlight></codeline>
+<codeline lineno="480"><highlight class="normal">{<sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="481" refid="ecat__globals_8hpp_1ab0df38968e4f03a3f1f6d6df0f31f45aabf350750d0d4fabd8954c0f1e9bbae94" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="ecat__globals_8hpp_1ab0df38968e4f03a3f1f6d6df0f31f45aabf350750d0d4fabd8954c0f1e9bbae94" kindref="member">NO_ERROR</ref><sp/>=<sp/>0,</highlight></codeline>
+<codeline lineno="482" refid="ecat__globals_8hpp_1ab0df38968e4f03a3f1f6d6df0f31f45aa9bcb544a32281727d57f35dec7d49e78" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="ecat__globals_8hpp_1ab0df38968e4f03a3f1f6d6df0f31f45aa9bcb544a32281727d57f35dec7d49e78" kindref="member">GENERIC_ERROR</ref><sp/>=<sp/>0x1000,</highlight></codeline>
+<codeline lineno="483" refid="ecat__globals_8hpp_1ab0df38968e4f03a3f1f6d6df0f31f45aac2d2d74368bed88ae4617b7eeb9d18b5" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="ecat__globals_8hpp_1ab0df38968e4f03a3f1f6d6df0f31f45aac2d2d74368bed88ae4617b7eeb9d18b5" kindref="member">GENERIC_INIT_ERROR</ref><sp/>=<sp/>0x1080,</highlight></codeline>
+<codeline lineno="484" refid="ecat__globals_8hpp_1ab0df38968e4f03a3f1f6d6df0f31f45aaa92cbf5cd466db7f5c41a5959f209ce6" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="ecat__globals_8hpp_1ab0df38968e4f03a3f1f6d6df0f31f45aaa92cbf5cd466db7f5c41a5959f209ce6" kindref="member">GENERIC_INIT_ERROR_1</ref><sp/>=<sp/>0x1081,</highlight></codeline>
+<codeline lineno="485" refid="ecat__globals_8hpp_1ab0df38968e4f03a3f1f6d6df0f31f45aab4756b29189241c173fbf97c6bf0c2c9" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="ecat__globals_8hpp_1ab0df38968e4f03a3f1f6d6df0f31f45aab4756b29189241c173fbf97c6bf0c2c9" kindref="member">GENERIC_INIT_ERROR_2</ref><sp/>=<sp/>0x1082,</highlight></codeline>
+<codeline lineno="486" refid="ecat__globals_8hpp_1ab0df38968e4f03a3f1f6d6df0f31f45aa993234cfb6c40315cba3ad917037f3bf" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="ecat__globals_8hpp_1ab0df38968e4f03a3f1f6d6df0f31f45aa993234cfb6c40315cba3ad917037f3bf" kindref="member">GENERIC_INIT_ERROR_3</ref><sp/>=<sp/>0x1083,</highlight></codeline>
+<codeline lineno="487" refid="ecat__globals_8hpp_1ab0df38968e4f03a3f1f6d6df0f31f45aa496d94c101319df710427ba3def5d85e" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="ecat__globals_8hpp_1ab0df38968e4f03a3f1f6d6df0f31f45aa496d94c101319df710427ba3def5d85e" kindref="member">GENERIC_INIT_ERROR_4</ref><sp/>=<sp/>0x1084,</highlight></codeline>
+<codeline lineno="488" refid="ecat__globals_8hpp_1ab0df38968e4f03a3f1f6d6df0f31f45aa57f92d5c84f99221fbb39c867884defa" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="ecat__globals_8hpp_1ab0df38968e4f03a3f1f6d6df0f31f45aa57f92d5c84f99221fbb39c867884defa" kindref="member">GENERIC_INIT_ERROR_5</ref><sp/>=<sp/>0x1085,</highlight></codeline>
+<codeline lineno="489" refid="ecat__globals_8hpp_1ab0df38968e4f03a3f1f6d6df0f31f45aa3670b91721ad58cef03b0351078a0272" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="ecat__globals_8hpp_1ab0df38968e4f03a3f1f6d6df0f31f45aa3670b91721ad58cef03b0351078a0272" kindref="member">GENERIC_INIT_ERROR_6</ref><sp/>=<sp/>0x1086,</highlight></codeline>
+<codeline lineno="490" refid="ecat__globals_8hpp_1ab0df38968e4f03a3f1f6d6df0f31f45aa09c0d7caa45fde43df2b2e9fcc0cb2e1" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="ecat__globals_8hpp_1ab0df38968e4f03a3f1f6d6df0f31f45aa09c0d7caa45fde43df2b2e9fcc0cb2e1" kindref="member">GENERIC_INIT_ERROR_7</ref><sp/>=<sp/>0x1087,</highlight></codeline>
+<codeline lineno="491" refid="ecat__globals_8hpp_1ab0df38968e4f03a3f1f6d6df0f31f45aa6ef33b130501be19c8c0b31d284be837" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="ecat__globals_8hpp_1ab0df38968e4f03a3f1f6d6df0f31f45aa6ef33b130501be19c8c0b31d284be837" kindref="member">GENERIC_INIT_ERROR_8</ref><sp/>=<sp/>0x1088,</highlight></codeline>
+<codeline lineno="492" refid="ecat__globals_8hpp_1ab0df38968e4f03a3f1f6d6df0f31f45aa73b5d4b9fbb9db0fc597bccf1ed0f3eb" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="ecat__globals_8hpp_1ab0df38968e4f03a3f1f6d6df0f31f45aa73b5d4b9fbb9db0fc597bccf1ed0f3eb" kindref="member">FIRMWARE_INCOMPATIBLITY_ERROR</ref><sp/>=<sp/>0x1090,</highlight></codeline>
+<codeline lineno="493" refid="ecat__globals_8hpp_1ab0df38968e4f03a3f1f6d6df0f31f45aa920c7f729c170f66d23171faa6ab98a5" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="ecat__globals_8hpp_1ab0df38968e4f03a3f1f6d6df0f31f45aa920c7f729c170f66d23171faa6ab98a5" kindref="member">OVER_CURRENT_ERROR</ref><sp/>=<sp/>0x2310,</highlight></codeline>
+<codeline lineno="494" refid="ecat__globals_8hpp_1ab0df38968e4f03a3f1f6d6df0f31f45aa6ae4a1e15b464e1d1470b3e866c150f6" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="ecat__globals_8hpp_1ab0df38968e4f03a3f1f6d6df0f31f45aa6ae4a1e15b464e1d1470b3e866c150f6" kindref="member">POWER_STAGE_PROTECTION_ERROR</ref><sp/>=<sp/>0x2320,</highlight></codeline>
+<codeline lineno="495" refid="ecat__globals_8hpp_1ab0df38968e4f03a3f1f6d6df0f31f45aa638b59942aaf9bec4aaa9580c3edc8e8" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="ecat__globals_8hpp_1ab0df38968e4f03a3f1f6d6df0f31f45aa638b59942aaf9bec4aaa9580c3edc8e8" kindref="member">OVER_VOLTAGE_ERROR</ref><sp/>=<sp/>0x3210,</highlight></codeline>
+<codeline lineno="496" refid="ecat__globals_8hpp_1ab0df38968e4f03a3f1f6d6df0f31f45aa4e80575925053a375109066c6c08b7b6" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="ecat__globals_8hpp_1ab0df38968e4f03a3f1f6d6df0f31f45aa4e80575925053a375109066c6c08b7b6" kindref="member">UNDER_VOLTAGE_ERROR</ref><sp/>=<sp/>0x3220,</highlight></codeline>
+<codeline lineno="497" refid="ecat__globals_8hpp_1ab0df38968e4f03a3f1f6d6df0f31f45aa241ff6419d9082a0b91205b30ad752ee" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="ecat__globals_8hpp_1ab0df38968e4f03a3f1f6d6df0f31f45aa241ff6419d9082a0b91205b30ad752ee" kindref="member">THERMAL_OVERLOAD_ERROR</ref><sp/>=<sp/>0x4210,</highlight></codeline>
+<codeline lineno="498" refid="ecat__globals_8hpp_1ab0df38968e4f03a3f1f6d6df0f31f45aa6093baf40fce18f3929c687dbb191a93" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="ecat__globals_8hpp_1ab0df38968e4f03a3f1f6d6df0f31f45aa6093baf40fce18f3929c687dbb191a93" kindref="member">THERMAL_MOTOR_OVERLOAD_ERRROR</ref><sp/>=<sp/>0x4380,</highlight></codeline>
+<codeline lineno="499" refid="ecat__globals_8hpp_1ab0df38968e4f03a3f1f6d6df0f31f45aaf222afd036ad548f510f85ecb6b115d1" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="ecat__globals_8hpp_1ab0df38968e4f03a3f1f6d6df0f31f45aaf222afd036ad548f510f85ecb6b115d1" kindref="member">LOGIC_SUPPLY_TOO_LOW_ERROR</ref><sp/>=<sp/>0x5113,</highlight></codeline>
+<codeline lineno="500" refid="ecat__globals_8hpp_1ab0df38968e4f03a3f1f6d6df0f31f45aaab6c7d6ce3a56b8623715c466a8c6133" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="ecat__globals_8hpp_1ab0df38968e4f03a3f1f6d6df0f31f45aaab6c7d6ce3a56b8623715c466a8c6133" kindref="member">HARDWARE_DEFECT_ERROR</ref><sp/>=<sp/>0x5280,</highlight></codeline>
+<codeline lineno="501" refid="ecat__globals_8hpp_1ab0df38968e4f03a3f1f6d6df0f31f45aa6450e53101b312a440411ba9f80229a2" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="ecat__globals_8hpp_1ab0df38968e4f03a3f1f6d6df0f31f45aa6450e53101b312a440411ba9f80229a2" kindref="member">HARDWARE_INCOMPATIBLITY_ERROR</ref><sp/>=<sp/>0x5281,</highlight></codeline>
+<codeline lineno="502" refid="ecat__globals_8hpp_1ab0df38968e4f03a3f1f6d6df0f31f45aa28a3763240d6c1ba52bf1f13b8a348db" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="ecat__globals_8hpp_1ab0df38968e4f03a3f1f6d6df0f31f45aa28a3763240d6c1ba52bf1f13b8a348db" kindref="member">HARDWARE_ERROR</ref><sp/>=<sp/>0x5480,</highlight></codeline>
+<codeline lineno="503" refid="ecat__globals_8hpp_1ab0df38968e4f03a3f1f6d6df0f31f45aadf33309cdf451cccf4535535c90fd769" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="ecat__globals_8hpp_1ab0df38968e4f03a3f1f6d6df0f31f45aadf33309cdf451cccf4535535c90fd769" kindref="member">HARDWARE_ERROR_1</ref><sp/>=<sp/>0x5481,</highlight></codeline>
+<codeline lineno="504" refid="ecat__globals_8hpp_1ab0df38968e4f03a3f1f6d6df0f31f45aa3fc207987acf9602a03ab24467710051" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="ecat__globals_8hpp_1ab0df38968e4f03a3f1f6d6df0f31f45aa3fc207987acf9602a03ab24467710051" kindref="member">HARDWARE_ERROR_2</ref><sp/>=<sp/>0x5482,</highlight></codeline>
+<codeline lineno="505" refid="ecat__globals_8hpp_1ab0df38968e4f03a3f1f6d6df0f31f45aa65dbd6ef294771dc8be5b538978d4857" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="ecat__globals_8hpp_1ab0df38968e4f03a3f1f6d6df0f31f45aa65dbd6ef294771dc8be5b538978d4857" kindref="member">HARDWARE_ERROR_3</ref><sp/>=<sp/>0x5483,</highlight></codeline>
+<codeline lineno="506" refid="ecat__globals_8hpp_1ab0df38968e4f03a3f1f6d6df0f31f45aa0d1a81acf0546a8fa99f6b465c38e654" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="ecat__globals_8hpp_1ab0df38968e4f03a3f1f6d6df0f31f45aa0d1a81acf0546a8fa99f6b465c38e654" kindref="member">SIGN_OF_LIFE_ERROR</ref><sp/>=<sp/>0x6080,</highlight></codeline>
+<codeline lineno="507" refid="ecat__globals_8hpp_1ab0df38968e4f03a3f1f6d6df0f31f45aa8e86f8369bb9e63c090b461af52826d9" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="ecat__globals_8hpp_1ab0df38968e4f03a3f1f6d6df0f31f45aa8e86f8369bb9e63c090b461af52826d9" kindref="member">EXTENSION_1_WATCHDOG_ERROR</ref><sp/>=<sp/>0x6081,</highlight></codeline>
+<codeline lineno="508" refid="ecat__globals_8hpp_1ab0df38968e4f03a3f1f6d6df0f31f45aa91584d1394caf9a72c6e096413ab1083" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="ecat__globals_8hpp_1ab0df38968e4f03a3f1f6d6df0f31f45aa91584d1394caf9a72c6e096413ab1083" kindref="member">INTERNAL_SOFTWARE_ERROR</ref><sp/>=<sp/>0x6180,</highlight></codeline>
+<codeline lineno="509" refid="ecat__globals_8hpp_1ab0df38968e4f03a3f1f6d6df0f31f45aa6f23e564970c94f7878e05832d8b419f" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="ecat__globals_8hpp_1ab0df38968e4f03a3f1f6d6df0f31f45aa6f23e564970c94f7878e05832d8b419f" kindref="member">SOFTWARE_PARAMETER_ERROR</ref><sp/>=<sp/>0x6320,</highlight></codeline>
+<codeline lineno="510" refid="ecat__globals_8hpp_1ab0df38968e4f03a3f1f6d6df0f31f45aa2df60635227442a284f44961609460a1" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="ecat__globals_8hpp_1ab0df38968e4f03a3f1f6d6df0f31f45aa2df60635227442a284f44961609460a1" kindref="member">PERSISTENT_PARAMETER_CORRUPT_ERROR</ref><sp/>=<sp/>0x6380,</highlight></codeline>
+<codeline lineno="511" refid="ecat__globals_8hpp_1ab0df38968e4f03a3f1f6d6df0f31f45aa43e2b6703966bace1a00ae501793a40b" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="ecat__globals_8hpp_1ab0df38968e4f03a3f1f6d6df0f31f45aa43e2b6703966bace1a00ae501793a40b" kindref="member">POSITION_SENSOR_ERROR</ref><sp/>=<sp/>0x7320,</highlight></codeline>
+<codeline lineno="512" refid="ecat__globals_8hpp_1ab0df38968e4f03a3f1f6d6df0f31f45aab728302f99ed7717ceaf3862eaf4acf5" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="ecat__globals_8hpp_1ab0df38968e4f03a3f1f6d6df0f31f45aab728302f99ed7717ceaf3862eaf4acf5" kindref="member">POSITION_SENSOR_BREACH_ERROR</ref><sp/>=<sp/>0x7380,</highlight></codeline>
+<codeline lineno="513" refid="ecat__globals_8hpp_1ab0df38968e4f03a3f1f6d6df0f31f45aa03ab1c1e4f1e4e011a61c420ce516ced" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="ecat__globals_8hpp_1ab0df38968e4f03a3f1f6d6df0f31f45aa03ab1c1e4f1e4e011a61c420ce516ced" kindref="member">POSITION_SENSOR_RESOLUTION_ERROR</ref><sp/><sp/>=<sp/>0x7381,</highlight></codeline>
+<codeline lineno="514" refid="ecat__globals_8hpp_1ab0df38968e4f03a3f1f6d6df0f31f45aa2b4da4bf429b5046c3aecd39fc5bb469" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="ecat__globals_8hpp_1ab0df38968e4f03a3f1f6d6df0f31f45aa2b4da4bf429b5046c3aecd39fc5bb469" kindref="member">POSITION_SENSOR_INDEX_ERROR</ref><sp/>=<sp/>0x7382,</highlight></codeline>
+<codeline lineno="515" refid="ecat__globals_8hpp_1ab0df38968e4f03a3f1f6d6df0f31f45aaaec0121115a14ece6c9376a94f7a2776" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="ecat__globals_8hpp_1ab0df38968e4f03a3f1f6d6df0f31f45aaaec0121115a14ece6c9376a94f7a2776" kindref="member">HALL_SENSOR_ERROR</ref><sp/>=<sp/>0x7388,</highlight></codeline>
+<codeline lineno="516" refid="ecat__globals_8hpp_1ab0df38968e4f03a3f1f6d6df0f31f45aae3b86fae0e6c86123675f68d46e4fe31" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="ecat__globals_8hpp_1ab0df38968e4f03a3f1f6d6df0f31f45aae3b86fae0e6c86123675f68d46e4fe31" kindref="member">HALL_SENSOR_NOT_FOUND_ERROR</ref><sp/>=<sp/><sp/>0x7389,</highlight></codeline>
+<codeline lineno="517" refid="ecat__globals_8hpp_1ab0df38968e4f03a3f1f6d6df0f31f45aa7160a0bb29391901b1d6bc79a52006e5" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="ecat__globals_8hpp_1ab0df38968e4f03a3f1f6d6df0f31f45aa7160a0bb29391901b1d6bc79a52006e5" kindref="member">HALL_ANGLE_DETECTION_ERROR</ref><sp/>=<sp/>0x738A,</highlight></codeline>
+<codeline lineno="518" refid="ecat__globals_8hpp_1ab0df38968e4f03a3f1f6d6df0f31f45aac50afb20a243079863f374602f0790d0" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="ecat__globals_8hpp_1ab0df38968e4f03a3f1f6d6df0f31f45aac50afb20a243079863f374602f0790d0" kindref="member">SSI_SENSOR_ERROR</ref><sp/>=<sp/>0x738C,</highlight></codeline>
+<codeline lineno="519" refid="ecat__globals_8hpp_1ab0df38968e4f03a3f1f6d6df0f31f45aaba91bf7b588016cd7f8935c94520ef8c" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="ecat__globals_8hpp_1ab0df38968e4f03a3f1f6d6df0f31f45aaba91bf7b588016cd7f8935c94520ef8c" kindref="member">SSI_SENSOR_FRAME_ERROR</ref><sp/>=<sp/>0x738D,</highlight></codeline>
+<codeline lineno="520" refid="ecat__globals_8hpp_1ab0df38968e4f03a3f1f6d6df0f31f45aab2f224364cbf9bf4c34de82b780e7124" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="ecat__globals_8hpp_1ab0df38968e4f03a3f1f6d6df0f31f45aab2f224364cbf9bf4c34de82b780e7124" kindref="member">MISSING_MAIN_SENSOR_ERROR</ref><sp/>=<sp/>0x7390,</highlight></codeline>
+<codeline lineno="521" refid="ecat__globals_8hpp_1ab0df38968e4f03a3f1f6d6df0f31f45aa68f2253adaba115be7510843916d5987" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="ecat__globals_8hpp_1ab0df38968e4f03a3f1f6d6df0f31f45aa68f2253adaba115be7510843916d5987" kindref="member">MISSING_COMMUTATION_SENSOR_ERROR</ref><sp/>=<sp/>0x7391,<sp/></highlight></codeline>
+<codeline lineno="522" refid="ecat__globals_8hpp_1ab0df38968e4f03a3f1f6d6df0f31f45aa8adcd6c7353d63ec4b4f5b02da1b78f6" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="ecat__globals_8hpp_1ab0df38968e4f03a3f1f6d6df0f31f45aa8adcd6c7353d63ec4b4f5b02da1b78f6" kindref="member">MAIN_SENSOR_DIRECTION_ERROR</ref><sp/>=<sp/>0x7392,</highlight></codeline>
+<codeline lineno="523" refid="ecat__globals_8hpp_1ab0df38968e4f03a3f1f6d6df0f31f45aa3e646299177739be870587dd26fb4449" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="ecat__globals_8hpp_1ab0df38968e4f03a3f1f6d6df0f31f45aa3e646299177739be870587dd26fb4449" kindref="member">ETHERCAT_COMMUNCATION_ERROR</ref><sp/>=<sp/>0x8180,</highlight></codeline>
+<codeline lineno="524" refid="ecat__globals_8hpp_1ab0df38968e4f03a3f1f6d6df0f31f45aa0e1d401bb43ef2f3fb0537a3e92777b1" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="ecat__globals_8hpp_1ab0df38968e4f03a3f1f6d6df0f31f45aa0e1d401bb43ef2f3fb0537a3e92777b1" kindref="member">ETHERCAT_INITIALIZATION_ERROR</ref><sp/>=<sp/>0x8181,</highlight></codeline>
+<codeline lineno="525" refid="ecat__globals_8hpp_1ab0df38968e4f03a3f1f6d6df0f31f45aa5787a843f41d962dc7a1dd3e0e29b9b9" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="ecat__globals_8hpp_1ab0df38968e4f03a3f1f6d6df0f31f45aa5787a843f41d962dc7a1dd3e0e29b9b9" kindref="member">ETHERCAT_RX_QUEUE_OVERFLOW_ERROR</ref><sp/>=<sp/>0x8182,</highlight></codeline>
+<codeline lineno="526" refid="ecat__globals_8hpp_1ab0df38968e4f03a3f1f6d6df0f31f45aa62621707bb450d9ef1333b9d34f8e4d7" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="ecat__globals_8hpp_1ab0df38968e4f03a3f1f6d6df0f31f45aa62621707bb450d9ef1333b9d34f8e4d7" kindref="member">ETHERCAT_COMMUNICATION_ERROR_INTERNAL</ref><sp/><sp/>=<sp/>0x8183,</highlight></codeline>
+<codeline lineno="527" refid="ecat__globals_8hpp_1ab0df38968e4f03a3f1f6d6df0f31f45aab287f60a01e231a9835b65e36f19dc9a" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="ecat__globals_8hpp_1ab0df38968e4f03a3f1f6d6df0f31f45aab287f60a01e231a9835b65e36f19dc9a" kindref="member">ETHERCAT_COMMUNICATION_CYCLE_TIME_ERROR</ref><sp/>=<sp/>0x8184,</highlight></codeline>
+<codeline lineno="528" refid="ecat__globals_8hpp_1ab0df38968e4f03a3f1f6d6df0f31f45aa89496de2ff5668bba197b17d1265e68a" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="ecat__globals_8hpp_1ab0df38968e4f03a3f1f6d6df0f31f45aa89496de2ff5668bba197b17d1265e68a" kindref="member">ETHERCAT_PDO_COMMUNICATION_ERROR</ref><sp/>=<sp/>0x8280,</highlight></codeline>
+<codeline lineno="529" refid="ecat__globals_8hpp_1ab0df38968e4f03a3f1f6d6df0f31f45aa3e33298d2f3f249892149b45a37fa21c" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="ecat__globals_8hpp_1ab0df38968e4f03a3f1f6d6df0f31f45aa3e33298d2f3f249892149b45a37fa21c" kindref="member">ETHERCAT_SDO_COMMUNICATION_ERROR</ref><sp/>=<sp/>0x8281,</highlight></codeline>
+<codeline lineno="530" refid="ecat__globals_8hpp_1ab0df38968e4f03a3f1f6d6df0f31f45aad853c51c0c284231f7a3b7640763f058" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="ecat__globals_8hpp_1ab0df38968e4f03a3f1f6d6df0f31f45aad853c51c0c284231f7a3b7640763f058" kindref="member">FOLLOWING_ERROR</ref><sp/>=<sp/>0x8611,</highlight></codeline>
+<codeline lineno="531" refid="ecat__globals_8hpp_1ab0df38968e4f03a3f1f6d6df0f31f45aa9eff61773ede66fc0bd352b5cb2232fd" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="ecat__globals_8hpp_1ab0df38968e4f03a3f1f6d6df0f31f45aa9eff61773ede66fc0bd352b5cb2232fd" kindref="member">NEGATIVE_LIMIT_SWITCH_ERROR</ref><sp/>=<sp/>0x8A80,</highlight></codeline>
+<codeline lineno="532" refid="ecat__globals_8hpp_1ab0df38968e4f03a3f1f6d6df0f31f45aaf73ea06674326cf4cf6f009b4433303f" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="ecat__globals_8hpp_1ab0df38968e4f03a3f1f6d6df0f31f45aaf73ea06674326cf4cf6f009b4433303f" kindref="member">POSITIVE_LIMIT_SWITCH_ERROR</ref><sp/>=<sp/>0x8A81,</highlight></codeline>
+<codeline lineno="533" refid="ecat__globals_8hpp_1ab0df38968e4f03a3f1f6d6df0f31f45aaf260c595c2467ea09bf41a056465ce92" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="ecat__globals_8hpp_1ab0df38968e4f03a3f1f6d6df0f31f45aaf260c595c2467ea09bf41a056465ce92" kindref="member">SOFTWARE_POSITION_LIMIT_ERROR</ref><sp/>=<sp/>0x8A82,</highlight></codeline>
+<codeline lineno="534" refid="ecat__globals_8hpp_1ab0df38968e4f03a3f1f6d6df0f31f45aa2e7e1c2aa3c38ce104ed58305bc4709c" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="ecat__globals_8hpp_1ab0df38968e4f03a3f1f6d6df0f31f45aa2e7e1c2aa3c38ce104ed58305bc4709c" kindref="member">STO_ERROR</ref><sp/>=<sp/>0x8A88,</highlight></codeline>
+<codeline lineno="535" refid="ecat__globals_8hpp_1ab0df38968e4f03a3f1f6d6df0f31f45aa95c290dab1387a00b7709c90bf9d5211" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="ecat__globals_8hpp_1ab0df38968e4f03a3f1f6d6df0f31f45aa95c290dab1387a00b7709c90bf9d5211" kindref="member">SYSTEM_OVERLOADED_ERROR</ref><sp/>=<sp/>0xFF01,</highlight></codeline>
+<codeline lineno="536" refid="ecat__globals_8hpp_1ab0df38968e4f03a3f1f6d6df0f31f45aaa928f088a63439a983a24e6fc32abe11" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="ecat__globals_8hpp_1ab0df38968e4f03a3f1f6d6df0f31f45aaa928f088a63439a983a24e6fc32abe11" kindref="member">WATCHDOG_ERROR</ref><sp/>=<sp/>0xFF02,</highlight></codeline>
+<codeline lineno="537" refid="ecat__globals_8hpp_1ab0df38968e4f03a3f1f6d6df0f31f45aad0c4bae294584ea1089132e6816985e9" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="ecat__globals_8hpp_1ab0df38968e4f03a3f1f6d6df0f31f45aad0c4bae294584ea1089132e6816985e9" kindref="member">SYSTEM_PEAK_OVERLOADED_ERROR</ref><sp/>=<sp/>0XFF0B,</highlight></codeline>
+<codeline lineno="538" refid="ecat__globals_8hpp_1ab0df38968e4f03a3f1f6d6df0f31f45aaa84bf76ec8d7e71c18ed9251715223c8" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="ecat__globals_8hpp_1ab0df38968e4f03a3f1f6d6df0f31f45aaa84bf76ec8d7e71c18ed9251715223c8" kindref="member">CONTROLLER_GAIN_ERROR</ref><sp/>=<sp/>0xFF10,</highlight></codeline>
+<codeline lineno="539" refid="ecat__globals_8hpp_1ab0df38968e4f03a3f1f6d6df0f31f45aa7bb37bac681759563109152b8476c455" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="ecat__globals_8hpp_1ab0df38968e4f03a3f1f6d6df0f31f45aa7bb37bac681759563109152b8476c455" kindref="member">AUTO_TUNING_INDENTIFICATION_ERROR</ref><sp/>=<sp/>0xFF11,</highlight></codeline>
+<codeline lineno="540" refid="ecat__globals_8hpp_1ab0df38968e4f03a3f1f6d6df0f31f45aa38c17361cdf6da6e22bdabbe0d7f9c31" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="ecat__globals_8hpp_1ab0df38968e4f03a3f1f6d6df0f31f45aa38c17361cdf6da6e22bdabbe0d7f9c31" kindref="member">AUTO_TUNING_CURRENT_LIMIT_ERROR</ref><sp/>=<sp/>0xFF12,</highlight></codeline>
+<codeline lineno="541" refid="ecat__globals_8hpp_1ab0df38968e4f03a3f1f6d6df0f31f45aa9d81758f5580a0da99991e364cc97d9a" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="ecat__globals_8hpp_1ab0df38968e4f03a3f1f6d6df0f31f45aa9d81758f5580a0da99991e364cc97d9a" kindref="member">AUTO_TUNING_IDENTIFICATION_CURRENT_ERROR</ref><sp/>=<sp/>0xFF13,</highlight></codeline>
+<codeline lineno="542" refid="ecat__globals_8hpp_1ab0df38968e4f03a3f1f6d6df0f31f45aac98b43977b9987c6be2f4849fe8e31fd" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="ecat__globals_8hpp_1ab0df38968e4f03a3f1f6d6df0f31f45aac98b43977b9987c6be2f4849fe8e31fd" kindref="member">AUTO_TUNING_DATA_SAMPLING_ERROR</ref><sp/><sp/>=<sp/>0xFF14,</highlight></codeline>
+<codeline lineno="543" refid="ecat__globals_8hpp_1ab0df38968e4f03a3f1f6d6df0f31f45aaae3beda3de633a31cacc16c59dfa28dd" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="ecat__globals_8hpp_1ab0df38968e4f03a3f1f6d6df0f31f45aaae3beda3de633a31cacc16c59dfa28dd" kindref="member">AUTO_TUNING_SAMPLE_MISMATCH_ERROR</ref><sp/>=<sp/>0xFF15,</highlight></codeline>
+<codeline lineno="544" refid="ecat__globals_8hpp_1ab0df38968e4f03a3f1f6d6df0f31f45aadb7292fd052d572d1d6fe74c913f92cd" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="ecat__globals_8hpp_1ab0df38968e4f03a3f1f6d6df0f31f45aadb7292fd052d572d1d6fe74c913f92cd" kindref="member">AUTO_TUNING_PARAMETER_ERROR</ref><sp/>=<sp/>0xFF16,</highlight></codeline>
+<codeline lineno="545" refid="ecat__globals_8hpp_1ab0df38968e4f03a3f1f6d6df0f31f45aafa51ee5b1a389f23127bb8216527f2a0" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="ecat__globals_8hpp_1ab0df38968e4f03a3f1f6d6df0f31f45aafa51ee5b1a389f23127bb8216527f2a0" kindref="member">AUTO_TUNING_AMPLITUDE_MISMATCH_ERROR</ref><sp/>=<sp/>0xFF17,</highlight></codeline>
+<codeline lineno="546" refid="ecat__globals_8hpp_1ab0df38968e4f03a3f1f6d6df0f31f45aa900a5aea55f8709365aa34845ab7928f" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="ecat__globals_8hpp_1ab0df38968e4f03a3f1f6d6df0f31f45aa900a5aea55f8709365aa34845ab7928f" kindref="member">AUTO_TUNING_TIMEOUT_ERROR</ref><sp/>=<sp/>0xFF19,</highlight></codeline>
+<codeline lineno="547" refid="ecat__globals_8hpp_1ab0df38968e4f03a3f1f6d6df0f31f45aa0dc973299e422964a7d28df45bcea368" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="ecat__globals_8hpp_1ab0df38968e4f03a3f1f6d6df0f31f45aa0dc973299e422964a7d28df45bcea368" kindref="member">AUTO_TUNING_STAND_STILL_ERROR</ref><sp/>=<sp/>0xFF20,</highlight></codeline>
+<codeline lineno="548" refid="ecat__globals_8hpp_1ab0df38968e4f03a3f1f6d6df0f31f45aa2648c7eac32fc72400a8bc81aae25735" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="ecat__globals_8hpp_1ab0df38968e4f03a3f1f6d6df0f31f45aa2648c7eac32fc72400a8bc81aae25735" kindref="member">AUTO_TUNING_TORQUE_INVALID_ERROR</ref><sp/>=<sp/>0xFF21,</highlight></codeline>
+<codeline lineno="549" refid="ecat__globals_8hpp_1ab0df38968e4f03a3f1f6d6df0f31f45aa9e6807a6a9f42998e9297651bd7b1b58" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="ecat__globals_8hpp_1ab0df38968e4f03a3f1f6d6df0f31f45aa9e6807a6a9f42998e9297651bd7b1b58" kindref="member">AUTO_TUNING_MAX_SYSTEM_SPEED_ERROR</ref><sp/>=<sp/>0XFF22,</highlight></codeline>
+<codeline lineno="550" refid="ecat__globals_8hpp_1ab0df38968e4f03a3f1f6d6df0f31f45aad51a1fdf30d1d4585ac7aaeababe6cff" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="ecat__globals_8hpp_1ab0df38968e4f03a3f1f6d6df0f31f45aad51a1fdf30d1d4585ac7aaeababe6cff" kindref="member">AUTO_TUNING_MOTOR_CONNECTION_ERROR</ref><sp/>=<sp/>0xFF23,</highlight></codeline>
+<codeline lineno="551"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="ecat__globals_8hpp_1ab0df38968e4f03a3f1f6d6df0f31f45aad23483ebf23a1a36fb77843475a6bcc7" kindref="member">AUTO_TUNING_SENSOR_SIGNAL_ERROR</ref><sp/>=<sp/>0XFF24</highlight></codeline>
+<codeline lineno="552" refid="ecat__globals_8hpp_1ab0df38968e4f03a3f1f6d6df0f31f45aad23483ebf23a1a36fb77843475a6bcc7" refkind="member"><highlight class="normal">};</highlight></codeline>
+<codeline lineno="553"><highlight class="normal"></highlight></codeline>
+<codeline lineno="554" refid="ecat__globals_8hpp_1a90b8972e0ee7a6f0335ca06017554883" refkind="member"><highlight class="normal"></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/>std::string<sp/><ref refid="ecat__globals_8hpp_1a90b8972e0ee7a6f0335ca06017554883" kindref="member">GetErrorMessage</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal">&amp;<sp/>err_code)</highlight></codeline>
+<codeline lineno="555"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="556"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">switch</highlight><highlight class="normal"><sp/>(err_code)</highlight></codeline>
+<codeline lineno="557"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="558"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">case</highlight><highlight class="normal"><sp/><ref refid="ecat__globals_8hpp_1ab0df38968e4f03a3f1f6d6df0f31f45aabf350750d0d4fabd8954c0f1e9bbae94" kindref="member">NO_ERROR</ref>:</highlight></codeline>
+<codeline lineno="559"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/></highlight><highlight class="stringliteral">&quot;No<sp/>error&quot;</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="560"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">case</highlight><highlight class="normal"><sp/><ref refid="ecat__globals_8hpp_1ab0df38968e4f03a3f1f6d6df0f31f45aa9bcb544a32281727d57f35dec7d49e78" kindref="member">GENERIC_ERROR</ref>:</highlight></codeline>
+<codeline lineno="561"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/></highlight><highlight class="stringliteral">&quot;Generic<sp/>error&quot;</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="562"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">case</highlight><highlight class="normal"><sp/><ref refid="ecat__globals_8hpp_1ab0df38968e4f03a3f1f6d6df0f31f45aac2d2d74368bed88ae4617b7eeb9d18b5" kindref="member">GENERIC_INIT_ERROR</ref>:</highlight></codeline>
+<codeline lineno="563"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/></highlight><highlight class="stringliteral">&quot;Generic<sp/>initialization<sp/>error&quot;</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="564"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">case</highlight><highlight class="normal"><sp/><ref refid="ecat__globals_8hpp_1ab0df38968e4f03a3f1f6d6df0f31f45aaa92cbf5cd466db7f5c41a5959f209ce6" kindref="member">GENERIC_INIT_ERROR_1</ref>:</highlight></codeline>
+<codeline lineno="565"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/></highlight><highlight class="stringliteral">&quot;Generic<sp/>initialization<sp/>error<sp/>1&quot;</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="566"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">case</highlight><highlight class="normal"><sp/><ref refid="ecat__globals_8hpp_1ab0df38968e4f03a3f1f6d6df0f31f45aab4756b29189241c173fbf97c6bf0c2c9" kindref="member">GENERIC_INIT_ERROR_2</ref>:</highlight></codeline>
+<codeline lineno="567"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/></highlight><highlight class="stringliteral">&quot;Generic<sp/>initialization<sp/>error<sp/>2&quot;</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="568"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">case</highlight><highlight class="normal"><sp/><ref refid="ecat__globals_8hpp_1ab0df38968e4f03a3f1f6d6df0f31f45aa993234cfb6c40315cba3ad917037f3bf" kindref="member">GENERIC_INIT_ERROR_3</ref>:</highlight></codeline>
+<codeline lineno="569"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/></highlight><highlight class="stringliteral">&quot;Generic<sp/>initialization<sp/>error<sp/>3&quot;</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="570"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">case</highlight><highlight class="normal"><sp/><ref refid="ecat__globals_8hpp_1ab0df38968e4f03a3f1f6d6df0f31f45aa496d94c101319df710427ba3def5d85e" kindref="member">GENERIC_INIT_ERROR_4</ref>:</highlight></codeline>
+<codeline lineno="571"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/></highlight><highlight class="stringliteral">&quot;Generic<sp/>initialization<sp/>error<sp/>4&quot;</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="572"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">case</highlight><highlight class="normal"><sp/><ref refid="ecat__globals_8hpp_1ab0df38968e4f03a3f1f6d6df0f31f45aa57f92d5c84f99221fbb39c867884defa" kindref="member">GENERIC_INIT_ERROR_5</ref>:</highlight></codeline>
+<codeline lineno="573"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/></highlight><highlight class="stringliteral">&quot;Generic<sp/>initialization<sp/>error<sp/>5&quot;</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="574"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">case</highlight><highlight class="normal"><sp/><ref refid="ecat__globals_8hpp_1ab0df38968e4f03a3f1f6d6df0f31f45aa3670b91721ad58cef03b0351078a0272" kindref="member">GENERIC_INIT_ERROR_6</ref>:</highlight></codeline>
+<codeline lineno="575"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/></highlight><highlight class="stringliteral">&quot;Generic<sp/>initialization<sp/>error<sp/>6&quot;</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="576"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">case</highlight><highlight class="normal"><sp/><ref refid="ecat__globals_8hpp_1ab0df38968e4f03a3f1f6d6df0f31f45aa09c0d7caa45fde43df2b2e9fcc0cb2e1" kindref="member">GENERIC_INIT_ERROR_7</ref>:</highlight></codeline>
+<codeline lineno="577"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/></highlight><highlight class="stringliteral">&quot;Generic<sp/>initialization<sp/>error<sp/>7&quot;</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="578"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">case</highlight><highlight class="normal"><sp/><ref refid="ecat__globals_8hpp_1ab0df38968e4f03a3f1f6d6df0f31f45aa6ef33b130501be19c8c0b31d284be837" kindref="member">GENERIC_INIT_ERROR_8</ref>:</highlight></codeline>
+<codeline lineno="579"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/></highlight><highlight class="stringliteral">&quot;Generic<sp/>initialization<sp/>error<sp/>8&quot;</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="580"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">case</highlight><highlight class="normal"><sp/><ref refid="ecat__globals_8hpp_1ab0df38968e4f03a3f1f6d6df0f31f45aa73b5d4b9fbb9db0fc597bccf1ed0f3eb" kindref="member">FIRMWARE_INCOMPATIBLITY_ERROR</ref>:</highlight></codeline>
+<codeline lineno="581"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/></highlight><highlight class="stringliteral">&quot;Firmware<sp/>incompatibility<sp/>error&quot;</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="582"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">case</highlight><highlight class="normal"><sp/><ref refid="ecat__globals_8hpp_1ab0df38968e4f03a3f1f6d6df0f31f45aa920c7f729c170f66d23171faa6ab98a5" kindref="member">OVER_CURRENT_ERROR</ref>:</highlight></codeline>
+<codeline lineno="583"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/></highlight><highlight class="stringliteral">&quot;Over<sp/>current<sp/>error&quot;</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="584"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">case</highlight><highlight class="normal"><sp/><ref refid="ecat__globals_8hpp_1ab0df38968e4f03a3f1f6d6df0f31f45aa6ae4a1e15b464e1d1470b3e866c150f6" kindref="member">POWER_STAGE_PROTECTION_ERROR</ref>:</highlight></codeline>
+<codeline lineno="585"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/></highlight><highlight class="stringliteral">&quot;Power<sp/>stage<sp/>protection<sp/>error&quot;</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="586"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">case</highlight><highlight class="normal"><sp/><ref refid="ecat__globals_8hpp_1ab0df38968e4f03a3f1f6d6df0f31f45aa638b59942aaf9bec4aaa9580c3edc8e8" kindref="member">OVER_VOLTAGE_ERROR</ref>:</highlight></codeline>
+<codeline lineno="587"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/></highlight><highlight class="stringliteral">&quot;Over<sp/>voltage<sp/>error&quot;</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="588"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">case</highlight><highlight class="normal"><sp/><ref refid="ecat__globals_8hpp_1ab0df38968e4f03a3f1f6d6df0f31f45aa4e80575925053a375109066c6c08b7b6" kindref="member">UNDER_VOLTAGE_ERROR</ref>:</highlight></codeline>
+<codeline lineno="589"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/></highlight><highlight class="stringliteral">&quot;Under<sp/>voltage<sp/>error&quot;</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="590"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">case</highlight><highlight class="normal"><sp/><ref refid="ecat__globals_8hpp_1ab0df38968e4f03a3f1f6d6df0f31f45aa241ff6419d9082a0b91205b30ad752ee" kindref="member">THERMAL_OVERLOAD_ERROR</ref>:</highlight></codeline>
+<codeline lineno="591"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/></highlight><highlight class="stringliteral">&quot;Thermal<sp/>overload<sp/>error&quot;</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="592"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">case</highlight><highlight class="normal"><sp/><ref refid="ecat__globals_8hpp_1ab0df38968e4f03a3f1f6d6df0f31f45aa6093baf40fce18f3929c687dbb191a93" kindref="member">THERMAL_MOTOR_OVERLOAD_ERRROR</ref>:</highlight></codeline>
+<codeline lineno="593"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/></highlight><highlight class="stringliteral">&quot;Thermal<sp/>motor<sp/>overload<sp/>error&quot;</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="594"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">case</highlight><highlight class="normal"><sp/><ref refid="ecat__globals_8hpp_1ab0df38968e4f03a3f1f6d6df0f31f45aaf222afd036ad548f510f85ecb6b115d1" kindref="member">LOGIC_SUPPLY_TOO_LOW_ERROR</ref>:<sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="595"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/></highlight><highlight class="stringliteral">&quot;Logic<sp/>supply<sp/>too<sp/>low<sp/>error&quot;</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="596"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">case</highlight><highlight class="normal"><sp/><ref refid="ecat__globals_8hpp_1ab0df38968e4f03a3f1f6d6df0f31f45aaab6c7d6ce3a56b8623715c466a8c6133" kindref="member">HARDWARE_DEFECT_ERROR</ref>:</highlight></codeline>
+<codeline lineno="597"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/></highlight><highlight class="stringliteral">&quot;Hardware<sp/>defect<sp/>error&quot;</highlight><highlight class="normal">;<sp/></highlight></codeline>
+<codeline lineno="598"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">case</highlight><highlight class="normal"><sp/><ref refid="ecat__globals_8hpp_1ab0df38968e4f03a3f1f6d6df0f31f45aa6450e53101b312a440411ba9f80229a2" kindref="member">HARDWARE_INCOMPATIBLITY_ERROR</ref>:</highlight></codeline>
+<codeline lineno="599"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/></highlight><highlight class="stringliteral">&quot;Hardware<sp/>incompatibility<sp/>error&quot;</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="600"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">case</highlight><highlight class="normal"><sp/><ref refid="ecat__globals_8hpp_1ab0df38968e4f03a3f1f6d6df0f31f45aa28a3763240d6c1ba52bf1f13b8a348db" kindref="member">HARDWARE_ERROR</ref>:</highlight></codeline>
+<codeline lineno="601"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/></highlight><highlight class="stringliteral">&quot;Hardware<sp/>error&quot;</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="602"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">case</highlight><highlight class="normal"><sp/><ref refid="ecat__globals_8hpp_1ab0df38968e4f03a3f1f6d6df0f31f45aadf33309cdf451cccf4535535c90fd769" kindref="member">HARDWARE_ERROR_1</ref>:</highlight></codeline>
+<codeline lineno="603"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/></highlight><highlight class="stringliteral">&quot;Hardware<sp/>error<sp/>1&quot;</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="604"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">case</highlight><highlight class="normal"><sp/><ref refid="ecat__globals_8hpp_1ab0df38968e4f03a3f1f6d6df0f31f45aa3fc207987acf9602a03ab24467710051" kindref="member">HARDWARE_ERROR_2</ref>:</highlight></codeline>
+<codeline lineno="605"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/></highlight><highlight class="stringliteral">&quot;Hardware<sp/>error<sp/>2&quot;</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="606"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">case</highlight><highlight class="normal"><sp/><ref refid="ecat__globals_8hpp_1ab0df38968e4f03a3f1f6d6df0f31f45aa65dbd6ef294771dc8be5b538978d4857" kindref="member">HARDWARE_ERROR_3</ref>:</highlight></codeline>
+<codeline lineno="607"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/></highlight><highlight class="stringliteral">&quot;Hardware<sp/>error<sp/>3&quot;</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="608"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">case</highlight><highlight class="normal"><sp/><ref refid="ecat__globals_8hpp_1ab0df38968e4f03a3f1f6d6df0f31f45aa0d1a81acf0546a8fa99f6b465c38e654" kindref="member">SIGN_OF_LIFE_ERROR</ref>:</highlight></codeline>
+<codeline lineno="609"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/></highlight><highlight class="stringliteral">&quot;Sign<sp/>of<sp/>life<sp/>error&quot;</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="610"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">case</highlight><highlight class="normal"><sp/><ref refid="ecat__globals_8hpp_1ab0df38968e4f03a3f1f6d6df0f31f45aa8e86f8369bb9e63c090b461af52826d9" kindref="member">EXTENSION_1_WATCHDOG_ERROR</ref>:</highlight></codeline>
+<codeline lineno="611"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/></highlight><highlight class="stringliteral">&quot;Extension<sp/>1<sp/>watchdog<sp/>error&quot;</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="612"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">case</highlight><highlight class="normal"><sp/><ref refid="ecat__globals_8hpp_1ab0df38968e4f03a3f1f6d6df0f31f45aa91584d1394caf9a72c6e096413ab1083" kindref="member">INTERNAL_SOFTWARE_ERROR</ref>:<sp/><sp/></highlight></codeline>
+<codeline lineno="613"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/></highlight><highlight class="stringliteral">&quot;Internal<sp/>software<sp/>error&quot;</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="614"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">case</highlight><highlight class="normal"><sp/><ref refid="ecat__globals_8hpp_1ab0df38968e4f03a3f1f6d6df0f31f45aa6f23e564970c94f7878e05832d8b419f" kindref="member">SOFTWARE_PARAMETER_ERROR</ref>:</highlight></codeline>
+<codeline lineno="615"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/></highlight><highlight class="stringliteral">&quot;Software<sp/>parameter<sp/>error&quot;</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="616"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">case</highlight><highlight class="normal"><sp/><ref refid="ecat__globals_8hpp_1ab0df38968e4f03a3f1f6d6df0f31f45aa2df60635227442a284f44961609460a1" kindref="member">PERSISTENT_PARAMETER_CORRUPT_ERROR</ref>:</highlight></codeline>
+<codeline lineno="617"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/></highlight><highlight class="stringliteral">&quot;Persistent<sp/>parameter<sp/>corrupt<sp/>error&quot;</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="618"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">case</highlight><highlight class="normal"><sp/><ref refid="ecat__globals_8hpp_1ab0df38968e4f03a3f1f6d6df0f31f45aa43e2b6703966bace1a00ae501793a40b" kindref="member">POSITION_SENSOR_ERROR</ref>:</highlight></codeline>
+<codeline lineno="619"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/></highlight><highlight class="stringliteral">&quot;Position<sp/>sensor<sp/>error&quot;</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="620"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">case</highlight><highlight class="normal"><sp/><ref refid="ecat__globals_8hpp_1ab0df38968e4f03a3f1f6d6df0f31f45aab728302f99ed7717ceaf3862eaf4acf5" kindref="member">POSITION_SENSOR_BREACH_ERROR</ref>:</highlight></codeline>
+<codeline lineno="621"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/></highlight><highlight class="stringliteral">&quot;Position<sp/>sensor<sp/>breach<sp/>error&quot;</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="622"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">case</highlight><highlight class="normal"><sp/><ref refid="ecat__globals_8hpp_1ab0df38968e4f03a3f1f6d6df0f31f45aa03ab1c1e4f1e4e011a61c420ce516ced" kindref="member">POSITION_SENSOR_RESOLUTION_ERROR</ref>:<sp/><sp/></highlight></codeline>
+<codeline lineno="623"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/></highlight><highlight class="stringliteral">&quot;Position<sp/>sensor<sp/>resolution<sp/>error&quot;</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="624"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">case</highlight><highlight class="normal"><sp/><ref refid="ecat__globals_8hpp_1ab0df38968e4f03a3f1f6d6df0f31f45aa2b4da4bf429b5046c3aecd39fc5bb469" kindref="member">POSITION_SENSOR_INDEX_ERROR</ref>:</highlight></codeline>
+<codeline lineno="625"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/></highlight><highlight class="stringliteral">&quot;Position<sp/>sensor<sp/>index<sp/>error&quot;</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="626"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">case</highlight><highlight class="normal"><sp/><ref refid="ecat__globals_8hpp_1ab0df38968e4f03a3f1f6d6df0f31f45aaaec0121115a14ece6c9376a94f7a2776" kindref="member">HALL_SENSOR_ERROR</ref>:</highlight></codeline>
+<codeline lineno="627"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/></highlight><highlight class="stringliteral">&quot;Hall<sp/>sensor<sp/>error&quot;</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="628"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">case</highlight><highlight class="normal"><sp/><ref refid="ecat__globals_8hpp_1ab0df38968e4f03a3f1f6d6df0f31f45aae3b86fae0e6c86123675f68d46e4fe31" kindref="member">HALL_SENSOR_NOT_FOUND_ERROR</ref>:</highlight></codeline>
+<codeline lineno="629"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/></highlight><highlight class="stringliteral">&quot;Hall<sp/>sensor<sp/>not<sp/>found<sp/>error&quot;</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="630"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">case</highlight><highlight class="normal"><sp/><ref refid="ecat__globals_8hpp_1ab0df38968e4f03a3f1f6d6df0f31f45aa7160a0bb29391901b1d6bc79a52006e5" kindref="member">HALL_ANGLE_DETECTION_ERROR</ref>:</highlight></codeline>
+<codeline lineno="631"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/></highlight><highlight class="stringliteral">&quot;Hall<sp/>angle<sp/>detection<sp/>error&quot;</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="632"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">case</highlight><highlight class="normal"><sp/><ref refid="ecat__globals_8hpp_1ab0df38968e4f03a3f1f6d6df0f31f45aac50afb20a243079863f374602f0790d0" kindref="member">SSI_SENSOR_ERROR</ref>:</highlight></codeline>
+<codeline lineno="633"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/></highlight><highlight class="stringliteral">&quot;SSI<sp/>sensor<sp/>error&quot;</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="634"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">case</highlight><highlight class="normal"><sp/><ref refid="ecat__globals_8hpp_1ab0df38968e4f03a3f1f6d6df0f31f45aaba91bf7b588016cd7f8935c94520ef8c" kindref="member">SSI_SENSOR_FRAME_ERROR</ref>:</highlight></codeline>
+<codeline lineno="635"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/></highlight><highlight class="stringliteral">&quot;SSI<sp/>sensor<sp/>frame<sp/>error&quot;</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="636"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">case</highlight><highlight class="normal"><sp/><ref refid="ecat__globals_8hpp_1ab0df38968e4f03a3f1f6d6df0f31f45aab2f224364cbf9bf4c34de82b780e7124" kindref="member">MISSING_MAIN_SENSOR_ERROR</ref>:</highlight></codeline>
+<codeline lineno="637"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/></highlight><highlight class="stringliteral">&quot;Missing<sp/>main<sp/>sensor<sp/>error&quot;</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="638"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">case</highlight><highlight class="normal"><sp/><ref refid="ecat__globals_8hpp_1ab0df38968e4f03a3f1f6d6df0f31f45aa68f2253adaba115be7510843916d5987" kindref="member">MISSING_COMMUTATION_SENSOR_ERROR</ref>:</highlight></codeline>
+<codeline lineno="639"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/></highlight><highlight class="stringliteral">&quot;Missing<sp/>commutation<sp/>sensor<sp/>error&quot;</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="640"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">case</highlight><highlight class="normal"><sp/><ref refid="ecat__globals_8hpp_1ab0df38968e4f03a3f1f6d6df0f31f45aa8adcd6c7353d63ec4b4f5b02da1b78f6" kindref="member">MAIN_SENSOR_DIRECTION_ERROR</ref>:</highlight></codeline>
+<codeline lineno="641"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/></highlight><highlight class="stringliteral">&quot;Main<sp/>sensor<sp/>direction<sp/>error&quot;</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="642"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">case</highlight><highlight class="normal"><sp/><ref refid="ecat__globals_8hpp_1ab0df38968e4f03a3f1f6d6df0f31f45aa3e646299177739be870587dd26fb4449" kindref="member">ETHERCAT_COMMUNCATION_ERROR</ref>:</highlight></codeline>
+<codeline lineno="643"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/></highlight><highlight class="stringliteral">&quot;Ethercat<sp/>communication<sp/>error&quot;</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="644"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">case</highlight><highlight class="normal"><sp/><ref refid="ecat__globals_8hpp_1ab0df38968e4f03a3f1f6d6df0f31f45aa0e1d401bb43ef2f3fb0537a3e92777b1" kindref="member">ETHERCAT_INITIALIZATION_ERROR</ref>:</highlight></codeline>
+<codeline lineno="645"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/></highlight><highlight class="stringliteral">&quot;Ethercat<sp/>initialization<sp/>error&quot;</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="646"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">case</highlight><highlight class="normal"><sp/><ref refid="ecat__globals_8hpp_1ab0df38968e4f03a3f1f6d6df0f31f45aa5787a843f41d962dc7a1dd3e0e29b9b9" kindref="member">ETHERCAT_RX_QUEUE_OVERFLOW_ERROR</ref>:</highlight></codeline>
+<codeline lineno="647"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/></highlight><highlight class="stringliteral">&quot;Ethercat<sp/>RX<sp/>queue<sp/>overflow<sp/>error&quot;</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="648"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">case</highlight><highlight class="normal"><sp/><ref refid="ecat__globals_8hpp_1ab0df38968e4f03a3f1f6d6df0f31f45aa62621707bb450d9ef1333b9d34f8e4d7" kindref="member">ETHERCAT_COMMUNICATION_ERROR_INTERNAL</ref>:</highlight></codeline>
+<codeline lineno="649"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/></highlight><highlight class="stringliteral">&quot;Ethercat<sp/>communication<sp/>error<sp/>internal&quot;</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="650"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">case</highlight><highlight class="normal"><sp/><ref refid="ecat__globals_8hpp_1ab0df38968e4f03a3f1f6d6df0f31f45aab287f60a01e231a9835b65e36f19dc9a" kindref="member">ETHERCAT_COMMUNICATION_CYCLE_TIME_ERROR</ref>:</highlight></codeline>
+<codeline lineno="651"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/></highlight><highlight class="stringliteral">&quot;Ethercat<sp/>communication<sp/>cycle<sp/>time<sp/>error&quot;</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="652"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">case</highlight><highlight class="normal"><sp/><ref refid="ecat__globals_8hpp_1ab0df38968e4f03a3f1f6d6df0f31f45aa89496de2ff5668bba197b17d1265e68a" kindref="member">ETHERCAT_PDO_COMMUNICATION_ERROR</ref>:</highlight></codeline>
+<codeline lineno="653"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/></highlight><highlight class="stringliteral">&quot;Ethercat<sp/>PDO<sp/>communication<sp/>error&quot;</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="654"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">case</highlight><highlight class="normal"><sp/><ref refid="ecat__globals_8hpp_1ab0df38968e4f03a3f1f6d6df0f31f45aa3e33298d2f3f249892149b45a37fa21c" kindref="member">ETHERCAT_SDO_COMMUNICATION_ERROR</ref>:</highlight></codeline>
+<codeline lineno="655"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/></highlight><highlight class="stringliteral">&quot;Ethercat<sp/>SDO<sp/>communication<sp/>error&quot;</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="656"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">case</highlight><highlight class="normal"><sp/><ref refid="ecat__globals_8hpp_1ab0df38968e4f03a3f1f6d6df0f31f45aad853c51c0c284231f7a3b7640763f058" kindref="member">FOLLOWING_ERROR</ref>:</highlight></codeline>
+<codeline lineno="657"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/></highlight><highlight class="stringliteral">&quot;Following<sp/>error&quot;</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="658"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">case</highlight><highlight class="normal"><sp/><ref refid="ecat__globals_8hpp_1ab0df38968e4f03a3f1f6d6df0f31f45aa9eff61773ede66fc0bd352b5cb2232fd" kindref="member">NEGATIVE_LIMIT_SWITCH_ERROR</ref><sp/>:</highlight></codeline>
+<codeline lineno="659"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/></highlight><highlight class="stringliteral">&quot;Negative<sp/>limit<sp/>switch<sp/>error&quot;</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="660"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">case</highlight><highlight class="normal"><sp/><ref refid="ecat__globals_8hpp_1ab0df38968e4f03a3f1f6d6df0f31f45aaf73ea06674326cf4cf6f009b4433303f" kindref="member">POSITIVE_LIMIT_SWITCH_ERROR</ref><sp/>:</highlight></codeline>
+<codeline lineno="661"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/></highlight><highlight class="stringliteral">&quot;Positive<sp/>limit<sp/>switch<sp/>error&quot;</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="662"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">case</highlight><highlight class="normal"><sp/><ref refid="ecat__globals_8hpp_1ab0df38968e4f03a3f1f6d6df0f31f45aaf260c595c2467ea09bf41a056465ce92" kindref="member">SOFTWARE_POSITION_LIMIT_ERROR</ref>:</highlight></codeline>
+<codeline lineno="663"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/></highlight><highlight class="stringliteral">&quot;Software<sp/>position<sp/>limit<sp/>error&quot;</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="664"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">case</highlight><highlight class="normal"><sp/><ref refid="ecat__globals_8hpp_1ab0df38968e4f03a3f1f6d6df0f31f45aa2e7e1c2aa3c38ce104ed58305bc4709c" kindref="member">STO_ERROR</ref><sp/>:<sp/></highlight></codeline>
+<codeline lineno="665"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/></highlight><highlight class="stringliteral">&quot;STO<sp/>error&quot;</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="666"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">case</highlight><highlight class="normal"><sp/><ref refid="ecat__globals_8hpp_1ab0df38968e4f03a3f1f6d6df0f31f45aa95c290dab1387a00b7709c90bf9d5211" kindref="member">SYSTEM_OVERLOADED_ERROR</ref>:</highlight></codeline>
+<codeline lineno="667"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/></highlight><highlight class="stringliteral">&quot;System<sp/>overloaded<sp/>error&quot;</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="668"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">case</highlight><highlight class="normal"><sp/><ref refid="ecat__globals_8hpp_1ab0df38968e4f03a3f1f6d6df0f31f45aaa928f088a63439a983a24e6fc32abe11" kindref="member">WATCHDOG_ERROR</ref>:</highlight></codeline>
+<codeline lineno="669"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/></highlight><highlight class="stringliteral">&quot;Watchdog<sp/>error&quot;</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="670"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">case</highlight><highlight class="normal"><sp/><ref refid="ecat__globals_8hpp_1ab0df38968e4f03a3f1f6d6df0f31f45aad0c4bae294584ea1089132e6816985e9" kindref="member">SYSTEM_PEAK_OVERLOADED_ERROR</ref>:<sp/></highlight></codeline>
+<codeline lineno="671"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/></highlight><highlight class="stringliteral">&quot;System<sp/>peak<sp/>overloaded<sp/>error&quot;</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="672"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">case</highlight><highlight class="normal"><sp/><ref refid="ecat__globals_8hpp_1ab0df38968e4f03a3f1f6d6df0f31f45aaa84bf76ec8d7e71c18ed9251715223c8" kindref="member">CONTROLLER_GAIN_ERROR</ref>:</highlight></codeline>
+<codeline lineno="673"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/></highlight><highlight class="stringliteral">&quot;Controller<sp/>gain<sp/>error&quot;</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="674"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">case</highlight><highlight class="normal"><sp/><ref refid="ecat__globals_8hpp_1ab0df38968e4f03a3f1f6d6df0f31f45aa7bb37bac681759563109152b8476c455" kindref="member">AUTO_TUNING_INDENTIFICATION_ERROR</ref>:<sp/></highlight></codeline>
+<codeline lineno="675"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/></highlight><highlight class="stringliteral">&quot;Auto<sp/>tuning<sp/>identification<sp/>error&quot;</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="676"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">case</highlight><highlight class="normal"><sp/><ref refid="ecat__globals_8hpp_1ab0df38968e4f03a3f1f6d6df0f31f45aa38c17361cdf6da6e22bdabbe0d7f9c31" kindref="member">AUTO_TUNING_CURRENT_LIMIT_ERROR</ref>:</highlight></codeline>
+<codeline lineno="677"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/></highlight><highlight class="stringliteral">&quot;Auto<sp/>tuning<sp/>current<sp/>limit<sp/>error&quot;</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="678"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">case</highlight><highlight class="normal"><sp/><ref refid="ecat__globals_8hpp_1ab0df38968e4f03a3f1f6d6df0f31f45aa9d81758f5580a0da99991e364cc97d9a" kindref="member">AUTO_TUNING_IDENTIFICATION_CURRENT_ERROR</ref>:</highlight></codeline>
+<codeline lineno="679"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/></highlight><highlight class="stringliteral">&quot;Auto<sp/>tuning<sp/>identification<sp/>current<sp/>error&quot;</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="680"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">case</highlight><highlight class="normal"><sp/><ref refid="ecat__globals_8hpp_1ab0df38968e4f03a3f1f6d6df0f31f45aac98b43977b9987c6be2f4849fe8e31fd" kindref="member">AUTO_TUNING_DATA_SAMPLING_ERROR</ref>:</highlight></codeline>
+<codeline lineno="681"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/></highlight><highlight class="stringliteral">&quot;Auto<sp/>tuning<sp/>data<sp/>sampling<sp/>error&quot;</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="682"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">case</highlight><highlight class="normal"><sp/><ref refid="ecat__globals_8hpp_1ab0df38968e4f03a3f1f6d6df0f31f45aaae3beda3de633a31cacc16c59dfa28dd" kindref="member">AUTO_TUNING_SAMPLE_MISMATCH_ERROR</ref>:</highlight></codeline>
+<codeline lineno="683"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/></highlight><highlight class="stringliteral">&quot;Auto<sp/>tuning<sp/>sample<sp/>mismatch<sp/>error&quot;</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="684"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">case</highlight><highlight class="normal"><sp/><ref refid="ecat__globals_8hpp_1ab0df38968e4f03a3f1f6d6df0f31f45aadb7292fd052d572d1d6fe74c913f92cd" kindref="member">AUTO_TUNING_PARAMETER_ERROR</ref>:</highlight></codeline>
+<codeline lineno="685"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/></highlight><highlight class="stringliteral">&quot;Auto<sp/>tuning<sp/>parameter<sp/>error&quot;</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="686"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">case</highlight><highlight class="normal"><sp/><ref refid="ecat__globals_8hpp_1ab0df38968e4f03a3f1f6d6df0f31f45aafa51ee5b1a389f23127bb8216527f2a0" kindref="member">AUTO_TUNING_AMPLITUDE_MISMATCH_ERROR</ref>:</highlight></codeline>
+<codeline lineno="687"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/></highlight><highlight class="stringliteral">&quot;Auto<sp/>tuning<sp/>amplitude<sp/>mismatch<sp/>error&quot;</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="688"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">case</highlight><highlight class="normal"><sp/><ref refid="ecat__globals_8hpp_1ab0df38968e4f03a3f1f6d6df0f31f45aa900a5aea55f8709365aa34845ab7928f" kindref="member">AUTO_TUNING_TIMEOUT_ERROR</ref>:</highlight></codeline>
+<codeline lineno="689"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/></highlight><highlight class="stringliteral">&quot;Auto<sp/>tuning<sp/>timeout<sp/>error&quot;</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="690"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">case</highlight><highlight class="normal"><sp/><ref refid="ecat__globals_8hpp_1ab0df38968e4f03a3f1f6d6df0f31f45aa0dc973299e422964a7d28df45bcea368" kindref="member">AUTO_TUNING_STAND_STILL_ERROR</ref>:</highlight></codeline>
+<codeline lineno="691"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/></highlight><highlight class="stringliteral">&quot;Auto<sp/>tuning<sp/>stand<sp/>still<sp/>error&quot;</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="692"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">case</highlight><highlight class="normal"><sp/><ref refid="ecat__globals_8hpp_1ab0df38968e4f03a3f1f6d6df0f31f45aa2648c7eac32fc72400a8bc81aae25735" kindref="member">AUTO_TUNING_TORQUE_INVALID_ERROR</ref>:</highlight></codeline>
+<codeline lineno="693"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/></highlight><highlight class="stringliteral">&quot;Auto<sp/>tuning<sp/>torque<sp/>invalid<sp/>error&quot;</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="694"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">case</highlight><highlight class="normal"><sp/><ref refid="ecat__globals_8hpp_1ab0df38968e4f03a3f1f6d6df0f31f45aa9e6807a6a9f42998e9297651bd7b1b58" kindref="member">AUTO_TUNING_MAX_SYSTEM_SPEED_ERROR</ref>:</highlight></codeline>
+<codeline lineno="695"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/></highlight><highlight class="stringliteral">&quot;Auto<sp/>tuning<sp/>max<sp/>system<sp/>speed<sp/>error&quot;</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="696"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">case</highlight><highlight class="normal"><sp/><ref refid="ecat__globals_8hpp_1ab0df38968e4f03a3f1f6d6df0f31f45aad51a1fdf30d1d4585ac7aaeababe6cff" kindref="member">AUTO_TUNING_MOTOR_CONNECTION_ERROR</ref>:</highlight></codeline>
+<codeline lineno="697"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/></highlight><highlight class="stringliteral">&quot;Auto<sp/>tuning<sp/>motor<sp/>connection<sp/>error&quot;</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="698"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">case</highlight><highlight class="normal"><sp/><ref refid="ecat__globals_8hpp_1ab0df38968e4f03a3f1f6d6df0f31f45aad23483ebf23a1a36fb77843475a6bcc7" kindref="member">AUTO_TUNING_SENSOR_SIGNAL_ERROR</ref>:</highlight></codeline>
+<codeline lineno="699"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/></highlight><highlight class="stringliteral">&quot;Auto<sp/>tuning<sp/>sensor<sp/>signal<sp/>error&quot;</highlight><highlight class="normal">;<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="700"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">default</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="701"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/></highlight><highlight class="stringliteral">&quot;Unknown<sp/>error&quot;</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="702"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="703"><highlight class="normal">}</highlight></codeline>
     </programlisting>
     <location file="include/ecat_globals.hpp"/>
   </compounddef>

@@ -401,6 +401,78 @@
     <member refid="ecat__globals_8hpp_1ae56d58acf7f23ca7ce23ed016a45dcaea145c866208cc96b7979e4accb809259d" kind="enumvalue"><name>kMountingPositionSensor1</name></member>
     <member refid="ecat__globals_8hpp_1ae56d58acf7f23ca7ce23ed016a45dcaea23783bb9190b137245e18da8094f44be" kind="enumvalue"><name>kMountingPositionSensor2</name></member>
     <member refid="ecat__globals_8hpp_1ae56d58acf7f23ca7ce23ed016a45dcaea98dadce82ec3a84cfd178ed6841f1129" kind="enumvalue"><name>kMountingPositionSensor3</name></member>
+    <member refid="ecat__globals_8hpp_1ab0df38968e4f03a3f1f6d6df0f31f45a" kind="enum"><name>ErrorType</name></member>
+    <member refid="ecat__globals_8hpp_1ab0df38968e4f03a3f1f6d6df0f31f45aabf350750d0d4fabd8954c0f1e9bbae94" kind="enumvalue"><name>NO_ERROR</name></member>
+    <member refid="ecat__globals_8hpp_1ab0df38968e4f03a3f1f6d6df0f31f45aa9bcb544a32281727d57f35dec7d49e78" kind="enumvalue"><name>GENERIC_ERROR</name></member>
+    <member refid="ecat__globals_8hpp_1ab0df38968e4f03a3f1f6d6df0f31f45aac2d2d74368bed88ae4617b7eeb9d18b5" kind="enumvalue"><name>GENERIC_INIT_ERROR</name></member>
+    <member refid="ecat__globals_8hpp_1ab0df38968e4f03a3f1f6d6df0f31f45aaa92cbf5cd466db7f5c41a5959f209ce6" kind="enumvalue"><name>GENERIC_INIT_ERROR_1</name></member>
+    <member refid="ecat__globals_8hpp_1ab0df38968e4f03a3f1f6d6df0f31f45aab4756b29189241c173fbf97c6bf0c2c9" kind="enumvalue"><name>GENERIC_INIT_ERROR_2</name></member>
+    <member refid="ecat__globals_8hpp_1ab0df38968e4f03a3f1f6d6df0f31f45aa993234cfb6c40315cba3ad917037f3bf" kind="enumvalue"><name>GENERIC_INIT_ERROR_3</name></member>
+    <member refid="ecat__globals_8hpp_1ab0df38968e4f03a3f1f6d6df0f31f45aa496d94c101319df710427ba3def5d85e" kind="enumvalue"><name>GENERIC_INIT_ERROR_4</name></member>
+    <member refid="ecat__globals_8hpp_1ab0df38968e4f03a3f1f6d6df0f31f45aa57f92d5c84f99221fbb39c867884defa" kind="enumvalue"><name>GENERIC_INIT_ERROR_5</name></member>
+    <member refid="ecat__globals_8hpp_1ab0df38968e4f03a3f1f6d6df0f31f45aa3670b91721ad58cef03b0351078a0272" kind="enumvalue"><name>GENERIC_INIT_ERROR_6</name></member>
+    <member refid="ecat__globals_8hpp_1ab0df38968e4f03a3f1f6d6df0f31f45aa09c0d7caa45fde43df2b2e9fcc0cb2e1" kind="enumvalue"><name>GENERIC_INIT_ERROR_7</name></member>
+    <member refid="ecat__globals_8hpp_1ab0df38968e4f03a3f1f6d6df0f31f45aa6ef33b130501be19c8c0b31d284be837" kind="enumvalue"><name>GENERIC_INIT_ERROR_8</name></member>
+    <member refid="ecat__globals_8hpp_1ab0df38968e4f03a3f1f6d6df0f31f45aa73b5d4b9fbb9db0fc597bccf1ed0f3eb" kind="enumvalue"><name>FIRMWARE_INCOMPATIBLITY_ERROR</name></member>
+    <member refid="ecat__globals_8hpp_1ab0df38968e4f03a3f1f6d6df0f31f45aa920c7f729c170f66d23171faa6ab98a5" kind="enumvalue"><name>OVER_CURRENT_ERROR</name></member>
+    <member refid="ecat__globals_8hpp_1ab0df38968e4f03a3f1f6d6df0f31f45aa6ae4a1e15b464e1d1470b3e866c150f6" kind="enumvalue"><name>POWER_STAGE_PROTECTION_ERROR</name></member>
+    <member refid="ecat__globals_8hpp_1ab0df38968e4f03a3f1f6d6df0f31f45aa638b59942aaf9bec4aaa9580c3edc8e8" kind="enumvalue"><name>OVER_VOLTAGE_ERROR</name></member>
+    <member refid="ecat__globals_8hpp_1ab0df38968e4f03a3f1f6d6df0f31f45aa4e80575925053a375109066c6c08b7b6" kind="enumvalue"><name>UNDER_VOLTAGE_ERROR</name></member>
+    <member refid="ecat__globals_8hpp_1ab0df38968e4f03a3f1f6d6df0f31f45aa241ff6419d9082a0b91205b30ad752ee" kind="enumvalue"><name>THERMAL_OVERLOAD_ERROR</name></member>
+    <member refid="ecat__globals_8hpp_1ab0df38968e4f03a3f1f6d6df0f31f45aa6093baf40fce18f3929c687dbb191a93" kind="enumvalue"><name>THERMAL_MOTOR_OVERLOAD_ERRROR</name></member>
+    <member refid="ecat__globals_8hpp_1ab0df38968e4f03a3f1f6d6df0f31f45aaf222afd036ad548f510f85ecb6b115d1" kind="enumvalue"><name>LOGIC_SUPPLY_TOO_LOW_ERROR</name></member>
+    <member refid="ecat__globals_8hpp_1ab0df38968e4f03a3f1f6d6df0f31f45aaab6c7d6ce3a56b8623715c466a8c6133" kind="enumvalue"><name>HARDWARE_DEFECT_ERROR</name></member>
+    <member refid="ecat__globals_8hpp_1ab0df38968e4f03a3f1f6d6df0f31f45aa6450e53101b312a440411ba9f80229a2" kind="enumvalue"><name>HARDWARE_INCOMPATIBLITY_ERROR</name></member>
+    <member refid="ecat__globals_8hpp_1ab0df38968e4f03a3f1f6d6df0f31f45aa28a3763240d6c1ba52bf1f13b8a348db" kind="enumvalue"><name>HARDWARE_ERROR</name></member>
+    <member refid="ecat__globals_8hpp_1ab0df38968e4f03a3f1f6d6df0f31f45aadf33309cdf451cccf4535535c90fd769" kind="enumvalue"><name>HARDWARE_ERROR_1</name></member>
+    <member refid="ecat__globals_8hpp_1ab0df38968e4f03a3f1f6d6df0f31f45aa3fc207987acf9602a03ab24467710051" kind="enumvalue"><name>HARDWARE_ERROR_2</name></member>
+    <member refid="ecat__globals_8hpp_1ab0df38968e4f03a3f1f6d6df0f31f45aa65dbd6ef294771dc8be5b538978d4857" kind="enumvalue"><name>HARDWARE_ERROR_3</name></member>
+    <member refid="ecat__globals_8hpp_1ab0df38968e4f03a3f1f6d6df0f31f45aa0d1a81acf0546a8fa99f6b465c38e654" kind="enumvalue"><name>SIGN_OF_LIFE_ERROR</name></member>
+    <member refid="ecat__globals_8hpp_1ab0df38968e4f03a3f1f6d6df0f31f45aa8e86f8369bb9e63c090b461af52826d9" kind="enumvalue"><name>EXTENSION_1_WATCHDOG_ERROR</name></member>
+    <member refid="ecat__globals_8hpp_1ab0df38968e4f03a3f1f6d6df0f31f45aa91584d1394caf9a72c6e096413ab1083" kind="enumvalue"><name>INTERNAL_SOFTWARE_ERROR</name></member>
+    <member refid="ecat__globals_8hpp_1ab0df38968e4f03a3f1f6d6df0f31f45aa6f23e564970c94f7878e05832d8b419f" kind="enumvalue"><name>SOFTWARE_PARAMETER_ERROR</name></member>
+    <member refid="ecat__globals_8hpp_1ab0df38968e4f03a3f1f6d6df0f31f45aa2df60635227442a284f44961609460a1" kind="enumvalue"><name>PERSISTENT_PARAMETER_CORRUPT_ERROR</name></member>
+    <member refid="ecat__globals_8hpp_1ab0df38968e4f03a3f1f6d6df0f31f45aa43e2b6703966bace1a00ae501793a40b" kind="enumvalue"><name>POSITION_SENSOR_ERROR</name></member>
+    <member refid="ecat__globals_8hpp_1ab0df38968e4f03a3f1f6d6df0f31f45aab728302f99ed7717ceaf3862eaf4acf5" kind="enumvalue"><name>POSITION_SENSOR_BREACH_ERROR</name></member>
+    <member refid="ecat__globals_8hpp_1ab0df38968e4f03a3f1f6d6df0f31f45aa03ab1c1e4f1e4e011a61c420ce516ced" kind="enumvalue"><name>POSITION_SENSOR_RESOLUTION_ERROR</name></member>
+    <member refid="ecat__globals_8hpp_1ab0df38968e4f03a3f1f6d6df0f31f45aa2b4da4bf429b5046c3aecd39fc5bb469" kind="enumvalue"><name>POSITION_SENSOR_INDEX_ERROR</name></member>
+    <member refid="ecat__globals_8hpp_1ab0df38968e4f03a3f1f6d6df0f31f45aaaec0121115a14ece6c9376a94f7a2776" kind="enumvalue"><name>HALL_SENSOR_ERROR</name></member>
+    <member refid="ecat__globals_8hpp_1ab0df38968e4f03a3f1f6d6df0f31f45aae3b86fae0e6c86123675f68d46e4fe31" kind="enumvalue"><name>HALL_SENSOR_NOT_FOUND_ERROR</name></member>
+    <member refid="ecat__globals_8hpp_1ab0df38968e4f03a3f1f6d6df0f31f45aa7160a0bb29391901b1d6bc79a52006e5" kind="enumvalue"><name>HALL_ANGLE_DETECTION_ERROR</name></member>
+    <member refid="ecat__globals_8hpp_1ab0df38968e4f03a3f1f6d6df0f31f45aac50afb20a243079863f374602f0790d0" kind="enumvalue"><name>SSI_SENSOR_ERROR</name></member>
+    <member refid="ecat__globals_8hpp_1ab0df38968e4f03a3f1f6d6df0f31f45aaba91bf7b588016cd7f8935c94520ef8c" kind="enumvalue"><name>SSI_SENSOR_FRAME_ERROR</name></member>
+    <member refid="ecat__globals_8hpp_1ab0df38968e4f03a3f1f6d6df0f31f45aab2f224364cbf9bf4c34de82b780e7124" kind="enumvalue"><name>MISSING_MAIN_SENSOR_ERROR</name></member>
+    <member refid="ecat__globals_8hpp_1ab0df38968e4f03a3f1f6d6df0f31f45aa68f2253adaba115be7510843916d5987" kind="enumvalue"><name>MISSING_COMMUTATION_SENSOR_ERROR</name></member>
+    <member refid="ecat__globals_8hpp_1ab0df38968e4f03a3f1f6d6df0f31f45aa8adcd6c7353d63ec4b4f5b02da1b78f6" kind="enumvalue"><name>MAIN_SENSOR_DIRECTION_ERROR</name></member>
+    <member refid="ecat__globals_8hpp_1ab0df38968e4f03a3f1f6d6df0f31f45aa3e646299177739be870587dd26fb4449" kind="enumvalue"><name>ETHERCAT_COMMUNCATION_ERROR</name></member>
+    <member refid="ecat__globals_8hpp_1ab0df38968e4f03a3f1f6d6df0f31f45aa0e1d401bb43ef2f3fb0537a3e92777b1" kind="enumvalue"><name>ETHERCAT_INITIALIZATION_ERROR</name></member>
+    <member refid="ecat__globals_8hpp_1ab0df38968e4f03a3f1f6d6df0f31f45aa5787a843f41d962dc7a1dd3e0e29b9b9" kind="enumvalue"><name>ETHERCAT_RX_QUEUE_OVERFLOW_ERROR</name></member>
+    <member refid="ecat__globals_8hpp_1ab0df38968e4f03a3f1f6d6df0f31f45aa62621707bb450d9ef1333b9d34f8e4d7" kind="enumvalue"><name>ETHERCAT_COMMUNICATION_ERROR_INTERNAL</name></member>
+    <member refid="ecat__globals_8hpp_1ab0df38968e4f03a3f1f6d6df0f31f45aab287f60a01e231a9835b65e36f19dc9a" kind="enumvalue"><name>ETHERCAT_COMMUNICATION_CYCLE_TIME_ERROR</name></member>
+    <member refid="ecat__globals_8hpp_1ab0df38968e4f03a3f1f6d6df0f31f45aa89496de2ff5668bba197b17d1265e68a" kind="enumvalue"><name>ETHERCAT_PDO_COMMUNICATION_ERROR</name></member>
+    <member refid="ecat__globals_8hpp_1ab0df38968e4f03a3f1f6d6df0f31f45aa3e33298d2f3f249892149b45a37fa21c" kind="enumvalue"><name>ETHERCAT_SDO_COMMUNICATION_ERROR</name></member>
+    <member refid="ecat__globals_8hpp_1ab0df38968e4f03a3f1f6d6df0f31f45aad853c51c0c284231f7a3b7640763f058" kind="enumvalue"><name>FOLLOWING_ERROR</name></member>
+    <member refid="ecat__globals_8hpp_1ab0df38968e4f03a3f1f6d6df0f31f45aa9eff61773ede66fc0bd352b5cb2232fd" kind="enumvalue"><name>NEGATIVE_LIMIT_SWITCH_ERROR</name></member>
+    <member refid="ecat__globals_8hpp_1ab0df38968e4f03a3f1f6d6df0f31f45aaf73ea06674326cf4cf6f009b4433303f" kind="enumvalue"><name>POSITIVE_LIMIT_SWITCH_ERROR</name></member>
+    <member refid="ecat__globals_8hpp_1ab0df38968e4f03a3f1f6d6df0f31f45aaf260c595c2467ea09bf41a056465ce92" kind="enumvalue"><name>SOFTWARE_POSITION_LIMIT_ERROR</name></member>
+    <member refid="ecat__globals_8hpp_1ab0df38968e4f03a3f1f6d6df0f31f45aa2e7e1c2aa3c38ce104ed58305bc4709c" kind="enumvalue"><name>STO_ERROR</name></member>
+    <member refid="ecat__globals_8hpp_1ab0df38968e4f03a3f1f6d6df0f31f45aa95c290dab1387a00b7709c90bf9d5211" kind="enumvalue"><name>SYSTEM_OVERLOADED_ERROR</name></member>
+    <member refid="ecat__globals_8hpp_1ab0df38968e4f03a3f1f6d6df0f31f45aaa928f088a63439a983a24e6fc32abe11" kind="enumvalue"><name>WATCHDOG_ERROR</name></member>
+    <member refid="ecat__globals_8hpp_1ab0df38968e4f03a3f1f6d6df0f31f45aad0c4bae294584ea1089132e6816985e9" kind="enumvalue"><name>SYSTEM_PEAK_OVERLOADED_ERROR</name></member>
+    <member refid="ecat__globals_8hpp_1ab0df38968e4f03a3f1f6d6df0f31f45aaa84bf76ec8d7e71c18ed9251715223c8" kind="enumvalue"><name>CONTROLLER_GAIN_ERROR</name></member>
+    <member refid="ecat__globals_8hpp_1ab0df38968e4f03a3f1f6d6df0f31f45aa7bb37bac681759563109152b8476c455" kind="enumvalue"><name>AUTO_TUNING_INDENTIFICATION_ERROR</name></member>
+    <member refid="ecat__globals_8hpp_1ab0df38968e4f03a3f1f6d6df0f31f45aa38c17361cdf6da6e22bdabbe0d7f9c31" kind="enumvalue"><name>AUTO_TUNING_CURRENT_LIMIT_ERROR</name></member>
+    <member refid="ecat__globals_8hpp_1ab0df38968e4f03a3f1f6d6df0f31f45aa9d81758f5580a0da99991e364cc97d9a" kind="enumvalue"><name>AUTO_TUNING_IDENTIFICATION_CURRENT_ERROR</name></member>
+    <member refid="ecat__globals_8hpp_1ab0df38968e4f03a3f1f6d6df0f31f45aac98b43977b9987c6be2f4849fe8e31fd" kind="enumvalue"><name>AUTO_TUNING_DATA_SAMPLING_ERROR</name></member>
+    <member refid="ecat__globals_8hpp_1ab0df38968e4f03a3f1f6d6df0f31f45aaae3beda3de633a31cacc16c59dfa28dd" kind="enumvalue"><name>AUTO_TUNING_SAMPLE_MISMATCH_ERROR</name></member>
+    <member refid="ecat__globals_8hpp_1ab0df38968e4f03a3f1f6d6df0f31f45aadb7292fd052d572d1d6fe74c913f92cd" kind="enumvalue"><name>AUTO_TUNING_PARAMETER_ERROR</name></member>
+    <member refid="ecat__globals_8hpp_1ab0df38968e4f03a3f1f6d6df0f31f45aafa51ee5b1a389f23127bb8216527f2a0" kind="enumvalue"><name>AUTO_TUNING_AMPLITUDE_MISMATCH_ERROR</name></member>
+    <member refid="ecat__globals_8hpp_1ab0df38968e4f03a3f1f6d6df0f31f45aa900a5aea55f8709365aa34845ab7928f" kind="enumvalue"><name>AUTO_TUNING_TIMEOUT_ERROR</name></member>
+    <member refid="ecat__globals_8hpp_1ab0df38968e4f03a3f1f6d6df0f31f45aa0dc973299e422964a7d28df45bcea368" kind="enumvalue"><name>AUTO_TUNING_STAND_STILL_ERROR</name></member>
+    <member refid="ecat__globals_8hpp_1ab0df38968e4f03a3f1f6d6df0f31f45aa2648c7eac32fc72400a8bc81aae25735" kind="enumvalue"><name>AUTO_TUNING_TORQUE_INVALID_ERROR</name></member>
+    <member refid="ecat__globals_8hpp_1ab0df38968e4f03a3f1f6d6df0f31f45aa9e6807a6a9f42998e9297651bd7b1b58" kind="enumvalue"><name>AUTO_TUNING_MAX_SYSTEM_SPEED_ERROR</name></member>
+    <member refid="ecat__globals_8hpp_1ab0df38968e4f03a3f1f6d6df0f31f45aad51a1fdf30d1d4585ac7aaeababe6cff" kind="enumvalue"><name>AUTO_TUNING_MOTOR_CONNECTION_ERROR</name></member>
+    <member refid="ecat__globals_8hpp_1ab0df38968e4f03a3f1f6d6df0f31f45aad23483ebf23a1a36fb77843475a6bcc7" kind="enumvalue"><name>AUTO_TUNING_SENSOR_SIGNAL_ERROR</name></member>
     <member refid="ecat__globals_8hpp_1aacc3c7aef173b1cde9377fb7f05c924d" kind="variable"><name>g_kNumberOfServoDrivers</name></member>
     <member refid="ecat__globals_8hpp_1aaf4966dff24b810040e9c7196d621401" kind="variable"><name>g_kNsPerSec</name></member>
     <member refid="ecat__globals_8hpp_1a6a68d8a40c73f3377978388da56fa9ad" kind="variable"><name>sig</name></member>
@@ -412,6 +484,7 @@
     <member refid="ecat__globals_8hpp_1a0f34ecbeba93aefcdd077c6ce0758360" kind="variable"><name>g_cycle_time</name></member>
     <member refid="ecat__globals_8hpp_1a28bf20de2fed0ae3b068bd7f0c74119d" kind="variable"><name>g_sync_ref_counter</name></member>
     <member refid="ecat__globals_8hpp_1af38165367cb15a861318697b9cae5b53" kind="function"><name>timespec_add</name></member>
+    <member refid="ecat__globals_8hpp_1a90b8972e0ee7a6f0335ca06017554883" kind="function"><name>GetErrorMessage</name></member>
   </compound>
   <compound refid="ecat__lifecycle_8hpp" kind="file"><name>ecat_lifecycle.hpp</name>
   </compound>

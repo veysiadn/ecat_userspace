@@ -7,7 +7,7 @@
     <innerfile refid="ecat__slave_8cpp">ecat_slave.cpp</innerfile>
     <innerfile refid="main_8cpp">main.cpp</innerfile>
     <innerfile refid="timing_8cpp">timing.cpp</innerfile>
-    <innerfile refid="xboxController_8cpp">xboxController.cpp</innerfile>
+    <innerfile refid="xbox__controller_8cpp">xbox_controller.cpp</innerfile>
     <briefdescription>
     </briefdescription>
     <detaileddescription>

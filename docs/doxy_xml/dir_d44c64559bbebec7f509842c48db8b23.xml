@@ -8,7 +8,7 @@
     <innerfile refid="ecat__slave_8hpp">ecat_slave.hpp</innerfile>
     <innerfile refid="object__dictionary_8hpp">object_dictionary.hpp</innerfile>
     <innerfile refid="timing_8hpp">timing.hpp</innerfile>
-    <innerfile refid="xboxController_8hpp">xboxController.hpp</innerfile>
+    <innerfile refid="xbox__controller_8hpp">xbox_controller.hpp</innerfile>
     <briefdescription>
     </briefdescription>
     <detaileddescription>

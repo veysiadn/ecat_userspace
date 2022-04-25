@@ -24,6 +24,7 @@
 */
 var menudata={children:[
 {text:"Homepage",url:"index.html"},
+{text:"Examples",url:"examples.html"},
 {text:"Namespaces",url:"namespaces.html",children:[
 {text:"Namespace List",url:"namespaces.html"}]},
 {text:"Classes",url:"annotated.html",children:[

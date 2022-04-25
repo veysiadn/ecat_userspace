@@ -23,5 +23,5 @@ var annotated_dup =
     [ "Timing", "classTiming.html", "classTiming" ],
     [ "VelControlParam", "structVelControlParam.html", "structVelControlParam" ],
     [ "XboxController", "classXboxController.html", "classXboxController" ],
-    [ "xboxCtrl", "structxboxCtrl.html", "structxboxCtrl" ]
+    [ "XboxCtrl", "structXboxCtrl.html", "structXboxCtrl" ]
 ];

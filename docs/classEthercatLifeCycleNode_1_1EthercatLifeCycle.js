@@ -15,6 +15,7 @@ var classEthercatLifeCycleNode_1_1EthercatLifeCycle =
     [ "PassCycylicExchange", "classEthercatLifeCycleNode_1_1EthercatLifeCycle.html#a3f14c000af09d7d9480d700266da624f", null ],
     [ "ReadFromSlaves", "classEthercatLifeCycleNode_1_1EthercatLifeCycle.html#acde7634de380e1bc00e138aa9d3f90f0", null ],
     [ "SetComThreadPriorities", "classEthercatLifeCycleNode_1_1EthercatLifeCycle.html#aadb5d2d00179549ea65186fd0ad12aae", null ],
+    [ "SetConfigurationParameters", "classEthercatLifeCycleNode_1_1EthercatLifeCycle.html#a620253b4fe34f13f06a60f1fb12a81cc", null ],
     [ "StartEthercatCommunication", "classEthercatLifeCycleNode_1_1EthercatLifeCycle.html#a2c5796d0f5f88a228c4b064d81a6b2f7", null ],
     [ "StartPdoExchange", "classEthercatLifeCycleNode_1_1EthercatLifeCycle.html#a52a7c57222fb8c896986fafc470d3bc3", null ],
     [ "UpdateCyclicPositionModeParameters", "classEthercatLifeCycleNode_1_1EthercatLifeCycle.html#a434a3dc8581b010974d60b24e4ab7df2", null ],

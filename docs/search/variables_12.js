@@ -1,6 +1,6 @@
 var searchData=
 [
-  ['s_0',['s',['../xboxController_8hpp.html#aa8270a1ba8295884567e0a0c93135f05',1,'xboxController.hpp']]],
+  ['s_0',['s',['../xbox__controller_8hpp.html#aa8270a1ba8295884567e0a0c93135f05',1,'xbox_controller.hpp']]],
   ['sent_5fdata_5f_1',['sent_data_',['../classEthercatLifeCycleNode_1_1EthercatLifeCycle.html#aa3e778a600d45cae79c01cb9c3e9adad',1,'EthercatLifeCycleNode::EthercatLifeCycle']]],
   ['sig_2',['sig',['../ecat__globals_8hpp.html#a6a68d8a40c73f3377978388da56fa9ad',1,'ecat_globals.hpp']]],
   ['slave_5fconfig_5f_3',['slave_config_',['../classEthercatSlave.html#aa2480c6d91ce19bf6c5a58b3207fa498',1,'EthercatSlave']]],
@@ -17,13 +17,13 @@ var searchData=
   ['speed_5ffor_5fswitch_5fsearch_14',['speed_for_switch_search',['../structHomingParam.html#a2057d1f3d1840af2fe39e25345d0da72',1,'HomingParam::speed_for_switch_search()'],['../structSdoRequest.html#a877c7389fb10dc5a1424aa546fad1412',1,'SdoRequest::speed_for_switch_search()']]],
   ['speed_5ffor_5fzero_5fsearch_15',['speed_for_zero_search',['../structSdoRequest.html#ab9ff074a172bfa851f1b9539b08c28cd',1,'SdoRequest::speed_for_zero_search()'],['../structHomingParam.html#ad31cac6c7692107df40469f3ae2b7370',1,'HomingParam::speed_for_zero_search()']]],
   ['status_5fword_16',['status_word',['../structDataReceived.html#aa45660912db7a4a103d6d25eeb04c1e3',1,'DataReceived::status_word()'],['../structOffsetPDO.html#ad170d2294efd553e8f5e690c394c96ab',1,'OffsetPDO::status_word()']]],
-  ['stk_5fcrossfb_17',['stk_crossFB',['../structxboxCtrl.html#a88a8763619e54bae301e93f31b237069',1,'xboxCtrl']]],
-  ['stk_5fcrosslr_18',['stk_crossLR',['../structxboxCtrl.html#ad1ad250a747a116f988ba4e639379cf5',1,'xboxCtrl']]],
-  ['stk_5flefttop_19',['stk_LeftTop',['../structxboxCtrl.html#ae75e51c1faa979cb71c951e716e578cb',1,'xboxCtrl']]],
-  ['stk_5fleftx_20',['stk_LeftX',['../structxboxCtrl.html#aedecffc95a5400682276999e096e55c8',1,'xboxCtrl']]],
-  ['stk_5flefty_21',['stk_LeftY',['../structxboxCtrl.html#af607c83225096023a2e3aff842ab9e55',1,'xboxCtrl']]],
-  ['stk_5frighttop_22',['stk_RightTop',['../structxboxCtrl.html#af1b1fd5192f55977f05dfa8b572137db',1,'xboxCtrl']]],
-  ['stk_5frightx_23',['stk_RightX',['../structxboxCtrl.html#a18bdb39f2259fa0ef88fbfbca76d3fac',1,'xboxCtrl']]],
-  ['stk_5frighty_24',['stk_RightY',['../structxboxCtrl.html#a36cb4447f1fd55e226999033094f966e',1,'xboxCtrl']]],
+  ['stk_5fcrossfb_17',['stk_crossFB',['../structXboxCtrl.html#a1ef4a2480bed36a80f0d63558abccf2d',1,'XboxCtrl']]],
+  ['stk_5fcrosslr_18',['stk_crossLR',['../structXboxCtrl.html#ab56bc8814642749ec377c705ade2ed1c',1,'XboxCtrl']]],
+  ['stk_5flefttop_19',['stk_LeftTop',['../structXboxCtrl.html#a329be187b45781d11506e100ce83bfa7',1,'XboxCtrl']]],
+  ['stk_5fleftx_20',['stk_LeftX',['../structXboxCtrl.html#ad72221e1c020fd09ed3d3f57dadc98c0',1,'XboxCtrl']]],
+  ['stk_5flefty_21',['stk_LeftY',['../structXboxCtrl.html#aa13e8d1320fbcb5a4b5c2702457c1ede',1,'XboxCtrl']]],
+  ['stk_5frighttop_22',['stk_RightTop',['../structXboxCtrl.html#a4a6b7d55bbf8f4c7a1cf097ec718ce39',1,'XboxCtrl']]],
+  ['stk_5frightx_23',['stk_RightX',['../structXboxCtrl.html#af64460bf944389e21ef87613b805c608',1,'XboxCtrl']]],
+  ['stk_5frighty_24',['stk_RightY',['../structXboxCtrl.html#a8fdcc3e9782c968c5b601ddfcfcc2e56',1,'XboxCtrl']]],
   ['sub_5findex_25',['sub_index',['../structSDO__data.html#a32ad9e80b6edf968610407b14be6fa3d',1,'SDO_data']]]
 ];

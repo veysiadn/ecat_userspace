@@ -6,7 +6,7 @@ var searchData=
   ['datareceived_3',['DataReceived',['../structDataReceived.html',1,'DataReceived'],['../structDataReceived.html#a20a93f6b93c2f77f2a980ccd982cf82e',1,'DataReceived::DataReceived()']]],
   ['datasent_4',['DataSent',['../structDataSent.html',1,'DataSent'],['../structDataSent.html#ae8914156241aeb6cdb6d59c4d3aac824',1,'DataSent::DataSent()']]],
   ['deactivatecommunication_5',['DeactivateCommunication',['../classEthercatCommunication_1_1EthercatNode.html#afa5b462e02be78bbf21e76732f1cc316',1,'EthercatCommunication::EthercatNode']]],
-  ['deinitxboxcontroller_6',['deinitXboxController',['../classXboxController.html#abee6e76f5be4fadf11d9baddb09e9742',1,'XboxController']]],
+  ['deinitxboxcontroller_6',['DeinitXboxController',['../classXboxController.html#a5eb229dd625ad35b112d2e8971b9d99b',1,'XboxController']]],
   ['diff_5fns_7',['DIFF_NS',['../ecat__globals_8hpp.html#aff98fed4398150e17dbcd151445065ee',1,'ecat_globals.hpp']]],
   ['distributed_5fclock_8',['DISTRIBUTED_CLOCK',['../ecat__globals_8hpp.html#a1d48656bc4df51f3d8b17da91494a981',1,'ecat_globals.hpp']]]
 ];

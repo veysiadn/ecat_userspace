@@ -128,6 +128,7 @@
     <member refid="classEthercatLifeCycleNode_1_1EthercatLifeCycle_1a50318001792b039b8cf179e4d38108ec" kind="function"><name>WriteToSlavesInCyclicTorqueMode</name></member>
     <member refid="classEthercatLifeCycleNode_1_1EthercatLifeCycle_1a6187ef3af76844b80e7a3ae399fa8460" kind="function"><name>GetDriveState</name></member>
     <member refid="classEthercatLifeCycleNode_1_1EthercatLifeCycle_1a1367595ced86d25b6299ce281f1e1607" kind="function"><name>EnableDrivers</name></member>
+    <member refid="classEthercatLifeCycleNode_1_1EthercatLifeCycle_1a620253b4fe34f13f06a60f1fb12a81cc" kind="function"><name>SetConfigurationParameters</name></member>
     <member refid="classEthercatLifeCycleNode_1_1EthercatLifeCycle_1a3f14c000af09d7d9480d700266da624f" kind="function"><name>PassCycylicExchange</name></member>
   </compound>
   <compound refid="classEthercatCommunication_1_1EthercatNode" kind="class"><name>EthercatCommunication::EthercatNode</name>
@@ -285,38 +286,38 @@
     <member refid="classXboxController_1add0a65770c7c889f31985b72310919f5" kind="variable"><name>js</name></member>
     <member refid="classXboxController_1a404707135fe8b57f47a69f50696745eb" kind="variable"><name>joysickIdentifier</name></member>
     <member refid="classXboxController_1a3c9b73bc3d34c01124d39f8106fb1797" kind="variable"><name>fd</name></member>
-    <member refid="classXboxController_1a671aeb822d6cea0fd9feee1f41a68ad9" kind="variable"><name>xbox</name></member>
-    <member refid="classXboxController_1aeca2f0c4cdee5686478a5d0e4f8329ef" kind="function"><name>initXboxController</name></member>
-    <member refid="classXboxController_1abee6e76f5be4fadf11d9baddb09e9742" kind="function"><name>deinitXboxController</name></member>
-    <member refid="classXboxController_1aa68b77202c397ef9a2340102d0405e10" kind="function"><name>getXboxDataStruct</name></member>
-    <member refid="classXboxController_1a1120a39f40f3f6619b605cdfcb21dd8f" kind="function"><name>readXboxControllerInformation</name></member>
-    <member refid="classXboxController_1aa164973406a1b2762a6077e215241dd4" kind="function"><name>readXboxData</name></member>
-    <member refid="classXboxController_1a3b29216bffbccaf0d945047487cf8bee" kind="function"><name>setXboxCtrlValue</name></member>
-    <member refid="classXboxController_1aba6ffb76d0e53b19d4ab5b390aa5cbca" kind="function"><name>printXboxCtrlValues</name></member>
+    <member refid="classXboxController_1a39ff74ed1db88d39502f6f449e1d7ef8" kind="variable"><name>xbox</name></member>
+    <member refid="classXboxController_1a7316149d1f29745d69e840396b9c42e8" kind="function"><name>InitXboxController</name></member>
+    <member refid="classXboxController_1a5eb229dd625ad35b112d2e8971b9d99b" kind="function"><name>DeinitXboxController</name></member>
+    <member refid="classXboxController_1a56a862aac6ac80484fe32d7ed9109be3" kind="function"><name>GetXboxDataStruct</name></member>
+    <member refid="classXboxController_1ada9cd6d13d7d9e484182d24ad2257802" kind="function"><name>ReadXboxControllerInformation</name></member>
+    <member refid="classXboxController_1ac0c2ab3c992a08c438347c237a2d506c" kind="function"><name>ReadXboxData</name></member>
+    <member refid="classXboxController_1ad621f825b7eb9b7b718ec6cb5d810624" kind="function"><name>SetXboxCtrlValue</name></member>
+    <member refid="classXboxController_1abc21e4c2ca8c9bd1ca03e6cfeea3a7d2" kind="function"><name>PrintXboxCtrlValues</name></member>
   </compound>
-  <compound refid="structxboxCtrl" kind="struct"><name>xboxCtrl</name>
-    <member refid="structxboxCtrl_1a89fa5e2125e445375603c11004b9e96c" kind="variable"><name>numOfAxis</name></member>
-    <member refid="structxboxCtrl_1a3044026ef4f653ff33f959bedf89b2df" kind="variable"><name>numOfButtons</name></member>
-    <member refid="structxboxCtrl_1a689aad94845ca6e21cf3f8125aba92a8" kind="variable"><name>identifier</name></member>
-    <member refid="structxboxCtrl_1aedecffc95a5400682276999e096e55c8" kind="variable"><name>stk_LeftX</name></member>
-    <member refid="structxboxCtrl_1af607c83225096023a2e3aff842ab9e55" kind="variable"><name>stk_LeftY</name></member>
-    <member refid="structxboxCtrl_1a18bdb39f2259fa0ef88fbfbca76d3fac" kind="variable"><name>stk_RightX</name></member>
-    <member refid="structxboxCtrl_1a36cb4447f1fd55e226999033094f966e" kind="variable"><name>stk_RightY</name></member>
-    <member refid="structxboxCtrl_1a88a8763619e54bae301e93f31b237069" kind="variable"><name>stk_crossFB</name></member>
-    <member refid="structxboxCtrl_1ad1ad250a747a116f988ba4e639379cf5" kind="variable"><name>stk_crossLR</name></member>
-    <member refid="structxboxCtrl_1ae75e51c1faa979cb71c951e716e578cb" kind="variable"><name>stk_LeftTop</name></member>
-    <member refid="structxboxCtrl_1af1b1fd5192f55977f05dfa8b572137db" kind="variable"><name>stk_RightTop</name></member>
-    <member refid="structxboxCtrl_1ad69506bbef82c1b6efe53a94268496d3" kind="variable"><name>btn_back</name></member>
-    <member refid="structxboxCtrl_1a0b4e88bf932ac4cd8d9d457b252b40e4" kind="variable"><name>btn_start</name></member>
-    <member refid="structxboxCtrl_1aaaa521b0f019987fbbb299d28666eeb6" kind="variable"><name>btn_leftStk</name></member>
-    <member refid="structxboxCtrl_1a305e6041e353e55b86c77639ffd58766" kind="variable"><name>btn_rightStk</name></member>
-    <member refid="structxboxCtrl_1a52832e3acd3c3e0c86f219fbabba8f44" kind="variable"><name>btn_A</name></member>
-    <member refid="structxboxCtrl_1aa522c3ed133f1458d171e2fd3a5ac811" kind="variable"><name>btn_B</name></member>
-    <member refid="structxboxCtrl_1a801c608e9af386aab4774fc1995a3e4b" kind="variable"><name>btn_X</name></member>
-    <member refid="structxboxCtrl_1ab3d039d264268ab3ef83a7c3e1b94c6d" kind="variable"><name>btn_Y</name></member>
-    <member refid="structxboxCtrl_1a4223b29aff0c4cbdfa00b198bd47b805" kind="variable"><name>btn_xbox</name></member>
-    <member refid="structxboxCtrl_1acbef85347d6686be2724487546879a14" kind="variable"><name>btn_leftTop</name></member>
-    <member refid="structxboxCtrl_1aee777afe70a7c2ea34faf7705b2c3818" kind="variable"><name>btn_rightTop</name></member>
+  <compound refid="structXboxCtrl" kind="struct"><name>XboxCtrl</name>
+    <member refid="structXboxCtrl_1a614cc098ba509676c84f08a584b3309a" kind="variable"><name>numOfAxis</name></member>
+    <member refid="structXboxCtrl_1aeec27e0fccd9548d7a2cae13de9c2344" kind="variable"><name>numOfButtons</name></member>
+    <member refid="structXboxCtrl_1a69461d449642e26247a407360a1f3df8" kind="variable"><name>identifier</name></member>
+    <member refid="structXboxCtrl_1ad72221e1c020fd09ed3d3f57dadc98c0" kind="variable"><name>stk_LeftX</name></member>
+    <member refid="structXboxCtrl_1aa13e8d1320fbcb5a4b5c2702457c1ede" kind="variable"><name>stk_LeftY</name></member>
+    <member refid="structXboxCtrl_1af64460bf944389e21ef87613b805c608" kind="variable"><name>stk_RightX</name></member>
+    <member refid="structXboxCtrl_1a8fdcc3e9782c968c5b601ddfcfcc2e56" kind="variable"><name>stk_RightY</name></member>
+    <member refid="structXboxCtrl_1a1ef4a2480bed36a80f0d63558abccf2d" kind="variable"><name>stk_crossFB</name></member>
+    <member refid="structXboxCtrl_1ab56bc8814642749ec377c705ade2ed1c" kind="variable"><name>stk_crossLR</name></member>
+    <member refid="structXboxCtrl_1a329be187b45781d11506e100ce83bfa7" kind="variable"><name>stk_LeftTop</name></member>
+    <member refid="structXboxCtrl_1a4a6b7d55bbf8f4c7a1cf097ec718ce39" kind="variable"><name>stk_RightTop</name></member>
+    <member refid="structXboxCtrl_1acc955e9578d9799efdb56f8b3b2faccf" kind="variable"><name>btn_back</name></member>
+    <member refid="structXboxCtrl_1a27acaec6f41a6ce09ed8c334943741ef" kind="variable"><name>btn_start</name></member>
+    <member refid="structXboxCtrl_1a59516fa9b89574713610bfd6c6594050" kind="variable"><name>btn_leftStk</name></member>
+    <member refid="structXboxCtrl_1a4dc9902414e4a6583136be8f0bfb9d93" kind="variable"><name>btn_rightStk</name></member>
+    <member refid="structXboxCtrl_1a23e2c14627e4afaf91148777dc06b5c4" kind="variable"><name>btn_A</name></member>
+    <member refid="structXboxCtrl_1a79154a2251847b148301974a742f1cb3" kind="variable"><name>btn_B</name></member>
+    <member refid="structXboxCtrl_1a3f53b90b89cca71b741d477c83fd875e" kind="variable"><name>btn_X</name></member>
+    <member refid="structXboxCtrl_1af80858e8d653637951acb6c5a6cce79d" kind="variable"><name>btn_Y</name></member>
+    <member refid="structXboxCtrl_1abd1fbf64c1c4b6472db5b63893e5f7fd" kind="variable"><name>btn_xbox</name></member>
+    <member refid="structXboxCtrl_1a251e939738bd7275d1e4f39cd249d047" kind="variable"><name>btn_leftTop</name></member>
+    <member refid="structXboxCtrl_1acbf3e967801344b1e43fa2511abfe80f" kind="variable"><name>btn_rightTop</name></member>
   </compound>
   <compound refid="namespaceEthercatCommunication" kind="namespace"><name>EthercatCommunication</name>
   </compound>
@@ -660,29 +661,29 @@
   <compound refid="timing_8hpp" kind="file"><name>timing.hpp</name>
     <member refid="timing_8hpp_1a3992a43fac1d452edf605ff497a25030" kind="define"><name>NUMBER_OF_SAMPLES</name></member>
   </compound>
-  <compound refid="xboxController_8hpp" kind="file"><name>xboxController.hpp</name>
-    <member refid="xboxController_8hpp_1a025d6a447faf5f30881d6d21e5c52fa3" kind="define"><name>IDENTIFIER_SIZE</name></member>
-    <member refid="xboxController_8hpp_1a1bfa73db0d1540ddfa72672263d18b75" kind="define"><name>STICK_LEFT_X_ID</name></member>
-    <member refid="xboxController_8hpp_1aa12616c0274d54562ba469913b665767" kind="define"><name>STICK_LEFT_Y_ID</name></member>
-    <member refid="xboxController_8hpp_1ab6c624d967d0ac7aa1a236d3ed6e0267" kind="define"><name>STICK_RIGHT_X_ID</name></member>
-    <member refid="xboxController_8hpp_1afdcf31d798b884f1fb39ef71072325c7" kind="define"><name>STICK_RIGHT_Y_ID</name></member>
-    <member refid="xboxController_8hpp_1a50750cc713bbbe9e990029f1e2da5ddc" kind="define"><name>STICK_LEFT_TOP_ID</name></member>
-    <member refid="xboxController_8hpp_1ae602118a05bfc7d81426fb39b79f58ee" kind="define"><name>STICK_RIGHT_TOP_ID</name></member>
-    <member refid="xboxController_8hpp_1a4a54b9d8ee010031af4a4e35957841bb" kind="define"><name>CROSS_LR_ID</name></member>
-    <member refid="xboxController_8hpp_1a63f3e159bc37e6cfdb68df412a3754cc" kind="define"><name>CROSS_FB_ID</name></member>
-    <member refid="xboxController_8hpp_1ab704c1837b11dd7e83ea5d982fe1ac2c" kind="define"><name>BTN_BACK_ID</name></member>
-    <member refid="xboxController_8hpp_1a9f5b957d375aa5fd2e629814f83be35f" kind="define"><name>BTN_START_ID</name></member>
-    <member refid="xboxController_8hpp_1a601babd1ae35b0239485a91851121a35" kind="define"><name>BTN_XBOX_ID</name></member>
-    <member refid="xboxController_8hpp_1a9252d68502ce7a03b9bed3181f68d6e9" kind="define"><name>BTN_LEFT_STICK_ID</name></member>
-    <member refid="xboxController_8hpp_1a8a21f0c9656b12d1aa5b44f839338671" kind="define"><name>BTN_RIGHT_STICK_ID</name></member>
-    <member refid="xboxController_8hpp_1a64e0e34261a7e1535a68fcac1cc04301" kind="define"><name>BTN_A_ID</name></member>
-    <member refid="xboxController_8hpp_1aec56c36cef3f48c9f99c783eee4cc032" kind="define"><name>BTN_B_ID</name></member>
-    <member refid="xboxController_8hpp_1aacff461890e9ee43f80e7fa71ec94a22" kind="define"><name>BTN_X_ID</name></member>
-    <member refid="xboxController_8hpp_1a13d54b67ea048ca8534c8d0b940e27f7" kind="define"><name>BTN_Y_ID</name></member>
-    <member refid="xboxController_8hpp_1a7452478c6b04b5c19f1b4cd50e5b8ad4" kind="define"><name>BTN_TOP_LEFT_ID</name></member>
-    <member refid="xboxController_8hpp_1afd87dd0992c19589efb19fafdc363829" kind="define"><name>BTN_TOP_RIGHT_ID</name></member>
-    <member refid="xboxController_8hpp_1aa8270a1ba8295884567e0a0c93135f05" kind="variable"><name>s</name></member>
-    <member refid="xboxController_8hpp_1a80deb621e3f02622888567b3469abeec" kind="variable"><name>XBOX_DEVICE</name></member>
+  <compound refid="xbox__controller_8hpp" kind="file"><name>xbox_controller.hpp</name>
+    <member refid="xbox__controller_8hpp_1a025d6a447faf5f30881d6d21e5c52fa3" kind="define"><name>IDENTIFIER_SIZE</name></member>
+    <member refid="xbox__controller_8hpp_1a1bfa73db0d1540ddfa72672263d18b75" kind="define"><name>STICK_LEFT_X_ID</name></member>
+    <member refid="xbox__controller_8hpp_1aa12616c0274d54562ba469913b665767" kind="define"><name>STICK_LEFT_Y_ID</name></member>
+    <member refid="xbox__controller_8hpp_1ab6c624d967d0ac7aa1a236d3ed6e0267" kind="define"><name>STICK_RIGHT_X_ID</name></member>
+    <member refid="xbox__controller_8hpp_1afdcf31d798b884f1fb39ef71072325c7" kind="define"><name>STICK_RIGHT_Y_ID</name></member>
+    <member refid="xbox__controller_8hpp_1a50750cc713bbbe9e990029f1e2da5ddc" kind="define"><name>STICK_LEFT_TOP_ID</name></member>
+    <member refid="xbox__controller_8hpp_1ae602118a05bfc7d81426fb39b79f58ee" kind="define"><name>STICK_RIGHT_TOP_ID</name></member>
+    <member refid="xbox__controller_8hpp_1a4a54b9d8ee010031af4a4e35957841bb" kind="define"><name>CROSS_LR_ID</name></member>
+    <member refid="xbox__controller_8hpp_1a63f3e159bc37e6cfdb68df412a3754cc" kind="define"><name>CROSS_FB_ID</name></member>
+    <member refid="xbox__controller_8hpp_1ab704c1837b11dd7e83ea5d982fe1ac2c" kind="define"><name>BTN_BACK_ID</name></member>
+    <member refid="xbox__controller_8hpp_1a9f5b957d375aa5fd2e629814f83be35f" kind="define"><name>BTN_START_ID</name></member>
+    <member refid="xbox__controller_8hpp_1a601babd1ae35b0239485a91851121a35" kind="define"><name>BTN_XBOX_ID</name></member>
+    <member refid="xbox__controller_8hpp_1a9252d68502ce7a03b9bed3181f68d6e9" kind="define"><name>BTN_LEFT_STICK_ID</name></member>
+    <member refid="xbox__controller_8hpp_1a8a21f0c9656b12d1aa5b44f839338671" kind="define"><name>BTN_RIGHT_STICK_ID</name></member>
+    <member refid="xbox__controller_8hpp_1a64e0e34261a7e1535a68fcac1cc04301" kind="define"><name>BTN_A_ID</name></member>
+    <member refid="xbox__controller_8hpp_1aec56c36cef3f48c9f99c783eee4cc032" kind="define"><name>BTN_B_ID</name></member>
+    <member refid="xbox__controller_8hpp_1aacff461890e9ee43f80e7fa71ec94a22" kind="define"><name>BTN_X_ID</name></member>
+    <member refid="xbox__controller_8hpp_1a13d54b67ea048ca8534c8d0b940e27f7" kind="define"><name>BTN_Y_ID</name></member>
+    <member refid="xbox__controller_8hpp_1a7452478c6b04b5c19f1b4cd50e5b8ad4" kind="define"><name>BTN_TOP_LEFT_ID</name></member>
+    <member refid="xbox__controller_8hpp_1afd87dd0992c19589efb19fafdc363829" kind="define"><name>BTN_TOP_RIGHT_ID</name></member>
+    <member refid="xbox__controller_8hpp_1aa8270a1ba8295884567e0a0c93135f05" kind="variable"><name>s</name></member>
+    <member refid="xbox__controller_8hpp_1a80deb621e3f02622888567b3469abeec" kind="variable"><name>XBOX_DEVICE</name></member>
   </compound>
   <compound refid="README_8md" kind="file"><name>README.md</name>
   </compound>
@@ -706,7 +707,7 @@
   </compound>
   <compound refid="timing_8cpp" kind="file"><name>timing.cpp</name>
   </compound>
-  <compound refid="xboxController_8cpp" kind="file"><name>xboxController.cpp</name>
+  <compound refid="xbox__controller_8cpp" kind="file"><name>xbox_controller.cpp</name>
   </compound>
   <compound refid="dir_d44c64559bbebec7f509842c48db8b23" kind="dir"><name>include</name>
   </compound>

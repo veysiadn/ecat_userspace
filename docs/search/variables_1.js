@@ -1,15 +1,15 @@
 var searchData=
 [
   ['blue_5fbutton_5f_0',['blue_button_',['../structController.html#a21b2cc61fc8759e3612edf6cb7659844',1,'Controller']]],
-  ['btn_5fa_1',['btn_A',['../structxboxCtrl.html#a52832e3acd3c3e0c86f219fbabba8f44',1,'xboxCtrl']]],
-  ['btn_5fb_2',['btn_B',['../structxboxCtrl.html#aa522c3ed133f1458d171e2fd3a5ac811',1,'xboxCtrl']]],
-  ['btn_5fback_3',['btn_back',['../structxboxCtrl.html#ad69506bbef82c1b6efe53a94268496d3',1,'xboxCtrl']]],
-  ['btn_5fleftstk_4',['btn_leftStk',['../structxboxCtrl.html#aaaa521b0f019987fbbb299d28666eeb6',1,'xboxCtrl']]],
-  ['btn_5flefttop_5',['btn_leftTop',['../structxboxCtrl.html#acbef85347d6686be2724487546879a14',1,'xboxCtrl']]],
-  ['btn_5frightstk_6',['btn_rightStk',['../structxboxCtrl.html#a305e6041e353e55b86c77639ffd58766',1,'xboxCtrl']]],
-  ['btn_5frighttop_7',['btn_rightTop',['../structxboxCtrl.html#aee777afe70a7c2ea34faf7705b2c3818',1,'xboxCtrl']]],
-  ['btn_5fstart_8',['btn_start',['../structxboxCtrl.html#a0b4e88bf932ac4cd8d9d457b252b40e4',1,'xboxCtrl']]],
-  ['btn_5fx_9',['btn_X',['../structxboxCtrl.html#a801c608e9af386aab4774fc1995a3e4b',1,'xboxCtrl']]],
-  ['btn_5fxbox_10',['btn_xbox',['../structxboxCtrl.html#a4223b29aff0c4cbdfa00b198bd47b805',1,'xboxCtrl']]],
-  ['btn_5fy_11',['btn_Y',['../structxboxCtrl.html#ab3d039d264268ab3ef83a7c3e1b94c6d',1,'xboxCtrl']]]
+  ['btn_5fa_1',['btn_A',['../structXboxCtrl.html#a23e2c14627e4afaf91148777dc06b5c4',1,'XboxCtrl']]],
+  ['btn_5fb_2',['btn_B',['../structXboxCtrl.html#a79154a2251847b148301974a742f1cb3',1,'XboxCtrl']]],
+  ['btn_5fback_3',['btn_back',['../structXboxCtrl.html#acc955e9578d9799efdb56f8b3b2faccf',1,'XboxCtrl']]],
+  ['btn_5fleftstk_4',['btn_leftStk',['../structXboxCtrl.html#a59516fa9b89574713610bfd6c6594050',1,'XboxCtrl']]],
+  ['btn_5flefttop_5',['btn_leftTop',['../structXboxCtrl.html#a251e939738bd7275d1e4f39cd249d047',1,'XboxCtrl']]],
+  ['btn_5frightstk_6',['btn_rightStk',['../structXboxCtrl.html#a4dc9902414e4a6583136be8f0bfb9d93',1,'XboxCtrl']]],
+  ['btn_5frighttop_7',['btn_rightTop',['../structXboxCtrl.html#acbf3e967801344b1e43fa2511abfe80f',1,'XboxCtrl']]],
+  ['btn_5fstart_8',['btn_start',['../structXboxCtrl.html#a27acaec6f41a6ce09ed8c334943741ef',1,'XboxCtrl']]],
+  ['btn_5fx_9',['btn_X',['../structXboxCtrl.html#a3f53b90b89cca71b741d477c83fd875e',1,'XboxCtrl']]],
+  ['btn_5fxbox_10',['btn_xbox',['../structXboxCtrl.html#abd1fbf64c1c4b6472db5b63893e5f7fd',1,'XboxCtrl']]],
+  ['btn_5fy_11',['btn_Y',['../structXboxCtrl.html#af80858e8d653637951acb6c5a6cce79d',1,'XboxCtrl']]]
 ];

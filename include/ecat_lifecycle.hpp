@@ -229,7 +229,12 @@ class EthercatLifeCycle
          * 
          */
         int EnableDrivers();
-
+        /**
+         * @brief Set the Configuration Parameters based on selected operation mode.
+         * 
+         * @return 0 if succesfull oterwise -1.
+         */
+        int SetConfigurationParameters();
     public : 
         /// pthread create required parameters.
         pthread_t ethercat_thread_;

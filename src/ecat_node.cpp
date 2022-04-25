@@ -64,39 +64,6 @@ int  EthercatNode::ConfigureSlaves()
 
 int EthercatNode::MapDefaultPdos()
 {
-   /**
-    *  This part is specific for our Custom EASYCAT slave configuration
-    *  To create your custom slave and variables you can add variables to \see OffsetPDO struct.
-    *  Also you have add your variables to received data structure, you may have to create your custom msg files as well.
-    **/
-    ec_pdo_entry_info_t elmo_pdo_entries[8] = {
-        {OD_TARGET_POSITION, 32},
-        {OD_DIGITAL_OUTPUTS, 32},
-        {OD_CONTROL_WORD, 16},
-        {OD_TARGET_VELOCITY,32},
-        {OD_POSITION_ACTUAL_VAL, 32},
-        {OD_DIGITAL_INPUTS, 32},
-        {OD_STATUS_WORD, 16},
-        {OD_VELOCITY_ACTUAL_VALUE,32}
-
-    };
-
-    ec_pdo_info_t elmo_pdos[4] = {
-        {0x1600, 3, elmo_pdo_entries + 0},
-        {0x1607, 1, elmo_pdo_entries + 3},
-        
-        {0x1a00, 3, elmo_pdo_entries + 4},
-        {0x1a07, 1, elmo_pdo_entries + 7}
-    };
-
-    ec_sync_info_t elmo_syncs[5] = {
-        {0, EC_DIR_OUTPUT, 0, NULL, EC_WD_DISABLE},
-        {1, EC_DIR_INPUT, 0, NULL, EC_WD_DISABLE},
-        {2, EC_DIR_OUTPUT, 2, elmo_pdos + 0, EC_WD_ENABLE},
-        {3, EC_DIR_INPUT, 2, elmo_pdos + 2, EC_WD_DISABLE},
-        {0xff}
-    };
-
     /* Master 0, Slave 0, "EPOS4"
      * Vendor ID:       0x000000fb
      * Product code:    0x61500000
@@ -133,6 +100,7 @@ int EthercatNode::MapDefaultPdos()
     };
 
     /*********************************************************/
+#if CUSTOM_SLAVE
     ec_pdo_entry_info_t easycat_pdo_entries[16] = {
         {0x0005, 0x01, 16}, /* output_analog_01 */
         {0x0005, 0x02, 16}, /* output_analog_02 */
@@ -162,7 +130,7 @@ int EthercatNode::MapDefaultPdos()
         {1, EC_DIR_INPUT, 1, easycat_pdos + 1, EC_WD_DISABLE},
         {0xff}
     };
-
+#endif
 
     // CKim - Connect sync_manager to corresponding slaves.
     for(int i = 0 ; i < g_kNumberOfServoDrivers ; i++){
@@ -260,8 +228,6 @@ int EthercatNode::RegisterDomain()
     }
     return 0;
 }
-
-
 
 int EthercatNode::SetProfilePositionParameters(ProfilePosParam& P, int position)
 {   
@@ -649,8 +615,6 @@ int EthercatNode::WaitForOperationalMode()
     return 0;
 }
 
-
-
 void EthercatNode::SetCustomSlave(EthercatSlave c_slave, int position)
 {
     slaves_[position] = c_slave ; 
@@ -676,8 +640,6 @@ void EthercatNode::ConfigDcSync(uint16_t assign_activate, int position)
 {
     return ecrt_slave_config_dc(slaves_[position].slave_config_, assign_activate, PERIOD_NS, slaves_[position].kSync0_shift_, 0, 0);
 }
-
-
 
 void EthercatNode::CheckSlaveConfigurationState()
 {
@@ -742,8 +704,6 @@ int EthercatNode::GetNumberOfConnectedSlaves()
     return 0 ;
 }
 
-
-
 void EthercatNode::DeactivateCommunication()
 {
     // ecrt_master_deactivate_slaves(g_master);
@@ -792,7 +752,6 @@ int EthercatNode::ShutDownEthercatMaster()
     }
     return 0;
 }
-
 
 uint8_t EthercatNode::SdoRead(SDO_data &pack)
 {

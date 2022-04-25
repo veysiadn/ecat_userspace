@@ -180,59 +180,10 @@ int EthercatLifeCycle::InitEthercatCommunication()
         return -1 ;
     }
 
-#if VELOCITY_MODE
-    ProfileVelocityParam P ;
-    
-    P.profile_acc=3e4 ;
-    P.profile_dec=3e4 ;
-    P.max_profile_vel = 1000 ;
-    P.quick_stop_dec = 3e4 ;
-    P.motion_profile_type = 0 ;
-    ecat_node_->SetProfileVelocityParametersAll(P);
-#endif
-
-#if POSITION_MODE
-    ProfilePosParam P ;
-    uint32_t max_fol_err ;
-    P.profile_vel = 450; //150 ;
-    P.profile_acc = 1e4;//1e4 ;
-    P.profile_dec = 1e4;//1e4 ;
-    P.max_profile_vel = 500; //100 ;
-    P.quick_stop_dec = 3e4;//3e4 ;
-    P.motion_profile_type = 0 ;
-    ecat_node_->SetProfilePositionParametersAll(P);
-#endif
-
-#if CYCLIC_POSITION_MODE
-    CSPositionModeParam P ;
-    uint32_t max_fol_err ;
-    P.profile_vel = 50 ;
-    P.profile_acc = 3e4 ;
-    P.profile_dec = 3e4 ;
-    P.max_profile_vel = 100 ;
-    P.quick_stop_dec = 3e4 ;
-    P.interpolation_time_period = 0;//1 ;
-    ecat_node_->SetCyclicSyncPositionModeParametersAll(P);
-#endif
-
-#if CYCLIC_VELOCITY_MODE
-    printf("Setting drives to CSV mode...\n");
-    CSVelocityModeParam P ;
-    P.velocity_controller_gain.Pgain = 40000;
-    P.velocity_controller_gain.Igain = 800000;
-    P.profile_dec=3e4 ;
-    P.quick_stop_dec = 3e4 ;
-    P.interpolation_time_period = 0;//1 ;
-    ecat_node_->SetCyclicSyncVelocityModeParametersAll(P);
-#endif
-
-#if CYCLIC_TORQUE_MODE
-    printf("Setting drives to CST mode...\n");
-    CSTorqueModeParam P ;
-    P.profile_dec=3e4 ;
-    P.quick_stop_dec = 3e4 ;
-    ecat_node_->SetCyclicSyncTorqueModeParametersAll(P);
-#endif
+    if(!SetConfigurationParameters()){
+        printf("Configuration parameters set failed\n");
+        return -1 ;
+    }
 
     printf("Mapping default PDOs...\n");
     if(ecat_node_->MapDefaultPdos()){
@@ -263,7 +214,62 @@ int EthercatLifeCycle::InitEthercatCommunication()
     printf("Initialization succesfull...\n");
     return 0 ; 
 }
+int EthercatLifeCycle::SetConfigurationParameters()
+{
+    #if VELOCITY_MODE
+        ProfileVelocityParam P ;
+        
+        P.profile_acc=3e4 ;
+        P.profile_dec=3e4 ;
+        P.max_profile_vel = 1000 ;
+        P.quick_stop_dec = 3e4 ;
+        P.motion_profile_type = 0 ;
+        return ecat_node_->SetProfileVelocityParametersAll(P);
+    #endif
 
+    #if POSITION_MODE
+        ProfilePosParam P ;
+        uint32_t max_fol_err ;
+        P.profile_vel = 450; //150 ;
+        P.profile_acc = 1e4;//1e4 ;
+        P.profile_dec = 1e4;//1e4 ;
+        P.max_profile_vel = 500; //100 ;
+        P.quick_stop_dec = 3e4;//3e4 ;
+        P.motion_profile_type = 0 ;
+        return ecat_node_->SetProfilePositionParametersAll(P);
+    #endif
+
+    #if CYCLIC_POSITION_MODE
+        CSPositionModeParam P ;
+        uint32_t max_fol_err ;
+        P.profile_vel = 50 ;
+        P.profile_acc = 3e4 ;
+        P.profile_dec = 3e4 ;
+        P.max_profile_vel = 100 ;
+        P.quick_stop_dec = 3e4 ;
+        P.interpolation_time_period = 0;//1 ;
+        return ecat_node_->SetCyclicSyncPositionModeParametersAll(P);
+    #endif
+
+    #if CYCLIC_VELOCITY_MODE
+        printf("Setting drives to CSV mode...\n");
+        CSVelocityModeParam P ;
+        P.velocity_controller_gain.Pgain = 40000;
+        P.velocity_controller_gain.Igain = 800000;
+        P.profile_dec=3e4 ;
+        P.quick_stop_dec = 3e4 ;
+        P.interpolation_time_period = 0;//1 ;
+        return ecat_node_->SetCyclicSyncVelocityModeParametersAll(P);
+    #endif
+
+    #if CYCLIC_TORQUE_MODE
+        printf("Setting drives to CST mode...\n");
+        CSTorqueModeParam P ;
+        P.profile_dec=3e4 ;
+        P.quick_stop_dec = 3e4 ;
+        return ecat_node_->SetCyclicSyncTorqueModeParametersAll(P);
+    #endif
+}
 int  EthercatLifeCycle::StartEthercatCommunication()
 {
     err_= pthread_create(&ethercat_thread_,&ethercat_thread_attr_, &EthercatLifeCycle::PassCycylicExchange,this);

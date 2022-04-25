@@ -179,7 +179,7 @@
 
 #define OD_MAX_CURRENT				   0x6073, 0x00
 #define OD_CURRENT_ACTUAL_VALUE		   0x6078, 0x00
-#define OD_ERROR_CODE				   0x603F, 0x00   // 2 bit
+#define OD_ERROR_CODE				   0x603F, 0x00   
 
 #define OD_QUICK_STOP_MODE             0x605A,0x00
 #define OD_STOP_OPTION_CODE            0x605D,0x00

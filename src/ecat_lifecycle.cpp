@@ -180,7 +180,7 @@ int EthercatLifeCycle::InitEthercatCommunication()
         return -1 ;
     }
 
-    if(!SetConfigurationParameters()){
+    if(SetConfigurationParameters()){
         printf("Configuration parameters set failed\n");
         return -1 ;
     }
@@ -230,11 +230,11 @@ int EthercatLifeCycle::SetConfigurationParameters()
     #if POSITION_MODE
         ProfilePosParam P ;
         uint32_t max_fol_err ;
-        P.profile_vel = 450; //150 ;
-        P.profile_acc = 1e4;//1e4 ;
-        P.profile_dec = 1e4;//1e4 ;
-        P.max_profile_vel = 500; //100 ;
-        P.quick_stop_dec = 3e4;//3e4 ;
+        P.profile_vel = 450; 
+        P.profile_acc = 1e4;
+        P.profile_dec = 1e4;
+        P.max_profile_vel = 500;
+        P.quick_stop_dec = 3e4;
         P.motion_profile_type = 0 ;
         return ecat_node_->SetProfilePositionParametersAll(P);
     #endif
@@ -631,7 +631,8 @@ void EthercatLifeCycle::UpdatePositionModeParameters()
     /// YOU HAVE TO CHECK 10th BIT OF STATUS WORD TO CHECK WHETHER TARGET IS REACHED OR NOT.
     static uint8_t operation_ready = 0 ;
     for(int i = 0 ; i < g_kNumberOfServoDrivers ; i++){
-        if(motor_state_[i]==kOperationEnabled || motor_state_[i]==kTargetReached || motor_state_[i]==kSwitchedOn){
+        if(motor_state_[i]==kOperationEnabled || 
+        motor_state_[i]==kTargetReached || motor_state_[i]==kSwitchedOn){
             if (controller_.xbox_button_){
                 for(int j = 0 ; j < g_kNumberOfServoDrivers ; j++){
                     sent_data_.target_pos[j] = 0 ; 
@@ -661,7 +662,8 @@ void EthercatLifeCycle::UpdatePositionModeParameters()
                 sent_data_.target_pos[0] = -THIRTY_DEGREE_CCW ;
             }
             
-            if(controller_.red_button_ || controller_.blue_button_ || controller_.green_button_ || controller_.yellow_button_){
+            if(controller_.red_button_ || controller_.blue_button_ || controller_.green_button_ 
+            || controller_.yellow_button_){
                 sent_data_.control_word[0] = SM_GO_ENABLE;
                 if(!operation_ready){
                     sent_data_.control_word[0] = SM_RUN ;
@@ -837,12 +839,8 @@ int EthercatLifeCycle::EnableDrivers()
 void EthercatLifeCycle::WriteToSlavesInPositionMode()
 {
     for(int i = 0 ; i < g_kNumberOfServoDrivers; i++){
-        if(sent_data_.target_pos[i] != 0){
             EC_WRITE_U16(ecat_node_->slaves_[i].slave_pdo_domain_ + ecat_node_->slaves_[i].offset_.control_word,sent_data_.control_word[i]);
             EC_WRITE_S32(ecat_node_->slaves_[i].slave_pdo_domain_ + ecat_node_->slaves_[i].offset_.target_pos,sent_data_.target_pos[i]);
-        }else{
-            EC_WRITE_U16(ecat_node_->slaves_[i].slave_pdo_domain_ + ecat_node_->slaves_[i].offset_.control_word,SM_QUICKSTOP);
-        }
     }
 }
 
@@ -878,7 +876,8 @@ void EthercatLifeCycle::UpdateCyclicPositionModeParameters()
     float val;
     static uint8_t operation_ready = 0;
     for(int i = 0 ; i < g_kNumberOfServoDrivers ; i++){
-        if(motor_state_[i]==kOperationEnabled || motor_state_[i]==kTargetReached || motor_state_[i]==kSwitchedOn)
+        if(motor_state_[i]==kOperationEnabled || motor_state_[i]==kTargetReached 
+        || motor_state_[i]==kSwitchedOn)
         {
             // Settings for motor 1;
             val = controller_.left_x_axis_;
@@ -1022,7 +1021,8 @@ void EthercatLifeCycle::UpdateVelocityModeParameters()
 {   
     /// WRITE YOUR CUSTOM CONTROL ALGORITHM VARIABLES DECLARATAION HERE
     for(int i = 0 ; i < g_kNumberOfServoDrivers ; i++){
-        if(motor_state_[i]==kOperationEnabled || motor_state_[i]==kTargetReached || motor_state_[i]==kSwitchedOn){
+        if(motor_state_[i]==kOperationEnabled || motor_state_[i]==kTargetReached 
+            || motor_state_[i]==kSwitchedOn){
                /// WRITE YOUR CUSTOM CONTROL ALGORITHM HERE IF YOU WANT TO USE VELOCITY MODE
               /// YOU CAN CHECK  EXAMPLE CONTROL CODE BELOW.
             if(controller_.right_x_axis_ > 0.1 || controller_.right_x_axis_ < -0.1 ){

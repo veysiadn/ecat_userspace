@@ -92,16 +92,14 @@ $(document).ready(function(){initNavTree('index.html',''); initResizable(); });
 <div class="textblock">
 <p>
   <!-- Welcome to EtherCAT user space application by Veysi ADIN &amp; Chunwoo Kim.This repository contains EtherCAT based control software using CoE and CiA402 standard to control motors and receive sensor data, by wrapping IgH EtherCAT library functions. This implementation can be used with any robotic systems supporting EtherCAT protocol with small modifications. It contains EtherCAT real-time thread with priority of 98. And USB communication with Xbox <a class="el" href="structController.html" title="Xbox Controller values.">Controller</a>. You can use different type of user input device as well with small modifications. -->
-Considering that you are done with the prerequisites and installation. You are ready to experiment with the software and see its capabilities using example controls below. Examples contains:
+Considering that you are done with the prerequisites and installation. You are ready to experiment with the software and see its capabilities using example controls below. Note that if for controlling the motors via servo drive, inital configuration must be done with vendors' software. In this case I used EPOS studio to configure the servo drive for connected motor. As another example Elmo has its own software to configure the motor as well. You will only have to do it once, parameters will be saved. We could add those configurations to the software but, since it will require too many parameter input I chose not to add it.
+Examples contains:
 <div class="fragment"> Velocity Mode Control - using Xbox controller, or keyboard,
   <a href="examples.html#autotoc_md1">Go to example</a>
 </div>
 <div class="fragment"> Position Mode Control - using Xbox controller, or keyboard,
  <a href="examples.html#autotoc_md2">Go to example</a>
 </div>
-<div class="fragment"> Torque Mode Control - using Xbox controller, or keyboard,
-  <a href="examples.html#autotoc_md3">Go to example</a>
-</div> 
 <div class="fragment"> Cyclic Synchronous Velocity Mode Control - using Xbox controller, or keyboard,
   <a href="examples.html#autotoc_md4">Go to example</a>
 </div> 
@@ -127,11 +125,15 @@ Improving real-time performance :
 
 
 </p>
-<p> All prepared examples here are just for reference, in the hope that it will be useful, but WITHOUT ANY WARRANTY; without even the implied warranty of MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the  GNU General Public License for more details.</p>
+<p>It is important to understand modes of operation of the motor drive, for that I recommend you to check <a href = "https://www.maxongroup.com/medias/sys_master/root/8834324856862/EPOS4-Firmware-Specification-En.pdf">EPOS firmare specifications</a> file, starting from chapter 3 page 19.<p>
+  Please do not follow these examples blindly and just use them as a reference. There might be some bugs, or errors in the software, for that please read comments in the code carefully, and understand the code before using it. You can always contact me, if you have some issues understanding the code, or if you have any questions. CONTACT : <a href="mailto:veysi.adin@outlook.com">veysi.adin@outlook.com</a></p>
+</p>
+</p>
+   <p>All prepared examples here are just for reference, in the hope that it will be useful, but WITHOUT ANY WARRANTY; without even the implied warranty of MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the  GNU General Public License for more details.</p>
 <h1><a class="anchor" id="autotoc_md1"></a>
 Velocity Mode Control Example</h1>
 <p>
-  Now in this example we have three servo drives as slaves, and three motors, we are going to control them in velocity mode with 1kHz frequency and active distributed clock. As a controller we will use Xbox controller or keyboard.  
+  Now in this example we have three servo drives as slaves, and three motors. We are going to control them in velocity mode with 1kHz frequency and active distributed clock. As a controller we will use Xbox controller or keyboard.  
 <ul>
   <li>Servo drivers: Maxon EPOS4 Compact 50/5 EtherCAT - 3pcs. </li>
   <li>Motors : Maxon DC motor with 512CPR encoder, and 49:1 Gear ratio. - 3pcs. </li>
@@ -164,78 +166,210 @@ Velocity Mode Control Example</h1>
     <img src="img/KeyboardDataRead.png" alt="controllervals"/></a>
     <p>Now that we costumized parameters for the controller, now we can costumize the application. For that we will have to modify <a href="https://github.com/veysiadn/ecat_userspace/blob/master/src/ecat_lifecycle.cpp">ecat_lifecycle.cpp</a> file.
     </p>
-  <li><a href="ecat__globals_8hpp.html#a5d918ecbea3b854bbfe74765c9357be3">NUM_OF_SLAVES</a> 3</li>
-  <li><a href="ecat__globals_8hpp.html#aacc3c7aef173b1cde9377fb7f05c924d">g_kNumberOfServoDrivers</a>=3</li>
-  <li><a href="ecat__globals_8hpp.html#a84142cd3e3bf14c4ecd4b6707a808c39">FREQUENCY</a> 1000</li>
-  <li><a href="ecat__globals_8hpp.html#abc038b9c4db3369a55eec862a3fac0d3">VELOCITY_MODE</a> 1 </li>
-  <li><a href="ecat__globals_8hpp.html#a1b5f0a2cda8866a2a87331026ac8bd9a">GEAR_RATIO</a> 49</li>
-  <li><a href="ecat__globals_8hpp.html#a8cdc17f43c9f3850f60d04f98216fc13">ENCODER_RESOLUTION</a> 512</li>
-</p> 
-   
-<ul>
-<li><a href="https://github.com/veysiadn/IgHEtherCATImplementation">IgH EtherCAT Implementation</a></li>
-<li><a href="https://github.com/veysiadn/RT_PREEMPT_INSTALL">RT_PREEMPT Patched Linux</a></li>
-<li>If you want to use <a href="https://github.com/veysiadn/xenomai-install">Xenomai-Installation</a></li>
-</ul>
-<p>Once you install the prerequisites you're ready to build the control software.</p>
+    <p>In this file we will modify configuration function for our application, for that we will modify <a href="https://veysiadn.github.io/ecat_userspace/classEthercatLifeCycleNode_1_1EthercatLifeCycle.html#a620253b4fe34f13f06a60f1fb12a81cc">SetConfigurationParameters()</a> function. See code snippet below. Here we specify profile acceleration, deceleration, velocity and position limits for our servo drives. If you need to do additional configuration, you will have to modify,ProfileVelocityParam struct and SetProfileVelocityParametersAll() function.
+    </p> <a><img src="img/config_vel.png" alt="config_vel_snippet"/></a>
+    <p>We are almost done, now before running the application we will have to write our control algorithm in <a href="https://github.com/veysiadn/ecat_userspace/blob/master/src/ecat_lifecycle.cpp">ecat_lifecycle.cpp</a> file by modifying UpdateVelocityModeParameters() function. In this function acquired control parameters from controller is assigned to target velocity command that will be sent to the drives.
+       See snippet below.
+    </p><a>
+    <img src="img/update_param_vel.png" alt="update_param_vel"/></a>
+    <p>We are done, now all you have to do is compile the program and run it by:
+      <div class="fragment"> make </div>
+      <div class="fragment"> sudo ./ecat_node</div>
+    </p>
+<p>That's all about controlling your motors in velocity mode. If you need to do additional configuration and don't know how to do it, or found a bug in the code please let me know via e-mail <a href="mailto:veysi.adin@outlook.com">veysi.adin@outlook.com</a></p>
 
 <h1><a class="anchor" id="autotoc_md2"></a>
 Position Mode Control Example</h1>
 <p>
-  Now in this example we will have ......
+  Now in this example we have one servo drives as a slave, and one motor. We are going to control the motor in position mode with 1kHz frequency and active distributed clock. As a controller we will use Xbox controller or keyboard.  
+<ul>
+  <li>Servo driver: Maxon EPOS4 Compact 50/8 EtherCAT - 1pc. </li>
+  <li>Motor: Maxon DC motor with 1024 CPR encoder, and 103:1 Gear ratio. - 1pc. </li>
+</ul>
 </p>
-<div class="fragment"><div class="line">------- </div>
-<div class="line">------</div>
-<div class="line">-------</div>
-<div class="line">------</div>
-<div class="line">----------</div>
-<div class="line">--------</div>
-</div>
-</div><!-- fragment --><p>If there is no error during the compilation process you are ready to run the executable. </p><div class="fragment"><div class="line">---------------</div>
-</div><!-- fragment --><p>If it is running your implementation is succesful, and now you are ready to customize the software based on your application. By default number of connected slaves are defined as one, therefore if you don't have any slave to connect to your Ethernet port software will raise an error about the situation, but don't worry you can customize the software based on your needs.</p>
-<h1><a class="anchor" id="autotoc_md3"></a>
-Torque Mode Control Example</h1>
 <p>
-  Now in this example we will have ......
-</p>
-<div class="fragment"><div class="line">------- </div>
-<div class="line">------</div>
-<div class="line">-------</div>
-<div class="line">------</div>
-<div class="line">----------</div>
-<div class="line">--------</div>
-</div>
+  In all control modes configuration will start from the <a href="ecat__globals_8hpp_source.html">
+  ecat_globals.hpp</a> file. In this file we will to change several parameters: 
+  <li><a href="ecat__globals_8hpp.html#a5d918ecbea3b854bbfe74765c9357be3">NUM_OF_SLAVES</a> 1</li>
+  <li><a href="ecat__globals_8hpp.html#aacc3c7aef173b1cde9377fb7f05c924d">g_kNumberOfServoDrivers</a>=1</li>
+  <li><a href="ecat__globals_8hpp.html#a84142cd3e3bf14c4ecd4b6707a808c39">FREQUENCY</a> 1000</li>
+  <li><a href="ecat__globals_8hpp.html#a41325cb83383d2eb13badf1c991b76b6">POSITION_MODE</a> 1 </li>
+  <li><a href="ecat__globals_8hpp.html#a1d48656bc4df51f3d8b17da91494a981">DISTRIBUTED_CLOCK</a> 1 </li>
+  <li><a href="ecat__globals_8hpp.html#a1b5f0a2cda8866a2a87331026ac8bd9a">GEAR_RATIO</a> 103</li>
+  <li><a href="ecat__globals_8hpp.html#a8cdc17f43c9f3850f60d04f98216fc13">ENCODER_RESOLUTION</a> 1024</li>
+</p> 
+
+<p>
+  Once we're done with initial costumization we can proceed with <a href="https://github.com/veysiadn/ecat_userspace/blob/master/src/main.cpp">main.cpp</a> file.
+   In this file we have to specify how to handle controller inputs. By default controller is assumed to be Xbox controller. If you want to use Xbox, it is nice to understand how Xbox controller data is structred. For that, I recommend using jstest-gtk package.
+   <div class="fragment"> sudo apt-get install jstest-gtk</div>
+   <p>Run jstest-gtk and choose your connected controller by</p>
+   <div class="fragment"> jstest-gtk</div>
+   <p>It will have an interface like in picture below. As shown in picture below, we have 10 digital buttons. We can use button data to control our motor in position mode.</p>
+    <img src="img/jstest-gtk.png" alt="jstest-gtk"/></a>
+    <p>As you can see the code below in <a href="https://github.com/veysiadn/ecat_userspace/blob/master/src/main.cpp">main.cpp</a> file is reading xbox controller values and passes it to ethercat thread. We will use button information to send predefined positions to the motor.</p>
+    <img src="img/XboxControllerDataReadCode.png" alt="controllervals"/></a>
+    <p>If you don't have Xbox or any other controller don't worry, you can still use your keyboard to send commands, it won't be as convenient as using controller, but it will do the job for test purposes.
+      Note that this is the default setup, you can tinker with parameters to make it suitable to your application.
+    </p>
+    <img src="img/KeyboardDataRead.png" alt="controllervals"/></a>
+    <p>Now that we costumized parameters for the controller, now we can costumize the application. For that we will have to modify <a href="https://github.com/veysiadn/ecat_userspace/blob/master/src/ecat_lifecycle.cpp">ecat_lifecycle.cpp</a> file.
+    </p>
+    <p>In this file we will modify configuration function for our application, for that we will modify <a href="https://veysiadn.github.io/ecat_userspace/classEthercatLifeCycleNode_1_1EthercatLifeCycle.html#a620253b4fe34f13f06a60f1fb12a81cc">SetConfigurationParameters()</a> function. See code snippet below. Here we specify profile velocity, acceleration, deceleration, velocity and position limits for our servo drives. If you need to do additional configuration, you will have to modify,ProfilePosParam struct and SetProfilePositionParametersAll() function.
+    </p> <a><img src="img/config_pos.png" alt="config_pos_snippet"/></a>
+    <p>We are almost done, now before running the application we will have to write our control algorithm in <a href="https://github.com/veysiadn/ecat_userspace/blob/master/src/ecat_lifecycle.cpp">ecat_lifecycle.cpp</a> file by modifying UpdatePositionModeParameters() function. In this function based on acquired button values  from controller  predefined positions such as 30 degree clock-wise, counter clock-wise positions assigned to target position command that will be sent to the drive.
+       See snippet below.
+    </p><a>
+    <img src="img/update_param_pos.png" alt="update_param_pos"/></a>
+    <p>We are done, now all you have to do is compile the program and run it by:
+      <div class="fragment"> make </div>
+      <div class="fragment"> sudo ./ecat_node</div>
+    </p>
+<p>That's all about controlling your motors in position mode. If you need to do additional configuration and don't know how to do it, or found a bug in the code please let me know via e-mail <a href="mailto:veysi.adin@outlook.com">veysi.adin@outlook.com</a></p>
+
 <h1><a class="anchor" id="autotoc_md4"></a>
-Cyclic Synchrnous Velocity Mode Control Example</h1>
+Cyclic Synchronous Velocity Mode Control Example</h1>
 <p>
-  Now in this example we will have ......
+  Now in this example we have three servo drives as slaves, and three motors. We are going to control them in cyclic synchronous velocity mode with 1kHz frequency and active distributed clock. As a controller we will use Xbox controller or keyboard.  
+<ul>
+  <li>Servo drivers: Maxon EPOS4 Compact 50/5 EtherCAT - 3pcs. </li>
+  <li>Motors : Maxon DC motor with 512CPR encoder, and 49:1 Gear ratio. - 3pcs. </li>
+</ul>
 </p>
-<div class="fragment"><div class="line">------- </div>
-<div class="line">------</div>
-<div class="line">-------</div>
-<div class="line">------</div>
-<div class="line">----------</div>
-<div class="line">--------</div>
-</div>
+<p>
+  We will start our modifications from the <a href="ecat__globals_8hpp_source.html">
+  ecat_globals.hpp</a> file. In this file we have to change several parameters: 
+  <li><a href="ecat__globals_8hpp.html#a5d918ecbea3b854bbfe74765c9357be3">NUM_OF_SLAVES</a> 3</li>
+  <li><a href="ecat__globals_8hpp.html#aacc3c7aef173b1cde9377fb7f05c924d">g_kNumberOfServoDrivers</a>=3</li>
+  <li><a href="ecat__globals_8hpp.html#a84142cd3e3bf14c4ecd4b6707a808c39">FREQUENCY</a> 1000</li>
+  <li><a href="ecat__globals_8hpp.html#aabaec371cf83290667d5f5686f3cdb05">CYCLIC_VELOCITY_MODE</a> 1 </li>
+  <li><a href="ecat__globals_8hpp.html#a1d48656bc4df51f3d8b17da91494a981">DISTRIBUTED_CLOCK</a> 1 </li>
+  <li><a href="ecat__globals_8hpp.html#a1b5f0a2cda8866a2a87331026ac8bd9a">GEAR_RATIO</a> 49</li>
+  <li><a href="ecat__globals_8hpp.html#a8cdc17f43c9f3850f60d04f98216fc13">ENCODER_RESOLUTION</a> 512</li>
+</p> 
+<p>
+  Once we're done with initial costumization we can proceed with <a href="https://github.com/veysiadn/ecat_userspace/blob/master/src/main.cpp">main.cpp</a> file.
+   In this file we have to specify how to handle controller inputs. By default controller is assumed to be Xbox controller. If you want to use Xbox, it is nice to understand how Xbox controller data is structred. For that, I recommend using jstest-gtk package, installations and running steps are explained in above examples. Now we will proceed with modifying main.cpp file.
+    <p>As you can see the code below in <a href="https://github.com/veysiadn/ecat_userspace/blob/master/src/main.cpp">main.cpp</a> file is reading xbox controller values and passes it to ethercat thread. In this case we normalized axes values by diving the data that we get to 32767, therefore range is now -/+1.</p>
+    <img src="img/XboxControllerDataReadCode.png" alt="controllervals"/></a>
+    <p>If you don't have Xbox or any other controller don't worry, you can still use your keyboard to send commands, it won't be as convenient as using controller, but it will do the job for test purposes.
+      Note that this is the default setup, you can tinker with parameters to make it suitable to your application.
+    </p>
+    <img src="img/KeyboardDataRead.png" alt="controllervals"/></a>
+    <p>Now that we costumized parameters for the controller, now we can costumize the application. For that we will have to modify <a href="https://github.com/veysiadn/ecat_userspace/blob/master/src/ecat_lifecycle.cpp">ecat_lifecycle.cpp</a> file.
+    </p>
+    <p>In this file we will modify configuration function for our application, for that we will modify <a href="https://veysiadn.github.io/ecat_userspace/classEthercatLifeCycleNode_1_1EthercatLifeCycle.html#a620253b4fe34f13f06a60f1fb12a81cc">SetConfigurationParameters()</a> function. See code snippet below. Here we specify profile acceleration, deceleration, velocity and position limits for our servo drives. If you need to do additional configuration, you will have to modify,  ProfileVelocityParam struct and SetProfileVelocityParametersAll() function.
+    </p> <a><img src="img/config_cyc_vel.png" alt="config_cyc_vel_snippet"/></a>
+    <p>We are almost done, now before running the application we will have to write our control algorithm in <a href="https://github.com/veysiadn/ecat_userspace/blob/master/src/ecat_lifecycle.cpp">ecat_lifecycle.cpp</a> file by modifying UpdateCyclicVelocityModeParameters() function. In this function acquired control parameters from controller is assigned to target velocity command that will be sent to the drives.
+       See snippet below.
+    </p><a>
+    <img src="img/update_param_cyc_vel.png" alt="update_param_vel"/></a>
+    <p>We are done, now all you have to do is compile the program and run it by:
+      <div class="fragment"> make </div>
+      <div class="fragment"> sudo ./ecat_node</div>
+    </p>
+<p> If you tried other examples, you will see that there are similiar steps to control your motors in different modes.
+   </p>
+<p>That's all about controlling your motors in cyclic synchronous velocity mode.
+  If you need to do additional configuration and don't know how to do it, or found a bug in the code please let me know via e-mail <a href="mailto:veysi.adin@outlook.com">veysi.adin@outlook.com</a></p>
+
+
+
+
 <h1><a class="anchor" id="autotoc_md5"></a>
-  Cyclic Synchrnous Position Mode Control Example</h1>
-  <p>
-    Now in this example we will have ......
-  </p>
-  <div class="fragment"><div class="line">------- </div>
-  <div class="line">------</div>
-  <div class="line">-------</div>
-  <div class="line">------</div>
-  <div class="line">----------</div>
-  <div class="line">--------</div>
-  </div>
+  Cyclic Synchronous Position Mode Control Example</h1>
+<p>
+  Now in this example we have one servo drives as a slave, and one motor. We are going to control the motor in cyclic synchronous position mode with 1kHz frequency and active distributed clock. As a controller we will use Xbox controller or keyboard.  
+<ul>
+  <li>Servo driver: Maxon EPOS4 Compact 50/8 EtherCAT - 1pc. </li>
+  <li>Motor: Maxon DC motor with 1024 CPR encoder, and 103:1 Gear ratio. - 1pc. </li>
+</ul>
+</p>
+<p>
+  In all control modes configuration will start from the <a href="ecat__globals_8hpp_source.html">
+  ecat_globals.hpp</a> file. In this file we will to change several parameters: 
+  <li><a href="ecat__globals_8hpp.html#a5d918ecbea3b854bbfe74765c9357be3">NUM_OF_SLAVES</a> 1</li>
+  <li><a href="ecat__globals_8hpp.html#aacc3c7aef173b1cde9377fb7f05c924d">g_kNumberOfServoDrivers</a>=1</li>
+  <li><a href="ecat__globals_8hpp.html#a84142cd3e3bf14c4ecd4b6707a808c39">FREQUENCY</a> 1000</li>
+  <li><a href="ecat__globals_8hpp.html#a43e6b3b5ae4e9a94c798ed011e44c876">CYCLIC_POSITION_MODE</a> 1 </li>
+  <li><a href="ecat__globals_8hpp.html#a1d48656bc4df51f3d8b17da91494a981">DISTRIBUTED_CLOCK</a> 1 </li>
+  <li><a href="ecat__globals_8hpp.html#a1b5f0a2cda8866a2a87331026ac8bd9a">GEAR_RATIO</a> 103</li>
+  <li><a href="ecat__globals_8hpp.html#a8cdc17f43c9f3850f60d04f98216fc13">ENCODER_RESOLUTION</a> 1024</li>
+</p> 
+
+<p>
+  Once we're done with initial costumization we can proceed with <a href="https://github.com/veysiadn/ecat_userspace/blob/master/src/main.cpp">main.cpp</a> file.
+   In this file we have to specify how to handle controller inputs. By default controller is assumed to be Xbox controller.If you want to use Xbox, it is nice to understand how Xbox controller data is structred. For that, I recommend using jstest-gtk package, installations and running steps are explained in above examples. Now we will proceed with modifying main.cpp file.
+    <p>As you can see the code below in <a href="https://github.com/veysiadn/ecat_userspace/blob/master/src/main.cpp">main.cpp</a> file is reading xbox controller values and passes it to ethercat thread. We will use axis data from controller to continuously send target position value with small increments. </p>
+    <img src="img/XboxControllerDataReadCode.png" alt="controllervals"/></a>
+    <p>If you don't have Xbox or any other controller don't worry, you can still use your keyboard to send commands, it won't be as convenient as using controller, but it will do the job for test purposes.
+      Note that this is the default setup, you can tinker with parameters to make it suitable to your application.
+    </p>
+    <img src="img/KeyboardDataRead.png" alt="controllervals"/></a>
+    <p>Now that we costumized parameters for the controller, now we can costumize the application. For that we will have to modify <a href="https://github.com/veysiadn/ecat_userspace/blob/master/src/ecat_lifecycle.cpp">ecat_lifecycle.cpp</a> file.
+    </p>
+    <p>In this file we will modify configuration function for our application, for that we will modify <a href="https://veysiadn.github.io/ecat_userspace/classEthercatLifeCycleNode_1_1EthercatLifeCycle.html#a620253b4fe34f13f06a60f1fb12a81cc">SetConfigurationParameters()</a> function. See code snippet below. Here we specify profile velocity, acceleration, deceleration, velocity and position limits for our servo drives. If you need to do additional configuration, you will have to modify,ProfilePosParam struct and SetProfilePositionParametersAll() function.
+    </p> <a><img src="img/config_cyc_pos.png" alt="config_cyc_pos_snippet"/></a>
+    <p>We are almost done, now before running the application we will have to write our control algorithm in <a href="https://github.com/veysiadn/ecat_userspace/blob/master/src/ecat_lifecycle.cpp">ecat_lifecycle.cpp</a> file by modifying UpdateCyclicPositionModeParameters() function. In this function based on acquired contoller axis values and actual position value, new target position is created and assigned to target position command that will be sent to the drive.
+       See snippet below.
+    </p><a>
+    <img src="img/update_param_cyc_pos.png" alt="update_param_cyc_pos"/></a>
+    <p>We are done, now all you have to do is compile the program and run it by:
+      <div class="fragment"> make </div>
+      <div class="fragment"> sudo ./ecat_node</div>
+    </p>
+<p>That's all about controlling your motors in cyclic synchronous position mode. If you need to do additional configuration and don't know how to do it, or found a bug in the code please let me know via e-mail <a href="mailto:veysi.adin@outlook.com">veysi.adin@outlook.com</a></p>
+
+
+
+
+
 <h1><a class="anchor" id="autotoc_md6"></a>
   Cyclic Synchrnous Torque Mode Control Example</h1>
-<ul>
-<li>Change configuration parameters for your motor in <a class="el" href="ecat__node_8cpp.html">ecat_node.cpp</a> file based on your operation mode. For example if you want to use velocity mode you can change parameters in the SetProfileVelocityParametersAll(ProfileVelocityParam&amp; P) function based on your needs.</li>
-<li>Change control parameters based on your selected operation mode in <a class="el" href="ecat__lifecycle_8cpp.html">ecat_lifecycle.cpp</a> file in the Update functions. For example if you want to use velocity mode in your control loop, you can change function content of UpdateVelocityModeParameters();</li>
-</ul>
-<p>Once you did those changes you will need recompile the software using make and you can test the executable.</p>
+  <p>
+    Now in this example we have one servo drives as a slave, and one motor. We are going to control the motor in cyclic synchronous torque mode with 1kHz frequency and active distributed clock. As a controller we will use Xbox controller or keyboard. Note that in torque mode target torque is specified in per thousand of “Motor rated torque” value.
+  <ul>
+    <li>Servo driver: Maxon EPOS4 Compact 50/8 EtherCAT - 1pc. </li>
+    <li>Motor: Maxon DC motor with 1024 CPR encoder, and 103:1 Gear ratio. - 1pc. </li>
+  </ul>
+  </p>
+  <p>
+    In all control modes configuration will start from the <a href="ecat__globals_8hpp_source.html">
+    ecat_globals.hpp</a> file. In this file we will to change several parameters: 
+    <li><a href="ecat__globals_8hpp.html#a5d918ecbea3b854bbfe74765c9357be3">NUM_OF_SLAVES</a> 1</li>
+    <li><a href="ecat__globals_8hpp.html#aacc3c7aef173b1cde9377fb7f05c924d">g_kNumberOfServoDrivers</a>=1</li>
+    <li><a href="ecat__globals_8hpp.html#a84142cd3e3bf14c4ecd4b6707a808c39">FREQUENCY</a> 1000</li>
+    <li><a href="ecat__globals_8hpp.html#a91d01279ad427a31705ffa6c88ecfd70">CYCLIC_TORQUE_MODE</a> 1 </li>
+    <li><a href="ecat__globals_8hpp.html#a1d48656bc4df51f3d8b17da91494a981">DISTRIBUTED_CLOCK</a> 1 </li>
+    <li><a href="ecat__globals_8hpp.html#a1b5f0a2cda8866a2a87331026ac8bd9a">GEAR_RATIO</a> 103</li>
+    <li><a href="ecat__globals_8hpp.html#a8cdc17f43c9f3850f60d04f98216fc13">ENCODER_RESOLUTION</a> 1024</li>
+  </p> 
+  
+  <p>
+    Once we're done with initial costumization we can proceed with <a href="https://github.com/veysiadn/ecat_userspace/blob/master/src/main.cpp">main.cpp</a> file.
+     In this file we have to specify how to handle controller inputs. By default controller is assumed to be Xbox controller.If you want to use Xbox, it is nice to understand how Xbox controller data is structred. For that, I recommend using jstest-gtk package, installations and running steps are explained in position and velocity mode examples above. Now we will proceed with modifying main.cpp file.
+      <p>As you can see the code below in <a href="https://github.com/veysiadn/ecat_userspace/blob/master/src/main.cpp">main.cpp</a> file is reading xbox controller values and passes it to ethercat thread. We will use axis data to send target torque value to the motor.</p>
+      <img src="img/XboxControllerDataReadCode.png" alt="controllervals"/></a>
+      <p>If you don't have Xbox or any other controller don't worry, you can still use your keyboard to send commands, it won't be as convenient as using controller, but it will do the job for test purposes.
+        Note that this is the default setup, you can tinker with parameters to make it suitable to your application.
+      </p>
+      <img src="img/KeyboardDataRead.png" alt="controllervals"/></a>
+      <p>Now that we costumized parameters for the controller, now we can costumize the application. For that we will have to modify <a href="https://github.com/veysiadn/ecat_userspace/blob/master/src/ecat_lifecycle.cpp">ecat_lifecycle.cpp</a> file.
+      </p>
+      <p>In this file we will modify configuration function for our application, for that we will modify <a href="https://veysiadn.github.io/ecat_userspace/classEthercatLifeCycleNode_1_1EthercatLifeCycle.html#a620253b4fe34f13f06a60f1fb12a81cc">SetConfigurationParameters()</a> function. See code snippet below. Here we specify profile velocity, acceleration, deceleration, velocity and position limits for our servo drives. If you need to do additional configuration, you will have to modify,ProfilePosParam struct and SetProfilePositionParametersAll() function.
+      </p> <a><img src="img/config_cyc_tor.png" alt="config_cyc_tor_snippet"/></a>
+      <p>We are almost done, now before running the application we will have to write our control algorithm in <a href="https://github.com/veysiadn/ecat_userspace/blob/master/src/ecat_lifecycle.cpp">ecat_lifecycle.cpp</a> file by modifying UpdateCyclicTorqueModeParameters() function. In this function based on acquired contoller axis value, new target torque is created and assigned to target torque command that will be sent to the drive.
+         See snippet below.
+      </p><a>
+      <img src="img/update_param_cyc_tor.png" alt="update_param_cyc_tor"/></a>
+      <p>We are done, now all you have to do is compile the program and run it by:
+        <div class="fragment"> make </div>
+        <div class="fragment"> sudo ./ecat_node</div>
+      </p>
+  <p>That's all about controlling your motors in cyclic synchronous position mode. If you need to do additional configuration and don't know how to do it, or found a bug in the code please let me know via e-mail <a href="mailto:veysi.adin@outlook.com">veysi.adin@outlook.com</a></p>
+
+
+
 <h1><a class="anchor" id="autotoc_md7"></a>
 Mapping Custom PDO Example</h1>
 <ul>

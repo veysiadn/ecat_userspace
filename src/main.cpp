@@ -55,7 +55,6 @@ int main(int argc, char **argv)
         ecat_lifecycle_node->controller_.blue_button_ = target_val;
         ecat_lifecycle_node->controller_.green_button_ = target_val;
         ecat_lifecycle_node->controller_.yellow_button_ = target_val;
-        ecat_lifecycle_node->controller_.xbox_button_ = target_val; 
         ecat_lifecycle_node->controller_.left_rb_button_ = target_val;
         ecat_lifecycle_node->controller_.right_rb_button_ = target_val;
         nanosleep((const struct timespec[]){0,PERIOD_NS*10},NULL);

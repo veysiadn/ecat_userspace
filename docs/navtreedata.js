@@ -37,6 +37,7 @@ var NAVTREE =
       [ "Guides", "index.html#autotoc_md8", null ],
       [ "Good Luck ⚡", "index.html#autotoc_md9", null ]
     ] ],
+    [ "Examples", "examples.html", null ],
     [ "Namespaces", "namespaces.html", [
       [ "Namespace List", "namespaces.html", "namespaces_dup" ]
     ] ],
@@ -66,9 +67,9 @@ var NAVTREE =
 var NAVTREEINDEX =
 [
 "annotated.html",
-"ecat__globals_8hpp.html#a5d175b4708e9a88ebbc35372ca1818b7aefe8b16564c493d6aba4e1761d28fb6e",
-"object__dictionary_8hpp.html#a08e66a2e958957c4364055e3e15330af",
-"structHomingParam.html#abc0feea7ba94caf1db6e10ec06d79f2b"
+"ecat__globals_8hpp.html#a5d175b4708e9a88ebbc35372ca1818b7a94491568dfbb921ec2bc5e0b90bfdf51",
+"object__dictionary_8hpp.html#a03033fc1afcc498cc86cd73df2241adc",
+"structHomingParam.html#a887e63ebd531ebced48fb2f74326c726"
 ];
 
 var SYNCONMSG = 'click to disable panel synchronisation';

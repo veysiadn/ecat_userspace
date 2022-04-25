@@ -1,59 +1,62 @@
-src/ecat_lifecycle.cpp:287:24: style: Variable 'print_val' is assigned a value that is never used. [unreadVariable]
+src/ecat_lifecycle.cpp:293:24: style: Variable 'print_val' is assigned a value that is never used. [unreadVariable]
     uint32_t print_val = 1e4;
                        ^
-src/ecat_lifecycle.cpp:290:59: style: Variable 'publish_time_start' is assigned a value that is never used. [unreadVariable]
+src/ecat_lifecycle.cpp:296:59: style: Variable 'publish_time_start' is assigned a value that is never used. [unreadVariable]
     struct timespec wake_up_time, time, publish_time_start={}, publish_time_end={};
                                                           ^
-src/ecat_lifecycle.cpp:290:80: style: Variable 'publish_time_end' is assigned a value that is never used. [unreadVariable]
+src/ecat_lifecycle.cpp:296:80: style: Variable 'publish_time_end' is assigned a value that is never used. [unreadVariable]
     struct timespec wake_up_time, time, publish_time_start={}, publish_time_end={};
                                                                                ^
-src/ecat_lifecycle.cpp:208:14: style: Unused variable: max_fol_err [unusedVariable]
-    uint32_t max_fol_err ;
-             ^
-src/ecat_lifecycle.cpp:499:21: warning: %u in format string (no. 1) requires 'unsigned int' but the argument type is 'signed int'. [invalidPrintfArgType_uint]
+src/ecat_lifecycle.cpp:244:18: style: Unused variable: max_fol_err [unusedVariable]
+        uint32_t max_fol_err ;
+                 ^
+src/ecat_lifecycle.cpp:505:21: warning: %u in format string (no. 1) requires 'unsigned int' but the argument type is 'signed int'. [invalidPrintfArgType_uint]
                     printf("Tjitter min     : %10u ns  | max : %10u ns\n",
                     ^
-src/ecat_lifecycle.cpp:499:21: warning: %u in format string (no. 2) requires 'unsigned int' but the argument type is 'signed int'. [invalidPrintfArgType_uint]
+src/ecat_lifecycle.cpp:505:21: warning: %u in format string (no. 2) requires 'unsigned int' but the argument type is 'signed int'. [invalidPrintfArgType_uint]
                     printf("Tjitter min     : %10u ns  | max : %10u ns\n",
                     ^
-src/ecat_lifecycle.cpp:396:28: style: Variable 'period_ns' is assigned a value that is never used. [unreadVariable]
+src/ecat_lifecycle.cpp:402:28: style: Variable 'period_ns' is assigned a value that is never used. [unreadVariable]
         uint32_t period_ns = 0, exec_ns = 0, latency_ns = 0,
                            ^
-src/ecat_lifecycle.cpp:396:41: style: Variable 'exec_ns' is assigned a value that is never used. [unreadVariable]
+src/ecat_lifecycle.cpp:402:41: style: Variable 'exec_ns' is assigned a value that is never used. [unreadVariable]
         uint32_t period_ns = 0, exec_ns = 0, latency_ns = 0,
                                         ^
-src/ecat_lifecycle.cpp:402:35: style: Variable 'publishing_time_ns' is assigned a value that is never used. [unreadVariable]
+src/ecat_lifecycle.cpp:408:35: style: Variable 'publishing_time_ns' is assigned a value that is never used. [unreadVariable]
         int32_t publishing_time_ns=1e4, publish_time_max=0, publish_time_min=0xfffffff;
                                   ^
-src/ecat_lifecycle.cpp:402:57: style: Variable 'publish_time_max' is assigned a value that is never used. [unreadVariable]
+src/ecat_lifecycle.cpp:408:57: style: Variable 'publish_time_max' is assigned a value that is never used. [unreadVariable]
         int32_t publishing_time_ns=1e4, publish_time_max=0, publish_time_min=0xfffffff;
                                                         ^
-src/ecat_lifecycle.cpp:402:77: style: Variable 'publish_time_min' is assigned a value that is never used. [unreadVariable]
+src/ecat_lifecycle.cpp:408:77: style: Variable 'publish_time_min' is assigned a value that is never used. [unreadVariable]
         int32_t publishing_time_ns=1e4, publish_time_max=0, publish_time_min=0xfffffff;
                                                                             ^
-src/ecat_lifecycle.cpp:403:24: style: Variable 'jitter' is assigned a value that is never used. [unreadVariable]
+src/ecat_lifecycle.cpp:409:24: style: Variable 'jitter' is assigned a value that is never used. [unreadVariable]
         int32_t jitter = 0 , jitter_min = 0xfffffff, jitter_max = 0, old_latency=0;
                        ^
-src/ecat_lifecycle.cpp:403:81: style: Variable 'old_latency' is assigned a value that is never used. [unreadVariable]
+src/ecat_lifecycle.cpp:409:81: style: Variable 'old_latency' is assigned a value that is never used. [unreadVariable]
         int32_t jitter = 0 , jitter_min = 0xfffffff, jitter_max = 0, old_latency=0;
                                                                                 ^
-src/ecat_lifecycle.cpp:196:14: style: Unused variable: max_fol_err [unusedVariable]
-    uint32_t max_fol_err ;
-             ^
-src/ecat_node.cpp:727:27: style: Variable 'g_master_domain_state' is reassigned a value before the old one has been used. [redundantAssignment]
+src/ecat_lifecycle.cpp:232:18: style: Unused variable: max_fol_err [unusedVariable]
+        uint32_t max_fol_err ;
+                 ^
+src/ecat_node.cpp:689:27: style: Variable 'g_master_domain_state' is reassigned a value before the old one has been used. [redundantAssignment]
     g_master_domain_state = ds;
                           ^
-src/ecat_node.cpp:725:31: note: g_master_domain_state is assigned
+src/ecat_node.cpp:687:31: note: g_master_domain_state is assigned
         g_master_domain_state = ds;
                               ^
-src/ecat_node.cpp:727:27: note: g_master_domain_state is overwritten
+src/ecat_node.cpp:689:27: note: g_master_domain_state is overwritten
     g_master_domain_state = ds;
                           ^
-src/ecat_node.cpp:92:34: style: Variable 'elmo_syncs' is assigned a value that is never used. [unreadVariable]
-    ec_sync_info_t elmo_syncs[5] = {
-                                 ^
-src/ecat_node.cpp:160:37: style: Variable 'easycat_syncs' is assigned a value that is never used. [unreadVariable]
-    ec_sync_info_t easycat_syncs[3] = {
-                                    ^
+src/main.cpp:51:56: style: Variable 'ecat_lifecycle_node->controller_.left_x_axis_' is reassigned a value before the old one has been used. [redundantAssignment]
+        ecat_lifecycle_node->controller_.left_x_axis_  = target_val;
+                                                       ^
+src/main.cpp:50:55: note: ecat_lifecycle_node->controller_.left_x_axis_ is assigned
+        ecat_lifecycle_node->controller_.left_x_axis_ = target_val;
+                                                      ^
+src/main.cpp:51:56: note: ecat_lifecycle_node->controller_.left_x_axis_ is overwritten
+        ecat_lifecycle_node->controller_.left_x_axis_  = target_val;
+                                                       ^
 nofile:0:0: information: Cppcheck cannot find all the include files (use --check-config for details) [missingInclude]
 

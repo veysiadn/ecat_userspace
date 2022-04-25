@@ -26,6 +26,6 @@ var searchData=
   ['geterrormessage_23',['GetErrorMessage',['../ecat__globals_8hpp.html#a90b8972e0ee7a6f0335ca06017554883',1,'ecat_globals.hpp']]],
   ['getnumberofconnectedslaves_24',['GetNumberOfConnectedSlaves',['../classEthercatCommunication_1_1EthercatNode.html#a284ff9ea43d86a07c696833a9ffc11fe',1,'EthercatCommunication::EthercatNode']]],
   ['gettime_25',['GetTime',['../classTiming.html#a5877895aa80d11fc63230de0c5eeb5da',1,'Timing']]],
-  ['getxboxdatastruct_26',['getXboxDataStruct',['../classXboxController.html#aa68b77202c397ef9a2340102d0405e10',1,'XboxController']]],
+  ['getxboxdatastruct_26',['GetXboxDataStruct',['../classXboxController.html#a56a862aac6ac80484fe32d7ed9109be3',1,'XboxController']]],
   ['green_5fbutton_5f_27',['green_button_',['../structController.html#af4090cca658badffa788cc347c0d8976',1,'Controller']]]
 ];

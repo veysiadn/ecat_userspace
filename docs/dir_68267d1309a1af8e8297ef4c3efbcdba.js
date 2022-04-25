@@ -5,5 +5,5 @@ var dir_68267d1309a1af8e8297ef4c3efbcdba =
     [ "ecat_slave.cpp", "ecat__slave_8cpp.html", null ],
     [ "main.cpp", "main_8cpp.html", "main_8cpp" ],
     [ "timing.cpp", "timing_8cpp.html", null ],
-    [ "xboxController.cpp", "xboxController_8cpp.html", null ]
+    [ "xbox_controller.cpp", "xbox__controller_8cpp.html", null ]
 ];

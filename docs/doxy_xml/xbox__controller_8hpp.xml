@@ -1,0 +1,458 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.3" xml:lang="en-US">
+  <compounddef id="xbox__controller_8hpp" kind="file" language="C++">
+    <compoundname>xbox_controller.hpp</compoundname>
+    <includes local="no">string</includes>
+    <includes local="no">stdlib.h</includes>
+    <includes local="no">stdio.h</includes>
+    <includes local="no">fcntl.h</includes>
+    <includes local="no">unistd.h</includes>
+    <includes local="no">linux/joystick.h</includes>
+    <includes local="no">iostream</includes>
+    <includedby refid="main_8cpp" local="yes">src/main.cpp</includedby>
+    <includedby refid="xbox__controller_8cpp" local="yes">src/xbox_controller.cpp</includedby>
+    <incdepgraph>
+      <node id="1">
+        <label>include/xbox_controller.hpp</label>
+        <link refid="xbox__controller_8hpp"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="4" relation="include">
+        </childnode>
+        <childnode refid="5" relation="include">
+        </childnode>
+        <childnode refid="6" relation="include">
+        </childnode>
+        <childnode refid="7" relation="include">
+        </childnode>
+        <childnode refid="8" relation="include">
+        </childnode>
+      </node>
+      <node id="5">
+        <label>fcntl.h</label>
+      </node>
+      <node id="8">
+        <label>iostream</label>
+      </node>
+      <node id="7">
+        <label>linux/joystick.h</label>
+      </node>
+      <node id="4">
+        <label>stdio.h</label>
+      </node>
+      <node id="3">
+        <label>stdlib.h</label>
+      </node>
+      <node id="2">
+        <label>string</label>
+      </node>
+      <node id="6">
+        <label>unistd.h</label>
+      </node>
+    </incdepgraph>
+    <invincdepgraph>
+      <node id="1">
+        <label>include/xbox_controller.hpp</label>
+        <link refid="xbox__controller_8hpp"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="3" relation="include">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>src/main.cpp</label>
+        <link refid="main_8cpp"/>
+      </node>
+      <node id="3">
+        <label>src/xbox_controller.cpp</label>
+        <link refid="xbox__controller_8cpp"/>
+      </node>
+    </invincdepgraph>
+    <innerclass refid="structXboxCtrl" prot="public">XboxCtrl</innerclass>
+    <innerclass refid="classXboxController" prot="public">XboxController</innerclass>
+      <sectiondef kind="define">
+      <memberdef kind="define" id="xbox__controller_8hpp_1a025d6a447faf5f30881d6d21e5c52fa3" prot="public" static="no">
+        <name>IDENTIFIER_SIZE</name>
+        <initializer>64</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/xbox_controller.hpp" line="59" column="9" bodyfile="include/xbox_controller.hpp" bodystart="59" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="xbox__controller_8hpp_1a1bfa73db0d1540ddfa72672263d18b75" prot="public" static="no">
+        <name>STICK_LEFT_X_ID</name>
+        <initializer>0x00</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/xbox_controller.hpp" line="61" column="9" bodyfile="include/xbox_controller.hpp" bodystart="61" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="xbox__controller_8hpp_1aa12616c0274d54562ba469913b665767" prot="public" static="no">
+        <name>STICK_LEFT_Y_ID</name>
+        <initializer>0x01</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/xbox_controller.hpp" line="62" column="9" bodyfile="include/xbox_controller.hpp" bodystart="62" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="xbox__controller_8hpp_1ab6c624d967d0ac7aa1a236d3ed6e0267" prot="public" static="no">
+        <name>STICK_RIGHT_X_ID</name>
+        <initializer>0x03</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/xbox_controller.hpp" line="63" column="9" bodyfile="include/xbox_controller.hpp" bodystart="63" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="xbox__controller_8hpp_1afdcf31d798b884f1fb39ef71072325c7" prot="public" static="no">
+        <name>STICK_RIGHT_Y_ID</name>
+        <initializer>0x04</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/xbox_controller.hpp" line="64" column="9" bodyfile="include/xbox_controller.hpp" bodystart="64" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="xbox__controller_8hpp_1a50750cc713bbbe9e990029f1e2da5ddc" prot="public" static="no">
+        <name>STICK_LEFT_TOP_ID</name>
+        <initializer>0x02</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/xbox_controller.hpp" line="65" column="9" bodyfile="include/xbox_controller.hpp" bodystart="65" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="xbox__controller_8hpp_1ae602118a05bfc7d81426fb39b79f58ee" prot="public" static="no">
+        <name>STICK_RIGHT_TOP_ID</name>
+        <initializer>0x05</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/xbox_controller.hpp" line="66" column="9" bodyfile="include/xbox_controller.hpp" bodystart="66" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="xbox__controller_8hpp_1a4a54b9d8ee010031af4a4e35957841bb" prot="public" static="no">
+        <name>CROSS_LR_ID</name>
+        <initializer>0x06</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/xbox_controller.hpp" line="67" column="9" bodyfile="include/xbox_controller.hpp" bodystart="67" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="xbox__controller_8hpp_1a63f3e159bc37e6cfdb68df412a3754cc" prot="public" static="no">
+        <name>CROSS_FB_ID</name>
+        <initializer>0x07</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/xbox_controller.hpp" line="68" column="9" bodyfile="include/xbox_controller.hpp" bodystart="68" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="xbox__controller_8hpp_1ab704c1837b11dd7e83ea5d982fe1ac2c" prot="public" static="no">
+        <name>BTN_BACK_ID</name>
+        <initializer>0x06</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/xbox_controller.hpp" line="70" column="9" bodyfile="include/xbox_controller.hpp" bodystart="70" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="xbox__controller_8hpp_1a9f5b957d375aa5fd2e629814f83be35f" prot="public" static="no">
+        <name>BTN_START_ID</name>
+        <initializer>0x07</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/xbox_controller.hpp" line="71" column="9" bodyfile="include/xbox_controller.hpp" bodystart="71" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="xbox__controller_8hpp_1a601babd1ae35b0239485a91851121a35" prot="public" static="no">
+        <name>BTN_XBOX_ID</name>
+        <initializer>0x08</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/xbox_controller.hpp" line="72" column="9" bodyfile="include/xbox_controller.hpp" bodystart="72" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="xbox__controller_8hpp_1a9252d68502ce7a03b9bed3181f68d6e9" prot="public" static="no">
+        <name>BTN_LEFT_STICK_ID</name>
+        <initializer>0x09</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/xbox_controller.hpp" line="73" column="9" bodyfile="include/xbox_controller.hpp" bodystart="73" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="xbox__controller_8hpp_1a8a21f0c9656b12d1aa5b44f839338671" prot="public" static="no">
+        <name>BTN_RIGHT_STICK_ID</name>
+        <initializer>0x0A</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/xbox_controller.hpp" line="74" column="9" bodyfile="include/xbox_controller.hpp" bodystart="74" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="xbox__controller_8hpp_1a64e0e34261a7e1535a68fcac1cc04301" prot="public" static="no">
+        <name>BTN_A_ID</name>
+        <initializer>0x00</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/xbox_controller.hpp" line="76" column="9" bodyfile="include/xbox_controller.hpp" bodystart="76" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="xbox__controller_8hpp_1aec56c36cef3f48c9f99c783eee4cc032" prot="public" static="no">
+        <name>BTN_B_ID</name>
+        <initializer>0x01</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/xbox_controller.hpp" line="77" column="9" bodyfile="include/xbox_controller.hpp" bodystart="77" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="xbox__controller_8hpp_1aacff461890e9ee43f80e7fa71ec94a22" prot="public" static="no">
+        <name>BTN_X_ID</name>
+        <initializer>0x02</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/xbox_controller.hpp" line="78" column="9" bodyfile="include/xbox_controller.hpp" bodystart="78" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="xbox__controller_8hpp_1a13d54b67ea048ca8534c8d0b940e27f7" prot="public" static="no">
+        <name>BTN_Y_ID</name>
+        <initializer>0x03</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/xbox_controller.hpp" line="79" column="9" bodyfile="include/xbox_controller.hpp" bodystart="79" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="xbox__controller_8hpp_1a7452478c6b04b5c19f1b4cd50e5b8ad4" prot="public" static="no">
+        <name>BTN_TOP_LEFT_ID</name>
+        <initializer>0x04</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/xbox_controller.hpp" line="80" column="9" bodyfile="include/xbox_controller.hpp" bodystart="80" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="xbox__controller_8hpp_1afd87dd0992c19589efb19fafdc363829" prot="public" static="no">
+        <name>BTN_TOP_RIGHT_ID</name>
+        <initializer>0x05</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/xbox_controller.hpp" line="81" column="9" bodyfile="include/xbox_controller.hpp" bodystart="81" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="var">
+      <memberdef kind="variable" id="xbox__controller_8hpp_1aa8270a1ba8295884567e0a0c93135f05" prot="public" static="yes" mutable="no">
+        <type>std::string</type>
+        <definition>std::string s</definition>
+        <argsstring></argsstring>
+        <name>s</name>
+        <initializer>= &quot;/dev/input/js0&quot;</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/xbox_controller.hpp" line="83" column="20" bodyfile="include/xbox_controller.hpp" bodystart="83" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="xbox__controller_8hpp_1a80deb621e3f02622888567b3469abeec" prot="public" static="yes" mutable="no">
+        <type>char *</type>
+        <definition>char* XBOX_DEVICE</definition>
+        <argsstring></argsstring>
+        <name>XBOX_DEVICE</name>
+        <initializer>= const_cast&lt;char*&gt;(s.c_str())</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/xbox_controller.hpp" line="84" column="13" bodyfile="include/xbox_controller.hpp" bodystart="84" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="comment">/******************************************************************************</highlight></codeline>
+<codeline lineno="2"><highlight class="comment"><sp/>*</highlight></codeline>
+<codeline lineno="3"><highlight class="comment"><sp/>*<sp/><sp/>$Id$</highlight></codeline>
+<codeline lineno="4"><highlight class="comment"><sp/>*</highlight></codeline>
+<codeline lineno="5"><highlight class="comment"><sp/>*<sp/><sp/>Copyright<sp/>(C)<sp/>2021<sp/>Veysi<sp/>ADIN,<sp/>UST<sp/>KIST</highlight></codeline>
+<codeline lineno="6"><highlight class="comment"><sp/>*</highlight></codeline>
+<codeline lineno="7"><highlight class="comment"><sp/>*<sp/><sp/>This<sp/>file<sp/>is<sp/>part<sp/>of<sp/>the<sp/>Wrapped<sp/>IgH<sp/>EtherCAT<sp/>master<sp/>userspace<sp/>program<sp/></highlight></codeline>
+<codeline lineno="8"><highlight class="comment"><sp/>*<sp/>for<sp/>control<sp/>applications.</highlight></codeline>
+<codeline lineno="9"><highlight class="comment"><sp/>*</highlight></codeline>
+<codeline lineno="10"><highlight class="comment"><sp/>*<sp/><sp/>The<sp/>Wrapped<sp/>IgH<sp/>EtherCAT<sp/>master<sp/>userspace<sp/>program<sp/>for<sp/>control<sp/>application</highlight></codeline>
+<codeline lineno="11"><highlight class="comment"><sp/>*<sp/><sp/>in<sp/>userspace<sp/>is<sp/>free<sp/>software;<sp/>you<sp/>canredistribute<sp/>it<sp/>and/or<sp/>modify<sp/>it<sp/></highlight></codeline>
+<codeline lineno="12"><highlight class="comment"><sp/>*<sp/>under<sp/>the<sp/>terms<sp/>of<sp/>the<sp/>GNU<sp/>General<sp/>Public<sp/>License<sp/>as<sp/>published<sp/>by<sp/>the<sp/></highlight></codeline>
+<codeline lineno="13"><highlight class="comment"><sp/>*<sp/>Free<sp/>Software<sp/>Foundation;<sp/>version<sp/>2<sp/>of<sp/>the<sp/>License.</highlight></codeline>
+<codeline lineno="14"><highlight class="comment"><sp/>*</highlight></codeline>
+<codeline lineno="15"><highlight class="comment"><sp/>*<sp/><sp/>The<sp/>Wrapped<sp/>IgH<sp/>EtherCAT<sp/>master<sp/>userspace<sp/>program<sp/>for<sp/>control<sp/>application</highlight></codeline>
+<codeline lineno="16"><highlight class="comment"><sp/>*<sp/><sp/>is<sp/>distributed<sp/>in<sp/>the<sp/>hope<sp/>that<sp/>it<sp/>will<sp/>be<sp/>useful,<sp/>but<sp/>WITHOUT<sp/>ANY<sp/>WARRANTY;</highlight></codeline>
+<codeline lineno="17"><highlight class="comment"><sp/>*<sp/><sp/>without<sp/>even<sp/>the<sp/>implied<sp/>warranty<sp/>of<sp/>MERCHANTABILITY<sp/>or<sp/>FITNESS<sp/>FOR<sp/>A<sp/>PARTICULAR<sp/></highlight></codeline>
+<codeline lineno="18"><highlight class="comment"><sp/>*<sp/><sp/>PURPOSE.<sp/><sp/></highlight></codeline>
+<codeline lineno="19"><highlight class="comment"><sp/>*<sp/><sp/>See<sp/>the<sp/><sp/>GNU<sp/>General<sp/>Public<sp/>License<sp/>for<sp/>more<sp/>details.</highlight></codeline>
+<codeline lineno="20"><highlight class="comment"><sp/>*</highlight></codeline>
+<codeline lineno="21"><highlight class="comment"><sp/>*<sp/><sp/>You<sp/>should<sp/>have<sp/>received<sp/>a<sp/>copy<sp/>of<sp/>the<sp/>GNU<sp/>General<sp/>Public<sp/>License</highlight></codeline>
+<codeline lineno="22"><highlight class="comment"><sp/>*<sp/><sp/>along<sp/>with<sp/>the<sp/>Wrapped<sp/>IgH<sp/>EtherCAT<sp/>master<sp/>userspace<sp/>program<sp/>for<sp/>control<sp/>application.<sp/></highlight></codeline>
+<codeline lineno="23"><highlight class="comment"><sp/>*<sp/>If<sp/>not,<sp/>see<sp/>&lt;http://www.gnu.org/licenses/&gt;.</highlight></codeline>
+<codeline lineno="24"><highlight class="comment"><sp/>*</highlight></codeline>
+<codeline lineno="25"><highlight class="comment"><sp/>*<sp/><sp/>---</highlight></codeline>
+<codeline lineno="26"><highlight class="comment"><sp/>*</highlight></codeline>
+<codeline lineno="27"><highlight class="comment"><sp/>*<sp/><sp/>The<sp/>license<sp/>mentioned<sp/>above<sp/>concerns<sp/>the<sp/>source<sp/>code<sp/>only.<sp/>Using<sp/>the</highlight></codeline>
+<codeline lineno="28"><highlight class="comment"><sp/>*<sp/><sp/>EtherCAT<sp/>technology<sp/>and<sp/>brand<sp/>is<sp/>only<sp/>permitted<sp/>in<sp/>compliance<sp/>with<sp/>the</highlight></codeline>
+<codeline lineno="29"><highlight class="comment"><sp/>*<sp/><sp/>industrial<sp/>property<sp/>and<sp/>similar<sp/>rights<sp/>of<sp/>Beckhoff<sp/>Automation<sp/>GmbH.</highlight></codeline>
+<codeline lineno="30"><highlight class="comment"><sp/>*</highlight></codeline>
+<codeline lineno="31"><highlight class="comment"><sp/>*<sp/><sp/>Contact<sp/>information:<sp/>veysi.adin@kist.re.kr</highlight></codeline>
+<codeline lineno="32"><highlight class="comment"><sp/>*****************************************************************************/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="33"><highlight class="normal"></highlight><highlight class="comment">/*******************************************************************************</highlight></codeline>
+<codeline lineno="34"><highlight class="comment"><sp/>*<sp/>\file<sp/><sp/>xboxController.hpp</highlight></codeline>
+<codeline lineno="35"><highlight class="comment"><sp/>*<sp/>\brief<sp/>Contains<sp/>blueprint<sp/>for<sp/>reading<sp/>values<sp/>from<sp/>XboxController</highlight></codeline>
+<codeline lineno="36"><highlight class="comment"><sp/>*******************************************************************************/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="37"><highlight class="normal"></highlight></codeline>
+<codeline lineno="38"><highlight class="normal"></highlight><highlight class="comment">/*</highlight></codeline>
+<codeline lineno="39"><highlight class="comment"><sp/>*<sp/><sp/>Xbox<sp/>Controller<sp/>code<sp/>has<sp/>been<sp/>downloaded<sp/>from<sp/><sp/>;<sp/></highlight></codeline>
+<codeline lineno="40"><highlight class="comment"><sp/>*<sp/><sp/>https://github.com/msch26/scholtyssek-blogspot/tree/master/xboxControllerClient/src</highlight></codeline>
+<codeline lineno="41"><highlight class="comment"><sp/>*<sp/><sp/>as<sp/>a<sp/>C<sp/>code,<sp/>this<sp/>code<sp/>has<sp/>been<sp/>modified<sp/>to<sp/>C++<sp/>code,<sp/>and<sp/>class<sp/>implementation</highlight></codeline>
+<codeline lineno="42"><highlight class="comment"><sp/>*<sp/><sp/>added<sp/>by<sp/></highlight></codeline>
+<codeline lineno="43"><highlight class="comment"><sp/>*<sp/><sp/>VeysiADN</highlight></codeline>
+<codeline lineno="44"><highlight class="comment"><sp/>*<sp/><sp/>01/18/2020<sp/></highlight></codeline>
+<codeline lineno="45"><highlight class="comment"><sp/>*<sp/><sp/>veysi.adin@kist.re.kr</highlight></codeline>
+<codeline lineno="46"><highlight class="comment"><sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="47"><highlight class="normal"></highlight></codeline>
+<codeline lineno="48"><highlight class="normal"></highlight><highlight class="preprocessor">#ifndef<sp/>XBOXCONTROLLER_H_</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="49"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>XBOXCONTROLLER_H_</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="50"><highlight class="normal"></highlight></codeline>
+<codeline lineno="51"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;string&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="52"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;stdlib.h&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="53"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;stdio.h&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="54"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;fcntl.h&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="55"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;unistd.h&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="56"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;linux/joystick.h&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="57"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;iostream&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="58"><highlight class="normal"></highlight></codeline>
+<codeline lineno="59" refid="xbox__controller_8hpp_1a025d6a447faf5f30881d6d21e5c52fa3" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>IDENTIFIER_SIZE<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>64</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="60"><highlight class="normal"></highlight></codeline>
+<codeline lineno="61" refid="xbox__controller_8hpp_1a1bfa73db0d1540ddfa72672263d18b75" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>STICK_LEFT_X_ID<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>0x00</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="62" refid="xbox__controller_8hpp_1aa12616c0274d54562ba469913b665767" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>STICK_LEFT_Y_ID<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>0x01</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="63" refid="xbox__controller_8hpp_1ab6c624d967d0ac7aa1a236d3ed6e0267" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>STICK_RIGHT_X_ID<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>0x03</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="64" refid="xbox__controller_8hpp_1afdcf31d798b884f1fb39ef71072325c7" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>STICK_RIGHT_Y_ID<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>0x04</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="65" refid="xbox__controller_8hpp_1a50750cc713bbbe9e990029f1e2da5ddc" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>STICK_LEFT_TOP_ID<sp/><sp/><sp/><sp/><sp/><sp/><sp/>0x02</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="66" refid="xbox__controller_8hpp_1ae602118a05bfc7d81426fb39b79f58ee" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>STICK_RIGHT_TOP_ID<sp/><sp/><sp/><sp/><sp/><sp/>0x05</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="67" refid="xbox__controller_8hpp_1a4a54b9d8ee010031af4a4e35957841bb" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>CROSS_LR_ID<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>0x06</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="68" refid="xbox__controller_8hpp_1a63f3e159bc37e6cfdb68df412a3754cc" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>CROSS_FB_ID<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>0x07</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="69"><highlight class="normal"></highlight></codeline>
+<codeline lineno="70" refid="xbox__controller_8hpp_1ab704c1837b11dd7e83ea5d982fe1ac2c" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>BTN_BACK_ID<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>0x06</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="71" refid="xbox__controller_8hpp_1a9f5b957d375aa5fd2e629814f83be35f" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>BTN_START_ID<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>0x07</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="72" refid="xbox__controller_8hpp_1a601babd1ae35b0239485a91851121a35" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>BTN_XBOX_ID<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>0x08</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="73" refid="xbox__controller_8hpp_1a9252d68502ce7a03b9bed3181f68d6e9" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>BTN_LEFT_STICK_ID<sp/><sp/><sp/><sp/><sp/><sp/><sp/>0x09</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="74" refid="xbox__controller_8hpp_1a8a21f0c9656b12d1aa5b44f839338671" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>BTN_RIGHT_STICK_ID<sp/><sp/><sp/><sp/><sp/><sp/>0x0A</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="75"><highlight class="normal"></highlight></codeline>
+<codeline lineno="76" refid="xbox__controller_8hpp_1a64e0e34261a7e1535a68fcac1cc04301" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>BTN_A_ID<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>0x00</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="77" refid="xbox__controller_8hpp_1aec56c36cef3f48c9f99c783eee4cc032" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>BTN_B_ID<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>0x01</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="78" refid="xbox__controller_8hpp_1aacff461890e9ee43f80e7fa71ec94a22" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>BTN_X_ID<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>0x02</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="79" refid="xbox__controller_8hpp_1a13d54b67ea048ca8534c8d0b940e27f7" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>BTN_Y_ID<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>0x03</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="80" refid="xbox__controller_8hpp_1a7452478c6b04b5c19f1b4cd50e5b8ad4" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>BTN_TOP_LEFT_ID<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>0x04</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="81" refid="xbox__controller_8hpp_1afd87dd0992c19589efb19fafdc363829" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>BTN_TOP_RIGHT_ID<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>0x05</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="82"><highlight class="normal"></highlight></codeline>
+<codeline lineno="83" refid="xbox__controller_8hpp_1aa8270a1ba8295884567e0a0c93135f05" refkind="member"><highlight class="normal"></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/>std::string<sp/><ref refid="xbox__controller_8hpp_1aa8270a1ba8295884567e0a0c93135f05" kindref="member">s</ref><sp/>=<sp/></highlight><highlight class="stringliteral">&quot;/dev/input/js0&quot;</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="84" refid="xbox__controller_8hpp_1a80deb621e3f02622888567b3469abeec" refkind="member"><highlight class="normal"></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal">*<sp/><ref refid="xbox__controller_8hpp_1a80deb621e3f02622888567b3469abeec" kindref="member">XBOX_DEVICE</ref><sp/>=<sp/></highlight><highlight class="keyword">const_cast&lt;</highlight><highlight class="keywordtype">char</highlight><highlight class="normal">*</highlight><highlight class="keyword">&gt;</highlight><highlight class="normal">(<ref refid="xbox__controller_8hpp_1aa8270a1ba8295884567e0a0c93135f05" kindref="member">s</ref>.c_str());</highlight></codeline>
+<codeline lineno="86" refid="structXboxCtrl" refkind="compound"><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal">{</highlight></codeline>
+<codeline lineno="87" refid="structXboxCtrl_1a614cc098ba509676c84f08a584b3309a" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="structXboxCtrl_1a614cc098ba509676c84f08a584b3309a" kindref="member">numOfAxis</ref>;</highlight></codeline>
+<codeline lineno="88" refid="structXboxCtrl_1aeec27e0fccd9548d7a2cae13de9c2344" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="structXboxCtrl_1aeec27e0fccd9548d7a2cae13de9c2344" kindref="member">numOfButtons</ref>;</highlight></codeline>
+<codeline lineno="89" refid="structXboxCtrl_1a69461d449642e26247a407360a1f3df8" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>identifier[<ref refid="xbox__controller_8hpp_1a025d6a447faf5f30881d6d21e5c52fa3" kindref="member">IDENTIFIER_SIZE</ref>];</highlight></codeline>
+<codeline lineno="90" refid="structXboxCtrl_1ad72221e1c020fd09ed3d3f57dadc98c0" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="structXboxCtrl_1ad72221e1c020fd09ed3d3f57dadc98c0" kindref="member">stk_LeftX</ref>;<sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">/*<sp/>left<sp/>stick<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="91" refid="structXboxCtrl_1aa13e8d1320fbcb5a4b5c2702457c1ede" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="structXboxCtrl_1aa13e8d1320fbcb5a4b5c2702457c1ede" kindref="member">stk_LeftY</ref>;<sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">/*<sp/>left<sp/>stick<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="92" refid="structXboxCtrl_1af64460bf944389e21ef87613b805c608" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="structXboxCtrl_1af64460bf944389e21ef87613b805c608" kindref="member">stk_RightX</ref>;<sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">/*<sp/>right<sp/>stick<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="93" refid="structXboxCtrl_1a8fdcc3e9782c968c5b601ddfcfcc2e56" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="structXboxCtrl_1a8fdcc3e9782c968c5b601ddfcfcc2e56" kindref="member">stk_RightY</ref>;<sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="94" refid="structXboxCtrl_1a1ef4a2480bed36a80f0d63558abccf2d" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="structXboxCtrl_1a1ef4a2480bed36a80f0d63558abccf2d" kindref="member">stk_crossFB</ref>;<sp/><sp/><sp/><sp/></highlight><highlight class="comment">/*<sp/>cross<sp/>front/back<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="95" refid="structXboxCtrl_1ab56bc8814642749ec377c705ade2ed1c" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="structXboxCtrl_1ab56bc8814642749ec377c705ade2ed1c" kindref="member">stk_crossLR</ref>;<sp/><sp/><sp/><sp/></highlight><highlight class="comment">/*<sp/>cross<sp/>left/right<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="96" refid="structXboxCtrl_1a329be187b45781d11506e100ce83bfa7" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="structXboxCtrl_1a329be187b45781d11506e100ce83bfa7" kindref="member">stk_LeftTop</ref>;<sp/><sp/><sp/><sp/></highlight><highlight class="comment">/*<sp/>left<sp/>top<sp/>stick<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="97" refid="structXboxCtrl_1a4a6b7d55bbf8f4c7a1cf097ec718ce39" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="structXboxCtrl_1a4a6b7d55bbf8f4c7a1cf097ec718ce39" kindref="member">stk_RightTop</ref>;<sp/><sp/><sp/></highlight><highlight class="comment">/*<sp/>right<sp/>top<sp/>stick<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="98" refid="structXboxCtrl_1acc955e9578d9799efdb56f8b3b2faccf" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="structXboxCtrl_1acc955e9578d9799efdb56f8b3b2faccf" kindref="member">btn_back</ref>;</highlight></codeline>
+<codeline lineno="99" refid="structXboxCtrl_1a27acaec6f41a6ce09ed8c334943741ef" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="structXboxCtrl_1a27acaec6f41a6ce09ed8c334943741ef" kindref="member">btn_start</ref>;</highlight></codeline>
+<codeline lineno="100" refid="structXboxCtrl_1a59516fa9b89574713610bfd6c6594050" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="structXboxCtrl_1a59516fa9b89574713610bfd6c6594050" kindref="member">btn_leftStk</ref>;</highlight></codeline>
+<codeline lineno="101" refid="structXboxCtrl_1a4dc9902414e4a6583136be8f0bfb9d93" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="structXboxCtrl_1a4dc9902414e4a6583136be8f0bfb9d93" kindref="member">btn_rightStk</ref>;</highlight></codeline>
+<codeline lineno="102" refid="structXboxCtrl_1a23e2c14627e4afaf91148777dc06b5c4" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="structXboxCtrl_1a23e2c14627e4afaf91148777dc06b5c4" kindref="member">btn_A</ref>;</highlight></codeline>
+<codeline lineno="103" refid="structXboxCtrl_1a79154a2251847b148301974a742f1cb3" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="structXboxCtrl_1a79154a2251847b148301974a742f1cb3" kindref="member">btn_B</ref>;</highlight></codeline>
+<codeline lineno="104" refid="structXboxCtrl_1a3f53b90b89cca71b741d477c83fd875e" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="structXboxCtrl_1a3f53b90b89cca71b741d477c83fd875e" kindref="member">btn_X</ref>;</highlight></codeline>
+<codeline lineno="105" refid="structXboxCtrl_1af80858e8d653637951acb6c5a6cce79d" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="structXboxCtrl_1af80858e8d653637951acb6c5a6cce79d" kindref="member">btn_Y</ref>;</highlight></codeline>
+<codeline lineno="106" refid="structXboxCtrl_1abd1fbf64c1c4b6472db5b63893e5f7fd" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="structXboxCtrl_1abd1fbf64c1c4b6472db5b63893e5f7fd" kindref="member">btn_xbox</ref>;</highlight></codeline>
+<codeline lineno="107" refid="structXboxCtrl_1a251e939738bd7275d1e4f39cd249d047" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="structXboxCtrl_1a251e939738bd7275d1e4f39cd249d047" kindref="member">btn_leftTop</ref>;</highlight></codeline>
+<codeline lineno="108" refid="structXboxCtrl_1acbf3e967801344b1e43fa2511abfe80f" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="structXboxCtrl_1acbf3e967801344b1e43fa2511abfe80f" kindref="member">btn_rightTop</ref>;</highlight></codeline>
+<codeline lineno="109"><highlight class="normal">}<sp/><ref refid="structXboxCtrl" kindref="compound">XboxCtrl</ref>;</highlight></codeline>
+<codeline lineno="114" refid="classXboxController" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal"><ref refid="classXboxController" kindref="compound">XboxController</ref>{</highlight></codeline>
+<codeline lineno="115"><highlight class="normal"></highlight><highlight class="keyword">public</highlight><highlight class="normal">:<sp/></highlight></codeline>
+<codeline lineno="116" refid="classXboxController_1add0a65770c7c889f31985b72310919f5" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal">js_event<sp/><ref refid="classXboxController_1add0a65770c7c889f31985b72310919f5" kindref="member">js</ref>;</highlight></codeline>
+<codeline lineno="117" refid="classXboxController_1a404707135fe8b57f47a69f50696745eb" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/><ref refid="classXboxController_1a404707135fe8b57f47a69f50696745eb" kindref="member">joysickIdentifier</ref>[<ref refid="xbox__controller_8hpp_1a025d6a447faf5f30881d6d21e5c52fa3" kindref="member">IDENTIFIER_SIZE</ref>];</highlight></codeline>
+<codeline lineno="118" refid="classXboxController_1a3c9b73bc3d34c01124d39f8106fb1797" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="classXboxController_1a3c9b73bc3d34c01124d39f8106fb1797" kindref="member">fd</ref><sp/>=<sp/>-1;</highlight></codeline>
+<codeline lineno="119" refid="classXboxController_1a39ff74ed1db88d39502f6f449e1d7ef8" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="structXboxCtrl" kindref="compound">XboxCtrl</ref>*<sp/><ref refid="classXboxController_1a39ff74ed1db88d39502f6f449e1d7ef8" kindref="member">xbox</ref><sp/>=<sp/>NULL;</highlight></codeline>
+<codeline lineno="126"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="classXboxController_1a7316149d1f29745d69e840396b9c42e8" kindref="member">InitXboxController</ref>(</highlight><highlight class="keywordtype">char</highlight><highlight class="normal">*<sp/>dev);</highlight></codeline>
+<codeline lineno="132"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classXboxController_1a5eb229dd625ad35b112d2e8971b9d99b" kindref="member">DeinitXboxController</ref>(<ref refid="structXboxCtrl" kindref="compound">XboxCtrl</ref>*<sp/><ref refid="classXboxController_1a39ff74ed1db88d39502f6f449e1d7ef8" kindref="member">xbox</ref>);</highlight></codeline>
+<codeline lineno="138"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="structXboxCtrl" kindref="compound">XboxCtrl</ref>*<sp/><ref refid="classXboxController_1a56a862aac6ac80484fe32d7ed9109be3" kindref="member">GetXboxDataStruct</ref>(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="144"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classXboxController_1ada9cd6d13d7d9e484182d24ad2257802" kindref="member">ReadXboxControllerInformation</ref>(<ref refid="structXboxCtrl" kindref="compound">XboxCtrl</ref>*<sp/><ref refid="classXboxController_1a39ff74ed1db88d39502f6f449e1d7ef8" kindref="member">xbox</ref>);</highlight></codeline>
+<codeline lineno="150"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classXboxController_1ac0c2ab3c992a08c438347c237a2d506c" kindref="member">ReadXboxData</ref>(<ref refid="structXboxCtrl" kindref="compound">XboxCtrl</ref>*<sp/><ref refid="classXboxController_1a39ff74ed1db88d39502f6f449e1d7ef8" kindref="member">xbox</ref>);</highlight></codeline>
+<codeline lineno="157"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classXboxController_1ad621f825b7eb9b7b718ec6cb5d810624" kindref="member">SetXboxCtrlValue</ref>(<ref refid="structXboxCtrl" kindref="compound">XboxCtrl</ref>*<sp/><ref refid="classXboxController_1a39ff74ed1db88d39502f6f449e1d7ef8" kindref="member">xbox</ref>,<sp/></highlight><highlight class="keyword">struct</highlight><highlight class="normal"><sp/>js_event*<sp/><ref refid="classXboxController_1add0a65770c7c889f31985b72310919f5" kindref="member">js</ref>);</highlight></codeline>
+<codeline lineno="163"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classXboxController_1abc21e4c2ca8c9bd1ca03e6cfeea3a7d2" kindref="member">PrintXboxCtrlValues</ref>(<ref refid="structXboxCtrl" kindref="compound">XboxCtrl</ref>*<sp/><ref refid="classXboxController_1a39ff74ed1db88d39502f6f449e1d7ef8" kindref="member">xbox</ref>);</highlight></codeline>
+<codeline lineno="164"><highlight class="normal">};</highlight></codeline>
+<codeline lineno="165"><highlight class="normal"></highlight><highlight class="preprocessor">#endif<sp/></highlight><highlight class="comment">/*<sp/>XBOXCONTROLLER_H_<sp/>*/</highlight><highlight class="preprocessor"></highlight></codeline>
+    </programlisting>
+    <location file="include/xbox_controller.hpp"/>
+  </compounddef>
+</doxygen>

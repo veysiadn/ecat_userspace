@@ -12,5 +12,5 @@ var dir_d44c64559bbebec7f509842c48db8b23 =
     ] ],
     [ "object_dictionary.hpp", "object__dictionary_8hpp.html", "object__dictionary_8hpp" ],
     [ "timing.hpp", "timing_8hpp.html", "timing_8hpp" ],
-    [ "xboxController.hpp", "xboxController_8hpp.html", "xboxController_8hpp" ]
+    [ "xbox_controller.hpp", "xbox__controller_8hpp.html", "xbox__controller_8hpp" ]
 ];

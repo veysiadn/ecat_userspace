@@ -1,0 +1,25 @@
+var structXboxCtrl =
+[
+    [ "btn_A", "structXboxCtrl.html#a23e2c14627e4afaf91148777dc06b5c4", null ],
+    [ "btn_B", "structXboxCtrl.html#a79154a2251847b148301974a742f1cb3", null ],
+    [ "btn_back", "structXboxCtrl.html#acc955e9578d9799efdb56f8b3b2faccf", null ],
+    [ "btn_leftStk", "structXboxCtrl.html#a59516fa9b89574713610bfd6c6594050", null ],
+    [ "btn_leftTop", "structXboxCtrl.html#a251e939738bd7275d1e4f39cd249d047", null ],
+    [ "btn_rightStk", "structXboxCtrl.html#a4dc9902414e4a6583136be8f0bfb9d93", null ],
+    [ "btn_rightTop", "structXboxCtrl.html#acbf3e967801344b1e43fa2511abfe80f", null ],
+    [ "btn_start", "structXboxCtrl.html#a27acaec6f41a6ce09ed8c334943741ef", null ],
+    [ "btn_X", "structXboxCtrl.html#a3f53b90b89cca71b741d477c83fd875e", null ],
+    [ "btn_xbox", "structXboxCtrl.html#abd1fbf64c1c4b6472db5b63893e5f7fd", null ],
+    [ "btn_Y", "structXboxCtrl.html#af80858e8d653637951acb6c5a6cce79d", null ],
+    [ "identifier", "structXboxCtrl.html#a69461d449642e26247a407360a1f3df8", null ],
+    [ "numOfAxis", "structXboxCtrl.html#a614cc098ba509676c84f08a584b3309a", null ],
+    [ "numOfButtons", "structXboxCtrl.html#aeec27e0fccd9548d7a2cae13de9c2344", null ],
+    [ "stk_crossFB", "structXboxCtrl.html#a1ef4a2480bed36a80f0d63558abccf2d", null ],
+    [ "stk_crossLR", "structXboxCtrl.html#ab56bc8814642749ec377c705ade2ed1c", null ],
+    [ "stk_LeftTop", "structXboxCtrl.html#a329be187b45781d11506e100ce83bfa7", null ],
+    [ "stk_LeftX", "structXboxCtrl.html#ad72221e1c020fd09ed3d3f57dadc98c0", null ],
+    [ "stk_LeftY", "structXboxCtrl.html#aa13e8d1320fbcb5a4b5c2702457c1ede", null ],
+    [ "stk_RightTop", "structXboxCtrl.html#a4a6b7d55bbf8f4c7a1cf097ec718ce39", null ],
+    [ "stk_RightX", "structXboxCtrl.html#af64460bf944389e21ef87613b805c608", null ],
+    [ "stk_RightY", "structXboxCtrl.html#a8fdcc3e9782c968c5b601ddfcfcc2e56", null ]
+];

@@ -42,10 +42,10 @@ var searchData=
   ['sm_5fswitch_5fon_5fdisabled_39',['SM_SWITCH_ON_DISABLED',['../object__dictionary_8hpp.html#abc0686dfb3b057c886ccc7beda3f5cbf',1,'object_dictionary.hpp']]],
   ['sm_5fswitch_5fon_5fdisabled_5f2_40',['SM_SWITCH_ON_DISABLED_2',['../object__dictionary_8hpp.html#a51b499c5f5420a5c1ccd867fd0291ba0',1,'object_dictionary.hpp']]],
   ['sm_5fswitched_5fon_41',['SM_SWITCHED_ON',['../object__dictionary_8hpp.html#a3d754b0fac2166c397ddacace1838784',1,'object_dictionary.hpp']]],
-  ['stick_5fleft_5ftop_5fid_42',['STICK_LEFT_TOP_ID',['../xboxController_8hpp.html#a50750cc713bbbe9e990029f1e2da5ddc',1,'xboxController.hpp']]],
-  ['stick_5fleft_5fx_5fid_43',['STICK_LEFT_X_ID',['../xboxController_8hpp.html#a1bfa73db0d1540ddfa72672263d18b75',1,'xboxController.hpp']]],
-  ['stick_5fleft_5fy_5fid_44',['STICK_LEFT_Y_ID',['../xboxController_8hpp.html#aa12616c0274d54562ba469913b665767',1,'xboxController.hpp']]],
-  ['stick_5fright_5ftop_5fid_45',['STICK_RIGHT_TOP_ID',['../xboxController_8hpp.html#ae602118a05bfc7d81426fb39b79f58ee',1,'xboxController.hpp']]],
-  ['stick_5fright_5fx_5fid_46',['STICK_RIGHT_X_ID',['../xboxController_8hpp.html#ab6c624d967d0ac7aa1a236d3ed6e0267',1,'xboxController.hpp']]],
-  ['stick_5fright_5fy_5fid_47',['STICK_RIGHT_Y_ID',['../xboxController_8hpp.html#afdcf31d798b884f1fb39ef71072325c7',1,'xboxController.hpp']]]
+  ['stick_5fleft_5ftop_5fid_42',['STICK_LEFT_TOP_ID',['../xbox__controller_8hpp.html#a50750cc713bbbe9e990029f1e2da5ddc',1,'xbox_controller.hpp']]],
+  ['stick_5fleft_5fx_5fid_43',['STICK_LEFT_X_ID',['../xbox__controller_8hpp.html#a1bfa73db0d1540ddfa72672263d18b75',1,'xbox_controller.hpp']]],
+  ['stick_5fleft_5fy_5fid_44',['STICK_LEFT_Y_ID',['../xbox__controller_8hpp.html#aa12616c0274d54562ba469913b665767',1,'xbox_controller.hpp']]],
+  ['stick_5fright_5ftop_5fid_45',['STICK_RIGHT_TOP_ID',['../xbox__controller_8hpp.html#ae602118a05bfc7d81426fb39b79f58ee',1,'xbox_controller.hpp']]],
+  ['stick_5fright_5fx_5fid_46',['STICK_RIGHT_X_ID',['../xbox__controller_8hpp.html#ab6c624d967d0ac7aa1a236d3ed6e0267',1,'xbox_controller.hpp']]],
+  ['stick_5fright_5fy_5fid_47',['STICK_RIGHT_Y_ID',['../xbox__controller_8hpp.html#afdcf31d798b884f1fb39ef71072325c7',1,'xbox_controller.hpp']]]
 ];

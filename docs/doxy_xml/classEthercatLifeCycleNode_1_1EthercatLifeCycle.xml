@@ -503,7 +503,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/ecat_lifecycle.hpp" line="172" column="14" bodyfile="src/ecat_lifecycle.cpp" bodystart="837" bodyend="847"/>
+        <location file="include/ecat_lifecycle.hpp" line="172" column="14" bodyfile="src/ecat_lifecycle.cpp" bodystart="839" bodyend="845"/>
       </memberdef>
       <memberdef kind="function" id="classEthercatLifeCycleNode_1_1EthercatLifeCycle_1a1940951e1d285e7ce193d7444474dca7" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>void</type>
@@ -521,7 +521,7 @@
 <para>WRITE YOUR CUSTOM CONTROL ALGORITHM HERE IF YOU WANT TO USE VELOCITY MODE</para>
 <para>YOU CAN CHECK EXAMPLE CONTROL CODE BELOW.</para>
         </inbodydescription>
-        <location file="include/ecat_lifecycle.hpp" line="178" column="14" bodyfile="src/ecat_lifecycle.cpp" bodystart="1021" bodyend="1048"/>
+        <location file="include/ecat_lifecycle.hpp" line="178" column="14" bodyfile="src/ecat_lifecycle.cpp" bodystart="1020" bodyend="1048"/>
       </memberdef>
       <memberdef kind="function" id="classEthercatLifeCycleNode_1_1EthercatLifeCycle_1aa8678dbf6a5a60844c614553aaa6d484" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>void</type>
@@ -537,7 +537,7 @@
         <inbodydescription>
 <para>WRITE YOUR CUSTOM CONTROL ALGORITHM, VARIABLES DECLARATAION HERE, LIKE IN EXAMPLE BELOW.</para>
         </inbodydescription>
-        <location file="include/ecat_lifecycle.hpp" line="184" column="14" bodyfile="src/ecat_lifecycle.cpp" bodystart="937" bodyend="1019"/>
+        <location file="include/ecat_lifecycle.hpp" line="184" column="14" bodyfile="src/ecat_lifecycle.cpp" bodystart="936" bodyend="1018"/>
       </memberdef>
       <memberdef kind="function" id="classEthercatLifeCycleNode_1_1EthercatLifeCycle_1a8d762bf02972f1f318148175d5641317" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>void</type>
@@ -553,7 +553,7 @@
         <inbodydescription>
 <para>WRITE YOUR CUSTOM CONTROL ALGORITHM, VARIABLES DECLARATAION HERE, LIKE IN EXAMPLE BELOW. KEEP IN MIND THAT YOU WILL HAVE TO WAIT FOR THE MOTION TO FINISH IN POSITION MODE, THEREFORE YOU HAVE TO CHECK 10th BIT OF STATUS WORD TO CHECK WHETHER TARGET IS REACHED OR NOT.</para>
         </inbodydescription>
-        <location file="include/ecat_lifecycle.hpp" line="190" column="14" bodyfile="src/ecat_lifecycle.cpp" bodystart="627" bodyend="712"/>
+        <location file="include/ecat_lifecycle.hpp" line="190" column="14" bodyfile="src/ecat_lifecycle.cpp" bodystart="627" bodyend="714"/>
       </memberdef>
       <memberdef kind="function" id="classEthercatLifeCycleNode_1_1EthercatLifeCycle_1a434a3dc8581b010974d60b24e4ab7df2" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>void</type>
@@ -569,7 +569,7 @@
         <inbodydescription>
 <para>WRITE YOUR CUSTOM CONTROL ALGORITHM, VARIABLES DECLARATAION HERE, LIKE IN EXAMPLE BELOW.</para>
         </inbodydescription>
-        <location file="include/ecat_lifecycle.hpp" line="196" column="14" bodyfile="src/ecat_lifecycle.cpp" bodystart="873" bodyend="935"/>
+        <location file="include/ecat_lifecycle.hpp" line="196" column="14" bodyfile="src/ecat_lifecycle.cpp" bodystart="871" bodyend="934"/>
       </memberdef>
       <memberdef kind="function" id="classEthercatLifeCycleNode_1_1EthercatLifeCycle_1ac81a74790509a9912c14982e9fa58d66" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>void</type>
@@ -599,7 +599,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/ecat_lifecycle.hpp" line="206" column="14" bodyfile="src/ecat_lifecycle.cpp" bodystart="714" bodyend="761"/>
+        <location file="include/ecat_lifecycle.hpp" line="206" column="14" bodyfile="src/ecat_lifecycle.cpp" bodystart="716" bodyend="763"/>
       </memberdef>
       <memberdef kind="function" id="classEthercatLifeCycleNode_1_1EthercatLifeCycle_1a6bdee6a9dc5d22b58429a9ee507c9fe2" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>void</type>
@@ -631,7 +631,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/ecat_lifecycle.hpp" line="218" column="14" bodyfile="src/ecat_lifecycle.cpp" bodystart="849" bodyend="870"/>
+        <location file="include/ecat_lifecycle.hpp" line="218" column="14" bodyfile="src/ecat_lifecycle.cpp" bodystart="847" bodyend="868"/>
       </memberdef>
       <memberdef kind="function" id="classEthercatLifeCycleNode_1_1EthercatLifeCycle_1a6187ef3af76844b80e7a3ae399fa8460" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>int</type>
@@ -650,7 +650,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/ecat_lifecycle.hpp" line="224" column="13" bodyfile="src/ecat_lifecycle.cpp" bodystart="763" bodyend="799"/>
+        <location file="include/ecat_lifecycle.hpp" line="224" column="13" bodyfile="src/ecat_lifecycle.cpp" bodystart="765" bodyend="801"/>
       </memberdef>
       <memberdef kind="function" id="classEthercatLifeCycleNode_1_1EthercatLifeCycle_1a1367595ced86d25b6299ce281f1e1607" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>int</type>
@@ -665,7 +665,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/ecat_lifecycle.hpp" line="231" column="13" bodyfile="src/ecat_lifecycle.cpp" bodystart="801" bodyend="835"/>
+        <location file="include/ecat_lifecycle.hpp" line="231" column="13" bodyfile="src/ecat_lifecycle.cpp" bodystart="803" bodyend="837"/>
       </memberdef>
       <memberdef kind="function" id="classEthercatLifeCycleNode_1_1EthercatLifeCycle_1a620253b4fe34f13f06a60f1fb12a81cc" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>int</type>

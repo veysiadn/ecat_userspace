@@ -26,12 +26,11 @@ set(node_name "ecat_node")
 ## Don't forget to add packages if you use it in your code, otherwise you'll get build errors.
 
 ## Output executable name and requied cpp files for executable
-add_executable(ecat_node src/main.cpp
-                         src/ecat_node.cpp
-                         src/ecat_slave.cpp
-                         src/ecat_lifecycle.cpp
-                         src/timing.cpp
-			 src/xboxController.cpp)
+file(GLOB ecat_node_SRC
+     "src/*.cpp"
+)
+
+add_executable(ecat_node ${ecat_node_SRC})
 
 ## Specifying include directories for ecat_node specifically by using definitions above.
 ## target include directories adds include directory for specific target executable.

@@ -106,7 +106,7 @@ typedef struct {
 	int btn_xbox;
 	int btn_leftTop;
 	int btn_rightTop;
-} xboxCtrl;
+} XboxCtrl;
 /**
  *  \class   XboxController
  *  \brief   Class for opening joystick and reading values from XboxController
@@ -116,50 +116,50 @@ public:
 	struct js_event js;
 	char joysickIdentifier[IDENTIFIER_SIZE];
 	int fd = -1;
-	xboxCtrl* xbox = NULL;
+	XboxCtrl* xbox = NULL;
 	/**
 	 * @brief Opens xbox controller via file descriptor.
 	 * 
 	 * @param dev name of the device to be open.
 	 * @return 0 if successfull, otherwise -1. 
 	 */
-	int initXboxController(char* dev);
+	int InitXboxController(char* dev);
 	/**
 	 * @brief Closes opened controller.
 	 * 
 	 * @param xbox controller to be closed.
 	 */
-	void deinitXboxController(xboxCtrl* xbox);
+	void DeinitXboxController(XboxCtrl* xbox);
 	/**
 	 * @brief Allocate mememory for XboxDataStruct
 	 * 
 	 * @return xboxCtrl* 
 	 */
-	xboxCtrl* getXboxDataStruct(void);
+	XboxCtrl* GetXboxDataStruct(void);
 	/**
 	 * @brief Reads xbox controller information, e.g number of axis and buttons.
 	 * 
 	 * @param xbox xbox instance to read information from.
 	 */
-	void readXboxControllerInformation(xboxCtrl* xbox);
+	void ReadXboxControllerInformation(XboxCtrl* xbox);
 	/**
 	 * @brief Reads actual values from xbox controller such as axis data and button data.
 	 * 
 	 * @param xbox xbox instance to read values from.
 	 */
-	void readXboxData(xboxCtrl* xbox);
+	void ReadXboxData(XboxCtrl* xbox);
 	/**
 	 * @brief Assing acquired values to controller struct.
 	 * 
 	 * @param xbox instance to write values acquired from xbox controller.
 	 * @param js button or axis event
 	 */
-	void setXboxCtrlValue(xboxCtrl* xbox, struct js_event* js);
+	void SetXboxCtrlValue(XboxCtrl* xbox, struct js_event* js);
 	/**
 	 * @brief Prints acquired values from xbox controller.
 	 * 
 	 * @param xbox instance.
 	 */
-	void printXboxCtrlValues(xboxCtrl* xbox);
+	void PrintXboxCtrlValues(XboxCtrl* xbox);
 };
 #endif /* XBOXCONTROLLER_H_ */

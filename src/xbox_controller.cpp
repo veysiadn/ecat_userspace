@@ -2,16 +2,16 @@
  * xboxController.c
  *
  */
-#include "xboxController.hpp"
+#include "xbox_controller.hpp"
 
 
 
-void XboxController::deinitXboxController(xboxCtrl* xbox){
+void XboxController::DeinitXboxController(XboxCtrl* xbox){
 	free(xbox);
 	close(fd);
 }
 
-int XboxController::initXboxController(char* dev){
+int XboxController::InitXboxController(char* dev){
 	if(fd == -1){
 		if ((fd = open(dev, O_RDONLY)) < 0) {
 			printf("device %s could not opened.\n", dev);
@@ -22,15 +22,15 @@ int XboxController::initXboxController(char* dev){
 	return 0;
 }
 
-xboxCtrl* XboxController::getXboxDataStruct(){
+XboxCtrl* XboxController::GetXboxDataStruct(){
 	if(xbox == NULL){
 		printf("Allocationg memory for Xbox\n");
-		xbox = (xboxCtrl*) malloc(sizeof(xboxCtrl));
+		xbox = (XboxCtrl*) malloc(sizeof(XboxCtrl));
 	}
 	return xbox;
 }
 
-void XboxController::readXboxControllerInformation(xboxCtrl* xbox){
+void XboxController::ReadXboxControllerInformation(XboxCtrl* xbox){
 	ioctl(fd, JSIOCGAXES, xbox->numOfAxis);
 	ioctl(fd, JSIOCGBUTTONS, xbox->numOfButtons);
 	ioctl(fd, JSIOCGNAME(IDENTIFIER_SIZE), xbox->identifier);
@@ -44,11 +44,11 @@ void XboxController::readXboxControllerInformation(xboxCtrl* xbox){
 	}
 }
 
-void XboxController::readXboxData(xboxCtrl* xbox){
+void XboxController::ReadXboxData(XboxCtrl* xbox){
 	read(fd, &js, sizeof(struct js_event));
-	setXboxCtrlValue(xbox, &js);
+	SetXboxCtrlValue(xbox, &js);
 }
-void XboxController::setXboxCtrlValue(xboxCtrl* xbox, struct js_event* js) {
+void XboxController::SetXboxCtrlValue(XboxCtrl* xbox, struct js_event* js) {
 	int event = js->type & ~JS_EVENT_INIT;
 
 	if (event == JS_EVENT_AXIS) {
@@ -116,7 +116,7 @@ void XboxController::setXboxCtrlValue(xboxCtrl* xbox, struct js_event* js) {
 		}
 }
 
-void XboxController::printXboxCtrlValues(xboxCtrl* xbox) {
+void XboxController::PrintXboxCtrlValues(XboxCtrl* xbox) {
 	/* print sticks values */
 	printf("X0: %6d Y0: %6d Z0: %6d ", xbox->stk_LeftX, xbox->stk_LeftY, xbox->stk_LeftTop);
 	printf("X1: %6d Y1: %6d Z1: %6d ", xbox->stk_RightX, xbox->stk_RightY, xbox->stk_RightTop); // right stick

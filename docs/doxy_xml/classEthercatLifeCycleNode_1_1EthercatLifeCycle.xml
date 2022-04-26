@@ -720,6 +720,7 @@
       </memberdef>
       </sectiondef>
     <briefdescription>
+<para>Class for managing real-time EtherCAT communication. </para>
     </briefdescription>
     <detaileddescription>
     </detaileddescription>

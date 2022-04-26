@@ -7,7 +7,7 @@
     </briefdescription>
     <detaileddescription>
 <para><anchor id="index_1md_README"/> Welcome to EtherCAT user space application by Veysi ADIN &amp; Chunwoo Kim.This repository contains EtherCAT based control software using CoE and CiA402 standard to control motors and receive sensor data, by wrapping IgH EtherCAT library functions. This implementation can be used with any robotic systems supporting EtherCAT protocol with small modifications. It contains EtherCAT real-time thread with priority of 98. And USB communication with Xbox <ref refid="structController" kindref="compound">Controller</ref>. You can use different type of user input device as well with small modifications.</para>
-<para>Please check prerequisites, guides, links and documentations before installation, or using this control software. To be able to build this control software you will need to install IgH EtherCAT library, and if you need real-time performance you will need to install RT_PREEMPTH patch or Xenomai kernel. You can follow links below for the installation of required library and RT_PREEMPT installation.</para>
+<para>Please check prerequisites, guides, links and documentations before installation, or using this control software. To be able to build this control software you will need to install IgH EtherCAT library, and if you need real-time performance you will need to install RT_PREEMPT patch or Xenomai kernel. You can follow links below for the installation of required library and RT_PREEMPT installation.</para>
 <sect1 id="index_1autotoc_md1">
 <title>Prerequisites</title>
 <para><itemizedlist>
@@ -57,7 +57,7 @@
 <sect2 id="index_1autotoc_md6">
 <title>STEP 3 :</title>
 <para><itemizedlist>
-<listitem><para>Change configuration parameters for your motor in <ref refid="ecat__node_8cpp" kindref="compound">ecat_node.cpp</ref> file based on your operation mode. For example if you want to use velocity mode you can change parameters in the SetProfileVelocityParametersAll(ProfileVelocityParam&amp; P) function based on your needs.</para>
+<listitem><para>Change configuration parameters for your motor in <ulink url="https://veysiadn.github.io/ecat_userspace/classEthercatLifeCycleNode_1_1EthercatLifeCycle.html#a620253b4fe34f13f06a60f1fb12a81cc">SetConfigurationParameters()</ulink> function in <ref refid="ecat__lifecycle_8cpp" kindref="compound">ecat_lifecycle.cpp</ref> file, based on your operation mode. You can check example page for detailed instructions on custom modifications, in Examples tab.</para>
 </listitem><listitem><para>Change control parameters based on your selected operation mode in <ref refid="ecat__lifecycle_8cpp" kindref="compound">ecat_lifecycle.cpp</ref> file in the Update functions. For example if you want to use velocity mode in your control loop, you can change function content of UpdateVelocityModeParameters();</para>
 </listitem></itemizedlist>
 </para>

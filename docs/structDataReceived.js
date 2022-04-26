@@ -8,6 +8,7 @@ var structDataReceived =
     [ "com_status", "structDataReceived.html#afbecab761ef895bc2ce2d89009ed480f", null ],
     [ "control_word", "structDataReceived.html#a04e68310e8cf7afd0632fbd430781c7b", null ],
     [ "emergency_switch_val", "structDataReceived.html#a9d271bbf7f372ed848260ce8d6bd3025", null ],
+    [ "error_code", "structDataReceived.html#a7299f7a07f22df5fa4c9b735773d8a66", null ],
     [ "left_limit_switch_val", "structDataReceived.html#a74e42ee4acd6f2b81cf1052368e383c7", null ],
     [ "max_tor", "structDataReceived.html#a4a984c4523ae4b15c39e31e89455cf55", null ],
     [ "op_mode", "structDataReceived.html#a8cd76bf57de52389252c7c46035f5dfc", null ],

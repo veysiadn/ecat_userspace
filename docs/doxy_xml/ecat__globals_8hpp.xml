@@ -262,7 +262,7 @@
       </memberdef>
       <memberdef kind="define" id="ecat__globals_8hpp_1abc038b9c4db3369a55eec862a3fac0d3" prot="public" static="no">
         <name>VELOCITY_MODE</name>
-        <initializer>1</initializer>
+        <initializer>0</initializer>
         <briefdescription>
 <para>set this to 1 if you want to use it in velocity mode (and set other modes 0) </para>
         </briefdescription>
@@ -311,7 +311,7 @@
       </memberdef>
       <memberdef kind="define" id="ecat__globals_8hpp_1a91d01279ad427a31705ffa6c88ecfd70" prot="public" static="no">
         <name>CYCLIC_TORQUE_MODE</name>
-        <initializer>0</initializer>
+        <initializer>1</initializer>
         <briefdescription>
 <para>set this to 1 if you want to use it in cyclic synchronous torque mode (and set other modes 0) </para>
         </briefdescription>
@@ -1831,11 +1831,11 @@
 <codeline lineno="90" refid="ecat__globals_8hpp_1a84142cd3e3bf14c4ecd4b6707a808c39" refkind="member"><highlight class="preprocessor">#define<sp/>FREQUENCY<sp/><sp/><sp/><sp/><sp/><sp/><sp/>1000<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="91"><highlight class="normal"></highlight></codeline>
 <codeline lineno="93" refid="ecat__globals_8hpp_1a68f5d933f0593175f4bd579e353d8f54" refkind="member"><highlight class="preprocessor">#define<sp/>MEASURE_TIMING<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>0<sp/><sp/><sp/><sp/></highlight></codeline>
-<codeline lineno="95" refid="ecat__globals_8hpp_1abc038b9c4db3369a55eec862a3fac0d3" refkind="member"><highlight class="preprocessor">#define<sp/>VELOCITY_MODE<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>1<sp/></highlight></codeline>
+<codeline lineno="95" refid="ecat__globals_8hpp_1abc038b9c4db3369a55eec862a3fac0d3" refkind="member"><highlight class="preprocessor">#define<sp/>VELOCITY_MODE<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>0<sp/></highlight></codeline>
 <codeline lineno="97" refid="ecat__globals_8hpp_1a41325cb83383d2eb13badf1c991b76b6" refkind="member"><highlight class="preprocessor">#define<sp/>POSITION_MODE<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>0<sp/><sp/><sp/><sp/></highlight></codeline>
 <codeline lineno="99" refid="ecat__globals_8hpp_1a43e6b3b5ae4e9a94c798ed011e44c876" refkind="member"><highlight class="preprocessor">#define<sp/>CYCLIC_POSITION_MODE<sp/><sp/><sp/>0<sp/><sp/><sp/><sp/></highlight></codeline>
 <codeline lineno="101" refid="ecat__globals_8hpp_1aabaec371cf83290667d5f5686f3cdb05" refkind="member"><highlight class="preprocessor">#define<sp/>CYCLIC_VELOCITY_MODE<sp/><sp/><sp/>0<sp/><sp/><sp/><sp/></highlight></codeline>
-<codeline lineno="103" refid="ecat__globals_8hpp_1a91d01279ad427a31705ffa6c88ecfd70" refkind="member"><highlight class="preprocessor">#define<sp/>CYCLIC_TORQUE_MODE<sp/><sp/><sp/><sp/><sp/>0<sp/><sp/></highlight></codeline>
+<codeline lineno="103" refid="ecat__globals_8hpp_1a91d01279ad427a31705ffa6c88ecfd70" refkind="member"><highlight class="preprocessor">#define<sp/>CYCLIC_TORQUE_MODE<sp/><sp/><sp/><sp/><sp/>1<sp/><sp/></highlight></codeline>
 <codeline lineno="105" refid="ecat__globals_8hpp_1a1d48656bc4df51f3d8b17da91494a981" refkind="member"><highlight class="preprocessor">#define<sp/>DISTRIBUTED_CLOCK<sp/><sp/><sp/><sp/><sp/><sp/>1<sp/><sp/><sp/><sp/></highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="106"><highlight class="normal"></highlight><highlight class="comment">/*****************************************************************************/</highlight></codeline>
 <codeline lineno="109" refid="ecat__globals_8hpp_1a1b5f0a2cda8866a2a87331026ac8bd9a" refkind="member"><highlight class="preprocessor">#define<sp/>GEAR_RATIO<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>103</highlight></codeline>

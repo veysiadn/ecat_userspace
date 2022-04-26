@@ -245,7 +245,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="src/main.cpp" line="76" column="6" bodyfile="src/main.cpp" bodystart="76" bodyend="98" declfile="src/main.cpp" declline="8" declcolumn="6"/>
+        <location file="src/main.cpp" line="75" column="6" bodyfile="src/main.cpp" bodystart="75" bodyend="97" declfile="src/main.cpp" declline="8" declcolumn="6"/>
       </memberdef>
       <memberdef kind="function" id="main_8cpp_1a3c04138a5bfe5d72780bb7e82a18e627" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>int</type>
@@ -266,7 +266,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="src/main.cpp" line="10" column="5" bodyfile="src/main.cpp" bodystart="10" bodyend="66"/>
+        <location file="src/main.cpp" line="10" column="5" bodyfile="src/main.cpp" bodystart="10" bodyend="65"/>
       </memberdef>
       <memberdef kind="function" id="main_8cpp_1adfe90e1a94b18921c8a8ec76d94edbd4" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>void</type>
@@ -282,7 +282,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="src/main.cpp" line="69" column="6" bodyfile="src/main.cpp" bodystart="69" bodyend="74"/>
+        <location file="src/main.cpp" line="68" column="6" bodyfile="src/main.cpp" bodystart="68" bodyend="73"/>
       </memberdef>
       </sectiondef>
     <briefdescription>
@@ -347,47 +347,46 @@
 <codeline lineno="55"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>ecat_lifecycle_node-&gt;controller_.blue_button_<sp/>=<sp/>target_val;</highlight></codeline>
 <codeline lineno="56"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>ecat_lifecycle_node-&gt;controller_.green_button_<sp/>=<sp/>target_val;</highlight></codeline>
 <codeline lineno="57"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>ecat_lifecycle_node-&gt;controller_.yellow_button_<sp/>=<sp/>target_val;</highlight></codeline>
-<codeline lineno="58"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>ecat_lifecycle_node-&gt;controller_.xbox_button_<sp/>=<sp/>target_val;<sp/></highlight></codeline>
-<codeline lineno="59"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>ecat_lifecycle_node-&gt;controller_.left_rb_button_<sp/>=<sp/>target_val;</highlight></codeline>
-<codeline lineno="60"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>ecat_lifecycle_node-&gt;controller_.right_rb_button_<sp/>=<sp/>target_val;</highlight></codeline>
-<codeline lineno="61"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>nanosleep((</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">struct</highlight><highlight class="normal"><sp/>timespec[]){0,<ref refid="ecat__globals_8hpp_1ab495f8313ac709722de636c17e8a7381" kindref="member">PERIOD_NS</ref>*10},NULL);</highlight></codeline>
-<codeline lineno="62"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>}<sp/></highlight></codeline>
-<codeline lineno="63"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
-<codeline lineno="64"><highlight class="normal"><sp/><sp/></highlight></codeline>
-<codeline lineno="65"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>0;</highlight></codeline>
-<codeline lineno="66"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="58"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>ecat_lifecycle_node-&gt;controller_.left_rb_button_<sp/>=<sp/>target_val;</highlight></codeline>
+<codeline lineno="59"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>ecat_lifecycle_node-&gt;controller_.right_rb_button_<sp/>=<sp/>target_val;</highlight></codeline>
+<codeline lineno="60"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>nanosleep((</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">struct</highlight><highlight class="normal"><sp/>timespec[]){0,<ref refid="ecat__globals_8hpp_1ab495f8313ac709722de636c17e8a7381" kindref="member">PERIOD_NS</ref>*10},NULL);</highlight></codeline>
+<codeline lineno="61"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>}<sp/></highlight></codeline>
+<codeline lineno="62"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="63"><highlight class="normal"><sp/><sp/></highlight></codeline>
+<codeline lineno="64"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>0;</highlight></codeline>
+<codeline lineno="65"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="66"><highlight class="normal"></highlight></codeline>
 <codeline lineno="67"><highlight class="normal"></highlight></codeline>
-<codeline lineno="68"><highlight class="normal"></highlight></codeline>
-<codeline lineno="69"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="main_8cpp_1ac46dc871d21886c3f0f9845ac514d389" kindref="member">signalHandler</ref>(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/></highlight><highlight class="comment">/*signum*/</highlight><highlight class="normal">)</highlight></codeline>
-<codeline lineno="70"><highlight class="normal">{</highlight></codeline>
-<codeline lineno="71"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="ecat__globals_8hpp_1a6a68d8a40c73f3377978388da56fa9ad" kindref="member">sig</ref><sp/>=<sp/>0;</highlight></codeline>
-<codeline lineno="72"><highlight class="normal"><sp/><sp/><sp/><sp/>nanosleep((</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">struct</highlight><highlight class="normal"><sp/>timespec[]){0,<ref refid="ecat__globals_8hpp_1aaf4966dff24b810040e9c7196d621401" kindref="member">g_kNsPerSec</ref>},NULL);</highlight></codeline>
-<codeline lineno="73"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//<sp/><sp/>ecat_lifecycle_node-&gt;on_shutdown();</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="74"><highlight class="normal">}</highlight></codeline>
-<codeline lineno="75"><highlight class="normal"></highlight></codeline>
-<codeline lineno="76"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="main_8cpp_1a22aaa528e5044baf40590244eb94f2ce" kindref="member">SetRealTimeSettings</ref>()</highlight></codeline>
-<codeline lineno="77"><highlight class="normal">{</highlight></codeline>
-<codeline lineno="78"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>CKim<sp/>-<sp/>Configure<sp/>stdout<sp/>sream<sp/>buffer.<sp/>_IONBF<sp/>means<sp/>no<sp/>buffering.<sp/>Each<sp/>I/O<sp/>operation<sp/>is<sp/>written<sp/>as<sp/>soon<sp/>as<sp/>possible.<sp/></highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="79"><highlight class="normal"><sp/><sp/><sp/><sp/>setvbuf(stdout,<sp/>NULL,<sp/>_IONBF,<sp/>BUFSIZ);</highlight></codeline>
-<codeline lineno="80"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight></codeline>
-<codeline lineno="81"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>CKim<sp/>-<sp/>Associate<sp/>&apos;signalHandler&apos;<sp/>function<sp/>with<sp/>interrupt<sp/>signal<sp/>(Ctrl+C<sp/>key)</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="82"><highlight class="normal"><sp/><sp/><sp/><sp/>signal(SIGINT,<ref refid="main_8cpp_1ac46dc871d21886c3f0f9845ac514d389" kindref="member">signalHandler</ref>);</highlight></codeline>
-<codeline lineno="83"><highlight class="normal"></highlight></codeline>
-<codeline lineno="84"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>CKim<sp/>-<sp/>Prepare<sp/>memory<sp/>for<sp/>real<sp/>time<sp/>performance<sp/></highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="85"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>https://design.ros2.org/articles/realtime_background.html</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="86"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight></codeline>
-<codeline lineno="87"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>CKim<sp/>-<sp/>Lock<sp/>this<sp/>processe&apos;s<sp/>memory.<sp/>Necessary<sp/>for<sp/>real<sp/>time<sp/>performance....</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="88"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(mlockall(MCL_CURRENT<sp/>|<sp/>MCL_FUTURE)<sp/>==<sp/>-1)<sp/>{</highlight></codeline>
-<codeline lineno="89"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>printf(<sp/></highlight><highlight class="stringliteral">&quot;Mlockall<sp/>failed,<sp/>check<sp/>if<sp/>you<sp/>have<sp/>sudo<sp/>authority.&quot;</highlight><highlight class="normal">);</highlight></codeline>
-<codeline lineno="90"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>return<sp/>;</highlight></codeline>
-<codeline lineno="91"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
-<codeline lineno="92"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">/*<sp/>Turn<sp/>off<sp/>malloc<sp/>trimming.*/</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="93"><highlight class="normal"><sp/><sp/><sp/><sp/>mallopt(M_TRIM_THRESHOLD,<sp/>-1);</highlight></codeline>
-<codeline lineno="94"><highlight class="normal"></highlight></codeline>
-<codeline lineno="95"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">/*<sp/>Turn<sp/>off<sp/>mmap<sp/>usage.<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="96"><highlight class="normal"><sp/><sp/><sp/><sp/>mallopt(M_MMAP_MAX,<sp/>0);</highlight></codeline>
-<codeline lineno="97"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>-----------------------------------------------------------------------------</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="98"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="68"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="main_8cpp_1ac46dc871d21886c3f0f9845ac514d389" kindref="member">signalHandler</ref>(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/></highlight><highlight class="comment">/*signum*/</highlight><highlight class="normal">)</highlight></codeline>
+<codeline lineno="69"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="70"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="ecat__globals_8hpp_1a6a68d8a40c73f3377978388da56fa9ad" kindref="member">sig</ref><sp/>=<sp/>0;</highlight></codeline>
+<codeline lineno="71"><highlight class="normal"><sp/><sp/><sp/><sp/>nanosleep((</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">struct</highlight><highlight class="normal"><sp/>timespec[]){0,<ref refid="ecat__globals_8hpp_1aaf4966dff24b810040e9c7196d621401" kindref="member">g_kNsPerSec</ref>},NULL);</highlight></codeline>
+<codeline lineno="72"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//<sp/><sp/>ecat_lifecycle_node-&gt;on_shutdown();</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="73"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="74"><highlight class="normal"></highlight></codeline>
+<codeline lineno="75"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="main_8cpp_1a22aaa528e5044baf40590244eb94f2ce" kindref="member">SetRealTimeSettings</ref>()</highlight></codeline>
+<codeline lineno="76"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="77"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>CKim<sp/>-<sp/>Configure<sp/>stdout<sp/>sream<sp/>buffer.<sp/>_IONBF<sp/>means<sp/>no<sp/>buffering.<sp/>Each<sp/>I/O<sp/>operation<sp/>is<sp/>written<sp/>as<sp/>soon<sp/>as<sp/>possible.<sp/></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="78"><highlight class="normal"><sp/><sp/><sp/><sp/>setvbuf(stdout,<sp/>NULL,<sp/>_IONBF,<sp/>BUFSIZ);</highlight></codeline>
+<codeline lineno="79"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="80"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>CKim<sp/>-<sp/>Associate<sp/>&apos;signalHandler&apos;<sp/>function<sp/>with<sp/>interrupt<sp/>signal<sp/>(Ctrl+C<sp/>key)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="81"><highlight class="normal"><sp/><sp/><sp/><sp/>signal(SIGINT,<ref refid="main_8cpp_1ac46dc871d21886c3f0f9845ac514d389" kindref="member">signalHandler</ref>);</highlight></codeline>
+<codeline lineno="82"><highlight class="normal"></highlight></codeline>
+<codeline lineno="83"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>CKim<sp/>-<sp/>Prepare<sp/>memory<sp/>for<sp/>real<sp/>time<sp/>performance<sp/></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="84"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>https://design.ros2.org/articles/realtime_background.html</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="85"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="86"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>CKim<sp/>-<sp/>Lock<sp/>this<sp/>processe&apos;s<sp/>memory.<sp/>Necessary<sp/>for<sp/>real<sp/>time<sp/>performance....</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="87"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(mlockall(MCL_CURRENT<sp/>|<sp/>MCL_FUTURE)<sp/>==<sp/>-1)<sp/>{</highlight></codeline>
+<codeline lineno="88"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>printf(<sp/></highlight><highlight class="stringliteral">&quot;Mlockall<sp/>failed,<sp/>check<sp/>if<sp/>you<sp/>have<sp/>sudo<sp/>authority.&quot;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="89"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>return<sp/>;</highlight></codeline>
+<codeline lineno="90"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="91"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">/*<sp/>Turn<sp/>off<sp/>malloc<sp/>trimming.*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="92"><highlight class="normal"><sp/><sp/><sp/><sp/>mallopt(M_TRIM_THRESHOLD,<sp/>-1);</highlight></codeline>
+<codeline lineno="93"><highlight class="normal"></highlight></codeline>
+<codeline lineno="94"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">/*<sp/>Turn<sp/>off<sp/>mmap<sp/>usage.<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="95"><highlight class="normal"><sp/><sp/><sp/><sp/>mallopt(M_MMAP_MAX,<sp/>0);</highlight></codeline>
+<codeline lineno="96"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>-----------------------------------------------------------------------------</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="97"><highlight class="normal">}</highlight></codeline>
     </programlisting>
     <location file="src/main.cpp"/>
   </compounddef>

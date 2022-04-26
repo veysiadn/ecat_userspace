@@ -12,6 +12,7 @@ EthercatLifeCycle::EthercatLifeCycle()
     received_data_.actual_vel.resize(g_kNumberOfServoDrivers);
     received_data_.actual_tor.resize(g_kNumberOfServoDrivers);
     received_data_.op_mode_display.resize(g_kNumberOfServoDrivers);
+    received_data_.error_code.resize(g_kNumberOfServoDrivers);
 
     sent_data_.control_word.resize(g_kNumberOfServoDrivers);
     sent_data_.target_pos.resize(g_kNumberOfServoDrivers);
@@ -521,6 +522,13 @@ void EthercatLifeCycle::StartPdoExchange(void *instance)
                 latency_min_ns = 0xffffffff;
         #endif
         ReadFromSlaves();
+        for(int i = 0 ; i < g_kNumberOfServoDrivers;i++){
+            if(received_data_.error_code[i]!=0){
+                std::cout << "Drive in error state" << std::endl;
+                std::cout << GetErrorMessage(received_data_.error_code[i]) << std::endl;
+                break; 
+            }
+        }
 #if POSITION_MODE
         UpdatePositionModeParameters();
         WriteToSlavesInPositionMode();
@@ -591,6 +599,7 @@ void EthercatLifeCycle::ReadFromSlaves()
         received_data_.actual_vel[i]  = EC_READ_S32(ecat_node_->slaves_[i].slave_pdo_domain_ +ecat_node_->slaves_[i].offset_.actual_vel);
         received_data_.status_word[i] = EC_READ_U16(ecat_node_->slaves_[i].slave_pdo_domain_ +ecat_node_->slaves_[i].offset_.status_word);
         received_data_.actual_tor[i]  = EC_READ_S16(ecat_node_->slaves_[i].slave_pdo_domain_ +ecat_node_->slaves_[i].offset_.actual_tor);
+        received_data_.error_code[i]   = EC_READ_U16(ecat_node_->slaves_[i].slave_pdo_domain_ +ecat_node_->slaves_[i].offset_.error_code);
     }
     received_data_.com_status = al_state_ ; 
     #if CUSTOM_SLAVE

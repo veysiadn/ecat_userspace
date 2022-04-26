@@ -70,22 +70,23 @@ int EthercatNode::MapDefaultPdos()
      * Revision number: 0x01600000
      */
 
-    ec_pdo_entry_info_t maxon_epos_pdo_entries[9] = {
-        {OD_CONTROL_WORD, 16},      // CKim - First three entries will be read by slave (master sends command). RxPDO
+    ec_pdo_entry_info_t maxon_epos_pdo_entries[10] = {
+        {OD_CONTROL_WORD, 16},      
         {OD_TARGET_VELOCITY,32},
         {OD_TARGET_POSITION, 32},
         {OD_TARGET_TORQUE,16},
         {OD_TORQUE_OFFSET,16},
 
-        {OD_STATUS_WORD, 16},       // CKim - Last three entries will be transmitted by slave (master receives the data). TxPDO
+        {OD_STATUS_WORD, 16}, 
         {OD_POSITION_ACTUAL_VAL, 32},
         {OD_VELOCITY_ACTUAL_VALUE,32},
-        {OD_TORQUE_ACTUAL_VALUE,16}
+        {OD_TORQUE_ACTUAL_VALUE,16},
+        {OD_ERROR_CODE,16}
     };
 
     ec_pdo_info_t maxon_pdos[2] = {
-        {0x1600, 5, maxon_epos_pdo_entries + 0},    // CKim - RxPDO index of the EPOS4
-        {0x1a00, 4, maxon_epos_pdo_entries + 5}     // CKim - TxPDO index of the EPOS4
+        {0x1600, 5, maxon_epos_pdo_entries + 0},    // - RxPDO index of the EPOS4
+        {0x1a00, 5, maxon_epos_pdo_entries + 5}     // - TxPDO index of the EPOS4
     };
 
     // CKim - Sync manager configuration of the EPOS4. 0,1 is reserved for SDO communications
@@ -155,9 +156,11 @@ int EthercatNode::MapDefaultPdos()
                                                                                   OD_VELOCITY_ACTUAL_VALUE,g_master_domain,NULL);
         this->slaves_[i].offset_.actual_tor        = ecrt_slave_config_reg_pdo_entry(this->slaves_[i].slave_config_,
                                                                                   OD_TORQUE_ACTUAL_VALUE,g_master_domain,NULL);
+        this->slaves_[i].offset_.error_code        = ecrt_slave_config_reg_pdo_entry(this->slaves_[i].slave_config_,
+                                                                                  OD_ERROR_CODE,g_master_domain,NULL);
 
         this->slaves_[i].offset_.target_pos       = ecrt_slave_config_reg_pdo_entry(this->slaves_[i].slave_config_,
-                                                                                  OD_TARGET_POSITION,g_master_domain,NULL);                                                                                                                                                                  
+                                                                                  OD_TARGET_POSITION,g_master_domain,NULL);                                                                                           
         this->slaves_[i].offset_.target_vel       = ecrt_slave_config_reg_pdo_entry(this->slaves_[i].slave_config_,
                                                                                   OD_TARGET_VELOCITY,g_master_domain,NULL);
         this->slaves_[i].offset_.control_word     = ecrt_slave_config_reg_pdo_entry(this->slaves_[i].slave_config_,

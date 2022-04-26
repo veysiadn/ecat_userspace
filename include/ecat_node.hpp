@@ -156,10 +156,10 @@ class EthercatNode
 
 
 /**
- * @brief Maps default PDOs for our spine surgery robot implementation.
- * @note This method is specific for our spinerobot implementation.
- * If you have different topology or different servo drives use 
- * \see MapCustomPdos() function of modify this function based on your needs.
+ * @brief Maps default PDOs for our application.
+ * @note This method is specific to our implementation. However you can modify it to suit your needs.
+ * If you have different topology or different servo drives use MapCustomPdos() 
+ * function of modify this function based on your needs.
  * @return 0 if successfull, otherwise -1.
  */
     int MapDefaultPdos();

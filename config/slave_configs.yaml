@@ -17,13 +17,13 @@ ethercat_slaves :
         vendor_id: 0x0000009a
         product_code: 0x00030924
         alias : 0
-        position: 2
+        position: 3
         assign_activate: 0x300
     easycat_slave :
         vendor_id: 0x0000079a
         product_code: 0xababa001
         alias : 0
-        position: 3
+        position: 2
         assign_activate: 0x0006
     period_ns: 1000000
 

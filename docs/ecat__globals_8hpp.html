@@ -176,7 +176,7 @@ Macros</h2></td></tr>
 <tr class="memitem:a5d918ecbea3b854bbfe74765c9357be3"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="ecat__globals_8hpp.html#a5d918ecbea3b854bbfe74765c9357be3">NUM_OF_SLAVES</a>&#160;&#160;&#160;1</td></tr>
 <tr class="memdesc:a5d918ecbea3b854bbfe74765c9357be3"><td class="mdescLeft">&#160;</td><td class="mdescRight">Total number of connected slave to the bus.  <a href="ecat__globals_8hpp.html#a5d918ecbea3b854bbfe74765c9357be3">More...</a><br /></td></tr>
 <tr class="separator:a5d918ecbea3b854bbfe74765c9357be3"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a1ef60d5687ea9337b2e3e040be43db07"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="ecat__globals_8hpp.html#a1ef60d5687ea9337b2e3e040be43db07">CUSTOM_SLAVE</a>&#160;&#160;&#160;0</td></tr>
+<tr class="memitem:a1ef60d5687ea9337b2e3e040be43db07"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="ecat__globals_8hpp.html#a1ef60d5687ea9337b2e3e040be43db07">CUSTOM_SLAVE</a>&#160;&#160;&#160;1</td></tr>
 <tr class="separator:a1ef60d5687ea9337b2e3e040be43db07"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a84142cd3e3bf14c4ecd4b6707a808c39"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="ecat__globals_8hpp.html#a84142cd3e3bf14c4ecd4b6707a808c39">FREQUENCY</a>&#160;&#160;&#160;1000</td></tr>
 <tr class="memdesc:a84142cd3e3bf14c4ecd4b6707a808c39"><td class="mdescLeft">&#160;</td><td class="mdescRight">Ethercat PDO exchange loop frequency in Hz <br  />
@@ -222,6 +222,8 @@ Macros</h2></td></tr>
 <tr class="separator:aa840a0ac3b87cf7c89b265e1912cbb5b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a5fcd914889df46acf623f7d9a81654d7"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="ecat__globals_8hpp.html#a5fcd914889df46acf623f7d9a81654d7">PERIOD_MS</a>&#160;&#160;&#160;(<a class="el" href="ecat__globals_8hpp.html#aa840a0ac3b87cf7c89b265e1912cbb5b">PERIOD_US</a> / 1000)</td></tr>
 <tr class="separator:a5fcd914889df46acf623f7d9a81654d7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a974bbdb01bda0d358605aaaf61ebae97"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="ecat__globals_8hpp.html#a974bbdb01bda0d358605aaaf61ebae97">FINAL_SLAVE</a>&#160;&#160;&#160;(<a class="el" href="ecat__globals_8hpp.html#a5d918ecbea3b854bbfe74765c9357be3">NUM_OF_SLAVES</a>-1)</td></tr>
+<tr class="separator:a974bbdb01bda0d358605aaaf61ebae97"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a3e343f521bdee99c94f22627c930d24d"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="ecat__globals_8hpp.html#a3e343f521bdee99c94f22627c930d24d">TEST_BIT</a>(NUM,  N)&#160;&#160;&#160;((NUM &amp;  (1 &lt;&lt; N))&gt;&gt;N)</td></tr>
 <tr class="memdesc:a3e343f521bdee99c94f22627c930d24d"><td class="mdescLeft">&#160;</td><td class="mdescRight">To sync every cycle.  <a href="ecat__globals_8hpp.html#a3e343f521bdee99c94f22627c930d24d">More...</a><br /></td></tr>
 <tr class="separator:a3e343f521bdee99c94f22627c930d24d"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -478,11 +480,11 @@ Variables</h2></td></tr>
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">#define CUSTOM_SLAVE&#160;&#160;&#160;0</td>
+          <td class="memname">#define CUSTOM_SLAVE&#160;&#160;&#160;1</td>
         </tr>
       </table>
 </div><div class="memdoc">
-<p >If you have EtherCAT slave different than CiA402 supported motor drive, set this macro to 1 </p><dl class="section note"><dt>Note</dt><dd>That you'll have to manually specfy PDO mapping for your custom slave. </dd></dl>
+<p >If you have EtherCAT slave different than CiA402 supported motor drive, set this macro to 1 </p><dl class="section note"><dt>Note</dt><dd>That you'll have to manually specify PDO mapping for your custom slave. </dd></dl>
 
 </div>
 </div>
@@ -592,6 +594,20 @@ Variables</h2></td></tr>
 </div><div class="memdoc">
 
 <p>Motor encoder resolution. </p>
+
+</div>
+</div>
+<a id="a974bbdb01bda0d358605aaaf61ebae97" name="a974bbdb01bda0d358605aaaf61ebae97"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a974bbdb01bda0d358605aaaf61ebae97">&#9670;&nbsp;</a></span>FINAL_SLAVE</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define FINAL_SLAVE&#160;&#160;&#160;(<a class="el" href="ecat__globals_8hpp.html#a5d918ecbea3b854bbfe74765c9357be3">NUM_OF_SLAVES</a>-1)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
 
 </div>
 </div>

@@ -32,7 +32,7 @@ var searchData=
   ['ethercatcommunication_29',['EthercatCommunication',['../namespaceEthercatCommunication.html',1,'']]],
   ['ethercatlifecycle_30',['EthercatLifeCycle',['../classEthercatLifeCycleNode_1_1EthercatLifeCycle.html#ab88fd9de520c44c80c64440443d25ff7',1,'EthercatLifeCycleNode::EthercatLifeCycle::EthercatLifeCycle()'],['../classEthercatLifeCycleNode_1_1EthercatLifeCycle.html',1,'EthercatLifeCycleNode::EthercatLifeCycle']]],
   ['ethercatlifecyclenode_31',['EthercatLifeCycleNode',['../namespaceEthercatLifeCycleNode.html',1,'']]],
-  ['ethercatnode_32',['EthercatNode',['../classEthercatCommunication_1_1EthercatNode.html',1,'EthercatCommunication::EthercatNode'],['../classEthercatNode.html',1,'EthercatNode'],['../classEthercatCommunication_1_1EthercatNode.html#a020b9007aa6e51112c09f3342dc5bc8d',1,'EthercatCommunication::EthercatNode::EthercatNode()']]],
+  ['ethercatnode_32',['EthercatNode',['../classEthercatCommunication_1_1EthercatNode.html',1,'EthercatCommunication::EthercatNode'],['../classEthercatCommunication_1_1EthercatNode.html#a020b9007aa6e51112c09f3342dc5bc8d',1,'EthercatCommunication::EthercatNode::EthercatNode()']]],
   ['ethercatslave_33',['EthercatSlave',['../classEthercatSlave.html',1,'EthercatSlave'],['../classEthercatSlave.html#af6372d6701c86e6d9c3e5c0c2bd3b350',1,'EthercatSlave::EthercatSlave()']]],
   ['extension_5f1_5fwatchdog_5ferror_34',['EXTENSION_1_WATCHDOG_ERROR',['../ecat__globals_8hpp.html#ab0df38968e4f03a3f1f6d6df0f31f45aa8e86f8369bb9e63c090b461af52826d9',1,'ecat_globals.hpp']]],
   ['extra_5fstatus_5freg_35',['extra_status_reg',['../structOffsetPDO.html#adee3c83f3857725dac30b685d1b90af2',1,'OffsetPDO']]]

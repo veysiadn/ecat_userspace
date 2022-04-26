@@ -16,7 +16,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/ecat_globals.hpp" line="473" column="13" bodyfile="include/ecat_globals.hpp" bodystart="473" bodyend="-1"/>
+        <location file="include/ecat_globals.hpp" line="474" column="13" bodyfile="include/ecat_globals.hpp" bodystart="474" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="structProfileVelocityParam_1aed394e31a80560c0530c57a3bf8bf967" prot="public" static="no" mutable="no">
         <type>uint32_t</type>
@@ -30,7 +30,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/ecat_globals.hpp" line="474" column="13" bodyfile="include/ecat_globals.hpp" bodystart="474" bodyend="-1"/>
+        <location file="include/ecat_globals.hpp" line="475" column="13" bodyfile="include/ecat_globals.hpp" bodystart="475" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="structProfileVelocityParam_1aeb9688ff83981562095d445d6dd2e437" prot="public" static="no" mutable="no">
         <type>uint32_t</type>
@@ -44,7 +44,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/ecat_globals.hpp" line="475" column="13" bodyfile="include/ecat_globals.hpp" bodystart="475" bodyend="-1"/>
+        <location file="include/ecat_globals.hpp" line="476" column="13" bodyfile="include/ecat_globals.hpp" bodystart="476" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="structProfileVelocityParam_1a0afdd1d807f97d6d8137519cbbffc4e2" prot="public" static="no" mutable="no">
         <type>uint32_t</type>
@@ -58,7 +58,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/ecat_globals.hpp" line="476" column="13" bodyfile="include/ecat_globals.hpp" bodystart="476" bodyend="-1"/>
+        <location file="include/ecat_globals.hpp" line="477" column="13" bodyfile="include/ecat_globals.hpp" bodystart="477" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="structProfileVelocityParam_1a2a981f1b49bd7c3dbaa080d857897947" prot="public" static="no" mutable="no">
         <type>uint16_t</type>
@@ -72,7 +72,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/ecat_globals.hpp" line="477" column="17" bodyfile="include/ecat_globals.hpp" bodystart="477" bodyend="-1"/>
+        <location file="include/ecat_globals.hpp" line="478" column="17" bodyfile="include/ecat_globals.hpp" bodystart="478" bodyend="-1"/>
       </memberdef>
       </sectiondef>
     <briefdescription>
@@ -80,7 +80,7 @@
     </briefdescription>
     <detaileddescription>
     </detaileddescription>
-    <location file="include/ecat_globals.hpp" line="471" column="1" bodyfile="include/ecat_globals.hpp" bodystart="472" bodyend="478"/>
+    <location file="include/ecat_globals.hpp" line="472" column="1" bodyfile="include/ecat_globals.hpp" bodystart="473" bodyend="479"/>
     <listofallmembers>
       <member refid="structProfileVelocityParam_1a8bf3ab4ee7ccdb626a1ceff8b0ce7fba" prot="public" virt="non-virtual"><scope>ProfileVelocityParam</scope><name>max_profile_vel</name></member>
       <member refid="structProfileVelocityParam_1a2a981f1b49bd7c3dbaa080d857897947" prot="public" virt="non-virtual"><scope>ProfileVelocityParam</scope><name>motion_profile_type</name></member>

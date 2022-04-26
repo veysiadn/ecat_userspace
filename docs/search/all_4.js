@@ -15,7 +15,7 @@ var searchData=
   ['encoder_5fresolution_12',['ENCODER_RESOLUTION',['../ecat__globals_8hpp.html#a8cdc17f43c9f3850f60d04f98216fc13',1,'ecat_globals.hpp']]],
   ['err_5f_13',['err_',['../classEthercatLifeCycleNode_1_1EthercatLifeCycle.html#a38d0a2c725202ef0fd67beff679ab9b1',1,'EthercatLifeCycleNode::EthercatLifeCycle']]],
   ['err_5fcode_14',['err_code',['../structSDO__data.html#a3f5e625868529a095438d7614dde0c79',1,'SDO_data']]],
-  ['error_5fcode_15',['error_code',['../structOffsetPDO.html#a5389244040597e64914e8650abd81996',1,'OffsetPDO']]],
+  ['error_5fcode_15',['error_code',['../structDataReceived.html#a7299f7a07f22df5fa4c9b735773d8a66',1,'DataReceived::error_code()'],['../structOffsetPDO.html#a5389244040597e64914e8650abd81996',1,'OffsetPDO::error_code()']]],
   ['errorregisterbits_16',['ErrorRegisterBits',['../ecat__globals_8hpp.html#aad8633114c3b7bfa7443f128aad93aa9',1,'ecat_globals.hpp']]],
   ['errortype_17',['ErrorType',['../ecat__globals_8hpp.html#ab0df38968e4f03a3f1f6d6df0f31f45a',1,'ecat_globals.hpp']]],
   ['ethercat_20control_20software_18',['EtherCAT Control Software',['../index.html',1,'']]],

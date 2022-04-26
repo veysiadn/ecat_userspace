@@ -70,6 +70,7 @@
     <member refid="structDataReceived_1a46d51838bdc21e9309cc23f20e221d80" kind="variable"><name>actual_cur</name></member>
     <member refid="structDataReceived_1a5c23d4b51d50ed53b6c5314b4f251ec6" kind="variable"><name>actual_tor</name></member>
     <member refid="structDataReceived_1aa45660912db7a4a103d6d25eeb04c1e3" kind="variable"><name>status_word</name></member>
+    <member refid="structDataReceived_1a7299f7a07f22df5fa4c9b735773d8a66" kind="variable"><name>error_code</name></member>
     <member refid="structDataReceived_1a17593653dc2a3085db5b312635872399" kind="variable"><name>op_mode_display</name></member>
     <member refid="structDataReceived_1a74e42ee4acd6f2b81cf1052368e383c7" kind="variable"><name>left_limit_switch_val</name></member>
     <member refid="structDataReceived_1a8be1018273dda677e6fcab1a22081ce4" kind="variable"><name>right_limit_switch_val</name></member>

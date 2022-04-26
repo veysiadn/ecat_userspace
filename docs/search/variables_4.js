@@ -6,7 +6,7 @@ var searchData=
   ['emergency_5fswitch_5fval_3',['emergency_switch_val',['../structDataReceived.html#a9d271bbf7f372ed848260ce8d6bd3025',1,'DataReceived']]],
   ['err_5f_4',['err_',['../classEthercatLifeCycleNode_1_1EthercatLifeCycle.html#a38d0a2c725202ef0fd67beff679ab9b1',1,'EthercatLifeCycleNode::EthercatLifeCycle']]],
   ['err_5fcode_5',['err_code',['../structSDO__data.html#a3f5e625868529a095438d7614dde0c79',1,'SDO_data']]],
-  ['error_5fcode_6',['error_code',['../structOffsetPDO.html#a5389244040597e64914e8650abd81996',1,'OffsetPDO']]],
+  ['error_5fcode_6',['error_code',['../structDataReceived.html#a7299f7a07f22df5fa4c9b735773d8a66',1,'DataReceived::error_code()'],['../structOffsetPDO.html#a5389244040597e64914e8650abd81996',1,'OffsetPDO::error_code()']]],
   ['ethercat_5fsched_5fparam_5f_7',['ethercat_sched_param_',['../classEthercatLifeCycleNode_1_1EthercatLifeCycle.html#a80c1aefb15a64041bd5f59e47b3ac29e',1,'EthercatLifeCycleNode::EthercatLifeCycle']]],
   ['ethercat_5fthread_5f_8',['ethercat_thread_',['../classEthercatLifeCycleNode_1_1EthercatLifeCycle.html#ac443f07a1f4e7252788ca000ea70458f',1,'EthercatLifeCycleNode::EthercatLifeCycle']]],
   ['ethercat_5fthread_5fattr_5f_9',['ethercat_thread_attr_',['../classEthercatLifeCycleNode_1_1EthercatLifeCycle.html#a78acbaf6dc792b96f2df3fbef7395dfc',1,'EthercatLifeCycleNode::EthercatLifeCycle']]],

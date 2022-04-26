@@ -83,8 +83,8 @@
 const uint32_t  g_kNumberOfServoDrivers = 1 ;   
 
 /// If you have EtherCAT slave different than CiA402 supported motor drive, set this macro to 1
-/// @note  That you'll have to manually specfy PDO mapping for your custom slave.
-#define CUSTOM_SLAVE     0
+/// @note  That you'll have to manually specify PDO mapping for your custom slave.
+#define CUSTOM_SLAVE     1
 
 /// Ethercat PDO exchange loop frequency in Hz    
 #define FREQUENCY       1000        

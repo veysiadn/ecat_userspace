@@ -270,6 +270,7 @@ int EthercatLifeCycle::SetConfigurationParameters()
         P.quick_stop_dec = 3e4 ;
         return ecat_node_->SetCyclicSyncTorqueModeParametersAll(P);
     #endif
+    return 0 ;
 }
 int  EthercatLifeCycle::StartEthercatCommunication()
 {

@@ -441,8 +441,8 @@ Custom SDO configuration Example</h1>
     <li>SetCyclicSyncVelocityModeParametersAll</li>
     <li>SetCyclicSyncTorqueModeParametersAll</li>
   </ul>
-  Based on your operation mode you can add custom configuration to functions mentioned above. For this example we want to add P,I,D gain values as configuration in the profile position mode. For that, we will have to do add members in ProfilePosParam struct defined in <a href="ecat__globals_8hpp.html">ecat_globals.hpp</a> file.
-  Note that newly added members are highlighted.
+  Based on your operation mode you can add custom configuration to functions mentioned above. For this example we want to add P,I, and D gain values, as configuration parameters in the profile position mode. To do that, we will have to add members in ProfilePosParam struct defined in <a href="ecat__globals_8hpp.html">ecat_globals.hpp</a> file.
+  Note that newly added members are highlighted in code snippet below.
   <p><img src="img/profile_pos_param.png" alt="profile_pos_param"/></p>
 </p>
 <p>
@@ -453,12 +453,39 @@ Custom SDO configuration Example</h1>
   Now finally we will assign gain values to the corresponding values in SetConfigurationParameters() function in  <a href="https://github.com/veysiadn/ecat_userspace/blob/master/src/ecat_lifecycle.cpp">ecat_lifecycle.cpp</a> file.
   <p><img src="img/config_custom_set.png" alt="config_custom_set"/></p>
 </p>
-
+<p>That's all about adding custom SDO configuration. If you need to do additional configuration and don't know how to do it, or found a bug in the code please let me know via e-mail <a href="mailto:veysi.adin@outlook.com">veysi.adin@outlook.com</a></p>
+</ul>
 
 <h1><a class="anchor" id="autotoc_md9"></a>
 Custom Slave Example</h1>
 <p>
-  Now in this example we will have ......
+  Now in this example we will have <a href="https://www.bausano.net/en/hardware/easycat.html">EasyCAT</a> custom slave. EasyCAT allows an Arduino to be used as a EtherCAT slave in the bus. We are using this product to add any sensor or actuator in our communication bus. Adding this custom slave to the bus is a bit tricky, because there isn't any standard governing PDO and SDO structure of custom slave. You'll need to know a lot about your custom slave. I won't be explaining about EasyCAT much, you can visit the product page for more information.
+</p>
+<p>For custom slaves it is important to know current PDO entries, for that IgH Etherlab provides nice terminal tools where we can and get some information from our slaves, which makes it easy to debug your system. In terminal you can type
+  <ul>
+    <li>
+      ethercat slaves : to get information about connected slaves, their physical positions and application layer state.
+    </li>
+    <li>
+      ethercat cstruct : to get information about your connected slaves' PDO entries.
+    </li>
+    <li>
+      ethercat -h : for more information about what you can do with the terminal interface provided by Etherlab.
+    </li>
+  </ul>
+</p>
+<p> <img src = "img/ether_sl_cs.png" alt = "ether_sl_cs"/></p>
+<p>Now we know about the current PDO mapping of our custom slave we can start for modifications to the software to send/receive data to/from our slave. We will start costumization from the <a href="ecat__globals_8hpp_source.html">ecat_globals.hpp</a> file. In this file we will to change several parameters: 
+  <li><a href="ecat__globals_8hpp.html#a5d918ecbea3b854bbfe74765c9357be3">NUM_OF_SLAVES</a> 1</li>
+  <li><a href="ecat__globals_8hpp.html#a1ef60d5687ea9337b2e3e040be43db07">CUSTOM_SLAVE</a> 1 </li>
+  <li><a href="ecat__globals_8hpp.html#aacc3c7aef173b1cde9377fb7f05c924d">g_kNumberOfServoDrivers</a>=0</li>
+  <li><a href="ecat__globals_8hpp.html#a84142cd3e3bf14c4ecd4b6707a808c39">FREQUENCY</a> 1000</li>
+  <li><a href="ecat__globals_8hpp.html#a1d48656bc4df51f3d8b17da91494a981">DISTRIBUTED_CLOCK</a> 1 </li>
+</p> 
+<p>Since our custom slave doesn't need any SDO configurations we will directly modify MapDefaultPdos() function in <a href="https://github.com/veysiadn/ecat_userspace/blob/master/src/ecat_node.cpp">ecat_node.cpp</a> file. Notice that we copied the "ethercat slave" terminal command output and pasted in to the function. 
+</p>
+<p>
+  <img src="img/custom_slave_pdo.png" alt="custom_slave_pdo"/>
 </p>
 <div class="fragment"><div class="line">------- </div>
 <div class="line">------</div>
@@ -481,17 +508,6 @@ Custom Slave Example</h1>
   <div class="line">--------</div>
   </div>
 
-
-<h1><a class="anchor" id="autotoc_md11"></a>
-  References</h1>
-  <ul>
-    <li><a href="https://www.ethercat.org/en/technology.html">EtherCAT</a></li>
-    <li><a href="https://www.etherlab.org/en/ethercat/index.php">Etherlab Webpage</a></li>
-    <li><a href="https://www.etherlab.org/download/ethercat/ethercat-1.5.2.pdf">IgH EtherCAT Library Documentation</a></li>
-    <li><a href="https://wiki.linuxfoundation.org/realtime/documentation/technical_basics/start">Real-time Linux</a></li>
-    <li><a href="https://design.ros2.org/articles/realtime_background.html">Real-time Background</a></li>
-    <li><a href="https://www.ripublication.com/ijaer17/ijaerv12n21_94.pdf">Article on EtherCAT-RT PREEMPT- Xenomai</a></li>
-    </ul>
 </div></div><!-- PageDoc -->
 </div><!-- contents -->
 </div><!-- doc-content -->

@@ -4,6 +4,7 @@
   <navindex>
     <tab type="mainpage" visible="yes" title="Homepage"/>
     <tab type="user" visible="yes" title="Examples" url="examples.html"/>
+    <tab type="user" visible="yes" title="Useful Resources" url="resources.html"/>
     <!-- <tab type="user" url="http://www.google.com" title="Google"/> -->
     <!-- https://www.doxygen.nl/manual/customize.html -->
     <tab type="modules" visible="yes" title="Modules" intro=""/>

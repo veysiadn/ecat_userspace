@@ -38,6 +38,7 @@ var NAVTREE =
       [ "Good Luck ⚡", "index.html#autotoc_md9", null ]
     ] ],
     [ "Examples", "examples.html", null ],
+    [ "Useful Resources", "resources.html", null ],
     [ "Namespaces", "namespaces.html", [
       [ "Namespace List", "namespaces.html", "namespaces_dup" ]
     ] ],
@@ -69,7 +70,7 @@ var NAVTREEINDEX =
 "annotated.html",
 "ecat__globals_8hpp.html#a5d175b4708e9a88ebbc35372ca1818b7a94491568dfbb921ec2bc5e0b90bfdf51",
 "object__dictionary_8hpp.html#a03033fc1afcc498cc86cd73df2241adc",
-"structHomingParam.html#a78a0209212385df219c3e14c8ced924b"
+"structHomingParam.html#a4b529e1ff01a93d2e64dda04908aa449"
 ];
 
 var SYNCONMSG = 'click to disable panel synchronisation';

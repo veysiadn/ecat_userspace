@@ -92,9 +92,9 @@ const uint32_t  g_kNumberOfServoDrivers = 1 ;
 /// If you want to measure timings leave it as one, otherwise make it 0.
 #define MEASURE_TIMING         0    
  /// set this to 1 if you want to use it in velocity mode (and set other modes 0)
-#define VELOCITY_MODE          1 
+#define VELOCITY_MODE          0 
 /// set this to 1 if you want to use it in position mode (and set other modes 0)  
-#define POSITION_MODE          0    
+#define POSITION_MODE          1    
 /// set this to 1 if you want to use it in cyclic synchronous position mode (and set other modes 0)
 #define CYCLIC_POSITION_MODE   0    
 /// set this to 1 if you want to use it in cyclic synchronous velocity mode (and set other modes 0)
@@ -381,7 +381,9 @@ typedef struct
     uint32_t max_profile_vel ; 
     uint32_t quick_stop_dec ;
     uint16_t motion_profile_type ; 
-
+    uint32_t p_gain;
+    uint32_t i_gain;
+    uint32_t d_gain;
 } ProfilePosParam ;
 
 /**
@@ -408,8 +410,7 @@ typedef struct
 
 /**
  * @brief Struct containing 'velocity control parameter set' 0x30A2
- * Has 4 sub index. Default values are from EPOS4 firmware manual
- * 
+ * Has 4 sub index. Default values are from EPOS4 firmware manual.
  */
  typedef struct
  {

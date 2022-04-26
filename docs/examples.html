@@ -96,10 +96,10 @@ Considering that you are done with the prerequisites and installation. You are r
 <p> Note that for controlling the motors via servo drive, inital configuration must be done with vendors' software. In this case I used <b>EPOS Studio</b> to configure the servo drive for connected motor(s). As another example Elmo has its own software called <b>Elmo Application Studio</b> to configure the motors as well. You will only have to do the configuration once, then parameters will be saved. We could have added those configurations to the software but, since it will require too many input parameters I chose not to add it.</p>
 <p>Additionally, it is important to understand modes of operation of the motor drive, for that I recommend you to check <a href = "https://www.maxongroup.com/medias/sys_master/root/8834324856862/EPOS4-Firmware-Specification-En.pdf">EPOS firmware specifications</a> file, starting from chapter 3 page 19.<p></p>
 Now we can proceed with examples. Examples contains:
-<div class="fragment"> Velocity Mode Control - using Xbox controller, or keyboard,
+<div class="fragment"> Profile Velocity Mode Control - using Xbox controller, or keyboard,
   <a href="examples.html#autotoc_md1">Go to example</a>
 </div>
-<div class="fragment"> Position Mode Control - using Xbox controller, or keyboard,
+<div class="fragment"> Profile Position Mode Control - using Xbox controller, or keyboard,
  <a href="examples.html#autotoc_md2">Go to example</a>
 </div>
 <div class="fragment"> Cyclic Synchronous Velocity Mode Control - using Xbox controller, or keyboard,
@@ -132,7 +132,7 @@ Improving real-time performance :
 </p>
    <p>All prepared examples here are just for reference, in the hope that it will be useful, but WITHOUT ANY WARRANTY; without even the implied warranty of MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the  GNU General Public License for more details.</p>
 <h1><a class="anchor" id="autotoc_md1"></a>
-Velocity Mode Control Example</h1>
+  Profile Velocity Mode Control Example</h1>
 <p>
   Now in this example, we have three servo drives as slaves, and three motors. We are going to control them in velocity mode with 1kHz frequency and active distributed clock. As a controller we will use Xbox controller or keyboard.  
 <ul>
@@ -180,7 +180,7 @@ Velocity Mode Control Example</h1>
 <p>That's all about controlling your motors in velocity mode. If you need to do additional configuration and don't know how to do it, or found a bug in the code please let me know via e-mail <a href="mailto:veysi.adin@outlook.com">veysi.adin@outlook.com</a></p>
 
 <h1><a class="anchor" id="autotoc_md2"></a>
-Position Mode Control Example</h1>
+  Profile Position Mode Control Example</h1>
 <p>
   Now in this example we have one servo drive as a slave, and one motor. We are going to control the motor in position mode with 1kHz frequency and active distributed clock. As a controller we will use Xbox controller or keyboard.  
 <ul>
@@ -417,7 +417,7 @@ Mapping Custom PDO Example</h1>
         We will modify constructor of the class shown in picture below.
         <p><img src="img/resize_data_received.png" alt="resize_data_received"/></p> 
         <p>
-          Second we will change ReadFromSlavesFunction(), and read the ERROR_CODE object, as shown in code snippet below.
+          Second we will change ReadFromSlavesFunction(), and read the ERROR_CODE object, as shown in code snippet below. Notice that EC_READ_U16 corresponds to reading uint16 data type. If you want to read different data type you will have to change it to EC_READ_/DATA_TYPE/.
           <p><img src="img/read_from_slaves_modif.png" alt="read_from_slaves_modif"/></p>
         </p>
         <p>Once we did that, now we have acces to the ERROR_CODE object, we can decide what to do with the error code data that is acquired from slaves. As an example I will modify StartPdoExchange function, I will check error code object of each drive and stop the PDO communication if any drive has error.
@@ -432,15 +432,29 @@ Mapping Custom PDO Example</h1>
 <h1><a class="anchor" id="autotoc_md8"></a>
 Custom SDO configuration Example</h1>
 <p>
-  Now in this example we will have ......
+  Now in this example we will add extra configuration parameter, in position mode. You can costumize configurations in different modes as well, and the steps will be same.
+  The configuration assignment functions are defined in <a href="https://github.com/veysiadn/ecat_userspace/blob/master/src/ecat_node.cpp">ecat_node.cpp</a> file in functions:
+  <ul>
+    <li>SetProfilePositionParametersAll</li>
+    <li>SetProfileVelocityParametersAll</li>
+    <li>SetCyclicSyncPositionModeParametersAll</li>
+    <li>SetCyclicSyncVelocityModeParametersAll</li>
+    <li>SetCyclicSyncTorqueModeParametersAll</li>
+  </ul>
+  Based on your operation mode you can add custom configuration to functions mentioned above. For this example we want to add P,I,D gain values as configuration in the profile position mode. For that, we will have to do add members in ProfilePosParam struct defined in <a href="ecat__globals_8hpp.html">ecat_globals.hpp</a> file.
+  Note that newly added members are highlighted.
+  <p><img src="img/profile_pos_param.png" alt="profile_pos_param"/></p>
 </p>
-<div class="fragment"><div class="line">------- </div>
-<div class="line">------</div>
-<div class="line">-------</div>
-<div class="line">------</div>
-<div class="line">----------</div>
-<div class="line">--------</div>
-</div>
+<p>
+  Now we will modify SetProfilePositionParametersAll() function in <a href="https://github.com/veysiadn/ecat_userspace/blob/master/src/ecat_node.cpp">ecat_node.cpp</a> file. Notice that, data types must be same as in object dictionary, otherwise you will face an error.
+  <p><img src="img/set_profile_pos_param_all.png" alt="set_profile_pos_param_all"/></p>
+</p>
+<p>
+  Now finally we will assign gain values to the corresponding values in SetConfigurationParameters() function in  <a href="https://github.com/veysiadn/ecat_userspace/blob/master/src/ecat_lifecycle.cpp">ecat_lifecycle.cpp</a> file.
+  <p><img src="img/config_custom_set.png" alt="config_custom_set"/></p>
+</p>
+
+
 <h1><a class="anchor" id="autotoc_md9"></a>
 Custom Slave Example</h1>
 <p>

@@ -44,7 +44,7 @@ using namespace EthercatCommunication ;
 namespace EthercatLifeCycleNode
 {
 /**
- *  \class   EthercatNode
+ *  \class   EthercatLifeCycle
  *  \brief   Class for managing real-time EtherCAT communication.
  */
 class EthercatLifeCycle

@@ -101,18 +101,17 @@ int EthercatLifeCycle::SetComThreadPriorities()
         return -1;
     }
     /**********************************************************************************************/
-    // This part is for CPU isolation to dedicate one core for EtherCAT communication.
+    // This part is for CPU isolation to dedicate one or two cores for EtherCAT communication.
     // for this feature to be active fist you have to modify GRUB_CMDLINE_LINUX_DEFAULT in /etc/default/grub 
-    // add isolcpus=3 so after editing it will be ; GRUB_CMDLINE_LINUX_DEFAULT = "quiet splash isolcpus=3" 
+    // add isolcpus=4,5 so after editing it will be ; GRUB_CMDLINE_LINUX_DEFAULT = "quiet splash isolcpus=4,5" 
     // save and exit, and type sudo update-grub and reboot.
-    //  cpu_set_t mask;
-    // CPU_ZERO(&mask);
-    // CPU_SET(8,&mask);
-    // CPU_SET(9,&mask);
-	// CPU_SET(10,&mask);
-	// CPU_SET(11,&mask);
+    
+    cpu_set_t mask;
+    CPU_ZERO(&mask);
+    CPU_SET(4,&mask);
+    CPU_SET(5,&mask);
 
-    // int result = sched_setaffinity(0,sizeof(mask),&mask);
+    int result = sched_setaffinity(0,sizeof(mask),&mask);
     /**********************************************************************************************/
     
     /* Set a specific stack size  */

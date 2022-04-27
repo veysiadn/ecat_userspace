@@ -121,13 +121,13 @@ Now we can proceed with examples. Examples contains:
   <a href="examples.html#autotoc_md9">Go to example</a>
 </div> 
 Improving real-time performance : 
-<div class="fragment"> Isolating CPU for the communication task.
+<div class="fragment"> Isolating CPU Core for the communication task.
   <a href="examples.html#autotoc_md10">Go to example</a>
 </div> 
 
 
-</p>
-  Please do not follow these examples blindly and just use them as a reference. There might be some bugs, or errors in the software, for that please read comments in the code carefully, and understand the code before using it. You can always contact me, if you have some issues understanding the code, or if you have any questions. CONTACT : <a href="mailto:veysi.adin@outlook.com">veysi.adin@outlook.com</a></p>
+<p>
+  Please do not follow these examples blindly and use them as just a reference. There might be some bugs, or errors in the software, for that please read comments in the code carefully, and understand the code before using it. You can always contact me, if you have some issues understanding the code, or if you have any questions. CONTACT : <a href="mailto:veysi.adin@outlook.com">veysi.adin@outlook.com</a></p>
 </p>
 </p>
    <p>All prepared examples here are just for reference, in the hope that it will be useful, but WITHOUT ANY WARRANTY; without even the implied warranty of MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the  GNU General Public License for more details.</p>
@@ -159,7 +159,7 @@ Improving real-time performance :
    <div class="fragment"> jstest-gtk</div>
    <p>It will have an interface like in picture below. As shown in picture below, range for Xbox controller axes are -/+ 32767 and we have 10 digital buttons. We can use axis data to control our motor in velocity mode.</p>
     <img src="img/jstest-gtk.png" alt="jstest-gtk"/></a>
-    <p>As you can see the code below in <a href="https://github.com/veysiadn/ecat_userspace/blob/master/src/main.cpp">main.cpp</a> file is reading xbox controller values and passes it to ethercat thread. In this case we normalized axes values by diving the data that we get to 32767, therefore range is now -/+1.</p>
+    <p>As you can see the code below in <a href="https://github.com/veysiadn/ecat_userspace/blob/master/src/main.cpp">main.cpp</a> file is reading xbox controller values and passes it to ethercat thread. In this case we normalized axes values by diving the data that we get to 32767, therefore, range is now -/+1.</p>
     <img src="img/XboxControllerDataReadCode.png" alt="controllervals"/></a>
     <p>If you don't have Xbox or any other controller don't worry, you can still use your keyboard to send commands, it won't be as convenient as using controller, but it will do the job for test purposes.
       Note that this is the default setup, you can tinker with parameters to make it suitable to your application.
@@ -252,7 +252,7 @@ Cyclic Synchronous Velocity Mode Control Example</h1>
 <p>
   Once we're done with initial costumization we can proceed with <a href="https://github.com/veysiadn/ecat_userspace/blob/master/src/main.cpp">main.cpp</a> file.
    In this file we have to specify how to handle controller inputs. By default controller is assumed to be Xbox controller. If you want to use Xbox, it is nice to understand how Xbox controller data is structred. For that, I recommend using jstest-gtk package, installations and running steps are explained in above examples. Now we will proceed with modifying main.cpp file.
-    <p>As you can see the code below in <a href="https://github.com/veysiadn/ecat_userspace/blob/master/src/main.cpp">main.cpp</a> file is reading xbox controller values and passes it to ethercat thread. In this case we normalized axes values by diving the data that we get to 32767, therefore range is now -/+1.</p>
+    <p>As you can see the code below in <a href="https://github.com/veysiadn/ecat_userspace/blob/master/src/main.cpp">main.cpp</a> file is reading xbox controller values and passes it to ethercat thread. In this case we normalized axes values by diving the data that we get to 32767, therefore, range is now -/+1.</p>
     <img src="img/XboxControllerDataReadCode.png" alt="controllervals"/></a>
     <p>If you don't have Xbox or any other controller don't worry, you can still use your keyboard to send commands, it won't be as convenient as using controller, but it will do the job for test purposes.
       Note that this is the default setup, you can tinker with parameters to make it suitable to your application.
@@ -400,7 +400,7 @@ Mapping Custom PDO Example</h1>
   <ul>
     <li><b>STEP 1</b></li>
       In <a href="ecat__globals_8hpp.html">ecat_globals.hpp</a> file modify DataReceived or DataSent struct. If you will add custom TxPDO,modify DataReceived struct, if you will add custom RxPDO, modify DataSent struct.
-      Error code object is TxPDO object therefore we will modify DataReceived struct. In that struct we will add error_code variable. Note that data type is same as specified in object dictionary.
+      Error code object is TxPDO object therefore, we will modify DataReceived struct. In that struct we will add error_code variable. Note that data type is same as specified in object dictionary.
       <p><img src="img/data_received_modifications.png" alt="data_received_modifications"/></p>
       <li><b>STEP 2</b></li>
         In the same file we will modify OffsetPDO struct and add error_code variable, to use it in MapDefaultPdos() function.
@@ -459,7 +459,7 @@ Custom SDO configuration Example</h1>
 <h1><a class="anchor" id="autotoc_md9"></a>
 Custom Slave Example</h1>
 <p>
-  Now in this example we will have <a href="https://www.bausano.net/en/hardware/easycat.html">EasyCAT</a> custom slave. EasyCAT allows an Arduino to be used as a EtherCAT slave in the bus. We are using this product to add any sensor or actuator in our communication bus. Adding this custom slave to the bus is a bit tricky, because there isn't any standard governing PDO and SDO structure of custom slave. You'll need to know a lot about your custom slave. I won't be explaining about EasyCAT much, you can visit the product page for more information.
+  Now in this example we will have <a href="https://www.bausano.net/en/hardware/easycat.html">EasyCAT</a> custom slave. EasyCAT allows an Arduino to be used as a EtherCAT slave in the bus. We are using this product to add any sensor or actuator in our communication bus. Adding this custom slave to the bus is a bit tricky, because there isn't any standard governing PDO and SDO structure of custom slave. If you remember we had CiA402 standard for servo drives, standardizes object dictionary, SDO and PDO structure. You'll need to know a lot about your custom slave. I won't be explaining about EasyCAT much, you can visit the product page for more information.
 </p>
 <p>For custom slaves it is important to know current PDO entries, for that IgH Etherlab provides nice terminal tools where we can and get some information from our slaves, which makes it easy to debug your system. In terminal you can type
   <ul>
@@ -475,39 +475,74 @@ Custom Slave Example</h1>
   </ul>
 </p>
 <p> <img src = "img/ether_sl_cs.png" alt = "ether_sl_cs"/></p>
-<p>Now we know about the current PDO mapping of our custom slave we can start for modifications to the software to send/receive data to/from our slave. We will start costumization from the <a href="ecat__globals_8hpp_source.html">ecat_globals.hpp</a> file. In this file we will to change several parameters: 
+<p>Now we know about the current PDO mapping of our custom slave we can start for modifications to the software to send/receive data to/from our slave. We will start costumization from the <a href="ecat__globals_8hpp_source.html">ecat_globals.hpp</a> file. Considering this example, we don't have any servo drives as slave, we only have one custom slave therefore, in this file we will change several parameters: 
   <li><a href="ecat__globals_8hpp.html#a5d918ecbea3b854bbfe74765c9357be3">NUM_OF_SLAVES</a> 1</li>
   <li><a href="ecat__globals_8hpp.html#a1ef60d5687ea9337b2e3e040be43db07">CUSTOM_SLAVE</a> 1 </li>
   <li><a href="ecat__globals_8hpp.html#aacc3c7aef173b1cde9377fb7f05c924d">g_kNumberOfServoDrivers</a>=0</li>
   <li><a href="ecat__globals_8hpp.html#a84142cd3e3bf14c4ecd4b6707a808c39">FREQUENCY</a> 1000</li>
   <li><a href="ecat__globals_8hpp.html#a1d48656bc4df51f3d8b17da91494a981">DISTRIBUTED_CLOCK</a> 1 </li>
 </p> 
-<p>Since our custom slave doesn't need any SDO configurations we will directly modify MapDefaultPdos() function in <a href="https://github.com/veysiadn/ecat_userspace/blob/master/src/ecat_node.cpp">ecat_node.cpp</a> file. Notice that we copied the "ethercat slave" terminal command output and pasted in to the function. 
+<p>Once we did initial configuration in ecat_globals file, we will proceed with ecat_node.cpp file. Since our custom slave doesn't need any SDO configurations we will directly modify MapDefaultPdos() function in <a href="https://github.com/veysiadn/ecat_userspace/blob/master/src/ecat_node.cpp">ecat_node.cpp</a> file. Notice that we copied the "ethercat slave" terminal command output and pasted in to the function. 
 </p>
 <p>
   <img src="img/custom_slave_pdo.png" alt="custom_slave_pdo"/>
 </p>
-<div class="fragment"><div class="line">------- </div>
-<div class="line">------</div>
-<div class="line">-------</div>
-<div class="line">------</div>
-<div class="line">----------</div>
-<div class="line">--------</div>
-</div>
+<p>
+  Now we will register PDOs and obtain offsets for each PDO entry, we will do this in the same file and function. Next steps are similiar to the adding custom PDOs, you can follow same steps as in adding custom PDOs. For this example, I will only add three PDO entry, since there are three different switches connected to the EasyCAT slave. Notice that OffsetPDO struct must have a member variable for each PDO entry, and if entry type is TxPDO you will add member variable to the DataReceived struct, if entry type is RxPDO you will add member variable to the DataSent struct.
+</p>
+<p>
+  <img src="img/easycat_pdo_offset.png" alt="easycat_pdo_offset"/>
+</p>
+<p>
+  Now as a final step once you succesfully register your PDOs, you'll need to modify ReadFromSlaves function in <a href="https://github.com/veysiadn/ecat_userspace/blob/master/src/ecat_lifecycle.cpp">ecat_lifecycle.cpp</a> file. And you can use the values that you read in your Update'OperationMode'Parameters() functions. It is important to read the correct data type, otherwise you might face an error.
+</p>
+<p>
+  <img src="img/read_custom_slave.png" alt="read_custom_slave"/>
+</p>
 
-<h1><a class="anchor" id="autotoc_md9"></a>
-  Isolating CPU for the communication task</h1>
+<p>That's all about adding custom slave to your bus. If you need to do additional configuration and don't know how to do it, or found a bug in the code please let me know via e-mail <a href="mailto:veysi.adin@outlook.com">veysi.adin@outlook.com</a></p>
+
+<h1><a class="anchor" id="autotoc_md10"></a>
+  Isolating CPU Core for the communication task</h1>
   <p>
-    Now in this example we will have ......
+    Now in this example we will isolate one of our CPU cores to dedicate it for EtherCAT communication task. To do that, you will need to know how many cores your CPU has. Check your number of cores, in terminal type:
   </p>
-  <div class="fragment"><div class="line">------- </div>
-  <div class="line">------</div>
-  <div class="line">-------</div>
-  <div class="line">------</div>
-  <div class="line">----------</div>
-  <div class="line">--------</div>
-  </div>
+  <div class="fragment">nproc</div>
+  <p>
+    You will get a number of cores, for example if you have two cores, you will get: 2 as output.
+  Once you know number of cores in your system, you can select which core to isolate. I recommend isolating last core in your CPU, 
+  For example if you have 4 cores you can isolate 4th core. CPU isolation can be done in several ways, easiest way to do it is to add isolcpus and nohz_full parameters in your grub file. As an example, my laptop has 6 cores, and I will isolate 5th and 6th core. Note that numbering core starts from zero, meaning first core is numbered as zero.In terminal type:
+</p>
 
+  <div class="fragment">sudo nano /etc/default/grub</div>
+  <p>
+    As shown in picture below, you can add isolcpus=4,5 and nohz_full=4,5 to the GRUB_CMDLINE_LINUX_DEFAULT="" line.
+  </p>
+  <img src="img/grub_menu.png" alt="grub_menu"/>
+  <p>
+    Now you can update grub and reboot your system and check if CPU isolation is succesfull or not:
+  </p>
+  <div class="fragment">sudo update-grub</div>
+  <div class="fragment">sudo reboot</div>
+  <p>
+    After reboot type nproc again and you will see that number of cores seen by operating system is reduced.
+  </p>
+  <div class="fragment"> nproc </div>
+  <p>
+    Now that we isolated two cores from operating system and we can use isolated cores for our task. To do that, Linux provides CPU_SET macro, and sched_setaffinity functions which is used to set CPU affinity. When you check <a href="https://github.com/veysiadn/ecat_userspace/blob/master/src/ecat_lifecycle.cpp">ecat_lifecycle.cpp</a> file we have one function called SetComThreadPriorities() which is used to set CPU affinity and priority. As an example shown in below snippet from that function, I isolated and dedicated 5th and 6th cores of my CPU to the EtherCAT communication task. Don't forget to recompile the code after you did any change.
+  </p>
+
+  <img src="img/cpu_set_com_thread.png" alt="cpu_set_com_thread"/>
+  <p>That's all about isolating CPU core and dedicating it for the communication task. If you need to do additional configuration and don't know how to do it, or found a bug in the code please let me know via e-mail <a href="mailto:veysi.adin@outlook.com">veysi.adin@outlook.com</a></p>
+  <h1><a class="anchor" id="autotoc_md10"></a>
+    Conclusion</h1>
+<p>
+  Congratulations, if you have come this far, and tried all examples, now you have basic understanding of our control software, EtherCAT protocol and real-time systems. I hope these tutorials will help you to save time and build your own applications. Good luck, in your robotic journey.
+</p>
+<p> 
+Please note again that, you must not follow these examples blindly and you must use them just as a reference. There might be some bugs, or errors in the software, for that please read comments in the code carefully, and understand the code before using it.
+</p>
+ <p>All prepared examples here are just for reference, in the hope that it will be useful, but WITHOUT ANY WARRANTY; without even the implied warranty of MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the  GNU General Public License for more details.</p>
 </div></div><!-- PageDoc -->
 </div><!-- contents -->
 </div><!-- doc-content -->

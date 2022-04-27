@@ -344,6 +344,7 @@
     <member refid="ecat__globals_8hpp_1ab495f8313ac709722de636c17e8a7381" kind="define"><name>PERIOD_NS</name></member>
     <member refid="ecat__globals_8hpp_1aa840a0ac3b87cf7c89b265e1912cbb5b" kind="define"><name>PERIOD_US</name></member>
     <member refid="ecat__globals_8hpp_1a5fcd914889df46acf623f7d9a81654d7" kind="define"><name>PERIOD_MS</name></member>
+    <member refid="ecat__globals_8hpp_1a974bbdb01bda0d358605aaaf61ebae97" kind="define"><name>FINAL_SLAVE</name></member>
     <member refid="ecat__globals_8hpp_1a3e343f521bdee99c94f22627c930d24d" kind="define"><name>TEST_BIT</name></member>
     <member refid="ecat__globals_8hpp_1a11c01176d68fc4cd05ed423d922eca26" kind="define"><name>SET_BIT</name></member>
     <member refid="ecat__globals_8hpp_1a4f447e47949e3f87b24ffd1039e07be1" kind="define"><name>RESET_BIT</name></member>

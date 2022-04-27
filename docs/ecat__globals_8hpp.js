@@ -21,6 +21,7 @@ var ecat__globals_8hpp =
     [ "DIFF_NS", "ecat__globals_8hpp.html#aff98fed4398150e17dbcd151445065ee", null ],
     [ "DISTRIBUTED_CLOCK", "ecat__globals_8hpp.html#a1d48656bc4df51f3d8b17da91494a981", null ],
     [ "ENCODER_RESOLUTION", "ecat__globals_8hpp.html#a8cdc17f43c9f3850f60d04f98216fc13", null ],
+    [ "FINAL_SLAVE", "ecat__globals_8hpp.html#a974bbdb01bda0d358605aaaf61ebae97", null ],
     [ "FIVE_DEGREE_CCW", "ecat__globals_8hpp.html#a157cb770e20b46068ba85fdec0cfa4f1", null ],
     [ "FREQUENCY", "ecat__globals_8hpp.html#a84142cd3e3bf14c4ecd4b6707a808c39", null ],
     [ "GEAR_RATIO", "ecat__globals_8hpp.html#a1b5f0a2cda8866a2a87331026ac8bd9a", null ],

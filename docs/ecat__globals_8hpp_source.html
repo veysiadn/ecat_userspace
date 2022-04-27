@@ -169,7 +169,7 @@ $(document).ready(function(){initNavTree('ecat__globals_8hpp_source.html',''); i
 <div class="line"><a id="l00080" name="l00080"></a><span class="lineno">   80</span> </div>
 <div class="line"><a id="l00083" name="l00083"></a><span class="lineno"><a class="line" href="ecat__globals_8hpp.html#aacc3c7aef173b1cde9377fb7f05c924d">   83</a></span><span class="keyword">const</span> uint32_t  <a class="code hl_variable" href="ecat__globals_8hpp.html#aacc3c7aef173b1cde9377fb7f05c924d">g_kNumberOfServoDrivers</a> = 1 ;   </div>
 <div class="line"><a id="l00084" name="l00084"></a><span class="lineno">   84</span> </div>
-<div class="line"><a id="l00087" name="l00087"></a><span class="lineno"><a class="line" href="ecat__globals_8hpp.html#a1ef60d5687ea9337b2e3e040be43db07">   87</a></span><span class="preprocessor">#define CUSTOM_SLAVE     0</span></div>
+<div class="line"><a id="l00087" name="l00087"></a><span class="lineno"><a class="line" href="ecat__globals_8hpp.html#a1ef60d5687ea9337b2e3e040be43db07">   87</a></span><span class="preprocessor">#define CUSTOM_SLAVE     1</span></div>
 <div class="line"><a id="l00088" name="l00088"></a><span class="lineno">   88</span> </div>
 <div class="line"><a id="l00090" name="l00090"></a><span class="lineno"><a class="line" href="ecat__globals_8hpp.html#a84142cd3e3bf14c4ecd4b6707a808c39">   90</a></span><span class="preprocessor">#define FREQUENCY       1000        </span></div>
 <div class="line"><a id="l00091" name="l00091"></a><span class="lineno">   91</span> </div>
@@ -195,7 +195,7 @@ $(document).ready(function(){initNavTree('ecat__globals_8hpp_source.html',''); i
 <div class="line"><a id="l00122" name="l00122"></a><span class="lineno"><a class="line" href="ecat__globals_8hpp.html#aa840a0ac3b87cf7c89b265e1912cbb5b">  122</a></span><span class="preprocessor">#define PERIOD_US       (PERIOD_NS / 1000)      </span></div>
 <div class="line"><a id="l00123" name="l00123"></a><span class="lineno"><a class="line" href="ecat__globals_8hpp.html#a5fcd914889df46acf623f7d9a81654d7">  123</a></span><span class="preprocessor">#define PERIOD_MS       (PERIOD_US / 1000)      </span></div>
 <div class="line"><a id="l00124" name="l00124"></a><span class="lineno">  124</span><span class="preprocessor">#if CUSTOM_SLAVE</span></div>
-<div class="line"><a id="l00125" name="l00125"></a><span class="lineno">  125</span><span class="preprocessor">    #define FINAL_SLAVE     (NUM_OF_SLAVES-1)</span></div>
+<div class="line"><a id="l00125" name="l00125"></a><span class="lineno"><a class="line" href="ecat__globals_8hpp.html#a974bbdb01bda0d358605aaaf61ebae97">  125</a></span><span class="preprocessor">    #define FINAL_SLAVE     (NUM_OF_SLAVES-1)</span></div>
 <div class="line"><a id="l00126" name="l00126"></a><span class="lineno">  126</span><span class="preprocessor">#endif</span></div>
 <div class="line"><a id="l00127" name="l00127"></a><span class="lineno">  127</span><span class="comment">/****************************************************************************/</span></div>
 <div class="line"><a id="l00129" name="l00129"></a><span class="lineno"><a class="line" href="ecat__globals_8hpp.html#a6a68d8a40c73f3377978388da56fa9ad">  129</a></span><span class="keyword">static</span> <span class="keyword">volatile</span> sig_atomic_t <a class="code hl_variable" href="ecat__globals_8hpp.html#a6a68d8a40c73f3377978388da56fa9ad">sig</a> = 1;</div>

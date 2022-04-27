@@ -223,11 +223,11 @@
       </memberdef>
       <memberdef kind="define" id="ecat__globals_8hpp_1a1ef60d5687ea9337b2e3e040be43db07" prot="public" static="no">
         <name>CUSTOM_SLAVE</name>
-        <initializer>0</initializer>
+        <initializer>1</initializer>
         <briefdescription>
         </briefdescription>
         <detaileddescription>
-<para>If you have EtherCAT slave different than CiA402 supported motor drive, set this macro to 1 <simplesect kind="note"><para>That you&apos;ll have to manually specfy PDO mapping for your custom slave. </para>
+<para>If you have EtherCAT slave different than CiA402 supported motor drive, set this macro to 1 <simplesect kind="note"><para>That you&apos;ll have to manually specify PDO mapping for your custom slave. </para>
 </simplesect>
 </para>
         </detaileddescription>
@@ -425,6 +425,17 @@
         <inbodydescription>
         </inbodydescription>
         <location file="include/ecat_globals.hpp" line="123" column="9" bodyfile="include/ecat_globals.hpp" bodystart="123" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="ecat__globals_8hpp_1a974bbdb01bda0d358605aaaf61ebae97" prot="public" static="no">
+        <name>FINAL_SLAVE</name>
+        <initializer>(<ref refid="ecat__globals_8hpp_1a5d918ecbea3b854bbfe74765c9357be3" kindref="member">NUM_OF_SLAVES</ref>-1)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/ecat_globals.hpp" line="125" column="13" bodyfile="include/ecat_globals.hpp" bodystart="125" bodyend="-1"/>
       </memberdef>
       <memberdef kind="define" id="ecat__globals_8hpp_1a3e343f521bdee99c94f22627c930d24d" prot="public" static="no">
         <name>TEST_BIT</name>
@@ -1826,7 +1837,7 @@
 <codeline lineno="80"><highlight class="normal"></highlight></codeline>
 <codeline lineno="83" refid="ecat__globals_8hpp_1aacc3c7aef173b1cde9377fb7f05c924d" refkind="member"><highlight class="keyword">const</highlight><highlight class="normal"><sp/>uint32_t<sp/><sp/><ref refid="ecat__globals_8hpp_1aacc3c7aef173b1cde9377fb7f05c924d" kindref="member">g_kNumberOfServoDrivers</ref><sp/>=<sp/>1<sp/>;<sp/><sp/><sp/></highlight></codeline>
 <codeline lineno="84"><highlight class="normal"></highlight></codeline>
-<codeline lineno="87" refid="ecat__globals_8hpp_1a1ef60d5687ea9337b2e3e040be43db07" refkind="member"><highlight class="preprocessor">#define<sp/>CUSTOM_SLAVE<sp/><sp/><sp/><sp/><sp/>0</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="87" refid="ecat__globals_8hpp_1a1ef60d5687ea9337b2e3e040be43db07" refkind="member"><highlight class="preprocessor">#define<sp/>CUSTOM_SLAVE<sp/><sp/><sp/><sp/><sp/>1</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="88"><highlight class="normal"></highlight></codeline>
 <codeline lineno="90" refid="ecat__globals_8hpp_1a84142cd3e3bf14c4ecd4b6707a808c39" refkind="member"><highlight class="preprocessor">#define<sp/>FREQUENCY<sp/><sp/><sp/><sp/><sp/><sp/><sp/>1000<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="91"><highlight class="normal"></highlight></codeline>
@@ -1852,7 +1863,7 @@
 <codeline lineno="122" refid="ecat__globals_8hpp_1aa840a0ac3b87cf7c89b265e1912cbb5b" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>PERIOD_US<sp/><sp/><sp/><sp/><sp/><sp/><sp/>(PERIOD_NS<sp/>/<sp/>1000)<sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="123" refid="ecat__globals_8hpp_1a5fcd914889df46acf623f7d9a81654d7" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>PERIOD_MS<sp/><sp/><sp/><sp/><sp/><sp/><sp/>(PERIOD_US<sp/>/<sp/>1000)<sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="124"><highlight class="normal"></highlight><highlight class="preprocessor">#if<sp/>CUSTOM_SLAVE</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="125"><highlight class="normal"></highlight><highlight class="preprocessor"><sp/><sp/><sp/><sp/>#define<sp/>FINAL_SLAVE<sp/><sp/><sp/><sp/><sp/>(NUM_OF_SLAVES-1)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="125" refid="ecat__globals_8hpp_1a974bbdb01bda0d358605aaaf61ebae97" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor"><sp/><sp/><sp/><sp/>#define<sp/>FINAL_SLAVE<sp/><sp/><sp/><sp/><sp/>(NUM_OF_SLAVES-1)</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="126"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="127"><highlight class="normal"></highlight><highlight class="comment">/****************************************************************************/</highlight></codeline>
 <codeline lineno="129" refid="ecat__globals_8hpp_1a6a68d8a40c73f3377978388da56fa9ad" refkind="member"><highlight class="keyword">static</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">volatile</highlight><highlight class="normal"><sp/>sig_atomic_t<sp/><ref refid="ecat__globals_8hpp_1a6a68d8a40c73f3377978388da56fa9ad" kindref="member">sig</ref><sp/>=<sp/>1;</highlight></codeline>

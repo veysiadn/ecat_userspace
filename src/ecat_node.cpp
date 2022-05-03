@@ -184,6 +184,12 @@ int EthercatNode::MapDefaultPdos()
             printf("EasyCAT right limit switch PDO configuration failed...\n");
             return -1;
         }
+        slaves_[FINAL_SLAVE].offset_.pressure_sensor = ecrt_slave_config_reg_pdo_entry(slaves_[FINAL_SLAVE].slave_config_,
+                                                                                    0x006,0x001,g_master_domain,NULL);
+        if (slaves_[FINAL_SLAVE].offset_.pressure_sensor < 0){
+            printf("EasyCAT right limit switch PDO configuration failed...\n");
+            return -1;
+        }
         slaves_[FINAL_SLAVE].offset_.l_limit_switch = ecrt_slave_config_reg_pdo_entry(slaves_[FINAL_SLAVE].slave_config_,
                                                                                     0x006, 0x07, g_master_domain, NULL);
         if (slaves_[FINAL_SLAVE].offset_.l_limit_switch < 0){
@@ -206,7 +212,7 @@ void EthercatNode::ConfigDcSyncDefault()
         ecrt_slave_config_dc(slaves_[i].slave_config_, 0X0300, PERIOD_NS, slaves_[i].kSync0_shift_, 0, 0);
     }
     #if CUSTOM_SLAVE
-        ecrt_slave_config_dc(slaves_[FINAL_SLAVE].slave_config_, 0X0300, PERIOD_NS, 2000200000, 0, 0);
+        ecrt_slave_config_dc(slaves_[FINAL_SLAVE].slave_config_, 0X0300, PERIOD_NS, 20002000000, 0, 0);
     #endif
 }
 

@@ -496,8 +496,7 @@ void EthercatLifeCycle::StartPdoExchange(void *instance)
                             exec_min_ns, exec_max_ns);
                     printf("Tlatency  min   : %10u ns  | max : %10u ns\n",
                             latency_min_ns, latency_max_ns);
-                    printf("Tjitter max     : %10u ns  \n",
-                            latency_max_ns-latency_min_ns);
+
                     printf("-----------------------------------------------\n\n");       
                     printf("Tperiod min     : %10u ns  | max : %10u ns\n",
                             min_period, max_period);
@@ -505,7 +504,10 @@ void EthercatLifeCycle::StartPdoExchange(void *instance)
                             exec_min, exec_max);
                     printf("Tjitter min     : %10u ns  | max : %10u ns\n",
                             jitter_min, jitter_max);  
-                    printf("Timer info values: %10d us \n", timer_info_.time_span_.count());                             
+                    // printf(
+                    //     "Pressure val : %10u \n",received_data_.pressure_sensor
+                    // );
+                    // printf("Timer info values: %10d us \n", timer_info_.time_span_.count());                             
                     printf("-----------------------------------------------\n\n");
                     print_val=1000;
 
@@ -526,7 +528,6 @@ void EthercatLifeCycle::StartPdoExchange(void *instance)
             if(received_data_.error_code[i]!=0){
                 std::cout << "Drive in error state" << std::endl;
                 std::cout << GetErrorMessage(received_data_.error_code[i]) << std::endl;
-                break; 
             }
         }
 #if POSITION_MODE
@@ -551,12 +552,17 @@ void EthercatLifeCycle::StartPdoExchange(void *instance)
         WriteToSlavesInCyclicTorqueMode();
 #endif
         ecrt_domain_queue(g_master_domain);
-        clock_gettime(CLOCK_TO_USE, &time);
-        ecrt_master_sync_reference_clock_to(g_master, TIMESPEC2NS(time));
+        if (sync_ref_counter) {
+            sync_ref_counter--;
+        } else {
+            sync_ref_counter = 1; // sync every cycle
+
+            clock_gettime(CLOCK_TO_USE, &time);
+            ecrt_master_sync_reference_clock_to(g_master, TIMESPEC2NS(time));
+        }
         ecrt_master_sync_slave_clocks(g_master);
         // send process data
         ecrt_master_send(g_master);
-        
         if(begin) begin--;
         #if MEASURE_TIMING
                 clock_gettime(CLOCK_TO_USE, &end_time);
@@ -606,6 +612,7 @@ void EthercatLifeCycle::ReadFromSlaves()
         received_data_.right_limit_switch_val = EC_READ_U8(ecat_node_->slaves_[FINAL_SLAVE].slave_pdo_domain_ +ecat_node_->slaves_[FINAL_SLAVE].offset_.r_limit_switch);
         received_data_.left_limit_switch_val  = EC_READ_U8(ecat_node_->slaves_[FINAL_SLAVE].slave_pdo_domain_ +ecat_node_->slaves_[FINAL_SLAVE].offset_.l_limit_switch);
         received_data_.emergency_switch_val = EC_READ_U8(ecat_node_->slaves_[FINAL_SLAVE].slave_pdo_domain_ +ecat_node_->slaves_[FINAL_SLAVE].offset_.emergency_switch);
+        received_data_.pressure_sensor = EC_READ_U16(ecat_node_->slaves_[FINAL_SLAVE].slave_pdo_domain_ +ecat_node_->slaves_[FINAL_SLAVE].offset_.pressure_sensor);
         emergency_status_  = received_data_.emergency_switch_val;
     #endif
 }// ReadFromSlaves end

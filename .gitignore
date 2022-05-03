@@ -8,3 +8,4 @@ CMakeDoxygenDefaults.cmake
 Makefile
 ecat_node
 cmake_install.cmake
+optimizations/

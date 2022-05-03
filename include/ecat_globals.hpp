@@ -84,17 +84,17 @@ const uint32_t  g_kNumberOfServoDrivers = 1 ;
 
 /// If you have EtherCAT slave different than CiA402 supported motor drive, set this macro to 1
 /// @note  That you'll have to manually specify PDO mapping for your custom slave.
-#define CUSTOM_SLAVE     1
+#define CUSTOM_SLAVE     0
 
 /// Ethercat PDO exchange loop frequency in Hz    
 #define FREQUENCY       1000        
 
 /// If you want to measure timings leave it as one, otherwise make it 0.
-#define MEASURE_TIMING         0    
+#define MEASURE_TIMING         1    
  /// set this to 1 if you want to use it in velocity mode (and set other modes 0)
-#define VELOCITY_MODE          0 
+#define VELOCITY_MODE          1 
 /// set this to 1 if you want to use it in position mode (and set other modes 0)  
-#define POSITION_MODE          1    
+#define POSITION_MODE          0    
 /// set this to 1 if you want to use it in cyclic synchronous position mode (and set other modes 0)
 #define CYCLIC_POSITION_MODE   0    
 /// set this to 1 if you want to use it in cyclic synchronous velocity mode (and set other modes 0)
@@ -247,6 +247,7 @@ typedef struct DataReceived
     uint8_t  left_limit_switch_val ;
     uint8_t right_limit_switch_val ;
     uint8_t  emergency_switch_val ;
+    uint16_t pressure_sensor ; 
     DataReceived(){};
 };
 
@@ -349,6 +350,7 @@ typedef struct
     uint32_t r_limit_switch;
     uint32_t l_limit_switch;
     uint32_t emergency_switch;
+    uint32_t pressure_sensor; 
 } OffsetPDO ;
 
 

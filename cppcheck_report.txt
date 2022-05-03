@@ -16,10 +16,10 @@ src/ecat_lifecycle.cpp:272:5: style:inconclusive: Consecutive return, break, con
 src/ecat_lifecycle.cpp:244:18: style: Unused variable: max_fol_err [unusedVariable]
         uint32_t max_fol_err ;
                  ^
-src/ecat_lifecycle.cpp:506:21: warning: %u in format string (no. 1) requires 'unsigned int' but the argument type is 'signed int'. [invalidPrintfArgType_uint]
+src/ecat_lifecycle.cpp:505:21: warning: %u in format string (no. 1) requires 'unsigned int' but the argument type is 'signed int'. [invalidPrintfArgType_uint]
                     printf("Tjitter min     : %10u ns  | max : %10u ns\n",
                     ^
-src/ecat_lifecycle.cpp:506:21: warning: %u in format string (no. 2) requires 'unsigned int' but the argument type is 'signed int'. [invalidPrintfArgType_uint]
+src/ecat_lifecycle.cpp:505:21: warning: %u in format string (no. 2) requires 'unsigned int' but the argument type is 'signed int'. [invalidPrintfArgType_uint]
                     printf("Tjitter min     : %10u ns  | max : %10u ns\n",
                     ^
 src/ecat_lifecycle.cpp:403:28: style: Variable 'period_ns' is assigned a value that is never used. [unreadVariable]
@@ -46,13 +46,13 @@ src/ecat_lifecycle.cpp:410:81: style: Variable 'old_latency' is assigned a value
 src/ecat_lifecycle.cpp:232:18: style: Unused variable: max_fol_err [unusedVariable]
         uint32_t max_fol_err ;
                  ^
-src/ecat_node.cpp:692:27: style: Variable 'g_master_domain_state' is reassigned a value before the old one has been used. [redundantAssignment]
+src/ecat_node.cpp:698:27: style: Variable 'g_master_domain_state' is reassigned a value before the old one has been used. [redundantAssignment]
     g_master_domain_state = ds;
                           ^
-src/ecat_node.cpp:690:31: note: g_master_domain_state is assigned
+src/ecat_node.cpp:696:31: note: g_master_domain_state is assigned
         g_master_domain_state = ds;
                               ^
-src/ecat_node.cpp:692:27: note: g_master_domain_state is overwritten
+src/ecat_node.cpp:698:27: note: g_master_domain_state is overwritten
     g_master_domain_state = ds;
                           ^
 src/main.cpp:51:56: style: Variable 'ecat_lifecycle_node->controller_.left_x_axis_' is reassigned a value before the old one has been used. [redundantAssignment]

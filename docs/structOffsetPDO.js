@@ -13,6 +13,7 @@ var structOffsetPDO =
     [ "op_mode", "structOffsetPDO.html#a5a5931c0e00ddf408a6e1dd1b6389af9", null ],
     [ "op_mode_display", "structOffsetPDO.html#a4ce519ced990d7ff2168b54822afc769", null ],
     [ "pos_fol_err", "structOffsetPDO.html#a96dc5a40722273bac237b58db26a8087", null ],
+    [ "pressure_sensor", "structOffsetPDO.html#ad94b77fa0e48ed563b4757a1648f9481", null ],
     [ "profile_acc", "structOffsetPDO.html#a40d8cf803dc45383d24fcfbb49d176e4", null ],
     [ "profile_dec", "structOffsetPDO.html#a194b2ec45403a2b5b49d1e08e2480f38", null ],
     [ "profile_vel", "structOffsetPDO.html#a0df71a81151a20863587d9b51ca7422a", null ],

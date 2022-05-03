@@ -270,6 +270,20 @@
         </inbodydescription>
         <location file="include/ecat_globals.hpp" line="249" column="14" bodyfile="include/ecat_globals.hpp" bodystart="249" bodyend="-1"/>
       </memberdef>
+      <memberdef kind="variable" id="structDataReceived_1a9acd06f0a69b9ac71cfdf2f9fbb305e7" prot="public" static="no" mutable="no">
+        <type>uint16_t</type>
+        <definition>uint16_t DataReceived::pressure_sensor</definition>
+        <argsstring></argsstring>
+        <name>pressure_sensor</name>
+        <qualifiedname>DataReceived::pressure_sensor</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/ecat_globals.hpp" line="250" column="14" bodyfile="include/ecat_globals.hpp" bodystart="250" bodyend="-1"/>
+      </memberdef>
       </sectiondef>
       <sectiondef kind="public-func">
       <memberdef kind="function" id="structDataReceived_1a20a93f6b93c2f77f2a980ccd982cf82e" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
@@ -284,7 +298,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/ecat_globals.hpp" line="250" column="5" bodyfile="include/ecat_globals.hpp" bodystart="250" bodyend="250"/>
+        <location file="include/ecat_globals.hpp" line="251" column="5" bodyfile="include/ecat_globals.hpp" bodystart="251" bodyend="251"/>
       </memberdef>
       </sectiondef>
     <briefdescription>
@@ -292,7 +306,7 @@
     </briefdescription>
     <detaileddescription>
     </detaileddescription>
-    <location file="include/ecat_globals.hpp" line="228" column="1" bodyfile="include/ecat_globals.hpp" bodystart="229" bodyend="251"/>
+    <location file="include/ecat_globals.hpp" line="228" column="1" bodyfile="include/ecat_globals.hpp" bodystart="229" bodyend="252"/>
     <listofallmembers>
       <member refid="structDataReceived_1a46d51838bdc21e9309cc23f20e221d80" prot="public" virt="non-virtual"><scope>DataReceived</scope><name>actual_cur</name></member>
       <member refid="structDataReceived_1a617a630ef15cca8f0d174281c69854c6" prot="public" virt="non-virtual"><scope>DataReceived</scope><name>actual_pos</name></member>
@@ -307,6 +321,7 @@
       <member refid="structDataReceived_1a4a984c4523ae4b15c39e31e89455cf55" prot="public" virt="non-virtual"><scope>DataReceived</scope><name>max_tor</name></member>
       <member refid="structDataReceived_1a8cd76bf57de52389252c7c46035f5dfc" prot="public" virt="non-virtual"><scope>DataReceived</scope><name>op_mode</name></member>
       <member refid="structDataReceived_1a17593653dc2a3085db5b312635872399" prot="public" virt="non-virtual"><scope>DataReceived</scope><name>op_mode_display</name></member>
+      <member refid="structDataReceived_1a9acd06f0a69b9ac71cfdf2f9fbb305e7" prot="public" virt="non-virtual"><scope>DataReceived</scope><name>pressure_sensor</name></member>
       <member refid="structDataReceived_1a8be1018273dda677e6fcab1a22081ce4" prot="public" virt="non-virtual"><scope>DataReceived</scope><name>right_limit_switch_val</name></member>
       <member refid="structDataReceived_1aa45660912db7a4a103d6d25eeb04c1e3" prot="public" virt="non-virtual"><scope>DataReceived</scope><name>status_word</name></member>
       <member refid="structDataReceived_1a53591cc65479825d48085465914558f0" prot="public" virt="non-virtual"><scope>DataReceived</scope><name>target_pos</name></member>

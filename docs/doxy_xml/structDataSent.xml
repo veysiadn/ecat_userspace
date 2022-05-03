@@ -16,7 +16,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/ecat_globals.hpp" line="256" column="19" bodyfile="include/ecat_globals.hpp" bodystart="256" bodyend="-1"/>
+        <location file="include/ecat_globals.hpp" line="257" column="19" bodyfile="include/ecat_globals.hpp" bodystart="257" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="structDataSent_1ae12b147e00af3fd6f65a44b2788c3a51" prot="public" static="no" mutable="no">
         <type>std::vector&lt; int32_t &gt;</type>
@@ -30,7 +30,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/ecat_globals.hpp" line="257" column="19" bodyfile="include/ecat_globals.hpp" bodystart="257" bodyend="-1"/>
+        <location file="include/ecat_globals.hpp" line="258" column="19" bodyfile="include/ecat_globals.hpp" bodystart="258" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="structDataSent_1aa5dabf1eba703f19b7dd61beef07ba14" prot="public" static="no" mutable="no">
         <type>std::vector&lt; int16_t &gt;</type>
@@ -44,7 +44,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/ecat_globals.hpp" line="258" column="19" bodyfile="include/ecat_globals.hpp" bodystart="258" bodyend="-1"/>
+        <location file="include/ecat_globals.hpp" line="259" column="19" bodyfile="include/ecat_globals.hpp" bodystart="259" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="structDataSent_1a39d77aff9fe22d6a88cf7e3bce81db52" prot="public" static="no" mutable="no">
         <type>std::vector&lt; int16_t &gt;</type>
@@ -58,7 +58,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/ecat_globals.hpp" line="259" column="19" bodyfile="include/ecat_globals.hpp" bodystart="259" bodyend="-1"/>
+        <location file="include/ecat_globals.hpp" line="260" column="19" bodyfile="include/ecat_globals.hpp" bodystart="260" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="structDataSent_1a250f4034a2b752ab15053407eadfd4d9" prot="public" static="no" mutable="no">
         <type>std::vector&lt; uint16_t &gt;</type>
@@ -72,7 +72,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/ecat_globals.hpp" line="260" column="18" bodyfile="include/ecat_globals.hpp" bodystart="260" bodyend="-1"/>
+        <location file="include/ecat_globals.hpp" line="261" column="18" bodyfile="include/ecat_globals.hpp" bodystart="261" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="structDataSent_1a25c2af9fc8c03562ba5cc104180a04e9" prot="public" static="no" mutable="no">
         <type><ref refid="ecat__globals_8hpp_1a56752d1aeb4bd4940e632396072d68af" kindref="member">OpMode</ref></type>
@@ -86,7 +86,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/ecat_globals.hpp" line="261" column="15" bodyfile="include/ecat_globals.hpp" bodystart="261" bodyend="-1"/>
+        <location file="include/ecat_globals.hpp" line="262" column="15" bodyfile="include/ecat_globals.hpp" bodystart="262" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="structDataSent_1a5418773bce78cbac487c372888432098" prot="public" static="no" mutable="no">
         <type>std::vector&lt; int32_t &gt;</type>
@@ -100,7 +100,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/ecat_globals.hpp" line="262" column="19" bodyfile="include/ecat_globals.hpp" bodystart="262" bodyend="-1"/>
+        <location file="include/ecat_globals.hpp" line="263" column="19" bodyfile="include/ecat_globals.hpp" bodystart="263" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="structDataSent_1a016260e63216f58b3e4270c2e79fd84f" prot="public" static="no" mutable="no">
         <type>std::vector&lt; int16_t &gt;</type>
@@ -114,7 +114,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/ecat_globals.hpp" line="263" column="19" bodyfile="include/ecat_globals.hpp" bodystart="263" bodyend="-1"/>
+        <location file="include/ecat_globals.hpp" line="264" column="19" bodyfile="include/ecat_globals.hpp" bodystart="264" bodyend="-1"/>
       </memberdef>
       </sectiondef>
       <sectiondef kind="public-func">
@@ -130,7 +130,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/ecat_globals.hpp" line="264" column="5" bodyfile="include/ecat_globals.hpp" bodystart="264" bodyend="264"/>
+        <location file="include/ecat_globals.hpp" line="265" column="5" bodyfile="include/ecat_globals.hpp" bodystart="265" bodyend="265"/>
       </memberdef>
       </sectiondef>
     <briefdescription>
@@ -138,7 +138,7 @@
     </briefdescription>
     <detaileddescription>
     </detaileddescription>
-    <location file="include/ecat_globals.hpp" line="254" column="1" bodyfile="include/ecat_globals.hpp" bodystart="255" bodyend="265"/>
+    <location file="include/ecat_globals.hpp" line="255" column="1" bodyfile="include/ecat_globals.hpp" bodystart="256" bodyend="266"/>
     <listofallmembers>
       <member refid="structDataSent_1a250f4034a2b752ab15053407eadfd4d9" prot="public" virt="non-virtual"><scope>DataSent</scope><name>control_word</name></member>
       <member refid="structDataSent_1ae8914156241aeb6cdb6d59c4d3aac824" prot="public" virt="non-virtual"><scope>DataSent</scope><name>DataSent</name></member>

@@ -75,6 +75,7 @@
     <member refid="structDataReceived_1a74e42ee4acd6f2b81cf1052368e383c7" kind="variable"><name>left_limit_switch_val</name></member>
     <member refid="structDataReceived_1a8be1018273dda677e6fcab1a22081ce4" kind="variable"><name>right_limit_switch_val</name></member>
     <member refid="structDataReceived_1a9d271bbf7f372ed848260ce8d6bd3025" kind="variable"><name>emergency_switch_val</name></member>
+    <member refid="structDataReceived_1a9acd06f0a69b9ac71cfdf2f9fbb305e7" kind="variable"><name>pressure_sensor</name></member>
     <member refid="structDataReceived_1a20a93f6b93c2f77f2a980ccd982cf82e" kind="function"><name>DataReceived</name></member>
   </compound>
   <compound refid="structDataSent" kind="struct"><name>DataSent</name>
@@ -224,6 +225,7 @@
     <member refid="structOffsetPDO_1a73449e20df59e1077d18532bbd0e87fd" kind="variable"><name>r_limit_switch</name></member>
     <member refid="structOffsetPDO_1ab40d8928b356198511f325f6b1067e32" kind="variable"><name>l_limit_switch</name></member>
     <member refid="structOffsetPDO_1a45d9cdcfef09d6089056db171755d262" kind="variable"><name>emergency_switch</name></member>
+    <member refid="structOffsetPDO_1ad94b77fa0e48ed563b4757a1648f9481" kind="variable"><name>pressure_sensor</name></member>
   </compound>
   <compound refid="structProfilePosParam" kind="struct"><name>ProfilePosParam</name>
     <member refid="structProfilePosParam_1aeda779c60c429db32325ac466533b498" kind="variable"><name>profile_vel</name></member>
@@ -344,7 +346,6 @@
     <member refid="ecat__globals_8hpp_1ab495f8313ac709722de636c17e8a7381" kind="define"><name>PERIOD_NS</name></member>
     <member refid="ecat__globals_8hpp_1aa840a0ac3b87cf7c89b265e1912cbb5b" kind="define"><name>PERIOD_US</name></member>
     <member refid="ecat__globals_8hpp_1a5fcd914889df46acf623f7d9a81654d7" kind="define"><name>PERIOD_MS</name></member>
-    <member refid="ecat__globals_8hpp_1a974bbdb01bda0d358605aaaf61ebae97" kind="define"><name>FINAL_SLAVE</name></member>
     <member refid="ecat__globals_8hpp_1a3e343f521bdee99c94f22627c930d24d" kind="define"><name>TEST_BIT</name></member>
     <member refid="ecat__globals_8hpp_1a11c01176d68fc4cd05ed423d922eca26" kind="define"><name>SET_BIT</name></member>
     <member refid="ecat__globals_8hpp_1a4f447e47949e3f87b24ffd1039e07be1" kind="define"><name>RESET_BIT</name></member>

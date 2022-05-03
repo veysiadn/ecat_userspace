@@ -16,7 +16,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/ecat_globals.hpp" line="327" column="14" bodyfile="include/ecat_globals.hpp" bodystart="327" bodyend="-1"/>
+        <location file="include/ecat_globals.hpp" line="328" column="14" bodyfile="include/ecat_globals.hpp" bodystart="328" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="structOffsetPDO_1a251ee93cafcd89a8f52c83e31a6dded9" prot="public" static="no" mutable="no">
         <type>uint32_t</type>
@@ -30,7 +30,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/ecat_globals.hpp" line="328" column="14" bodyfile="include/ecat_globals.hpp" bodystart="328" bodyend="-1"/>
+        <location file="include/ecat_globals.hpp" line="329" column="14" bodyfile="include/ecat_globals.hpp" bodystart="329" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="structOffsetPDO_1af334e3b60bd6b6d8fddabd6559b89e69" prot="public" static="no" mutable="no">
         <type>uint32_t</type>
@@ -44,7 +44,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/ecat_globals.hpp" line="329" column="14" bodyfile="include/ecat_globals.hpp" bodystart="329" bodyend="-1"/>
+        <location file="include/ecat_globals.hpp" line="330" column="14" bodyfile="include/ecat_globals.hpp" bodystart="330" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="structOffsetPDO_1af6588deb13afeac98d363737664f7796" prot="public" static="no" mutable="no">
         <type>uint32_t</type>
@@ -58,7 +58,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/ecat_globals.hpp" line="330" column="14" bodyfile="include/ecat_globals.hpp" bodystart="330" bodyend="-1"/>
+        <location file="include/ecat_globals.hpp" line="331" column="14" bodyfile="include/ecat_globals.hpp" bodystart="331" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="structOffsetPDO_1af37d71dd68836a0862e3c58752f32de0" prot="public" static="no" mutable="no">
         <type>uint32_t</type>
@@ -72,7 +72,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/ecat_globals.hpp" line="331" column="14" bodyfile="include/ecat_globals.hpp" bodystart="331" bodyend="-1"/>
+        <location file="include/ecat_globals.hpp" line="332" column="14" bodyfile="include/ecat_globals.hpp" bodystart="332" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="structOffsetPDO_1a8c4f5d0811f5157ddd5b2aad718ca216" prot="public" static="no" mutable="no">
         <type>uint32_t</type>
@@ -86,7 +86,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/ecat_globals.hpp" line="332" column="14" bodyfile="include/ecat_globals.hpp" bodystart="332" bodyend="-1"/>
+        <location file="include/ecat_globals.hpp" line="333" column="14" bodyfile="include/ecat_globals.hpp" bodystart="333" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="structOffsetPDO_1a5a5931c0e00ddf408a6e1dd1b6389af9" prot="public" static="no" mutable="no">
         <type>uint32_t</type>
@@ -100,7 +100,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/ecat_globals.hpp" line="333" column="14" bodyfile="include/ecat_globals.hpp" bodystart="333" bodyend="-1"/>
+        <location file="include/ecat_globals.hpp" line="334" column="14" bodyfile="include/ecat_globals.hpp" bodystart="334" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="structOffsetPDO_1a40d8cf803dc45383d24fcfbb49d176e4" prot="public" static="no" mutable="no">
         <type>uint32_t</type>
@@ -114,7 +114,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/ecat_globals.hpp" line="334" column="14" bodyfile="include/ecat_globals.hpp" bodystart="334" bodyend="-1"/>
+        <location file="include/ecat_globals.hpp" line="335" column="14" bodyfile="include/ecat_globals.hpp" bodystart="335" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="structOffsetPDO_1a194b2ec45403a2b5b49d1e08e2480f38" prot="public" static="no" mutable="no">
         <type>uint32_t</type>
@@ -128,7 +128,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/ecat_globals.hpp" line="335" column="14" bodyfile="include/ecat_globals.hpp" bodystart="335" bodyend="-1"/>
+        <location file="include/ecat_globals.hpp" line="336" column="14" bodyfile="include/ecat_globals.hpp" bodystart="336" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="structOffsetPDO_1a8c08a2a6e477cbfd2754796e9d69308c" prot="public" static="no" mutable="no">
         <type>uint32_t</type>
@@ -142,7 +142,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/ecat_globals.hpp" line="336" column="14" bodyfile="include/ecat_globals.hpp" bodystart="336" bodyend="-1"/>
+        <location file="include/ecat_globals.hpp" line="337" column="14" bodyfile="include/ecat_globals.hpp" bodystart="337" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="structOffsetPDO_1a0df71a81151a20863587d9b51ca7422a" prot="public" static="no" mutable="no">
         <type>uint32_t</type>
@@ -156,7 +156,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/ecat_globals.hpp" line="337" column="14" bodyfile="include/ecat_globals.hpp" bodystart="337" bodyend="-1"/>
+        <location file="include/ecat_globals.hpp" line="338" column="14" bodyfile="include/ecat_globals.hpp" bodystart="338" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="structOffsetPDO_1aa660132e2053405390ec7c21feab28a6" prot="public" static="no" mutable="no">
         <type>uint32_t</type>
@@ -170,7 +170,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/ecat_globals.hpp" line="339" column="14" bodyfile="include/ecat_globals.hpp" bodystart="339" bodyend="-1"/>
+        <location file="include/ecat_globals.hpp" line="340" column="14" bodyfile="include/ecat_globals.hpp" bodystart="340" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="structOffsetPDO_1a96dc5a40722273bac237b58db26a8087" prot="public" static="no" mutable="no">
         <type>uint32_t</type>
@@ -184,7 +184,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/ecat_globals.hpp" line="340" column="14" bodyfile="include/ecat_globals.hpp" bodystart="340" bodyend="-1"/>
+        <location file="include/ecat_globals.hpp" line="341" column="14" bodyfile="include/ecat_globals.hpp" bodystart="341" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="structOffsetPDO_1ae1bef0cbff32c077395e59137c8c802d" prot="public" static="no" mutable="no">
         <type>uint32_t</type>
@@ -198,7 +198,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/ecat_globals.hpp" line="341" column="14" bodyfile="include/ecat_globals.hpp" bodystart="341" bodyend="-1"/>
+        <location file="include/ecat_globals.hpp" line="342" column="14" bodyfile="include/ecat_globals.hpp" bodystart="342" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="structOffsetPDO_1a9497d0c8b4cc1de3dd0e435b4f071a92" prot="public" static="no" mutable="no">
         <type>uint32_t</type>
@@ -212,7 +212,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/ecat_globals.hpp" line="342" column="14" bodyfile="include/ecat_globals.hpp" bodystart="342" bodyend="-1"/>
+        <location file="include/ecat_globals.hpp" line="343" column="14" bodyfile="include/ecat_globals.hpp" bodystart="343" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="structOffsetPDO_1a16476df210bc19f871c89c0c7fd0d0c8" prot="public" static="no" mutable="no">
         <type>uint32_t</type>
@@ -226,7 +226,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/ecat_globals.hpp" line="343" column="14" bodyfile="include/ecat_globals.hpp" bodystart="343" bodyend="-1"/>
+        <location file="include/ecat_globals.hpp" line="344" column="14" bodyfile="include/ecat_globals.hpp" bodystart="344" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="structOffsetPDO_1ad170d2294efd553e8f5e690c394c96ab" prot="public" static="no" mutable="no">
         <type>uint32_t</type>
@@ -240,7 +240,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/ecat_globals.hpp" line="344" column="14" bodyfile="include/ecat_globals.hpp" bodystart="344" bodyend="-1"/>
+        <location file="include/ecat_globals.hpp" line="345" column="14" bodyfile="include/ecat_globals.hpp" bodystart="345" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="structOffsetPDO_1a4ce519ced990d7ff2168b54822afc769" prot="public" static="no" mutable="no">
         <type>uint32_t</type>
@@ -254,7 +254,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/ecat_globals.hpp" line="345" column="14" bodyfile="include/ecat_globals.hpp" bodystart="345" bodyend="-1"/>
+        <location file="include/ecat_globals.hpp" line="346" column="14" bodyfile="include/ecat_globals.hpp" bodystart="346" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="structOffsetPDO_1a5389244040597e64914e8650abd81996" prot="public" static="no" mutable="no">
         <type>uint32_t</type>
@@ -268,7 +268,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/ecat_globals.hpp" line="346" column="14" bodyfile="include/ecat_globals.hpp" bodystart="346" bodyend="-1"/>
+        <location file="include/ecat_globals.hpp" line="347" column="14" bodyfile="include/ecat_globals.hpp" bodystart="347" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="structOffsetPDO_1adee3c83f3857725dac30b685d1b90af2" prot="public" static="no" mutable="no">
         <type>uint32_t</type>
@@ -282,7 +282,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/ecat_globals.hpp" line="347" column="14" bodyfile="include/ecat_globals.hpp" bodystart="347" bodyend="-1"/>
+        <location file="include/ecat_globals.hpp" line="348" column="14" bodyfile="include/ecat_globals.hpp" bodystart="348" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="structOffsetPDO_1a73449e20df59e1077d18532bbd0e87fd" prot="public" static="no" mutable="no">
         <type>uint32_t</type>
@@ -296,7 +296,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/ecat_globals.hpp" line="349" column="14" bodyfile="include/ecat_globals.hpp" bodystart="349" bodyend="-1"/>
+        <location file="include/ecat_globals.hpp" line="350" column="14" bodyfile="include/ecat_globals.hpp" bodystart="350" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="structOffsetPDO_1ab40d8928b356198511f325f6b1067e32" prot="public" static="no" mutable="no">
         <type>uint32_t</type>
@@ -310,7 +310,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/ecat_globals.hpp" line="350" column="14" bodyfile="include/ecat_globals.hpp" bodystart="350" bodyend="-1"/>
+        <location file="include/ecat_globals.hpp" line="351" column="14" bodyfile="include/ecat_globals.hpp" bodystart="351" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="structOffsetPDO_1a45d9cdcfef09d6089056db171755d262" prot="public" static="no" mutable="no">
         <type>uint32_t</type>
@@ -324,7 +324,21 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/ecat_globals.hpp" line="351" column="14" bodyfile="include/ecat_globals.hpp" bodystart="351" bodyend="-1"/>
+        <location file="include/ecat_globals.hpp" line="352" column="14" bodyfile="include/ecat_globals.hpp" bodystart="352" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structOffsetPDO_1ad94b77fa0e48ed563b4757a1648f9481" prot="public" static="no" mutable="no">
+        <type>uint32_t</type>
+        <definition>uint32_t OffsetPDO::pressure_sensor</definition>
+        <argsstring></argsstring>
+        <name>pressure_sensor</name>
+        <qualifiedname>OffsetPDO::pressure_sensor</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/ecat_globals.hpp" line="353" column="14" bodyfile="include/ecat_globals.hpp" bodystart="353" bodyend="-1"/>
       </memberdef>
       </sectiondef>
     <briefdescription>
@@ -332,7 +346,7 @@
     </briefdescription>
     <detaileddescription>
     </detaileddescription>
-    <location file="include/ecat_globals.hpp" line="325" column="1" bodyfile="include/ecat_globals.hpp" bodystart="326" bodyend="352"/>
+    <location file="include/ecat_globals.hpp" line="326" column="1" bodyfile="include/ecat_globals.hpp" bodystart="327" bodyend="354"/>
     <listofallmembers>
       <member refid="structOffsetPDO_1a9497d0c8b4cc1de3dd0e435b4f071a92" prot="public" virt="non-virtual"><scope>OffsetPDO</scope><name>actual_cur</name></member>
       <member refid="structOffsetPDO_1aa660132e2053405390ec7c21feab28a6" prot="public" virt="non-virtual"><scope>OffsetPDO</scope><name>actual_pos</name></member>
@@ -347,6 +361,7 @@
       <member refid="structOffsetPDO_1a5a5931c0e00ddf408a6e1dd1b6389af9" prot="public" virt="non-virtual"><scope>OffsetPDO</scope><name>op_mode</name></member>
       <member refid="structOffsetPDO_1a4ce519ced990d7ff2168b54822afc769" prot="public" virt="non-virtual"><scope>OffsetPDO</scope><name>op_mode_display</name></member>
       <member refid="structOffsetPDO_1a96dc5a40722273bac237b58db26a8087" prot="public" virt="non-virtual"><scope>OffsetPDO</scope><name>pos_fol_err</name></member>
+      <member refid="structOffsetPDO_1ad94b77fa0e48ed563b4757a1648f9481" prot="public" virt="non-virtual"><scope>OffsetPDO</scope><name>pressure_sensor</name></member>
       <member refid="structOffsetPDO_1a40d8cf803dc45383d24fcfbb49d176e4" prot="public" virt="non-virtual"><scope>OffsetPDO</scope><name>profile_acc</name></member>
       <member refid="structOffsetPDO_1a194b2ec45403a2b5b49d1e08e2480f38" prot="public" virt="non-virtual"><scope>OffsetPDO</scope><name>profile_dec</name></member>
       <member refid="structOffsetPDO_1a0df71a81151a20863587d9b51ca7422a" prot="public" virt="non-virtual"><scope>OffsetPDO</scope><name>profile_vel</name></member>

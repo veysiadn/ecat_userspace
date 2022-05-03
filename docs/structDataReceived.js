@@ -13,6 +13,7 @@ var structDataReceived =
     [ "max_tor", "structDataReceived.html#a4a984c4523ae4b15c39e31e89455cf55", null ],
     [ "op_mode", "structDataReceived.html#a8cd76bf57de52389252c7c46035f5dfc", null ],
     [ "op_mode_display", "structDataReceived.html#a17593653dc2a3085db5b312635872399", null ],
+    [ "pressure_sensor", "structDataReceived.html#a9acd06f0a69b9ac71cfdf2f9fbb305e7", null ],
     [ "right_limit_switch_val", "structDataReceived.html#a8be1018273dda677e6fcab1a22081ce4", null ],
     [ "status_word", "structDataReceived.html#aa45660912db7a4a103d6d25eeb04c1e3", null ],
     [ "target_pos", "structDataReceived.html#a53591cc65479825d48085465914558f0", null ],
